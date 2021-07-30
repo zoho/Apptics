@@ -32,7 +32,7 @@ min Xcode version 9.0
      * `--prefix`                    String - **AppticsExtension.* will be prefixed by this value
      * `--use-swift`              Void - Generate class for swift
      * `--help`                      Show help banner of specified command
-     *`----config-file-path` String - Provide the path of apptics-config.plist file if to any sub directory instead of root.
+     * `----config-file-path` String - Provide the path of apptics-config.plist file if to any sub directory instead of root.
      
      The script `postinstaller` will add **AppticsExtension file(s) to your project, the class will have the events meta data.  
      
