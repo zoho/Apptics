@@ -1,0 +1,115 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
+// swift-module-flags: -target arm64-apple-ios13.1-macabi -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Apptics
+@_exported import Apptics
+import Foundation
+import StoreKit
+import Swift
+import UIKit
+@_inheritsConvenienceInitializers @objcMembers @objc public class APThemeSwiftManager : ObjectiveC.NSObject {
+  @objc public static var crosspromotheme: Apptics.CrossPromoTheme
+  @objc public static var sharedTheme: Apptics.APThemeSwift
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objcMembers @objc open class APThemeSwift : ObjectiveC.NSObject {
+  @objc open var tintColor: UIKit.UIColor?
+  @objc open var barTintColor: UIKit.UIColor?
+  open var translucent: Swift.Bool?
+  @objc open var titleTextAttributes: [Foundation.NSAttributedString.Key : Any]?
+  @objc open var barButtontitleTextAttributes: [Foundation.NSAttributedString.Key : Any]?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objcMembers @objc open class CrossPromoTheme : Apptics.APThemeSwift {
+  @objc open var contentBGColor: UIKit.UIColor? {
+    @objc get
+    @objc set(newValue)
+  }
+  @objc open var leftBarButtonItem: UIKit.UIBarButtonItem?
+  @objc open var viewBGColor: UIKit.UIColor?
+  @objc open var cellTextFont: UIKit.UIFont?
+  @objc open var cellBGColor: UIKit.UIColor?
+  @objc open var cellTextColor: UIKit.UIColor?
+  @objc open var footerTextColor: UIKit.UIColor?
+  @objc open var footerTextFont: UIKit.UIFont?
+  @objc open var lineSpacing: CoreGraphics.CGFloat
+  @objc open var switchOnTintColor: UIKit.UIColor?
+  @objc open var switchOffTintColor: UIKit.UIColor?
+  @objc open var switchThumbTintColor: UIKit.UIColor?
+  @objc open var switchTintColor: UIKit.UIColor?
+  @objc open var buttonBGColor: UIKit.UIColor?
+  @objc open var buttonTextColor: UIKit.UIColor?
+  @objc open var switchScale: CoreGraphics.CGFloat
+  @objc open var tableViewSeparatorColor: UIKit.UIColor?
+  @objc open var preferredContentSize: CoreGraphics.CGSize
+  @objc open var fontName: Swift.String?
+  @objc open var cellCaptionFont: UIKit.UIFont?
+  @objc open var sectionHeaderTextFont: UIKit.UIFont?
+  @objc open var sectionHeaderTextColor: UIKit.UIColor?
+  @objc open var sectionHeaderBGColor: UIKit.UIColor?
+  @objc open var viewAllAppsTextColor: UIKit.UIColor?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objcMembers @objc public class APSwiftCallbackHandlers : ObjectiveC.NSObject {
+  @objc public static var crosspromocallbacks: Apptics.CrossPromoCallbacks
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objcMembers @objc open class CrossPromoCallbacks : ObjectiveC.NSObject {
+  public typealias CompletionBlock = (Foundation.NSError?) -> Swift.Void
+  @objc public var failure: (Foundation.NSError?) -> Swift.Void
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers @objc public class PromotedAppsController : UIKit.UIViewController, UIKit.UITableViewDataSource, UIKit.UITableViewDelegate, StoreKit.SKStoreProductViewControllerDelegate {
+  @objc public var delegate: Apptics.PromotedAppsKitDelegate?
+  @objc public func loadScreenWith(AppsData: ObjectiveC.NSObject?, sectionHeader1: Swift.String?, sectionHeader2: Swift.String?)
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc override dynamic open func viewDidLoad()
+  @objc @IBAction public func backAction(_ sender: UIKit.UIButton)
+  @objc override dynamic public class func awakeFromNib()
+  @objc public func numberOfSections(in tableView: UIKit.UITableView) -> Swift.Int
+  @objc public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @objc public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @objc public func tableView(_ tableView: UIKit.UITableView, viewForFooterInSection section: Swift.Int) -> UIKit.UIView?
+  @objc public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
+  @objc public func tableView(_ tableView: UIKit.UITableView, heightForHeaderInSection section: Swift.Int) -> CoreGraphics.CGFloat
+  @objc public func tableView(_ tableView: UIKit.UITableView, viewForHeaderInSection section: Swift.Int) -> UIKit.UIView?
+  @objc override dynamic public func traitCollectionDidChange(_ previousTraitCollection: UIKit.UITraitCollection?)
+  @objc deinit
+}
+@objc public protocol PromotedAppsKitDelegate : ObjectiveC.NSObjectProtocol {
+  @objc func promoAppselected(crossPromoId: Foundation.NSNumber, status: Foundation.NSNumber)
+  @objc func ap_openURL(url: Foundation.URL)
+  @objc func ap_canOpenURL(url: Foundation.URL) -> Swift.Bool
+}
+@_inheritsConvenienceInitializers @objcMembers @objc public class PromotedAppsKit : ObjectiveC.NSObject, Apptics.PromotedAppsKitDelegate {
+  @objc public var delegate: Apptics.PromotedAppsKitDelegate?
+  @objc public static var callback: Apptics.CrossPromoCallbacks
+  @objc public var hasInternet: Swift.Bool
+  @objc public func loadPromotedAppsConntroller(_ response: ObjectiveC.NSObject, sectionHeader1: Swift.String?, sectionHeader2: Swift.String?) -> UIKit.UIViewController
+  @objc public func ap_canOpenURL(url: Foundation.URL) -> Swift.Bool
+  @objc public func promoAppselected(crossPromoId: Foundation.NSNumber, status: Foundation.NSNumber)
+  @objc public func ap_openURL(url: Foundation.URL)
+  @objc public func refreshPromotedAppsList(data: ObjectiveC.NSObject)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objcMembers @objc public class PromotedAppViewCell : UIKit.UITableViewCell {
+  @objc override dynamic public func awakeFromNib()
+  @objc override dynamic public func setSelected(_ selected: Swift.Bool, animated: Swift.Bool)
+  @objc override dynamic public func didMoveToSuperview()
+  @available(iOS 3.0, macCatalyst 13.0, *)
+  @objc override dynamic public init(style: UIKit.UITableViewCell.CellStyle, reuseIdentifier: Swift.String?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public func trackError(_ error: @autoclosure () -> Foundation.NSError, file: Swift.StaticString = #file, line: Swift.UInt = #line, function: Swift.StaticString = #function)
+public func trackException(_ exception: @autoclosure () -> Foundation.NSException, file: Swift.StaticString = #file, line: Swift.UInt = #line, function: Swift.StaticString = #function)
+public func APLogVerbose(_ message: @autoclosure () -> Swift.String, file: Swift.StaticString = #file, line: Swift.UInt = #line, function: Swift.StaticString = #function)
+public func APLogDebug(_ message: @autoclosure () -> Swift.String, file: Swift.StaticString = #file, line: Swift.UInt = #line, function: Swift.StaticString = #function)
+public func APLogInfo(_ message: @autoclosure () -> Swift.String, file: Swift.StaticString = #file, line: Swift.UInt = #line, function: Swift.StaticString = #function)
+public func APLogWarn(_ message: @autoclosure () -> Swift.String, file: Swift.StaticString = #file, line: Swift.UInt = #line, function: Swift.StaticString = #function)
+public func APLogError(_ message: @autoclosure () -> Swift.String, file: Swift.StaticString = #file, line: Swift.UInt = #line, function: Swift.StaticString = #function)
