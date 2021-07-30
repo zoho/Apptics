@@ -77,7 +77,7 @@ Create a run script
 * `--debug-mode` 0 for development / 1 for production / 2 for testing 
 * `--upload-symbols` based on this parameter we decide to upload dsym to the server. 
 * `--release-configurations` is a optional param, pass your configuration name Debug, Release or your custom name with comma separated for which the dSYMs will be uploaded without any prompt during App store submission process via CI, CT and CD.
-*`----config-file-path` String - Provide the path of apptics-config.plist file if to any sub directory instead of root.
+* `----config-file-path` String - Provide the path of apptics-config.plist file if to any sub directory instead of root.
 
 # Features
 
