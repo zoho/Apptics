@@ -101,7 +101,7 @@ class AppticsModerator
           objcm_fc_m0.concat("\tswitch (type) {\n")
           flag2 = false
           
-          objcm_fc_m1.concat("\tNSString* event_str=[[NSString stringWithFormat:@\"%@_%@\",group, event] lowerCaseString];\n\n\t")
+          objcm_fc_m1.concat("\tNSString* event_str=[NSString stringWithFormat:@\"%@_%@\",group, event];\n\n\t")
           event_hash.map do | group, groupInfo|
               
             group = group.strip.gsub(/[^0-9A-Za-z]/, '_')
