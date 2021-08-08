@@ -10,7 +10,7 @@
 		</data>
 		<key>AppticsResources.bundle/AppticsResources</key>
 		<data>
-		jxxWXHSElVRGmwcg6g3pzC+vzLg=
+		Vg4CVQ/dKfrQxUok0XQJpxuxJ74=
 		</data>
 		<key>AppticsResources.bundle/Base.lproj/CrossPromo.strings</key>
 		<dict>
@@ -36,35 +36,35 @@
 		</data>
 		<key>AppticsResources.bundle/Info.plist</key>
 		<data>
-		cC4VeLEE/uoTb+tU0A45ut5mmRA=
+		DE7Bessl5VQ+BuWVHnipQ8z5roc=
 		</data>
 		<key>AppticsResources.bundle/PromotedAppsController.nib/objects-11.0+.nib</key>
 		<data>
-		FJesiAj2qagp18a0lZU54yOtLnQ=
+		JNhgIp0IfC2w80vjzHYbFLFBZuI=
 		</data>
 		<key>AppticsResources.bundle/PromotedAppsController.nib/runtime.nib</key>
 		<data>
-		2uV9IxfsQ+umXtVX3DMEksUnBpw=
+		KSJGTUQSHzxB9AnN41D3fKdNzf0=
 		</data>
 		<key>AppticsResources.bundle/ZAAppUpdateAlert.nib</key>
 		<data>
-		wyCfICtDhqfJFF8DIcCn0RrvODM=
+		MYtgJXBoC6Y0uX7e70Zo+Tvj9Uo=
 		</data>
 		<key>AppticsResources.bundle/ZACustomAlertController.nib</key>
 		<data>
-		MCpjAeqP/RaWRzaWlqbE24gUP6c=
+		CxtGYsNiZDc55yLxp2IMSEM5QOs=
 		</data>
 		<key>AppticsResources.bundle/ZAPIIMTableViewCell.nib</key>
 		<data>
-		zUUDsZg1K7AcEvn5JIUxN41GeyI=
+		5huM9XfYGJeaCpLFv1l402KrGyU=
 		</data>
 		<key>AppticsResources.bundle/ZAStoryboard.storyboardc/8oG-LS-Vhe-view-2Jk-9I-SIC.nib/objects-11.0+.nib</key>
 		<data>
-		uJbea/jPqwbyULhaTcs5i6zLdu0=
+		NtTa8+dZ5S32jnPBpdslDXRVoow=
 		</data>
 		<key>AppticsResources.bundle/ZAStoryboard.storyboardc/8oG-LS-Vhe-view-2Jk-9I-SIC.nib/runtime.nib</key>
 		<data>
-		I1gLybBHsNA424WEedyscg9wGWE=
+		+0Qr393JS5a5Snm929vi+PlgsTw=
 		</data>
 		<key>AppticsResources.bundle/ZAStoryboard.storyboardc/Info.plist</key>
 		<data>
@@ -72,23 +72,23 @@
 		</data>
 		<key>AppticsResources.bundle/ZAStoryboard.storyboardc/pIIManagerController.nib/objects-11.0+.nib</key>
 		<data>
-		iykwP2MXr9CXLgStz2TQncw7b7s=
+		PIWW/YuBqEeHC+rwiHWPt4QQUQI=
 		</data>
 		<key>AppticsResources.bundle/ZAStoryboard.storyboardc/pIIManagerController.nib/runtime.nib</key>
 		<data>
-		mvmJW2ODzUwHUuB7j0E0CyybVZk=
+		4OOs+w0ypyncDL1bapudAVX93dw=
 		</data>
 		<key>AppticsResources.bundle/ZAUserConsentAlert.nib</key>
 		<data>
-		vwHXaFvrSdUkk4l8iEG0xJubk+o=
+		aFdh0olM9aRiQGj82HuDj0glHjc=
 		</data>
 		<key>AppticsResources.bundle/ZAUserConsentAlertV2.nib</key>
 		<data>
-		j85sw6S2RvZkpUgovgXGPk8L3DU=
+		vbC93c8m+rpS5RkaXlVgcexNOZM=
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeResources</key>
 		<data>
-		wTGoyseOKdo/v1+QTP6UkjRZiGM=
+		AiNlkLkqe1l1H2khlwAXosdGw78=
 		</data>
 		<key>AppticsResources.bundle/app_update.png</key>
 		<data>
@@ -350,7 +350,7 @@
 		</dict>
 		<key>AppticsResources.bundle/promotedAppViewCell.nib</key>
 		<data>
-		ovmyfjUctPeD1+rzFIxRxa+QPDI=
+		RRQRkWJFIQ6mgy1R2eyCOdDP1eY=
 		</data>
 		<key>AppticsResources.bundle/pt-BR.lproj/CrossPromo.strings</key>
 		<dict>
@@ -654,7 +654,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		BR0uxezG/jI3h59KzpLVQ+V2VOg=
+		zpop2XR1PCEFoV1I5QGFNoeTqCo=
 		</data>
 		<key>Modules/Apptics.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -738,11 +738,11 @@
 		</data>
 		<key>ZBugSquashResources.bundle/BSDiagnosticInfoViewController.nib/objects-11.0+.nib</key>
 		<data>
-		5CAoUQdqT/Mkdw2csIYl3hiKCI4=
+		jaYDSk26wj9SC8lPk0ApXC0PFb8=
 		</data>
 		<key>ZBugSquashResources.bundle/BSDiagnosticInfoViewController.nib/runtime.nib</key>
 		<data>
-		RQ4e7FljbkrLFl2G1G4DGpvrzaE=
+		uYrFdCoQRVKOFVCMDQh5+FbAXXU=
 		</data>
 		<key>ZBugSquashResources.bundle/Base.lproj/NewBugViewController.strings</key>
 		<dict>
@@ -764,15 +764,15 @@
 		</dict>
 		<key>ZBugSquashResources.bundle/FeedbackDataTableViewCell.nib</key>
 		<data>
-		lRJ81l5wErRPFiUnBjmX5dUGREc=
+		DxPvRNB0j1OCtvzJCHMofoNkfbo=
 		</data>
 		<key>ZBugSquashResources.bundle/FeedbackKit.storyboardc/FeedbackDataController.nib/objects-11.0+.nib</key>
 		<data>
-		ZEwQo7N+d+ZYuYJCZHO1BhZdqLg=
+		oA+h13tXkqimwLnZ1lOk7KETeeI=
 		</data>
 		<key>ZBugSquashResources.bundle/FeedbackKit.storyboardc/FeedbackDataController.nib/runtime.nib</key>
 		<data>
-		VgTmP273sO5UFqi0KZSB95hw1FY=
+		iPgazfCKZFDuLu0TO4BwJgnBJxo=
 		</data>
 		<key>ZBugSquashResources.bundle/FeedbackKit.storyboardc/Info.plist</key>
 		<data>
@@ -780,23 +780,23 @@
 		</data>
 		<key>ZBugSquashResources.bundle/FeedbackKit.storyboardc/njx-Nt-Bnw-view-g8R-bb-haf.nib/objects-11.0+.nib</key>
 		<data>
-		HBrzi9eRwRYsx3AEW765oLT5Du0=
+		LIFWMNZluhNygLrpuF8WkbIiEC4=
 		</data>
 		<key>ZBugSquashResources.bundle/FeedbackKit.storyboardc/njx-Nt-Bnw-view-g8R-bb-haf.nib/runtime.nib</key>
 		<data>
-		V5OT8NMIM9j87TnmtVL0idRneKM=
+		IJvyikbSG3eeLGkNOZD+JXmCrEQ=
 		</data>
 		<key>ZBugSquashResources.bundle/Info.plist</key>
 		<data>
-		1YglH9tUoS0BsFcdvZGdOq1xe1o=
+		psSDBwnc7gBixsOfiyEPAo0OYaI=
 		</data>
 		<key>ZBugSquashResources.bundle/NewBugViewController.nib/objects-11.0+.nib</key>
 		<data>
-		NqWc0W/3169Gp0MJp6kdQbXfuDQ=
+		rpEDJr3G6EYRBjQPWbMey2VTgFA=
 		</data>
 		<key>ZBugSquashResources.bundle/NewBugViewController.nib/runtime.nib</key>
 		<data>
-		ElRaUViAYnWwskq68p3wmZImDzM=
+		5MMN9ZOZS7F9pNP1Dd6isqJKf4U=
 		</data>
 		<key>ZBugSquashResources.bundle/Screenshot-app.ttf</key>
 		<data>
@@ -804,79 +804,79 @@
 		</data>
 		<key>ZBugSquashResources.bundle/ZAAddImage.nib/objects-12.3+.nib</key>
 		<data>
-		amXAoRlDfyU0Xt5r0GOc7FHnKFw=
+		+WCxY6jrIQ458H0SPCjvAzHRtgY=
 		</data>
 		<key>ZBugSquashResources.bundle/ZAAddImage.nib/runtime.nib</key>
 		<data>
-		otiNyhWxd9U+pGxGhuBMswlu/bU=
+		d2zsEXhqtOXPfVGHuOFNRo/6RZM=
 		</data>
 		<key>ZBugSquashResources.bundle/ZADiagnosticInfoCell.nib</key>
 		<data>
-		EumytNJIgTnRoOCqnkBFvd0pj2Y=
+		7Akswi6iHai24eZcBVPi6jcWtpo=
 		</data>
 		<key>ZBugSquashResources.bundle/ZADiagnosticInfoViewController.nib/objects-11.0+.nib</key>
 		<data>
-		oF6SSLpKWNpNkHZfTpaflkrBDrk=
+		W1qOVHIDqSh1G4g3sZI1OfhawlI=
 		</data>
 		<key>ZBugSquashResources.bundle/ZADiagnosticInfoViewController.nib/runtime.nib</key>
 		<data>
-		soYOrwQXaiEMGpmVPGkVeW5Oxws=
+		1K7pDvUNGBr70FqmmqyeyXSISsg=
 		</data>
 		<key>ZBugSquashResources.bundle/ZAImageEditorCell.nib/objects-12.3+.nib</key>
 		<data>
-		+OwOPX8noEyajIWNzsI9d7e54k8=
+		AlXmhO2OYS9kidLSF5sOkFpqTvQ=
 		</data>
 		<key>ZBugSquashResources.bundle/ZAImageEditorCell.nib/runtime.nib</key>
 		<data>
-		V5j/Ss0Pp+HFDO0cdeJMTU5tzdc=
+		wHfWZAcze2/EiZiN0NQ6CWXOit8=
 		</data>
 		<key>ZBugSquashResources.bundle/ZAImageListViewCell.nib</key>
 		<data>
-		KHNgTPpveu8rhjdK2g3PphRKxIg=
+		Pz8Q2ltUwF5ERWLJNLEkBS7FS70=
 		</data>
 		<key>ZBugSquashResources.bundle/ZAImagePicker.nib</key>
 		<data>
-		6nN1BNPy57TPv9x8NzQtTKxqKpc=
+		57lW96UI078widVInkMgZ+rnegI=
 		</data>
 		<key>ZBugSquashResources.bundle/ZAImagePickerCell.nib/objects-12.3+.nib</key>
 		<data>
-		NS8c/XNLs9GoVWsZwnFfLQKpQTE=
+		dN0mErIiPy+m0nmZtUwivGIrzZ8=
 		</data>
 		<key>ZBugSquashResources.bundle/ZAImagePickerCell.nib/runtime.nib</key>
 		<data>
-		ZIG02/azvClVokDo37BQ5SjDSls=
+		zNIWBZVcFbNYuRSOUan42diFRyk=
 		</data>
 		<key>ZBugSquashResources.bundle/ZAIncludeLogConsent.nib/objects-11.0+.nib</key>
 		<data>
-		YfXpMzBkAxyB04MwciTMsRiWD5w=
+		i+qM7hBClB7rsYrTCbYph9QIJeg=
 		</data>
 		<key>ZBugSquashResources.bundle/ZAIncludeLogConsent.nib/runtime.nib</key>
 		<data>
-		xhOQ6rE1jPyBZZTb6B2rH13pF88=
+		ohSAlXSpRKg7oZeGpbsmVK/s40M=
 		</data>
 		<key>ZBugSquashResources.bundle/ZASectionHeaderView.nib</key>
 		<data>
-		q0seR+sSUMIoaB4YjlUJw7Gh9j4=
+		aaS0fAARInwdewtEJN/O2uwNT+E=
 		</data>
 		<key>ZBugSquashResources.bundle/ZASystemLogListViewController.nib/objects-11.0+.nib</key>
 		<data>
-		lnb1aZ42gzL/MEql2UUXxryVFCQ=
+		retOYVMcpMUBUmDNawRr+NEBcIc=
 		</data>
 		<key>ZBugSquashResources.bundle/ZASystemLogListViewController.nib/runtime.nib</key>
 		<data>
-		njTyr6insHwMrPrLojaZ0CZqisQ=
+		+OktJ24s0nTK+QC4wSbkSiJsKjA=
 		</data>
 		<key>ZBugSquashResources.bundle/ZASystemLogsViewController.nib</key>
 		<data>
-		ukQVkvRXFyPRBILChG+vjUuATbQ=
+		t81S1YvAaIyciCVbgckgZcRWiOw=
 		</data>
 		<key>ZBugSquashResources.bundle/ZBugSquashResources</key>
 		<data>
-		UbLBx1bWE8TElvIsas8P+h7NivE=
+		nf7P4fSssuW2uEao8zrPSfrF2Yw=
 		</data>
 		<key>ZBugSquashResources.bundle/_CodeSignature/CodeResources</key>
 		<data>
-		Bcw5036J9ByFfwk/+l+yzuqQYqU=
+		ObdY0012D2TtIyCrQv5SwAroI9s=
 		</data>
 		<key>ZBugSquashResources.bundle/cs.lproj/NewBugViewController.strings</key>
 		<dict>
@@ -1310,11 +1310,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jxxWXHSElVRGmwcg6g3pzC+vzLg=
+			Vg4CVQ/dKfrQxUok0XQJpxuxJ74=
 			</data>
 			<key>hash2</key>
 			<data>
-			6F1DBjnZqsk+el3dS7WBdLbtJf5JcPBQQ/prf0uRvcw=
+			LeHwMVx6Df/PGhxUeSQBoO4/Dzmk14I4u/YrZm1KMLE=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/Base.lproj/CrossPromo.strings</key>
@@ -1358,88 +1358,88 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cC4VeLEE/uoTb+tU0A45ut5mmRA=
+			DE7Bessl5VQ+BuWVHnipQ8z5roc=
 			</data>
 			<key>hash2</key>
 			<data>
-			ig/oDeR3ffkYjyZtOnVzEZgzJwRSIXLvka+oXi3I6wI=
+			I0GRGWtyJUAE8LsLtE7aHz9b4LaJ/YDafdLdyxuzQgM=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/PromotedAppsController.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			FJesiAj2qagp18a0lZU54yOtLnQ=
+			JNhgIp0IfC2w80vjzHYbFLFBZuI=
 			</data>
 			<key>hash2</key>
 			<data>
-			f8t+f0OCroNYnRS8hgN1bWswjuoQxpgl0wZK3zE/asI=
+			5cjLox0yQbztFQiqXTLsnDzPGg+cbSujxYy/WcqIdaM=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/PromotedAppsController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2uV9IxfsQ+umXtVX3DMEksUnBpw=
+			KSJGTUQSHzxB9AnN41D3fKdNzf0=
 			</data>
 			<key>hash2</key>
 			<data>
-			Zclz4NO7alSPZcL3atnC2OuaFzI3ZDF8QJAh35LQT3c=
+			0YD+PrWKFjxhVIvaffKY1t8hRQ6A2VfJAUhIhVUH/EU=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/ZAAppUpdateAlert.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			wyCfICtDhqfJFF8DIcCn0RrvODM=
+			MYtgJXBoC6Y0uX7e70Zo+Tvj9Uo=
 			</data>
 			<key>hash2</key>
 			<data>
-			0k+lAxSH3KMtfOUbV6n0k5qoDksc9W758VTdCvnxicw=
+			Zg8QPBACSnWrzUYT7VlBo1P8JfNBKydK9WJIXaGLCFc=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/ZACustomAlertController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			MCpjAeqP/RaWRzaWlqbE24gUP6c=
+			CxtGYsNiZDc55yLxp2IMSEM5QOs=
 			</data>
 			<key>hash2</key>
 			<data>
-			bQ5AGFdv5M9NMwXnvythYnf0B97Jh6lie41SQ81gmw0=
+			buqsPytaLRoFgTMzvufzGXug2VZyafP1QNhc8ZatBIk=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/ZAPIIMTableViewCell.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			zUUDsZg1K7AcEvn5JIUxN41GeyI=
+			5huM9XfYGJeaCpLFv1l402KrGyU=
 			</data>
 			<key>hash2</key>
 			<data>
-			G9BRKoII17lAo1muwYZzgsxluHmealakA4iixXxfM5I=
+			fPV/RU2TSsYpikV5F8cYHeoOoDEZHk9KxnY47e0JReY=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/ZAStoryboard.storyboardc/8oG-LS-Vhe-view-2Jk-9I-SIC.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			uJbea/jPqwbyULhaTcs5i6zLdu0=
+			NtTa8+dZ5S32jnPBpdslDXRVoow=
 			</data>
 			<key>hash2</key>
 			<data>
-			9SBkixo7JxW93y5OR8z5U8cqM05ceyhCcCVv+JYE9Gs=
+			tVafNlggU/cGnGpS8k332T+dGSq18uKh69l7H3sqLII=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/ZAStoryboard.storyboardc/8oG-LS-Vhe-view-2Jk-9I-SIC.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			I1gLybBHsNA424WEedyscg9wGWE=
+			+0Qr393JS5a5Snm929vi+PlgsTw=
 			</data>
 			<key>hash2</key>
 			<data>
-			a6H2dwDizMRvwwgN3x8u0qvFdKcZpL9NZAjU0eFS634=
+			rsSA2SrLfyQPPDT/n4BrbqgWGxogzehYZN8GiAshVH8=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/ZAStoryboard.storyboardc/Info.plist</key>
@@ -1457,55 +1457,55 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			iykwP2MXr9CXLgStz2TQncw7b7s=
+			PIWW/YuBqEeHC+rwiHWPt4QQUQI=
 			</data>
 			<key>hash2</key>
 			<data>
-			Yp2U/L2W0Zna3RlIfQ6EeHcqn+J/QCSBlYeoZfKUZSQ=
+			ak25B/h0/th+BS2vEvn8jiAsq7L2JdjeSStpI7FjUFA=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/ZAStoryboard.storyboardc/pIIManagerController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			mvmJW2ODzUwHUuB7j0E0CyybVZk=
+			4OOs+w0ypyncDL1bapudAVX93dw=
 			</data>
 			<key>hash2</key>
 			<data>
-			jv+uk7UJeWBpt38MzZ0nvujVLhxT5E9MRGbnj/wXzGc=
+			i9L3CeutJkzqLa4F7KkkBA7NHK10dVtO7eTNI6b3EKQ=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/ZAUserConsentAlert.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vwHXaFvrSdUkk4l8iEG0xJubk+o=
+			aFdh0olM9aRiQGj82HuDj0glHjc=
 			</data>
 			<key>hash2</key>
 			<data>
-			phJZoZ2VxCK9GVte9zrN/xGhpRdPeppmGdwYpAvqZIg=
+			aM/b0L4OEsg87rYckXMstiGJbER+0wO2TTamKsBzaAM=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/ZAUserConsentAlertV2.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			j85sw6S2RvZkpUgovgXGPk8L3DU=
+			vbC93c8m+rpS5RkaXlVgcexNOZM=
 			</data>
 			<key>hash2</key>
 			<data>
-			uuLuqyJOybvir6xX1JQASZg4KQTUIOB7DYYp1ibFVpw=
+			HyOMWOHmin+mko6o4XUq/fgJEjzfDcncXDqjQSv4qgw=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			wTGoyseOKdo/v1+QTP6UkjRZiGM=
+			AiNlkLkqe1l1H2khlwAXosdGw78=
 			</data>
 			<key>hash2</key>
 			<data>
-			SKy6/GqRGf2p4IGXHGqOiMRayF1SOVRCqT70e2HrlCA=
+			yMQQL3whL1IG1BwQgER1bVFZXcmxfcuV26DnDeh8dkk=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/app_update.png</key>
@@ -1916,11 +1916,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ovmyfjUctPeD1+rzFIxRxa+QPDI=
+			RRQRkWJFIQ6mgy1R2eyCOdDP1eY=
 			</data>
 			<key>hash2</key>
 			<data>
-			9d6kiOishTP6CxwKDRsv48FGiOJCsYn+Aj9U8mPtK0I=
+			ZLOXOGv1O1drd3YAWjHMXP0Bs5fp4CWJaZgEflDhKlc=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/pt-BR.lproj/CrossPromo.strings</key>
@@ -2784,22 +2784,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5CAoUQdqT/Mkdw2csIYl3hiKCI4=
+			jaYDSk26wj9SC8lPk0ApXC0PFb8=
 			</data>
 			<key>hash2</key>
 			<data>
-			MwtYffFnIGB96O3HLKn0LyNHhSILrcOZ8khApvqx+fA=
+			596ewjlTsAgsVDUi96ZrM/ndsPHxZxYkUlgiAnGJA7M=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/BSDiagnosticInfoViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			RQ4e7FljbkrLFl2G1G4DGpvrzaE=
+			uYrFdCoQRVKOFVCMDQh5+FbAXXU=
 			</data>
 			<key>hash2</key>
 			<data>
-			RTtY//TEAb2+uxkREOaYB1JamPqptCGrUTnrrUkbd3w=
+			Ac5MEQdB9oQezNnitOpRr8MIalHbLgvji1z+dU1xgb4=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/Base.lproj/NewBugViewController.strings</key>
@@ -2832,33 +2832,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lRJ81l5wErRPFiUnBjmX5dUGREc=
+			DxPvRNB0j1OCtvzJCHMofoNkfbo=
 			</data>
 			<key>hash2</key>
 			<data>
-			yFWvrAlfrqyVowxdwrq1poMSyJHAJpbPlbxWQZzQ4ps=
+			r0t5dzJJNQuqOdJusvxTyKg6xMkLqMfUhHtv/HnyICs=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/FeedbackKit.storyboardc/FeedbackDataController.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ZEwQo7N+d+ZYuYJCZHO1BhZdqLg=
+			oA+h13tXkqimwLnZ1lOk7KETeeI=
 			</data>
 			<key>hash2</key>
 			<data>
-			ubD6Gz46NmAItDU0HcuP1rVel9Fyamjzmg/aDRoIWy4=
+			XF77zAjHR1rl04BAbmUYhwbHdaqiz8oeOI5imwIGfiA=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/FeedbackKit.storyboardc/FeedbackDataController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			VgTmP273sO5UFqi0KZSB95hw1FY=
+			iPgazfCKZFDuLu0TO4BwJgnBJxo=
 			</data>
 			<key>hash2</key>
 			<data>
-			nDYnrtnTFKSLIIDQRhSkL51PJdLBhq5X1ESc2tND51g=
+			a+kBmHz00OblzpEMTfDVDdH4bjy8sYgbbrxcvXOOqEk=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/FeedbackKit.storyboardc/Info.plist</key>
@@ -2876,55 +2876,55 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HBrzi9eRwRYsx3AEW765oLT5Du0=
+			LIFWMNZluhNygLrpuF8WkbIiEC4=
 			</data>
 			<key>hash2</key>
 			<data>
-			KHPolcyPxzRH7owJy2rx3DjKYiMCaj5gNq4GE+MSKjI=
+			WQFPZPIQC8+xUnu+JAPU7S45pc63JkVWO2VxnN+TL/Y=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/FeedbackKit.storyboardc/njx-Nt-Bnw-view-g8R-bb-haf.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			V5OT8NMIM9j87TnmtVL0idRneKM=
+			IJvyikbSG3eeLGkNOZD+JXmCrEQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			1jnIfjCJ2zuCDvTbInTkc8FlGA4XE3m8Yon5RVOEdr4=
+			8cTcgYchnd/v6U/VC/V07HjHhtCAy5zGK7+pmcqAxR4=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			1YglH9tUoS0BsFcdvZGdOq1xe1o=
+			psSDBwnc7gBixsOfiyEPAo0OYaI=
 			</data>
 			<key>hash2</key>
 			<data>
-			OtTO+2R8R9YyckLRGIYCOrpj6EZGDDLdF46gKZSPGB0=
+			fO1EdB9dElN16bF4+huTEoBvPhMvoI/VWvM3XfrrhyI=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/NewBugViewController.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			NqWc0W/3169Gp0MJp6kdQbXfuDQ=
+			rpEDJr3G6EYRBjQPWbMey2VTgFA=
 			</data>
 			<key>hash2</key>
 			<data>
-			xVGIoqSZ82eSS/twsrfG46Qy+vlYvH84W3V0ePz1iwI=
+			3lFGKtF8JU/tvfM7h84yF00vNHrFEITJvufgaPjOW+U=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/NewBugViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ElRaUViAYnWwskq68p3wmZImDzM=
+			5MMN9ZOZS7F9pNP1Dd6isqJKf4U=
 			</data>
 			<key>hash2</key>
 			<data>
-			duEecGzRYukyBs1dCAQR+9jSIlq/PYr04klUdrvUL+M=
+			mQaqr/E9cdDJ3J+AK6Q+9mbJfxiY7iMPGcJ0fzCrnjc=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/Screenshot-app.ttf</key>
@@ -2942,209 +2942,209 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			amXAoRlDfyU0Xt5r0GOc7FHnKFw=
+			+WCxY6jrIQ458H0SPCjvAzHRtgY=
 			</data>
 			<key>hash2</key>
 			<data>
-			PfA6k6AjOGR35oR+0QnwvAjzC8fqnJi4CxLMkfQow1I=
+			VCdgjxDbGyot5ZgTzdmrFj808lDvgK+D8OplSonu0xg=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/ZAAddImage.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			otiNyhWxd9U+pGxGhuBMswlu/bU=
+			d2zsEXhqtOXPfVGHuOFNRo/6RZM=
 			</data>
 			<key>hash2</key>
 			<data>
-			mJr7HjfiKjQVPhuEk3PAeHFGTjFDvE0W05ygvNcuLYk=
+			2tQog/0HjXrYttTptXqqsxnBilJv+5GBST7l0AYRyA0=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/ZADiagnosticInfoCell.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			EumytNJIgTnRoOCqnkBFvd0pj2Y=
+			7Akswi6iHai24eZcBVPi6jcWtpo=
 			</data>
 			<key>hash2</key>
 			<data>
-			SzsJq2dj5bYuzjo4RJzEEHsoSq/f/AwRcPR+/YSCkKY=
+			sXgryH1lb2pFIsbIWyooKagbhwu+GYJp4C2QtezMcZM=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/ZADiagnosticInfoViewController.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			oF6SSLpKWNpNkHZfTpaflkrBDrk=
+			W1qOVHIDqSh1G4g3sZI1OfhawlI=
 			</data>
 			<key>hash2</key>
 			<data>
-			bSdkoM7ZYP6wqW7ZHAufxDHfsYMQsGKropQjmciOIWg=
+			20UsNFMplDrqH4d584Mc0o4sP/Vu9zcpnD/vlItmbi4=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/ZADiagnosticInfoViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			soYOrwQXaiEMGpmVPGkVeW5Oxws=
+			1K7pDvUNGBr70FqmmqyeyXSISsg=
 			</data>
 			<key>hash2</key>
 			<data>
-			Nh9Uok/9dFMquDBjX0OtgfACJtt5T3d+bubrRSU0Leo=
+			We2q84f350PuMwWEr5+WiXBO8bac0cGGlUiTIMRZR8U=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/ZAImageEditorCell.nib/objects-12.3+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+OwOPX8noEyajIWNzsI9d7e54k8=
+			AlXmhO2OYS9kidLSF5sOkFpqTvQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			r6y08T+pgoYZ2cMahJiwnc/8Cr9gR4kL909+3MxqFnc=
+			B83SxnI58v12QGVPYspXYeb3q3FDPYBfFlSMXsdczYY=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/ZAImageEditorCell.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			V5j/Ss0Pp+HFDO0cdeJMTU5tzdc=
+			wHfWZAcze2/EiZiN0NQ6CWXOit8=
 			</data>
 			<key>hash2</key>
 			<data>
-			SaHu1k73w0niWCMqbWf2peE4kBWmDXAtGAJN1NMzNWE=
+			csmimaTy8gsXtYw7AZNxVvRmEQlHdm/CTcSvaAJiZZk=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/ZAImageListViewCell.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			KHNgTPpveu8rhjdK2g3PphRKxIg=
+			Pz8Q2ltUwF5ERWLJNLEkBS7FS70=
 			</data>
 			<key>hash2</key>
 			<data>
-			fKV8L2eluowYWahcb7n4azXsYcx9HQOGB3GxJ+JaJaY=
+			7EUOXTbuXmBI9ioTXZQRZIEdAbBDNonx8cg+6TP/8Uc=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/ZAImagePicker.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6nN1BNPy57TPv9x8NzQtTKxqKpc=
+			57lW96UI078widVInkMgZ+rnegI=
 			</data>
 			<key>hash2</key>
 			<data>
-			H8rueYtrjx2FcRS/kbOWsYN1wzkqfOL9v0ptQGgBgms=
+			z8u7v+HzC+hnTqlDQr3z1T8e4IKAGVXdjbSSTTEznZg=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/ZAImagePickerCell.nib/objects-12.3+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			NS8c/XNLs9GoVWsZwnFfLQKpQTE=
+			dN0mErIiPy+m0nmZtUwivGIrzZ8=
 			</data>
 			<key>hash2</key>
 			<data>
-			PvETKz1yT5qL/xERf51AjT6YX84DkrFy4q1SJg7A2JA=
+			AOyLom4OvhSsFo7MdeossmVI+VI5oeunzh2L7YX0ljo=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/ZAImagePickerCell.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ZIG02/azvClVokDo37BQ5SjDSls=
+			zNIWBZVcFbNYuRSOUan42diFRyk=
 			</data>
 			<key>hash2</key>
 			<data>
-			wM637fPNfTK7fqxYpBGZ+7Dxy2iRdQGALRPmHzbNdPM=
+			W6fmvBvr7LM6rh+RCOrGRdItPYTv4+JnwgRzTni92So=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/ZAIncludeLogConsent.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			YfXpMzBkAxyB04MwciTMsRiWD5w=
+			i+qM7hBClB7rsYrTCbYph9QIJeg=
 			</data>
 			<key>hash2</key>
 			<data>
-			oMkl4C7fkDoyH3dITQrfmECjTONuFlNWERamDgMBAMQ=
+			e0jDHZIkgy0RarNX1AzUZ7Q82a/Z0/FnLOnZQb06XYc=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/ZAIncludeLogConsent.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			xhOQ6rE1jPyBZZTb6B2rH13pF88=
+			ohSAlXSpRKg7oZeGpbsmVK/s40M=
 			</data>
 			<key>hash2</key>
 			<data>
-			gVIHq3z/Ti1h+RIxm6R9IjjzsXpaNVAtzEjRUIOac9k=
+			+t17ef4jeEUFEOKdVpKBZPiBc2sti1f6i3UpcvMoanE=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/ZASectionHeaderView.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			q0seR+sSUMIoaB4YjlUJw7Gh9j4=
+			aaS0fAARInwdewtEJN/O2uwNT+E=
 			</data>
 			<key>hash2</key>
 			<data>
-			h3QE9wBbIZP+Z4Vy2Qh6+oeM3bulFiPg7WPxJ09tVeg=
+			JtY7sutKDQJf3F/Fo8NeEkibmm2R/fdyhfiIX+YBsPc=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/ZASystemLogListViewController.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			lnb1aZ42gzL/MEql2UUXxryVFCQ=
+			retOYVMcpMUBUmDNawRr+NEBcIc=
 			</data>
 			<key>hash2</key>
 			<data>
-			PAZgJMXjC+Dq4aIOryley7XCy0EjuPF7Y5rOFVTgl7g=
+			qbfNHwVosdfSx+Odx+ot4vOcV291yWCMLlTtNFi7b+Q=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/ZASystemLogListViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			njTyr6insHwMrPrLojaZ0CZqisQ=
+			+OktJ24s0nTK+QC4wSbkSiJsKjA=
 			</data>
 			<key>hash2</key>
 			<data>
-			aOsabEUXcw414yaVnrdooOsyeaCR7i/q5B9d9fVHBqk=
+			XbB3zMpCadeI3vhLwhjUh+2na3wnVqjMHXxxhRtWU2U=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/ZASystemLogsViewController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ukQVkvRXFyPRBILChG+vjUuATbQ=
+			t81S1YvAaIyciCVbgckgZcRWiOw=
 			</data>
 			<key>hash2</key>
 			<data>
-			hDSoAl1+moNrY54kI9gddatT3/pV9j50wm/AXSy1VIE=
+			03XBH52vedBWF+k5ZtvGa+6vDWKaTo4JjrCQNC7wnfE=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/ZBugSquashResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			UbLBx1bWE8TElvIsas8P+h7NivE=
+			nf7P4fSssuW2uEao8zrPSfrF2Yw=
 			</data>
 			<key>hash2</key>
 			<data>
-			PFI7b5VsMj3778uk6hQ1eNWuAIiueZ+aybxq4PWKi/E=
+			Vv7XAi+zmSpAK/VsVjVSA/N9SL+MqxBkG27YvpqbqLs=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Bcw5036J9ByFfwk/+l+yzuqQYqU=
+			ObdY0012D2TtIyCrQv5SwAroI9s=
 			</data>
 			<key>hash2</key>
 			<data>
-			RqtOnSEDzl39oHjuldo5N28Cqk0CgZbDw76WZudZoR0=
+			KjJnUZngLEgfXz/iqzm3Q9j8P0KffpnlNaUF7D+A/jY=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/cs.lproj/NewBugViewController.strings</key>

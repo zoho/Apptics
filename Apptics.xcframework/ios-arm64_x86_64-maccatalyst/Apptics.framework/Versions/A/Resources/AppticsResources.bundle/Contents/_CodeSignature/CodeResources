@@ -22,23 +22,23 @@
 		</data>
 		<key>Resources/PromotedAppsController.nib</key>
 		<data>
-		z9NTYyxD9Guhd0H2Wj6CgV48+Ak=
+		U7q1t3iziOf+u+XxNTQ8v9HVSMI=
 		</data>
 		<key>Resources/ZAAppUpdateAlert.nib</key>
 		<data>
-		wuOn8fa1IqqWH//5XOS5YZQIUEA=
+		QISRZXHl9OEwLoWsWayX2iMgFuM=
 		</data>
 		<key>Resources/ZACustomAlertController.nib</key>
 		<data>
-		1DigSJVVxXNUm1yaR1FO5pKTmkk=
+		jZysTTHdbNXQUBNzj9+zZX0X0bw=
 		</data>
 		<key>Resources/ZAPIIMTableViewCell.nib</key>
 		<data>
-		XJxjL2ISS/ucONkSgg5g5RENs+E=
+		DAxHmGskO2SwAhtW21aLITw7KDc=
 		</data>
 		<key>Resources/ZAStoryboard.storyboardc/8oG-LS-Vhe-view-2Jk-9I-SIC.nib</key>
 		<data>
-		ic/MgPhOXcoV9vev2YJaaOQMS60=
+		ZP4haC6YRcrbDPZJ8rJAIVp0kkw=
 		</data>
 		<key>Resources/ZAStoryboard.storyboardc/Info.plist</key>
 		<data>
@@ -46,15 +46,15 @@
 		</data>
 		<key>Resources/ZAStoryboard.storyboardc/pIIManagerController.nib</key>
 		<data>
-		4iXEAeWajPnprtFrpxT+h1+zTac=
+		ZjiPQRox9C2pD3V/USWlMmKlbq8=
 		</data>
 		<key>Resources/ZAUserConsentAlert.nib</key>
 		<data>
-		iT9mH1dGtefH/DtQe16DoCFdpSc=
+		q+1A8ou4N3kPXN55JZ6vncVjWt8=
 		</data>
 		<key>Resources/ZAUserConsentAlertV2.nib</key>
 		<data>
-		hwnbQ5JGOI9Vo0h2tlKqNyN5KxA=
+		qjTmxlUeY+uc4QRZ2vZ8IoWMuPw=
 		</data>
 		<key>Resources/app_update.png</key>
 		<data>
@@ -316,7 +316,7 @@
 		</dict>
 		<key>Resources/promotedAppViewCell.nib</key>
 		<data>
-		cHXxFw8WRTq8EaT/dpfXAnH13DI=
+		Amh/DX9VMIEZQPZSt0FFWdBsakQ=
 		</data>
 		<key>Resources/pt-BR.lproj/CrossPromo.strings</key>
 		<dict>
@@ -545,35 +545,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			sV8WeYGEaGtG8WLBPklVCiuQkGL76E42IVnj+tL8iJA=
+			dDQX3jSkDqB9d6vKoqrE6qtDu18aON5AXjU0iqFw7Zc=
 			</data>
 		</dict>
 		<key>Resources/ZAAppUpdateAlert.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			v42nqp0AK75XkEq2uFZXHq/2LZq/sAPyOjq94NC470Q=
+			FgQbORZt4uOV+8rcVfUIpfQ46wnJt3t6F2RYqj0OmWo=
 			</data>
 		</dict>
 		<key>Resources/ZACustomAlertController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			o4R70W0l8oaG+sz/DPL062opAVOYvKyAiSa017KPoTY=
+			J/y5FndOVIL0KGAswSGntJAObgfDz0CY4msNOjtUF/M=
 			</data>
 		</dict>
 		<key>Resources/ZAPIIMTableViewCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oAxaEV9CAK7B8Rk6xSfhKnXrHBzAe6oQGiq6O/rAUcw=
+			+SAiShek9x8y9cCUK2OBmFB6yYgZZt90WLn96Z63ZBk=
 			</data>
 		</dict>
 		<key>Resources/ZAStoryboard.storyboardc/8oG-LS-Vhe-view-2Jk-9I-SIC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5WA32P2QsMSGGwDAbSW4pbWCXQKJYgIQMW+OkKKddtY=
+			iZ/GG9/0sWpvG7DNE8N+SGAb7rgiP85DxYNg3+dEkpw=
 			</data>
 		</dict>
 		<key>Resources/ZAStoryboard.storyboardc/Info.plist</key>
@@ -587,21 +587,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9r9/Tw3UPkxBZYfF65CFP4B3RQodYgzXYWItk9Rb/SM=
+			kqUL3Q6t32YC0uDPpyCKwwgA5ldSsMyknt7BacYm7+c=
 			</data>
 		</dict>
 		<key>Resources/ZAUserConsentAlert.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZdtmLObKTdRdmWqGH1aGkIT0zBIh1yLRN/FAOjv2xVs=
+			ZNhRNJAoIuj48a80T2248gNy1O4f9i3edT9NwxQPLU4=
 			</data>
 		</dict>
 		<key>Resources/ZAUserConsentAlertV2.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Tg5KdPW9QBi+WFv29XGgY7BVj2nnfXRAlNJ8WCtyjDc=
+			ma+UIV3vgHlMWtWwy48tjHulcnNV1Va0GBPOjRittCE=
 			</data>
 		</dict>
 		<key>Resources/app_update.png</key>
@@ -884,7 +884,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZidQucVAtRLxBTqY+cRzMmDGdarTBQ4s2Hrd4DFjZKY=
+			xwOabQdhrldBH2XQRa7zwwvroAOkWjfERanHfmfdL2w=
 			</data>
 		</dict>
 		<key>Resources/pt-BR.lproj/CrossPromo.strings</key>

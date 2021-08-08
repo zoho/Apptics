@@ -6,7 +6,7 @@
 	<dict>
 		<key>AppticsResources_tvOS.bundle/AppticsResources_tvOS</key>
 		<data>
-		2yetrdOlT/uazPKX0ZUAf9fmKi8=
+		FnL12sOTzAwl3xGBRPRJHXnQ4fE=
 		</data>
 		<key>AppticsResources_tvOS.bundle/GDPR.ttf</key>
 		<data>
@@ -14,11 +14,11 @@
 		</data>
 		<key>AppticsResources_tvOS.bundle/Info.plist</key>
 		<data>
-		yhX75K7Y86uA5XR8YUXhteG6B+s=
+		e+lhIGyaJKdF7Q3ZmSn/b/Gh+7g=
 		</data>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeResources</key>
 		<data>
-		LrPj/0ZhSBR/2/B56kTd8+zbNkM=
+		aQPEeZh4RvGVWrG/XA8ixVgp5cU=
 		</data>
 		<key>AppticsResources_tvOS.bundle/cs.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
@@ -275,7 +275,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		u6nqXRf8Ggtd63Dyqjz0mRKStHM=
+		GoIRl3KdA47mslwrVBNSKXR++mQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -288,11 +288,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2yetrdOlT/uazPKX0ZUAf9fmKi8=
+			FnL12sOTzAwl3xGBRPRJHXnQ4fE=
 			</data>
 			<key>hash2</key>
 			<data>
-			cBWAobYOJ3bEJ0hyf63oT624f2s5mAeP7uLH3KQy6WA=
+			KYsQdqg33z202sF8/89HUbXLRa2rzM0mrwVXfvmNOuU=
 			</data>
 		</dict>
 		<key>AppticsResources_tvOS.bundle/GDPR.ttf</key>
@@ -310,22 +310,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yhX75K7Y86uA5XR8YUXhteG6B+s=
+			e+lhIGyaJKdF7Q3ZmSn/b/Gh+7g=
 			</data>
 			<key>hash2</key>
 			<data>
-			Sr2twL2LEZSpj38t4rMXFcYK6bczvNWOlmLXkBHwsFY=
+			A7qQksEQ8XwcumVqmhNWMRZC+jcjbPB7AXJOtIidRf0=
 			</data>
 		</dict>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			LrPj/0ZhSBR/2/B56kTd8+zbNkM=
+			aQPEeZh4RvGVWrG/XA8ixVgp5cU=
 			</data>
 			<key>hash2</key>
 			<data>
-			kMbzm+/TCngR+OtAB7peJo0pTyMJBu1cQ56vVLydZyU=
+			p2UXiWVjtRB7eOsjTZPWaJX1fO38LJ3b2sssMuHksJs=
 			</data>
 		</dict>
 		<key>AppticsResources_tvOS.bundle/cs.lproj/ZAnalyticsLocalizable.strings</key>

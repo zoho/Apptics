@@ -250,14 +250,14 @@ done
 cd "${DWARF_DSYM_FOLDER_PATH}"
 mkdir "${DSYM_ZIP_FPATH}"
 
-cp -r *.dSYM "${DSYM_ZIP_FPATH}"
-cp -r **/*.dSYM "${DSYM_ZIP_FPATH}" 2>/dev/null
+#cp -r *.dSYM "${DSYM_ZIP_FPATH}"
+#cp -r **/*.dSYM "${DSYM_ZIP_FPATH}" 2>/dev/null
 
 echo "Compressing dSYM to: ${DSYM_ZIP_FPATH} ..."
 
 cd /tmp/
 
-(/usr/bin/zip -rv --quiet "${DSYM_ZIP_FPATH}.zip" "$DWARF_DSYM_FILE_NAME") || exitOperation "error: failed creating zip" 0
+#(/usr/bin/zip -rv --quiet "${DSYM_ZIP_FPATH}.zip" "$DWARF_DSYM_FILE_NAME") || exitOperation "error: failed creating zip" 0
 
 echo "${DSYM_ZIP_FPATH}.zip"
 echo "Archive created."
@@ -266,7 +266,7 @@ echo "Archive created."
 URL=${DSYM_UPLOAD_ENDPOINT}${APP_ID}
 echo "Uploading dSYM to Apptics server: ${URL}?${DSYM_UPLOAD_PARAMS}"
 
-STATUS=$(curl "${URL}?${DSYM_UPLOAD_PARAMS}" -v --write-out %{http_code} --silent --output /dev/null -H "zak: ${API_KEY}" -X POST --connect-timeout 60 --max-time 900 --retry 2 --retry-delay 5 -F "dsymfile=@${DSYM_ZIP_FPATH}.zip" )
+STATUS=$(curl "${URL}?${DSYM_UPLOAD_PARAMS}" -v --write-out %{http_code} --silent --output /dev/null -H "zak: ${API_KEY}" -X POST --connect-timeout 60 --max-time 900 --retry 2 --retry-delay 5 -F "dsymfile=@${DSYM_ZIP_FPATH}.zip")
 
 echo "Apptics API server response: ${STATUS}"
 echo "Exit code: ($?)"
@@ -279,12 +279,9 @@ fi
 
 # Remove dSYM archive from tmp dir
 echo "Cleaning up dSYM archive from temp dir..."
-/bin/rm -rv "${DSYM_ZIP_FPATH}.zip"
-/bin/rm -rv "${DSYM_ZIP_FPATH}"
+#/bin/rm -rv "${DSYM_ZIP_FPATH}.zip"
+#/bin/rm -rv "${DSYM_ZIP_FPATH}"
 
 if [ "$?" -ne 0 ]; then
 exitOperation "an error was encountered while uploading dSYM to the server" 0
 fi
-
-
-
