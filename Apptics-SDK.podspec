@@ -8,8 +8,13 @@
 #
 
 Pod::Spec.new do |spec|
+<<<<<<< HEAD:Apptics-SDK.podspec
 spec.name             = "Apptics-SDK"
 spec.version          = "1.0-alpha1"
+=======
+spec.name             = "Apptics"
+spec.version          = "1.0-alpha"
+>>>>>>> 7fb8b49dfd341bb761254b0751fe875bbef599a9:Apptics.podspec
 spec.summary          = "Apptics iOS SDK"
 spec.license          = { :type => "MIT", :text=> <<-LICENSE
 MIT License
