@@ -1,0 +1,20 @@
+PODS:
+  - Apptics-SDK (1.0.1)
+  - Apptics-Swift (1.0.1):
+    - Apptics-SDK (= 1.0.1)
+
+DEPENDENCIES:
+  - Apptics-Swift (= 1.0.1)
+
+SPEC REPOS:
+  https://git.csez.zohocorpin.com/zoho/zohopodspecs.git:
+    - Apptics-SDK
+    - Apptics-Swift
+
+SPEC CHECKSUMS:
+  Apptics-SDK: a205a47d134b8424b7cfd2c2dfcc4cc7017fa9b7
+  Apptics-Swift: bed543a84c553d4a6ef75b7ac475b1cb3c78da0b
+
+PODFILE CHECKSUM: c68918cfcfe8f90691461c78a13a3208e1ab80fd
+
+COCOAPODS: 1.10.0

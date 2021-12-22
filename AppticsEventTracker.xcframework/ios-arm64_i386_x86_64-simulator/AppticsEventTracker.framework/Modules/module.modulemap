@@ -1,0 +1,6 @@
+framework module AppticsEventTracker {
+  umbrella header "AppticsEventTracker.h"
+
+  export *
+  module * { export * }
+}

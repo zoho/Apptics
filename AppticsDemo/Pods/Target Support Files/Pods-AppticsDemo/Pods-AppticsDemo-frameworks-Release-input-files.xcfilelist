@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-AppticsDemo/Pods-AppticsDemo-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Apptics-SDK/Apptics_SDK.framework
+${BUILT_PRODUCTS_DIR}/Apptics-Swift/Apptics_Swift.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/Apptics/Apptics.framework/Apptics

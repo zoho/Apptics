@@ -1,0 +1,146 @@
+#!/bin/bash
+
+#  run.sh
+#  JAnalytics
+#
+#  Created by Saravanan S on 12/06/19.
+#  Copyright © 2019 zoho. All rights reserved.
+
+DIR="$(command dirname -- "${0}")"
+
+COMMAND_PATH="\"$DIR/dsym_upload\""
+#ZA_INFOPLIST_FILE="apptics-config.plist"
+AP_INFO_FILE_NAME="$PRODUCT_SETTINGS_PATH"
+CM_AP_INFO_FILE_NAME="$TARGET_BUILD_DIR/$INFOPLIST_PATH"
+
+#CM_ZA_INFOPLIST_FILE="$TARGET_BUILD_DIR/"$(command dirname -- "${FRAMEWORKS_FOLDER_PATH}")"/$ZA_INFO_FILE_NAME"
+
+UPLOAD_SYMBOLS="false"
+
+while [ $# -gt 0 ]; do
+case "$1" in
+--upload-symbols=*)
+UPLOAD_SYMBOLS="${1#*=}"
+;;
+--release-configurations=*)
+SKIP_PROMPT_FOR="${1#*=}"
+;;
+--app-group-identifier=*)
+AP_APP_GROUP_IDENTIFIER="${1#*=}"
+;;
+*)
+printf "**********************************\n"
+printf "* Error: Invalid argument passed.*\n"
+printf "**********************************\n"
+printf "'$1'\n"
+exit 1
+esac
+shift
+done
+
+
+if [ ! "${ZA_INFOPLIST_FILE}" ]; then
+ZA_INFOPLIST_FILE=$(/usr/libexec/PlistBuddy -c 'Print AP_INFOPLIST_FILE' "${AP_INFO_FILE_NAME}")
+fi
+
+echo "ZA_INFOPLIST_FILE ${ZA_INFOPLIST_FILE}"
+ZA_INFOPLIST_FILE=${SRCROOT}/${ZA_INFOPLIST_FILE}
+
+if [ ! -f "${ZA_INFOPLIST_FILE}" ]; then
+echo "run : Please check if the apptics-config.plist is in your projects' root dir, or else provide the proper path by passing value to the param '--config-file-path'"
+exit 1
+fi
+
+function plistManipulation() {
+VALUE=$2
+KEY=$1
+
+if [ "${VALUE}" ]; then
+
+ZA_VALUE=$(/usr/libexec/PlistBuddy -c "Print ${KEY}" "${AP_INFO_FILE_NAME}" 2>/dev/null || printf "nil")
+
+if [ "${VALUE}" != "${ZA_VALUE}" ]; then
+if [ "${ZA_VALUE}" == "nil" ]; then
+/usr/libexec/PlistBuddy -c "Add :${KEY} string '${VALUE}'" "${AP_INFO_FILE_NAME}"
+else
+/usr/libexec/PlistBuddy -c "Set :${KEY} '${VALUE}'" "${AP_INFO_FILE_NAME}"
+fi
+fi
+
+CM_ZA_VALUE=$(/usr/libexec/PlistBuddy -c "Print ${KEY}" "${CM_AP_INFO_FILE_NAME}" 2>/dev/null || printf "nil")
+if [ "${VALUE}" != "${CM_ZA_VALUE}" ]; then
+if [ "${CM_ZA_VALUE}" == "nil" ]; then
+/usr/libexec/PlistBuddy -c "Add :${KEY} string '${VALUE}'" "${CM_AP_INFO_FILE_NAME}"
+else
+/usr/libexec/PlistBuddy -c "Set :${KEY} '${VALUE}'" "${CM_AP_INFO_FILE_NAME}"
+fi
+fi
+
+fi
+}
+
+function deleteItemFromPlist() {
+KEY=$1
+
+if [ "${KEY}" ]; then
+
+ZA_VALUE=$(/usr/libexec/PlistBuddy -c "Print ${KEY}" "${AP_INFO_FILE_NAME}" 2>/dev/null || printf "nil")
+
+if [ "${ZA_VALUE}" != "nil" ]; then
+/usr/libexec/PlistBuddy -c "Delete :${KEY}" "${AP_INFO_FILE_NAME}"
+fi
+
+CM_ZA_VALUE=$(/usr/libexec/PlistBuddy -c "Print ${KEY}" "${CM_AP_INFO_FILE_NAME}" 2>/dev/null || printf "nil")
+
+if [ "${CM_ZA_VALUE}" != "nil" ]; then
+/usr/libexec/PlistBuddy -c "Delete :${KEY}" "${CM_AP_INFO_FILE_NAME}"
+fi
+
+fi
+}
+
+#if [ "${ZA_INFOPLIST_FILE}" ]; then
+#plistManipulation "AP_INFOPLIST_FILE" "$(basename "/$ZA_INFOPLIST_FILE")"
+#else
+#deleteItemFromPlist "AP_INFOPLIST_FILE"
+#fi
+#
+
+if [ "${AP_APP_GROUP_IDENTIFIER}" ]; then
+plistManipulation "AP_APP_GROUP_IDENTIFIER" "${AP_APP_GROUP_IDENTIFIER}"
+else
+deleteItemFromPlist "AP_APP_GROUP_IDENTIFIER"
+fi
+
+#echo "Going to background mode..."
+#nohup sh "$DIR/BackGroundTasks.sh" &
+
+
+IFS=', ' read -r -a SKIP_PROMPT_CONFIGURATIONS <<< "${SKIP_PROMPT_FOR}"
+
+if [ "${UPLOAD_SYMBOLS}" == "true" ]; then
+  if [[ " ${SKIP_PROMPT_CONFIGURATIONS[@]} " =~ " ${CONFIGURATION} " ]]; then
+    eval "$COMMAND_PATH --skip-prompt=1
+    #--config-file-path=\"${ZA_INFOPLIST_FILE}\""
+  else
+    eval "$COMMAND_PATH
+    #--config-file-path=\"${ZA_INFOPLIST_FILE}\""
+  fi
+else
+if [[ " ${SKIP_PROMPT_CONFIGURATIONS[@]} " =~ " ${CONFIGURATION} " ]]; then
+#Assuming that the developer have set upload symbol false for development not for the App store configuration
+  eval "$COMMAND_PATH --skip-prompt=1
+  #--config-file-path=\"${ZA_INFOPLIST_FILE}\""
+else
+  printf "************************************************************************************\n"
+  printf "* dSYMs upload is skipped for 'configuration' '${CONFIGURATION}' *\n"
+  printf "************************************************************************************\n"
+fi
+
+fi
+
+return_code=$?
+
+if [ $return_code != 0 ]; then
+  exit 0
+fi

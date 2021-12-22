@@ -1,0 +1,6 @@
+framework module AppticsInAppUpdate {
+  umbrella header "AppticsInAppUpdate.h"
+
+  export *
+  module * { export * }
+}

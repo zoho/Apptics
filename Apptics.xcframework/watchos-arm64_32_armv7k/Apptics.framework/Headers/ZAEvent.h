@@ -1,0 +1,31 @@
+//
+//  JAEvent.h
+//  JAnalytics
+//
+//  Created by Giridhar on 18/01/17.
+//  Copyright © 2017 zoho. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#import "ZAObject.h"
+#import "APEventsEnum.h"
+NS_ASSUME_NONNULL_BEGIN
+@interface ZAEvent : ZAObject<NSCoding,JSONAble>
+
+@property (strong,nonatomic) NSString *eventname;
+@property (strong,nonatomic) NSString *groupname;
+@property (strong,nonatomic) NSNumber *group;
+@property (strong,nonatomic) NSNumber *event;
+@property (strong,nonatomic) NSString *screen;
+@property (strong,nonatomic) NSNumber *sessionstarttime;
+@property (strong,nonatomic) NSString *customproperties;
+@property BOOL isTimedEvent;
+
++(void) addEventWithName:(NSString* _Nullable)eventName group:(NSString* _Nullable)group eventId : (NSString* _Nullable) eventId groupId : (NSString* _Nullable) groupId andProperties:(NSDictionary* _Nullable)props isTimed:(BOOL)isTimed;
+
++(void) endTimedEvent:(NSString*_Nullable)eventName group:(NSString*_Nullable)group eventId : (NSString* _Nullable) eventId;
+
+- (NSDictionary*)jsonify;
+
+@end
+NS_ASSUME_NONNULL_END
