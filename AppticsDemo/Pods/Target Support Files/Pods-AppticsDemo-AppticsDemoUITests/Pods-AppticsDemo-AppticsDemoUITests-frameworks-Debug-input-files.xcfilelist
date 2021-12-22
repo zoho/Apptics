@@ -2,3 +2,6 @@ ${PODS_ROOT}/Target Support Files/Pods-AppticsDemo-AppticsDemoUITests/Pods-Appti
 ${BUILT_PRODUCTS_DIR}/Apptics-SDK/Apptics_SDK.framework
 ${BUILT_PRODUCTS_DIR}/Apptics-Swift/Apptics_Swift.framework
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/Apptics/Apptics.framework/Apptics
+${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsCrashKit/AppticsCrashKit.framework/AppticsCrashKit
+${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsEventTracker/AppticsEventTracker.framework/AppticsEventTracker
+${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsScreenTracker/AppticsScreenTracker.framework/AppticsScreenTracker

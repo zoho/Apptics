@@ -10,7 +10,8 @@ class AppticsModerator
   $projectName # project name
   $targetName # target name
   $fileName = "AppticsExtension" #
-  $apiClassName = "APIExtension" #
+  $eventClassName = "APEventExtension" #
+  $apiClassName = "APAPIExtension" #
   $prefix="AP"
   $AppticsGroupName="Apptics"
   
@@ -56,13 +57,19 @@ class AppticsModerator
       objch_fc.concat("#elif __has_include(<Apptics/APEventsEnum.h>)\n")
       objch_fc.concat("#import <Apptics/APEventsEnum.h>\n")
       objch_fc.concat("#import <Apptics/Apptics.h>\n")
-      objch_fc.concat("#import <Apptics/Analytics.h>\n")
       objch_fc.concat("#import <Apptics/APBundle.h>\n")
       objch_fc.concat("#else\n")
       objch_fc.concat("#import \"APEventsEnum.h\"\n")
       objch_fc.concat("#import \"Apptics.h\"\n")
-      objch_fc.concat("#import \"Analytics.h\"\n")
       objch_fc.concat("#import \"APBundle.h\"\n")
+      objch_fc.concat("#endif\n")
+      
+      objch_fc.concat("#if __has_include(<AppticsEventTracker/Apptics-umbrella.h>)\n")
+      objch_fc.concat("@import AppticsEventTracker;\n")
+      objch_fc.concat("#elif __has_include(<AppticsEventTracker/AppticsEventTracker.h>)\n")
+      objch_fc.concat("#import <AppticsEventTracker/APEvent.h>\n")
+      objch_fc.concat("#else\n")
+      objch_fc.concat("#import \"APEvent.h\"\n")
       objch_fc.concat("#endif\n")
       
       objch_fc.concat("typedef enum {\n")
@@ -70,7 +77,9 @@ class AppticsModerator
       
       objcm_fc = "#import \"#{$fileName}.h\"\n\n"
       
-      objcm_fc_m0="@implementation Apptics (Extension)\n\n"
+      objcm_fc_m00="@implementation Apptics (Extension)\n\n"
+      
+      objcm_fc_m0="@implementation APEvent (Extension)\n\n"
       
       objcm_fc_m1=""
             
@@ -81,17 +90,17 @@ class AppticsModerator
       objcm_fc_m01.concat("\tswitch (type) {\n")
       
       if event_hash != nil
-      objcm_fc_m0.concat("+ (void) setCustomEventsProtocol;{\n")
-      objcm_fc_m0.concat("\t[APBundle getInstance].eventsProtocolClass=#{$fileName}.class;\n}\n\n")
+      objcm_fc_m00.concat("+ (void) setCustomEventsProtocol;{\n")
+      objcm_fc_m00.concat("\t[APBundle getInstance].eventsProtocolClass=#{$eventClassName}.class;\n}\n\n")
       end
       
       if api_hash != nil
-      objcm_fc_m0.concat("+ (void) setApiTrackingProtocol;{\n")
-      objcm_fc_m0.concat("\t[APBundle getInstance].apiProtocolClass=#{$apiClassName}.class;\n}\n\n")
+      objcm_fc_m00.concat("+ (void) setApiTrackingProtocol;{\n")
+      objcm_fc_m00.concat("\t[APBundle getInstance].apiProtocolClass=#{$apiClassName}.class;\n}\n\n")
       end      
       
       if event_hash != nil
-          objcm_fc_m1="@implementation #{$fileName} : NSObject\n\n"
+          objcm_fc_m1="@implementation #{$eventClassName} : NSObject\n\n"
           objcm_fc_m1.concat("+ (APPrivateObject *)formatTypeToPrivateObject:(NSString*)group event : (NSString*) event {\n\n")
           
           objcm_fc_m2.concat("+ (APPrivateObject *)formatTypeToPrivateObjectFromEventId:(NSString*)eventId{\n\n\t")
@@ -101,7 +110,8 @@ class AppticsModerator
           objcm_fc_m0.concat("\tswitch (type) {\n")
           flag2 = false
           
-          objcm_fc_m1.concat("\tNSString* event_str=[NSString stringWithFormat:@\"%@_%@\",group, event];\n\n\t")
+          objcm_fc_m1.concat("\tNSString* event_str=[[NSString stringWithFormat:@\"%@_%@\",group, event] lowercaseString];\n\n\t")
+          
           event_hash.map do | group, groupInfo|
               
             group = group.strip.gsub(/[^0-9A-Za-z]/, '_')
@@ -120,7 +130,7 @@ class AppticsModerator
                 objcm_fc_m01.concat("\t\t\tgroupId=@\"#{groupID}\";\n")
                 objcm_fc_m01.concat("\t\t\tbreak;\n")
                 
-                objcm_fc_m1.concat("if ([event_str isEqualToString:@\"#{group}_#{name}\"]){\n")
+                objcm_fc_m1.concat("if ([event_str isEqualToString:@\"#{group.downcase}_#{name.downcase}\"]){\n")
                 objcm_fc_m1.concat("\t\treturn [[APPrivateObject alloc] initWith:@\"#{id}\" andGroupId:@\"#{groupID}\"];\n")
                 objcm_fc_m1.concat("\t}else ")
                 
@@ -152,7 +162,7 @@ class AppticsModerator
       objcm_fc_m0.concat("+ (void) trackEventWithType:(APEventType) type andProperties:(NSDictionary*_Nullable)props;{\n")
       objcm_fc_m0.concat("\tNSString *eventID = [self eventID:type];\n")
       objcm_fc_m0.concat("\tNSString *groupID = [self groupID:type];\n")
-      objcm_fc_m0.concat("\t[[Analytics getInstance] trackEvent:eventID groupId : groupID andProperties:props isTimed:false];\n}\n\n")
+      objcm_fc_m0.concat("\t[[APEvent getInstance] trackEvent:eventID groupId : groupID andProperties:props isTimed:false];\n}\n\n")
       
       objcm_fc_m0.concat("+ (void) startTimedEventWithType:(APEventType) type;{\n")
       objcm_fc_m0.concat("\t[self startTimedEventWithType:type andProperties:nil];\n}\n\n")
@@ -160,11 +170,11 @@ class AppticsModerator
       objcm_fc_m0.concat("+ (void) startTimedEventWithType:(APEventType) type andProperties:(NSDictionary * _Nullable)props;{\n")
       objcm_fc_m0.concat("\tNSString *eventID = [self eventID:type];\n")
       objcm_fc_m0.concat("\tNSString *groupID = [self groupID:type];\n")
-      objcm_fc_m0.concat("\t[[Analytics getInstance] trackEvent:eventID groupId : groupID andProperties:props isTimed:true];\n}\n\n")
+      objcm_fc_m0.concat("\t[[APEvent getInstance] trackEvent:eventID groupId : groupID andProperties:props isTimed:true];\n}\n\n")
       
       objcm_fc_m0.concat("+ (void) endTimedEventWithType:(APEventType) type;{\n")
       objcm_fc_m0.concat("\tNSString *eventID = [self eventID:type];\n")
-      objcm_fc_m0.concat("\t[[Analytics getInstance] endTimedEvent:eventID];\n}\n\n")
+      objcm_fc_m0.concat("\t[[APEvent getInstance] endTimedEvent:eventID];\n}\n\n")
       
       if flag2 == true
           objcm_fc_m1.concat("\t{\n")
@@ -186,8 +196,12 @@ class AppticsModerator
       objcm_fc_m1.concat("@end\n\n")
       end
       
-      objcm_fc_m0.concat("@end\n\n")
+      objcm_fc_m00.concat("@end\n\n")
                   
+      objcm_fc_m0.concat("@end\n\n")
+      
+      objcm_fc.concat(objcm_fc_m00)
+      
       objcm_fc.concat(objcm_fc_m0)
       
       objcm_fc.concat(objcm_fc_m1)                  
@@ -195,9 +209,18 @@ class AppticsModerator
       objch_fc.concat("\n\n}APEventType;\n\n")
       
       objch_fc.concat("@interface Apptics(Extension)\n\n")
+      if event_hash != nil
+      objch_fc.concat("+ (void) setCustomEventsProtocol;\n\n")
+      end
+      
+      if api_hash != nil
+          objch_fc.concat("+ (void) setApiTrackingProtocol;\n\n")
+      end
+      objch_fc.concat("@end\n\n")
+      
+      objch_fc.concat("@interface APEvent(Extension)\n\n")
       
       if event_hash != nil
-          objch_fc.concat("+ (void) setCustomEventsProtocol;\n\n")
           
           objch_fc.concat("+ (NSString*_Nullable) eventID :(APEventType) type;\n\n")
           
@@ -211,15 +234,11 @@ class AppticsModerator
           
           objch_fc.concat("+ (void) endTimedEventWithType:(APEventType) type;\n\n")
       end
-      
-      if api_hash != nil
-          objch_fc.concat("+ (void) setApiTrackingProtocol;\n\n")
-      end
             
       objch_fc.concat("@end\n\n")
       
       if event_hash != nil
-      objch_fc.concat("@interface #{$fileName} : NSObject <APEventsProtocol>\n")
+      objch_fc.concat("@interface #{$eventClassName} : NSObject <APEventsProtocol>\n")
       objch_fc.concat("@end\n\n")
       end
       
@@ -299,6 +318,7 @@ class AppticsModerator
       else
       file_ext="swift"
       swiftc_fc = "#if canImport(Apptics)\n\timport Apptics\n#endif\n\n"
+      swiftc_fc.concat("#if canImport(AppticsEventTracker)\n\timport AppticsEventTracker\n#endif\n\n")
       
       swiftc_fc_enum=""
       
@@ -306,7 +326,7 @@ class AppticsModerator
       
       if event_hash != nil
       swiftc_fc_ap_ext.concat("\t@objc class func setCustomEventsProtocol() {\n")
-      swiftc_fc_ap_ext.concat("\t\tAPBundle.getInstance()?.eventsProtocolClass=#{$fileName}.self\n")
+      swiftc_fc_ap_ext.concat("\t\tAPBundle.getInstance()?.eventsProtocolClass=#{$eventClassName}.self\n")
       swiftc_fc_ap_ext.concat("\t}\n")
       end
       
@@ -316,30 +336,34 @@ class AppticsModerator
       swiftc_fc_ap_ext.concat("\t}\n")
       end
       
+      swiftc_fc_ap_ext.concat("\n}\n\n")
+      
+      swiftc_fc_ap_ext.concat("extension APEvent\n{\n")
+      
       swiftc_fc_cc=""
       
       if event_hash != nil
           
           swiftc_fc_ap_ext_f0="\n\t@objc class func eventID(forType type : APEventType) -> String?{\n"
           swiftc_fc_ap_ext_f01="\t@objc class func groupID(forType type : APEventType) -> String?{\n"
-          swiftc_fc_ap_ext_f1="\t@objc class func trackEvent(withType type : APEventType, andProperties : [String : Any]?) {\n"
+          swiftc_fc_ap_ext_f1="\t@objc class public func trackEvent(withType type : APEventType, andProperties : [String : Any]?) {\n"
           swiftc_fc_ap_ext_f0.concat("\n\t\tvar eventID : String?\n")
           swiftc_fc_ap_ext_f0.concat("\t\tswitch (type) {\n")
           swiftc_fc_ap_ext_f01.concat("\n\t\tvar groupID : String?\n")
           swiftc_fc_ap_ext_f01.concat("\t\tswitch (type) {\n")
           
-          swiftc_fc_ap_ext_f2="\t@objc class func trackEvent(withType type : APEventType) {\n"
+          swiftc_fc_ap_ext_f2="\t@objc class public func trackEvent(withType type : APEventType) {\n"
           swiftc_fc_ap_ext_f2.concat("\t\tself.trackEvent(withType: type, andProperties: nil)\n")
           
           swiftc_fc_ap_ext_f2.concat("\t}\n\n")
           
-          swiftc_fc_cc.concat("class #{$fileName}: NSObject, APEventsProtocol {\n\n")
+          swiftc_fc_cc.concat("class #{$eventClassName}: NSObject, APEventsProtocol {\n\n")
           swiftc_fc_cc.concat("\tclass func formatType(toPrivateObject group: String, event: String) -> APPrivateObject? {\n\n")
                 
           swiftc_fc_m1="\tclass func formatTypeToPrivateObject(fromEventId eventId: String) -> APPrivateObject?{\n\n\t\t"
           flag2 = false
           
-          swiftc_fc_enum.concat("@objc enum APEventType : Int {\n")
+          swiftc_fc_enum.concat("@objc public enum APEventType : Int {\n")
           swiftc_fc_cc.concat("\t\tlet event_str = \"\\(group)_\\(event)\"\n\n\t\t")
           event_hash.map do | group, groupInfo|
             group = group.strip.gsub(/[^0-9A-Za-z]/, '_')
@@ -356,7 +380,7 @@ class AppticsModerator
                 swiftc_fc_ap_ext_f0.concat("\t\t\tbreak\n")
                 
                 swiftc_fc_ap_ext_f01.concat("\t\tcase ._#{group}_#{name}:\n")
-                swiftc_fc_ap_ext_f01.concat("\t\t\tgroupID=\"#{id}\"\n")
+                swiftc_fc_ap_ext_f01.concat("\t\t\tgroupID=\"#{groupID}\"\n")
                 swiftc_fc_ap_ext_f01.concat("\t\t\tbreak\n")
                 
                 swiftc_fc_cc.concat("if (event_str == \"#{group}_#{name}\") {\n")
@@ -389,7 +413,7 @@ class AppticsModerator
       
       swiftc_fc_ap_ext_f1.concat("\t\tif let eventID = self.eventID(forType: type){\n")
       swiftc_fc_ap_ext_f1.concat("\t\t\tlet groupID = self.groupID(forType: type)\n")
-      swiftc_fc_ap_ext_f1.concat("\t\tAnalytics.getInstance().trackEvent(eventID, groupId: groupID, andProperties: andProperties, isTimed: false)\n")
+      swiftc_fc_ap_ext_f1.concat("\t\tAPEvent.getInstance().trackEvent(eventID, groupId: groupID, andProperties: andProperties, isTimed: false)\n")
       swiftc_fc_ap_ext_f1.concat("\t\t}\n")
       swiftc_fc_ap_ext_f1.concat("\t}\n\n")
       
@@ -400,18 +424,18 @@ class AppticsModerator
       swiftc_fc_ap_ext.concat(swiftc_fc_ap_ext_f1)
       swiftc_fc_ap_ext.concat(swiftc_fc_ap_ext_f2)
       
-      swiftc_fc_ap_ext_f3="\t@objc class func startTimedEvent(withType type : APEventType, andProperties : [String : Any]?){\n"
+      swiftc_fc_ap_ext_f3="\t@objc class public func startTimedEvent(withType type : APEventType, andProperties : [String : Any]?){\n"
       swiftc_fc_ap_ext_f3.concat("\t\tif let eventID = self.eventID(forType: type){\n")
       swiftc_fc_ap_ext_f3.concat("\t\t\tlet groupID = self.groupID(forType: type)\n")
-      swiftc_fc_ap_ext_f3.concat("\t\tAnalytics.getInstance().startTimedEvent(eventID, groupId: groupID, andProperties: andProperties)\n")
+      swiftc_fc_ap_ext_f3.concat("\t\tAPEvent.getInstance().startTimedEvent(eventID, groupId: groupID, andProperties: andProperties)\n")
       swiftc_fc_ap_ext_f3.concat("\t\t}\n")
       swiftc_fc_ap_ext_f3.concat("\t}\n\n")
       swiftc_fc_ap_ext.concat(swiftc_fc_ap_ext_f3)
       
       
-      swiftc_fc_ap_ext_f4="\t@objc class func endTimedEvent(withType type : APEventType){\n"
+      swiftc_fc_ap_ext_f4="\t@objc class public func endTimedEvent(withType type : APEventType){\n"
       swiftc_fc_ap_ext_f4.concat("\t\tif let eventID = self.eventID(forType: type){\n")
-      swiftc_fc_ap_ext_f4.concat("\t\tAnalytics.getInstance().endTimedEvent(eventID)\n")
+      swiftc_fc_ap_ext_f4.concat("\t\tAPEvent.getInstance().endTimedEvent(eventID)\n")
       swiftc_fc_ap_ext_f4.concat("\t\t}\n")
       swiftc_fc_ap_ext_f4.concat("\t}\n")
       swiftc_fc_ap_ext.concat(swiftc_fc_ap_ext_f4)

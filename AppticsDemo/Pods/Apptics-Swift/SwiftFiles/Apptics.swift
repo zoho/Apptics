@@ -48,21 +48,3 @@ public func APLogError(_ message: @autoclosure () -> String, file: StaticString 
   APLog.getInstance().zlsExtension(String(describing: file), lineNumber: Int32(line), functionName: String(describing: function), symbol: "🔴", type: "error", format: message())
 }
 
-extension Apptics{
-    @objc public class func presentPromotedAppsController(sectionHeader1:String? , sectionHeader2:String?) {
-        if AppticsConfig.default.enableCrossPromotionAppsList{
-            let vc = self.getPromotionalAppsViewController(sectionHeader1: sectionHeader1, sectionHeader2: sectionHeader2)
-            Analytics.getInstance().presentPromotionalAppsController(vc)
-        }else{
-#if DEBUG
-            print("Please enable Cross Promotion Apps List in Apptic or AppticsConfig.default.enableCrossPromotionAppsList")
-#endif
-        }
-    }
-    
-    @objc public class func getPromotionalAppsViewController(sectionHeader1:String? , sectionHeader2:String?) -> UIViewController {
-        let crossPromotionKit = PromotedAppsKit.shared
-        let vc = crossPromotionKit.getPromotionalAppsViewController(sectionHeader1: sectionHeader1, sectionHeader2: sectionHeader2)
-        return vc
-    }
-}

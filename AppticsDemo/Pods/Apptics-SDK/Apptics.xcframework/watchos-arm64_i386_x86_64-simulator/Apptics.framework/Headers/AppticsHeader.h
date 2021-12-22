@@ -17,6 +17,7 @@
 #import <Apptics/APRemoteConfigValue.h>
 #import <Apptics/APAPIManager.h>
 #import <Apptics/APCustomHandler.h>
+#import <Apptics/APEvent.h>
 
 #else
 
@@ -27,6 +28,7 @@
 #import "APRemoteConfigValue.h"
 #import "APAPIManager.h"
 #import "APCustomHandler.h"
+#import "APEvent.h"
 
 #endif
 

@@ -178,11 +178,17 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Apptics-SDK/Apptics_SDK.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Apptics-Swift/Apptics_Swift.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/Apptics/Apptics.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsCrashKit/AppticsCrashKit.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsEventTracker/AppticsEventTracker.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsScreenTracker/AppticsScreenTracker.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Apptics-SDK/Apptics_SDK.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Apptics-Swift/Apptics_Swift.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/Apptics/Apptics.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsCrashKit/AppticsCrashKit.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsEventTracker/AppticsEventTracker.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsScreenTracker/AppticsScreenTracker.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>AppticsResources.bundle/APReviewViewController.nib</key>
+		<data>
+		RRidjSAukg0Gl7UdwaRfhVzUcf4=
+		</data>
 		<key>AppticsResources.bundle/Base.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
 			<key>hash</key>
@@ -19,11 +23,11 @@
 		</data>
 		<key>AppticsResources.bundle/Info.plist</key>
 		<data>
-		rK6wKFSdGN/ed0oZoC7HlcRWC3k=
+		dJhOhlzGaiHQ0b3GCoyeSy6vyCk=
 		</data>
 		<key>AppticsResources.bundle/ZAAppUpdateAlert.nib</key>
 		<data>
-		U2S9XJSRD8JUd3kcRQgCTrAFS/k=
+		mRkXO03OKDXux155XsxJwPGGtBw=
 		</data>
 		<key>AppticsResources.bundle/ZACustomAlertController.nib</key>
 		<data>
@@ -55,7 +59,7 @@
 		</data>
 		<key>AppticsResources.bundle/ZAUserConsentAlert.nib</key>
 		<data>
-		peQFf7IP9PA0fKggOq6wthEnDTw=
+		O8AkcZxG+WsLAhsv27JNxtsU9Dw=
 		</data>
 		<key>AppticsResources.bundle/ZAUserConsentAlertV2.nib</key>
 		<data>
@@ -63,7 +67,7 @@
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		ZMUa2/SEPgJEliW1+jsK9SZHjG8=
+		8aGctJGrveuTW0IHZp72HtJafyg=
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -71,11 +75,11 @@
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		okD1B0A9yBqSwN8KjbjHCsAzjLM=
+		LfdX2I3fdTNc9/sTLuQ0+UH+OaE=
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeResources</key>
 		<data>
-		tYDOLu+QyR7VqRJpNrFIDjTO1hs=
+		+M6P8nehbu5cf5iczYL9lxHs5c8=
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeSignature</key>
 		<data>
@@ -387,37 +391,41 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>Headers/APAPIManager.h</key>
+		<key>Headers/APAAAUtil.h</key>
 		<data>
-		R5KIfZuCxsPtU3R+nUrJMOesTNE=
+		Mw+OE/wjSk9kO+n1S4NZcfKMcT0=
 		</data>
 		<key>Headers/APBundle.h</key>
 		<data>
-		EHVLJTdsvSTJTUjmSTw183naFoA=
+		x9eE7rSseW7YzSM7JRn/irWDRJs=
 		</data>
 		<key>Headers/APCustomHandler.h</key>
 		<data>
-		Iu4q8MnPAsbnD5z8koMvmjcmUZo=
+		9isEE8TdTxEEj6f87pSgWxnb6jI=
 		</data>
 		<key>Headers/APEventsEnum.h</key>
 		<data>
-		Mq/2bQTKJAT1kJPSV704gBsUEOE=
+		RlAH2rekFw+4k5NAtS+yp9q0oG0=
+		</data>
+		<key>Headers/APJWTWrapper.h</key>
+		<data>
+		A20j+AL+EJck5fGYDTLhN8k82fY=
 		</data>
 		<key>Headers/APLog.h</key>
 		<data>
-		2yz6xgBesEuqQKNG+axvIhSSiyI=
+		Tzvs1fRjJhiBVl09/Ybqf7e0t08=
 		</data>
-		<key>Headers/APRateUs.h</key>
+		<key>Headers/APRateusObject.h</key>
 		<data>
-		9lGHyjrQThyAwRSTkg6PK2mNcZ4=
+		eiugpvtboqRi1rV19QISsAwdmD4=
 		</data>
-		<key>Headers/APRemoteConfig.h</key>
+		<key>Headers/APRemoteConfigObject.h</key>
 		<data>
-		5wzfxP2c7fBBPNfmbLV8vh5V4hc=
+		uRdplGG43FRFAC0vqExkrBwpsVk=
 		</data>
-		<key>Headers/APRemoteConfigValue.h</key>
+		<key>Headers/APReviewViewController.h</key>
 		<data>
-		MYBeKK+X2rN/cOjjR1VAZwTh8JA=
+		S6VusiLxL5JcZyvL5VSYgWggnAQ=
 		</data>
 		<key>Headers/APTheme.h</key>
 		<data>
@@ -425,11 +433,11 @@
 		</data>
 		<key>Headers/Analytics.h</key>
 		<data>
-		kAPROkWVinpNSK2TZzGrUu0Ztck=
+		s3KutelXTw3J95OUwPnMwRI2B2o=
 		</data>
 		<key>Headers/Apptics.h</key>
 		<data>
-		b/DFsr+t4/s952bDbRxlHtTj5n8=
+		smPOwfw/VI+bFt6V7zRU2YdRdpo=
 		</data>
 		<key>Headers/AppticsConfig.h</key>
 		<data>
@@ -437,713 +445,162 @@
 		</data>
 		<key>Headers/AppticsHeader.h</key>
 		<data>
-		hxQDJFiCvid+GKSmBu6Hldbyy64=
+		dobko8VMnEWyhAwpfJrGORdo/VE=
 		</data>
-		<key>Headers/FeedbackKit.h</key>
+		<key>Headers/NSData+APGunZip.h</key>
 		<data>
-		vZpiOQ5Cx1YMkpAvuPla2S8X1cU=
+		3k0mfNyEvBevCm4c6sVQ5h7AsrM=
 		</data>
-		<key>Headers/WCSessionSwizzlerDelegate.h</key>
+		<key>Headers/NSUserDefaults+SaveCustomObject.h</key>
 		<data>
-		AQZyvmToTcRLw+5+V7fPewoV/uk=
+		VgVCSrbZ10nb+aFgihstcmf7u0E=
+		</data>
+		<key>Headers/ZAAESCrypto.h</key>
+		<data>
+		AoM8N6eB0PjmQ7h3Yyrjuc50SiA=
 		</data>
 		<key>Headers/ZAAlertStyle.h</key>
 		<data>
 		HFRAl5WhR+s9M/QVEjrX99YjsyU=
 		</data>
+		<key>Headers/ZAAppUpdateAlert.h</key>
+		<data>
+		9/TO4MxUCB/6hXHYx8mKRI6hCQo=
+		</data>
+		<key>Headers/ZAAppupdatePopupInfo.h</key>
+		<data>
+		ZdXu4iiVbAXewtk4wSXPkt/gm74=
+		</data>
 		<key>Headers/ZAConstants.h</key>
 		<data>
-		/QdrbEbh/j/F4JtZ92KNA/KmWo4=
+		QyZPYvJjxuJ7zwdZ55GIaZ/tEKc=
+		</data>
+		<key>Headers/ZACustomAlertController.h</key>
+		<data>
+		pr4ENwzvfQ5IhYmLkYEVVce4+T0=
+		</data>
+		<key>Headers/ZACustomNavigationController.h</key>
+		<data>
+		OJQFwF6Aue9gmxHdwfUm+P8124s=
+		</data>
+		<key>Headers/ZAEngagementsUploadOperation.h</key>
+		<data>
+		4T2UGhiPNbq0y8a7rbQKII4rntw=
 		</data>
 		<key>Headers/ZAEnums.h</key>
 		<data>
-		ZGfY4r8ZDDOVQsrvoDnsuObGAuc=
+		+pYp36athrritkCGpBR5btwg7ZY=
 		</data>
-		<key>Headers/ZAPresenter.h</key>
+		<key>Headers/ZAEvent.h</key>
 		<data>
-		0KB/RMK6ezLxrcs8j26Wb9NKwtc=
+		7Ma7ld5StLLLo63mK6JwlhPrALM=
+		</data>
+		<key>Headers/ZAFileManager.h</key>
+		<data>
+		lIdorqF2UQFcuWax0HrLBw5yx6Y=
+		</data>
+		<key>Headers/ZAFilters.h</key>
+		<data>
+		Vz2UlH7EXLPQ60tdhLcRZRKqLko=
+		</data>
+		<key>Headers/ZAGlobalQueue.h</key>
+		<data>
+		IQFNy297TfUf+muGHaKPIWY53F4=
+		</data>
+		<key>Headers/ZAJSONString.h</key>
+		<data>
+		W9dMFcPLXLGSW8M74hShW6Wucf4=
+		</data>
+		<key>Headers/ZAKeyChainWrapper.h</key>
+		<data>
+		moTyOf6ScC+QeDy5BlyHpEPPMA8=
+		</data>
+		<key>Headers/ZALoader.h</key>
+		<data>
+		pQ6BrmhZxu9FQ6YxUpILcDSiaS4=
+		</data>
+		<key>Headers/ZAMacros.h</key>
+		<data>
+		VVOSy+r9mbTEIsIIcqfT5rTNQYU=
+		</data>
+		<key>Headers/ZANetworkUtils.h</key>
+		<data>
+		8pE2Lrfwy6jnlsUq3hynUcUOfdM=
+		</data>
+		<key>Headers/ZANetworking.h</key>
+		<data>
+		cWWJh/nvpunbN7Ei7AeMkSRkcmA=
+		</data>
+		<key>Headers/ZANonFatalsUploadOperation.h</key>
+		<data>
+		yE5A1Wyifi04GmXNdqm7lVIKzYo=
+		</data>
+		<key>Headers/ZAObject.h</key>
+		<data>
+		v5ASn6Ss8ZNkghUsMIKznO03ijs=
+		</data>
+		<key>Headers/ZAPIIManager.h</key>
+		<data>
+		vtVteoZWCIGxUJHP52sjo0oyIK0=
+		</data>
+		<key>Headers/ZAPIManager.h</key>
+		<data>
+		bt1a6SmNOz5zYzLwe2ilSQ+XJkE=
 		</data>
 		<key>Headers/ZAPrivate.h</key>
 		<data>
 		dmAHdegEvdF/sYhdETlBqK71u2I=
 		</data>
-		<key>Headers/ZAnalyticsPIIManagerController.h</key>
+		<key>Headers/ZAScreenObject.h</key>
 		<data>
-		BFKqt4C+ywJ+QQudTJ2oX/qSL/Q=
+		SUjbuLLrR6XT78iBm3NPg5LBoBw=
+		</data>
+		<key>Headers/ZASession.h</key>
+		<data>
+		1pgp3ALC2gbpXl9xG7nTa3MzRFA=
+		</data>
+		<key>Headers/ZASystemInfo.h</key>
+		<data>
+		jzxWn5psCt6iD82nkFniYN9rc/g=
+		</data>
+		<key>Headers/ZASystemProperties.h</key>
+		<data>
+		83fUXtmwxzzdvWep0PxTMLYVh34=
+		</data>
+		<key>Headers/ZAUserConsentAlert.h</key>
+		<data>
+		k2qrePjNqH1dT3FRYh/p8GuPR4w=
+		</data>
+		<key>Headers/ZAUserConsentAlertV2.h</key>
+		<data>
+		j5Jv0E+vdu8FPM6YMR8jJtBEOMs=
+		</data>
+		<key>Headers/ZAnalyticsUIApplication.h</key>
+		<data>
+		AWOX1FbE+oh3I5aZgvwXQmIqGHw=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		7K7Fu5NGUamt7RtA05AoaMwrmEQ=
+		gjlEX2JXyjlEUBlvRvdBRzaMJNM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		vyvGDgYG+rYeSf9KICtJ0eqvvlA=
 		</data>
-		<key>ZBugSquashResources.bundle/Apptics-Feedback.ttf</key>
-		<data>
-		tzZT/3uSAwionZ14ouk5BpSuZhk=
-		</data>
-		<key>ZBugSquashResources.bundle/BSDiagnosticInfoViewController.nib/objects-11.0+.nib</key>
-		<data>
-		3ClnRC+OqtG9hC7T1BCQujO5/dc=
-		</data>
-		<key>ZBugSquashResources.bundle/BSDiagnosticInfoViewController.nib/runtime.nib</key>
-		<data>
-		4z+1asDU27xQpcNu7DDVsLmKGAQ=
-		</data>
-		<key>ZBugSquashResources.bundle/Base.lproj/NewBugViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HlSBuLjqTx7qhlEXM1/dsjBDLXw=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/Base.lproj/ZBugSquashKitLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			8cELWZXqqkJn7sTZ2V4SO2TtGpU=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/FeedbackDataTableViewCell.nib</key>
-		<data>
-		NCLeAy/nr8OJagNL1pnTwE5Klu0=
-		</data>
-		<key>ZBugSquashResources.bundle/FeedbackKit.storyboardc/FeedbackDataController.nib/objects-11.0+.nib</key>
-		<data>
-		2VmKQZ3J9y5RlyVIcspaI/HwnrY=
-		</data>
-		<key>ZBugSquashResources.bundle/FeedbackKit.storyboardc/FeedbackDataController.nib/runtime.nib</key>
-		<data>
-		2VmKQZ3J9y5RlyVIcspaI/HwnrY=
-		</data>
-		<key>ZBugSquashResources.bundle/FeedbackKit.storyboardc/Info.plist</key>
-		<data>
-		YN1gzIdIEmA0Er1028SnbzY1IEQ=
-		</data>
-		<key>ZBugSquashResources.bundle/FeedbackKit.storyboardc/njx-Nt-Bnw-view-g8R-bb-haf.nib/objects-11.0+.nib</key>
-		<data>
-		EvRdDQBCnBf9zqDDoxRjFXVLaR0=
-		</data>
-		<key>ZBugSquashResources.bundle/FeedbackKit.storyboardc/njx-Nt-Bnw-view-g8R-bb-haf.nib/runtime.nib</key>
-		<data>
-		T/5/lvRe+6nGmv6QB+bkJ6QMe1M=
-		</data>
-		<key>ZBugSquashResources.bundle/Info.plist</key>
-		<data>
-		x2r0aIr4vdw2iFyEJg+1rhk4rZQ=
-		</data>
-		<key>ZBugSquashResources.bundle/NewBugViewController.nib/objects-11.0+.nib</key>
-		<data>
-		dTTGI5fvX2xb1PQyYwcCBHy7hu0=
-		</data>
-		<key>ZBugSquashResources.bundle/NewBugViewController.nib/runtime.nib</key>
-		<data>
-		ClCxq5WnTgwRXQZGYFInbqIbmtI=
-		</data>
-		<key>ZBugSquashResources.bundle/Screenshot-app.ttf</key>
-		<data>
-		YNKlihW/j9onhWhjiIatVkra0jU=
-		</data>
-		<key>ZBugSquashResources.bundle/ZAAddImage.nib/objects-12.3+.nib</key>
-		<data>
-		3nz+BrvR46hYwf3ZtwmNWsqfDCc=
-		</data>
-		<key>ZBugSquashResources.bundle/ZAAddImage.nib/runtime.nib</key>
-		<data>
-		K4s1JdR6JRVulIp9s0iYb5neA0w=
-		</data>
-		<key>ZBugSquashResources.bundle/ZADiagnosticInfoCell.nib</key>
-		<data>
-		xwdhQ+STYRTK2mXOPeOENmEc+Jg=
-		</data>
-		<key>ZBugSquashResources.bundle/ZADiagnosticInfoViewController.nib/objects-11.0+.nib</key>
-		<data>
-		EgjpbNkHdV9phHDbKJfqqItSeeU=
-		</data>
-		<key>ZBugSquashResources.bundle/ZADiagnosticInfoViewController.nib/runtime.nib</key>
-		<data>
-		lh9gYmmskx/od2hFAq15jQjwWvw=
-		</data>
-		<key>ZBugSquashResources.bundle/ZAImageEditorCell.nib/objects-12.3+.nib</key>
-		<data>
-		UQqrSPVifeR2foRhVx6ZTrHPM3I=
-		</data>
-		<key>ZBugSquashResources.bundle/ZAImageEditorCell.nib/runtime.nib</key>
-		<data>
-		FgpIWSIOpPHsqKiDkkGOU7bw638=
-		</data>
-		<key>ZBugSquashResources.bundle/ZAImageListViewCell.nib</key>
-		<data>
-		4vRIfpYYRFOgolBtjRFjw8AywQI=
-		</data>
-		<key>ZBugSquashResources.bundle/ZAImagePicker.nib</key>
-		<data>
-		C7cvFybjq+eelNN/NEsFh2z8w5Q=
-		</data>
-		<key>ZBugSquashResources.bundle/ZAImagePickerCell.nib/objects-12.3+.nib</key>
-		<data>
-		RorxEfT6O4PRBLKO77l1jXb9Mms=
-		</data>
-		<key>ZBugSquashResources.bundle/ZAImagePickerCell.nib/runtime.nib</key>
-		<data>
-		Wd+GnhoEUN5A+l3YLB3jvlwpgeI=
-		</data>
-		<key>ZBugSquashResources.bundle/ZAIncludeLogConsent.nib/objects-11.0+.nib</key>
-		<data>
-		sy3kxXh6NFwZIA4LWsmREaz0cMU=
-		</data>
-		<key>ZBugSquashResources.bundle/ZAIncludeLogConsent.nib/runtime.nib</key>
-		<data>
-		xHa7jpvi/nljgIcAis7Bi9cu+IY=
-		</data>
-		<key>ZBugSquashResources.bundle/ZASectionHeaderView.nib</key>
-		<data>
-		KdtIdTNUr6ahpaJ1XX/605ydKTE=
-		</data>
-		<key>ZBugSquashResources.bundle/ZASystemLogListViewController.nib/objects-11.0+.nib</key>
-		<data>
-		hfO8+w3AnBLAZPqWJuei8YuXNR8=
-		</data>
-		<key>ZBugSquashResources.bundle/ZASystemLogListViewController.nib/runtime.nib</key>
-		<data>
-		8pcG3PqZJfYMc2s7LL0PrL43gN4=
-		</data>
-		<key>ZBugSquashResources.bundle/ZASystemLogsViewController.nib</key>
-		<data>
-		RRidjSAukg0Gl7UdwaRfhVzUcf4=
-		</data>
-		<key>ZBugSquashResources.bundle/_CodeSignature/CodeDirectory</key>
-		<data>
-		40rezYeGxF3nsvU3Aghp7o23rq0=
-		</data>
-		<key>ZBugSquashResources.bundle/_CodeSignature/CodeRequirements</key>
-		<data>
-		OnX22wWFKRSOFN1+obRynMCeyXM=
-		</data>
-		<key>ZBugSquashResources.bundle/_CodeSignature/CodeRequirements-1</key>
-		<data>
-		ZObB8JPcLv+jad7Kp7dwXq2DPs8=
-		</data>
-		<key>ZBugSquashResources.bundle/_CodeSignature/CodeResources</key>
-		<data>
-		UeevSN4tZlZpOmRJIWWExa++J7s=
-		</data>
-		<key>ZBugSquashResources.bundle/_CodeSignature/CodeSignature</key>
-		<data>
-		2jmj7l5rSw0yVb/vlWAYkK/YBwk=
-		</data>
-		<key>ZBugSquashResources.bundle/ar.lproj/NewBugViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HlSBuLjqTx7qhlEXM1/dsjBDLXw=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/ar.lproj/ZBugSquashKitLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			wvib3zn9Eb2uvOECGMj1D9bPGmY=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/bg.lproj/NewBugViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HlSBuLjqTx7qhlEXM1/dsjBDLXw=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/bg.lproj/ZBugSquashKitLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			bfEObwM0obmlDtXmhBcZ9NSCIHE=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/cs.lproj/NewBugViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HlSBuLjqTx7qhlEXM1/dsjBDLXw=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/cs.lproj/ZBugSquashKitLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			mCe9KCAr7csFVKXyRHB75yn3gIQ=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/da.lproj/NewBugViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HlSBuLjqTx7qhlEXM1/dsjBDLXw=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/da.lproj/ZBugSquashKitLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			A9qBngZFKlFjIcGaJsR+GFVUyEM=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/de.lproj/NewBugViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HlSBuLjqTx7qhlEXM1/dsjBDLXw=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/de.lproj/ZBugSquashKitLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			7TFcO6cPP1GvjTvZ1Werv60KBME=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/done.png</key>
-		<data>
-		R/ghMyXbYfAB0Inw27DxvGMYKCA=
-		</data>
-		<key>ZBugSquashResources.bundle/done@2x.png</key>
-		<data>
-		FMkJjUJN9wzEXipZlAgmKSw29Rg=
-		</data>
-		<key>ZBugSquashResources.bundle/done@3x.png</key>
-		<data>
-		cj5X/wiv6AJRo9U2gmDAMOT8jh0=
-		</data>
-		<key>ZBugSquashResources.bundle/drop_down_dark.png</key>
-		<data>
-		oc88N6Apl3uUj8U5CcJT6nxl2IE=
-		</data>
-		<key>ZBugSquashResources.bundle/drop_down_dark@2x.png</key>
-		<data>
-		gHscJlWViYtPjhHbTN/ZGMbqhKA=
-		</data>
-		<key>ZBugSquashResources.bundle/drop_down_dark@3x.png</key>
-		<data>
-		BTfGM12hN9+2MHHS2dFO9mYwa4c=
-		</data>
-		<key>ZBugSquashResources.bundle/drop_down_light.png</key>
-		<data>
-		hWyebCDauobpMIA73CU31BlAVbY=
-		</data>
-		<key>ZBugSquashResources.bundle/drop_down_light@2x.png</key>
-		<data>
-		qEWW5ZqaSrGtNvs9ttw0MI8MuvU=
-		</data>
-		<key>ZBugSquashResources.bundle/drop_down_light@3x.png</key>
-		<data>
-		/mrYRRJ5+Q1MYlCMWISeUfWOlLc=
-		</data>
-		<key>ZBugSquashResources.bundle/en.lproj/NewBugViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HlSBuLjqTx7qhlEXM1/dsjBDLXw=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/en.lproj/ZBugSquashKitLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			8cELWZXqqkJn7sTZ2V4SO2TtGpU=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/es-MX.lproj/NewBugViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HlSBuLjqTx7qhlEXM1/dsjBDLXw=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/es-MX.lproj/ZBugSquashKitLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			d4672EnN+rtXxq6zkglM28o+qg8=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/es.lproj/NewBugViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HlSBuLjqTx7qhlEXM1/dsjBDLXw=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/es.lproj/ZBugSquashKitLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Lm5kAZIF+W98FrHIZ7DdWTnL8R8=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/fr-CA.lproj/NewBugViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HlSBuLjqTx7qhlEXM1/dsjBDLXw=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/fr-CA.lproj/ZBugSquashKitLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Jy6HwOcO6uI54tnRYZkf900fd5s=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/fr.lproj/NewBugViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HlSBuLjqTx7qhlEXM1/dsjBDLXw=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/fr.lproj/ZBugSquashKitLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			GYObJ8sLx5ITQryYcLJ5xNXjMSY=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/he.lproj/NewBugViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HlSBuLjqTx7qhlEXM1/dsjBDLXw=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/he.lproj/ZBugSquashKitLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			GDulq/2z3ocw1GpiP/y4bhu2VWs=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/hr.lproj/NewBugViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HlSBuLjqTx7qhlEXM1/dsjBDLXw=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/hr.lproj/ZBugSquashKitLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			eI5pf7TeBDXuHVawx/dgvvNDiYE=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/id.lproj/NewBugViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HlSBuLjqTx7qhlEXM1/dsjBDLXw=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/id.lproj/ZBugSquashKitLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ZXMDxuzSzDDYOCpxlPVqNdEAE2s=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/it.lproj/NewBugViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HlSBuLjqTx7qhlEXM1/dsjBDLXw=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/it.lproj/ZBugSquashKitLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			DVMDaiykwglrS81BbrO3KeodLEc=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/ja.lproj/NewBugViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HlSBuLjqTx7qhlEXM1/dsjBDLXw=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/ja.lproj/ZBugSquashKitLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			VfeZhfLfMf3NnT7dBWPscFayGeI=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/ko.lproj/NewBugViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HlSBuLjqTx7qhlEXM1/dsjBDLXw=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/ko.lproj/ZBugSquashKitLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			pV3YxZM3r7W7NpXxKGE7+MvFsRs=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/nl.lproj/NewBugViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HlSBuLjqTx7qhlEXM1/dsjBDLXw=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/nl.lproj/ZBugSquashKitLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			rhw896EcViSL1WNlcZDFHug4Pec=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/pl.lproj/NewBugViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HlSBuLjqTx7qhlEXM1/dsjBDLXw=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/pl.lproj/ZBugSquashKitLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			rilgvYmciRRI4PyXEVIsvufsl6w=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/pt-BR.lproj/NewBugViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HlSBuLjqTx7qhlEXM1/dsjBDLXw=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/pt-BR.lproj/ZBugSquashKitLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			FPwd+up3V9nfKHZ13dMPWcKT8Ek=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/pt.lproj/NewBugViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HlSBuLjqTx7qhlEXM1/dsjBDLXw=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/pt.lproj/ZBugSquashKitLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			UGPKNwUI2a/JIIR2IvyJMfs9uTE=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/ru.lproj/NewBugViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HlSBuLjqTx7qhlEXM1/dsjBDLXw=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/ru.lproj/ZBugSquashKitLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			dYZmZZSDpmYd7AaVSIipF/26m6U=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/sv.lproj/NewBugViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HlSBuLjqTx7qhlEXM1/dsjBDLXw=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/sv.lproj/ZBugSquashKitLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Nl4NEE3IUlEO7tcOPlfwKJ3xWlM=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/tr.lproj/NewBugViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HlSBuLjqTx7qhlEXM1/dsjBDLXw=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/tr.lproj/ZBugSquashKitLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			+spsYlDR6OTMWlMdj1ZXmtBCdK0=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/vi.lproj/NewBugViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HlSBuLjqTx7qhlEXM1/dsjBDLXw=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/vi.lproj/ZBugSquashKitLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			EamhrWpwoZGxkimx5WFWc79ZIZ8=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/zh-Hans.lproj/NewBugViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			NGPE4ocaOxJQOiXEqt0qm/7dDks=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/zh-Hans.lproj/ZBugSquashKitLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			sgNYDzE23e9B85yaEJhm02C+h60=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/zh-Hant.lproj/NewBugViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			OpygQ3rkXPmOK9KHsFlCvm6YfFs=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/zh-Hant.lproj/ZBugSquashKitLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			drVGriGrcThR9u2HlbBFHsDNiB4=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>AppticsResources.bundle/APReviewViewController.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			RRidjSAukg0Gl7UdwaRfhVzUcf4=
+			</data>
+			<key>hash2</key>
+			<data>
+			5TX5hLZxxbgXjOGQQ9oE82M7/Uh2cKgVP7zQE/xNVTw=
+			</data>
+		</dict>
 		<key>AppticsResources.bundle/Base.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1172,22 +629,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rK6wKFSdGN/ed0oZoC7HlcRWC3k=
+			dJhOhlzGaiHQ0b3GCoyeSy6vyCk=
 			</data>
 			<key>hash2</key>
 			<data>
-			CCrJnq1e7tt4dKl3OXMIixja+upJQDtHxTOO31/E+3s=
+			I7gKTkFuGj0XAQqg3PDvbhxpYyk3oi060ZahKvhoCUs=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/ZAAppUpdateAlert.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			U2S9XJSRD8JUd3kcRQgCTrAFS/k=
+			mRkXO03OKDXux155XsxJwPGGtBw=
 			</data>
 			<key>hash2</key>
 			<data>
-			7cdkkDkO72HU+RqNFryPSJsJ+SOPgOnQq3wauCUc7og=
+			DDQhYZ0JTESL0/nl5Kq5jiQ6BAGzQ3bG4ZXUvy0RNlE=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/ZACustomAlertController.nib</key>
@@ -1271,11 +728,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			peQFf7IP9PA0fKggOq6wthEnDTw=
+			O8AkcZxG+WsLAhsv27JNxtsU9Dw=
 			</data>
 			<key>hash2</key>
 			<data>
-			+LDeeEly7972qJXqTXMmcAkzIbJgM9rZr5RM2PsOex4=
+			JQWt/oH9lSxiiWCYU2t28j5EivOgzKbPT9EJ4ETzyrs=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/ZAUserConsentAlertV2.nib</key>
@@ -1293,11 +750,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZMUa2/SEPgJEliW1+jsK9SZHjG8=
+			8aGctJGrveuTW0IHZp72HtJafyg=
 			</data>
 			<key>hash2</key>
 			<data>
-			nuxsnErXhCQRhLqwfgce3IYDrWCTLNhnJJj0sgLJ40g=
+			IQXxVUSKPMJzH0yItLIrH8xQxEIopKQViNuWqKiqqMo=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/_CodeSignature/CodeRequirements</key>
@@ -1315,22 +772,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			okD1B0A9yBqSwN8KjbjHCsAzjLM=
+			LfdX2I3fdTNc9/sTLuQ0+UH+OaE=
 			</data>
 			<key>hash2</key>
 			<data>
-			j82YxRfVvfdJCS37+OFwFHINsx3vAFT6MrBRcZwecqg=
+			268GYAFslRE2PeMww+vVwScio+vImW53SSIQNupIn0Q=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			tYDOLu+QyR7VqRJpNrFIDjTO1hs=
+			+M6P8nehbu5cf5iczYL9lxHs5c8=
 			</data>
 			<key>hash2</key>
 			<data>
-			gmB3dmSkqPRrNW+deahs+lbZHHPyF54/YjjlRFbO534=
+			voytOaiT34F0EHsUT7/G6L2fXo+r4rRKg27bKLIqbEo=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/_CodeSignature/CodeSignature</key>
@@ -1880,92 +1337,103 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>Headers/APAPIManager.h</key>
+		<key>Headers/APAAAUtil.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			R5KIfZuCxsPtU3R+nUrJMOesTNE=
+			Mw+OE/wjSk9kO+n1S4NZcfKMcT0=
 			</data>
 			<key>hash2</key>
 			<data>
-			p3D4Qb3zxxGMSvHsbUZkIyZmsHpAzOFt7EXOkycoBmw=
+			Ljfx6w2AwFwS9lBXTk6t3UKTj5a56TzA6oLYKpmYuSA=
 			</data>
 		</dict>
 		<key>Headers/APBundle.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			EHVLJTdsvSTJTUjmSTw183naFoA=
+			x9eE7rSseW7YzSM7JRn/irWDRJs=
 			</data>
 			<key>hash2</key>
 			<data>
-			/s5gVYpBNOdLxAj6Miv94/fS+C6hw4UNcNlpxgbi5qs=
+			JTF3ecWad6tjuYMiv+ZVIkoJ2c2854/v749DzqKPc+Y=
 			</data>
 		</dict>
 		<key>Headers/APCustomHandler.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Iu4q8MnPAsbnD5z8koMvmjcmUZo=
+			9isEE8TdTxEEj6f87pSgWxnb6jI=
 			</data>
 			<key>hash2</key>
 			<data>
-			LHE0q8P5vgNAu00fW3XE5TphmpWMYeKZJu4R5JZB5ig=
+			jDkPpB/3OcIGACKl3JJpLWxtMc9zErPFvRkhZyvYlQc=
 			</data>
 		</dict>
 		<key>Headers/APEventsEnum.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Mq/2bQTKJAT1kJPSV704gBsUEOE=
+			RlAH2rekFw+4k5NAtS+yp9q0oG0=
 			</data>
 			<key>hash2</key>
 			<data>
-			xBNusTkdo80FB336t6vrHpcK3gnIb8xFA9Vl1xrY5zs=
+			8Oj7CXvYFjAELRxCCIhbobS8wzzkekSbHg44TiyNG4s=
+			</data>
+		</dict>
+		<key>Headers/APJWTWrapper.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			A20j+AL+EJck5fGYDTLhN8k82fY=
+			</data>
+			<key>hash2</key>
+			<data>
+			XS3yc0dO0JCXcfbYJHdVUVejLJAXR8NKulYU70+WowI=
 			</data>
 		</dict>
 		<key>Headers/APLog.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2yz6xgBesEuqQKNG+axvIhSSiyI=
+			Tzvs1fRjJhiBVl09/Ybqf7e0t08=
 			</data>
 			<key>hash2</key>
 			<data>
-			A/gCiEAuMrenXUC2aFQmItwaKOG5N9j2E1mRRswbtwA=
+			ySyStMul+aEVZzoV7BtT13xxgpJ6UaVT/8DNkzNmw+w=
 			</data>
 		</dict>
-		<key>Headers/APRateUs.h</key>
+		<key>Headers/APRateusObject.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			9lGHyjrQThyAwRSTkg6PK2mNcZ4=
+			eiugpvtboqRi1rV19QISsAwdmD4=
 			</data>
 			<key>hash2</key>
 			<data>
-			tlz1Kur8+TAEddpBK70kX4FklIHPjh/DlCATlScTfyw=
+			EjgHiWJVUeYJn/vd38zb1zFuPaNA2jd9NcLu2hF2R/s=
 			</data>
 		</dict>
-		<key>Headers/APRemoteConfig.h</key>
+		<key>Headers/APRemoteConfigObject.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5wzfxP2c7fBBPNfmbLV8vh5V4hc=
+			uRdplGG43FRFAC0vqExkrBwpsVk=
 			</data>
 			<key>hash2</key>
 			<data>
-			HDgQqIV99hohzbQrIQogcWTIhM0sPv81+vLn7mfvjBw=
+			18WO9HtoMvDmIee0B8JjBD0GYu3tr92P7nYPfEyks2E=
 			</data>
 		</dict>
-		<key>Headers/APRemoteConfigValue.h</key>
+		<key>Headers/APReviewViewController.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			MYBeKK+X2rN/cOjjR1VAZwTh8JA=
+			S6VusiLxL5JcZyvL5VSYgWggnAQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			nGeNjFXHrLTHH6Ag0fwAGyuXxPFd6zcuvjxO6hmlqVE=
+			yu4daGl2JGfiL78GlppqMWnJrjm5FBpVGxPTKU63ijc=
 			</data>
 		</dict>
 		<key>Headers/APTheme.h</key>
@@ -1983,22 +1451,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kAPROkWVinpNSK2TZzGrUu0Ztck=
+			s3KutelXTw3J95OUwPnMwRI2B2o=
 			</data>
 			<key>hash2</key>
 			<data>
-			IIB6kkof8sGWSyZX4qCO887/g8W3vE1xfexJl8LN0N0=
+			q8IhSrdn4vW+o9aTbQLIVVqySQ3ZF5FanRNNc1EoLz8=
 			</data>
 		</dict>
 		<key>Headers/Apptics.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			b/DFsr+t4/s952bDbRxlHtTj5n8=
+			smPOwfw/VI+bFt6V7zRU2YdRdpo=
 			</data>
 			<key>hash2</key>
 			<data>
-			S5qLGEYcZJ2UgT85yCbZJTELyYcCmsZm6+iEGgcL3kU=
+			DSxmzRKpgQvZubFbpzNyEYk35hz4V3UhvvSSKe8761Y=
 			</data>
 		</dict>
 		<key>Headers/AppticsConfig.h</key>
@@ -2016,33 +1484,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hxQDJFiCvid+GKSmBu6Hldbyy64=
+			dobko8VMnEWyhAwpfJrGORdo/VE=
 			</data>
 			<key>hash2</key>
 			<data>
-			SYOQspaKwLXMQoO9gqK5/dy9dlj4g5O/fFqb66jSiSo=
+			TqVgHlPRnYoonJT321hzZHojiMfQ0X3IUmbj1K5/qJU=
 			</data>
 		</dict>
-		<key>Headers/FeedbackKit.h</key>
+		<key>Headers/NSData+APGunZip.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vZpiOQ5Cx1YMkpAvuPla2S8X1cU=
+			3k0mfNyEvBevCm4c6sVQ5h7AsrM=
 			</data>
 			<key>hash2</key>
 			<data>
-			2n2zUXzZhnS5tOLkry4LSpxeGD6zicTB9cg3hA8c8LE=
+			p6YBxM1tfKgSni2ZbmrJXwtw9id5uAqPsvoWbwzRWbg=
 			</data>
 		</dict>
-		<key>Headers/WCSessionSwizzlerDelegate.h</key>
+		<key>Headers/NSUserDefaults+SaveCustomObject.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			AQZyvmToTcRLw+5+V7fPewoV/uk=
+			VgVCSrbZ10nb+aFgihstcmf7u0E=
 			</data>
 			<key>hash2</key>
 			<data>
-			6XCNmj31J8ycLs97g+ZXcaG6gh1bj5GANUi+1wdGrLc=
+			JTNcyQklCFZ3zyf4TM3emvWM78CHjcAK66UjzhGR2Vk=
+			</data>
+		</dict>
+		<key>Headers/ZAAESCrypto.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			AoM8N6eB0PjmQ7h3Yyrjuc50SiA=
+			</data>
+			<key>hash2</key>
+			<data>
+			8E4si5OqKsnDHWr9+5atdPoNI5sNSsWsGYa0vMDo+Ic=
 			</data>
 		</dict>
 		<key>Headers/ZAAlertStyle.h</key>
@@ -2056,37 +1535,235 @@
 			DLlMn2xyHQHr4Rm3rdCR5WkljgZpvXKQSfVjtkJlrvw=
 			</data>
 		</dict>
+		<key>Headers/ZAAppUpdateAlert.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9/TO4MxUCB/6hXHYx8mKRI6hCQo=
+			</data>
+			<key>hash2</key>
+			<data>
+			WXQjYd3j20FZhlCjLJiE+nK4OJ8aG798CkrctCZe5S8=
+			</data>
+		</dict>
+		<key>Headers/ZAAppupdatePopupInfo.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZdXu4iiVbAXewtk4wSXPkt/gm74=
+			</data>
+			<key>hash2</key>
+			<data>
+			1IdLfrVRiLeypuFLEwflgQr/mB7INi6Zu8v8ld7qC44=
+			</data>
+		</dict>
 		<key>Headers/ZAConstants.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/QdrbEbh/j/F4JtZ92KNA/KmWo4=
+			QyZPYvJjxuJ7zwdZ55GIaZ/tEKc=
 			</data>
 			<key>hash2</key>
 			<data>
-			WjWKWwFJC2r7joIJ/UCfr8TtOjikRR/V6+iRil6OquI=
+			StDEBT56tlwWbU3YAWZLTOXZ6rLZ2WQpE353+WqkqME=
+			</data>
+		</dict>
+		<key>Headers/ZACustomAlertController.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			pr4ENwzvfQ5IhYmLkYEVVce4+T0=
+			</data>
+			<key>hash2</key>
+			<data>
+			KXMoXbpANLk7Zl4e8TIxWsW4+65FaBg8rFiEJ6JE7zg=
+			</data>
+		</dict>
+		<key>Headers/ZACustomNavigationController.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OJQFwF6Aue9gmxHdwfUm+P8124s=
+			</data>
+			<key>hash2</key>
+			<data>
+			rJjEAwajW8bdEQtnpSp3RuonRlAv7PK8xj7HWYZfJGM=
+			</data>
+		</dict>
+		<key>Headers/ZAEngagementsUploadOperation.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4T2UGhiPNbq0y8a7rbQKII4rntw=
+			</data>
+			<key>hash2</key>
+			<data>
+			N1dKNFT9RlOfilr8lvOXauKzYHeEY2zAbT6/SE29C9o=
 			</data>
 		</dict>
 		<key>Headers/ZAEnums.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ZGfY4r8ZDDOVQsrvoDnsuObGAuc=
+			+pYp36athrritkCGpBR5btwg7ZY=
 			</data>
 			<key>hash2</key>
 			<data>
-			fTWOaLyU8dxi+OQU2FrfDTueytMnVOx07cQtkDM5KS8=
+			MEMHvQ3+CK/nB9I3DY+srDltVNKirrSy0XtSQz0lpJs=
 			</data>
 		</dict>
-		<key>Headers/ZAPresenter.h</key>
+		<key>Headers/ZAEvent.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0KB/RMK6ezLxrcs8j26Wb9NKwtc=
+			7Ma7ld5StLLLo63mK6JwlhPrALM=
 			</data>
 			<key>hash2</key>
 			<data>
-			QXdBPEOBkx0uii31taEkvsG2wJ/aj68xwy5dpfMrq3o=
+			CL8sHYwL2zncJ77e4Fk7bo1+O0runirfVj4hdr5gVm8=
+			</data>
+		</dict>
+		<key>Headers/ZAFileManager.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lIdorqF2UQFcuWax0HrLBw5yx6Y=
+			</data>
+			<key>hash2</key>
+			<data>
+			I+ALmb1ppPVSZK2o2ErcclpPJ8amnuZ1ellQ3mEhi40=
+			</data>
+		</dict>
+		<key>Headers/ZAFilters.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Vz2UlH7EXLPQ60tdhLcRZRKqLko=
+			</data>
+			<key>hash2</key>
+			<data>
+			Mtsd6wt604AXKPXIM3sg8wiNOeX9S+4LqVxFy/PgylU=
+			</data>
+		</dict>
+		<key>Headers/ZAGlobalQueue.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			IQFNy297TfUf+muGHaKPIWY53F4=
+			</data>
+			<key>hash2</key>
+			<data>
+			AiTnG+0I/ZsdfPbzVoprVqAJ70PFnKwwph4hUOevdyc=
+			</data>
+		</dict>
+		<key>Headers/ZAJSONString.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			W9dMFcPLXLGSW8M74hShW6Wucf4=
+			</data>
+			<key>hash2</key>
+			<data>
+			CjHOw8bmTrMk/t8NYVXhmHN7OcRlfrZsy0c/WAKTe1A=
+			</data>
+		</dict>
+		<key>Headers/ZAKeyChainWrapper.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			moTyOf6ScC+QeDy5BlyHpEPPMA8=
+			</data>
+			<key>hash2</key>
+			<data>
+			1Ma8RRMpq2D4QzgceL1T31+GzwiUftv+J7XFxjZUakM=
+			</data>
+		</dict>
+		<key>Headers/ZALoader.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			pQ6BrmhZxu9FQ6YxUpILcDSiaS4=
+			</data>
+			<key>hash2</key>
+			<data>
+			jAAgcmbQcZeMlBWyUdEMYeI3SakJc6tPJUrfUwdOsw8=
+			</data>
+		</dict>
+		<key>Headers/ZAMacros.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			VVOSy+r9mbTEIsIIcqfT5rTNQYU=
+			</data>
+			<key>hash2</key>
+			<data>
+			jGo1UhBg/pdwz26DKQQXfXd7JS2F0QTuS3Qid3lzAh0=
+			</data>
+		</dict>
+		<key>Headers/ZANetworkUtils.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8pE2Lrfwy6jnlsUq3hynUcUOfdM=
+			</data>
+			<key>hash2</key>
+			<data>
+			tz4RcxVMLF0t80optlSX7ibUCUT8HkQp85pW71f/rhU=
+			</data>
+		</dict>
+		<key>Headers/ZANetworking.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cWWJh/nvpunbN7Ei7AeMkSRkcmA=
+			</data>
+			<key>hash2</key>
+			<data>
+			poqZiBex+4LHn5MpUltwz4a870a+MSFuol+iUyxgKNc=
+			</data>
+		</dict>
+		<key>Headers/ZANonFatalsUploadOperation.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yE5A1Wyifi04GmXNdqm7lVIKzYo=
+			</data>
+			<key>hash2</key>
+			<data>
+			/PcrmO35D48iI0ozAxtsSuuU6TIvvcBp5xQMsMscwVs=
+			</data>
+		</dict>
+		<key>Headers/ZAObject.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			v5ASn6Ss8ZNkghUsMIKznO03ijs=
+			</data>
+			<key>hash2</key>
+			<data>
+			yoGAIvnzJXd+lR7W5qiP4q3cwBXwxNZBI4+LvUoh38c=
+			</data>
+		</dict>
+		<key>Headers/ZAPIIManager.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vtVteoZWCIGxUJHP52sjo0oyIK0=
+			</data>
+			<key>hash2</key>
+			<data>
+			7nMWylCgXPhg2tzfu5a6Bj0Eae9TlMkUSY2UWkktxjA=
+			</data>
+		</dict>
+		<key>Headers/ZAPIManager.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bt1a6SmNOz5zYzLwe2ilSQ+XJkE=
+			</data>
+			<key>hash2</key>
+			<data>
+			XDf2+BKBf7SixemmvWLh6+trkfTHmADTPL4tj4XoERI=
 			</data>
 		</dict>
 		<key>Headers/ZAPrivate.h</key>
@@ -2100,15 +1777,81 @@
 			+eX7W4zkzTmQA8BJcpx3oqthRxvF/XZfAux08L7QSTk=
 			</data>
 		</dict>
-		<key>Headers/ZAnalyticsPIIManagerController.h</key>
+		<key>Headers/ZAScreenObject.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			BFKqt4C+ywJ+QQudTJ2oX/qSL/Q=
+			SUjbuLLrR6XT78iBm3NPg5LBoBw=
 			</data>
 			<key>hash2</key>
 			<data>
-			rEPAPINHEWZFl48ycXqh+5TxsLc5tPRkqB1r4HRblik=
+			zXa3x5/QHnFYgp3BfV8VSPo29JAiVSf7S7s2QTEsRWI=
+			</data>
+		</dict>
+		<key>Headers/ZASession.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1pgp3ALC2gbpXl9xG7nTa3MzRFA=
+			</data>
+			<key>hash2</key>
+			<data>
+			9sjl6c4Z+b0XA+XRL1Ix73fuQENxfaLy6Jq5KNyn1+4=
+			</data>
+		</dict>
+		<key>Headers/ZASystemInfo.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jzxWn5psCt6iD82nkFniYN9rc/g=
+			</data>
+			<key>hash2</key>
+			<data>
+			LQfV8pgjDHmOSxCsCNGhP0KwaJ6AUDzzcuiu99MR0tE=
+			</data>
+		</dict>
+		<key>Headers/ZASystemProperties.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			83fUXtmwxzzdvWep0PxTMLYVh34=
+			</data>
+			<key>hash2</key>
+			<data>
+			rC6j+87odGJNijv1BRssFmLLBNnPBbhpay67WThnXrs=
+			</data>
+		</dict>
+		<key>Headers/ZAUserConsentAlert.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			k2qrePjNqH1dT3FRYh/p8GuPR4w=
+			</data>
+			<key>hash2</key>
+			<data>
+			Q4rlRVLy8kSbkIcLvxsHrhk7gsJjw/AvOvD5IYkDZHc=
+			</data>
+		</dict>
+		<key>Headers/ZAUserConsentAlertV2.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			j5Jv0E+vdu8FPM6YMR8jJtBEOMs=
+			</data>
+			<key>hash2</key>
+			<data>
+			8WkoBFcEoxg9DUCQVldZukh+Ti1oXsSwtejmlabkkgo=
+			</data>
+		</dict>
+		<key>Headers/ZAnalyticsUIApplication.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			AWOX1FbE+oh3I5aZgvwXQmIqGHw=
+			</data>
+			<key>hash2</key>
+			<data>
+			JeroercguSHf+OhKbJtf8xkokqaTTdCm2f6UdajToYA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -2121,1192 +1864,6 @@
 			<data>
 			cIcDfbPqw84yrN2vO8sC6BSuTXHJnziyce9aVs2113g=
 			</data>
-		</dict>
-		<key>ZBugSquashResources.bundle/Apptics-Feedback.ttf</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			tzZT/3uSAwionZ14ouk5BpSuZhk=
-			</data>
-			<key>hash2</key>
-			<data>
-			7rnMygHaXya6xwr/J5sW0rSxyoFi6yiVUc/mTF7oheg=
-			</data>
-		</dict>
-		<key>ZBugSquashResources.bundle/BSDiagnosticInfoViewController.nib/objects-11.0+.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			3ClnRC+OqtG9hC7T1BCQujO5/dc=
-			</data>
-			<key>hash2</key>
-			<data>
-			S0KGEO2XK5XVQGyh5QJ3syigDkyWWORoC8xYMQ143GA=
-			</data>
-		</dict>
-		<key>ZBugSquashResources.bundle/BSDiagnosticInfoViewController.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			4z+1asDU27xQpcNu7DDVsLmKGAQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			GCsEG9iVrEhA5WPwu9fxmM5MEAfTaS7ZU2a1M409C8k=
-			</data>
-		</dict>
-		<key>ZBugSquashResources.bundle/Base.lproj/NewBugViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HlSBuLjqTx7qhlEXM1/dsjBDLXw=
-			</data>
-			<key>hash2</key>
-			<data>
-			BwTUubp5+7sUi7mxszr/aOTpIv9Ksb32d6C+HgL4zm8=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/Base.lproj/ZBugSquashKitLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			8cELWZXqqkJn7sTZ2V4SO2TtGpU=
-			</data>
-			<key>hash2</key>
-			<data>
-			sLRXWEmO685ef6XJpT9j5TXaPLOuG3KGH7w3U9MDqmE=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/FeedbackDataTableViewCell.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			NCLeAy/nr8OJagNL1pnTwE5Klu0=
-			</data>
-			<key>hash2</key>
-			<data>
-			RoK90hAeE6B81TB0WimrXYHYH4MS2AcgChzSbQtJvik=
-			</data>
-		</dict>
-		<key>ZBugSquashResources.bundle/FeedbackKit.storyboardc/FeedbackDataController.nib/objects-11.0+.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			2VmKQZ3J9y5RlyVIcspaI/HwnrY=
-			</data>
-			<key>hash2</key>
-			<data>
-			xHF3UHDxI8B5LIZd6jQHxMl9Ii4aGUEfLdTVYcLhLcc=
-			</data>
-		</dict>
-		<key>ZBugSquashResources.bundle/FeedbackKit.storyboardc/FeedbackDataController.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			2VmKQZ3J9y5RlyVIcspaI/HwnrY=
-			</data>
-			<key>hash2</key>
-			<data>
-			xHF3UHDxI8B5LIZd6jQHxMl9Ii4aGUEfLdTVYcLhLcc=
-			</data>
-		</dict>
-		<key>ZBugSquashResources.bundle/FeedbackKit.storyboardc/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			YN1gzIdIEmA0Er1028SnbzY1IEQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			DjnDVx2UD2P+Col1fEW605EEBLkIslp8Aj/C2wnt1VE=
-			</data>
-		</dict>
-		<key>ZBugSquashResources.bundle/FeedbackKit.storyboardc/njx-Nt-Bnw-view-g8R-bb-haf.nib/objects-11.0+.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			EvRdDQBCnBf9zqDDoxRjFXVLaR0=
-			</data>
-			<key>hash2</key>
-			<data>
-			KxbdUvu3ZA4vWyEwJ8B4HfSFOhibhZlOjXLhJqH1W5E=
-			</data>
-		</dict>
-		<key>ZBugSquashResources.bundle/FeedbackKit.storyboardc/njx-Nt-Bnw-view-g8R-bb-haf.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			T/5/lvRe+6nGmv6QB+bkJ6QMe1M=
-			</data>
-			<key>hash2</key>
-			<data>
-			Qz4JCmV0+Ex4bCmmxvDK0CZ4/PuNmbdJc+xiB0sXE7E=
-			</data>
-		</dict>
-		<key>ZBugSquashResources.bundle/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			x2r0aIr4vdw2iFyEJg+1rhk4rZQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			8I2+emr3Ikb3OmlqTZm/v3sWc1T9nYRp5C7JpekPOEA=
-			</data>
-		</dict>
-		<key>ZBugSquashResources.bundle/NewBugViewController.nib/objects-11.0+.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			dTTGI5fvX2xb1PQyYwcCBHy7hu0=
-			</data>
-			<key>hash2</key>
-			<data>
-			U5hcU4kpMd7PlTHl9GdughvVwNu69LhNSYuDPOYWA2Y=
-			</data>
-		</dict>
-		<key>ZBugSquashResources.bundle/NewBugViewController.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ClCxq5WnTgwRXQZGYFInbqIbmtI=
-			</data>
-			<key>hash2</key>
-			<data>
-			jcw9MAotB7ntqMuTxGNj9/kQ/23GHXmV7zl9Dqzude8=
-			</data>
-		</dict>
-		<key>ZBugSquashResources.bundle/Screenshot-app.ttf</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			YNKlihW/j9onhWhjiIatVkra0jU=
-			</data>
-			<key>hash2</key>
-			<data>
-			te6zOaYxIch7iiLP3uDgpRhfxkpqvnVNk14K3E8FX+8=
-			</data>
-		</dict>
-		<key>ZBugSquashResources.bundle/ZAAddImage.nib/objects-12.3+.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			3nz+BrvR46hYwf3ZtwmNWsqfDCc=
-			</data>
-			<key>hash2</key>
-			<data>
-			DYgm2zu+5euBJUox71j639utm0TnNT0RYg6T1qVf8oQ=
-			</data>
-		</dict>
-		<key>ZBugSquashResources.bundle/ZAAddImage.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			K4s1JdR6JRVulIp9s0iYb5neA0w=
-			</data>
-			<key>hash2</key>
-			<data>
-			wgaMpkkpTdtIusYaXlUj80loGR2XPdxs3mXxv9lRXHc=
-			</data>
-		</dict>
-		<key>ZBugSquashResources.bundle/ZADiagnosticInfoCell.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			xwdhQ+STYRTK2mXOPeOENmEc+Jg=
-			</data>
-			<key>hash2</key>
-			<data>
-			BWjek0lTrJlvGygCgUwL/3F1LH0wedz0SlUOazct6Oo=
-			</data>
-		</dict>
-		<key>ZBugSquashResources.bundle/ZADiagnosticInfoViewController.nib/objects-11.0+.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			EgjpbNkHdV9phHDbKJfqqItSeeU=
-			</data>
-			<key>hash2</key>
-			<data>
-			ondf5xVWUkZTPNNMUVJTohcDm6fxV7qPdlc8Fb80ZmU=
-			</data>
-		</dict>
-		<key>ZBugSquashResources.bundle/ZADiagnosticInfoViewController.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			lh9gYmmskx/od2hFAq15jQjwWvw=
-			</data>
-			<key>hash2</key>
-			<data>
-			N18+FB2SxO/WOJi3FUuFl2pOS9jYl1XeeQGDahTutBg=
-			</data>
-		</dict>
-		<key>ZBugSquashResources.bundle/ZAImageEditorCell.nib/objects-12.3+.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			UQqrSPVifeR2foRhVx6ZTrHPM3I=
-			</data>
-			<key>hash2</key>
-			<data>
-			BJPzynWs/SFXIgVcrfIIB0sWxcqdewztjwMHxuhxsKg=
-			</data>
-		</dict>
-		<key>ZBugSquashResources.bundle/ZAImageEditorCell.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			FgpIWSIOpPHsqKiDkkGOU7bw638=
-			</data>
-			<key>hash2</key>
-			<data>
-			0PDEi1MgCkoYO7cPjCJGci3P6kZ9jK+xpwSDH7UMKz0=
-			</data>
-		</dict>
-		<key>ZBugSquashResources.bundle/ZAImageListViewCell.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			4vRIfpYYRFOgolBtjRFjw8AywQI=
-			</data>
-			<key>hash2</key>
-			<data>
-			deLX7tK8t1G2KTHj503+aK6TJ4566A1FX1BsQ0oUEgE=
-			</data>
-		</dict>
-		<key>ZBugSquashResources.bundle/ZAImagePicker.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			C7cvFybjq+eelNN/NEsFh2z8w5Q=
-			</data>
-			<key>hash2</key>
-			<data>
-			t0rHLmpVXBCWYdb7wlrlFNFUUligBSxkhh6rjxG2z9w=
-			</data>
-		</dict>
-		<key>ZBugSquashResources.bundle/ZAImagePickerCell.nib/objects-12.3+.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			RorxEfT6O4PRBLKO77l1jXb9Mms=
-			</data>
-			<key>hash2</key>
-			<data>
-			N64pdg/NN2b55TGl1/Mw/YA88nPM6YGFBDYYeb2oupU=
-			</data>
-		</dict>
-		<key>ZBugSquashResources.bundle/ZAImagePickerCell.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Wd+GnhoEUN5A+l3YLB3jvlwpgeI=
-			</data>
-			<key>hash2</key>
-			<data>
-			6vJ/xaxj8imBiB+a00nOmNUWVw0vRsgIlQxg5t/aBdU=
-			</data>
-		</dict>
-		<key>ZBugSquashResources.bundle/ZAIncludeLogConsent.nib/objects-11.0+.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			sy3kxXh6NFwZIA4LWsmREaz0cMU=
-			</data>
-			<key>hash2</key>
-			<data>
-			CojkaET1J4QALuSQXXmC/FET0XvmWWaj/ipZ2x1sXYg=
-			</data>
-		</dict>
-		<key>ZBugSquashResources.bundle/ZAIncludeLogConsent.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			xHa7jpvi/nljgIcAis7Bi9cu+IY=
-			</data>
-			<key>hash2</key>
-			<data>
-			DOOltpqlx8LseSdHMSygu4uT7AlXMku982IJ2KXXG88=
-			</data>
-		</dict>
-		<key>ZBugSquashResources.bundle/ZASectionHeaderView.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			KdtIdTNUr6ahpaJ1XX/605ydKTE=
-			</data>
-			<key>hash2</key>
-			<data>
-			PP3d03sz9kqVxB/7xm3S95Mw+lh2wV48YcMClHhgcdk=
-			</data>
-		</dict>
-		<key>ZBugSquashResources.bundle/ZASystemLogListViewController.nib/objects-11.0+.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			hfO8+w3AnBLAZPqWJuei8YuXNR8=
-			</data>
-			<key>hash2</key>
-			<data>
-			1dXnjq2nsEvne8wBn8FIvfSz7U2dcbZFrwaHpljzqlQ=
-			</data>
-		</dict>
-		<key>ZBugSquashResources.bundle/ZASystemLogListViewController.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			8pcG3PqZJfYMc2s7LL0PrL43gN4=
-			</data>
-			<key>hash2</key>
-			<data>
-			6i4xs8t6/RQXkAuiFBYkH9gGquE4rvTWJkgUWGAUodM=
-			</data>
-		</dict>
-		<key>ZBugSquashResources.bundle/ZASystemLogsViewController.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			RRidjSAukg0Gl7UdwaRfhVzUcf4=
-			</data>
-			<key>hash2</key>
-			<data>
-			5TX5hLZxxbgXjOGQQ9oE82M7/Uh2cKgVP7zQE/xNVTw=
-			</data>
-		</dict>
-		<key>ZBugSquashResources.bundle/_CodeSignature/CodeDirectory</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			40rezYeGxF3nsvU3Aghp7o23rq0=
-			</data>
-			<key>hash2</key>
-			<data>
-			RwAK+oaKIjXetAJcGrywUNVsHupiOvF3yti/Mg8o9Q4=
-			</data>
-		</dict>
-		<key>ZBugSquashResources.bundle/_CodeSignature/CodeRequirements</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			OnX22wWFKRSOFN1+obRynMCeyXM=
-			</data>
-			<key>hash2</key>
-			<data>
-			mHkgkE6rZQ51eIwFSqCwUk5qgL/HGqMt+NI3phdD+YY=
-			</data>
-		</dict>
-		<key>ZBugSquashResources.bundle/_CodeSignature/CodeRequirements-1</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ZObB8JPcLv+jad7Kp7dwXq2DPs8=
-			</data>
-			<key>hash2</key>
-			<data>
-			vfgbaQ2/TAzPLRK5vCPPIEmgEcu+dRy4mMSiQxCT6zQ=
-			</data>
-		</dict>
-		<key>ZBugSquashResources.bundle/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			UeevSN4tZlZpOmRJIWWExa++J7s=
-			</data>
-			<key>hash2</key>
-			<data>
-			QE4JybkOZKV8l+Oyzbh5JdFlBgyYS2AAt+lZDSU5lN0=
-			</data>
-		</dict>
-		<key>ZBugSquashResources.bundle/_CodeSignature/CodeSignature</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			2jmj7l5rSw0yVb/vlWAYkK/YBwk=
-			</data>
-			<key>hash2</key>
-			<data>
-			47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
-			</data>
-		</dict>
-		<key>ZBugSquashResources.bundle/ar.lproj/NewBugViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HlSBuLjqTx7qhlEXM1/dsjBDLXw=
-			</data>
-			<key>hash2</key>
-			<data>
-			BwTUubp5+7sUi7mxszr/aOTpIv9Ksb32d6C+HgL4zm8=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/ar.lproj/ZBugSquashKitLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			wvib3zn9Eb2uvOECGMj1D9bPGmY=
-			</data>
-			<key>hash2</key>
-			<data>
-			/SWUg85jmmrHwJ9+iGje5PhFUtdj1s9vZC9WtrJh9gQ=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/bg.lproj/NewBugViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HlSBuLjqTx7qhlEXM1/dsjBDLXw=
-			</data>
-			<key>hash2</key>
-			<data>
-			BwTUubp5+7sUi7mxszr/aOTpIv9Ksb32d6C+HgL4zm8=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/bg.lproj/ZBugSquashKitLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			bfEObwM0obmlDtXmhBcZ9NSCIHE=
-			</data>
-			<key>hash2</key>
-			<data>
-			IxDWuzPJWX8CDmp7AV0I9AUKN2D4AeZZnLmAN+LAujk=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/cs.lproj/NewBugViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HlSBuLjqTx7qhlEXM1/dsjBDLXw=
-			</data>
-			<key>hash2</key>
-			<data>
-			BwTUubp5+7sUi7mxszr/aOTpIv9Ksb32d6C+HgL4zm8=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/cs.lproj/ZBugSquashKitLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			mCe9KCAr7csFVKXyRHB75yn3gIQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			SgpDjGcIU9d6VlT9SFtqv9vMVfwqWvsBV2gOyVOIz7g=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/da.lproj/NewBugViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HlSBuLjqTx7qhlEXM1/dsjBDLXw=
-			</data>
-			<key>hash2</key>
-			<data>
-			BwTUubp5+7sUi7mxszr/aOTpIv9Ksb32d6C+HgL4zm8=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/da.lproj/ZBugSquashKitLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			A9qBngZFKlFjIcGaJsR+GFVUyEM=
-			</data>
-			<key>hash2</key>
-			<data>
-			cOWP5hg4AGEEpR1Xuk6Jg+bUH6rUhtOYXMUMYDuF9qo=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/de.lproj/NewBugViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HlSBuLjqTx7qhlEXM1/dsjBDLXw=
-			</data>
-			<key>hash2</key>
-			<data>
-			BwTUubp5+7sUi7mxszr/aOTpIv9Ksb32d6C+HgL4zm8=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/de.lproj/ZBugSquashKitLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			7TFcO6cPP1GvjTvZ1Werv60KBME=
-			</data>
-			<key>hash2</key>
-			<data>
-			njRI3RaYe0Tq9i7TN5PN7s3SpHysZUGLUzV/5wZTuKM=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/done.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			R/ghMyXbYfAB0Inw27DxvGMYKCA=
-			</data>
-			<key>hash2</key>
-			<data>
-			XDILK917qiw1tn4V6rtkLO57qypJYIzLCTgbAEiihGc=
-			</data>
-		</dict>
-		<key>ZBugSquashResources.bundle/done@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			FMkJjUJN9wzEXipZlAgmKSw29Rg=
-			</data>
-			<key>hash2</key>
-			<data>
-			hzcGgRmrA83nQODwai+z6+cOE28dZSHgyVGOPnccHjY=
-			</data>
-		</dict>
-		<key>ZBugSquashResources.bundle/done@3x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			cj5X/wiv6AJRo9U2gmDAMOT8jh0=
-			</data>
-			<key>hash2</key>
-			<data>
-			RaXy635K7lnt2ApF986fZTUc0S5vHbOWRdrp4FAGhIs=
-			</data>
-		</dict>
-		<key>ZBugSquashResources.bundle/drop_down_dark.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			oc88N6Apl3uUj8U5CcJT6nxl2IE=
-			</data>
-			<key>hash2</key>
-			<data>
-			q3hpo0BcPVyl8CIKcuNjl8YJPMKcsPozNgp6swhLtsI=
-			</data>
-		</dict>
-		<key>ZBugSquashResources.bundle/drop_down_dark@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			gHscJlWViYtPjhHbTN/ZGMbqhKA=
-			</data>
-			<key>hash2</key>
-			<data>
-			LPE0ZHrXXq9GTOJowETPQex5Fkywci1VHtz1Xnyvn0Q=
-			</data>
-		</dict>
-		<key>ZBugSquashResources.bundle/drop_down_dark@3x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			BTfGM12hN9+2MHHS2dFO9mYwa4c=
-			</data>
-			<key>hash2</key>
-			<data>
-			xHi6Xku/idtSLRcfMTPP0l+FbWSVqZW3nnDy59yz1Ac=
-			</data>
-		</dict>
-		<key>ZBugSquashResources.bundle/drop_down_light.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			hWyebCDauobpMIA73CU31BlAVbY=
-			</data>
-			<key>hash2</key>
-			<data>
-			4jLTx92bH3+2oYuB82Si6nEsq9bgFTPLHUNV+kyW0ts=
-			</data>
-		</dict>
-		<key>ZBugSquashResources.bundle/drop_down_light@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			qEWW5ZqaSrGtNvs9ttw0MI8MuvU=
-			</data>
-			<key>hash2</key>
-			<data>
-			w0oU675UPWyF/splC5O0atEV0IhrMN1GfirV69dZZ4Y=
-			</data>
-		</dict>
-		<key>ZBugSquashResources.bundle/drop_down_light@3x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			/mrYRRJ5+Q1MYlCMWISeUfWOlLc=
-			</data>
-			<key>hash2</key>
-			<data>
-			hsYpkL0OpqVPhzwrIkSoNs1kb45fAxMTUCZZfFQ1PnM=
-			</data>
-		</dict>
-		<key>ZBugSquashResources.bundle/en.lproj/NewBugViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HlSBuLjqTx7qhlEXM1/dsjBDLXw=
-			</data>
-			<key>hash2</key>
-			<data>
-			BwTUubp5+7sUi7mxszr/aOTpIv9Ksb32d6C+HgL4zm8=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/en.lproj/ZBugSquashKitLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			8cELWZXqqkJn7sTZ2V4SO2TtGpU=
-			</data>
-			<key>hash2</key>
-			<data>
-			sLRXWEmO685ef6XJpT9j5TXaPLOuG3KGH7w3U9MDqmE=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/es-MX.lproj/NewBugViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HlSBuLjqTx7qhlEXM1/dsjBDLXw=
-			</data>
-			<key>hash2</key>
-			<data>
-			BwTUubp5+7sUi7mxszr/aOTpIv9Ksb32d6C+HgL4zm8=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/es-MX.lproj/ZBugSquashKitLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			d4672EnN+rtXxq6zkglM28o+qg8=
-			</data>
-			<key>hash2</key>
-			<data>
-			XiJezfmyEtDj/XWy0GW/TDZN+FgvwtCAjtc+uYzWBMM=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/es.lproj/NewBugViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HlSBuLjqTx7qhlEXM1/dsjBDLXw=
-			</data>
-			<key>hash2</key>
-			<data>
-			BwTUubp5+7sUi7mxszr/aOTpIv9Ksb32d6C+HgL4zm8=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/es.lproj/ZBugSquashKitLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Lm5kAZIF+W98FrHIZ7DdWTnL8R8=
-			</data>
-			<key>hash2</key>
-			<data>
-			1Eh/+rohD6LoN7IWIlvuusJs2kEOw6YoCSohRhwgXcI=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/fr-CA.lproj/NewBugViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HlSBuLjqTx7qhlEXM1/dsjBDLXw=
-			</data>
-			<key>hash2</key>
-			<data>
-			BwTUubp5+7sUi7mxszr/aOTpIv9Ksb32d6C+HgL4zm8=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/fr-CA.lproj/ZBugSquashKitLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Jy6HwOcO6uI54tnRYZkf900fd5s=
-			</data>
-			<key>hash2</key>
-			<data>
-			Vs+214sWS2jQObh5qYFxwbZKPI/wAng58ON0lCR1GO8=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/fr.lproj/NewBugViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HlSBuLjqTx7qhlEXM1/dsjBDLXw=
-			</data>
-			<key>hash2</key>
-			<data>
-			BwTUubp5+7sUi7mxszr/aOTpIv9Ksb32d6C+HgL4zm8=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/fr.lproj/ZBugSquashKitLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			GYObJ8sLx5ITQryYcLJ5xNXjMSY=
-			</data>
-			<key>hash2</key>
-			<data>
-			Y+DS+95xPzygWvSaBBafXthgjDxEoTCeyf2mYT4HpMM=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/he.lproj/NewBugViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HlSBuLjqTx7qhlEXM1/dsjBDLXw=
-			</data>
-			<key>hash2</key>
-			<data>
-			BwTUubp5+7sUi7mxszr/aOTpIv9Ksb32d6C+HgL4zm8=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/he.lproj/ZBugSquashKitLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			GDulq/2z3ocw1GpiP/y4bhu2VWs=
-			</data>
-			<key>hash2</key>
-			<data>
-			btc8FB7LrDaB5FoIv118K0KhUtGN/bhuEfNgx/PsnZM=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/hr.lproj/NewBugViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HlSBuLjqTx7qhlEXM1/dsjBDLXw=
-			</data>
-			<key>hash2</key>
-			<data>
-			BwTUubp5+7sUi7mxszr/aOTpIv9Ksb32d6C+HgL4zm8=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/hr.lproj/ZBugSquashKitLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			eI5pf7TeBDXuHVawx/dgvvNDiYE=
-			</data>
-			<key>hash2</key>
-			<data>
-			4sOjDjN1Hgw6swwsEBZkM0BR6WR0NmklyUXg0vuVRz8=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/id.lproj/NewBugViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HlSBuLjqTx7qhlEXM1/dsjBDLXw=
-			</data>
-			<key>hash2</key>
-			<data>
-			BwTUubp5+7sUi7mxszr/aOTpIv9Ksb32d6C+HgL4zm8=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/id.lproj/ZBugSquashKitLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ZXMDxuzSzDDYOCpxlPVqNdEAE2s=
-			</data>
-			<key>hash2</key>
-			<data>
-			EQ6HwXPzFL90i15yc3nUM0WkJeVtiFIwTLIRT18PHF8=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/it.lproj/NewBugViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HlSBuLjqTx7qhlEXM1/dsjBDLXw=
-			</data>
-			<key>hash2</key>
-			<data>
-			BwTUubp5+7sUi7mxszr/aOTpIv9Ksb32d6C+HgL4zm8=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/it.lproj/ZBugSquashKitLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			DVMDaiykwglrS81BbrO3KeodLEc=
-			</data>
-			<key>hash2</key>
-			<data>
-			C9W7JcbAwqYLzYED7vMvaqe0nRHwwXZe0mBD57fuOIo=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/ja.lproj/NewBugViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HlSBuLjqTx7qhlEXM1/dsjBDLXw=
-			</data>
-			<key>hash2</key>
-			<data>
-			BwTUubp5+7sUi7mxszr/aOTpIv9Ksb32d6C+HgL4zm8=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/ja.lproj/ZBugSquashKitLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			VfeZhfLfMf3NnT7dBWPscFayGeI=
-			</data>
-			<key>hash2</key>
-			<data>
-			jYmwHufU/5CzKdQEEyIZo6/rQdceaJ8CRf8rsmNgX0w=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/ko.lproj/NewBugViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HlSBuLjqTx7qhlEXM1/dsjBDLXw=
-			</data>
-			<key>hash2</key>
-			<data>
-			BwTUubp5+7sUi7mxszr/aOTpIv9Ksb32d6C+HgL4zm8=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/ko.lproj/ZBugSquashKitLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			pV3YxZM3r7W7NpXxKGE7+MvFsRs=
-			</data>
-			<key>hash2</key>
-			<data>
-			pJ4r1LD/T9Dtu3rchsZPRexer/HKQ30vJeoGaTOYBhg=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/nl.lproj/NewBugViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HlSBuLjqTx7qhlEXM1/dsjBDLXw=
-			</data>
-			<key>hash2</key>
-			<data>
-			BwTUubp5+7sUi7mxszr/aOTpIv9Ksb32d6C+HgL4zm8=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/nl.lproj/ZBugSquashKitLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			rhw896EcViSL1WNlcZDFHug4Pec=
-			</data>
-			<key>hash2</key>
-			<data>
-			gKIT+fS9F7GqIVSaCBKGLtJrJ4Up6lQBq8vlEJpt6S0=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/pl.lproj/NewBugViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HlSBuLjqTx7qhlEXM1/dsjBDLXw=
-			</data>
-			<key>hash2</key>
-			<data>
-			BwTUubp5+7sUi7mxszr/aOTpIv9Ksb32d6C+HgL4zm8=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/pl.lproj/ZBugSquashKitLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			rilgvYmciRRI4PyXEVIsvufsl6w=
-			</data>
-			<key>hash2</key>
-			<data>
-			oq4G0WbLuLoHVscWLvtDNMxjgVTNHjTXMQErbw6SIm0=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/pt-BR.lproj/NewBugViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HlSBuLjqTx7qhlEXM1/dsjBDLXw=
-			</data>
-			<key>hash2</key>
-			<data>
-			BwTUubp5+7sUi7mxszr/aOTpIv9Ksb32d6C+HgL4zm8=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/pt-BR.lproj/ZBugSquashKitLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			FPwd+up3V9nfKHZ13dMPWcKT8Ek=
-			</data>
-			<key>hash2</key>
-			<data>
-			zmzKx/sq8GQ6X2H4YnRGBOo5yKzHIrvCGjzlqd46TkM=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/pt.lproj/NewBugViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HlSBuLjqTx7qhlEXM1/dsjBDLXw=
-			</data>
-			<key>hash2</key>
-			<data>
-			BwTUubp5+7sUi7mxszr/aOTpIv9Ksb32d6C+HgL4zm8=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/pt.lproj/ZBugSquashKitLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			UGPKNwUI2a/JIIR2IvyJMfs9uTE=
-			</data>
-			<key>hash2</key>
-			<data>
-			SyanGRCbTvCwfj7D6aMCaKXTkMOO3eH1Pn0Wc0MpomM=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/ru.lproj/NewBugViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HlSBuLjqTx7qhlEXM1/dsjBDLXw=
-			</data>
-			<key>hash2</key>
-			<data>
-			BwTUubp5+7sUi7mxszr/aOTpIv9Ksb32d6C+HgL4zm8=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/ru.lproj/ZBugSquashKitLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			dYZmZZSDpmYd7AaVSIipF/26m6U=
-			</data>
-			<key>hash2</key>
-			<data>
-			KOnhZLArWLEErtjqJeUK81LgFslX1I0SqmGiueFzrfU=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/sv.lproj/NewBugViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HlSBuLjqTx7qhlEXM1/dsjBDLXw=
-			</data>
-			<key>hash2</key>
-			<data>
-			BwTUubp5+7sUi7mxszr/aOTpIv9Ksb32d6C+HgL4zm8=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/sv.lproj/ZBugSquashKitLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Nl4NEE3IUlEO7tcOPlfwKJ3xWlM=
-			</data>
-			<key>hash2</key>
-			<data>
-			lpZsXMltivUj+q3cur4ozIM0iaZkfSUCvDbu6lujkE0=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/tr.lproj/NewBugViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HlSBuLjqTx7qhlEXM1/dsjBDLXw=
-			</data>
-			<key>hash2</key>
-			<data>
-			BwTUubp5+7sUi7mxszr/aOTpIv9Ksb32d6C+HgL4zm8=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/tr.lproj/ZBugSquashKitLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			+spsYlDR6OTMWlMdj1ZXmtBCdK0=
-			</data>
-			<key>hash2</key>
-			<data>
-			/s/s804B+PbQVK/hiAId8wroZ/L4UgVEtg5df0t9lXQ=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/vi.lproj/NewBugViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HlSBuLjqTx7qhlEXM1/dsjBDLXw=
-			</data>
-			<key>hash2</key>
-			<data>
-			BwTUubp5+7sUi7mxszr/aOTpIv9Ksb32d6C+HgL4zm8=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/vi.lproj/ZBugSquashKitLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			EamhrWpwoZGxkimx5WFWc79ZIZ8=
-			</data>
-			<key>hash2</key>
-			<data>
-			s3V8Sqlkue9JN1UswenldMo3LIHUUReT9/Ke6tBe1DA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/zh-Hans.lproj/NewBugViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			NGPE4ocaOxJQOiXEqt0qm/7dDks=
-			</data>
-			<key>hash2</key>
-			<data>
-			C45dy26oaMkHbyIrTGQp9m43UgTkmvVv76GCjgpOHtk=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/zh-Hans.lproj/ZBugSquashKitLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			sgNYDzE23e9B85yaEJhm02C+h60=
-			</data>
-			<key>hash2</key>
-			<data>
-			Hcn7migfZJXEoIbhAxu+7CXZsrEV4A1bu+DjqlSWOEA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/zh-Hant.lproj/NewBugViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			OpygQ3rkXPmOK9KHsFlCvm6YfFs=
-			</data>
-			<key>hash2</key>
-			<data>
-			Lz6UcGhYTwqRcgazXgo+VlqEK0k9KlSxrwHu5mshcFo=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ZBugSquashResources.bundle/zh-Hant.lproj/ZBugSquashKitLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			drVGriGrcThR9u2HlbBFHsDNiB4=
-			</data>
-			<key>hash2</key>
-			<data>
-			ynfiq9L19vIgoHrT1MKBM8YkkhrP3V9FIgBlEwoOXZQ=
-			</data>
-			<key>optional</key>
-			<true/>
 		</dict>
 	</dict>
 	<key>rules</key>

@@ -8,7 +8,6 @@
 
 #ifndef ZAConstants_h
 #define ZAConstants_h
-#import "APBundle.h"
 #define UIAPPLICATION_ACCESS (TARGET_OS_IOS || TARGET_OS_TV)
 
 #define UIKIT_ACCESS (TARGET_OS_IOS || TARGET_OS_TV || TARGET_OS_WATCH)
@@ -72,7 +71,6 @@ static NSString * kJA_CrashReportStatus = @"kJA_CrashReportStatus";
 static NSString * kJA_SecretKey = @"1234567890123456";
 static NSString * kJA_DeviceInfo = @"kJA_DeviceInfo";
 static NSString * kJA_DeviceUUID = @"kJA_DeviceUUID";
-static NSString * kJA_DebugMode = @"kJA_DebugMode";
 static NSString * kJA_TrackingStatus = @"kJA_TrackingStatus";
 static NSString * kJA_KeychainItems = @"kJA_KeychainItems";
 

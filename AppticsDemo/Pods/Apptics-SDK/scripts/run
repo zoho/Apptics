@@ -16,7 +16,6 @@ CM_AP_INFO_FILE_NAME="$TARGET_BUILD_DIR/$INFOPLIST_PATH"
 #CM_ZA_INFOPLIST_FILE="$TARGET_BUILD_DIR/"$(command dirname -- "${FRAMEWORKS_FOLDER_PATH}")"/$ZA_INFO_FILE_NAME"
 
 UPLOAD_SYMBOLS="false"
-#DEBUG_MODE="1"
 
 while [ $# -gt 0 ]; do
 case "$1" in
@@ -39,9 +38,6 @@ esac
 shift
 done
 
-if [ ! "${DEBUG_MODE}" ]; then
-DEBUG_MODE=$(/usr/libexec/PlistBuddy -c 'Print AP_DEBUG_MODE' "${AP_INFO_FILE_NAME}")
-fi
 
 if [ ! "${ZA_INFOPLIST_FILE}" ]; then
 ZA_INFOPLIST_FILE=$(/usr/libexec/PlistBuddy -c 'Print AP_INFOPLIST_FILE' "${AP_INFO_FILE_NAME}")
@@ -109,11 +105,6 @@ fi
 #deleteItemFromPlist "AP_INFOPLIST_FILE"
 #fi
 #
-#if [ "${DEBUG_MODE}" ]; then
-#plistManipulation "AP_DEBUG_MODE" "${DEBUG_MODE}"
-#else
-#deleteItemFromPlist "AP_DEBUG_MODE"
-#fi
 
 if [ "${AP_APP_GROUP_IDENTIFIER}" ]; then
 plistManipulation "AP_APP_GROUP_IDENTIFIER" "${AP_APP_GROUP_IDENTIFIER}"
@@ -142,7 +133,7 @@ if [[ " ${SKIP_PROMPT_CONFIGURATIONS[@]} " =~ " ${CONFIGURATION} " ]]; then
   #--config-file-path=\"${ZA_INFOPLIST_FILE}\""
 else
   printf "************************************************************************************\n"
-  printf "* dSYMs upload is skipped for 'configuration' '${CONFIGURATION}' and 'mode' '${DEBUG_MODE}'*\n"
+  printf "* dSYMs upload is skipped for 'configuration' '${CONFIGURATION}' *\n"
   printf "************************************************************************************\n"
 fi
 

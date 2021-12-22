@@ -20,6 +20,8 @@
 #import <Apptics/WCSessionSwizzlerDelegate.h>
 #import <Apptics/APRemoteConfig.h>
 #import <Apptics/APRateUs.h>
+#import <Apptics/APEvent.h>
+#import <Apptics/APAppUpdateManager.h>
 
 #else
 
@@ -34,6 +36,8 @@
 #import "WCSessionSwizzlerDelegate.h"
 #import "APRemoteConfig.h"
 #import "APRateUs.h"
+#import "APEvent.h"
+#import "APAppUpdateManager.h"
 
 #endif
 

@@ -11,20 +11,21 @@ target 'AppticsDemo' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-#pod 'Apptics', '1.0.1' , :source => 'https://github.com/zoho/Apptics.git'
+#pod 'Apptics-SDK', '1.0.0-debug' , :source => 'https://github.com/CocoaPods/Specs.git'
+pod 'Apptics-Swift', '1.0.0-debug' , :source => 'https://github.com/CocoaPods/Specs.git'
 #pod 'Apptics-SDK', '1.0.1' , :source => 'https://git.csez.zohocorpin.com/zoho/zohopodspecs.git'
-pod 'Apptics-Swift', '1.0.1' , :source => 'https://git.csez.zohocorpin.com/zoho/zohopodspecs.git' #:source => 'https://github.com/CocoaPods/Specs.git'
+#pod 'Apptics-Swift', '1.0.1' , :source => 'https://git.csez.zohocorpin.com/zoho/zohopodspecs.git' #:source => 'https://github.com/CocoaPods/Specs.git'
 #
-#pod 'AppticsFeedbackKit', '1.0.1'
-#pod 'AppticsRemoteConfig', '1.0.1'
-#pod 'AppticsCrossPromotion', '1.0.1'
-#pod 'AppticsApiTracker', '1.0.1'
-#pod 'AppticsInAppUpdate', '1.0.1'
-#pod 'AppticsRateUs', '1.0.1'
+#pod 'AppticsFeedbackKit', '1.0.0-debug' , :source => 'https://github.com/CocoaPods/Specs.git'
+#pod 'AppticsRemoteConfig', '1.0.0-debug' , :source => 'https://github.com/CocoaPods/Specs.git'
+##pod 'AppticsCrossPromotion', '1.0.0-debug' , :source => 'https://github.com/CocoaPods/Specs.git'
+#pod 'AppticsApiTracker', '1.0.0-debug' , :source => 'https://github.com/CocoaPods/Specs.git'
+#pod 'AppticsInAppUpdate', '1.0.0-debug' , :source => 'https://github.com/CocoaPods/Specs.git'
+#pod 'AppticsRateUs', '1.0.0-debug' , :source => 'https://github.com/CocoaPods/Specs.git'
 
   # Pods for AppticsDemo
-  script_phase :name => 'Apptics pre build', :script => 'sh "./Pods/Apptics/scripts/regappversion" --target-name="AppticsDemo"', :execution_position => :before_compile
-  script_phase :name => 'Apptics post build', :script => 'bash "./Pods/Apptics/scripts/run" --upload-symbols=false --release-configurations="Release"', :execution_position => :after_compile
+  script_phase :name => 'Apptics pre build', :script => 'sh "./Pods/Apptics-SDK/scripts/regappversion" --target-name="AppticsDemo"', :execution_position => :before_compile
+  script_phase :name => 'Apptics post build', :script => 'bash "./Pods/Apptics-SDK/scripts/run" --upload-symbols=false --release-configurations="Release"', :execution_position => :after_compile
   
   target 'AppticsDemoTests' do
     inherit! :search_paths

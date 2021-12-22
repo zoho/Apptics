@@ -32,15 +32,10 @@ EOT
 
 eval "${GCC_PREPROCESSOR_DEFINITIONS}"
 
-DEBUG_MODE="1"
-
 while [ $# -gt 0 ]; do
 case "$1" in
 --help)
 HELP=1
-;;
---debug-mode=*)
-DEBUG_MODE="${1#*=}"
 ;;
 --target-name=*)
 targetname="${1#*=}"
@@ -62,7 +57,6 @@ done
 
 if [ $HELP -eq 1 ];then
 echo "Options:\n"
-echo "    --debug-mode         Provide the debug mode"
 echo "    --target-name        Provide the name of main target"
 echo "    --project-name       Provide the name of the project"
 echo "    --project-file       Provide the path of the xcproject file"
@@ -123,13 +117,6 @@ if [ "${ZA_INFOPLIST_FILE}" ]; then
 plistManipulation "AP_INFOPLIST_FILE" "${ZA_INFOPLIST_FILE}"
 else
 deleteItemFromPlist "AP_INFOPLIST_FILE"
-fi
-
-if [ "${DEBUG_MODE}" ]; then
-plistManipulation "AP_DEBUG_MODE" "${DEBUG_MODE}"
-export "DEBUG_MODE=${DEBUG_MODE}"
-else
-deleteItemFromPlist "AP_DEBUG_MODE"
 fi
 
 getXcodeproj() {
@@ -239,15 +226,6 @@ if [ ! "${API_KEY}" ]; then
 value=$(error_prompt "Missing API_KEY" "Please download and add the apptics-config.plist file your Xcode project.")
 fi
 
-#if [ ! "${DEBUG_MODE}" ]; then
-#DEBUG_MODE=$(/usr/libexec/PlistBuddy -c 'Print AP_DEBUG_MODE' "${AP_INFO_FILE_NAME}")
-#fi
-
-if [ -z "${DEBUG_MODE}" ]; then
-value=$(error_prompt "Missing AP_DEBUG_MODE in your main-info.plist" "Please provide the value for the key or pass the param=value to the apptics pre run script param-name '--debug-mode' value=(0/1/2)")
-exit 1
-fi
-
 if [ -z "${APPTICS_SDK_ID}" ]; then
 value=$(error_prompt "Missing APPTICS_SDK_ID, check the sdk_info sh")
 exit 1
@@ -285,8 +263,6 @@ ZA_BUNDLE_VERSION=$(/usr/libexec/PlistBuddy -c 'Print APP_VERSION_META:BUNDLE_VE
 ZA_BUNDLE_SHORT_VERSION=$(/usr/libexec/PlistBuddy -c 'Print APP_VERSION_META:BUNDLE_SHORT_VERSION' "${ZA_INFOPLIST_FILE}" 2>/dev/null || printf "")
 
 ZA_APPTICS_SDK_ID=$(/usr/libexec/PlistBuddy -c 'Print APP_VERSION_META:APPTICS_SDK_ID' "${ZA_INFOPLIST_FILE}" 2>/dev/null || printf "")
-
-ZA_APPTICS_DEBUG_MODE=$(/usr/libexec/PlistBuddy -c 'Print APP_VERSION_META:APPTICS_DEBUG_MODE' "${ZA_INFOPLIST_FILE}" 2>/dev/null || printf "")
 
 SERVER_URL=$(/usr/libexec/PlistBuddy -c 'Print SERVER_URL' "${ZA_INFOPLIST_FILE}")
 
@@ -327,10 +303,10 @@ if [ "${PRODUCT_BUNDLE_IDENTIFIER}" != "${AP_BUNDLE_ID}" ]; then
     exit 1
 fi
 
-if [ "${DEBUG_MODE}" != "${ZA_APPTICS_DEBUG_MODE}" ] || [ "${APPTICS_SDK_ID}" != "${ZA_APPTICS_SDK_ID}" ] || [ "${BUNDLE_VERSION}" != "${ZA_BUNDLE_VERSION}" ] || [ "${BUNDLE_SHORT_VERSION}" != "${ZA_BUNDLE_SHORT_VERSION}" ] || [ "${APP_VERSION_ID}" == "" ] || [ "${AAID}" == "" ] || [ "${APID}" == "" ] || [ "${PLATFORM_ID}" == "" ] || [ "${APPTICS_SDK_ID}" == "" ] || [ "${RSAKEY}" == "" ]; then
+if [ "${APPTICS_SDK_ID}" != "${ZA_APPTICS_SDK_ID}" ] || [ "${BUNDLE_VERSION}" != "${ZA_BUNDLE_VERSION}" ] || [ "${BUNDLE_SHORT_VERSION}" != "${ZA_BUNDLE_SHORT_VERSION}" ] || [ "${APP_VERSION_ID}" == "" ] || [ "${AAID}" == "" ] || [ "${APID}" == "" ] || [ "${PLATFORM_ID}" == "" ] || [ "${APPTICS_SDK_ID}" == "" ] || [ "${RSAKEY}" == "" ]; then
   
   out_file="/tmp/${ZA_META_FILE_NAME}"
-  REG_APP_VERSION_PARAMS="mode=${DEBUG_MODE}&platform=${OS}&identifier=${PRODUCT_BUNDLE_IDENTIFIER}&version=${BUNDLE_SHORT_VERSION}&appreleaseversion=${BUNDLE_VERSION}&frameworkid=${APPTICS_SDK_ID}&minosversion=${ZA_DEPLOYMENT_TARGET}"
+  REG_APP_VERSION_PARAMS="mode=1&platform=${OS}&identifier=${PRODUCT_BUNDLE_IDENTIFIER}&version=${BUNDLE_SHORT_VERSION}&appreleaseversion=${BUNDLE_VERSION}&frameworkid=${APPTICS_SDK_ID}&minosversion=${ZA_DEPLOYMENT_TARGET}"
   STATUS=$(curl "${URL_ENDPOINT}?${REG_APP_VERSION_PARAMS}" -v --write-out %{http_code} --silent -o "${out_file}" -H "zak: ${API_KEY}" -X POST --connect-timeout 60 --max-time 900 --retry 2 --retry-delay 5)
   
   echo "${URL_ENDPOINT}?${REG_APP_VERSION_PARAMS} --write-out %{http_code} --silent -o "${out_file}" -H "zak: ${API_KEY}" -X POST"
@@ -350,7 +326,6 @@ if [ "${DEBUG_MODE}" != "${ZA_APPTICS_DEBUG_MODE}" ] || [ "${APPTICS_SDK_ID}" !=
   checkAndUpdate "BUNDLE_VERSION" "$BUNDLE_VERSION"
   checkAndUpdate "BUNDLE_SHORT_VERSION" "$BUNDLE_SHORT_VERSION"
   checkAndUpdate "APPTICS_SDK_ID" "${APPTICS_SDK_ID}"
-  checkAndUpdate "APPTICS_DEBUG_MODE" "${DEBUG_MODE}"
   
     echo "Data updated"
   else
@@ -369,7 +344,6 @@ else
   printValueForKey "BUNDLE_VERSION"
   printValueForKey "BUNDLE_SHORT_VERSION"
   printValueForKey "APPTICS_SDK_ID"
-  printValueForKey "APPTICS_DEBUG_MODE"
   echo "App version : ${BUNDLE_VERSION}"
   echo "App short version : ${BUNDLE_SHORT_VERSION}"
 fi

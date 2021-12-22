@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Resources/APReviewViewController.nib</key>
+		<data>
+		HJX1tSpO3wxD/AO0V6XEV6R7XCw=
+		</data>
 		<key>Resources/Base.lproj/ZAnalyticsLocalizable.strings</key>
 		<data>
 		DxWKnFlPzCva+HmbYvdGzcmyG3c=
@@ -14,19 +18,19 @@
 		</data>
 		<key>Resources/ZAAppUpdateAlert.nib</key>
 		<data>
-		4AqvoMJSYv0w/PMozqBaNTnlUfA=
+		aeImIOK+bwo9r141tuI1Sq8Mfis=
 		</data>
 		<key>Resources/ZACustomAlertController.nib</key>
 		<data>
-		4WtXgB22P1WJcBrpFO8mMhdWsnU=
+		vMEp3hGw5n7cmh0fbmdELclJFTE=
 		</data>
 		<key>Resources/ZAPIIMTableViewCell.nib</key>
 		<data>
-		iizS6HZ3R9quOW9YfQ9TsITAvas=
+		3tEGPkfY5RutQYJG3leew5H4Xmw=
 		</data>
 		<key>Resources/ZAStoryboard.storyboardc/8oG-LS-Vhe-view-2Jk-9I-SIC.nib</key>
 		<data>
-		lEzKT/vyoKSpSRi0ThT3Sz3iodU=
+		n8jPQnYU8g7jfbaAK5xlnYWnLm8=
 		</data>
 		<key>Resources/ZAStoryboard.storyboardc/Info.plist</key>
 		<data>
@@ -34,15 +38,15 @@
 		</data>
 		<key>Resources/ZAStoryboard.storyboardc/pIIManagerController.nib</key>
 		<data>
-		NmHWVXHftPyr0MsK+3SJxuws7XY=
+		BVnSDuLmAO2JDzcL+sfYX2krSFU=
 		</data>
 		<key>Resources/ZAUserConsentAlert.nib</key>
 		<data>
-		Vpim5OSLVNxCKYZNysupPnClHW0=
+		pZxICpVVLZvNjWpiZTIW3TPoRBQ=
 		</data>
 		<key>Resources/ZAUserConsentAlertV2.nib</key>
 		<data>
-		d03TkKzLOrblxz/Ju3/yX1YQbng=
+		oZnZuo0q/usRjglPWcmP0pndF/w=
 		</data>
 		<key>Resources/app_update.png</key>
 		<data>
@@ -353,6 +357,17 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Resources/APReviewViewController.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HJX1tSpO3wxD/AO0V6XEV6R7XCw=
+			</data>
+			<key>hash2</key>
+			<data>
+			WTWpahCGXcoy6t8bGQbeCvirVLV3rC7JJr6YTxujfW8=
+			</data>
+		</dict>
 		<key>Resources/Base.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
 			<key>hash</key>
@@ -379,44 +394,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4AqvoMJSYv0w/PMozqBaNTnlUfA=
+			aeImIOK+bwo9r141tuI1Sq8Mfis=
 			</data>
 			<key>hash2</key>
 			<data>
-			/bYxnM1OFkm/88pQ4/yQE/ZXmumh1D/JCFBwqFLaLH8=
+			pkYguotkR33t/8sQEAkue8hII81cUWzNRRMitCtmW2U=
 			</data>
 		</dict>
 		<key>Resources/ZACustomAlertController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4WtXgB22P1WJcBrpFO8mMhdWsnU=
+			vMEp3hGw5n7cmh0fbmdELclJFTE=
 			</data>
 			<key>hash2</key>
 			<data>
-			RahEVF2R6KZjQ9jSek6rA/K2L6+hKoJzS4aDUqpwi9Q=
+			XOhiju3G0VUSaXJlfDtejupB9EGSfcNIdWKsdomeGyY=
 			</data>
 		</dict>
 		<key>Resources/ZAPIIMTableViewCell.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			iizS6HZ3R9quOW9YfQ9TsITAvas=
+			3tEGPkfY5RutQYJG3leew5H4Xmw=
 			</data>
 			<key>hash2</key>
 			<data>
-			333t5K8VpYyjTaUi8Ls83L9ZVr9r9DvtBKRq7kIrIxQ=
+			xm42J9UyrKS+/gaU/ILi4SSLdrttLbSjRQZPbWgzBiw=
 			</data>
 		</dict>
 		<key>Resources/ZAStoryboard.storyboardc/8oG-LS-Vhe-view-2Jk-9I-SIC.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			lEzKT/vyoKSpSRi0ThT3Sz3iodU=
+			n8jPQnYU8g7jfbaAK5xlnYWnLm8=
 			</data>
 			<key>hash2</key>
 			<data>
-			4SW6VVNuUzTiNH8ZFJD2qvysmN4tToqyqDVOIJ/laIA=
+			auRgPoNd3nEFpH09jRD7M3M7v6Gn03jGcJvaq6y46Ns=
 			</data>
 		</dict>
 		<key>Resources/ZAStoryboard.storyboardc/Info.plist</key>
@@ -434,33 +449,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NmHWVXHftPyr0MsK+3SJxuws7XY=
+			BVnSDuLmAO2JDzcL+sfYX2krSFU=
 			</data>
 			<key>hash2</key>
 			<data>
-			4tOi7Em+Micz1OZ3lcxTo+XPV8V6h/ePa2XVMrHKeF0=
+			i+k7lWA6NcET8z+/HBnfLv+0FokXcAqYnU03imHduwg=
 			</data>
 		</dict>
 		<key>Resources/ZAUserConsentAlert.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Vpim5OSLVNxCKYZNysupPnClHW0=
+			pZxICpVVLZvNjWpiZTIW3TPoRBQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			ux/7pOWJm7GRd/3NlI4X0nm5jJEnUOEOWZflT+yECM4=
+			Z8ekzk0LFkZvH7b65Fz3Pc1wbO/XutuweIi2r8xSk+I=
 			</data>
 		</dict>
 		<key>Resources/ZAUserConsentAlertV2.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			d03TkKzLOrblxz/Ju3/yX1YQbng=
+			oZnZuo0q/usRjglPWcmP0pndF/w=
 			</data>
 			<key>hash2</key>
 			<data>
-			bI5GryrqaBNxtuKA0R4e9p8m9riYSonHjY1hv7tsaoQ=
+			SNkYNWQk88VjlI6KOdySRy0iF2NZWAZys/z54Jcly+0=
 			</data>
 		</dict>
 		<key>Resources/app_update.png</key>

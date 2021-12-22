@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "APLog.h"
-#import "ZAEnums.h"
-#import "APEventsEnum.h"
+#import <Apptics/APLog.h>
+#import <Apptics/ZAEnums.h>
+#import <Apptics/APEventsEnum.h>
 
 #if !TARGET_OS_OSX
 #import <UIKit/UIKit.h>
@@ -21,12 +21,7 @@
 #import <WatchKit/WatchKit.h>
 #endif
 
-#import "ZAAlertStyle.h"
-
-#ifdef AP_REMOTE_CONFIG
-#import "APRemoteConfig.h"
-#endif
-
+#import <Apptics/ZAAlertStyle.h>
 
 FOUNDATION_EXPORT double AnalyticsVersionNumber;
 
@@ -54,13 +49,8 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic) NSInteger flushInterval;
 
-/**
- *  Set mode to point to respective servers like, Live, Local and pre
- */
-@property (nonatomic) JDebugMode debugMode;
-
 @property long zuid;//Zoho User Id
-
+@property (strong,nonatomic) NSString *apiToken;
 @property BOOL enableAutomaticEventTracking;
 @property BOOL enableAutomaticSessionTracking;
 @property BOOL enableAutomaticScreenTracking;
@@ -136,7 +126,7 @@ typedef void (^internbgNonFatalRequestSuccessBlock)(void);
  *  @param status   This is the Enum of your build Status, Local, live or pre. Make sure you change during Testing and deployment
  */
 
--(void)initializeWithApiToken:(NSString*)apiToken withBuildType:(JBuildType)status debugMode:(JDebugMode)debugMode shouldTrackDatabyDefault:(BOOL)shouldTrack sendDataOnMobileNetworkByDefault:(BOOL)sendDataOnMobileNetworkByDefault;
+-(void)initializeWithApiToken:(NSString*)apiToken withBuildType:(JBuildType)status shouldTrackDatabyDefault:(BOOL)shouldTrack sendDataOnMobileNetworkByDefault:(BOOL)sendDataOnMobileNetworkByDefault;
 
 /**
  *  This is how you initialize Analytics.
@@ -146,7 +136,7 @@ typedef void (^internbgNonFatalRequestSuccessBlock)(void);
  *  @param status   This is the Enum of your build Status, Local, live or pre. Make sure you change during Testing and deployment
  */
 
-- (void)initializeWithApiToken:(NSString*_Nonnull)apiToken withBuildType:(JBuildType)status debugMode:(JDebugMode)debugMode;
+- (void)initializeWithApiToken:(NSString*_Nonnull)apiToken withBuildType:(JBuildType)status;
 
 
 /**
@@ -159,59 +149,6 @@ typedef void (^internbgNonFatalRequestSuccessBlock)(void);
  *  2 = reachable via WWAN
  */
 - (void) setReachable:(NSInteger) state;
-
-
-
-/**
- *  Use this method to track events. Make sure you give meaningful names for events. So that everyone, not just developers understand the event names.
- *  Call this when the event is completed. Put it in a success block if you have to, or put this line just below the line that calls the event, if blocks and closures aren't your thing.
- *
- *  @param eventName Name of the Occuring Event
- */
-- (void) trackEvent:(NSString *_Nonnull)eventName;
-
-
-/**
- *  This methods allows you to set custom properties.
- *  Custom Properties are Dictionary/Hashmap/NSDictionary/Key value pair. Make sure the custom properties you send have meaningful keys for the values you send (duh!).
- *
- *  @param eventName  Name of the event
- *  @param properties A Key-Value pair NSDictionary for tracking custom properties
- */
-
-- (void) trackEvent:(NSString *_Nonnull)eventName withProperties:(NSDictionary *_Nullable)properties;
-
-
-/**
- *   Group your events if you have to, its a good practise. We recommend you to use const strings for groupName so that you don't, by mistake, send a wrong groupname.
- *
- *  @param eventName  Name of the event
- *  @param groupName  Name of the group
- *  @param properties Key-Value pair NSDictionary for tracking custom properties for the given event.
- */
-
-- (void) trackEvent:(NSString *_Nonnull)eventName andGroupName : (NSString*_Nullable) groupName withProperties:(NSDictionary *_Nullable)properties;
-
-/**
- *  This method notifies the start of an event. Use this for events that take time to execute, like image uploads etc. To stop the timer, call the either of the "trackEvent" methods with the same Event name you passed to start the event.
- *
- *  @param eventName Name of the event
- */
-
-
-- (void) startTimedEvent:(NSString*_Nonnull)eventName;
-
-- (void) startTimedEvent:(NSString*_Nonnull)eventName group:(NSString*_Nullable)group;
-
-- (void) startTimedEvent:(NSString*_Nonnull)eventName group:(NSString*_Nullable)group andProperties:(NSDictionary*_Nullable)props;
-
-- (void) endTimedEvent:(NSString *_Nonnull)eventName withGroup:(NSString*_Nullable)group;
-
-- (void) trackEvent:(NSString *_Nullable) eventId groupId : (NSString *_Nullable) groupId andProperties:(NSDictionary*_Nullable)props isTimed:(BOOL)isTimed;
-
-- (void) startTimedEvent:(NSString *_Nullable) eventId groupId : (NSString *_Nullable) groupId andProperties:(NSDictionary * _Nullable)props;
-
-- (void) endTimedEvent:(NSString *_Nonnull) eventId;
 
 - (void) trackException:(NSException*_Nonnull) exception;
 
@@ -259,19 +196,11 @@ typedef void (^internbgNonFatalRequestSuccessBlock)(void);
 
 - (void) setCrashCustomProperty:(NSDictionary* _Nonnull) object;
 
-- (void) j_setDebugMode:(JDebugMode)debugMode;
-
 - (void) setCurrentUser:(NSString* _Nullable)userID groupId : (NSString*_Nullable)groupid;
 
 - (void) setUserAgent:(NSString*_Nullable) agent;
 
 - (NSURL*_Nonnull) crashUrl;
-
-- (NSTimeInterval) activeDurationSinceLastCrash;
-
-- (int) sessionsSinceLastCrash;
-
-- (int) launchesSinceLastCrash;
 
 /**
  *  Tells StoreKit to ask the user to rate or review your app, if appropriate.
@@ -331,14 +260,6 @@ typedef void (^internbgNonFatalRequestSuccessBlock)(void);
 
 - (void) updateAlwaysSendReportStatusToMobile : (BOOL) status type: (NSString*_Nonnull) type;
 
-#if (TARGET_OS_OSX || TARGET_OS_WATCH)
-
--(void) trackViewEnter:(NSString*_Nonnull) screenName;
-
--(void) trackViewExit:(NSString*_Nonnull) screenName;
-
-#endif
-
 - (NSString*_Nonnull) getDCLBD;
 
 - (NSString*_Nonnull) getLocalizableStringForKey:(NSString *_Nonnull)key;
@@ -348,13 +269,6 @@ typedef void (^internbgNonFatalRequestSuccessBlock)(void);
 -(void) startAppexSession;
 
 -(void) stopAppexSession;
-
-#pragma App updates
-
-- (void) checkForAppUpdate:(void(^_Nullable)(NSDictionary *_Nullable updateInfo))completionHandler;
-
--(void) setAppUpdateAction : (ZAUpdateAction) type updateInfo : (NSDictionary *) updateInfo;
-
 
 #pragma mark - Application delegates
 

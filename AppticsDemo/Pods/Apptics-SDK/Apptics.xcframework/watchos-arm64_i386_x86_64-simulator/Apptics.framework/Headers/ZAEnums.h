@@ -10,6 +10,7 @@
 #define ZAEnums_h
 
 
+
 /**
  Specifies the Build type. You usually need not set this. This is used for Building URL and sending it to Zoho, localzoho or pre servers.
 */
@@ -27,28 +28,6 @@ typedef NS_ENUM(NSInteger, JBuildType)
      *  Points to pre server, preapptics.zoho.com
      */
     Pre,
-};
-
-
-/**
- *  Specifices they type of mode Apptics should run on
- */
-
-
-typedef NS_ENUM(NSInteger, JDebugMode)
-{
-    /**
-     *  Development mode is when you are developing the app, use this mode so that the analytics data doesn't interfere with the real time user analytics data
-     */
-    Development = 0,
-    /**
-     *  Use this mode when app goes live, this is data is typically shown in the website
-     */
-    Production,
-    /**
-     *  Use this for testing Apptics services.
-     */
-    Testing
 };
 
 typedef NS_ENUM(NSInteger, JURLPath)

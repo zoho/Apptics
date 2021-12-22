@@ -1,20 +1,33 @@
 PODS:
-  - Apptics-SDK (1.0.1)
-  - Apptics-Swift (1.0.1):
-    - Apptics-SDK (= 1.0.1)
+  - Apptics-SDK (1.0.0-debug):
+    - Apptics-SDK/Analytics (= 1.0.0-debug)
+  - Apptics-SDK/Analytics (1.0.0-debug):
+    - Apptics-SDK/Core
+    - Apptics-SDK/CrashKit
+    - Apptics-SDK/EventTracker
+    - Apptics-SDK/ScreenTracker
+  - Apptics-SDK/Core (1.0.0-debug)
+  - Apptics-SDK/CrashKit (1.0.0-debug)
+  - Apptics-SDK/EventTracker (1.0.0-debug)
+  - Apptics-SDK/ScreenTracker (1.0.0-debug)
+  - Apptics-Swift (1.0.0-debug):
+    - Apptics-SDK (= 1.0.0-debug)
+    - Apptics-Swift/Analytics (= 1.0.0-debug)
+  - Apptics-Swift/Analytics (1.0.0-debug):
+    - Apptics-SDK (= 1.0.0-debug)
 
 DEPENDENCIES:
-  - Apptics-Swift (= 1.0.1)
+  - Apptics-Swift (= 1.0.0-debug)
 
 SPEC REPOS:
-  https://git.csez.zohocorpin.com/zoho/zohopodspecs.git:
+  https://github.com/CocoaPods/Specs.git:
     - Apptics-SDK
     - Apptics-Swift
 
 SPEC CHECKSUMS:
-  Apptics-SDK: a205a47d134b8424b7cfd2c2dfcc4cc7017fa9b7
-  Apptics-Swift: bed543a84c553d4a6ef75b7ac475b1cb3c78da0b
+  Apptics-SDK: 446597ecaee8ac3284c0b96bbd5b38b0b14f9753
+  Apptics-Swift: e505e389ac03a82d15212703f9e3c6d0e2aa7f68
 
-PODFILE CHECKSUM: c68918cfcfe8f90691461c78a13a3208e1ab80fd
+PODFILE CHECKSUM: 9bf8e93197290e03e5871e23af336458536012e6
 
 COCOAPODS: 1.10.0

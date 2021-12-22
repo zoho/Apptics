@@ -7,7 +7,7 @@
 
 import UIKit
 import Apptics
-import AppticsCrossPromotion
+//import AppticsCrossPromotion
 import Apptics_Swift
 
 class ViewController: UIViewController {
@@ -19,13 +19,13 @@ class ViewController: UIViewController {
 
    @IBAction func openSettings() {
 //    Apptics.openAnalyticSettingsController(self.navigationController)
-    PromotedAppsKit.presentPromotedAppsController(sectionHeader1: "Header1", sectionHeader2: "Header2")
+//    PromotedAppsKit.presentPromotedAppsController(sectionHeader1: "Header1", sectionHeader2: "Header2")
     
     }
     
     @IBAction func crash() {
 //     Apptics.crash()
-        FeedbackKit.showFeedback()
+//        FeedbackKit.showFeedback()
      }
 }
 

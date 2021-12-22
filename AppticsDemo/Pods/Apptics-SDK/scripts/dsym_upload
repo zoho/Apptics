@@ -100,15 +100,6 @@ value=$(error_prompt "Missing API_KEY" "Please download and add the apptics-conf
 exit 1
 fi
 
-if [ ! "${DEBUG_MODE}" ]; then
-DEBUG_MODE=$(/usr/libexec/PlistBuddy -c 'Print AP_DEBUG_MODE' "${AP_INFO_FILE_NAME}")
-fi
-
-if [ -z "${DEBUG_MODE}" ]; then
-value=$(error_prompt "Missing AP_DEBUG_MODE in your main-info.plist" "Please provide the value for the key or pass the param=value to the runscript param-name '--debug-mode' value=(0/1/2)")
-exit 1
-fi
-
 #DSYM_UPLOAD_ENDPOINT="https://apptics.zoho.com/api/janalytic/v3/addDsymfile"
 
 SERVER_URL=$(/usr/libexec/PlistBuddy -c 'Print SERVER_URL' "${ZA_INFOPLIST_FILE}")
@@ -117,7 +108,7 @@ if [ "${SERVER_URL}" ]; then
 DSYM_UPLOAD_ENDPOINT="${SERVER_URL}/sdk/api/apptics/v1/adddsymfile"
 echo "SERVER_URL : ${SERVER_URL}"
 else
-value=$(error_prompt "Missing SERVER_URL in your main-info.plist" "Please provide the value for the key or pass the param=value to the runscript param-name '--debug-mode' value=(0/1/2)")
+value=$(error_prompt "Missing SERVER_URL in your apptics-config.plist" "Please check and update the file" )
 exit 0
 fi
 
@@ -183,7 +174,6 @@ echo "OS : ${OS}"
 echo "API key: ${API_KEY}"
 
 echo "Host : ${WHOAMI}"
-echo "DEBUG_MODE : ${DEBUG_MODE}"
 echo "ZA_BUNDLE_SHORT_VERSION : ${ZA_BUNDLE_SHORT_VERSION}"
 echo "IPADDRESS : ${IPADDRESS}"
 
@@ -198,9 +188,9 @@ if [ "$ENABLE_BITCODE" == "YES" ]; then
 AP_ENABLE_BITCODE="true"
 fi
 
-DSYM_UPLOAD_PARAMS="mode=${DEBUG_MODE}&appversionid=${APP_VERSION_ID}&appreleaseversionid=${APP_RELEASE_VERSION_ID}&pid=${PLATFORM_ID}&apid=${APID}&isBitcodeenabled=${AP_ENABLE_BITCODE}&host=${WHOAMI}&remoteaddress=${IPADDRESS}"
+DSYM_UPLOAD_PARAMS="mode=1&appversionid=${APP_VERSION_ID}&appreleaseversionid=${APP_RELEASE_VERSION_ID}&pid=${PLATFORM_ID}&apid=${APID}&isBitcodeenabled=${AP_ENABLE_BITCODE}&host=${WHOAMI}&remoteaddress=${IPADDRESS}"
 
-#DSYM_UPLOAD_PARAMS="mode=${DEBUG_MODE}&platform=${OS}&identifier=${PRODUCT_BUNDLE_IDENTIFIER}&appversion=${BUNDLE_SHORT_VERSION}&buildversion=${BUNDLE_VERSION}&host=${WHOAMI}&remoteaddress=${IPADDRESS}&buildgenerationkey=${buildgenerationkey}&minosversion=${ZA_DEPLOYMENT_TARGET}${ZA_BUNDLE_SHORT_VERSION}"
+#DSYM_UPLOAD_PARAMS="platform=${OS}&identifier=${PRODUCT_BUNDLE_IDENTIFIER}&appversion=${BUNDLE_SHORT_VERSION}&buildversion=${BUNDLE_VERSION}&host=${WHOAMI}&remoteaddress=${IPADDRESS}&buildgenerationkey=${buildgenerationkey}&minosversion=${ZA_DEPLOYMENT_TARGET}${ZA_BUNDLE_SHORT_VERSION}"
 #UPLOAD_SIMULATOR_SYMBOLS=1
 #UPLOAD_SIMULATOR_SYMBOLS=$(/usr/libexec/PlistBuddy -c 'Print ZA_UPLOAD_SIMULATOR_SYMBOLS' "${ZA_INFOPLIST_FILE}")
 # Skip simulator build from uploading

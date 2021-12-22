@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
 spec.name             = "AppticsFeedbackKit"
-spec.version          = "1.0.0"
+spec.version          = "1.0.0-debug"
 spec.summary          = "Apptics FeedbackKit for iOS"
 spec.license          = { :type => "MIT", :text=> <<-LICENSE
 MIT License
@@ -43,7 +43,7 @@ spec.requires_arc = true
 spec.subspec 'FeedbackKit' do |fk|
 fk.platform     = :ios, '9.1'
 fk.vendored_frameworks = 'AppticsFeedbackKit.xcframework'
-fk.ios.dependency 'Apptics/Core', "#{spec.version}"
+fk.ios.dependency 'Apptics-SDK/Core', "#{spec.version}"
 end
 
 end

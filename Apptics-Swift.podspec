@@ -11,7 +11,7 @@ Pod::Spec.new do |spec|
 
   spec.name             = "Apptics-Swift"
   spec.module_name      = "Apptics_Swift"
-  spec.version          = "1.0.0"
+  spec.version          = "1.0.0-debug"
   spec.summary          = "An events tracking and analytics library for iOS"
   spec.license          = { :type => "MIT", :text=> <<-LICENSE
   MIT License
@@ -56,7 +56,7 @@ What's new:
 
 	spec.default_subspecs = 'Analytics'
 
-  spec.dependency 'Apptics', "#{spec.version}"
+  spec.dependency 'Apptics-SDK', "#{spec.version}"
   
   spec.subspec 'Analytics' do |co|
   	co.source_files        = 'SwiftFiles/*.swift'

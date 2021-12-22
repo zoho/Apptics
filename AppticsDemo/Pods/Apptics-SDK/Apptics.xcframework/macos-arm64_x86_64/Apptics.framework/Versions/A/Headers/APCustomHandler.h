@@ -7,13 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ZAEnums.h"
+#import <Apptics/ZAEnums.h>
 
 #if !TARGET_OS_OSX
 #import <UIKit/UIKit.h>
 #else
 #import <Cocoa/Cocoa.h>
 #endif
+
 NS_ASSUME_NONNULL_BEGIN
 @protocol APCustomHandler <NSObject>
 
@@ -25,21 +26,6 @@ NS_ASSUME_NONNULL_BEGIN
 -(void) willSendCrashReport : (bool) status;
 -(void) crashConsentPresent : (bool) status withError: (NSError*) error;
 -(void) crashConsentDismiss : (int) status;
-
--(void) feedbackScreenWillOpen: (id) viewController;
--(void) feedbackScreenWillClose;
-
--(void) sendFeedbackBegan;
--(void) sendFeedbackEndWithSuccess;
--(void) sendFeedbackEndWithFailure;
--(NSString*) setFeedbackTag;
-
--(void) sendReportBegan;
--(void) sendReportEndWithSuccess;
--(void) sendReportEndWithFailure;
-
--(void) willDisplayReviewPrompt;
--(void) rateUsActionCompletionHandler:(JRateUsAction) action;
 
 @end
 
@@ -55,22 +41,8 @@ NS_ASSUME_NONNULL_BEGIN
 +(void) crashConsentPresent : (bool) status withError: (NSError* _Nullable) error;
 +(void) crashConsentDismiss : (int) status;
 
-+(void) feedbackScreenWillOpen: (id) viewController;
-+(void) feedbackScreenWillClose;
-
-+(void) sendFeedbackBegan;
-+(void) sendFeedbackEndWithSuccess;
-+(void) sendFeedbackEndWithFailure;
-+(NSString* _Nullable) setFeedbackTag;
-
-+(void) sendReportBegan;
-+(void) sendReportEndWithSuccess;
-+(void) sendReportEndWithFailure;
-
 +(void) openURL: (NSURL*) url;
 
-+(void) willDisplayReviewPrompt:(void (^)(void))dispatchBlock ;
-+(void) rateUsActionCompletionHandler:(JRateUsAction) action;
 @end
 
 NS_ASSUME_NONNULL_END

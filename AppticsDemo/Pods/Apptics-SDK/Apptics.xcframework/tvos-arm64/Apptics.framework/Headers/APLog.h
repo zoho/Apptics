@@ -8,7 +8,7 @@
 
 
 #import <Foundation/Foundation.h>
-#import "ZAEnums.h"
+#import <Apptics/ZAEnums.h>
 
 /**
  *  Use these method in your own application to log, isntead of NSLog.

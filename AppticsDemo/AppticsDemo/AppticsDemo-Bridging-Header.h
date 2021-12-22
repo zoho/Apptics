@@ -9,5 +9,5 @@
 #import <AppticsScreenTracker/AppticsScreenTracker.h>
 //#import "APAppticsExtension.h"
 
-#import <AppticsFeedbackKit/AppticsFeedbackKit.h>
-#import <AppticsCrossPromotion/AppticsCrossPromotion-Swift.h>
+//#import <AppticsFeedbackKit/AppticsFeedbackKit.h>
+//#import <AppticsCrossPromotion/AppticsCrossPromotion-Swift.h>

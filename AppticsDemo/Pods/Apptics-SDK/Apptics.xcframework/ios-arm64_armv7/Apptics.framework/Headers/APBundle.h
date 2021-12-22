@@ -24,11 +24,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 -(NSBundle * _Nullable) getAnalyticLanguageBundle;
 
--(NSBundle * _Nullable) getBugSquashLanguageBundle;
+-(NSBundle * _Nullable) getBugSquashLanguageBundle : (Class) _class;;
 
 -(NSBundle * _Nullable) getAnalyticBundle;
 
--(NSBundle * _Nullable) getBugSquashBundle;
+-(NSBundle * _Nullable) getBugSquashBundle : (Class) _class;
 
 @end
 NS_ASSUME_NONNULL_END

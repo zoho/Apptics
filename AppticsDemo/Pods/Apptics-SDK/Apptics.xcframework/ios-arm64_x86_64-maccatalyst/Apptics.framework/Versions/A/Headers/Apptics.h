@@ -7,30 +7,44 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ZAEnums.h"
-#import "APTheme.h"
-#import "APLog.h"
-#import "Analytics.h"
-#import "APCustomHandler.h"
-#import "AppticsConfig.h"
+#import <Apptics/APBundle.h>
+#import <Apptics/ZAEvent.h>
+#import <Apptics/ZAEnums.h>
+#import <Apptics/APTheme.h>
+#import <Apptics/APLog.h>
+#import <Apptics/Analytics.h>
+#import <Apptics/APCustomHandler.h>
+#import <Apptics/AppticsConfig.h>
 
-#if AP_RATE_US
-#import "APRateUs.h"
+#import <Apptics/ZAConstants.h>
+#import <Apptics/ZASystemInfo.h>
+#import <Apptics/ZANetworkUtils.h>
+#import <Apptics/ZASystemProperties.h>
+#import <Apptics/ZANetworking.h>
+#import <Apptics/ZAObject.h>
+#import <Apptics/ZAScreenObject.h>
+#import <Apptics/ZAGlobalQueue.h>
+#import <Apptics/ZAPIIManager.h>
+
+
+#import <Apptics/ZAFileManager.h>
+#import <Apptics/NSUserDefaults+SaveCustomObject.h>
+
+#import <Apptics/ZAFilters.h>
+#import <Apptics/APJWTWrapper.h>
+#import <Apptics/ZAAESCrypto.h>
+#import <Apptics/NSData+APGunZip.h>
+#import <Apptics/ZAKeyChainWrapper.h>
+
+#import <Apptics/ZAPIManager.h>
+#import <Apptics/APRateusObject.h>
+
+#import <Apptics/APRemoteConfigObject.h>
+
+#if TARGET_OS_IOS
+#import <Apptics/ZALoader.h>
+#import <Apptics/ZACustomNavigationController.h>
 #endif
-
-#if AP_REMOTE_CONFIG
-#import "APRemoteConfig.h"
-#import "APRemoteConfigValue.h"
-#endif
-
-#if AP_API_TRACKER
-#import "APAPIManager.h"
-#endif
-
-#if AP_FEEDBACK_KIT
-#import "FeedbackKit.h"
-#endif
-
 
 #define __FILENAME__ (strrchr(__FILE__, '/') ? strrchr(__FILE__, '/') + 1 : __FILE__)
 
@@ -189,109 +203,6 @@ NS_EXTENSION_UNAVAILABLE("don't use this method in your extensions")
 
 + (void) flush;
 
-#pragma mark — Events apis
-
-/**
- * An event is recorded when you call this method. Make sure you give meaningful names for your events. So that everyone, not just developers understand the event names.
- *  Call this when the event is completed. Put it in a success block if you have to, or put this line just below the line that calls the event, if blocks and closures aren't your thing.
- *
- *  @param eventName Name of the Occuring Event
- */
-
-+ (void) trackEvent:(nonnull NSString *)eventName;
-
-
-/**
- *  This methods allows you to set custom properties.
- *  Custom Properties are Dictionary/Hashmap/NSDictionary/Key value pair. Make sure the custom properties you send have meaningful keys for the values you send (duh!).
- *
- *  @param eventName  Name of the event
- *  @param properties A Key-Value pair NSDictionary for tracking custom properties
- */
-
-+ (void) trackEvent:(nonnull NSString *)eventName withProperties:(nonnull NSDictionary *)properties;
-
-/**
- Use this method to track events. Make sure you give meaningful names for events and their groups
- 
- @param eventName Name of the Occuring Event
- @param group Name of the Group
- */
-
-+ (void) trackEvent:(nonnull NSString *)eventName withGroupName:(nonnull NSString*)group;
-
-
-/**
- *   Group your events if you have to, its a good practise. We recommend you to use const strings for groupName so that you don't, by mistake, send a wrong groupname.
- *
- *  @param eventName  Name of the event
- *  @param groupName  Name of the group
- *  @param properties Key-Value pair NSDictionary for tracking custom properties for the given event.Remember, the properties should be NSJSONSerializable, so use only data types that conforms the standard JSON protocol, like NSStrings, Integer, long etc.
- */
-
-+ (void) trackEvent:(nonnull NSString *)eventName andGroupName : (nonnull NSString*) groupName withProperties:(nonnull NSDictionary *)properties;
-
-/**
- *
- *  Starts a timed event with a specified name
- 
- The duration of the event will be calculated added as a property when a
- corresponding endTimed event is called.
- 
- This kind of method is used to track events that have duration.
- 
- Usage : In a file upload task, call startTimedEvent method before upload and invoking the endTimedEvent at the end of the task, make sure you give the same event and group name for both methods.
- 
- *
- *  @param eventName Name of the event
- */
-
-+ (void) startTimedEvent:(nonnull NSString*)eventName;
-
-/**
- *  Starts a timed event with an Event name and a group name. Use groupnames to group events.
- 
- *  @param eventName Name of the event
- *  @param group Name of the group for the given event
- */
-
-+ (void) startTimedEvent:(nonnull NSString*)eventName group:(nonnull NSString*)group;
-
-
-/**
- *  Starts a timed event with an Event name, group name, and custom properties.
- *  Remember, the properties should be NSJSONSerializable, so use only data types that conforms the standard JSON protocol, like NSStrings, Integer, long etc.
- *
- *  @param eventName Name of the Event
- *  @param group Name of the Group
- *  @param properties Key-Value pair NSDictionary for tracking custom properties for the given event.Remember, the properties should be NSJSONSerializable, so use only data types that conforms the standard JSON protocol, like NSStrings, Integer, long etc
- */
-
-+ (void) startTimedEvent:(nonnull NSString*)eventName group:(nonnull NSString*)group andProperties:(nonnull NSDictionary*)properties;
-
-/**
- *  Ends the Timed event. Make sure you give the same name of the event.
- *
- *  - Warning:
- *  Calling this method will end all the timed events with the same event name.
- *
- *  @param eventName Name of the Timed Event.
- */
-
-+ (void) endTimedEvent:(NSString *_Nonnull)eventName;
-
-/**
- *  Ends the Timed event. Make sure you give the same event and group name.
- *
- *  - Warning:
- *  Calling this method will end all the timed events with the same event and group name.
- *
- *  @param eventName Name of the Timed Event.
- *  @param group Name of the Group
- */
-
-+ (void) endTimedEvent:(NSString *_Nonnull)eventName withGroup:(NSString*_Nonnull)group;
-
 #pragma mark — Non-fatals apis
 
 /**
@@ -441,27 +352,6 @@ void APTrackException(const char *file, int lineNumber, const char *functionName
 
 + (void) setCurrentUser:(NSString * _Nullable)userID groupId : (NSString*_Nullable)groupID withBaseDomain:(NSString*_Nonnull)BD NS_EXTENSION_UNAVAILABLE("don't use this method in your extensions");
 
-#pragma mark — View tracking apis
-
-#if (TARGET_OS_OSX || TARGET_OS_WATCH)
-/**
- Track screen entry manually.
- 
- @param screenName String.
- */
-
-+(void) trackViewEnter:(NSString*_Nullable) screenName;
-
-/**
- Track screen exit manually.
- 
- @param screenName String.
- */
-
-+(void) trackViewExit:(NSString*_Nullable) screenName;
-
-#endif
-
 #pragma mark — Settings apis
 
 #if !TARGET_OS_OSX && !TARGET_OS_WATCH
@@ -593,26 +483,26 @@ void APTrackException(const char *file, int lineNumber, const char *functionName
 
 +(void) setCrashConsentDismissCompletionHandler : (CrashConsentDismissCompletionBlock _Nullable ) crashConsentDismissCompletionBlock;
 
-/**
- Use this method to get the duration since the last time app crashed.
- 
- */
-
-+(NSTimeInterval) activeDurationSinceLastCrash;
-
-/**
- Use this method to get the no of sessions since the last time app crashed.
- 
- */
-
-+(int) sessionsSinceLastCrash;
-
-/**
- Use this method to get the no of times the app launched since the last time app crashed.
- 
- */
-
-+(int) launchesSinceLastCrash;
+///**
+// Use this method to get the duration since the last time app crashed.
+// 
+// */
+//
+//+(NSTimeInterval) activeDurationSinceLastCrash;
+//
+///**
+// Use this method to get the no of sessions since the last time app crashed.
+// 
+// */
+//
+//+(int) sessionsSinceLastCrash;
+//
+///**
+// Use this method to get the no of times the app launched since the last time app crashed.
+// 
+// */
+//
+//+(int) launchesSinceLastCrash;
 
 
 #pragma mark — Localization apis
@@ -725,25 +615,6 @@ Enable auto check for update by calling this method after initialising Apptics.
 
 + (void) enableAutoCheckForAppUpdate : (BOOL) status;
 
-/**
- 
- Check update available on AppStore within your application.
- 
- - Note :
- You should configure the update details in the [ZAnalytic web](https://apptics.zoho.com) and conform openURL protocol by extending APCustomHandler and set back to us.
-
- */
-
-+ (void)checkForAppUpdate:(void(^_Nullable)(NSDictionary *_Nullable updateInfo))completionHandler;
-
-/**
- Set back the actions for custom app update.
- @param type ZAUpdateAction
- */
-
-+ (void) setAppUpdateAction : (ZAUpdateAction) type updateInfo : (NSDictionary *_Nullable) updateInfo;
-
-
 #pragma mark — Crash
 
 /**
@@ -786,7 +657,7 @@ Enable auto check for update by calling this method after initialising Apptics.
 
 #pragma mark - Reachability
 
--(BOOL)isReachable;
++(BOOL)isReachable;
 
 @end
 NS_ASSUME_NONNULL_END
