@@ -1,0 +1,23 @@
+/*
+ Localizable.strings
+ Apptics
+ 
+ Created by Prakash Red.
+ Copyright © 2021 zoho. All rights reserved.
+ */
+
+"zanalytics.crosspromotion.navbar.button.title.back" = "Tilbage";
+"zanalytics.crosspromotion.title" = "Flere apps";
+"zanalytics.crosspromotion.otherapps" = "Andre apps";
+"zanalytics.crosspromotion.relevantapps" = "Relevante apps";
+"zanalytics.crosspromotion.noappstodisplay" = "Ingen apps til visning";
+"zanalytics.crosspromotion.nodatafound" = "Der blev ikke fundet nogen data";
+"zanalytics.crosspromotion.somethingwrong" = "Noget gik galt";
+"zanalytics.crosspromotion.nointernet" = "Ingen internetforbindelse";
+"zanalytics.crosspromotion.open" = "ÅBNE";
+"zanalytics.crosspromotion.install" = "Installer";
+"zanalytics.crosspromotion.get" = "HENTE";
+"zanalytics.crosspromotion.appsyoumaylike" = "Apps, du måske vil lide";
+"zanalytics.crosspromotion.moreappsfromus" = "Flere apps fra os";
+"zanalytics.crosspromotion.viewallapps" = "Se alle apps";
+
