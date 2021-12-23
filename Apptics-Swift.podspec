@@ -37,7 +37,7 @@ Pod::Spec.new do |spec|
 spec.description = <<-DESC
 What's new:
 
-- Added RTL support for all our screens, enhanced tracking session and sending data to the server.
+Apptics is a library that enables your app to send in-app usage reports and data securly to our servers. You can track Sessions, Screens, and we also offer Crash Reporting. With minimal initialization of the framework, you get these features without doing any other configuration.
 
   DESC
   spec.homepage         = "https://zoho.com"
