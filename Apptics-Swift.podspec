@@ -40,7 +40,7 @@ What's new:
 Apptics is a library that enables your app to send in-app usage reports and data securly to our servers. You can track Sessions, Screens, and we also offer Crash Reporting. With minimal initialization of the framework, you get these features without doing any other configuration.
 
   DESC
-  spec.homepage         = "https://zoho.com"
+  spec.homepage         = "https://github.com/zoho/Apptics"
   spec.author           = {"Saravanan S" => "ssaravanan@zohocorp.com", "Prakash Red" => "prakash.redrouthu@zohocorp.com"}
   spec.social_media_url = 'https://twitter.com/zoho'
   spec.source = { :http => "https://github.com/zoho/Apptics/releases/download/#{spec.version}/Apptics.zip" }

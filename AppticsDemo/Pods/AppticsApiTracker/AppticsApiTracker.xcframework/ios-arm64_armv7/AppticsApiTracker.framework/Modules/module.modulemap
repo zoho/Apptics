@@ -1,0 +1,6 @@
+framework module AppticsApiTracker {
+  umbrella header "AppticsApiTracker.h"
+
+  export *
+  module * { export * }
+}

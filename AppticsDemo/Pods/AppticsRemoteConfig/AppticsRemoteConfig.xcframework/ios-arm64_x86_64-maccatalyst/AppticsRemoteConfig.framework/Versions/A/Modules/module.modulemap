@@ -1,0 +1,6 @@
+framework module AppticsRemoteConfig {
+  umbrella header "AppticsRemoteConfig.h"
+
+  export *
+  module * { export * }
+}

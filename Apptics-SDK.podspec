@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 spec.name             = "Apptics-SDK"
 spec.version          = "1.0.0"
-spec.summary          = "Apptics iOS SDK"
+spec.summary          = "An events tracking and analytics library for iOS"
 spec.license          = { :type => "MIT", :text=> <<-LICENSE
 MIT License
 Copyright (c) 2020 Zoho Corporation
@@ -30,7 +30,7 @@ Apptics is a library that enables your app to send in-app usage reports and data
 
   DESC
   
-spec.homepage         = "https://zoho.com"
+spec.homepage         = "https://github.com/zoho/Apptics"
 spec.author           = { "Saravanan Selvam" => "ssaravanan@zohocorp.com", "Prakash Redrouthu" => "prakash.redrouthu@zohocorp.com" }
 spec.source = { :http => "https://github.com/zoho/Apptics/releases/download/#{spec.version}/Apptics.zip" }
 

@@ -17,28 +17,62 @@ min Xcode version 9.0
 
 * Your Podfile should look something like this.
     
+          source 'https://github.com/CocoaPods/Specs.git'
+          
           target '[TARGET NAME]' do
             pod 'Apptics-SDK'
+            
+            # Pre build script will register the app version(s) with Apptics server.
+            script_phase :name => 'Apptics pre build', :script => 'sh "./Pods/Apptics-SDK/scripts/regappversion" --target-name="TARGET NAME" --config-file-path="YOUR_PATH/apptics-config.plist"', :execution_position => :before_compile
+            
+            # Post build script will upload dSYM file to the server and add apptics specific information to the main info.plist which will be used by the SDK.
+            script_phase :name => 'Apptics post build', :script => 'bash "./Pods/Apptics-SDK/scripts/run" --upload-symbols=true --release-configurations="CONFIGURATIONS COMMA SEPARATED STRING" --app-group-identifier="APP GROUP IDENTIFIER"', :execution_position => :after_compile
+            
           end
 
           post_install do |installer|
-            puts system("sh ./Pods/Apptics-SDK/native/scripts/postinstaller --prefix=\"AP\" --target-name=\"[MAIN TARGET NAME STRING]\" --config-file-path=\"apptics-config.plist\"")    
+            # (Optional) Add this line if you want to track custom events. 
+            puts system("sh ./Pods/Apptics-SDK/native/scripts/postinstaller --prefix=\"AP\" --target-name=\"MAIN TARGET NAME\" --config-file-path=\"YOUR_PATH/apptics-config.plist\"")
           end
           
-     Parameters:
-     * `--project-name`       String - Provide the name of the project
-     * `--target-name`         String - Provide the name of the target
-     * `--project-file`            String - Provide the path of the xcproject file
-     * `--prefix`                    String - **AppticsExtension.* will be prefixed by this value
-     * `--use-swift`              Void - Generate class for swift
-     * `--help`                      Show help banner of specified command
-     * `----config-file-path` String - Provide the path of apptics-config.plist file if to any sub directory instead of root.
+     Usage: 
      
-     The script `postinstaller` will add **AppticsExtension file(s) to your project, the class will have the events meta data.  
-     
-* Run `pod install` and make sure you are connected to the Zoho-corp lan or wifi to access the Git repo. 
+     		regappversion --target-name="MAIN TARGET NAME [Optional]" --project-name="PROJECT NAME [Optional]" --project-file-path="PROJECT FILE PATH [Optional]" --config-file-path="YOUR_PATH/apptics-config.plist"
 
-* Create a new application or select an existing application from the quickstart page to download  the `apptics-config.plist`. Move the `apptics-config.plist` to the root of your Xcode project and add it to the necessary targets.
+     Parameters:
+     * `--target-name`         String - Provide the name of your main target.
+     * `--project-name`        String - Provide the name of the project.     
+     * `--project-file-path`   String - Provide the path of the xcproject file
+     * `--config-file-path`    String - Provide the path of apptics-config.plist file if to any sub directory instead of root.
+     
+     
+     		run --upload-symbols=<true/false> --release-configurations="Release, Appstore" --app-group-identifier="group.com.company.application [Optional]"
+     
+     Parameters:
+     * `--upload-symbols`      Boolean - Pass true to upload dSYM to the server.
+     * `--release-configurations`         String - Provide the release configurations separated by comma.
+     * `--app-group-identifier`        String - App group identifier to support app extensions. 
+     
+     
+     		postinstaller --prefix="PREFIX STRING" --target-name="MAIN TARGET NAME [Optional]" --target-group="TARGET GROUP NAME [Optional]" --project-name="PROJECT NAME [Optional]" --project-file-path="PROJECT FILE PATH [Optional]" --config-file-path="CONFIG FILE PATH [Optional]" --use-swift [Optional]      
+              
+     Parameters:
+     * `--prefix`              String - **AppticsExtension.* will be prefixed by this value.
+     * `--target-name`         String - Provide the name of your main target.
+     * `--target-group`        String - Provide the name of your target group.
+     * `--project-name`        String - Provide the name of the project.
+     * `--project-file-path`   String - Provide the path of the xcproject file.
+     * `--config-file-path`    String - Provide the path of apptics-config.plist file if to any sub directory instead of root.
+     * `--use-swift`           Void - Generate class for swift.
+     * `--help`                Show help banner of specified command.
+          
+     ***Note: The script `postinstaller` will add **AppticsExtension file(s) to your project, the class will have the events meta data.***
+     
+      
+           
+* Run `pod install` and make sure you are connected to the lan or wifi to access the Git repo. 
+
+* Create a new application or select an existing application from the quickstart page to download  the `apptics-config.plist`. Move the config file to the root of your Xcode project and add it to the necessary targets.
 
 
 * In your `Appdelegate` class make sure you call the initialize method in app launch.
@@ -58,25 +92,6 @@ To get proper symbolicated crashes, make sure your build settings have the follo
 * Strip Style - **Debugging Symbols**
 * Debug information format - **Dwarf with dSYM file**
 
-Create a run script 
-* Add these lines to your Podfile 
-
-        target '[TARGET NAME]' do
-            
-            pod 'Apptics-SDK' 
-            
-            script_phase :name => 'Apptics pre build', :script => 'sh "./Pods/Apptics-SDK/scripts/regappversion" --target-name="[TARGET NAME STRING] --config-file-path="apptics-config.plist"', :execution_position => :before_compile  
-            
-            script_phase :name => 'Apptics post build', :script => 'bash "./Pods/Apptics-SDK/scripts/run" --upload-symbols=[STATUS BOOL] --release-configurations="[CONFIGURATIONS COMMA SEPARATED STRING]"', :execution_position => :after_compile
-            
-        end        
-
-* `--project-name`       String - Provide the name of the project
-* `--target-name`         String - Provide the name of the target
-* `--project-file`       String - Provide the path of the xcproject file 
-* `--upload-symbols` based on this parameter we decide to upload dsym to the server. 
-* `--release-configurations` is a optional param, pass your configuration name Debug, Release or your custom name with comma separated for which the dSYMs will be uploaded without any prompt during App store submission process via CI, CT and CD.
-* `----config-file-path` String - Provide the path of apptics-config.plist file if to any sub directory instead of root.
 
 # Features
 
@@ -90,7 +105,7 @@ In-app event is tracking the post-install activities using the custom events.
 
 ## Screen Tracking: 
 
-Screens are automatically tracked and the time spent on each screen is noted in iOS and tvOS. You can track screens manually using our [apis](https://prezoho.zohocorp.com/apptics/resources/iOS/screens.html)    
+Screens are automatically tracked and the time spent on each screen is noted in iOS and tvOS. You can track screens manually using our [apis](https://prezoho.zohocorp.com/apptics/resources/SDK/iOS/screens.html)    
 ***Note: Viewcontrollers aren't tracked properly if you use third party containment controllers like DDMenuController, IIViewdeckController etc. To ensure to get a proper tracking of viewcontroller override `viewDidAppear` and `viewWillDisappear` in all your viewcontrollers.***
 
 ## Crash Reporting: 
@@ -132,22 +147,22 @@ You can use our protocols to customize the Analytics Settings, App updates and F
 
 ## Callbacks 
 
-Get callbacks for all the events at a single point by extending `ZACustomHandler`. It deals with user consent , crash consent, feedback, and ratings & reviews.
+Get callbacks for all the events at a single point by extending `APCustomHandler`. It deals with user consent , crash consent, feedback, and ratings & reviews.
 
 ## Feedback and BugReporting
 
-A seperate module that does "Shake to Feedback", please check if it suits your needs [here](https://prezoho.zohocorp.com/apptics/resources/iOS/inapp-feedback.html).
+A seperate module that does "Shake to Feedback", please check if it suits your needs [here](https://prezoho.zohocorp.com/apptics/resources/SDK/iOS/in_app_feedback.html).
         
 ## App Updates 
 
 Now you can prompt user to update to the latest version of your app from the App Store.  
 
-Please check our  guide before you start [here](https://prezoho.zohocorp.com/apptics/resources/iOS/inapp-updates.html).
+Please check our  guide before you start [here](https://prezoho.zohocorp.com/apptics/resources/SDK/iOS/in_app_updates.html).
 
 ## Ratings and Reviews
 
 Engage with your users and learn about their experience. Promopt them to rate your app after they have fulfilled the configured criteria.
 
-Check how to configure automatic ratings [here](https://prezoho.zohocorp.com/apptics/resources/iOS/inapp-ratings.html).
+Check how to configure automatic ratings [here](https://prezoho.zohocorp.com/apptics/resources/SDK/iOS/in_app_ratings.html).
 
     

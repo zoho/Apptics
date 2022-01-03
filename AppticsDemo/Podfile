@@ -1,6 +1,6 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
-
+apptics_version = '1.0.0-debug'
 source 'https://github.com/zoho/Apptics.git'
 source 'https://git.csez.zohocorpin.com/zoho/zohopodspecs.git'
 source 'https://github.com/CocoaPods/Specs.git'
@@ -11,17 +11,17 @@ target 'AppticsDemo' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-#pod 'Apptics-SDK', '1.0.0-debug' , :source => 'https://github.com/CocoaPods/Specs.git'
-pod 'Apptics-Swift', '1.0.0-debug' , :source => 'https://github.com/CocoaPods/Specs.git'
+pod 'Apptics-SDK', apptics_version , :source => 'https://github.com/CocoaPods/Specs.git'
+pod 'Apptics-Swift', apptics_version , :source => 'https://github.com/CocoaPods/Specs.git'
 #pod 'Apptics-SDK', '1.0.1' , :source => 'https://git.csez.zohocorpin.com/zoho/zohopodspecs.git'
 #pod 'Apptics-Swift', '1.0.1' , :source => 'https://git.csez.zohocorpin.com/zoho/zohopodspecs.git' #:source => 'https://github.com/CocoaPods/Specs.git'
 #
-#pod 'AppticsFeedbackKit', '1.0.0-debug' , :source => 'https://github.com/CocoaPods/Specs.git'
-#pod 'AppticsRemoteConfig', '1.0.0-debug' , :source => 'https://github.com/CocoaPods/Specs.git'
-##pod 'AppticsCrossPromotion', '1.0.0-debug' , :source => 'https://github.com/CocoaPods/Specs.git'
-#pod 'AppticsApiTracker', '1.0.0-debug' , :source => 'https://github.com/CocoaPods/Specs.git'
-#pod 'AppticsInAppUpdate', '1.0.0-debug' , :source => 'https://github.com/CocoaPods/Specs.git'
-#pod 'AppticsRateUs', '1.0.0-debug' , :source => 'https://github.com/CocoaPods/Specs.git'
+pod 'AppticsFeedbackKit', apptics_version , :source => 'https://github.com/CocoaPods/Specs.git'
+pod 'AppticsRemoteConfig', apptics_version , :source => 'https://github.com/CocoaPods/Specs.git'
+pod 'AppticsCrossPromotion', apptics_version , :source => 'https://github.com/CocoaPods/Specs.git'
+pod 'AppticsApiTracker', apptics_version , :source => 'https://github.com/CocoaPods/Specs.git'
+pod 'AppticsInAppUpdate', apptics_version , :source => 'https://github.com/CocoaPods/Specs.git'
+pod 'AppticsRateUs', apptics_version , :source => 'https://github.com/CocoaPods/Specs.git'
 
   # Pods for AppticsDemo
   script_phase :name => 'Apptics pre build', :script => 'sh "./Pods/Apptics-SDK/scripts/regappversion" --target-name="AppticsDemo"', :execution_position => :before_compile
