@@ -23,35 +23,36 @@ min Xcode version 9.0
             pod 'Apptics-SDK'
             
             # Pre build script will register the app version(s) with Apptics server.
-            script_phase :name => 'Apptics pre build', :script => 'sh "./Pods/Apptics-SDK/scripts/regappversion" --target-name="TARGET NAME" --config-file-path="YOUR_PATH/apptics-config.plist"', :execution_position => :before_compile
+            script_phase :name => 'Apptics pre build', :script => 'sh "./Pods/Apptics-SDK/scripts/regappversion" --target-name="TARGET NAME" --config-file-path="YOUR_PATH/apptics-config.plist" --app-group-identifier="APP GROUP IDENTIFIER"', :execution_position => :before_compile
             
-            # Post build script will upload dSYM file to the server and add apptics specific information to the main info.plist which will be used by the SDK.
-            script_phase :name => 'Apptics post build', :script => 'bash "./Pods/Apptics-SDK/scripts/run" --upload-symbols=true --release-configurations="CONFIGURATIONS COMMA SEPARATED STRING" --app-group-identifier="APP GROUP IDENTIFIER"', :execution_position => :after_compile
+            # (Optional) Post build script will upload dSYM file to the server and add apptics specific information to the main info.plist which will be used by the SDK.
+            script_phase :name => 'Apptics post build', :script => 'bash "./Pods/Apptics-SDK/scripts/run" --upload-symbols-for-configurations="CONFIGURATIONS COMMA SEPARATED STRING" ', :execution_position => :after_compile
             
           end
 
           post_install do |installer|
+          
             # (Optional) Add this line if you want to track custom events. 
             puts system("sh ./Pods/Apptics-SDK/native/scripts/postinstaller --prefix=\"AP\" --target-name=\"MAIN TARGET NAME\" --config-file-path=\"YOUR_PATH/apptics-config.plist\"")
+            
           end
           
      Usage: 
      
-     		regappversion --target-name="MAIN TARGET NAME [Optional]" --project-name="PROJECT NAME [Optional]" --project-file-path="PROJECT FILE PATH [Optional]" --config-file-path="YOUR_PATH/apptics-config.plist"
+     	regappversion --target-name="MAIN TARGET NAME [Optional]" --project-name="PROJECT NAME [Optional]" --project-file-path="PROJECT FILE PATH [Optional]" --config-file-path="YOUR_PATH/apptics-config.plist"
 
      Parameters:
-     * `--target-name`         String - Provide the name of your main target.
-     * `--project-name`        String - Provide the name of the project.     
-     * `--project-file-path`   String - Provide the path of the xcproject file
-     * `--config-file-path`    String - Provide the path of apptics-config.plist file if to any sub directory instead of root.
-     
+     * `--target-name`         		String - Provide the name of your main target.
+     * `--project-name`        		String - Provide the name of the project.     
+     * `--project-file-path`   		String - Provide the path of the xcproject file
+     * `--config-file-path`    		String - Provide the path of apptics-config.plist file if to any sub directory instead of root.
+	 * `--app-group-identifier`     String - App group identifier to support app extensions.      
      
      		run --upload-symbols=<true/false> --release-configurations="Release, Appstore" --app-group-identifier="group.com.company.application [Optional]"
      
      Parameters:
-     * `--upload-symbols`      Boolean - Pass true to upload dSYM to the server.
-     * `--release-configurations`         String - Provide the release configurations separated by comma.
-     * `--app-group-identifier`        String - App group identifier to support app extensions. 
+     * `--upload-symbols-for-configurations`         String - Provide the configurations separated by comma for which the dSYM files should be uploaded.
+     
      
      
      		postinstaller --prefix="PREFIX STRING" --target-name="MAIN TARGET NAME [Optional]" --target-group="TARGET GROUP NAME [Optional]" --project-name="PROJECT NAME [Optional]" --project-file-path="PROJECT FILE PATH [Optional]" --config-file-path="CONFIG FILE PATH [Optional]" --use-swift [Optional]      
