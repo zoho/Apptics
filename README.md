@@ -19,7 +19,7 @@ min Xcode version 9.0
     
           source 'https://github.com/CocoaPods/Specs.git'
           
-          target '[TARGET NAME]' do
+          target 'TARGET NAME' do
             pod 'Apptics-SDK'
             
             # Pre build script will register the app version(s) with Apptics server.
@@ -39,23 +39,25 @@ min Xcode version 9.0
           
      Usage: 
      
-     	regappversion --target-name="MAIN TARGET NAME [Optional]" --project-name="PROJECT NAME [Optional]" --project-file-path="PROJECT FILE PATH [Optional]" --config-file-path="YOUR_PATH/apptics-config.plist"
+     	regappversion --target-name="MAIN TARGET NAME [Optional]" --project-name="PROJECT NAME [Optional]" --project-file-path="PROJECT FILE PATH [Optional]" --config-file-path="YOUR_PATH/apptics-config.plist" --app-group-identifier="group.com.company.application [Optional]"
 
      Parameters:
      * `--target-name`         		String - Provide the name of your main target.
      * `--project-name`        		String - Provide the name of the project.     
      * `--project-file-path`   		String - Provide the path of the xcproject file
      * `--config-file-path`    		String - Provide the path of apptics-config.plist file if to any sub directory instead of root.
-	 * `--app-group-identifier`     String - App group identifier to support app extensions.      
-     
-     		run --upload-symbols=<true/false> --release-configurations="Release, Appstore" --app-group-identifier="group.com.company.application [Optional]"
+	 * `--app-group-identifier`     String - App group identifier to support app extensions.
+	 
+	 
+	 			
+	 			run --upload-symbols-for-configurations="Release, Appstore"
      
      Parameters:
      * `--upload-symbols-for-configurations`         String - Provide the configurations separated by comma for which the dSYM files should be uploaded.
      
      
      
-     		postinstaller --prefix="PREFIX STRING" --target-name="MAIN TARGET NAME [Optional]" --target-group="TARGET GROUP NAME [Optional]" --project-name="PROJECT NAME [Optional]" --project-file-path="PROJECT FILE PATH [Optional]" --config-file-path="CONFIG FILE PATH [Optional]" --use-swift [Optional]      
+     postinstaller --prefix="PREFIX STRING" --target-name="MAIN TARGET NAME [Optional]" --target-group="TARGET GROUP NAME [Optional]" --project-name="PROJECT NAME [Optional]" --project-file-path="PROJECT FILE PATH [Optional]" --config-file-path="CONFIG FILE PATH [Optional]" --use-swift [Optional]      
               
      Parameters:
      * `--prefix`              String - **AppticsExtension.* will be prefixed by this value.
