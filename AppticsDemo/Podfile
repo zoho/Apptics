@@ -25,7 +25,7 @@ pod 'AppticsRateUs', apptics_version , :source => 'https://github.com/CocoaPods/
 
   # Pods for AppticsDemo
   script_phase :name => 'Apptics pre build', :script => 'sh "./Pods/Apptics-SDK/scripts/regappversion" --target-name="AppticsDemo"', :execution_position => :before_compile
-  script_phase :name => 'Apptics post build', :script => 'bash "./Pods/Apptics-SDK/scripts/run" --upload-symbols=false --release-configurations="Release"', :execution_position => :after_compile
+  script_phase :name => 'Apptics post build', :script => 'bash "./Pods/Apptics-SDK/scripts/run" --upload-symbols-for-configurations="Release"', :execution_position => :after_compile
   
   target 'AppticsDemoTests' do
     inherit! :search_paths

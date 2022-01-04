@@ -1,3 +1,7 @@
+[![Version](https://img.shields.io/cocoapods/v/Apptics-SDK.svg?style=flat)](https://cocoapods.org/pods/Apptics-SDK)
+[![License](https://img.shields.io/cocoapods/l/Apptics-SDK.svg?style=flat)](https://cocoapods.org/pods/Apptics-SDK)
+[![Platform](https://img.shields.io/cocoapods/p/Apptics-SDK.svg?style=flat)](https://cocoapods.org/pods/Apptics-SDK)
+
 # Apptics 
 Apptics is a library that enables your app to send in-app usage reports and data securly to our servers. You can track Sessions, Screens, and we also offer Crash Reporting. With minimal initialization of the framework, you get these features without doing any other configuration.
 

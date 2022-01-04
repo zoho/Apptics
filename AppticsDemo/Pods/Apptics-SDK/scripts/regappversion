@@ -48,8 +48,16 @@ projectfilepath="${1#*=}"
 ;;
 --config-file-path=*)
 ZA_INFOPLIST_FILE="${1#*=}"
+ZA_INFO_FILE_NAME=$(basename "/$ZA_INFOPLIST_FILE")
+;;
+--app-group-identifier=*)
+AP_APP_GROUP_IDENTIFIER="${1#*=}"
 ;;
 *)
+printf "**********************************\n"
+printf "* Error: Invalid argument passed.*\n"
+printf "**********************************\n"
+printf "'$1'\n"
 exit 1
 esac
 shift
@@ -57,11 +65,12 @@ done
 
 if [ $HELP -eq 1 ];then
 echo "Options:\n"
-echo "    --target-name        Provide the name of main target"
-echo "    --project-name       Provide the name of the project"
-echo "    --project-file       Provide the path of the xcproject file"
-echo "    --config-file-path   Provide the path of apptics config file"
-echo "    --help               Show help banner of specified command"
+echo "    --target-name             Provide the name of main target"
+echo "    --project-name            Provide the name of the project"
+echo "    --project-file            Provide the path of the xcproject file"
+echo "    --config-file-path        Provide the path of apptics config file"
+echo "    --app-group-identifier    Provide the path of apptics config file"
+echo "    --help                    Show help banner of specified command"
 exit 1
 fi
 
@@ -117,6 +126,12 @@ if [ "${ZA_INFOPLIST_FILE}" ]; then
 plistManipulation "AP_INFOPLIST_FILE" "${ZA_INFOPLIST_FILE}"
 else
 deleteItemFromPlist "AP_INFOPLIST_FILE"
+fi
+
+if [ "${AP_APP_GROUP_IDENTIFIER}" ]; then
+plistManipulation "AP_APP_GROUP_IDENTIFIER" "${AP_APP_GROUP_IDENTIFIER}"
+else
+deleteItemFromPlist "AP_APP_GROUP_IDENTIFIER"
 fi
 
 getXcodeproj() {
@@ -209,7 +224,7 @@ fi
 ZA_INFOPLIST_FILE=${SRCROOT}/${ZA_INFOPLIST_FILE}
 
 if [ ! -f "${ZA_INFOPLIST_FILE}" ]; then
-echo "regappversion : Please check if the apptics-config.plist is in your projects' root dir, or else provide the proper path by passing value to the param '--config-file-path'"
+echo "regappversion : Please check if the ${ZA_INFO_FILE_NAME} is in your projects' root dir, or else provide the proper path by passing value to the param '--config-file-path'"
 exit 1
 fi
 
@@ -223,11 +238,11 @@ fi
 
 if [ ! "${API_KEY}" ]; then
 
-value=$(error_prompt "Missing API_KEY" "Please download and add the apptics-config.plist file your Xcode project.")
+value=$(error_prompt "Missing API_KEY" "Please check if the ${ZA_INFO_FILE_NAME} file is up to date?")
 fi
 
 if [ -z "${APPTICS_SDK_ID}" ]; then
-value=$(error_prompt "Missing APPTICS_SDK_ID, check the sdk_info sh")
+value=$(error_prompt "Missing APPTICS_SDK_ID, check the sdk_info file")
 exit 1
 fi
 
@@ -269,7 +284,7 @@ SERVER_URL=$(/usr/libexec/PlistBuddy -c 'Print SERVER_URL' "${ZA_INFOPLIST_FILE}
 if [ "${SERVER_URL}" ]; then
 URL_ENDPOINT="${SERVER_URL}/sdk/api/apptics/v1/app/addversion"
 else
-value=$(error_prompt "Missing SERVER_URL" "Please download and add the apptics-config.plist file your Xcode project.")
+value=$(error_prompt "Missing SERVER_URL" "Please check if the ${ZA_INFO_FILE_NAME} file is up to date?")
 exit 1
 fi
 
@@ -299,7 +314,7 @@ fi
 
 fetchAPP_VERSION_META() {
 if [ "${PRODUCT_BUNDLE_IDENTIFIER}" != "${AP_BUNDLE_ID}" ]; then
-    echo "Product bundle identifier '${PRODUCT_BUNDLE_IDENTIFIER}' doesn't match with the bundle identifier in 'apptics-config.plist' '${AP_BUNDLE_ID}'"
+    echo "Product bundle identifier '${PRODUCT_BUNDLE_IDENTIFIER}' doesn't match with the bundle identifier in '${ZA_INFO_FILE_NAME}' '${AP_BUNDLE_ID}'"
     exit 1
 fi
 

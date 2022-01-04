@@ -19,14 +19,8 @@ UPLOAD_SYMBOLS="false"
 
 while [ $# -gt 0 ]; do
 case "$1" in
---upload-symbols=*)
-UPLOAD_SYMBOLS="${1#*=}"
-;;
---release-configurations=*)
+--upload-symbols-for-configurations=*)
 SKIP_PROMPT_FOR="${1#*=}"
-;;
---app-group-identifier=*)
-AP_APP_GROUP_IDENTIFIER="${1#*=}"
 ;;
 *)
 printf "**********************************\n"
@@ -38,16 +32,15 @@ esac
 shift
 done
 
-
 if [ ! "${ZA_INFOPLIST_FILE}" ]; then
 ZA_INFOPLIST_FILE=$(/usr/libexec/PlistBuddy -c 'Print AP_INFOPLIST_FILE' "${AP_INFO_FILE_NAME}")
 fi
 
-echo "ZA_INFOPLIST_FILE ${ZA_INFOPLIST_FILE}"
 ZA_INFOPLIST_FILE=${SRCROOT}/${ZA_INFOPLIST_FILE}
+ZA_INFO_FILE_NAME=$(basename "/$ZA_INFOPLIST_FILE")
 
 if [ ! -f "${ZA_INFOPLIST_FILE}" ]; then
-echo "run : Please check if the apptics-config.plist is in your projects' root dir, or else provide the proper path by passing value to the param '--config-file-path'"
+echo "run : Please check if the ${ZA_INFO_FILE_NAME} is in your projects' root dir, or else provide the proper path by passing value to the param '--config-file-path'"
 exit 1
 fi
 
@@ -106,11 +99,11 @@ fi
 #fi
 #
 
-if [ "${AP_APP_GROUP_IDENTIFIER}" ]; then
-plistManipulation "AP_APP_GROUP_IDENTIFIER" "${AP_APP_GROUP_IDENTIFIER}"
-else
-deleteItemFromPlist "AP_APP_GROUP_IDENTIFIER"
-fi
+#if [ "${AP_APP_GROUP_IDENTIFIER}" ]; then
+#plistManipulation "AP_APP_GROUP_IDENTIFIER" "${AP_APP_GROUP_IDENTIFIER}"
+#else
+#deleteItemFromPlist "AP_APP_GROUP_IDENTIFIER"
+#fi
 
 #echo "Going to background mode..."
 #nohup sh "$DIR/BackGroundTasks.sh" &
