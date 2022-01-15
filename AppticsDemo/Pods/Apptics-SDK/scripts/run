@@ -1,26 +1,51 @@
-#!/bin/bash
+#!/bin/sh
 
-#  run.sh
-#  JAnalytics
+#  regappversion
+#  Apptics
 #
-#  Created by Saravanan S on 12/06/19.
+#  Created by Saravanan S on 04/06/19.
 #  Copyright © 2019 zoho. All rights reserved.
 
 DIR="$(command dirname -- "${0}")"
+source "${DIR}/sdk_info"
 
-COMMAND_PATH="\"$DIR/dsym_upload\""
-#ZA_INFOPLIST_FILE="apptics-config.plist"
-AP_INFO_FILE_NAME="$PRODUCT_SETTINGS_PATH"
+ZA_INFOPLIST_FILE="apptics-config.plist"
+ZA_META_FILE_NAME="Apptics.json"
+projectname="."
+projectfilepath=""
+PREFIX="AP"
+HELP=0
+
+AP_INFO_FILE_NAME="$PRODUCT_SETTINGS_PATH" #INFOPLIST_FILE
 CM_AP_INFO_FILE_NAME="$TARGET_BUILD_DIR/$INFOPLIST_PATH"
 
-#CM_ZA_INFOPLIST_FILE="$TARGET_BUILD_DIR/"$(command dirname -- "${FRAMEWORKS_FOLDER_PATH}")"/$ZA_INFO_FILE_NAME"
+#Apple script alert before dSYM upload
+function error_prompt() {
+osascript <<EOT
+tell app "System Events"
 
-UPLOAD_SYMBOLS="false"
+button returned of (display alert "$1" message "$2" buttons {"Ok"} default button 1 as critical giving up after 10)
+
+end tell
+EOT
+}
+
+eval "${GCC_PREPROCESSOR_DEFINITIONS}"
 
 while [ $# -gt 0 ]; do
 case "$1" in
+--help)
+HELP=1
+;;
 --upload-symbols-for-configurations=*)
 SKIP_PROMPT_FOR="${1#*=}"
+;;
+--config-file-path=*)
+ZA_INFOPLIST_FILE="${1#*=}"
+ZA_INFO_FILE_NAME=$(basename "/$ZA_INFOPLIST_FILE")
+;;
+--app-group-identifier=*)
+AP_APP_GROUP_IDENTIFIER="${1#*=}"
 ;;
 *)
 printf "**********************************\n"
@@ -32,15 +57,14 @@ esac
 shift
 done
 
-if [ ! "${ZA_INFOPLIST_FILE}" ]; then
-ZA_INFOPLIST_FILE=$(/usr/libexec/PlistBuddy -c 'Print AP_INFOPLIST_FILE' "${AP_INFO_FILE_NAME}")
-fi
+export ZA_INFOPLIST_FILE_PATH=$ZA_INFOPLIST_FILE
 
-ZA_INFOPLIST_FILE=${SRCROOT}/${ZA_INFOPLIST_FILE}
-ZA_INFO_FILE_NAME=$(basename "/$ZA_INFOPLIST_FILE")
-
-if [ ! -f "${ZA_INFOPLIST_FILE}" ]; then
-echo "run : Please check if the ${ZA_INFO_FILE_NAME} is in your projects' root dir, or else provide the proper path by passing value to the param '--config-file-path'"
+if [ $HELP -eq 1 ];then
+echo "Options:\n"
+echo "    --upload-symbols-for-configurations   Configurations as comma separated string for which the dSYM to be uploaded"
+echo "    --config-file-path                    Provide the path of apptics config file"
+echo "    --app-group-identifier                Provide the path of apptics config file"
+echo "    --help                                Show help banner of specified command"
 exit 1
 fi
 
@@ -92,48 +116,207 @@ fi
 fi
 }
 
-#if [ "${ZA_INFOPLIST_FILE}" ]; then
-#plistManipulation "AP_INFOPLIST_FILE" "$(basename "/$ZA_INFOPLIST_FILE")"
-#else
-#deleteItemFromPlist "AP_INFOPLIST_FILE"
-#fi
-#
+if [ "${ZA_INFOPLIST_FILE}" ]; then
+plistManipulation "AP_INFOPLIST_FILE" "${ZA_INFOPLIST_FILE}"
+else
+deleteItemFromPlist "AP_INFOPLIST_FILE"
+fi
 
-#if [ "${AP_APP_GROUP_IDENTIFIER}" ]; then
-#plistManipulation "AP_APP_GROUP_IDENTIFIER" "${AP_APP_GROUP_IDENTIFIER}"
-#else
-#deleteItemFromPlist "AP_APP_GROUP_IDENTIFIER"
-#fi
+if [ "${AP_APP_GROUP_IDENTIFIER}" ]; then
+plistManipulation "AP_APP_GROUP_IDENTIFIER" "${AP_APP_GROUP_IDENTIFIER}"
+else
+deleteItemFromPlist "AP_APP_GROUP_IDENTIFIER"
+fi
 
-#echo "Going to background mode..."
-#nohup sh "$DIR/BackGroundTasks.sh" &
+ZA_DEPLOYMENT_TARGET=""
 
+if [ "${IPHONEOS_DEPLOYMENT_TARGET}" ]; then
+ZA_DEPLOYMENT_TARGET=${IPHONEOS_DEPLOYMENT_TARGET}
+PLATFORM="iOS"
+APPTICS_SDK_ID=$IOS_SDK_ID
+fi
+if [ "${MACOSX_DEPLOYMENT_TARGET}" ]; then
+ZA_DEPLOYMENT_TARGET=${MACOSX_DEPLOYMENT_TARGET}
+PLATFORM="macOS"
+APPTICS_SDK_ID=$MACOS_SDK_ID
+fi
+if [ "${TVOS_DEPLOYMENT_TARGET}" ]; then
+ZA_DEPLOYMENT_TARGET=${TVOS_DEPLOYMENT_TARGET}
+PLATFORM="tvOS"
+APPTICS_SDK_ID=$TVOS_SDK_ID
+fi
+if [ "${WATCHOS_DEPLOYMENT_TARGET}" ]; then
+ZA_DEPLOYMENT_TARGET=${WATCHOS_DEPLOYMENT_TARGET}
+PLATFORM="watchOS"
+APPTICS_SDK_ID=$WATCHOS_SDK_ID
+fi
+
+ZA_INFOPLIST_FILE=${SRCROOT}/${ZA_INFOPLIST_FILE}
+
+if [ ! -f "${ZA_INFOPLIST_FILE}" ]; then
+echo "regappversion : Please check if the ${ZA_INFO_FILE_NAME} is in your projects' root dir, or else provide the proper path by passing value to the param '--config-file-path'"
+exit 1
+fi
+
+if [ ! "${AP_BUNDLE_ID}" ]; then
+AP_BUNDLE_ID=$(/usr/libexec/PlistBuddy -c 'Print BUNDLE_ID' "${ZA_INFOPLIST_FILE}")
+fi
+
+if [ ! "${API_KEY}" ]; then
+API_KEY=$(/usr/libexec/PlistBuddy -c 'Print API_KEY' "${ZA_INFOPLIST_FILE}")
+fi
+
+if [ ! "${API_KEY}" ]; then
+value=$(error_prompt "Missing API_KEY" "Please check if the ${ZA_INFO_FILE_NAME} file is up to date?")
+fi
+
+if [ -z "${APPTICS_SDK_ID}" ]; then
+value=$(error_prompt "Missing APPTICS_SDK_ID, check the sdk_info file")
+exit 1
+fi
+
+OS="iOS"
+if [ "${PLATFORM}" ]; then
+OS=${PLATFORM}
+fi
+
+BUNDLE_VERSION=${CURRENT_PROJECT_VERSION}
+if [ "$BUNDLE_VERSION" == "" ]; then
+BUNDLE_VERSION=$(/usr/libexec/PlistBuddy -c 'Print CFBundleVersion' "${AP_INFO_FILE_NAME}")
+fi
+
+BUNDLE_SHORT_VERSION=${MARKETING_VERSION}
+if [ "$BUNDLE_SHORT_VERSION" == "" ]; then
+BUNDLE_SHORT_VERSION=$(/usr/libexec/PlistBuddy -c 'Print CFBundleShortVersionString' "${AP_INFO_FILE_NAME}")
+fi
+
+APP_VERSION_ID=$(/usr/libexec/PlistBuddy -c 'Print APP_VERSION_META:APP_VERSION_ID' "${ZA_INFOPLIST_FILE}" 2>/dev/null || printf "")
+  
+AAID=$(/usr/libexec/PlistBuddy -c 'Print APP_VERSION_META:AAID' "${ZA_INFOPLIST_FILE}" 2>/dev/null || printf "")
+
+APID=$(/usr/libexec/PlistBuddy -c 'Print APP_VERSION_META:APID' "${ZA_INFOPLIST_FILE}" 2>/dev/null || printf "")
+
+RSAKEY=$(/usr/libexec/PlistBuddy -c 'Print APP_VERSION_META:RSAKEY' "${ZA_INFOPLIST_FILE}" 2>/dev/null || printf "")
+
+PLATFORM_ID=$(/usr/libexec/PlistBuddy -c 'Print APP_VERSION_META:PLATFORM_ID' "${ZA_INFOPLIST_FILE}" 2>/dev/null || printf "")
+
+ZA_BUNDLE_VERSION=$(/usr/libexec/PlistBuddy -c 'Print APP_VERSION_META:BUNDLE_VERSION' "${ZA_INFOPLIST_FILE}" 2>/dev/null || printf "")
+
+ZA_BUNDLE_SHORT_VERSION=$(/usr/libexec/PlistBuddy -c 'Print APP_VERSION_META:BUNDLE_SHORT_VERSION' "${ZA_INFOPLIST_FILE}" 2>/dev/null || printf "")
+
+ZA_APPTICS_SDK_ID=$(/usr/libexec/PlistBuddy -c 'Print APP_VERSION_META:APPTICS_SDK_ID' "${ZA_INFOPLIST_FILE}" 2>/dev/null || printf "")
+
+SERVER_URL=$(/usr/libexec/PlistBuddy -c 'Print SERVER_URL' "${ZA_INFOPLIST_FILE}")
+
+if [ "${SERVER_URL}" ]; then
+URL_ENDPOINT="${SERVER_URL}/sdk/api/apptics/v1/app/addversion"
+else
+value=$(error_prompt "Missing SERVER_URL" "Please check if the ${ZA_INFO_FILE_NAME} file is up to date?")
+exit 1
+fi
+
+printValueForKey(){
+
+key=$1
+
+echo "$key : $(/usr/libexec/PlistBuddy -c "Print APP_VERSION_META:$key" "${ZA_INFOPLIST_FILE}")"
+
+}
+
+checkAndUpdate(){
+
+key=$1
+value=$2
+
+echo "$key : $value"
+
+ID=$(/usr/libexec/PlistBuddy -c "Print APP_VERSION_META:$key" "${ZA_INFOPLIST_FILE}" 2>/dev/null || printf "null")
+echo "ID : ${ID}"
+if [ "${ID}" == "null" ]; then
+$(/usr/libexec/PlistBuddy -c "Add :APP_VERSION_META:$key string $value" "${ZA_INFOPLIST_FILE}")
+else
+$(/usr/libexec/PlistBuddy -c "Set :APP_VERSION_META:$key $value" "${ZA_INFOPLIST_FILE}")
+fi
+}
+
+fetchAPP_VERSION_META() {
+if [ "${PRODUCT_BUNDLE_IDENTIFIER}" != "${AP_BUNDLE_ID}" ]; then
+    echo "Product bundle identifier '${PRODUCT_BUNDLE_IDENTIFIER}' doesn't match with the bundle identifier in '${ZA_INFO_FILE_NAME}' '${AP_BUNDLE_ID}'"
+    exit 1
+fi
+
+if [ "${APPTICS_SDK_ID}" != "${ZA_APPTICS_SDK_ID}" ] || [ "${BUNDLE_VERSION}" != "${ZA_BUNDLE_VERSION}" ] || [ "${BUNDLE_SHORT_VERSION}" != "${ZA_BUNDLE_SHORT_VERSION}" ] || [ "${APP_VERSION_ID}" == "" ] || [ "${AAID}" == "" ] || [ "${APID}" == "" ] || [ "${PLATFORM_ID}" == "" ] || [ "${APPTICS_SDK_ID}" == "" ] || [ "${RSAKEY}" == "" ]; then
+  
+  out_file="/tmp/${ZA_META_FILE_NAME}"
+  REG_APP_VERSION_PARAMS="mode=1&platform=${OS}&identifier=${PRODUCT_BUNDLE_IDENTIFIER}&version=${BUNDLE_SHORT_VERSION}&appreleaseversion=${BUNDLE_VERSION}&frameworkid=${APPTICS_SDK_ID}&minosversion=${ZA_DEPLOYMENT_TARGET}"
+  STATUS=$(curl "${URL_ENDPOINT}?${REG_APP_VERSION_PARAMS}" -v --write-out %{http_code} --silent -o "${out_file}" -H "zak: ${API_KEY}" -X POST --connect-timeout 60 --max-time 900 --retry 2 --retry-delay 5)
+  
+  echo "${URL_ENDPOINT}?${REG_APP_VERSION_PARAMS} --write-out %{http_code} --silent -o "${out_file}" -H "zak: ${API_KEY}" -X POST"
+  
+  if [ $STATUS -eq 200 ]; then
+  echo "Data downloaded"
+  echo "$(command dirname -- "${0}")/appticshelper.rb" -e "AppticsBot.main '${out_file}'"
+  $(ruby -r "$(command dirname -- "${0}")/appticshelper.rb" -e "AppticsBot.main '${out_file}'")
+  echo "rsakey $rsakey "
+  checkAndUpdate "APP_VERSION_ID" "$appversionid"
+  checkAndUpdate "APP_RELEASE_VERSION_ID" "$appreleaseversionid"
+  checkAndUpdate "AAID" "$aaid"
+  checkAndUpdate "APID" "$apid"
+  checkAndUpdate "MAPID" "$mapid"
+  checkAndUpdate "RSAKEY" "$rsakey"
+  checkAndUpdate "PLATFORM_ID" "$platformid"
+  checkAndUpdate "BUNDLE_VERSION" "$BUNDLE_VERSION"
+  checkAndUpdate "BUNDLE_SHORT_VERSION" "$BUNDLE_SHORT_VERSION"
+  checkAndUpdate "APPTICS_SDK_ID" "${APPTICS_SDK_ID}"
+  
+    echo "Data updated"
+  else
+  echo "$STATUS Error occured ($?)"
+  exit 1
+  fi
+else
+  echo "App version is already registered"
+  printValueForKey "APP_VERSION_ID"
+  printValueForKey "APP_RELEASE_VERSION_ID"
+  printValueForKey "AAID"
+  printValueForKey "APID"
+  printValueForKey "MAPID"
+  printValueForKey "RSAKEY"
+  printValueForKey "PLATFORM_ID"
+  printValueForKey "BUNDLE_VERSION"
+  printValueForKey "BUNDLE_SHORT_VERSION"
+  printValueForKey "APPTICS_SDK_ID"
+  echo "App version : ${BUNDLE_VERSION}"
+  echo "App short version : ${BUNDLE_SHORT_VERSION}"
+fi
+
+DIR="$(command dirname -- "${0}")"
+
+COMMAND_PATH="$DIR/dsym_upload"
 
 IFS=', ' read -r -a SKIP_PROMPT_CONFIGURATIONS <<< "${SKIP_PROMPT_FOR}"
 
-if [ "${UPLOAD_SYMBOLS}" == "true" ]; then
-  if [[ " ${SKIP_PROMPT_CONFIGURATIONS[@]} " =~ " ${CONFIGURATION} " ]]; then
-    eval "$COMMAND_PATH --skip-prompt=1
-    #--config-file-path=\"${ZA_INFOPLIST_FILE}\""
-  else
-    eval "$COMMAND_PATH
-    #--config-file-path=\"${ZA_INFOPLIST_FILE}\""
-  fi
-else
 if [[ " ${SKIP_PROMPT_CONFIGURATIONS[@]} " =~ " ${CONFIGURATION} " ]]; then
-#Assuming that the developer have set upload symbol false for development not for the App store configuration
-  eval "$COMMAND_PATH --skip-prompt=1
-  #--config-file-path=\"${ZA_INFOPLIST_FILE}\""
+LOGNAME="/tmp/apptics-output.txt"
+MAXSIZE=100000
+LOGNAME_SIZE=$(ls -l $LOGNAME | awk '{print $5}')
+
+if [ $LOGNAME_SIZE -ge $MAXSIZE ];
+then
+echo "$LOGNAME exceeds max threshold"
+rm $LOGNAME
+fi
+  printf "*********************************************************************************************\n"
+  printf "* Uploading dSYM for '${CONFIGURATION}' configuration, check $LOGNAME for more details *\n"
+  printf "*********************************************************************************************\n"
+  sh "${COMMAND_PATH}" --skip-prompt=1 >> $LOGNAME 2>&1 &
 else
-  printf "************************************************************************************\n"
-  printf "* dSYMs upload is skipped for 'configuration' '${CONFIGURATION}' *\n"
-  printf "************************************************************************************\n"
+  printf "****************************************************\n"
+  printf "* Skipped dSYMs upload for '${CONFIGURATION}' configuration *\n"
+  printf "****************************************************\n"
 fi
 
-fi
+}
 
-return_code=$?
+fetchAPP_VERSION_META $1
 
-if [ $return_code != 0 ]; then
-  exit 0
-fi

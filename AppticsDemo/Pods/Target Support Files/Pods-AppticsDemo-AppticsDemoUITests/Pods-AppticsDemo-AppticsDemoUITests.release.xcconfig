@@ -1,10 +1,10 @@
 ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
 CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Apptics-SDK" "${PODS_CONFIGURATION_BUILD_DIR}/Apptics-Swift" "${PODS_CONFIGURATION_BUILD_DIR}/AppticsCrossPromotion" "${PODS_ROOT}/Apptics-SDK" "${PODS_ROOT}/AppticsApiTracker" "${PODS_ROOT}/AppticsFeedbackKit" "${PODS_ROOT}/AppticsInAppUpdate" "${PODS_ROOT}/AppticsRateUs" "${PODS_ROOT}/AppticsRemoteConfig" "${PODS_XCFRAMEWORKS_BUILD_DIR}/Apptics" "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsApiTracker" "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsCrashKit" "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsEventTracker" "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsFeedbackKit" "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsInAppUpdate" "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsRateUs" "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsRemoteConfig" "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsScreenTracker"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Apptics-SDK" "${PODS_CONFIGURATION_BUILD_DIR}/Apptics-Swift" "${PODS_ROOT}/Apptics-SDK" "${PODS_XCFRAMEWORKS_BUILD_DIR}/Apptics" "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsCrashKit" "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsEventTracker" "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsScreenTracker"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Apptics-SDK/Apptics_SDK.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Apptics-Swift/Apptics_Swift.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/AppticsCrossPromotion/AppticsCrossPromotion.framework/Headers"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Apptics-SDK/Apptics_SDK.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Apptics-Swift/Apptics_Swift.framework/Headers"
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_LDFLAGS = $(inherited) -framework "Apptics" -framework "AppticsApiTracker" -framework "AppticsCrashKit" -framework "AppticsCrossPromotion" -framework "AppticsEventTracker" -framework "AppticsFeedbackKit" -framework "AppticsInAppUpdate" -framework "AppticsRateUs" -framework "AppticsRemoteConfig" -framework "AppticsScreenTracker" -framework "Apptics_SDK" -framework "Apptics_Swift" -framework "StoreKit" -framework "UIKit"
+OTHER_LDFLAGS = $(inherited) -framework "Apptics" -framework "AppticsCrashKit" -framework "AppticsEventTracker" -framework "AppticsScreenTracker" -framework "Apptics_SDK" -framework "Apptics_Swift" -framework "StoreKit" -framework "UIKit"
 OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)

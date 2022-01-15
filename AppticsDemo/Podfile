@@ -10,22 +10,26 @@ source 'https://github.com/CocoaPods/Specs.git'
 target 'AppticsDemo' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
+#  pod 'Site24x7APM', '2.0.0', :source => 'https://github.com/site24x7/MobileAPM-IOS-SDK.git'
+#pod 'Apptics/Core', '1.0.0' , :source => 'https://github.com/CocoaPods/Specs.git'
+#pod 'Apptics/EventTracker', '1.0.0' , :source => 'https://github.com/CocoaPods/Specs.git'
+#pod 'Apptics/ScreenTracker', '1.0.0' , :source => 'https://github.com/CocoaPods/Specs.git'
+#pod 'Apptics/CrashKit', '1.0.0' , :source => 'https://github.com/CocoaPods/Specs.git'
 
 pod 'Apptics-SDK', apptics_version , :source => 'https://github.com/CocoaPods/Specs.git'
 pod 'Apptics-Swift', apptics_version , :source => 'https://github.com/CocoaPods/Specs.git'
-#pod 'Apptics-SDK', '1.0.1' , :source => 'https://git.csez.zohocorpin.com/zoho/zohopodspecs.git'
-#pod 'Apptics-Swift', '1.0.1' , :source => 'https://git.csez.zohocorpin.com/zoho/zohopodspecs.git' #:source => 'https://github.com/CocoaPods/Specs.git'
-#
-pod 'AppticsFeedbackKit', apptics_version , :source => 'https://github.com/CocoaPods/Specs.git'
-pod 'AppticsRemoteConfig', apptics_version , :source => 'https://github.com/CocoaPods/Specs.git'
-pod 'AppticsCrossPromotion', apptics_version , :source => 'https://github.com/CocoaPods/Specs.git'
-pod 'AppticsApiTracker', apptics_version , :source => 'https://github.com/CocoaPods/Specs.git'
-pod 'AppticsInAppUpdate', apptics_version , :source => 'https://github.com/CocoaPods/Specs.git'
-pod 'AppticsRateUs', apptics_version , :source => 'https://github.com/CocoaPods/Specs.git'
+##pod 'Apptics-SDK', '1.0.1' , :source => 'https://git.csez.zohocorpin.com/zoho/zohopodspecs.git'
+##pod 'Apptics-Swift', '1.0.1' , :source => 'https://git.csez.zohocorpin.com/zoho/zohopodspecs.git' #:source => 'https://github.com/CocoaPods/Specs.git'
+##
+#pod 'AppticsFeedbackKit', apptics_version , :source => 'https://github.com/CocoaPods/Specs.git'
+#pod 'AppticsRemoteConfig', apptics_version , :source => 'https://github.com/CocoaPods/Specs.git'
+#pod 'AppticsCrossPromotion', apptics_version , :source => 'https://github.com/CocoaPods/Specs.git'
+#pod 'AppticsApiTracker', apptics_version , :source => 'https://github.com/CocoaPods/Specs.git'
+#pod 'AppticsInAppUpdate', apptics_version , :source => 'https://github.com/CocoaPods/Specs.git'
+#pod 'AppticsRateUs', apptics_version , :source => 'https://github.com/CocoaPods/Specs.git'
 
   # Pods for AppticsDemo
-  script_phase :name => 'Apptics pre build', :script => 'sh "./Pods/Apptics-SDK/scripts/regappversion" --target-name="AppticsDemo"', :execution_position => :before_compile
-  script_phase :name => 'Apptics post build', :script => 'bash "./Pods/Apptics-SDK/scripts/run" --upload-symbols-for-configurations="Release"', :execution_position => :after_compile
+  script_phase :name => 'Apptics pre build', :script => 'sh "./Pods/Apptics-SDK/scripts/run" --upload-symbols-for-configurations="Release, AppStore"', :execution_position => :before_compile
   
   target 'AppticsDemoTests' do
     inherit! :search_paths

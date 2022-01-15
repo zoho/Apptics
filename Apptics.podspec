@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
 spec.name             = "Apptics"
-spec.version          = "1.0.0-debug"
+spec.version          = "1.0.0"
 spec.summary          = "Apptics iOS SDK"
 spec.license          = { :type => "MIT", :text=> <<-LICENSE
 MIT License
@@ -30,11 +30,12 @@ What's new:
 
   DESC
   
-spec.homepage         = "https://zoho.com"
+spec.homepage         = "https://github.com/zoho/Apptics"
 spec.author           = { "Saravanan Selvam" => "ssaravanan@zohocorp.com", "Prakash Redrouthu" => "prakash.redrouthu@zohocorp.com" }
-spec.source = { :http => "https://github.com/zoho/Apptics/releases/download/#{spec.version}/Apptics.zip" }
+spec.source = { :git => 'https://github.com/zoho/Apptics.git', :tag => spec.version }
 
 spec.social_media_url = "http://zoho.com"
+spec.documentation_url = "https://prezoho.zohocorp.com/apptics/resources/SDK/iOS/integration.html"
 
 spec.ios.deployment_target = '9.1'
 spec.tvos.deployment_target = '9.0'

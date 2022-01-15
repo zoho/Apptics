@@ -26,11 +26,8 @@ min Xcode version 9.0
           target 'TARGET NAME' do
             pod 'Apptics-SDK'
             
-            # Pre build script will register the app version(s) with Apptics server.
-            script_phase :name => 'Apptics pre build', :script => 'sh "./Pods/Apptics-SDK/scripts/regappversion" --target-name="TARGET NAME" --config-file-path="YOUR_PATH/apptics-config.plist" --app-group-identifier="APP GROUP IDENTIFIER"', :execution_position => :before_compile
-            
-            # (Optional) Post build script will upload dSYM file to the server and add apptics specific information to the main info.plist which will be used by the SDK.
-            script_phase :name => 'Apptics post build', :script => 'bash "./Pods/Apptics-SDK/scripts/run" --upload-symbols-for-configurations="CONFIGURATIONS COMMA SEPARATED STRING" ', :execution_position => :after_compile
+            # Pre build script will register the app version, upload dSYM file to the server and add apptics specific information to the main info.plist which will be used by the SDK.
+            script_phase :name => 'Apptics pre build', :script => 'sh "./Pods/Apptics-SDK/scripts/run --upload-symbols-for-configurations="Release, AppStore"', :execution_position => :before_compile                        
             
           end
 
@@ -43,23 +40,12 @@ min Xcode version 9.0
           
      Usage: 
      
-     	regappversion --target-name="MAIN TARGET NAME [Optional]" --project-name="PROJECT NAME [Optional]" --project-file-path="PROJECT FILE PATH [Optional]" --config-file-path="YOUR_PATH/apptics-config.plist" --app-group-identifier="group.com.company.application [Optional]"
+       run --upload-symbols-for-configurations="Release, Appstore" --config-file-path="YOUR_PATH/apptics-config.plist" --app-group-identifier="group.com.company.application [Optional]"
 
      Parameters:
-     * `--target-name`         		String - Provide the name of your main target.
-     * `--project-name`        		String - Provide the name of the project.     
-     * `--project-file-path`   		String - Provide the path of the xcproject file
-     * `--config-file-path`    		String - Provide the path of apptics-config.plist file if to any sub directory instead of root.
-	 * `--app-group-identifier`     String - App group identifier to support app extensions.
-	 
-	 
-	 			
-	 			run --upload-symbols-for-configurations="Release, Appstore"
-     
-     Parameters:
      * `--upload-symbols-for-configurations`         String - Provide the configurations separated by comma for which the dSYM files should be uploaded.
-     
-     
+     * `--config-file-path`    		String - Provide the path of apptics-config.plist file if to any sub directory instead of root.
+	 * `--app-group-identifier`     String - App group identifier to support app extensions.	 				    
      
      postinstaller --prefix="PREFIX STRING" --target-name="MAIN TARGET NAME [Optional]" --target-group="TARGET GROUP NAME [Optional]" --project-name="PROJECT NAME [Optional]" --project-file-path="PROJECT FILE PATH [Optional]" --config-file-path="CONFIG FILE PATH [Optional]" --use-swift [Optional]      
               
