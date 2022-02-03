@@ -59,7 +59,7 @@
 This method will take you to the App store.
  
 - Note:
- Call this method in the completion of custom review prompt when user taps on 'Rate in App Store' button.
+ Call this method in your apps settings screen when they tap on 'Rate in App Store' button.
 */
 
 + (void) takeToAppStoreReviewScreen;
@@ -95,17 +95,17 @@ Call this method to update user action for feedback when you open your custom fe
 
 +(void) updateAppRatingShownForCurrentVersion;
 
-/**
-This method will prompt ratings alert which will take you to the store.
- */
-
-+ (void) za_rateUsOnStore __deprecated_msg("use staticStoreReviewPrompt method instead.");
-
-/**
-This method will prompt ratings alert which will show the option to rate in appstore or send feedback, call this method in you apps' settings page.
- */
-
-+ (void) staticStoreReviewPrompt;
+///**
+//This method will prompt ratings alert which will take you to the store.
+// */
+//
+//+ (void) za_rateUsOnStore __deprecated_msg("use staticStoreReviewPrompt method instead.");
+//
+///**
+//This method will prompt ratings alert which will show the option to rate in appstore or send feedback, call this method in you apps' settings page.
+// */
+//
+//+ (void) staticStoreReviewPrompt;
 
 #endif
 

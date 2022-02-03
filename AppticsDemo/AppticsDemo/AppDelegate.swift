@@ -17,13 +17,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        AppticsConfig.default.sendDataOnMobileNetworkByDefault=true
-        AppticsConfig.default.trackOnByDefault=false
-        AppticsConfig.default.anonymousType = .pseudoAnonymous
-        AppticsConfig.default.enableCrossPromotionAppsList = true
+        AppticsConfig.default.sendDataOnMobileNetworkByDefault=true // 🤖​ Set true to send data on mobile network.
+        AppticsConfig.default.trackOnByDefault=true // 🤖​ Set true to track on by default before user consent.
+        AppticsConfig.default.anonymousType = .pseudoAnonymous // 🤖​ Choose type of tracking you prefer, we support sudo-anonymous and non-anonymous.
         
-        Apptics.initialize(withVerbose: true)
-        Apptics.enableReviewAndSendCrashReport(true)
+        AppticsConfig.default.enableCrossPromotionAppsList = true // To enable Cross Promotion
+        AppticsConfig.default.enableRateUs = true // To enable Rate us
+        
+        Apptics.initialize(withVerbose: true) // 🤖​ To initialise Apptics framework with or without verbose.
+        Apptics.enableReviewAndSendCrashReport(true) // 🤖​ To show review prompt before sending the crash report.
+        
+        Apptics.setTheme(AppTheme())
         return true
     }
 

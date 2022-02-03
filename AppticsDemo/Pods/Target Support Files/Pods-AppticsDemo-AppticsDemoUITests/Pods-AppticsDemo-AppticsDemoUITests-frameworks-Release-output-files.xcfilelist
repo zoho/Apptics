@@ -1,6 +1,12 @@
 ${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Apptics_SDK.framework
 ${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Apptics_Swift.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppticsCrossPromotion.framework
 ${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Apptics.framework
 ${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppticsCrashKit.framework
 ${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppticsEventTracker.framework
 ${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppticsScreenTracker.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppticsApiTracker.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppticsFeedbackKit.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppticsInAppUpdate.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppticsRateUs.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppticsRemoteConfig.framework

@@ -1,34 +1,34 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
-apptics_version = '1.0.0-debug'
-source 'https://github.com/zoho/Apptics.git'
-source 'https://git.csez.zohocorpin.com/zoho/zohopodspecs.git'
+
+apptics_version = '1.0.0-debug' #debug version of 1.0.0, use non debug version 1.0.0 for your Release build.
+
 source 'https://github.com/CocoaPods/Specs.git'
 
-#source "https://github.com/CocoaPods/Specs.git"
-#source "https://git.csez.zohocorpin.com/zoho/zohopodspecs.git"
 target 'AppticsDemo' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-#  pod 'Site24x7APM', '2.0.0', :source => 'https://github.com/site24x7/MobileAPM-IOS-SDK.git'
-#pod 'Apptics/Core', '1.0.0' , :source => 'https://github.com/CocoaPods/Specs.git'
-#pod 'Apptics/EventTracker', '1.0.0' , :source => 'https://github.com/CocoaPods/Specs.git'
-#pod 'Apptics/ScreenTracker', '1.0.0' , :source => 'https://github.com/CocoaPods/Specs.git'
-#pod 'Apptics/CrashKit', '1.0.0' , :source => 'https://github.com/CocoaPods/Specs.git'
 
-pod 'Apptics-SDK', apptics_version , :source => 'https://github.com/CocoaPods/Specs.git'
+# Pods for Apptics, either one is required based on your requirement.
+
+## Apptics for Objc
+#pod 'Apptics-SDK', apptics_version , :source => 'https://github.com/CocoaPods/Specs.git'
+
+# Apptics for Swift
 pod 'Apptics-Swift', apptics_version , :source => 'https://github.com/CocoaPods/Specs.git'
-##pod 'Apptics-SDK', '1.0.1' , :source => 'https://git.csez.zohocorpin.com/zoho/zohopodspecs.git'
-##pod 'Apptics-Swift', '1.0.1' , :source => 'https://git.csez.zohocorpin.com/zoho/zohopodspecs.git' #:source => 'https://github.com/CocoaPods/Specs.git'
-##
-#pod 'AppticsFeedbackKit', apptics_version , :source => 'https://github.com/CocoaPods/Specs.git'
-#pod 'AppticsRemoteConfig', apptics_version , :source => 'https://github.com/CocoaPods/Specs.git'
-#pod 'AppticsCrossPromotion', apptics_version , :source => 'https://github.com/CocoaPods/Specs.git'
-#pod 'AppticsApiTracker', apptics_version , :source => 'https://github.com/CocoaPods/Specs.git'
-#pod 'AppticsInAppUpdate', apptics_version , :source => 'https://github.com/CocoaPods/Specs.git'
-#pod 'AppticsRateUs', apptics_version , :source => 'https://github.com/CocoaPods/Specs.git'
-
-  # Pods for AppticsDemo
+# Apptics Feedback Kit
+pod 'AppticsFeedbackKit', apptics_version , :source => 'https://github.com/CocoaPods/Specs.git'
+# Apptics In-App Update
+pod 'AppticsInAppUpdate', apptics_version , :source => 'https://github.com/CocoaPods/Specs.git'
+# Apptics Rate us
+pod 'AppticsRateUs', apptics_version , :source => 'https://github.com/CocoaPods/Specs.git'
+# Apptics RemoteConfig
+pod 'AppticsRemoteConfig', apptics_version , :source => 'https://github.com/CocoaPods/Specs.git'
+# Apptics Api Tracker
+pod 'AppticsApiTracker', apptics_version , :source => 'https://github.com/CocoaPods/Specs.git'
+# Apptics Cross Promotion
+pod 'AppticsCrossPromotion', apptics_version , :source => 'https://github.com/CocoaPods/Specs.git'
+  
   script_phase :name => 'Apptics pre build', :script => 'sh "./Pods/Apptics-SDK/scripts/run" --upload-symbols-for-configurations="Release, AppStore"', :execution_position => :before_compile
   
   target 'AppticsDemoTests' do
@@ -44,11 +44,4 @@ end
 
 target 'AppticsWidgetExtension' do
   use_frameworks!
-#  pod 'Apptics-SDK', '1.0.3-debug2'
-#  pod 'Apptics-SDK/EventTracker', '1.0.3-debug2'
-#  pod 'Apptics-SDK/ScreenTracker', '1.0.3-debug2'
-#  pod 'Apptics-SDK/CrashKit', '1.0.3-debug2'
-#  pod 'Apptics-SDK/FeedbackKit', '1.0.3-debug2'
-#  pod 'Apptics-Swift', '1.0.3-debug1'
-  #pod 'Apptics-Swift/CrossPromotion', '1.0.3-debug1'
 end

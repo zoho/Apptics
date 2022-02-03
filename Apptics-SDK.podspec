@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 spec.name             = "Apptics-SDK"
 spec.version          = "1.0.0"
-spec.summary          = "An events tracking and analytics library for iOS"
+spec.summary          = "An in-app usage tracking and analytics library for iOS"
 spec.license          = { :type => "MIT", :text=> <<-LICENSE
 MIT License
 Copyright (c) 2020 Zoho Corporation
@@ -34,8 +34,6 @@ spec.homepage         = "https://github.com/zoho/Apptics"
 spec.author           = { "Saravanan Selvam" => "ssaravanan@zohocorp.com", "Prakash Redrouthu" => "prakash.redrouthu@zohocorp.com" }
 spec.source = { :http => "https://github.com/zoho/Apptics/releases/download/#{spec.version}/Apptics.zip" }
 
-spec.source_files = 'scripts/*'
-spec.preserve_paths = 'scripts/*'
 spec.social_media_url = "http://zoho.com"
 
 spec.ios.deployment_target = '9.1'
@@ -52,6 +50,7 @@ an.dependency 'Apptics-SDK/Core'
 an.dependency 'Apptics-SDK/EventTracker'
 an.dependency 'Apptics-SDK/ScreenTracker'
 an.dependency 'Apptics-SDK/CrashKit'
+an.dependency 'Apptics-SDK/Scripts'
 end
 
 spec.subspec 'Core' do |co|
@@ -68,6 +67,11 @@ end
 
 spec.subspec 'CrashKit' do |ck|
 ck.vendored_frameworks = 'AppticsCrashKit.xcframework'
+end
+
+spec.subspec 'Scripts' do |sc|
+sc.source_files = 'scripts/*'
+sc.preserve_paths = 'scripts/*'
 end
 
 end

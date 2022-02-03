@@ -13,8 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, retain) NSString * _Nullable lang;
 @property (nonatomic, retain) NSString * _Nullable location;
 @property (nonatomic, retain) NSString * _Nullable timeZone;
-@property (nonatomic, retain) NSBundle *analyticLanguageBundle;
-@property (nonatomic, retain) NSBundle *bugSquashLanguageBundle;
+@property (nonatomic, retain) NSBundle * _Nullable analyticLanguageBundle;
+@property (nonatomic, retain) NSBundle * _Nullable bugSquashLanguageBundle;
 @property (nonatomic, retain) Class<APEventsProtocol> _Nullable eventsProtocolClass;
 @property (nonatomic, retain) Class<APAPIProtocol> _Nullable apiProtocolClass;
 

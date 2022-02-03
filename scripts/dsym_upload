@@ -220,9 +220,7 @@ fi
 # create dSYM .zip file
 echo "dSYM location: ${DSYM_SRC}"
 
-
 if [ ${DEBUG_INFORMATION_FORMAT} == "dwarf-with-dsym" ]; then
-
     while (! dwarfdump -u "${DSYM_SRC}" 2> /dev/null)
     do
     echo "Waiting to finish dSYM file creation..."

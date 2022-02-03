@@ -6,29 +6,74 @@ PODS:
     - Apptics-SDK/CrashKit
     - Apptics-SDK/EventTracker
     - Apptics-SDK/ScreenTracker
+    - Apptics-SDK/Scripts
   - Apptics-SDK/Core (1.0.0-debug)
   - Apptics-SDK/CrashKit (1.0.0-debug)
   - Apptics-SDK/EventTracker (1.0.0-debug)
   - Apptics-SDK/ScreenTracker (1.0.0-debug)
+  - Apptics-SDK/Scripts (1.0.0-debug)
   - Apptics-Swift (1.0.0-debug):
     - Apptics-SDK (= 1.0.0-debug)
     - Apptics-Swift/Analytics (= 1.0.0-debug)
   - Apptics-Swift/Analytics (1.0.0-debug):
     - Apptics-SDK (= 1.0.0-debug)
+  - AppticsApiTracker (1.0.0-debug):
+    - AppticsApiTracker/ApiTracker (= 1.0.0-debug)
+  - AppticsApiTracker/ApiTracker (1.0.0-debug):
+    - Apptics-SDK/Core (= 1.0.0-debug)
+  - AppticsCrossPromotion (1.0.0-debug):
+    - AppticsCrossPromotion/CrossPromotion (= 1.0.0-debug)
+  - AppticsCrossPromotion/CrossPromotion (1.0.0-debug):
+    - Apptics-Swift/Analytics (= 1.0.0-debug)
+  - AppticsFeedbackKit (1.0.0-debug):
+    - AppticsFeedbackKit/FeedbackKit (= 1.0.0-debug)
+  - AppticsFeedbackKit/FeedbackKit (1.0.0-debug):
+    - Apptics-SDK/Core (= 1.0.0-debug)
+  - AppticsInAppUpdate (1.0.0-debug):
+    - AppticsInAppUpdate/AppUpdate (= 1.0.0-debug)
+  - AppticsInAppUpdate/AppUpdate (1.0.0-debug):
+    - Apptics-SDK/Core (= 1.0.0-debug)
+    - AppticsFeedbackKit (= 1.0.0-debug)
+  - AppticsRateUs (1.0.0-debug):
+    - AppticsRateUs/RateUs (= 1.0.0-debug)
+  - AppticsRateUs/RateUs (1.0.0-debug):
+    - Apptics-SDK/Core (= 1.0.0-debug)
+    - AppticsFeedbackKit (= 1.0.0-debug)
+  - AppticsRemoteConfig (1.0.0-debug):
+    - AppticsRemoteConfig/RemoteConfig (= 1.0.0-debug)
+  - AppticsRemoteConfig/RemoteConfig (1.0.0-debug):
+    - Apptics-SDK/Core (= 1.0.0-debug)
 
 DEPENDENCIES:
-  - Apptics-SDK (= 1.0.0-debug)
   - Apptics-Swift (= 1.0.0-debug)
+  - AppticsApiTracker (= 1.0.0-debug)
+  - AppticsCrossPromotion (= 1.0.0-debug)
+  - AppticsFeedbackKit (= 1.0.0-debug)
+  - AppticsInAppUpdate (= 1.0.0-debug)
+  - AppticsRateUs (= 1.0.0-debug)
+  - AppticsRemoteConfig (= 1.0.0-debug)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Apptics-SDK
     - Apptics-Swift
+    - AppticsApiTracker
+    - AppticsCrossPromotion
+    - AppticsFeedbackKit
+    - AppticsInAppUpdate
+    - AppticsRateUs
+    - AppticsRemoteConfig
 
 SPEC CHECKSUMS:
-  Apptics-SDK: 446597ecaee8ac3284c0b96bbd5b38b0b14f9753
+  Apptics-SDK: e1f8a1229b52323b90a3c7e1ffe877b75c8fdfdd
   Apptics-Swift: e505e389ac03a82d15212703f9e3c6d0e2aa7f68
+  AppticsApiTracker: 69a60e857bcc5af3d812ae5701b08b139421fc8f
+  AppticsCrossPromotion: e64df7d401b19ffbd789ed88a252fb6bdb0a4c60
+  AppticsFeedbackKit: 086a62afb0d6781fb08d9505f3a66ac4eddb9595
+  AppticsInAppUpdate: 8adc31749c9cdd71be2fc9429698909736574eae
+  AppticsRateUs: e22dab28f0581f6c1ba2f6a0f8cd1f956da9a6e0
+  AppticsRemoteConfig: a3fcbb42b7278d0485870ec8a6b64b3174d5c254
 
-PODFILE CHECKSUM: e48c4c70ae3847cb1f71293fbfd4d88232eaf305
+PODFILE CHECKSUM: e08ab6f194f42d4e7d653c626626f2eec4009177
 
 COCOAPODS: 1.10.0

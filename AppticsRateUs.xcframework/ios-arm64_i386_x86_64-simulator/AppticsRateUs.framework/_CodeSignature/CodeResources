@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/APRateUs.h</key>
 		<data>
-		7XpLT19DWTQOT+FRlP1ygA729HM=
+		YOAbUqhPe7A9fb3z+yg2UVdEuiA=
 		</data>
 		<key>Headers/AppticsRateUs.h</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		oLdjWQBCvmqSQfsGZy1LFXL/K6w=
+		XdZVVRSUpMs6PUqZ/3mU/FVCUQ0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -27,11 +27,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7XpLT19DWTQOT+FRlP1ygA729HM=
+			YOAbUqhPe7A9fb3z+yg2UVdEuiA=
 			</data>
 			<key>hash2</key>
 			<data>
-			NQoUPT7HZNd1T/VF/ccVGuYCkZWHj3LutNpOQHihZII=
+			LUmtUf2kfzmUjjKIXOHyCQ8o5QPhmsk9wK0X1jYwo/o=
 			</data>
 		</dict>
 		<key>Headers/AppticsRateUs.h</key>

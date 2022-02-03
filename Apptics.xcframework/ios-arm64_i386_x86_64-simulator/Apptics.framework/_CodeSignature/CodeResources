@@ -23,7 +23,7 @@
 		</data>
 		<key>AppticsResources.bundle/Info.plist</key>
 		<data>
-		dJhOhlzGaiHQ0b3GCoyeSy6vyCk=
+		rK6wKFSdGN/ed0oZoC7HlcRWC3k=
 		</data>
 		<key>AppticsResources.bundle/ZAAppUpdateAlert.nib</key>
 		<data>
@@ -67,7 +67,7 @@
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		8aGctJGrveuTW0IHZp72HtJafyg=
+		QA78RglcpjDT3AFlK0uhzrgO1iY=
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -75,11 +75,11 @@
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		LfdX2I3fdTNc9/sTLuQ0+UH+OaE=
+		4uoQLsEVgktZuvkb06uSuZV8gvM=
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeResources</key>
 		<data>
-		+M6P8nehbu5cf5iczYL9lxHs5c8=
+		FaGTtBnxBeLqXPlDNbEbMLhFc9U=
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeSignature</key>
 		<data>
@@ -127,6 +127,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>AppticsResources.bundle/bn-IN.lproj/ZAnalyticsLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jmDSvFd50xf968SfxUHQjdHdwRk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>AppticsResources.bundle/cs.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
 			<key>hash</key>
@@ -150,6 +159,15 @@
 			<key>hash</key>
 			<data>
 			7Udlu5KUMlgZ5oMV13zjkyfzgmE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>AppticsResources.bundle/el.lproj/ZAnalyticsLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ngRUdZ4UVAGQktcJ+jd+bqA9gs0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -199,11 +217,29 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>AppticsResources.bundle/gu.lproj/ZAnalyticsLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			X87eUPp/qcbE+HdjP16gX//G/UM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>AppticsResources.bundle/he.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			dh3j+WbnVMfRzswvL6fnJowVmOk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>AppticsResources.bundle/hi.lproj/ZAnalyticsLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ySPt767d5vzdFjsl+KEVGVt1/Vo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -244,6 +280,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>AppticsResources.bundle/kn.lproj/ZAnalyticsLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sa/fa+Y8EE6+hrw3pVNHtYfbSNw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>AppticsResources.bundle/ko.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
 			<key>hash</key>
@@ -253,11 +298,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>AppticsResources.bundle/ml.lproj/ZAnalyticsLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Jkks9gM5gMr3K9/pY/yJEd1kSkE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>AppticsResources.bundle/mr.lproj/ZAnalyticsLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kvPVXKmsr5Zze8bejOPpMLUJZX4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>AppticsResources.bundle/nl.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			N5xp+d9n7bhHp2+qQC9ZEws0v1Y=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>AppticsResources.bundle/pa.lproj/ZAnalyticsLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9z+xfHSgUbX3BvVLQ9b8A5wNFm4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -307,11 +379,38 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>AppticsResources.bundle/ta.lproj/ZAnalyticsLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bNS9JjS/e7gkf2Rk/IZv2f9xqEY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>AppticsResources.bundle/te.lproj/ZAnalyticsLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CFctm5pSqnl9u9+mIc6rG594PtA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>AppticsResources.bundle/tr.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			PJiMu9QDrLXr5shaqXMq+pt1M9g=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>AppticsResources.bundle/ur-Arab.lproj/ZAnalyticsLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vixFU6v4Y9rLN4wa6lFOJql22jo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -397,7 +496,7 @@
 		</data>
 		<key>Headers/APBundle.h</key>
 		<data>
-		x9eE7rSseW7YzSM7JRn/irWDRJs=
+		iyQA2QqWziqhvzXeSkaJJhb/+1Q=
 		</data>
 		<key>Headers/APCustomHandler.h</key>
 		<data>
@@ -433,11 +532,11 @@
 		</data>
 		<key>Headers/Analytics.h</key>
 		<data>
-		s3KutelXTw3J95OUwPnMwRI2B2o=
+		SHjX7ojgEByQHg/1cjbGXNgDQQ4=
 		</data>
 		<key>Headers/Apptics.h</key>
 		<data>
-		smPOwfw/VI+bFt6V7zRU2YdRdpo=
+		ltkYsCbpKzRT3QZSTkj8kmmje1c=
 		</data>
 		<key>Headers/AppticsConfig.h</key>
 		<data>
@@ -581,7 +680,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		gjlEX2JXyjlEUBlvRvdBRzaMJNM=
+		7K7Fu5NGUamt7RtA05AoaMwrmEQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -629,11 +728,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dJhOhlzGaiHQ0b3GCoyeSy6vyCk=
+			rK6wKFSdGN/ed0oZoC7HlcRWC3k=
 			</data>
 			<key>hash2</key>
 			<data>
-			I7gKTkFuGj0XAQqg3PDvbhxpYyk3oi060ZahKvhoCUs=
+			CCrJnq1e7tt4dKl3OXMIixja+upJQDtHxTOO31/E+3s=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/ZAAppUpdateAlert.nib</key>
@@ -750,11 +849,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8aGctJGrveuTW0IHZp72HtJafyg=
+			QA78RglcpjDT3AFlK0uhzrgO1iY=
 			</data>
 			<key>hash2</key>
 			<data>
-			IQXxVUSKPMJzH0yItLIrH8xQxEIopKQViNuWqKiqqMo=
+			M8WMTnVT+aPgSYuxN2BOegjOgPIxIDTzsQXF6du6IJA=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/_CodeSignature/CodeRequirements</key>
@@ -772,22 +871,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LfdX2I3fdTNc9/sTLuQ0+UH+OaE=
+			4uoQLsEVgktZuvkb06uSuZV8gvM=
 			</data>
 			<key>hash2</key>
 			<data>
-			268GYAFslRE2PeMww+vVwScio+vImW53SSIQNupIn0Q=
+			8GrDhgJdHH1uJL25rhEfdPQ6VvCpj1WNmEuNZFv5l88=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+M6P8nehbu5cf5iczYL9lxHs5c8=
+			FaGTtBnxBeLqXPlDNbEbMLhFc9U=
 			</data>
 			<key>hash2</key>
 			<data>
-			voytOaiT34F0EHsUT7/G6L2fXo+r4rRKg27bKLIqbEo=
+			Wg4HzV+ZiNk3ksV+VcCgMCteH4axwSM/SRZgEo2N7R4=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/_CodeSignature/CodeSignature</key>
@@ -893,6 +992,19 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>AppticsResources.bundle/bn-IN.lproj/ZAnalyticsLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jmDSvFd50xf968SfxUHQjdHdwRk=
+			</data>
+			<key>hash2</key>
+			<data>
+			Em5/6F1ZLvHU6T9Ute8JjBaAUCzHlKN1S2A0iPQcFZw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>AppticsResources.bundle/cs.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
 			<key>hash</key>
@@ -928,6 +1040,19 @@
 			<key>hash2</key>
 			<data>
 			IUBRTx5Ok70FeUj8UYnUl3qSm41hvZJdzls/aSEjPNc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>AppticsResources.bundle/el.lproj/ZAnalyticsLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ngRUdZ4UVAGQktcJ+jd+bqA9gs0=
+			</data>
+			<key>hash2</key>
+			<data>
+			Zh4SZZO4Bdzzg9glWk0Iv+nEqtPY4vlBKc245lv2xmo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -997,6 +1122,19 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>AppticsResources.bundle/gu.lproj/ZAnalyticsLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			X87eUPp/qcbE+HdjP16gX//G/UM=
+			</data>
+			<key>hash2</key>
+			<data>
+			CP9oruz5c0A+ZPkg+FTWaN386D4GODOgNzbp7aDOxMI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>AppticsResources.bundle/he.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1006,6 +1144,19 @@
 			<key>hash2</key>
 			<data>
 			eM7e0BWDmghRxJhZeMto9prpBaV3tFk59liUyTIKz38=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>AppticsResources.bundle/hi.lproj/ZAnalyticsLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ySPt767d5vzdFjsl+KEVGVt1/Vo=
+			</data>
+			<key>hash2</key>
+			<data>
+			2Vbt2vmQrprr9TZin94ZsAV2WyDwkdtN/0VF0LYcTRQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1062,6 +1213,19 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>AppticsResources.bundle/kn.lproj/ZAnalyticsLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sa/fa+Y8EE6+hrw3pVNHtYfbSNw=
+			</data>
+			<key>hash2</key>
+			<data>
+			Xma4O5wsNl0ic3+B5yiLH2z4iFGFIgXezmxndtBy7lk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>AppticsResources.bundle/ko.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1075,6 +1239,32 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>AppticsResources.bundle/ml.lproj/ZAnalyticsLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Jkks9gM5gMr3K9/pY/yJEd1kSkE=
+			</data>
+			<key>hash2</key>
+			<data>
+			aFUWbORl+HD7AHF2uUD1vDiztwGV/q6w+e31ukU4Q+c=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>AppticsResources.bundle/mr.lproj/ZAnalyticsLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kvPVXKmsr5Zze8bejOPpMLUJZX4=
+			</data>
+			<key>hash2</key>
+			<data>
+			HxHTlx0P+/PLjOCnx6xYJlVg5X3A8IbN5fSg6Qq2fkE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>AppticsResources.bundle/nl.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1084,6 +1274,19 @@
 			<key>hash2</key>
 			<data>
 			7R4cNezE8DAaS3gy1mA3L6ip5+BFla/MfLfOmiiyo6k=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>AppticsResources.bundle/pa.lproj/ZAnalyticsLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9z+xfHSgUbX3BvVLQ9b8A5wNFm4=
+			</data>
+			<key>hash2</key>
+			<data>
+			VKKG3AzRBZcT+mVcwZVVQvN/Kok8EDbKrz0ca04ffCc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1153,6 +1356,32 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>AppticsResources.bundle/ta.lproj/ZAnalyticsLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bNS9JjS/e7gkf2Rk/IZv2f9xqEY=
+			</data>
+			<key>hash2</key>
+			<data>
+			wi5p0GTDF53BqQuhHvsFxleVCJdkbXzBTyGr9mSQu1c=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>AppticsResources.bundle/te.lproj/ZAnalyticsLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CFctm5pSqnl9u9+mIc6rG594PtA=
+			</data>
+			<key>hash2</key>
+			<data>
+			BkKZRjeOXRTdsx0SHKDNCmi/Fq06yij/LKR5HbMG6Do=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>AppticsResources.bundle/tr.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1162,6 +1391,19 @@
 			<key>hash2</key>
 			<data>
 			Rv74AofQ+usEliyr0w6oDwwNQjzlaLVcMvmjk8Al93w=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>AppticsResources.bundle/ur-Arab.lproj/ZAnalyticsLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vixFU6v4Y9rLN4wa6lFOJql22jo=
+			</data>
+			<key>hash2</key>
+			<data>
+			YG8AX6ausNoojQHgGmYhCtcIjRish8z3xN3RpwyrZcc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1352,11 +1594,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			x9eE7rSseW7YzSM7JRn/irWDRJs=
+			iyQA2QqWziqhvzXeSkaJJhb/+1Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			JTF3ecWad6tjuYMiv+ZVIkoJ2c2854/v749DzqKPc+Y=
+			yOK/13ffIEVulvQZwhE76eRtkmcYG+h7C3BCa2m5XiI=
 			</data>
 		</dict>
 		<key>Headers/APCustomHandler.h</key>
@@ -1451,22 +1693,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			s3KutelXTw3J95OUwPnMwRI2B2o=
+			SHjX7ojgEByQHg/1cjbGXNgDQQ4=
 			</data>
 			<key>hash2</key>
 			<data>
-			q8IhSrdn4vW+o9aTbQLIVVqySQ3ZF5FanRNNc1EoLz8=
+			G2yOogPrLm51VT/u8hjKbklYJ7cc0igMghSAYs5kHFw=
 			</data>
 		</dict>
 		<key>Headers/Apptics.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			smPOwfw/VI+bFt6V7zRU2YdRdpo=
+			ltkYsCbpKzRT3QZSTkj8kmmje1c=
 			</data>
 			<key>hash2</key>
 			<data>
-			DSxmzRKpgQvZubFbpzNyEYk35hz4V3UhvvSSKe8761Y=
+			mE0ALzxDM83+0lNbaeU++GD0uZpYfQnA5fpTMt9/B38=
 			</data>
 		</dict>
 		<key>Headers/AppticsConfig.h</key>
