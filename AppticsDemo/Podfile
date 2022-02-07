@@ -1,7 +1,8 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
-apptics_version = '1.0.0-debug' #debug version of 1.0.0, use non debug version 1.0.0 for your Release build.
+apptics_version = '1.0.1-debug' #debug version of 1.0.0, use non debug version 1.0.0 for your Release build.
+source_url = 'https://github.com/zoho/Apptics.git' #build source url.
 
 source 'https://github.com/CocoaPods/Specs.git'
 
@@ -15,19 +16,19 @@ target 'AppticsDemo' do
 #pod 'Apptics-SDK', apptics_version , :source => 'https://github.com/CocoaPods/Specs.git'
 
 # Apptics for Swift
-pod 'Apptics-Swift', apptics_version , :source => 'https://github.com/CocoaPods/Specs.git'
+pod 'Apptics-Swift', apptics_version , :source => source_url
 # Apptics Feedback Kit
-pod 'AppticsFeedbackKit', apptics_version , :source => 'https://github.com/CocoaPods/Specs.git'
+pod 'AppticsFeedbackKit', apptics_version , :source => source_url
 # Apptics In-App Update
-pod 'AppticsInAppUpdate', apptics_version , :source => 'https://github.com/CocoaPods/Specs.git'
+pod 'AppticsInAppUpdate', apptics_version , :source => source_url
 # Apptics Rate us
-pod 'AppticsRateUs', apptics_version , :source => 'https://github.com/CocoaPods/Specs.git'
+pod 'AppticsRateUs', apptics_version , :source => source_url
 # Apptics RemoteConfig
-pod 'AppticsRemoteConfig', apptics_version , :source => 'https://github.com/CocoaPods/Specs.git'
+pod 'AppticsRemoteConfig', apptics_version , :source => source_url
 # Apptics Api Tracker
-pod 'AppticsApiTracker', apptics_version , :source => 'https://github.com/CocoaPods/Specs.git'
+pod 'AppticsApiTracker', apptics_version , :source => source_url
 # Apptics Cross Promotion
-pod 'AppticsCrossPromotion', apptics_version , :source => 'https://github.com/CocoaPods/Specs.git'
+pod 'AppticsCrossPromotion', apptics_version , :source => source_url
   
   script_phase :name => 'Apptics pre build', :script => 'sh "./Pods/Apptics-SDK/scripts/run" --upload-symbols-for-configurations="Release, AppStore"', :execution_position => :before_compile
   

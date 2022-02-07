@@ -149,8 +149,8 @@ install_xcframework() {
   echo "Copied $source to $destination"
 }
 
-install_xcframework "${PODS_ROOT}/Apptics-SDK/Apptics.xcframework" "Apptics" "framework" "ios-arm64_armv7" "ios-arm64_i386_x86_64-simulator" "ios-arm64_x86_64-maccatalyst"
-install_xcframework "${PODS_ROOT}/Apptics-SDK/AppticsCrashKit.xcframework" "AppticsCrashKit" "framework" "ios-arm64_x86_64-maccatalyst" "ios-arm64_armv7" "ios-arm64_i386_x86_64-simulator"
+install_xcframework "${PODS_ROOT}/Apptics-SDK/Apptics.xcframework" "Apptics" "framework" "ios-arm64_x86_64-maccatalyst" "ios-arm64_armv7" "ios-arm64_i386_x86_64-simulator"
+install_xcframework "${PODS_ROOT}/Apptics-SDK/AppticsCrashKit.xcframework" "AppticsCrashKit" "framework" "ios-arm64_armv7" "ios-arm64_x86_64-maccatalyst" "ios-arm64_i386_x86_64-simulator"
 install_xcframework "${PODS_ROOT}/Apptics-SDK/AppticsEventTracker.xcframework" "AppticsEventTracker" "framework" "ios-arm64_x86_64-maccatalyst" "ios-arm64_armv7" "ios-arm64_i386_x86_64-simulator"
-install_xcframework "${PODS_ROOT}/Apptics-SDK/AppticsScreenTracker.xcframework" "AppticsScreenTracker" "framework" "ios-arm64_x86_64-maccatalyst" "ios-arm64_armv7" "ios-arm64_i386_x86_64-simulator"
+install_xcframework "${PODS_ROOT}/Apptics-SDK/AppticsScreenTracker.xcframework" "AppticsScreenTracker" "framework" "ios-arm64_armv7" "ios-arm64_i386_x86_64-simulator" "ios-arm64_x86_64-maccatalyst"
 

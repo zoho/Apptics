@@ -297,15 +297,20 @@ COMMAND_PATH="$DIR/dsym_upload"
 IFS=', ' read -r -a SKIP_PROMPT_CONFIGURATIONS <<< "${SKIP_PROMPT_FOR}"
 
 if [[ " ${SKIP_PROMPT_CONFIGURATIONS[@]} " =~ " ${CONFIGURATION} " ]]; then
-LOGNAME="/tmp/apptics-output.txt"
-MAXSIZE=100000
-LOGNAME_SIZE=$(ls -l $LOGNAME | awk '{print $5}')
+  LOGNAME="/tmp/apptics-output.txt"
+  MAXSIZE=100000
+ 
+ rm -rvf "${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}"
+ 
+  if [ -f "${LOGNAME}" ]; then
+    LOGNAME_SIZE=$(ls -l $LOGNAME | awk '{print $5}')
+    if [ $LOGNAME_SIZE -ge $MAXSIZE ];
+    then
+        echo "$LOGNAME exceeds max threshold"
+        rm $LOGNAME
+    fi
+  fi
 
-if [ $LOGNAME_SIZE -ge $MAXSIZE ];
-then
-echo "$LOGNAME exceeds max threshold"
-rm $LOGNAME
-fi
   printf "*********************************************************************************************\n"
   printf "* Uploading dSYM for '${CONFIGURATION}' configuration, check $LOGNAME for more details *\n"
   printf "*********************************************************************************************\n"
