@@ -161,10 +161,10 @@ Check how to configure automatic ratings [here](https://prezoho.zohocorp.com/app
     
 ## To know more!
 
-For more information   
+For more information about how Apptics works, checkout the below links.    
 
 * [Getting Started](https://prezoho.zohocorp.com/apptics/resources/user-guide/getting-started.html)
 * [iOS user guide](https://prezoho.zohocorp.com/apptics/resources/SDK/iOS/integration.html) 
 * [Sample app](https://github.com/zoho/Apptics/tree/master/AppticsDemo)
 
-For any assistance, Reach out to Apptics [Support](support@zohoapptics.com)
+For any assistance, contact Apptics at [support@zohoapptics.com](support@zohoapptics.com)
