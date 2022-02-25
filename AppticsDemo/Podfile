@@ -1,8 +1,10 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
-apptics_version = '1.0.1' #debug version of 1.0.0, use non debug version 1.0.0 for your Release build.
+#apptics_version = '1.0.1-debug' #debug version
 #source_url = 'https://github.com/zoho/Apptics.git' #build source url.
+
+apptics_version = '1.0.1' #use non debug version for your Release build.
 source_url = 'https://github.com/CocoaPods/Specs.git' #build source url.
 
 source 'https://github.com/CocoaPods/Specs.git'

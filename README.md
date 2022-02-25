@@ -159,3 +159,12 @@ Engage with your users and learn about their experience. Promopt them to rate yo
 Check how to configure automatic ratings [here](https://prezoho.zohocorp.com/apptics/resources/SDK/iOS/in_app_ratings.html).
 
     
+## To know more!
+
+For more information   
+
+* [Getting Started](https://prezoho.zohocorp.com/apptics/resources/user-guide/getting-started.html)
+* [iOS user guide](https://prezoho.zohocorp.com/apptics/resources/SDK/iOS/integration.html) 
+* [Sample app](https://github.com/zoho/Apptics/tree/master/AppticsDemo)
+
+For any assistance, Reach out to Apptics [Support](support@zohoapptics.com)
