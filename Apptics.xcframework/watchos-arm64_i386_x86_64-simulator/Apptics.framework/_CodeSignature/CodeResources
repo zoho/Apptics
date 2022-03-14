@@ -325,7 +325,7 @@
 		</data>
 		<key>Headers/AppticsHeader.h</key>
 		<data>
-		vR+xzxrH7CA9tvlPfDDDOjy/U/8=
+		GZm4lV+j5ao3I0KMwCnKYbdjHD0=
 		</data>
 		<key>Headers/NSData+APGunZip.h</key>
 		<data>
@@ -413,7 +413,7 @@
 		</data>
 		<key>Headers/ZAPIManager.h</key>
 		<data>
-		bt1a6SmNOz5zYzLwe2ilSQ+XJkE=
+		hFR2ZRPSCJafsv4d7F1kS2p7mW4=
 		</data>
 		<key>Headers/ZAPrivate.h</key>
 		<data>
@@ -437,7 +437,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		GZg1fITIytpjI0wpCC+6ajecdxw=
+		TzJIeXgUjx4mRN/u9NUgqSD6eQ0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1010,11 +1010,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vR+xzxrH7CA9tvlPfDDDOjy/U/8=
+			GZm4lV+j5ao3I0KMwCnKYbdjHD0=
 			</data>
 			<key>hash2</key>
 			<data>
-			O4VDBG/rt/mg6QT+B3nkeFYwPbNrh3xMhupltlzU7Vs=
+			n0BB8XvhgazAbxdNoOv+eLTIGi5dMFs2XtxRpKiJtYY=
 			</data>
 		</dict>
 		<key>Headers/NSData+APGunZip.h</key>
@@ -1252,11 +1252,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bt1a6SmNOz5zYzLwe2ilSQ+XJkE=
+			hFR2ZRPSCJafsv4d7F1kS2p7mW4=
 			</data>
 			<key>hash2</key>
 			<data>
-			XDf2+BKBf7SixemmvWLh6+trkfTHmADTPL4tj4XoERI=
+			Vzx52ES8h1rH45ffM/5CFjGI4XBmH9+6zRFKOtoXlts=
 			</data>
 		</dict>
 		<key>Headers/ZAPrivate.h</key>

@@ -8,6 +8,7 @@
 import UIKit
 import CoreData
 import Apptics
+import MetricKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,10 +18,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+        let metricManager = MXMetricManager.shared
+        metricManager.add(self)
+        
         AppticsConfig.default.sendDataOnMobileNetworkByDefault=true // 🤖​ Set true to send data on mobile network.
         AppticsConfig.default.trackOnByDefault=true // 🤖​ Set true to track on by default before user consent.
         AppticsConfig.default.anonymousType = .pseudoAnonymous // 🤖​ Choose type of tracking you prefer, we support sudo-anonymous and non-anonymous.
-        
+    
         AppticsConfig.default.enableCrossPromotionAppsList = true // To enable Cross Promotion
         AppticsConfig.default.enableRateUs = true // To enable Rate us
         
@@ -92,3 +96,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+extension AppDelegate: MXMetricManagerSubscriber {
+  func didReceive(_ payloads: [MXMetricPayload]) {
+    guard let firstPayload = payloads.first else { return }
+    print(firstPayload.dictionaryRepresentation())
+    print("----------------------------------")
+  }
+
+  func didReceive(_ payloads: [MXDiagnosticPayload]) {
+    guard let firstPayload = payloads.first else { return }
+    print(firstPayload.dictionaryRepresentation())
+    print("----------------------------------")
+  }
+}

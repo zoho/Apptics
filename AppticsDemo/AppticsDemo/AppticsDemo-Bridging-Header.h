@@ -11,7 +11,7 @@
 #import "NonFatalMaster.h"
 
 #import <AppticsFeedbackKit/AppticsFeedbackKit.h>
-#import <AppticsApiTracker/AppticsApiTracker.h>
+//#import <AppticsApiTracker/AppticsApiTracker.h>
 #import <AppticsInAppUpdate/AppticsInAppUpdate.h>
 #import <AppticsRateUs/AppticsRateUs.h>
 #import <AppticsRemoteConfig/AppticsRemoteConfig.h>

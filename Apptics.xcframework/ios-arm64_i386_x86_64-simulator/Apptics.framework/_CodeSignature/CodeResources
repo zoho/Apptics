@@ -23,7 +23,7 @@
 		</data>
 		<key>AppticsResources.bundle/Info.plist</key>
 		<data>
-		jx7u3KrHHsC0CTJ5mSHzgzCrOZg=
+		85uqt8UfraNek/cmecWddDjxZRc=
 		</data>
 		<key>AppticsResources.bundle/ZAAppUpdateAlert.nib</key>
 		<data>
@@ -67,7 +67,7 @@
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		6FzyfV3lg/AuDv/9KL0F368nU04=
+		6WmqhlT2O19uCI9ODAFjJjjZ2CE=
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -75,7 +75,7 @@
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		iUgIpmmD8P25oBGrIN2gOFhiJj8=
+		kf6Jtd1/X1CRORA/dNY7GiztsRE=
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeResources</key>
 		<data>
@@ -544,7 +544,7 @@
 		</data>
 		<key>Headers/AppticsHeader.h</key>
 		<data>
-		dobko8VMnEWyhAwpfJrGORdo/VE=
+		WkBq8wgj2hAUkuDIuSOh0vcneug=
 		</data>
 		<key>Headers/NSData+APGunZip.h</key>
 		<data>
@@ -644,7 +644,7 @@
 		</data>
 		<key>Headers/ZAPIManager.h</key>
 		<data>
-		bt1a6SmNOz5zYzLwe2ilSQ+XJkE=
+		hFR2ZRPSCJafsv4d7F1kS2p7mW4=
 		</data>
 		<key>Headers/ZAPrivate.h</key>
 		<data>
@@ -680,7 +680,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		jFo/IYZ6FVVlJKEoT3cbz1JBaFQ=
+		BPiqdlNBwaYVPqV6PgP0kVkeCF8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -728,11 +728,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jx7u3KrHHsC0CTJ5mSHzgzCrOZg=
+			85uqt8UfraNek/cmecWddDjxZRc=
 			</data>
 			<key>hash2</key>
 			<data>
-			lh2VcQrTN+j2ykZwpv1dEm/L8ZzKJbFaztU1OmB4Qb0=
+			NRsEUyWaUasj4CLPLY7l2uMFEMYbrDFJm1XGASaYNFs=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/ZAAppUpdateAlert.nib</key>
@@ -849,11 +849,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6FzyfV3lg/AuDv/9KL0F368nU04=
+			6WmqhlT2O19uCI9ODAFjJjjZ2CE=
 			</data>
 			<key>hash2</key>
 			<data>
-			t775EGl083pD9gsFVpgKQjTD9Dk3SkF295EmowRo+M8=
+			kI975XmupL+MnN3wP8JbkeA3nZsHr0sCzcYs7O6GAko=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/_CodeSignature/CodeRequirements</key>
@@ -871,11 +871,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			iUgIpmmD8P25oBGrIN2gOFhiJj8=
+			kf6Jtd1/X1CRORA/dNY7GiztsRE=
 			</data>
 			<key>hash2</key>
 			<data>
-			8RkM0HVEFkYIdO/akywQcPdS13AZoY+72PCQI/dDeOc=
+			nzBolv+8a6J14v1nveNTPVvGgeDo7CmQcR4GmwkX7k4=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/_CodeSignature/CodeResources</key>
@@ -1726,11 +1726,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dobko8VMnEWyhAwpfJrGORdo/VE=
+			WkBq8wgj2hAUkuDIuSOh0vcneug=
 			</data>
 			<key>hash2</key>
 			<data>
-			TqVgHlPRnYoonJT321hzZHojiMfQ0X3IUmbj1K5/qJU=
+			yrFKL8hT3dlOg9L4Evxu08ht+kmOYxTavpMwY5S5MfE=
 			</data>
 		</dict>
 		<key>Headers/NSData+APGunZip.h</key>
@@ -2001,11 +2001,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bt1a6SmNOz5zYzLwe2ilSQ+XJkE=
+			hFR2ZRPSCJafsv4d7F1kS2p7mW4=
 			</data>
 			<key>hash2</key>
 			<data>
-			XDf2+BKBf7SixemmvWLh6+trkfTHmADTPL4tj4XoERI=
+			Vzx52ES8h1rH45ffM/5CFjGI4XBmH9+6zRFKOtoXlts=
 			</data>
 		</dict>
 		<key>Headers/ZAPrivate.h</key>

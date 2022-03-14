@@ -51,7 +51,7 @@ extension APIListViewController {
             }
             
             let configuration = URLSessionConfiguration.default
-            APAPIManager.enable(for: configuration)
+//            APAPIManager.enable(for: configuration)
             let session = URLSession(configuration: configuration)
 
             let task = session.dataTask(with: mutableRequest as URLRequest, completionHandler: { data, response, error -> Void in
