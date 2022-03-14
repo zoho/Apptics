@@ -52,11 +52,11 @@ an.dependency 'Apptics-SDK/Core'
 an.dependency 'Apptics-SDK/EventTracker'
 an.dependency 'Apptics-SDK/ScreenTracker'
 an.dependency 'Apptics-SDK/CrashKit'
-an.dependency 'Apptics-SDK/Scripts'
 end
 
 spec.subspec 'Core' do |co|
 co.vendored_frameworks = 'Apptics.xcframework'
+co.dependency 'Apptics-SDK/Scripts'
 end
 
 spec.subspec 'EventTracker' do |et|
