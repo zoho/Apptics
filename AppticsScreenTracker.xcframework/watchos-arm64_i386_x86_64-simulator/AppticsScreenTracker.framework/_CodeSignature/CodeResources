@@ -4,13 +4,13 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/APScreentracker.h</key>
+		<data>
+		HvvkdR7Hz6GwO16RRZT2U7RjGSw=
+		</data>
 		<key>Headers/AppticsScreenTracker.h</key>
 		<data>
-		80OEMM0bdqCh0E4wz4XC8pStAlU=
-		</data>
-		<key>Headers/ZAScreentracker.h</key>
-		<data>
-		8XQu3kQcvsSDJ08XtV23sP2NiCE=
+		0VQ1VXzoNfyfahkPSB69K9leKes=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -23,26 +23,26 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Headers/APScreentracker.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HvvkdR7Hz6GwO16RRZT2U7RjGSw=
+			</data>
+			<key>hash2</key>
+			<data>
+			8LMXsgynZwlNpXjW3A413xMPXo78aZLaddtx0l9z/SY=
+			</data>
+		</dict>
 		<key>Headers/AppticsScreenTracker.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			80OEMM0bdqCh0E4wz4XC8pStAlU=
+			0VQ1VXzoNfyfahkPSB69K9leKes=
 			</data>
 			<key>hash2</key>
 			<data>
-			xC7WP0auasmvTblhpqVwRHqgQmo7Fy60JlXt0Hc0b0c=
-			</data>
-		</dict>
-		<key>Headers/ZAScreentracker.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			8XQu3kQcvsSDJ08XtV23sP2NiCE=
-			</data>
-			<key>hash2</key>
-			<data>
-			/0GUQz6rW2ZhL7m+TS3Ekm7WsnGrsfw5Q8NOufQfHMk=
+			nhtG7Xw9OwLo3IZg/vWnrnUsEkbDC5YOmdXC+8hKLdQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

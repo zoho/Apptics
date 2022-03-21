@@ -554,6 +554,10 @@
 		<data>
 		VgVCSrbZ10nb+aFgihstcmf7u0E=
 		</data>
+		<key>Headers/WCSessionSwizzlerDelegate.h</key>
+		<data>
+		AQZyvmToTcRLw+5+V7fPewoV/uk=
+		</data>
 		<key>Headers/ZAAESCrypto.h</key>
 		<data>
 		AoM8N6eB0PjmQ7h3Yyrjuc50SiA=
@@ -1753,6 +1757,17 @@
 			<key>hash2</key>
 			<data>
 			JTNcyQklCFZ3zyf4TM3emvWM78CHjcAK66UjzhGR2Vk=
+			</data>
+		</dict>
+		<key>Headers/WCSessionSwizzlerDelegate.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			AQZyvmToTcRLw+5+V7fPewoV/uk=
+			</data>
+			<key>hash2</key>
+			<data>
+			6XCNmj31J8ycLs97g+ZXcaG6gh1bj5GANUi+1wdGrLc=
 			</data>
 		</dict>
 		<key>Headers/ZAAESCrypto.h</key>

@@ -11,7 +11,7 @@ Pod::Spec.new do |spec|
 
   spec.name             = "Apptics-Swift"
   spec.module_name      = "Apptics_Swift"
-  spec.version          = "1.0.2"
+  spec.version          = "1.0.3"
   spec.summary          = "An in-app usage tracking and analytics library for iOS"
   spec.license          = { :type => "MIT", :text=> <<-LICENSE
   MIT License
@@ -37,9 +37,11 @@ Pod::Spec.new do |spec|
 spec.description = <<-DESC
 What's new:
 
-Apptics is a library that enables your app to send in-app usage reports and data securly to our servers. You can track Sessions, Screens, and we also offer Crash Reporting. With minimal initialization of the framework, you get these features without doing any other configuration.
+- Handled updating the opt-out status to the Apptics server instantly.
+- Enhancements in watchOS tracking. 
+- Enhanced sending data to the server on macOS. 
 
-  DESC
+DESC
   spec.homepage         = "https://github.com/zoho/Apptics"
   spec.author           = {"Saravanan S" => "ssaravanan@zohocorp.com", "Prakash Red" => "prakash.redrouthu@zohocorp.com"}
   spec.social_media_url = 'https://twitter.com/zoho'

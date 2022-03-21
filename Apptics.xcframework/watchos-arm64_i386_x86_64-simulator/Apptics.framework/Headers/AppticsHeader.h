@@ -14,6 +14,7 @@
 #import <Apptics/Analytics.h>
 #import <Apptics/APLog.h>
 #import <Apptics/APCustomHandler.h>
+#import <Apptics/WCSessionSwizzlerDelegate.h>
 
 #else
 
@@ -21,6 +22,7 @@
 #import "Analytics.h"
 #import "APLog.h"
 #import "APCustomHandler.h"
+#import "WCSessionSwizzlerDelegate.h"
 
 #endif
 
