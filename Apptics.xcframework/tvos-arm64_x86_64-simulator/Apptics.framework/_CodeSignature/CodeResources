@@ -10,11 +10,11 @@
 		</data>
 		<key>AppticsResources_tvOS.bundle/Info.plist</key>
 		<data>
-		OPg4YB9DtArCZeFodcwVmqbtI7E=
+		WSyuDM6WJ/J7jSh4QHLDk6Z/4D8=
 		</data>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		00Qou6sKW1nXulVoYkB9mcL5yeY=
+		DvS5stiUk936kezj3Qybqsl8oJM=
 		</data>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		B1FNudFsz2YI62Z46eZcsJIj14s=
+		gbTvW6X2lvkW/tefarImM/cVbtk=
 		</data>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeResources</key>
 		<data>
@@ -304,7 +304,7 @@
 		</data>
 		<key>Headers/Analytics.h</key>
 		<data>
-		SHjX7ojgEByQHg/1cjbGXNgDQQ4=
+		cL4M8fbLhPkHgICepiwzJGXCnls=
 		</data>
 		<key>Headers/Apptics.h</key>
 		<data>
@@ -328,7 +328,7 @@
 		</data>
 		<key>Headers/ZAAESCrypto.h</key>
 		<data>
-		AoM8N6eB0PjmQ7h3Yyrjuc50SiA=
+		L/wfFX1kRNGsH1RjPuv72qBE81E=
 		</data>
 		<key>Headers/ZAAlertStyle.h</key>
 		<data>
@@ -340,7 +340,7 @@
 		</data>
 		<key>Headers/ZAConstants.h</key>
 		<data>
-		QyZPYvJjxuJ7zwdZ55GIaZ/tEKc=
+		q1yQ0Fez5GPuEIWiSJPKMeNQSFc=
 		</data>
 		<key>Headers/ZACustomNavigationController.h</key>
 		<data>
@@ -368,7 +368,7 @@
 		</data>
 		<key>Headers/ZAGlobalQueue.h</key>
 		<data>
-		IQFNy297TfUf+muGHaKPIWY53F4=
+		0gAY+Q4+oDzskvITkZIWINVH6NQ=
 		</data>
 		<key>Headers/ZAJSONString.h</key>
 		<data>
@@ -400,7 +400,7 @@
 		</data>
 		<key>Headers/ZAPIIManager.h</key>
 		<data>
-		vtVteoZWCIGxUJHP52sjo0oyIK0=
+		tjSeCRqTOI4hjrfCdcod4AcMZZQ=
 		</data>
 		<key>Headers/ZAPIManager.h</key>
 		<data>
@@ -432,7 +432,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		2xVbVz3C4ZQZKJbLOSOJjbpWk/A=
+		82Y1/oatgBdMX9zyLWx1AKFBX+g=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -456,22 +456,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			OPg4YB9DtArCZeFodcwVmqbtI7E=
+			WSyuDM6WJ/J7jSh4QHLDk6Z/4D8=
 			</data>
 			<key>hash2</key>
 			<data>
-			wd7fDnvpq5wqvS2Ypagug9X9cUsyIUpTy5MWRehUf9Q=
+			xGQBAsS/Eq2oBtJ/b47DcwrqGz8CVWnpGWy8yaDlTBE=
 			</data>
 		</dict>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeDirectory</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			00Qou6sKW1nXulVoYkB9mcL5yeY=
+			DvS5stiUk936kezj3Qybqsl8oJM=
 			</data>
 			<key>hash2</key>
 			<data>
-			de/Wnruu4oB51iaVYfcyE2EOD7OK/3p/RSdAMzvzpOk=
+			ohQEPMSMrR1iWsNOxWFuB/hDMz749pp4hl9BZZmAzt4=
 			</data>
 		</dict>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeRequirements</key>
@@ -489,11 +489,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			B1FNudFsz2YI62Z46eZcsJIj14s=
+			gbTvW6X2lvkW/tefarImM/cVbtk=
 			</data>
 			<key>hash2</key>
 			<data>
-			UfwXMk3fESD3d9QewcgMWH3ZE96nUpiVzKKm0KSui+4=
+			2Ba/Drqfs0so6Z4x3XOeKAoMgIx1MrJ7ibRkkDph8Ls=
 			</data>
 		</dict>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeResources</key>
@@ -959,11 +959,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SHjX7ojgEByQHg/1cjbGXNgDQQ4=
+			cL4M8fbLhPkHgICepiwzJGXCnls=
 			</data>
 			<key>hash2</key>
 			<data>
-			G2yOogPrLm51VT/u8hjKbklYJ7cc0igMghSAYs5kHFw=
+			PqLFAHGQojsuni/PTTQFq4ry21hNheK7YwBs84WcjR8=
 			</data>
 		</dict>
 		<key>Headers/Apptics.h</key>
@@ -1025,11 +1025,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AoM8N6eB0PjmQ7h3Yyrjuc50SiA=
+			L/wfFX1kRNGsH1RjPuv72qBE81E=
 			</data>
 			<key>hash2</key>
 			<data>
-			8E4si5OqKsnDHWr9+5atdPoNI5sNSsWsGYa0vMDo+Ic=
+			L7Ov+XvkI5eBcB3fX2rdo+eLT84j1gifKFk3v0c0fy8=
 			</data>
 		</dict>
 		<key>Headers/ZAAlertStyle.h</key>
@@ -1058,11 +1058,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QyZPYvJjxuJ7zwdZ55GIaZ/tEKc=
+			q1yQ0Fez5GPuEIWiSJPKMeNQSFc=
 			</data>
 			<key>hash2</key>
 			<data>
-			StDEBT56tlwWbU3YAWZLTOXZ6rLZ2WQpE353+WqkqME=
+			0ecGnh1R9hldy/lLomRTuPowocvbIYyzoOkgchT/G8k=
 			</data>
 		</dict>
 		<key>Headers/ZACustomNavigationController.h</key>
@@ -1135,11 +1135,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			IQFNy297TfUf+muGHaKPIWY53F4=
+			0gAY+Q4+oDzskvITkZIWINVH6NQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			AiTnG+0I/ZsdfPbzVoprVqAJ70PFnKwwph4hUOevdyc=
+			rRLzGjDvej/2Zwp816BtDuyyoZiLT4AplWFHmGTJ7S8=
 			</data>
 		</dict>
 		<key>Headers/ZAJSONString.h</key>
@@ -1223,11 +1223,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vtVteoZWCIGxUJHP52sjo0oyIK0=
+			tjSeCRqTOI4hjrfCdcod4AcMZZQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			7nMWylCgXPhg2tzfu5a6Bj0Eae9TlMkUSY2UWkktxjA=
+			2DVK2P0lAMhRDnVXi7TgMLS1WyhASNakNaKAqMUtkes=
 			</data>
 		</dict>
 		<key>Headers/ZAPIManager.h</key>

@@ -39,6 +39,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSOperationQueue *operationQueue;
 @property (nonatomic, strong) NSOperationQueue *bgOperationQueue;
 
+@property (strong,nonatomic) NSNumber *prevFlushTime;
+
 typedef void (^bgEngagementRequestSuccessBlock)(void);
 typedef void (^bgNonFatalRequestSuccessBlock)(void);
 

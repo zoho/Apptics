@@ -244,6 +244,8 @@ typedef void (^internbgNonFatalRequestSuccessBlock)(void);
 
 - (BOOL) shouldCollectData;
 
+- (BOOL) shouldCollectCustomProps;
+
 - (BOOL) shouldSendPersonalizedData;
 
 - (BOOL) isUserLoggedIn;

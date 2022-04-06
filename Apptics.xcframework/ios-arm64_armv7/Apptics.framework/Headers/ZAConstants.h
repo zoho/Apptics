@@ -67,6 +67,7 @@ static NSString * kJA_MamTrackingInfo = @"kJA_MamTrackingInfo";
 static NSString * kJA_MamCrashInfo = @"kJA_MamCrashInfo";
 static NSString * kJA_CrashReportPermissionStatus = @"kJA_CrashReportPermissionStatus";
 static NSString * kJA_CrashReportStatus = @"kJA_CrashReportStatus";
+static NSString * kJA_ShouldCollectCustomProps = @"kJA_ShouldCollectCustomProps";
 
 static NSString * kJA_SecretKey = @"1234567890123456";
 static NSString * kJA_DeviceInfo = @"kJA_DeviceInfo";
