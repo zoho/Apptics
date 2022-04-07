@@ -4,21 +4,21 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/APScreentracker.h</key>
+		<data>
+		HvvkdR7Hz6GwO16RRZT2U7RjGSw=
+		</data>
 		<key>Headers/AppticsScreenTracker.h</key>
 		<data>
-		ynI9CWX5zTYZeCRSWv1ytuZJZtQ=
+		PZis4IhoEO5IX24/3dxao56zfks=
 		</data>
 		<key>Headers/UIViewController+Trackable.h</key>
 		<data>
 		nSDJUI/jF1rmlueuCDoJxq9M+/0=
 		</data>
-		<key>Headers/ZAScreentracker.h</key>
-		<data>
-		8XQu3kQcvsSDJ08XtV23sP2NiCE=
-		</data>
 		<key>Info.plist</key>
 		<data>
-		8nk8HX9jlXPLKlvixwK9mgO0fW4=
+		3qADsgnTripkFVzdVKQAKB8ox0M=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -27,15 +27,26 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Headers/APScreentracker.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HvvkdR7Hz6GwO16RRZT2U7RjGSw=
+			</data>
+			<key>hash2</key>
+			<data>
+			8LMXsgynZwlNpXjW3A413xMPXo78aZLaddtx0l9z/SY=
+			</data>
+		</dict>
 		<key>Headers/AppticsScreenTracker.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ynI9CWX5zTYZeCRSWv1ytuZJZtQ=
+			PZis4IhoEO5IX24/3dxao56zfks=
 			</data>
 			<key>hash2</key>
 			<data>
-			RADNcJX81I47K8XeZ1A85lOIUdfFwMeEAIWTd9beLT4=
+			0K7yCmq/jrEcxWi2nIGbvuNv1gf72dzxbzLsM6fbnm0=
 			</data>
 		</dict>
 		<key>Headers/UIViewController+Trackable.h</key>
@@ -47,17 +58,6 @@
 			<key>hash2</key>
 			<data>
 			Im4/GLHXko+/ze94E6UDlN1VWwDVcqnbl3nIZ4Bmd3Q=
-			</data>
-		</dict>
-		<key>Headers/ZAScreentracker.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			8XQu3kQcvsSDJ08XtV23sP2NiCE=
-			</data>
-			<key>hash2</key>
-			<data>
-			/0GUQz6rW2ZhL7m+TS3Ekm7WsnGrsfw5Q8NOufQfHMk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

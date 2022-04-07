@@ -7,23 +7,23 @@
 
 #import <Foundation/Foundation.h>
 NS_ASSUME_NONNULL_BEGIN
-@interface ZAAESCrypto : NSObject
-
-@property (nonatomic, readonly, nonnull) NSString *password;
-@property (nonatomic, readonly, nonnull) NSData *salt;
-@property (nonatomic, readonly, nonnull) NSData *iv;
-
-+(ZAAESCrypto* _Nonnull) sharedManager;
-
-- (instancetype _Nonnull)initWithPassword:(NSString *_Nonnull)password salt:(NSData *_Nonnull)salt iv:(NSData *_Nonnull)iv;
-// Convenient shorthand. Will randomly generate salt and iv.
-- (instancetype _Nonnull)initWithPassword:(NSString *_Nonnull)password;
-
-+ (NSData *_Nonnull)randomDataOfLength:(size_t)length;
-- (NSData *_Nonnull)encrypt:(NSData *_Nullable)data;
-- (NSData *_Nullable)decrypt:(NSData *_Nonnull)data;
-- (NSString* _Nullable)getBase64StringFor:(NSString* _Nonnull) string;
-@end
+//@interface ZAAESCrypto : NSObject
+//
+//@property (nonatomic, readonly, nonnull) NSString *password;
+//@property (nonatomic, readonly, nonnull) NSData *salt;
+//@property (nonatomic, readonly, nonnull) NSData *iv;
+//
+//+(ZAAESCrypto* _Nonnull) sharedManager;
+//
+//- (instancetype _Nonnull)initWithPassword:(NSString *_Nonnull)password salt:(NSData *_Nonnull)salt iv:(NSData *_Nonnull)iv;
+//// Convenient shorthand. Will randomly generate salt and iv.
+//- (instancetype _Nonnull)initWithPassword:(NSString *_Nonnull)password;
+//
+//+ (NSData *_Nonnull)randomDataOfLength:(size_t)length;
+//- (NSData *_Nonnull)encrypt:(NSData *_Nullable)data;
+//- (NSData *_Nullable)decrypt:(NSData *_Nonnull)data;
+//- (NSString* _Nullable)getBase64StringFor:(NSString* _Nonnull) string;
+//@end
 
 
 @interface RSA : NSObject

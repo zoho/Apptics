@@ -20,7 +20,7 @@ typedef NS_ENUM(NSInteger, CARType) // Crash Authorization Result Type
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ZAPIIManager : NSObject
+@interface ZAPIIManager : NSObject 
 
 @property (copy) void(^ _Nullable crashAlertCompletion) (CARType type);
 
@@ -68,13 +68,17 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property BOOL shouldSendCrashData;
 
+@property (readonly) BOOL shouldCollectCustomProps;
+
 + (ZAPIIManager* _Nonnull) getInstance;
+
+- (void) collectCustomProps : (BOOL) status;
 
 - (void) initializer;
 
--(void) saveData;
+- (void) saveData;
 
--(void) removeAllUsers;
+- (void) removeAllUsers;
 
 - (void) updateShouldCollectDataForCurrentUser;
 

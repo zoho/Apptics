@@ -13,22 +13,16 @@
 #import <Apptics/Apptics.h>
 #import <Apptics/Analytics.h>
 #import <Apptics/APLog.h>
-#import <Apptics/APRemoteConfig.h>
-#import <Apptics/APRemoteConfigValue.h>
-#import <Apptics/APAPIManager.h>
 #import <Apptics/APCustomHandler.h>
-#import <Apptics/APEvent.h>
+#import <Apptics/WCSessionSwizzlerDelegate.h>
 
 #else
 
 #import "Apptics.h"
 #import "Analytics.h"
 #import "APLog.h"
-#import "APRemoteConfig.h"
-#import "APRemoteConfigValue.h"
-#import "APAPIManager.h"
 #import "APCustomHandler.h"
-#import "APEvent.h"
+#import "WCSessionSwizzlerDelegate.h"
 
 #endif
 

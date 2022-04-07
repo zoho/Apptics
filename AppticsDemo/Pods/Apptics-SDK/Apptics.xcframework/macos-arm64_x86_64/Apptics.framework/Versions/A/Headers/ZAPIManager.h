@@ -30,6 +30,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void) anonymousRegisterDeviceSuccess : (NSString* _Nullable) anonid completion:(void (^)(NSDictionary  * _Nullable deviceInfo))success;
 
+- (void) updateTrackingStatus;
+    
 - (void) registerUserWithDeviceId : (NSString*) deviceId andOrgID : (NSString* _Nullable) groupID success:(void (^)(NSDictionary * _Nullable deviceInfo))success;
 
 - (void) newRegisterUserWithOrgID : (NSString* _Nullable) groupID success: (void (^)(NSDictionary * _Nullable deviceInfo))success;

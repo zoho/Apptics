@@ -11,35 +11,20 @@
 
 #import <Apptics/Apptics.h>
 #import <Apptics/Analytics.h>
-#import <Apptics/APRemoteConfig.h>
-#import <Apptics/APRemoteConfigValue.h>
-#import <Apptics/FeedbackKit.h>
-#import <Apptics/APAPIManager.h>
 #import <Apptics/APLog.h>
 #import <Apptics/APBundle.h>
 #import <Apptics/WCSessionSwizzlerDelegate.h>
-#import <Apptics/APRemoteConfig.h>
-#import <Apptics/APRateUs.h>
-#import <Apptics/APEvent.h>
-#import <Apptics/APAppUpdateManager.h>
+#import <Apptics/APCustomHandler.h>
 
 #else
 
 #import "Apptics.h"
 #import "Analytics.h"
-#import "APRemoteConfig.h"
-#import "APRemoteConfigValue.h"
-#import "FeedbackKit.h"
-#import "APAPIManager.h"
 #import "APLog.h"
 #import "APBundle.h"
 #import "WCSessionSwizzlerDelegate.h"
-#import "APRemoteConfig.h"
-#import "APRateUs.h"
-#import "APEvent.h"
-#import "APAppUpdateManager.h"
+#import "APCustomHandler.h"
 
 #endif
-
 
 #endif /* AppticsHeader_h */

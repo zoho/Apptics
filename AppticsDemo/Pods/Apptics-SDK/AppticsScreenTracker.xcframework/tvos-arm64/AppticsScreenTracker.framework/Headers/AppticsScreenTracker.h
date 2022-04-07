@@ -16,4 +16,4 @@ FOUNDATION_EXPORT const unsigned char AppticsScreenTrackerVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <AppticsScreenTracker/PublicHeader.h>
 
 #import "UIViewController+Trackable.h"
-#import "ZAScreentracker.h"
+#import "APScreentracker.h"
