@@ -184,7 +184,7 @@ if [ "$ENABLE_BITCODE" == "YES" ]; then
 AP_ENABLE_BITCODE="true"
 fi
 
-DSYM_UPLOAD_PARAMS="mode=1&appversionid=${APP_VERSION_ID}&appreleaseversionid=${APP_RELEASE_VERSION_ID}&pid=${PLATFORM_ID}&apid=${APID}&isBitcodeenabled=${AP_ENABLE_BITCODE}&host=${WHOAMI}&remoteaddress=${IPADDRESS}"
+DSYM_UPLOAD_PARAMS="appversionid=${APP_VERSION_ID}&appreleaseversionid=${APP_RELEASE_VERSION_ID}&pid=${PLATFORM_ID}&apid=${APID}&isBitcodeenabled=${AP_ENABLE_BITCODE}&host=${WHOAMI}&remoteaddress=${IPADDRESS}"
 
 if [ "$EFFECTIVE_PLATFORM_NAME" == "-iphonesimulator" ]; then
 if [ "$UPLOAD_SIMULATOR_SYMBOLS" == "0" ]; then

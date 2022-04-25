@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
 spec.name             = "AppticsRemoteConfig"
-spec.version          = "1.0.4-debug"
+spec.version          = "1.0.5"
 spec.summary          = "Apptics Remote Config for iOS"
 spec.license          = { :type => "MIT", :text=> <<-LICENSE
 MIT License
@@ -45,7 +45,7 @@ spec.requires_arc = true
 
 spec.subspec 'RemoteConfig' do |rc|
 rc.vendored_frameworks = 'AppticsRemoteConfig.xcframework'
-rc.dependency 'Apptics-SDK/Core', "#{spec.version}"
+rc.dependency 'Apptics/Core', "#{spec.version}"
 end
 
 end

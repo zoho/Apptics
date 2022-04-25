@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
 spec.name             = "Apptics"
-spec.version          = "1.0.4-debug"
+spec.version          = "1.0.5"
 spec.summary          = "Apptics iOS SDK"
 spec.license          = { :type => "MIT", :text=> <<-LICENSE
 MIT License
@@ -51,7 +51,6 @@ an.dependency 'Apptics/Core'
 an.dependency 'Apptics/EventTracker'
 an.dependency 'Apptics/ScreenTracker'
 an.dependency 'Apptics/CrashKit'
-an.dependency 'Apptics/Scripts'
 end
 
 spec.subspec 'Core' do |co|
@@ -68,11 +67,6 @@ end
 
 spec.subspec 'CrashKit' do |ck|
 ck.vendored_frameworks = 'AppticsCrashKit.xcframework'
-end
-
-spec.subspec 'Scripts' do |sc|
-sc.source_files = 'scripts/*'
-sc.preserve_paths = 'scripts/*'
 end
 
 end

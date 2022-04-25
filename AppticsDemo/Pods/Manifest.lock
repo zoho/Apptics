@@ -1,61 +1,65 @@
 PODS:
-  - Apptics-SDK (1.0.2-debug):
-    - Apptics-SDK/Analytics (= 1.0.2-debug)
-  - Apptics-SDK/Analytics (1.0.2-debug):
-    - Apptics-SDK/Core
-    - Apptics-SDK/CrashKit
-    - Apptics-SDK/EventTracker
-    - Apptics-SDK/ScreenTracker
-    - Apptics-SDK/Scripts
-  - Apptics-SDK/Core (1.0.2-debug)
-  - Apptics-SDK/CrashKit (1.0.2-debug)
-  - Apptics-SDK/EventTracker (1.0.2-debug)
-  - Apptics-SDK/ScreenTracker (1.0.2-debug)
-  - Apptics-SDK/Scripts (1.0.2-debug)
-  - Apptics-Swift (1.0.2-debug):
-    - Apptics-SDK (= 1.0.2-debug)
-    - Apptics-Swift/Analytics (= 1.0.2-debug)
-  - Apptics-Swift/Analytics (1.0.2-debug):
-    - Apptics-SDK (= 1.0.2-debug)
-  - AppticsApiTracker (1.0.2-debug):
-    - AppticsApiTracker/ApiTracker (= 1.0.2-debug)
-  - AppticsApiTracker/ApiTracker (1.0.2-debug):
-    - Apptics-SDK/Core (= 1.0.2-debug)
-  - AppticsCrossPromotion (1.0.2-debug):
-    - AppticsCrossPromotion/CrossPromotion (= 1.0.2-debug)
-  - AppticsCrossPromotion/CrossPromotion (1.0.2-debug):
-    - Apptics-Swift/Analytics (= 1.0.2-debug)
-  - AppticsFeedbackKit (1.0.2-debug):
-    - AppticsFeedbackKit/FeedbackKit (= 1.0.2-debug)
-  - AppticsFeedbackKit/FeedbackKit (1.0.2-debug):
-    - Apptics-SDK/Core (= 1.0.2-debug)
-  - AppticsInAppUpdate (1.0.2-debug):
-    - AppticsInAppUpdate/AppUpdate (= 1.0.2-debug)
-  - AppticsInAppUpdate/AppUpdate (1.0.2-debug):
-    - Apptics-SDK/Core (= 1.0.2-debug)
-    - AppticsFeedbackKit (= 1.0.2-debug)
-  - AppticsRateUs (1.0.2-debug):
-    - AppticsRateUs/RateUs (= 1.0.2-debug)
-  - AppticsRateUs/RateUs (1.0.2-debug):
-    - Apptics-SDK/Core (= 1.0.2-debug)
-    - AppticsFeedbackKit (= 1.0.2-debug)
-  - AppticsRemoteConfig (1.0.2-debug):
-    - AppticsRemoteConfig/RemoteConfig (= 1.0.2-debug)
-  - AppticsRemoteConfig/RemoteConfig (1.0.2-debug):
-    - Apptics-SDK/Core (= 1.0.2-debug)
+  - Apptics (1.0.5-debug):
+    - Apptics/Analytics (= 1.0.5-debug)
+  - Apptics-SDK (1.0.5-debug):
+    - Apptics (= 1.0.5-debug)
+    - Apptics-SDK/Scripts (= 1.0.5-debug)
+  - Apptics-SDK/Scripts (1.0.5-debug):
+    - Apptics (= 1.0.5-debug)
+  - Apptics-Swift (1.0.5-debug):
+    - Apptics-SDK (= 1.0.5-debug)
+    - Apptics-Swift/Analytics (= 1.0.5-debug)
+  - Apptics-Swift/Analytics (1.0.5-debug):
+    - Apptics-SDK (= 1.0.5-debug)
+  - Apptics/Analytics (1.0.5-debug):
+    - Apptics/Core
+    - Apptics/CrashKit
+    - Apptics/EventTracker
+    - Apptics/ScreenTracker
+  - Apptics/Core (1.0.5-debug)
+  - Apptics/CrashKit (1.0.5-debug)
+  - Apptics/EventTracker (1.0.5-debug)
+  - Apptics/ScreenTracker (1.0.5-debug)
+  - AppticsApiTracker (1.0.5-debug):
+    - AppticsApiTracker/ApiTracker (= 1.0.5-debug)
+  - AppticsApiTracker/ApiTracker (1.0.5-debug):
+    - Apptics/Core (= 1.0.5-debug)
+  - AppticsCrossPromotion (1.0.5-debug):
+    - AppticsCrossPromotion/CrossPromotion (= 1.0.5-debug)
+  - AppticsCrossPromotion/CrossPromotion (1.0.5-debug):
+    - Apptics-Swift/Analytics (= 1.0.5-debug)
+  - AppticsFeedbackKit (1.0.5-debug):
+    - AppticsFeedbackKit/FeedbackKit (= 1.0.5-debug)
+  - AppticsFeedbackKit/FeedbackKit (1.0.5-debug):
+    - Apptics/Core (= 1.0.5-debug)
+  - AppticsInAppUpdate (1.0.5-debug):
+    - AppticsInAppUpdate/AppUpdate (= 1.0.5-debug)
+  - AppticsInAppUpdate/AppUpdate (1.0.5-debug):
+    - Apptics/Core (= 1.0.5-debug)
+    - AppticsFeedbackKit (= 1.0.5-debug)
+  - AppticsRateUs (1.0.5-debug):
+    - AppticsRateUs/RateUs (= 1.0.5-debug)
+  - AppticsRateUs/RateUs (1.0.5-debug):
+    - Apptics/Core (= 1.0.5-debug)
+    - AppticsFeedbackKit (= 1.0.5-debug)
+  - AppticsRemoteConfig (1.0.5-debug):
+    - AppticsRemoteConfig/RemoteConfig (= 1.0.5-debug)
+  - AppticsRemoteConfig/RemoteConfig (1.0.5-debug):
+    - Apptics/Core (= 1.0.5-debug)
 
 DEPENDENCIES:
-  - Apptics-SDK (= 1.0.2-debug)
-  - Apptics-Swift (= 1.0.2-debug)
-  - AppticsApiTracker (= 1.0.2-debug)
-  - AppticsCrossPromotion (= 1.0.2-debug)
-  - AppticsFeedbackKit (= 1.0.2-debug)
-  - AppticsInAppUpdate (= 1.0.2-debug)
-  - AppticsRateUs (= 1.0.2-debug)
-  - AppticsRemoteConfig (= 1.0.2-debug)
+  - Apptics-SDK (= 1.0.5-debug)
+  - Apptics-Swift (= 1.0.5-debug)
+  - AppticsApiTracker (= 1.0.5-debug)
+  - AppticsCrossPromotion (= 1.0.5-debug)
+  - AppticsFeedbackKit (= 1.0.5-debug)
+  - AppticsInAppUpdate (= 1.0.5-debug)
+  - AppticsRateUs (= 1.0.5-debug)
+  - AppticsRemoteConfig (= 1.0.5-debug)
 
 SPEC REPOS:
   https://github.com/zoho/Apptics.git:
+    - Apptics
     - Apptics-SDK
     - Apptics-Swift
     - AppticsApiTracker
@@ -66,15 +70,16 @@ SPEC REPOS:
     - AppticsRemoteConfig
 
 SPEC CHECKSUMS:
-  Apptics-SDK: eedb39cab38a3cd3e87a198a4795a58866d1da1f
-  Apptics-Swift: 166aa43fb35b2f5ac6831d77ef1e0b8d6e31ad74
-  AppticsApiTracker: 48a1a2d12b0e37d6f978cde951d3b581addfd149
-  AppticsCrossPromotion: f3a0caaac1b964657693a31c222565e04e0d39b3
-  AppticsFeedbackKit: 2f69feed719ddd2ad1d2d20f9f8ca6db6ea55f24
-  AppticsInAppUpdate: b9a74e060bd822b41a842725bc3d20ba20d1f954
-  AppticsRateUs: d58130a5b81e460a89fd1ae6491b94dba1a9f115
-  AppticsRemoteConfig: f76f82b3379cf9cc44e9bd2cb20f867d3423baf0
+  Apptics: cb6afb6e024fccaa562aa140f2f95575cded0cbe
+  Apptics-SDK: 2e7113e3aa8619aaa9e995b8199b843dd9a37132
+  Apptics-Swift: 74b5facabd3d02e7d2c992539b728840d4e2e4d3
+  AppticsApiTracker: 6786764da58e37b9ac57c266a6f4eeee50afe908
+  AppticsCrossPromotion: c37f30aa1c9305c6b62f928aee808fc99a573197
+  AppticsFeedbackKit: eb6073cbdc94e9aae98b30a9b17aa4f10c568f86
+  AppticsInAppUpdate: 0a1d7144302ef6dc7853646b4aa53c820be86962
+  AppticsRateUs: db371c4600696b9f0af8f8aa7203c051a98632f7
+  AppticsRemoteConfig: 92f7c4034099362e575624b85bd07d69991a66da
 
-PODFILE CHECKSUM: 948b556d725727ad086973e6f734c90b4aa24481
+PODFILE CHECKSUM: 1b65c1d11efd51f7178b35ed5027e884d934a2d0
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.11.3

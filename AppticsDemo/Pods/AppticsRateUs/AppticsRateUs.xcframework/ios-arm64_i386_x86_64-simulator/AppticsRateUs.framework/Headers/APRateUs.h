@@ -30,7 +30,14 @@
  Don't call this method in App Store build.
 */
 
-+ (void) storeReviewMasterReset;
++(void) storeReviewMasterReset;
+
+/**
+ Call this method in the ARCustomHandlerManager willDisplayReviewPrompt call back. 
+ 
+*/
+
++(void) setAppRatingShown;
 
 /**
  This method should be called initially, to stop SDK from showing the review prompt on fulfilling criteria.

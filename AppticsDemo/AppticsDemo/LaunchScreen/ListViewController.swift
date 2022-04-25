@@ -1,6 +1,6 @@
 
 import UIKit
-import Apptics_Swift
+//import Apptics_Swift
 class ListViewController: UITableViewController {
     override func viewDidLoad() {
         self.navigationItem.title = "Apptics Demo"
@@ -61,7 +61,7 @@ extension ListViewController {
             Apptics.openAnalyticSettingsController()
             break
         case .Crosspromotion:
-            PromotedAppsKit.presentPromotedAppsController(sectionHeader1: "Related apps", sectionHeader2: "More apps")
+//            PromotedAppsKit.presentPromotedAppsController(sectionHeader1: "Related apps", sectionHeader2: "More apps")
             break
         }
         

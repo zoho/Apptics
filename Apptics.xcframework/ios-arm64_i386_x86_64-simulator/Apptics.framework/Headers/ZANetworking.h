@@ -47,7 +47,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (NSString*)setNewUrlForType:(NSString*)type andParms:(NSString*)params userID : (NSString*) userID;
 
-- (NSString*)setUrlForType:(NSString*)type andParms:(NSString*) params userID: (NSString*) userID;
+- (NSString*)setUrlForType:(NSString*)type apiVersion : (NSString*) apiVersion andParms:(NSString*) params userID: (NSString*) userID;
 
 - (void)POSTWith:(JURLPath )path
          rawBody: (NSData* _Nullable) data parameters:(id _Nullable)parameters

@@ -6,15 +6,19 @@
 	<dict>
 		<key>Headers/APRateUs.h</key>
 		<data>
-		YOAbUqhPe7A9fb3z+yg2UVdEuiA=
+		J3qq50a+LuHS4oKjMjTDr2hiMME=
+		</data>
+		<key>Headers/ARCustomHandler.h</key>
+		<data>
+		93kPa3iZbTZvCVULNyHmVV3i+jk=
 		</data>
 		<key>Headers/AppticsRateUs.h</key>
 		<data>
-		3hDHQpvdhTmpcf2dJMM5+hKJnOQ=
+		w8UD5TdTjOGpDaUFLKghS9kdQ88=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		IijU+/7Cf6ofp8yV9I5O4ofIKhc=
+		P+ELUJIYfn5nLmPaVXd0+9PbRmA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -27,22 +31,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YOAbUqhPe7A9fb3z+yg2UVdEuiA=
+			J3qq50a+LuHS4oKjMjTDr2hiMME=
 			</data>
 			<key>hash2</key>
 			<data>
-			LUmtUf2kfzmUjjKIXOHyCQ8o5QPhmsk9wK0X1jYwo/o=
+			gJOTrQl4UurDw9DSoguxvrYtyAKWqx1tI/O3vlKQnJQ=
+			</data>
+		</dict>
+		<key>Headers/ARCustomHandler.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			93kPa3iZbTZvCVULNyHmVV3i+jk=
+			</data>
+			<key>hash2</key>
+			<data>
+			G8+UaL9CIxH7kkCJEjK3Fju4MAKykXcrhQm0mAhxefY=
 			</data>
 		</dict>
 		<key>Headers/AppticsRateUs.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3hDHQpvdhTmpcf2dJMM5+hKJnOQ=
+			w8UD5TdTjOGpDaUFLKghS9kdQ88=
 			</data>
 			<key>hash2</key>
 			<data>
-			NayGioc7GCdMe0f6neUMbygAxPeWB4/HquOmJ4Fy2hk=
+			UYCyd8Ue9StO1xKuxO31i1fWH0ZPxYhmYrDJGPTJp/s=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -19,11 +19,11 @@
 		</data>
 		<key>AppticsResources_watchOS.bundle/Info.plist</key>
 		<data>
-		lE/6SGuXB647NyuUm09ge2nK4wE=
+		Jewej53dJaT+eXTJpYN0TxOb6H8=
 		</data>
 		<key>AppticsResources_watchOS.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		/ligF42mVjYLrTLuIBAV4FPmyKE=
+		s+e+DbdvK1ZuxSXnA9rRsKPMVB8=
 		</data>
 		<key>AppticsResources_watchOS.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -31,7 +31,7 @@
 		</data>
 		<key>AppticsResources_watchOS.bundle/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		yiHlsNTIIFugMJ45lXgLBx0lZ8s=
+		/xcHZhoX9a1dae8Lc97MravYfrM=
 		</data>
 		<key>AppticsResources_watchOS.bundle/_CodeSignature/CodeResources</key>
 		<data>
@@ -361,7 +361,7 @@
 		</data>
 		<key>Headers/ZAEnums.h</key>
 		<data>
-		+pYp36athrritkCGpBR5btwg7ZY=
+		SkIO0E76Z3he54IyZQ4L/6LLMiM=
 		</data>
 		<key>Headers/ZAEvent.h</key>
 		<data>
@@ -397,7 +397,7 @@
 		</data>
 		<key>Headers/ZANetworking.h</key>
 		<data>
-		cWWJh/nvpunbN7Ei7AeMkSRkcmA=
+		p8QEMW2Tzj7Jl1Z+d8UQ1rTbL4Q=
 		</data>
 		<key>Headers/ZANonFatalsUploadOperation.h</key>
 		<data>
@@ -437,7 +437,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		7L4KuZh6/RmiLNO996Dj+DYRhjQ=
+		UIMthMFoTnivif3pyS8lHsOJVHs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -474,22 +474,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lE/6SGuXB647NyuUm09ge2nK4wE=
+			Jewej53dJaT+eXTJpYN0TxOb6H8=
 			</data>
 			<key>hash2</key>
 			<data>
-			Kn6Q8qXrA7FzmdLE5enMVQNfV4U7tO6ErMbXEfxU0Gs=
+			Uy1tIFReB8S3ksozOgfHdG+zzXz+2NRv+OxGgq/WX3E=
 			</data>
 		</dict>
 		<key>AppticsResources_watchOS.bundle/_CodeSignature/CodeDirectory</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/ligF42mVjYLrTLuIBAV4FPmyKE=
+			s+e+DbdvK1ZuxSXnA9rRsKPMVB8=
 			</data>
 			<key>hash2</key>
 			<data>
-			0XZXPyLOnrBS4U+ZPWUBes3+KEzS8QGI32KkLkbFRO8=
+			Tt4CFVKQ9PSAjH7zUADONET5eMFUKykfPUqDFHXmlps=
 			</data>
 		</dict>
 		<key>AppticsResources_watchOS.bundle/_CodeSignature/CodeRequirements</key>
@@ -507,11 +507,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yiHlsNTIIFugMJ45lXgLBx0lZ8s=
+			/xcHZhoX9a1dae8Lc97MravYfrM=
 			</data>
 			<key>hash2</key>
 			<data>
-			7wVwky3VRtkoNmc/+/gaqY3VvQHFVtSRYZIsodK/VoA=
+			guUao3pz5+7us5zS0gBTNLGMXTXrDvknJNiHYn4MyVc=
 			</data>
 		</dict>
 		<key>AppticsResources_watchOS.bundle/_CodeSignature/CodeResources</key>
@@ -1109,11 +1109,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+pYp36athrritkCGpBR5btwg7ZY=
+			SkIO0E76Z3he54IyZQ4L/6LLMiM=
 			</data>
 			<key>hash2</key>
 			<data>
-			MEMHvQ3+CK/nB9I3DY+srDltVNKirrSy0XtSQz0lpJs=
+			rWuXLuJ8O2MdO8hmz3YW9XK3Hm93RigEpiLYTgIe5a8=
 			</data>
 		</dict>
 		<key>Headers/ZAEvent.h</key>
@@ -1208,11 +1208,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cWWJh/nvpunbN7Ei7AeMkSRkcmA=
+			p8QEMW2Tzj7Jl1Z+d8UQ1rTbL4Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			poqZiBex+4LHn5MpUltwz4a870a+MSFuol+iUyxgKNc=
+			Xsu18pk+REvoRJQKITDKEfti+OxGMhyJYy+WslgyKZE=
 			</data>
 		</dict>
 		<key>Headers/ZANonFatalsUploadOperation.h</key>
