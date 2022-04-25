@@ -10,7 +10,11 @@
 		</data>
 		<key>Headers/AppticsScreenTracker.h</key>
 		<data>
+<<<<<<< HEAD:AppticsDemo/Pods/Apptics/AppticsScreenTracker.xcframework/tvos-arm64_x86_64-simulator/AppticsScreenTracker.framework/_CodeSignature/CodeResources
 		ev8E3Wcjx/xMY5+86WlK+xLPD8c=
+=======
+		PZis4IhoEO5IX24/3dxao56zfks=
+>>>>>>> 452014dba78c77f185770bbf9b48064c1839d0dd:AppticsDemo/Pods/Apptics-SDK/AppticsScreenTracker.xcframework/ios-arm64_i386_x86_64-simulator/AppticsScreenTracker.framework/_CodeSignature/CodeResources
 		</data>
 		<key>Headers/UIViewController+Trackable.h</key>
 		<data>
@@ -18,7 +22,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
+<<<<<<< HEAD:AppticsDemo/Pods/Apptics/AppticsScreenTracker.xcframework/tvos-arm64_x86_64-simulator/AppticsScreenTracker.framework/_CodeSignature/CodeResources
 		QnuxRLamkg5hoTXnUxth+lZygL4=
+=======
+		3qADsgnTripkFVzdVKQAKB8ox0M=
+>>>>>>> 452014dba78c77f185770bbf9b48064c1839d0dd:AppticsDemo/Pods/Apptics-SDK/AppticsScreenTracker.xcframework/ios-arm64_i386_x86_64-simulator/AppticsScreenTracker.framework/_CodeSignature/CodeResources
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -42,11 +50,19 @@
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD:AppticsDemo/Pods/Apptics/AppticsScreenTracker.xcframework/tvos-arm64_x86_64-simulator/AppticsScreenTracker.framework/_CodeSignature/CodeResources
 			ev8E3Wcjx/xMY5+86WlK+xLPD8c=
 			</data>
 			<key>hash2</key>
 			<data>
 			2nAjVWEtL5gvA4JMdXhbQV4CaV2e1UAcE4RIjQ4G8VM=
+=======
+			PZis4IhoEO5IX24/3dxao56zfks=
+			</data>
+			<key>hash2</key>
+			<data>
+			0K7yCmq/jrEcxWi2nIGbvuNv1gf72dzxbzLsM6fbnm0=
+>>>>>>> 452014dba78c77f185770bbf9b48064c1839d0dd:AppticsDemo/Pods/Apptics-SDK/AppticsScreenTracker.xcframework/ios-arm64_i386_x86_64-simulator/AppticsScreenTracker.framework/_CodeSignature/CodeResources
 			</data>
 		</dict>
 		<key>Headers/UIViewController+Trackable.h</key>

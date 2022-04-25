@@ -11,7 +11,11 @@
 		<key>APID</key>
 		<string>2112740512263</string>
 		<key>APPTICS_SDK_ID</key>
+<<<<<<< HEAD
 		<string>3</string>
+=======
+		<string>3650</string>
+>>>>>>> 452014dba78c77f185770bbf9b48064c1839d0dd
 		<key>APP_RELEASE_VERSION_ID</key>
 		<string>2112740512266</string>
 		<key>APP_VERSION_ID</key>
