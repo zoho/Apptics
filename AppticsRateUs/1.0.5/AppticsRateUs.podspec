@@ -45,14 +45,13 @@ spec.subspec 'RateUs' do |ru|
 ru.platforms = {:ios => '9.1', :tvos => '9.0'}
 ru.vendored_frameworks = 'AppticsRateUs.xcframework'
 
-ru.ios.dependency 'Apptics/Core', "#{spec.version}"
-ru.tvos.dependency 'Apptics/Core', "#{spec.version}"
+ru.ios.dependency 'Apptics-SDK/Core', "#{spec.version}"
+ru.tvos.dependency 'Apptics-SDK/Core', "#{spec.version}"
 
 ru.ios.dependency 'AppticsFeedbackKit', "#{spec.version}"
 
 end
 
 end
-
 
 

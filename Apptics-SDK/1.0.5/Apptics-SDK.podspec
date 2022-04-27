@@ -27,8 +27,8 @@ spec.description = <<-DESC
 What's new:
 
 - Handled updating the opt-out status to the Apptics server instantly.
-- Enhancements in watchOS tracking. 
-- Enhanced sending data to the server on macOS. 
+- Enhancements in watchOS tracking.
+- Enhanced sending data to the server on macOS.
 
 DESC
   
@@ -43,10 +43,33 @@ spec.tvos.deployment_target = '9.0'
 spec.osx.deployment_target =  '10.10'
 spec.watchos.deployment_target = '2.0'
 
-spec.default_subspecs = 'Scripts'
-spec.dependency 'Apptics', "#{spec.version}"
+spec.default_subspecs = 'Analytics'
+
 spec.requires_arc = true
 
+spec.subspec 'Analytics' do |an|
+an.dependency 'Apptics-SDK/Core'
+an.dependency 'Apptics-SDK/EventTracker'
+an.dependency 'Apptics-SDK/ScreenTracker'
+an.dependency 'Apptics-SDK/CrashKit'
+end
+
+spec.subspec 'Core' do |co|
+co.vendored_frameworks = 'Apptics.xcframework'
+co.dependency 'Apptics-SDK/Scripts'
+end
+
+spec.subspec 'EventTracker' do |et|
+et.vendored_frameworks = 'AppticsEventTracker.xcframework'
+end
+
+spec.subspec 'ScreenTracker' do |st|
+st.vendored_frameworks = 'AppticsScreenTracker.xcframework'
+end
+
+spec.subspec 'CrashKit' do |ck|
+ck.vendored_frameworks = 'AppticsCrashKit.xcframework'
+end
 
 spec.subspec 'Scripts' do |sc|
 sc.source_files = 'scripts/*'

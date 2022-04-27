@@ -38,32 +38,31 @@ spec.description = <<-DESC
 What's new:
 
 - Handled updating the opt-out status to the Apptics server instantly.
-- Enhancements in watchOS tracking. 
-- Enhanced sending data to the server on macOS. 
+- Enhancements in watchOS tracking.
+- Enhanced sending data to the server on macOS.
 
 DESC
   spec.homepage         = "https://github.com/zoho/Apptics"
   spec.author           = {"Saravanan S" => "ssaravanan@zohocorp.com", "Prakash Red" => "prakash.redrouthu@zohocorp.com"}
   spec.social_media_url = 'https://twitter.com/zoho'
   spec.source = { :http => "https://github.com/zoho/Apptics/releases/download/#{spec.version}/Apptics.zip" }
-	spec.requires_arc = true
+    spec.requires_arc = true
   spec.swift_version = '5.0'
   
   spec.ios.frameworks = 'UIKit','StoreKit'
 
-	spec.ios.deployment_target = '9.1'
-	spec.tvos.deployment_target = '9.0'
-	spec.osx.deployment_target =  '10.10'
-	spec.watchos.deployment_target = '2.0'
+    spec.ios.deployment_target = '9.1'
+    spec.tvos.deployment_target = '9.0'
+    spec.osx.deployment_target =  '10.10'
+    spec.watchos.deployment_target = '2.0'
 
-	spec.default_subspecs = 'Analytics'
+    spec.default_subspecs = 'Analytics'
 
   spec.dependency 'Apptics-SDK', "#{spec.version}"
   
   spec.subspec 'Analytics' do |co|
-  	co.source_files        = 'SwiftFiles/*.swift'
+      co.source_files        = 'SwiftFiles/*.swift'
   end
   
 end
-
 
