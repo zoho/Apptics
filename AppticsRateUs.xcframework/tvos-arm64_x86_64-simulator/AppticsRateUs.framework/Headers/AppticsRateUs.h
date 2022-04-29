@@ -2,7 +2,7 @@
 //  AppticsRateUs.h
 //  AppticsRateUs
 //
-//  Created by Saravanan S on 05/04/22.
+//  Created by temp on 27/04/22.
 //
 
 #import <Foundation/Foundation.h>
@@ -17,3 +17,4 @@ FOUNDATION_EXPORT const unsigned char AppticsRateUsVersionString[];
 
 #import "APRateUs.h"
 #import "ARCustomHandler.h"
+

@@ -248,7 +248,7 @@ fi
 if [ "${APPTICS_SDK_ID}" != "${ZA_APPTICS_SDK_ID}" ] || [ "${BUNDLE_VERSION}" != "${ZA_BUNDLE_VERSION}" ] || [ "${BUNDLE_SHORT_VERSION}" != "${ZA_BUNDLE_SHORT_VERSION}" ] || [ "${APP_VERSION_ID}" == "" ] || [ "${AAID}" == "" ] || [ "${APID}" == "" ] || [ "${PLATFORM_ID}" == "" ] || [ "${APPTICS_SDK_ID}" == "" ] || [ "${RSAKEY}" == "" ]; then
   
   out_file="/tmp/${ZA_META_FILE_NAME}"
-  REG_APP_VERSION_PARAMS="&platform=${OS}&identifier=${PRODUCT_BUNDLE_IDENTIFIER}&version=${BUNDLE_SHORT_VERSION}&appreleaseversion=${BUNDLE_VERSION}&frameworkid=${APPTICS_SDK_ID}&minosversion=${ZA_DEPLOYMENT_TARGET}"
+  REG_APP_VERSION_PARAMS="platform=${OS}&identifier=${PRODUCT_BUNDLE_IDENTIFIER}&version=${BUNDLE_SHORT_VERSION}&appreleaseversion=${BUNDLE_VERSION}&frameworkid=${APPTICS_SDK_ID}&minosversion=${ZA_DEPLOYMENT_TARGET}"
   STATUS=$(curl "${URL_ENDPOINT}?${REG_APP_VERSION_PARAMS}" -v --write-out %{http_code} --silent -o "${out_file}" -H "zak: ${API_KEY}" -X POST --connect-timeout 60 --max-time 900 --retry 2 --retry-delay 5)
   
   echo "${URL_ENDPOINT}?${REG_APP_VERSION_PARAMS} --write-out %{http_code} --silent -o "${out_file}" -H "zak: ${API_KEY}" -X POST"

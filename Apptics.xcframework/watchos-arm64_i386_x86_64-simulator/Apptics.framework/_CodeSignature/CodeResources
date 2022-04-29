@@ -19,11 +19,11 @@
 		</data>
 		<key>AppticsResources_watchOS.bundle/Info.plist</key>
 		<data>
-		Jewej53dJaT+eXTJpYN0TxOb6H8=
+		/zi8nUQWzoO8wTtSzqeT/Ox1Om8=
 		</data>
 		<key>AppticsResources_watchOS.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		s+e+DbdvK1ZuxSXnA9rRsKPMVB8=
+		CRc4t8Tit/BJ3KW2lYFTgZkVysg=
 		</data>
 		<key>AppticsResources_watchOS.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -31,7 +31,7 @@
 		</data>
 		<key>AppticsResources_watchOS.bundle/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		/xcHZhoX9a1dae8Lc97MravYfrM=
+		FhH/CUmgXQZS5Ri3SdVuqDiAMDI=
 		</data>
 		<key>AppticsResources_watchOS.bundle/_CodeSignature/CodeResources</key>
 		<data>
@@ -437,7 +437,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		UIMthMFoTnivif3pyS8lHsOJVHs=
+		QUEPasHWl11L7bYMZOPqSuN2uQM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -474,22 +474,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Jewej53dJaT+eXTJpYN0TxOb6H8=
+			/zi8nUQWzoO8wTtSzqeT/Ox1Om8=
 			</data>
 			<key>hash2</key>
 			<data>
-			Uy1tIFReB8S3ksozOgfHdG+zzXz+2NRv+OxGgq/WX3E=
+			1J8OjZMKeBl/kFHzN9P0nMxF6oHQ+OQS+dKkETSOsUM=
 			</data>
 		</dict>
 		<key>AppticsResources_watchOS.bundle/_CodeSignature/CodeDirectory</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			s+e+DbdvK1ZuxSXnA9rRsKPMVB8=
+			CRc4t8Tit/BJ3KW2lYFTgZkVysg=
 			</data>
 			<key>hash2</key>
 			<data>
-			Tt4CFVKQ9PSAjH7zUADONET5eMFUKykfPUqDFHXmlps=
+			p9AU+qEkHpVe6CMh+hcRctNdpX0hx6B3C1bjGVL1ELA=
 			</data>
 		</dict>
 		<key>AppticsResources_watchOS.bundle/_CodeSignature/CodeRequirements</key>
@@ -507,11 +507,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/xcHZhoX9a1dae8Lc97MravYfrM=
+			FhH/CUmgXQZS5Ri3SdVuqDiAMDI=
 			</data>
 			<key>hash2</key>
 			<data>
-			guUao3pz5+7us5zS0gBTNLGMXTXrDvknJNiHYn4MyVc=
+			p+c1Pgw0LD02wAyCTjVFulwYVHCczWYr0YW90/0OGAE=
 			</data>
 		</dict>
 		<key>AppticsResources_watchOS.bundle/_CodeSignature/CodeResources</key>

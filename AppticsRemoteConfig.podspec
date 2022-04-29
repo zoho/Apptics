@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
 spec.name             = "AppticsRemoteConfig"
-spec.version          = "1.0.5"
+spec.version          = "1.0.6-debug"
 spec.summary          = "Apptics Remote Config for iOS"
 spec.license          = { :type => "MIT", :text=> <<-LICENSE
 MIT License

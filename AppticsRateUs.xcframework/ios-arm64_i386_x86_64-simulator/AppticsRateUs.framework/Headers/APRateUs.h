@@ -33,7 +33,7 @@
 +(void) storeReviewMasterReset;
 
 /**
- Call this method in the ARCustomHandlerManager willDisplayReviewPrompt call back. 
+ Call this method in the ARCustomHandlerManager willDisplayReviewPrompt call back.
  
 */
 
