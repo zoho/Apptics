@@ -65,6 +65,7 @@ static NSString * kJA_MamPIIInfo = @"kJA_MamPIIInfo";
 static NSString * kJA_MamDCInfo = @"kJA_MamDCInfo";
 static NSString * kJA_MamTrackingInfo = @"kJA_MamTrackingInfo";
 static NSString * kJA_MamCrashInfo = @"kJA_MamCrashInfo";
+static NSString * kJA_MamLogInfo = @"kJA_MamLogInfo";
 static NSString * kJA_CrashReportPermissionStatus = @"kJA_CrashReportPermissionStatus";
 static NSString * kJA_CrashReportStatus = @"kJA_CrashReportStatus";
 static NSString * kJA_ShouldCollectCustomProps = @"kJA_ShouldCollectCustomProps";
@@ -128,12 +129,15 @@ static NSString * kJA_EventTypeSwitchTheme = @"switch_theme";
 static NSString * kJA_tracking = @"tracking";
 static NSString * kJA_personalized = @"personalized";
 static NSString * kJA_sendcrash = @"sendcrash";
+static NSString * kJA_sendlog = @"sendlog";
 static NSString * kJA_tracking_on = @"tracking_on";
 static NSString * kJA_tracking_off = @"tracking_off";
 static NSString * kJA_personalized_on = @"personalized_on";
 static NSString * kJA_personalized_off = @"personalized_off";
 static NSString * kJA_sendcrash_on = @"sendcrash_on";
 static NSString * kJA_sendcrash_off = @"sendcrash_off";
+static NSString * kJA_sendlog_on = @"sendlog_on";
+static NSString * kJA_sendlog_off = @"sendlog_off";
 
 
 static NSString * JUDefaultSkippedVersion         = @"JUDefaultSkippedVersion";

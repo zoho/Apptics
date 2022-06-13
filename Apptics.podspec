@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
 spec.name             = "Apptics"
-spec.version          = "1.0.6-debug"
+spec.version          = "1.0.6"
 spec.summary          = "Apptics iOS SDK"
 spec.license          = { :type => "MIT", :text=> <<-LICENSE
 MIT License
@@ -24,11 +24,10 @@ LICENSE
 }
 
 spec.description = <<-DESC
-What's new:
 
-- Added RTL support for all our screens, enhanced tracking session and sending data to the server.
+Apptics is a library that enables your app to send in-app usage reports and data securly to our servers. You can track Sessions, Screens, and we also offer Crash Reporting. With minimal initialization of the framework, you get these features without doing any other configuration.
 
-  DESC
+DESC
   
 spec.homepage         = "https://github.com/zoho/Apptics"
 spec.author           = { "Saravanan Selvam" => "ssaravanan@zohocorp.com", "Prakash Redrouthu" => "prakash.redrouthu@zohocorp.com" }

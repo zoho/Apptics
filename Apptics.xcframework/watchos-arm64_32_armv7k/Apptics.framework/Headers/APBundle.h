@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "APEventsEnum.h"
+#import <Apptics/APEventsEnum.h>
 NS_ASSUME_NONNULL_BEGIN
 @interface APBundle : NSBundle
 

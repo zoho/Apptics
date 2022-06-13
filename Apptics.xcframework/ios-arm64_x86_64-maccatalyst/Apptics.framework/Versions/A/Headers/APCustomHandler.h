@@ -19,6 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol APCustomHandler <NSObject>
 
 @optional
+
 -(void) openURL: (NSURL*) url;
 -(void) userConsentPresent : (bool) status withError: (NSError*) error;
 -(void) userConsentDismiss : (int) status;

@@ -15,7 +15,7 @@
 #import <UIKit/UIKit.h>
 #import "ZAPresenter.h"
 #import <Apptics/APTheme.h>
-#import <Apptics/APCustomHandler.h>
+#import "FKCustomHandler.h"
 #import <MessageUI/MessageUI.h>
 @class ZAIncludeLogConsent;
 /**
@@ -217,7 +217,7 @@ extern NSString *bLogUploadFailureNotification;
  Get all types of completion handler in single place by extending our protocol.
  */
 
--(void) setCustomHandler:(id <APCustomHandler> _Nonnull) handler;
+-(void) setCustomHandler:(id <FKCustomHandler> _Nonnull) handler;
 
 
 #pragma mark - Public apis

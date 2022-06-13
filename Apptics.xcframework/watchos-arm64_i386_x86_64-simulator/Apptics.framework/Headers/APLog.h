@@ -9,6 +9,7 @@
 
 #import <Foundation/Foundation.h>
 #import <Apptics/ZAEnums.h>
+#import <Apptics/ZAObject.h>
 
 /**
  *  Use these method in your own application to log, isntead of NSLog.
@@ -44,6 +45,8 @@ NS_ASSUME_NONNULL_BEGIN
  *  Shows Apptics logs, collected data, and other network calls when set as YES. Apptics doesn't log in Release mode.
  */
 @property BOOL shouldLog;
+
+@property BOOL shouldPrint;
 
 @property (nonatomic, retain) NSDateFormatter *dateFormatter;
 
@@ -137,4 +140,33 @@ void ZLogExtensionInternal(const char *file, int lineNumber, const char *functio
 +(BOOL) hasLogData : (NSString*) logsDirPath;
 
 @end
+
+@interface APLogObject : ZAObject<NSCoding,JSONAble>
+
+-(id) initWithMessage : (NSString*) logmessage fileName : (NSString*) filename lineNumber : (NSNumber*) lineNumber functionName : (NSString*) function threadName : (NSString*) threadname queueName : (NSString*) queuename logLevel:(NSNumber*) level tag : (NSNumber*) tag;
+
+@property (strong,nonatomic) NSString *logmessage, *filename, *function, *threadname, *queuename;
+@property (strong,nonatomic) NSNumber *sessionstarttime, *level, *linenumber, *tag;
+
+// The below properities will be available in ZAObject
+//      "networkstatus"
+//      "networkbandwidth"
+//      "serviceprovider"
+//      "orientation"
+//      "batteryin"
+//      "edgetype"
+//      "starttime" logtime = starttime
+//      "endtime"
+
+-(NSDictionary*)jsonify;
+
+@end
+
+@interface NSString (Append)
+
+- (NSString*) ap_privacy : (APLogPrivacy) privacy;
+
+@end
+
+
 NS_ASSUME_NONNULL_END

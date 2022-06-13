@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
 spec.name             = "Apptics-SDK"
-spec.version          = "1.0.6-debug"
+spec.version          = "1.0.6"
 spec.summary          = "An in-app usage tracking and analytics library for iOS"
 spec.license          = { :type => "MIT", :text=> <<-LICENSE
 MIT License
@@ -24,11 +24,8 @@ LICENSE
 }
 
 spec.description = <<-DESC
-What's new:
 
-- Handled updating the opt-out status to the Apptics server instantly.
-- Enhancements in watchOS tracking.
-- Enhanced sending data to the server on macOS.
+Apptics is a library that enables your app to send in-app usage reports and data securly to our servers. You can track Sessions, Screens, and we also offer Crash Reporting. With minimal initialization of the framework, you get these features without doing any other configuration.
 
 DESC
   

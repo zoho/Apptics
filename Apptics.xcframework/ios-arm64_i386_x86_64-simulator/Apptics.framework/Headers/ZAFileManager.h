@@ -43,6 +43,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSString *) dirPathForFeedback;
 + (NSString *) dirPathForEngagements;
 + (NSString *) dirPathForNonFatals;
++ (NSString *) dirPathForConsoleLogs;
 
 + (void) archiveFeedback: (NSDictionary*) feedbackInfo;
 + (id) unarchiveFeedback : (NSString*) feedbackId;
@@ -64,24 +65,35 @@ NS_ASSUME_NONNULL_BEGIN
 //+ (void) archiveBGSession:(id)queue sessionId : (NSNumber*) sessionId mamId:(NSString * _Nullable)mam anonId : (NSString*) anonid;
 + (id) unarchieveEngagementsDataForFileName: (NSString*) fileName;
 + (id) unarchieveNonFatalsDataForFileName: (NSString*) fileName;
++ (id) unarchieveConsoleLogsDataForFileName: (NSString*) fileName;
+
 + (id) unarchieveDataForFileName: (NSString*) fileName;
 + (void) rotateEngagementsData;
 
 + (void) archiveNonFatals:(id)queue sessionId : (NSNumber*) sessionId mamId:(NSString * _Nullable)mam anonId : (NSString*) anonid;
 + (void) rotateNonFatalsData;
     
++ (void) archiveConsoleLogs:(id)queue sessionId : (NSNumber*) sessionId mamId:(NSString * _Nullable)mam anonId : (NSString*) anonid;
++ (void) rotateConsoleLogsData;
+    
+
 +(NSMutableArray* _Nullable) getListOfHistoricEngagementDataToBeSynced;
 +(NSMutableArray* _Nullable) getListOfHistoricEngagementData;
 
 +(NSMutableArray* _Nullable) getListOfNonFatalsDataToBeSynced;
 +(NSMutableArray* _Nullable) getListOfNonFatalsData;
 
++(NSMutableArray* _Nullable) getListOfConsoleLogsDataToBeSynced;
++(NSMutableArray* _Nullable) getListOfConsoleLogsData;
+
 //+(void) archiveEngagementInfo: (NSArray*) feedbackInfo;
 +(void) archiveHistoricEngagementInfo: (NSArray*) feedbackInfo;
 +(void) archiveNonFatalsInfo: (NSArray*) nonfatalsInfo;
++(void) archiveConsoleLogsInfo: (NSArray*) nonfatalsInfo;
 //+(void) removeEngagementInfo : (NSArray*) engagementsInfo;
 +(void) removeHistoricEngagementInfos : (NSArray*) engagementsInfos;
 +(void) removeNonFatalsInfos : (NSArray*) engagementsInfos;
++(void) removeConsoleLogsInfos : (NSArray*) consoleLogsInfos;
 
 //+(void) addEngagementInfo: (NSArray*) feedbackInfo;
 +(void) addHistoricEngagementInfo: (NSArray*) feedbackInfo;

@@ -52,6 +52,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic,strong) NSMutableDictionary *_Nullable mamCrashInfo;//Here we save all Crash info
 
+@property (nonatomic,strong) NSMutableDictionary *_Nullable mamLogInfo;//Here we save all Log info
+
 @property (nonatomic,strong) NSMutableDictionary *_Nullable mamPIIInfo;//Here we save all PII info
 
 @property (nonatomic,strong) NSMutableDictionary *_Nullable mamDCInfo;//Here we save all DC info
@@ -67,6 +69,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property BOOL shouldCollectData;
 
 @property BOOL shouldSendCrashData;
+
+@property BOOL shouldSendLogData;
 
 @property (readonly) BOOL shouldCollectCustomProps;
 
@@ -89,6 +93,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void) setTrackingStatus:(APTrackingStatus)status;
 
 - (void) setCrashStatus:(APCrashStatus)status;
+
+- (void) setLogStatus:(APLogStatus)status;
 
 - (void) setSendPersonalizedData:(APPrivacyStatus)status;
 
@@ -133,6 +139,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void) setCrashReportPermissionStatus : (BOOL) status;
 
 - (BOOL) shouldSendCrashReport;
+
+- (BOOL) shouldSendLog;
 
 - (void) registerForCrash;
 

@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ZAObject.h"
+#import <Apptics/ZAObject.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

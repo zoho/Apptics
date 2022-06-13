@@ -43,6 +43,7 @@ typedef NS_ENUM(NSInteger, JURLPath)
 //  JURLPathSession_history,
 //  JURLPathCurrentSession_History,
   JURLPathNonFatalErrors,
+  JURLPathConsoleLogs,
 //  JURLPathUpdateInfo,
 //  JURLPathUpdateStats,
   JURLPathUnRegisterUser,
@@ -91,6 +92,12 @@ typedef NS_ENUM(NSInteger, APCrashStatus)
 {
   APCrashStatusOff = 0,
   APCrashStatusOn
+};
+
+typedef NS_ENUM(NSInteger, APLogStatus)
+{
+  APLogStatusOff = 0,
+  APLogStatusOn
 };
 
 typedef NS_ENUM(NSInteger, APPrivacyStatus)
@@ -228,3 +235,10 @@ typedef NS_ENUM(NSInteger, APAnonymousType)
 //    APAnonymousTypeFullyAnonymous
 };
 
+typedef NS_ENUM(NSUInteger, APLogPrivacy){
+    APLogPrivacyPublic       = 0,
+    APLogPrivacyPrivate,
+    APLogPrivacyPrivateMask,
+    APLogPrivacySensitive,
+    APLogPrivacySensitiveMask    
+};

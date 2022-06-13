@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ZAEnums.h"
+#import <Apptics/ZAEnums.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

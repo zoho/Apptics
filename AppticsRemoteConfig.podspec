@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
 spec.name             = "AppticsRemoteConfig"
-spec.version          = "1.0.6-debug"
+spec.version          = "1.0.6"
 spec.summary          = "Apptics Remote Config for iOS"
 spec.license          = { :type => "MIT", :text=> <<-LICENSE
 MIT License
@@ -24,7 +24,6 @@ LICENSE
 }
 
 spec.description = <<-DESC
-What's new:
 
 Apptics is a library that enables your app to send in-app usage reports and data securly to our servers. You can track Sessions, Screens, and we also offer Crash Reporting. With minimal initialization of the framework, you get these features without doing any other configuration.
 
