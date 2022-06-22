@@ -11,7 +11,7 @@
 
 #import <Foundation/Foundation.h>
 //#import "ZAConstants.h"
-#import "ZAEnums.h"
+#import <Apptics/ZAEnums.h>
 NS_ASSUME_NONNULL_BEGIN
 @interface ZAFileManager : NSObject
 

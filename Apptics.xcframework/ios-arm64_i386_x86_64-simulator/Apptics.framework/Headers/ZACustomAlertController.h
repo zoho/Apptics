@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ZAUserConsentAlert.h"
-#import "ZAUserConsentAlertV2.h"
-#import "ZAAppUpdateAlert.h"
-#import "ZAEnums.h"
+#import <Apptics/ZAUserConsentAlert.h>
+#import <Apptics/ZAUserConsentAlertV2.h>
+#import <Apptics/ZAAppUpdateAlert.h>
+#import <Apptics/ZAEnums.h>
 NS_ASSUME_NONNULL_BEGIN
 @interface ZACustomAlertController : UIViewController
 

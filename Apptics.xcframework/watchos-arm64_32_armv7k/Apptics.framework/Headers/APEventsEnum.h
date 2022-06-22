@@ -1,5 +1,5 @@
 #import <Foundation/Foundation.h>
-#import "ZAPrivate.h"
+#import <Apptics/ZAPrivate.h>
 //#import "Apptics.h"
 
 NS_ASSUME_NONNULL_BEGIN

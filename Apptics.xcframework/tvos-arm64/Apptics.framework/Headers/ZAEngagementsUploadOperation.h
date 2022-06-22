@@ -11,7 +11,7 @@
 #import <WatchKit/WatchKit.h>
 #endif
 
-#import "APAAAUtil.h"
+#import <Apptics/APAAAUtil.h>
 
 #if !TARGET_OS_OSX
 #import <UIKit/UIKit.h>

@@ -25,7 +25,7 @@
 #import <Apptics/ZAScreenObject.h>
 #import <Apptics/ZAGlobalQueue.h>
 #import <Apptics/ZAPIIManager.h>
-
+#import <Apptics/ZAJSONString.h>
 
 #import <Apptics/ZAFileManager.h>
 #import <Apptics/NSUserDefaults+SaveCustomObject.h>
@@ -41,9 +41,28 @@
 
 #import <Apptics/APRemoteConfigObject.h>
 
+#if TARGET_OS_OSX
+#import <Apptics/ZAnalyticsNSApplication.h>
+#endif
+
+#if TARGET_OS_TV
+#import <Apptics/ZACustomNavigationController.h>
+#import <Apptics/ZAnalyticsUIApplication.h>
+#endif
+
 #if TARGET_OS_IOS
 #import <Apptics/ZALoader.h>
 #import <Apptics/ZACustomNavigationController.h>
+#import <Apptics/ZAAppUpdateAlert.h>
+#import <Apptics/ZAnalyticsUIApplication.h>
+#import <Apptics/WCSessionSwizzlerDelegate.h>
+#import <Apptics/ZACustomAlertController.h>
+#import <Apptics/ZAUserConsentAlert.h>
+#import <Apptics/APReviewViewController.h>
+#endif
+
+#if TARGET_OS_WATCH
+#import <Apptics/WCSessionSwizzlerDelegate.h>
 #endif
 
 #define __FILENAME__ (strrchr(__FILE__, '/') ? strrchr(__FILE__, '/') + 1 : __FILE__)
@@ -77,7 +96,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 
 + (void)initializeWithVerbose : (BOOL) verbose config: (nonnull AppticsConfig *) config
-#if TARGET_OS_IOS || TARGET_OS_OSX || TARGET_OS_TVOS
+#if TARGET_OS_IOS || TARGET_OS_OSX || TARGET_OS_TV
 NS_EXTENSION_UNAVAILABLE("don't use this method in your extensions")
 #endif
 ;
@@ -87,7 +106,7 @@ NS_EXTENSION_UNAVAILABLE("don't use this method in your extensions")
    */
   
 + (void)initializeWithVerbose : (BOOL) verbose
-#if TARGET_OS_IOS || TARGET_OS_OSX || TARGET_OS_TVOS
+#if TARGET_OS_IOS || TARGET_OS_OSX || TARGET_OS_TV
 NS_EXTENSION_UNAVAILABLE("don't use this method in your extensions")
 #endif
 ;

@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "APTheme.h"
+#import <Apptics/APTheme.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

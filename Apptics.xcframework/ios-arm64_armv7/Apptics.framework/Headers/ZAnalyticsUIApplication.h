@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Analytics.h"
+#import <Apptics/Analytics.h>
 
 #if !TARGET_OS_OSX
 #import <UIKit/UIKit.h>

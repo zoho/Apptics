@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ZAConstants.h"
-#import "ZAEnums.h"
+#import <Apptics/ZAConstants.h>
+#import <Apptics/ZAEnums.h>
 #import <Apptics/ZAMacros.h>
 
 typedef NS_ENUM(NSInteger, CARType) // Crash Authorization Result Type

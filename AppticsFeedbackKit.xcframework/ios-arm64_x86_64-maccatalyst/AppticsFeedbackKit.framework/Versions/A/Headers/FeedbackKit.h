@@ -13,9 +13,9 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "ZAPresenter.h"
+#import <AppticsFeedbackKit/ZAPresenter.h>
 #import <Apptics/APTheme.h>
-#import "FKCustomHandler.h"
+#import <AppticsFeedbackKit/FKCustomHandler.h>
 #import <MessageUI/MessageUI.h>
 @class ZAIncludeLogConsent;
 /**

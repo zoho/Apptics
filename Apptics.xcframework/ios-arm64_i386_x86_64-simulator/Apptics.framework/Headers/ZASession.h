@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ZAObject.h"
-#import "ZASystemProperties.h"
+#import <Apptics/ZAObject.h>
+#import <Apptics/ZASystemProperties.h>
 NS_ASSUME_NONNULL_BEGIN
 @interface ZASession : ZAObject<NSCoding,JSONAble>
 @property BOOL isCurrentSession, firstsession;

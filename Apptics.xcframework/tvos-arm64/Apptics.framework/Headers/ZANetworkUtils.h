@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ZAConstants.h"
-#import "ZAEnums.h"
+#import <Apptics/ZAConstants.h>
+#import <Apptics/ZAEnums.h>
 NS_ASSUME_NONNULL_BEGIN
 @interface ZANetworkUtils : NSObject
 + (NSDateFormatter *)dateFormatter;

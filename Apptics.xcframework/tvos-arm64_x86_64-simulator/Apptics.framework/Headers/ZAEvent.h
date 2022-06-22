@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ZAObject.h"
-#import "APEventsEnum.h"
+#import <Apptics/ZAObject.h>
+#import <Apptics/APEventsEnum.h>
 NS_ASSUME_NONNULL_BEGIN
 @interface ZAEvent : ZAObject<NSCoding,JSONAble>
 

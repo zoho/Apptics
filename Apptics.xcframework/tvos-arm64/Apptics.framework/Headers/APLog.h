@@ -139,6 +139,10 @@ void ZLogExtensionInternal(const char *file, int lineNumber, const char *functio
 
 +(BOOL) hasLogData : (NSString*) logsDirPath;
 
++(BOOL) logStatus;
+
++(void) setLogStatus:(BOOL) status;
+
 @end
 
 @interface APLogObject : ZAObject<NSCoding,JSONAble>

@@ -6,9 +6,9 @@
 //  Copyright © 2015 Giridhar. All rights reserved.
 //
 
-#import "Analytics.h"
-#import "ZAConstants.h"
-#import "APAAAUtil.h"
+#import <Apptics/Analytics.h>
+#import <Apptics/ZAConstants.h>
+#import <Apptics/APAAAUtil.h>
 
 NS_ASSUME_NONNULL_BEGIN
 @interface ZANetworking : NSObject <NSURLSessionDelegate>

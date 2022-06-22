@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/AppticsFeedbackKit.h</key>
 		<data>
-		eN6eh5NR3yml+rpbzrvsuV/fSjg=
+		Cl8oi2IvJxnI6N/3ut6pi31iVxQ=
 		</data>
 		<key>Headers/FKCustomHandler.h</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/FeedbackKit.h</key>
 		<data>
-		v/YV8o4ihRshMdX1w6qK6GuFZjY=
+		cbuIms0f0xxYU05bjRCH4IM6EXg=
 		</data>
 		<key>Headers/ZAPresenter.h</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Y0Npwd8LvT5NMjHSjPzEHIYsGqc=
+		jQu5Lv50Gihnl3Ltsna6f+I2MCA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -895,11 +895,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eN6eh5NR3yml+rpbzrvsuV/fSjg=
+			Cl8oi2IvJxnI6N/3ut6pi31iVxQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			8F3O0wcq4hoPNa2reyTnh5Ry83LSeUka8UpHMXDKakY=
+			k5qtGAgYZK4RySKpeS+uXJM8fTDQg7yCtvDsaxqmWPc=
 			</data>
 		</dict>
 		<key>Headers/FKCustomHandler.h</key>
@@ -917,11 +917,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			v/YV8o4ihRshMdX1w6qK6GuFZjY=
+			cbuIms0f0xxYU05bjRCH4IM6EXg=
 			</data>
 			<key>hash2</key>
 			<data>
-			BIvP+3IcAKEkeHQ4KYBQDrWoDjE/WOSenyHDPZfOq3g=
+			TCqsqRu2MMkG0gZLLmemUkmM5I6AUHTjUF1v0ee4H9w=
 			</data>
 		</dict>
 		<key>Headers/ZAPresenter.h</key>

@@ -12,7 +12,7 @@
 #else
 #import <Cocoa/Cocoa.h>
 #endif
-#import "APAAAUtil.h"
+#import <Apptics/APAAAUtil.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

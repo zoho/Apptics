@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ZAConstants.h"
+#import <Apptics/ZAConstants.h>
 
 
 NS_ASSUME_NONNULL_BEGIN
