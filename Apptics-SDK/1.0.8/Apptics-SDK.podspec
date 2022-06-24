@@ -51,7 +51,6 @@ end
 
 spec.subspec 'Scripts' do |sc|
 sc.source_files = 'scripts/*'
-sc.preserve_paths = 'scripts/*'
 end
 
 # spec.subspec 'Extension' do |sc|
