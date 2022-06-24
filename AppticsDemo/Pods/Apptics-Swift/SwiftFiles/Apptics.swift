@@ -12,7 +12,7 @@ extension APLog {
   
 }
 
-public func trackError(_ error: @autoclosure () -> NSError, file: StaticString = #file, line: UInt = #line, function: StaticString = #function){
+public func APTrackError(_ error: @autoclosure () -> NSError, file: StaticString = #file, line: UInt = #line, function: StaticString = #function){
     let currentFile = file.withUTF8Buffer {
         String(decoding: $0, as: UTF8.self)
     }
@@ -20,7 +20,7 @@ public func trackError(_ error: @autoclosure () -> NSError, file: StaticString =
     Analytics.getInstance().trackError(error(), withKey: key)
 }
 
-public func trackException(_ exception: @autoclosure () -> NSException, file: StaticString = #file, line: UInt = #line, function: StaticString = #function){
+public func APTrackException(_ exception: @autoclosure () -> NSException, file: StaticString = #file, line: UInt = #line, function: StaticString = #function){
     let currentFile = file.withUTF8Buffer {
         String(decoding: $0, as: UTF8.self)
     }

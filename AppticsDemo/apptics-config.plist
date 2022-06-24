@@ -7,32 +7,28 @@
 	<key>APP_VERSION_META</key>
 	<dict>
 		<key>AAID</key>
-		<string>2112685669253</string>
+		<string></string>
 		<key>APID</key>
-		<string>2112740512263</string>
+		<string></string>
 		<key>APPTICS_SDK_ID</key>
-<<<<<<< HEAD
-		<string>3</string>
-=======
-		<string>3650</string>
->>>>>>> 452014dba78c77f185770bbf9b48064c1839d0dd
+		<string>629</string>
 		<key>APP_RELEASE_VERSION_ID</key>
-		<string>2112740512266</string>
+		<string></string>
 		<key>APP_VERSION_ID</key>
-		<string>2113084017223</string>
+		<string></string>
 		<key>BUNDLE_SHORT_VERSION</key>
 		<string>1.2</string>
 		<key>BUNDLE_VERSION</key>
 		<string>1.1</string>
 		<key>MAPID</key>
-		<string>2054327588047</string>
+		<string></string>
 		<key>PLATFORM_ID</key>
-		<string>1</string>
+		<string></string>
 		<key>RSAKEY</key>
-		<string>MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAhBskG0OZZhQLjvPRf+dgwCKzEQ2d9gJA2MZDZe18hY0Ks0dsyrnAcZKiN53EEtAIiFDWbJq94ZzXU6A5q2pAIy4DHWo2WScUGuWaZRBNE3SsQhUye86dIB/EVZmvof4SwRc9IZkBfBGbSZI93Hg07lNRbJ4Q+/hUHCAtpNQEdeLiwSZdQ9acUbY7k8jjNBylrsJhXSLWTKXbaL+iSls8iMtdgGTLyGdb0dISJ8wgsIo8MKUW6/yIy/cPV7Ptuhu6fgKkFvCW1lTp20569M09kM7M0TohFhDL0+40bA10c5n8aSF4zcjC/Kt1Z/h2cu7AUEvD4rlhGLvWDTgxmQudNQIDAQAB</string>
+		<string></string>
 	</dict>
 	<key>BUNDLE_ID</key>
-	<string>com.apptics.demo.ios</string>
+	<string>com.apptics.emo.ios</string>
 	<key>SERVER_URL</key>
 	<string>https://apptics.zoho.com</string>
 </dict>

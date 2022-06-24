@@ -42,7 +42,7 @@ spec.requires_arc = true
 spec.subspec 'FeedbackKit' do |fk|
 fk.platform     = :ios, '9.1'
 fk.vendored_frameworks = 'AppticsFeedbackKit.xcframework'
-fk.ios.dependency 'Apptics-SDK/Core', "#{spec.version}"
+fk.ios.dependency 'AppticsAnalytics/Apptics', "#{spec.version}"
 end
 
 end

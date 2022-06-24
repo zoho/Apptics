@@ -42,7 +42,7 @@ DESC
   spec.homepage         = "https://github.com/zoho/Apptics"
   spec.author           = {"Saravanan S" => "ssaravanan@zohocorp.com", "Prakash Red" => "prakash.redrouthu@zohocorp.com"}
   spec.social_media_url = 'https://twitter.com/zoho'
-  spec.source = { :http => "https://github.com/zoho/Apptics/releases/download/#{spec.version}/Apptics.zip" }
+  spec.source = { :http => "https://github.com/zoho/Apptics/releases/download/#{spec.version}/AppticsSwiftFiles.zip" }
     spec.requires_arc = true
   spec.swift_version = '5.0'
   
@@ -55,7 +55,7 @@ DESC
 
     spec.default_subspecs = 'Analytics'
 
-  spec.dependency 'Apptics-SDK', "#{spec.version}"
+  spec.dependency 'AppticsAnalytics', "#{spec.version}"
   
   spec.subspec 'Analytics' do |co|
       co.source_files        = 'SwiftFiles/*.swift'

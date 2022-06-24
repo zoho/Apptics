@@ -15,4 +15,4 @@ FOUNDATION_EXPORT const unsigned char AppticsFeedbackKitVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <AppticsFeedbackKit/PublicHeader.h>
 
-#import "FeedbackKit.h"
+#import <AppticsFeedbackKit/FeedbackKit.h>

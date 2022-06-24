@@ -102,6 +102,12 @@ typedef void (^bgNonFatalRequestSuccessBlock)(void);
 typedef void (^internbgNonFatalRequestSuccessBlock)(void);
 @property (nonatomic) internbgNonFatalRequestSuccessBlock _Nullable internbgNonFatalRequestSuccessBlock;
 
+typedef void (^bgConsoleLogsRequestSuccessBlock)(void);
+@property (nonatomic) bgConsoleLogsRequestSuccessBlock _Nullable bgConsoleLogsRequestSuccessBlock;
+
+typedef void (^internbgConsoleLogsRequestSuccessBlock)(void);
+@property (nonatomic) internbgConsoleLogsRequestSuccessBlock _Nullable internbgConsoleLogsRequestSuccessBlock;
+
 /**
  *  Singleton instance
  *
@@ -261,6 +267,10 @@ typedef void (^internbgNonFatalRequestSuccessBlock)(void);
 - (BOOL) crashReportStatus;
 
 - (void) setCrashReportStatus : (BOOL) status;
+
+- (BOOL) logStatus;
+
+- (void) setLogStatus : (BOOL) status;
 
 - (void) updateAlwaysSendReportStatusToMobile : (BOOL) status type: (NSString*_Nonnull) type;
 

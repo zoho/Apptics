@@ -1,4 +1,0 @@
-${PODS_XCFRAMEWORKS_BUILD_DIR}/Apptics/Core/Apptics.framework
-${PODS_XCFRAMEWORKS_BUILD_DIR}/Apptics/CrashKit/AppticsCrashKit.framework
-${PODS_XCFRAMEWORKS_BUILD_DIR}/Apptics/EventTracker/AppticsEventTracker.framework
-${PODS_XCFRAMEWORKS_BUILD_DIR}/Apptics/ScreenTracker/AppticsScreenTracker.framework

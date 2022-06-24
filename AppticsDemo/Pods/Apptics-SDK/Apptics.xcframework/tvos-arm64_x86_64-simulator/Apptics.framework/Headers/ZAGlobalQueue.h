@@ -18,6 +18,7 @@
 #import <Apptics/ZAEnums.h>
 #import <Apptics/ZAEngagementsUploadOperation.h>
 #import <Apptics/ZANonFatalsUploadOperation.h>
+#import <Apptics/ZAConsoleLogsUploadOperation.h>
 
 #import <Apptics/ZAAppupdatePopupInfo.h>
 
@@ -26,10 +27,11 @@
 NS_ASSUME_NONNULL_BEGIN
 @interface ZAGlobalQueue : NSObject
 
-@property (strong,nonatomic) NSMutableArray *screensQueue, *sessionsQueue, *eventsQueue, *errorsQueue, *apisQueue, *remoteconfigQueue, *rateusQueue, *appupdatePopupQueue, *appupdateDetailQueue, *crosspromoQueue;
+@property (strong,nonatomic) NSMutableArray *screensQueue, *sessionsQueue, *eventsQueue, *errorsQueue, *apisQueue, *remoteconfigQueue, *rateusQueue, *appupdatePopupQueue, *appupdateDetailQueue, *crosspromoQueue, *consoleLogsQueue;
 
 @property (strong,nonatomic) NSMutableDictionary *uniqErrors;
 @property (nonatomic) long long dataSize;
+@property (nonatomic) long long logsDataSize;
 @property (strong,nonatomic) ZASession *currentSession;
 
 @property (strong,nonatomic) ZAScreenObject *currentScreen;
@@ -43,6 +45,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 typedef void (^bgEngagementRequestSuccessBlock)(void);
 typedef void (^bgNonFatalRequestSuccessBlock)(void);
+typedef void (^bgConsoleLogsRequestSuccessBlock)(void);
 
 + (ZAGlobalQueue*) sharedQueue;
 + (NSNumber*) sessionStartTime;
@@ -53,12 +56,16 @@ typedef void (^bgNonFatalRequestSuccessBlock)(void);
 
 - (void) purgeHistoricEngagementsData;
 - (void) purgeHistoricNonFatalsData;
+- (void) purgeHistoricConsoleLogsData;
 
 - (void) flushHistoricEngagementsDataToServer;
 - (void) flushHistoricDataToServerisBG : (BOOL) isBg completionBlock:(bgEngagementRequestSuccessBlock)success;
 
 - (void) flushHistoricNonFatalsDataToServer;
 - (void) flushNonFatalsToServerisBG : (BOOL) isBg completionBlock:(bgNonFatalRequestSuccessBlock)success;
+
+- (void) flushHistoricConsoleLogsDataToServer;
+- (void) flushConsoleLogsToServerisBG : (BOOL) isBg completionBlock:(bgConsoleLogsRequestSuccessBlock)success;
 
 - (void) dispatchOnNetworkQueue:(void (^)(void))dispatchBlock;
 

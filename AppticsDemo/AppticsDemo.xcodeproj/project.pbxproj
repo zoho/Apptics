@@ -653,7 +653,7 @@
 			name = "[CP-User] Apptics pre build";
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "sh \"./Pods/Apptics-SDK/scripts/run\" --upload-symbols-for-configurations=\"Release, AppStore\"\n";
+			shellScript = "sh \"./Pods/Apptics-SDK/scripts/run\" --upload-symbols-for-configurations=\"Release, AppStore\"";
 		};
 		E734ADC921098ACFEE1A061E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -789,7 +789,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.apptics.demo.ios.AppticsWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.apptics.emo.ios.AppticsWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = YES;
@@ -813,7 +813,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.apptics.demo.ios.AppticsWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.apptics.emo.ios.AppticsWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = YES;
@@ -950,7 +950,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = G8T3WV9A3U;
+				DEVELOPMENT_TEAM = Z9R9W2NT4D;
 				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -962,7 +962,42 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.2;
-				PRODUCT_BUNDLE_IDENTIFIER = com.apptics.demo.ios;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"Apptics\"",
+					"-framework",
+					"\"AppticsApiTracker\"",
+					"-framework",
+					"\"AppticsCrashKit\"",
+					"-framework",
+					"\"AppticsCrossPromotion\"",
+					"-framework",
+					"\"AppticsEventTracker\"",
+					"-framework",
+					"\"AppticsFeedbackKit\"",
+					"-framework",
+					"\"AppticsInAppUpdate\"",
+					"-framework",
+					"\"AppticsRateUs\"",
+					"-framework",
+					"\"AppticsRemoteConfig\"",
+					"-framework",
+					"\"AppticsScreenTracker\"",
+					"-framework",
+					"\"Apptics_SDK\"",
+					"-framework",
+					"\"Apptics_Swift\"",
+					"-framework",
+					"\"JWT\"",
+					"-framework",
+					"\"KSCrash\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"UIKit\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.apptics.emo.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "AppticsDemo/AppticsDemo-Bridging-Header.h";
@@ -983,7 +1018,7 @@
 				CODE_SIGN_ENTITLEMENTS = AppticsDemo/AppticsDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.1;
-				DEVELOPMENT_TEAM = G8T3WV9A3U;
+				DEVELOPMENT_TEAM = Z9R9W2NT4D;
 				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -995,7 +1030,42 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.2;
-				PRODUCT_BUNDLE_IDENTIFIER = com.apptics.demo.ios;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"Apptics\"",
+					"-framework",
+					"\"AppticsApiTracker\"",
+					"-framework",
+					"\"AppticsCrashKit\"",
+					"-framework",
+					"\"AppticsCrossPromotion\"",
+					"-framework",
+					"\"AppticsEventTracker\"",
+					"-framework",
+					"\"AppticsFeedbackKit\"",
+					"-framework",
+					"\"AppticsInAppUpdate\"",
+					"-framework",
+					"\"AppticsRateUs\"",
+					"-framework",
+					"\"AppticsRemoteConfig\"",
+					"-framework",
+					"\"AppticsScreenTracker\"",
+					"-framework",
+					"\"Apptics_SDK\"",
+					"-framework",
+					"\"Apptics_Swift\"",
+					"-framework",
+					"\"JWT\"",
+					"-framework",
+					"\"KSCrash\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"UIKit\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.apptics.emo.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "AppticsDemo/AppticsDemo-Bridging-Header.h";

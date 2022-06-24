@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ZANetworking.h"
-#import "ZAConstants.h"
+#import <Apptics/ZANetworking.h>
+#import <Apptics/ZAConstants.h>
 NS_ASSUME_NONNULL_BEGIN
 @interface ZAPIManager : NSObject
 
