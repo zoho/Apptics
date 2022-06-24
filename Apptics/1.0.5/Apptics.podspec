@@ -69,4 +69,9 @@ spec.subspec 'CrashKit' do |ck|
 ck.vendored_frameworks = 'AppticsCrashKit.xcframework'
 end
 
+spec.subspec 'Scripts' do |sc|
+sc.source_files = 'scripts/*'
+sc.preserve_paths = 'scripts/*'
+end
+
 end
