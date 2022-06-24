@@ -40,7 +40,6 @@ spec.ios.deployment_target = '9.1'
 spec.tvos.deployment_target = '9.0'
 spec.osx.deployment_target =  '10.10'
 spec.watchos.deployment_target = '2.0'
-
 spec.default_subspecs = 'Core'
 
 spec.requires_arc = true
