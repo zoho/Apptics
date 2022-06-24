@@ -59,7 +59,7 @@ end
 
 spec.subspec 'Core' do |co|
 co.vendored_frameworks = 'Apptics.xcframework'
-co.dependency 'Apptics/Scripts', '1.0.5'
+co.dependency 'Scripts'
 end
 
 spec.subspec 'EventTracker' do |et|
@@ -80,7 +80,6 @@ end
 
 spec.subspec 'Scripts' do |sc|
 sc.source_files = 'scripts/*'
-sc.preserve_paths = 'scripts/*'
 end
 
 # spec.subspec 'Extension' do |sc|
