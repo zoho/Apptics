@@ -55,7 +55,7 @@ DESC
 
     spec.default_subspecs = 'Analytics'
 
-  spec.dependency 'AppticsAnalytics', "#{spec.version}"
+  spec.dependency 'Apptics-SDK', "#{spec.version}"
   
   spec.subspec 'Analytics' do |co|
       co.source_files        = 'SwiftFiles/*.swift'
