@@ -1,0 +1,6 @@
+framework module AppticsRateUs {
+  umbrella header "AppticsRateUs.h"
+
+  export *
+  module * { export * }
+}
