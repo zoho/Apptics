@@ -196,41 +196,17 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>Resources/done.png</key>
+		<key>Resources/done.tiff</key>
 		<data>
-		8TfULlkMVMr3ZTvGMcu2gQKAYxw=
+		bN4jF1FoVNqsoetaBPXX74SSdqc=
 		</data>
-		<key>Resources/done@2x.png</key>
+		<key>Resources/drop_down_dark.tiff</key>
 		<data>
-		IBWDHDHv2yPmqSVuMaFv5ek90Kg=
+		xulybq9jmJmWHjCVbp7qk+/tVDQ=
 		</data>
-		<key>Resources/done@3x.png</key>
+		<key>Resources/drop_down_light.tiff</key>
 		<data>
-		XXBCVJEG4kZeyt2eW6+8OZ44Jf4=
-		</data>
-		<key>Resources/drop_down_dark.png</key>
-		<data>
-		a3j0WP6w75zvNslw9ZEO1FF0IvY=
-		</data>
-		<key>Resources/drop_down_dark@2x.png</key>
-		<data>
-		DmBTvANDOHzs81+Vzq8fg3mssgE=
-		</data>
-		<key>Resources/drop_down_dark@3x.png</key>
-		<data>
-		3/FYSyz7bUcYFt7KNpZHkVd96eM=
-		</data>
-		<key>Resources/drop_down_light.png</key>
-		<data>
-		O6qoVOgR5i6qURR2u2xzXyzwUk0=
-		</data>
-		<key>Resources/drop_down_light@2x.png</key>
-		<data>
-		9kOK0rv0jREs+n80G0tHCjE8E4A=
-		</data>
-		<key>Resources/drop_down_light@3x.png</key>
-		<data>
-		N7DZz8WoviFKj8+AfjY2ygAOtqk=
+		3nMhSYA3Gp8n828PFTuqnmWptW4=
 		</data>
 		<key>Resources/el.lproj/NewBugViewController.strings</key>
 		<dict>
@@ -1180,103 +1156,37 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>Resources/done.png</key>
+		<key>Resources/done.tiff</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8TfULlkMVMr3ZTvGMcu2gQKAYxw=
+			bN4jF1FoVNqsoetaBPXX74SSdqc=
 			</data>
 			<key>hash2</key>
 			<data>
-			YPdBNPmMZJOjTiKHODvM1mtDL78xDgjeEYfSPHFI4vE=
+			VLM9je3D4i9kuVMx6NrGIVs8yjG+sFQi+1o+XdxLfQ8=
 			</data>
 		</dict>
-		<key>Resources/done@2x.png</key>
+		<key>Resources/drop_down_dark.tiff</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			IBWDHDHv2yPmqSVuMaFv5ek90Kg=
+			xulybq9jmJmWHjCVbp7qk+/tVDQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			qrWkRowO0GnJfADWQ/NqwYlNO7nl0qaPn1sEu95A43U=
+			W2tnoe5O7Wzsv1nZyXOR247rPkOjvmnmtQj3ad8LjNQ=
 			</data>
 		</dict>
-		<key>Resources/done@3x.png</key>
+		<key>Resources/drop_down_light.tiff</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			XXBCVJEG4kZeyt2eW6+8OZ44Jf4=
+			3nMhSYA3Gp8n828PFTuqnmWptW4=
 			</data>
 			<key>hash2</key>
 			<data>
-			fDFdfh/hPSyUmdnqYhPis5+Jrs+WIVcpiIyBPH1Ed+M=
-			</data>
-		</dict>
-		<key>Resources/drop_down_dark.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			a3j0WP6w75zvNslw9ZEO1FF0IvY=
-			</data>
-			<key>hash2</key>
-			<data>
-			eLGdEAQSD9eJktasaV8CwdHfrIQ0QgVBcFghoNC03k4=
-			</data>
-		</dict>
-		<key>Resources/drop_down_dark@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			DmBTvANDOHzs81+Vzq8fg3mssgE=
-			</data>
-			<key>hash2</key>
-			<data>
-			1/4wE4NQaJubNOMMGwQz05g05G98MxoXWjsuFlt+wFo=
-			</data>
-		</dict>
-		<key>Resources/drop_down_dark@3x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			3/FYSyz7bUcYFt7KNpZHkVd96eM=
-			</data>
-			<key>hash2</key>
-			<data>
-			g4KaOWnlpy1jCJKrpXfwZwsziKz/7ejXsZ86Jj1qlp8=
-			</data>
-		</dict>
-		<key>Resources/drop_down_light.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			O6qoVOgR5i6qURR2u2xzXyzwUk0=
-			</data>
-			<key>hash2</key>
-			<data>
-			lc9OHMrUNbzFjCzDLBCx9DL1EJ51kioNyWfoM6zjO9k=
-			</data>
-		</dict>
-		<key>Resources/drop_down_light@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			9kOK0rv0jREs+n80G0tHCjE8E4A=
-			</data>
-			<key>hash2</key>
-			<data>
-			AccaoRYR4TZrHxHUY2hsogvuK8Em+7QiaY5/GmQcCJU=
-			</data>
-		</dict>
-		<key>Resources/drop_down_light@3x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			N7DZz8WoviFKj8+AfjY2ygAOtqk=
-			</data>
-			<key>hash2</key>
-			<data>
-			jgPHQi33rPKdtOD4V8bM688BuB9Jp/rKWZYJkGxNv7s=
+			Gi9aLGA0mU/xFOjZXN4YT36oyVbYCJ0vPaxiKmtu/mI=
 			</data>
 		</dict>
 		<key>Resources/el.lproj/NewBugViewController.strings</key>

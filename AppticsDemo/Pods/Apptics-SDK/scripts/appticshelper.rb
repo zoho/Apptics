@@ -33,11 +33,11 @@ class AppticsModerator
 #    return generated_group
 #  end
   
-  def self.main(projectName, selectedTargetName, targetgroup, projectRootDir, lang, prefix)
+  def self.main(projectName, selectedTargetName, targetgroup, projectRootDir, lang, prefix, metafilename)
     $prefix=prefix
     $fileName=$prefix+$fileName
     $apiClassName=$prefix+$apiClassName
-    data_hash = JSON.parse(File.read('/tmp/AppticsMeta.json'))
+    data_hash = JSON.parse(File.read("/tmp/#{metafilename}"))
     
     if data_hash == nil || data_hash["result"] != "success"
       puts "Response : #{data_hash}"

@@ -42,6 +42,7 @@ extension ListViewController {
             self.navigationController?.pushViewController(nonFatalListController, animated: true)
             break
         case .Feedback:
+            FeedbackKit.setFromEmailAddress("ssaravanan@zohocorp.com")
             FeedbackKit.showFeedback()
             break
         case .Appupdate:

@@ -10,7 +10,7 @@ DIR="$(command dirname -- "${0}")"
 source "${DIR}/sdk_info"
 
 ZA_INFOPLIST_FILE="apptics-config.plist"
-ZA_META_FILE_NAME="Apptics.json"
+ZA_META_FILE_NAME="$(uuidgen)-apptics.json"
 projectname="."
 projectfilepath=""
 PREFIX="AP"

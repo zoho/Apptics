@@ -16,4 +16,4 @@
 #import <AppticsRateUs/AppticsRateUs.h>
 #import <AppticsRemoteConfig/AppticsRemoteConfig.h>
 //#import <AppticsCrossPromotion/AppticsCrossPromotion-Swift.h>
-
+#import "Test.h"

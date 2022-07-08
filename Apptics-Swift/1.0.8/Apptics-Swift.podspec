@@ -60,6 +60,8 @@ DESC
   spec.subspec 'Analytics' do |co|
       co.source_files        = 'SwiftFiles/*.swift'
   end
-  
+  spec.subspec 'Extension' do |ex|
+      ex.source_files        = 'SwiftFiles/AppExtension/*.swift'
+  end
 end
 

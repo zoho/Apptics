@@ -3,16 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0D954A294D6895FB68A37096 /* Pods_AppticsDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCA60C7E820111E8F5B3588C /* Pods_AppticsDemoTests.framework */; };
-		A22DE1FD2762212200FF7A21 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A22DE1FC2762212200FF7A21 /* WidgetKit.framework */; };
-		A22DE1FF2762212200FF7A21 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A22DE1FE2762212200FF7A21 /* SwiftUI.framework */; };
-		A22DE2022762212200FF7A21 /* AppticsWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22DE2012762212200FF7A21 /* AppticsWidget.swift */; };
-		A22DE2042762212700FF7A21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A22DE2032762212700FF7A21 /* Assets.xcassets */; };
-		A22DE2082762212700FF7A21 /* AppticsWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A22DE1FB2762212200FF7A21 /* AppticsWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6894E5987E4C8CF92EF292FD /* Pods_AppticsDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 748DB7009A08012124EA8438 /* Pods_AppticsDemoTests.framework */; };
+		8F28D69F9E2D0BC5D813A384 /* Pods_AppticsDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A19173F2CF70FEF0D414002 /* Pods_AppticsDemo.framework */; };
 		A25BD35E273B454B00FA196D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25BD35D273B454B00FA196D /* AppDelegate.swift */; };
 		A25BD360273B454B00FA196D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25BD35F273B454B00FA196D /* SceneDelegate.swift */; };
 		A25BD365273B454B00FA196D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A25BD363273B454B00FA196D /* Main.storyboard */; };
@@ -43,20 +39,12 @@
 		A27C287E27997F3200EA16CF /* APIListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27C287B27997F3200EA16CF /* APIListViewController.swift */; };
 		A27C287F27997F3200EA16CF /* APIListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27C287C27997F3200EA16CF /* APIListCell.swift */; };
 		A27C288027997F3200EA16CF /* APITableList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27C287D27997F3200EA16CF /* APITableList.swift */; };
+		A2E4F5EF28769CFF0004F703 /* Mixpanel in Frameworks */ = {isa = PBXBuildFile; productRef = A2E4F5EE28769CFF0004F703 /* Mixpanel */; };
 		ADB94474DA08D225B0BAAB45 /* APAppticsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF315A3ADC5FF9E536810E9 /* APAppticsExtension.swift */; };
-		B0E9374D6A69871BEC6A3D5B /* Pods_AppticsDemo_AppticsDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ED7E8ED79B2C791ADAC2BDA /* Pods_AppticsDemo_AppticsDemoUITests.framework */; };
-		CB43E57030670C3E13D153FD /* Pods_AppticsWidgetExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17901E28430F03519790DE53 /* Pods_AppticsWidgetExtension.framework */; };
-		F4F16317219F9843402FAF99 /* Pods_AppticsDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4ED685BEAC6294253F32DA /* Pods_AppticsDemo.framework */; };
+		AFA1037ECFFFCDB7CBA1FF7F /* Pods_AppticsDemo_AppticsDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B32C2122E97E988D24AE4D7 /* Pods_AppticsDemo_AppticsDemoUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A22DE2062762212700FF7A21 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A25BD352273B454B00FA196D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A22DE1FA2762212200FF7A21;
-			remoteInfo = AppticsWidgetExtension;
-		};
 		A25BD374273B454E00FA196D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A25BD352273B454B00FA196D /* Project object */;
@@ -80,7 +68,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				A22DE2082762212700FF7A21 /* AppticsWidgetExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -88,21 +75,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0ED7E8ED79B2C791ADAC2BDA /* Pods_AppticsDemo_AppticsDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppticsDemo_AppticsDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		11052ACC7D0EE1DC2AF6B451 /* Pods-AppticsDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppticsDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-AppticsDemoTests/Pods-AppticsDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
-		17901E28430F03519790DE53 /* Pods_AppticsWidgetExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppticsWidgetExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		24425EB9EFE5EEEED6216358 /* Pods-AppticsWidgetExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppticsWidgetExtension.release.xcconfig"; path = "Target Support Files/Pods-AppticsWidgetExtension/Pods-AppticsWidgetExtension.release.xcconfig"; sourceTree = "<group>"; };
-		69BA504D849FE8DC66D0FA7C /* Pods-AppticsDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppticsDemo.debug.xcconfig"; path = "Target Support Files/Pods-AppticsDemo/Pods-AppticsDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		6E4ED685BEAC6294253F32DA /* Pods_AppticsDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppticsDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6F197E24D3F9D8823A3305A7 /* Pods-AppticsDemo-AppticsDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppticsDemo-AppticsDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-AppticsDemo-AppticsDemoUITests/Pods-AppticsDemo-AppticsDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
-		A20283BA2785869B001EE8CB /* APM.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = APM.framework; sourceTree = "<group>"; };
-		A22DE1FB2762212200FF7A21 /* AppticsWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AppticsWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		152A2DA677B820F60600A646 /* Pods-AppticsDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppticsDemo.debug.xcconfig"; path = "Target Support Files/Pods-AppticsDemo/Pods-AppticsDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		19106CF92B41E4FE5C432204 /* APAppticsExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = APAppticsExtension.m; sourceTree = "<group>"; };
+		3B32C2122E97E988D24AE4D7 /* Pods_AppticsDemo_AppticsDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppticsDemo_AppticsDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		643007DC851A2ED059E5AE14 /* Pods-AppticsDemo-AppticsDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppticsDemo-AppticsDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-AppticsDemo-AppticsDemoUITests/Pods-AppticsDemo-AppticsDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6A19173F2CF70FEF0D414002 /* Pods_AppticsDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppticsDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		748DB7009A08012124EA8438 /* Pods_AppticsDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppticsDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7643966BCD4823677B03A20F /* ZAAppticsExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZAAppticsExtension.m; sourceTree = "<group>"; };
+		7F8C4291B0E170B5AE54AFB7 /* Pods-AppticsDemo-AppticsDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppticsDemo-AppticsDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-AppticsDemo-AppticsDemoUITests/Pods-AppticsDemo-AppticsDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8F1BD77762BC1FAC61F8947E /* APAppticsExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = APAppticsExtension.h; sourceTree = "<group>"; };
 		A22DE1FC2762212200FF7A21 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		A22DE1FE2762212200FF7A21 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
-		A22DE2012762212200FF7A21 /* AppticsWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppticsWidget.swift; sourceTree = "<group>"; };
-		A22DE2032762212700FF7A21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A22DE2052762212700FF7A21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A22DE2092762212700FF7A21 /* AppticsWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppticsWidgetExtension.entitlements; sourceTree = "<group>"; };
 		A23C4DCC275DD56F0020D210 /* AppticsDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppticsDemo.entitlements; sourceTree = "<group>"; };
 		A25BD35A273B454B00FA196D /* AppticsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppticsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A25BD35D273B454B00FA196D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -142,30 +125,20 @@
 		A27C287B27997F3200EA16CF /* APIListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIListViewController.swift; sourceTree = "<group>"; };
 		A27C287C27997F3200EA16CF /* APIListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIListCell.swift; sourceTree = "<group>"; };
 		A27C287D27997F3200EA16CF /* APITableList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APITableList.swift; sourceTree = "<group>"; };
-		A5A1CAC6D68FF7EFE4A597AD /* Pods-AppticsDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppticsDemo.release.xcconfig"; path = "Target Support Files/Pods-AppticsDemo/Pods-AppticsDemo.release.xcconfig"; sourceTree = "<group>"; };
-		BCA60C7E820111E8F5B3588C /* Pods_AppticsDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppticsDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E39C5A512D07B9AC694F661C /* Pods-AppticsWidgetExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppticsWidgetExtension.debug.xcconfig"; path = "Target Support Files/Pods-AppticsWidgetExtension/Pods-AppticsWidgetExtension.debug.xcconfig"; sourceTree = "<group>"; };
-		EB49B8E01CEEC36DD860E79E /* Pods-AppticsDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppticsDemoTests.release.xcconfig"; path = "Target Support Files/Pods-AppticsDemoTests/Pods-AppticsDemoTests.release.xcconfig"; sourceTree = "<group>"; };
-		FAB847563798975830925FE5 /* Pods-AppticsDemo-AppticsDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppticsDemo-AppticsDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-AppticsDemo-AppticsDemoUITests/Pods-AppticsDemo-AppticsDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C7B454C755A29FC86C162089 /* Pods-AppticsDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppticsDemoTests.release.xcconfig"; path = "Target Support Files/Pods-AppticsDemoTests/Pods-AppticsDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		C985D8F71575C6EE32B3B7A2 /* Pods-AppticsDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppticsDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-AppticsDemoTests/Pods-AppticsDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D0BB431C9BDAE472CFB0138B /* Pods-AppticsDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppticsDemo.release.xcconfig"; path = "Target Support Files/Pods-AppticsDemo/Pods-AppticsDemo.release.xcconfig"; sourceTree = "<group>"; };
+		F662234015330891C1A6893E /* ZAAppticsExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZAAppticsExtension.h; sourceTree = "<group>"; };
 		FEF315A3ADC5FF9E536810E9 /* APAppticsExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = APAppticsExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A22DE1F82762212200FF7A21 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A22DE1FF2762212200FF7A21 /* SwiftUI.framework in Frameworks */,
-				A22DE1FD2762212200FF7A21 /* WidgetKit.framework in Frameworks */,
-				CB43E57030670C3E13D153FD /* Pods_AppticsWidgetExtension.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A25BD357273B454B00FA196D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4F16317219F9843402FAF99 /* Pods_AppticsDemo.framework in Frameworks */,
+				A2E4F5EF28769CFF0004F703 /* Mixpanel in Frameworks */,
+				8F28D69F9E2D0BC5D813A384 /* Pods_AppticsDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,7 +146,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D954A294D6895FB68A37096 /* Pods_AppticsDemoTests.framework in Frameworks */,
+				6894E5987E4C8CF92EF292FD /* Pods_AppticsDemoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,7 +154,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0E9374D6A69871BEC6A3D5B /* Pods_AppticsDemo_AppticsDemoUITests.framework in Frameworks */,
+				AFA1037ECFFFCDB7CBA1FF7F /* Pods_AppticsDemo_AppticsDemoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,39 +164,37 @@
 		33783F8BDFD68C894C57D661 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				69BA504D849FE8DC66D0FA7C /* Pods-AppticsDemo.debug.xcconfig */,
-				A5A1CAC6D68FF7EFE4A597AD /* Pods-AppticsDemo.release.xcconfig */,
-				FAB847563798975830925FE5 /* Pods-AppticsDemo-AppticsDemoUITests.debug.xcconfig */,
-				6F197E24D3F9D8823A3305A7 /* Pods-AppticsDemo-AppticsDemoUITests.release.xcconfig */,
-				11052ACC7D0EE1DC2AF6B451 /* Pods-AppticsDemoTests.debug.xcconfig */,
-				EB49B8E01CEEC36DD860E79E /* Pods-AppticsDemoTests.release.xcconfig */,
-				E39C5A512D07B9AC694F661C /* Pods-AppticsWidgetExtension.debug.xcconfig */,
-				24425EB9EFE5EEEED6216358 /* Pods-AppticsWidgetExtension.release.xcconfig */,
+				152A2DA677B820F60600A646 /* Pods-AppticsDemo.debug.xcconfig */,
+				D0BB431C9BDAE472CFB0138B /* Pods-AppticsDemo.release.xcconfig */,
+				643007DC851A2ED059E5AE14 /* Pods-AppticsDemo-AppticsDemoUITests.debug.xcconfig */,
+				7F8C4291B0E170B5AE54AFB7 /* Pods-AppticsDemo-AppticsDemoUITests.release.xcconfig */,
+				C985D8F71575C6EE32B3B7A2 /* Pods-AppticsDemoTests.debug.xcconfig */,
+				C7B454C755A29FC86C162089 /* Pods-AppticsDemoTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		A22DE2002762212200FF7A21 /* AppticsWidget */ = {
+		5A937B464D2F21194FE1D49A /* Apptics */ = {
 			isa = PBXGroup;
 			children = (
-				A22DE2012762212200FF7A21 /* AppticsWidget.swift */,
-				A22DE2032762212700FF7A21 /* Assets.xcassets */,
-				A22DE2052762212700FF7A21 /* Info.plist */,
+				8F1BD77762BC1FAC61F8947E /* APAppticsExtension.h */,
+				19106CF92B41E4FE5C432204 /* APAppticsExtension.m */,
+				F662234015330891C1A6893E /* ZAAppticsExtension.h */,
+				7643966BCD4823677B03A20F /* ZAAppticsExtension.m */,
 			);
-			path = AppticsWidget;
+			name = Apptics;
 			sourceTree = "<group>";
 		};
 		A25BD351273B454B00FA196D = {
 			isa = PBXGroup;
 			children = (
-				A22DE2092762212700FF7A21 /* AppticsWidgetExtension.entitlements */,
 				A25BD35C273B454B00FA196D /* AppticsDemo */,
 				A25BD376273B454E00FA196D /* AppticsDemoTests */,
 				A25BD381273B454E00FA196D /* AppticsDemoUITests */,
-				A22DE2002762212200FF7A21 /* AppticsWidget */,
 				A25BD35B273B454B00FA196D /* Products */,
 				33783F8BDFD68C894C57D661 /* Pods */,
 				D87370360099F87C13241871 /* Frameworks */,
+				5A937B464D2F21194FE1D49A /* Apptics */,
 			);
 			sourceTree = "<group>";
 		};
@@ -233,7 +204,6 @@
 				A25BD35A273B454B00FA196D /* AppticsDemo.app */,
 				A25BD373273B454E00FA196D /* AppticsDemoTests.xctest */,
 				A25BD37E273B454E00FA196D /* AppticsDemoUITests.xctest */,
-				A22DE1FB2762212200FF7A21 /* AppticsWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -355,13 +325,11 @@
 		D87370360099F87C13241871 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A20283BA2785869B001EE8CB /* APM.framework */,
 				A22DE1FC2762212200FF7A21 /* WidgetKit.framework */,
 				A22DE1FE2762212200FF7A21 /* SwiftUI.framework */,
-				6E4ED685BEAC6294253F32DA /* Pods_AppticsDemo.framework */,
-				0ED7E8ED79B2C791ADAC2BDA /* Pods_AppticsDemo_AppticsDemoUITests.framework */,
-				BCA60C7E820111E8F5B3588C /* Pods_AppticsDemoTests.framework */,
-				17901E28430F03519790DE53 /* Pods_AppticsWidgetExtension.framework */,
+				6A19173F2CF70FEF0D414002 /* Pods_AppticsDemo.framework */,
+				3B32C2122E97E988D24AE4D7 /* Pods_AppticsDemo_AppticsDemoUITests.framework */,
+				748DB7009A08012124EA8438 /* Pods_AppticsDemoTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -381,43 +349,27 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		A22DE1FA2762212200FF7A21 /* AppticsWidgetExtension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A22DE20D2762212700FF7A21 /* Build configuration list for PBXNativeTarget "AppticsWidgetExtension" */;
-			buildPhases = (
-				A46F2DE9BB9FE2F763EC9F90 /* [CP] Check Pods Manifest.lock */,
-				A22DE1F72762212200FF7A21 /* Sources */,
-				A22DE1F82762212200FF7A21 /* Frameworks */,
-				A22DE1F92762212200FF7A21 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = AppticsWidgetExtension;
-			productName = AppticsWidgetExtension;
-			productReference = A22DE1FB2762212200FF7A21 /* AppticsWidgetExtension.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
 		A25BD359273B454B00FA196D /* AppticsDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A25BD387273B454E00FA196D /* Build configuration list for PBXNativeTarget "AppticsDemo" */;
 			buildPhases = (
-				45C918A8A36AE36018ACECF0 /* [CP] Check Pods Manifest.lock */,
-				AEB5A1828C548AD1C3AD5E1F /* [CP-User] Apptics pre build */,
+				6259ACD4ADBB218246EA357E /* [CP] Check Pods Manifest.lock */,
+				F1DF4DC4BB5477AAF0CC0555 /* [CP-User] Apptics pre build */,
 				A25BD356273B454B00FA196D /* Sources */,
 				A25BD357273B454B00FA196D /* Frameworks */,
 				A25BD358273B454B00FA196D /* Resources */,
 				6846F81F155791A618F7B4B7 /* Headers */,
 				A22DE20A2762212700FF7A21 /* Embed App Extensions */,
-				12E6AE862894F5DF2E16C97C /* [CP] Embed Pods Frameworks */,
+				C1D95C0E5EF5F2281DE36C95 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A22DE2072762212700FF7A21 /* PBXTargetDependency */,
 			);
 			name = AppticsDemo;
+			packageProductDependencies = (
+				A2E4F5EE28769CFF0004F703 /* Mixpanel */,
+			);
 			productName = AppticsDemo;
 			productReference = A25BD35A273B454B00FA196D /* AppticsDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -426,7 +378,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A25BD38A273B454E00FA196D /* Build configuration list for PBXNativeTarget "AppticsDemoTests" */;
 			buildPhases = (
-				E734ADC921098ACFEE1A061E /* [CP] Check Pods Manifest.lock */,
+				D0875230A1430520FD5A5EB4 /* [CP] Check Pods Manifest.lock */,
 				A25BD36F273B454E00FA196D /* Sources */,
 				A25BD370273B454E00FA196D /* Frameworks */,
 				A25BD371273B454E00FA196D /* Resources */,
@@ -445,11 +397,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A25BD38D273B454E00FA196D /* Build configuration list for PBXNativeTarget "AppticsDemoUITests" */;
 			buildPhases = (
-				53593450E98C588E6980033D /* [CP] Check Pods Manifest.lock */,
+				9EDA8471181413A51B8C039C /* [CP] Check Pods Manifest.lock */,
 				A25BD37A273B454E00FA196D /* Sources */,
 				A25BD37B273B454E00FA196D /* Frameworks */,
 				A25BD37C273B454E00FA196D /* Resources */,
-				3B35D59B9826DF3AA0DAB958 /* [CP] Embed Pods Frameworks */,
+				BC9CE0CCCE48AEBEEC01E0D9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -467,12 +419,9 @@
 		A25BD352273B454B00FA196D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1250;
+				LastSwiftUpdateCheck = 1330;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
-					A22DE1FA2762212200FF7A21 = {
-						CreatedOnToolsVersion = 12.5;
-					};
 					A25BD359273B454B00FA196D = {
 						CreatedOnToolsVersion = 12.5;
 						LastSwiftMigration = 1250;
@@ -496,6 +445,9 @@
 				Base,
 			);
 			mainGroup = A25BD351273B454B00FA196D;
+			packageReferences = (
+				A2E4F5ED28769CFF0004F703 /* XCRemoteSwiftPackageReference "mixpanel-swift" */,
+			);
 			productRefGroup = A25BD35B273B454B00FA196D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -503,20 +455,11 @@
 				A25BD359273B454B00FA196D /* AppticsDemo */,
 				A25BD372273B454E00FA196D /* AppticsDemoTests */,
 				A25BD37D273B454E00FA196D /* AppticsDemoUITests */,
-				A22DE1FA2762212200FF7A21 /* AppticsWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A22DE1F92762212200FF7A21 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A22DE2042762212700FF7A21 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A25BD358273B454B00FA196D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -545,41 +488,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		12E6AE862894F5DF2E16C97C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AppticsDemo/Pods-AppticsDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AppticsDemo/Pods-AppticsDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppticsDemo/Pods-AppticsDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3B35D59B9826DF3AA0DAB958 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AppticsDemo-AppticsDemoUITests/Pods-AppticsDemo-AppticsDemoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AppticsDemo-AppticsDemoUITests/Pods-AppticsDemo-AppticsDemoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppticsDemo-AppticsDemoUITests/Pods-AppticsDemo-AppticsDemoUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		45C918A8A36AE36018ACECF0 /* [CP] Check Pods Manifest.lock */ = {
+		6259ACD4ADBB218246EA357E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -601,7 +510,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		53593450E98C588E6980033D /* [CP] Check Pods Manifest.lock */ = {
+		9EDA8471181413A51B8C039C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -623,39 +532,41 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A46F2DE9BB9FE2F763EC9F90 /* [CP] Check Pods Manifest.lock */ = {
+		BC9CE0CCCE48AEBEEC01E0D9 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppticsDemo-AppticsDemoUITests/Pods-AppticsDemo-AppticsDemoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AppticsWidgetExtension-checkManifestLockResult.txt",
+				"${PODS_ROOT}/Target Support Files/Pods-AppticsDemo-AppticsDemoUITests/Pods-AppticsDemo-AppticsDemoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppticsDemo-AppticsDemoUITests/Pods-AppticsDemo-AppticsDemoUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AEB5A1828C548AD1C3AD5E1F /* [CP-User] Apptics pre build */ = {
+		C1D95C0E5EF5F2281DE36C95 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			name = "[CP-User] Apptics pre build";
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppticsDemo/Pods-AppticsDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppticsDemo/Pods-AppticsDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "sh \"./Pods/Apptics-SDK/scripts/run\" --upload-symbols-for-configurations=\"Release, AppStore\"";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppticsDemo/Pods-AppticsDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
-		E734ADC921098ACFEE1A061E /* [CP] Check Pods Manifest.lock */ = {
+		D0875230A1430520FD5A5EB4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -677,17 +588,19 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F1DF4DC4BB5477AAF0CC0555 /* [CP-User] Apptics pre build */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "[CP-User] Apptics pre build";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sh \"./Pods/Apptics-SDK/scripts/run\" --upload-symbols-for-configurations=\"Release, AppStore\"";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A22DE1F72762212200FF7A21 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A22DE2022762212200FF7A21 /* AppticsWidget.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A25BD356273B454B00FA196D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -737,11 +650,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A22DE2072762212700FF7A21 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A22DE1FA2762212200FF7A21 /* AppticsWidgetExtension */;
-			targetProxy = A22DE2062762212700FF7A21 /* PBXContainerItemProxy */;
-		};
 		A25BD375273B454E00FA196D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A25BD359273B454B00FA196D /* AppticsDemo */;
@@ -774,54 +682,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		A22DE20B2762212700FF7A21 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E39C5A512D07B9AC694F661C /* Pods-AppticsWidgetExtension.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_ENTITLEMENTS = AppticsWidgetExtension.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z9R9W2NT4D;
-				INFOPLIST_FILE = AppticsWidget/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.apptics.emo.ios.AppticsWidget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		A22DE20C2762212700FF7A21 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 24425EB9EFE5EEEED6216358 /* Pods-AppticsWidgetExtension.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_ENTITLEMENTS = AppticsWidgetExtension.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z9R9W2NT4D;
-				INFOPLIST_FILE = AppticsWidget/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.apptics.emo.ios.AppticsWidget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 		A25BD385273B454E00FA196D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -859,6 +719,8 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				EXCLUDED_ARCHS = arm64;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -920,6 +782,8 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXCLUDED_ARCHS = arm64;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -940,7 +804,7 @@
 		};
 		A25BD388273B454E00FA196D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 69BA504D849FE8DC66D0FA7C /* Pods-AppticsDemo.debug.xcconfig */;
+			baseConfigurationReference = 152A2DA677B820F60600A646 /* Pods-AppticsDemo.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -951,6 +815,7 @@
 				CURRENT_PROJECT_VERSION = 1.1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = Z9R9W2NT4D;
+				ENABLE_HARDENED_RUNTIME = YES;
 				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -962,42 +827,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.2;
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-framework",
-					"\"Apptics\"",
-					"-framework",
-					"\"AppticsApiTracker\"",
-					"-framework",
-					"\"AppticsCrashKit\"",
-					"-framework",
-					"\"AppticsCrossPromotion\"",
-					"-framework",
-					"\"AppticsEventTracker\"",
-					"-framework",
-					"\"AppticsFeedbackKit\"",
-					"-framework",
-					"\"AppticsInAppUpdate\"",
-					"-framework",
-					"\"AppticsRateUs\"",
-					"-framework",
-					"\"AppticsRemoteConfig\"",
-					"-framework",
-					"\"AppticsScreenTracker\"",
-					"-framework",
-					"\"Apptics_SDK\"",
-					"-framework",
-					"\"Apptics_Swift\"",
-					"-framework",
-					"\"JWT\"",
-					"-framework",
-					"\"KSCrash\"",
-					"-framework",
-					"\"StoreKit\"",
-					"-framework",
-					"\"UIKit\"",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.apptics.emo.ios;
+				OTHER_CODE_SIGN_FLAGS = "--deep";
+				PRODUCT_BUNDLE_IDENTIFIER = com.apptics.demo.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "AppticsDemo/AppticsDemo-Bridging-Header.h";
@@ -1009,7 +840,7 @@
 		};
 		A25BD389273B454E00FA196D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A5A1CAC6D68FF7EFE4A597AD /* Pods-AppticsDemo.release.xcconfig */;
+			baseConfigurationReference = D0BB431C9BDAE472CFB0138B /* Pods-AppticsDemo.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1019,6 +850,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.1;
 				DEVELOPMENT_TEAM = Z9R9W2NT4D;
+				ENABLE_HARDENED_RUNTIME = YES;
 				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1030,42 +862,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.2;
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-framework",
-					"\"Apptics\"",
-					"-framework",
-					"\"AppticsApiTracker\"",
-					"-framework",
-					"\"AppticsCrashKit\"",
-					"-framework",
-					"\"AppticsCrossPromotion\"",
-					"-framework",
-					"\"AppticsEventTracker\"",
-					"-framework",
-					"\"AppticsFeedbackKit\"",
-					"-framework",
-					"\"AppticsInAppUpdate\"",
-					"-framework",
-					"\"AppticsRateUs\"",
-					"-framework",
-					"\"AppticsRemoteConfig\"",
-					"-framework",
-					"\"AppticsScreenTracker\"",
-					"-framework",
-					"\"Apptics_SDK\"",
-					"-framework",
-					"\"Apptics_Swift\"",
-					"-framework",
-					"\"JWT\"",
-					"-framework",
-					"\"KSCrash\"",
-					"-framework",
-					"\"StoreKit\"",
-					"-framework",
-					"\"UIKit\"",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.apptics.emo.ios;
+				OTHER_CODE_SIGN_FLAGS = "--deep";
+				PRODUCT_BUNDLE_IDENTIFIER = com.apptics.demo.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "AppticsDemo/AppticsDemo-Bridging-Header.h";
@@ -1076,7 +874,7 @@
 		};
 		A25BD38B273B454E00FA196D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 11052ACC7D0EE1DC2AF6B451 /* Pods-AppticsDemoTests.debug.xcconfig */;
+			baseConfigurationReference = C985D8F71575C6EE32B3B7A2 /* Pods-AppticsDemoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1098,7 +896,7 @@
 		};
 		A25BD38C273B454E00FA196D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EB49B8E01CEEC36DD860E79E /* Pods-AppticsDemoTests.release.xcconfig */;
+			baseConfigurationReference = C7B454C755A29FC86C162089 /* Pods-AppticsDemoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1120,7 +918,7 @@
 		};
 		A25BD38E273B454E00FA196D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FAB847563798975830925FE5 /* Pods-AppticsDemo-AppticsDemoUITests.debug.xcconfig */;
+			baseConfigurationReference = 643007DC851A2ED059E5AE14 /* Pods-AppticsDemo-AppticsDemoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1140,7 +938,7 @@
 		};
 		A25BD38F273B454E00FA196D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6F197E24D3F9D8823A3305A7 /* Pods-AppticsDemo-AppticsDemoUITests.release.xcconfig */;
+			baseConfigurationReference = 7F8C4291B0E170B5AE54AFB7 /* Pods-AppticsDemo-AppticsDemoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1161,15 +959,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A22DE20D2762212700FF7A21 /* Build configuration list for PBXNativeTarget "AppticsWidgetExtension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A22DE20B2762212700FF7A21 /* Debug */,
-				A22DE20C2762212700FF7A21 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		A25BD355273B454B00FA196D /* Build configuration list for PBXProject "AppticsDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1207,6 +996,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A2E4F5ED28769CFF0004F703 /* XCRemoteSwiftPackageReference "mixpanel-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mixpanel/mixpanel-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A2E4F5EE28769CFF0004F703 /* Mixpanel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A2E4F5ED28769CFF0004F703 /* XCRemoteSwiftPackageReference "mixpanel-swift" */;
+			productName = Mixpanel;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		A25BD366273B454B00FA196D /* AppticsDemo.xcdatamodeld */ = {

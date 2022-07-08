@@ -23,7 +23,7 @@
     }
     @catch (NSException *exception) {
         NSLog(@"Caught an exception");
-        APTrackException(exception);
+//        APTrackException(exception);
     }
     @finally {
         NSLog(@"Cleaning up");
@@ -50,7 +50,7 @@
     // Check if it worked.
     if (content == nil) {
         // Some kind of error occurred.
-        APTrackError(error);
+//        APTrackError(error);
     }
 }
 

@@ -1,6 +1,0 @@
-framework module Apptics {
-  umbrella header "Apptics.h"
-
-  export *
-  module * { export * }
-}
