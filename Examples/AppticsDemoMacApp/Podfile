@@ -1,0 +1,24 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+apptics_version = '1.0.8' #debug version
+source_url = 'https://github.com/zoho/Apptics.git' #build source url.
+
+target 'AppticsDemoMacApp' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for AppticsDemoMacApp
+## Apptics for Objc
+#pod 'Apptics-SDK', apptics_version , :source => source_url
+#pod 'Apptics', '1.0.5', :source => source_url
+# Apptics for Swift
+pod 'Apptics-Swift', apptics_version , :source => source_url
+# Apptics RemoteConfig
+pod 'AppticsRemoteConfig', apptics_version , :source => source_url
+# Apptics Api Tracker
+pod 'AppticsApiTracker', apptics_version , :source => source_url
+
+  script_phase :name => 'Apptics pre build', :script => 'sh "./Pods/Apptics-SDK/scripts/run" --upload-symbols-for-configurations="Release, AppStore"', :execution_position => :before_compile
+
+end

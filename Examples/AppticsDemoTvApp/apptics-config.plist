@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>DAC214C55CBDB4B525C988B3F3927422B1FC8A83444BAC0ED41DD88E33FD26AD</string>
+	<key>APP_VERSION_META</key>
+	<dict>
+		<key>AAID</key>
+		<string>2140975205500</string>
+		<key>APID</key>
+		<string>2140975205885</string>
+		<key>APPTICS_SDK_ID</key>
+		<string>5398</string>
+		<key>APP_RELEASE_VERSION_ID</key>
+		<string>2140975205888</string>
+		<key>APP_VERSION_ID</key>
+		<string>2140975205890</string>
+		<key>BUNDLE_SHORT_VERSION</key>
+		<string>1.0</string>
+		<key>BUNDLE_VERSION</key>
+		<string>1</string>
+		<key>MAPID</key>
+		<string>2054327588047</string>
+		<key>PLATFORM_ID</key>
+		<string>3</string>
+		<key>RSAKEY</key>
+		<string>MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmrIvYon9Af8B3F9HIxD2vnfJlLnC5w3zvzG7ZxqiKRE7vZ2MZyH/W+WL+DNLUazBpgD8jeRaP7Bhzbfo/GP+O5ifyk2wYasDgKW8Au281t1eT1QRdA+bk52xmIon4qFkPOc8DTTQmGqPh6gL5yCsu563ekejZOQwkYUI98HWWxh9/DLezX3cKzOhnVTaK0+4YyLNJyflPNcbNw/dXUm0EE4X77dlYzvcceoDrdsrvlPeXRwLfNY4VPYagc+WKp5O8pXiDZ4TlYPhAD1nb1b5hFHPbyQqWyaT0Sg5ZgyLh2oo0UgQ+9iASo/Fy6pJ1oKXjyf6qMnjcmGNISQxQP5nxQIDAQAB</string>
+	</dict>
+	<key>BUNDLE_ID</key>
+	<string>com.zoho.apptics.AppticsDemoTvApp</string>
+	<key>SERVER_URL</key>
+	<string>https://apptics.zoho.com</string>
+</dict>
+</plist>

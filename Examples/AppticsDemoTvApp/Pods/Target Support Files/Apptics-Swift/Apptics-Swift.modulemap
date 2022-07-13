@@ -1,0 +1,6 @@
+framework module Apptics_Swift {
+  umbrella header "Apptics-Swift-umbrella.h"
+
+  export *
+  module * { export * }
+}

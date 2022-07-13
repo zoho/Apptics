@@ -1,0 +1,448 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		24EF1BBD286D796800490D90 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24EF1BBC286D796800490D90 /* AppDelegate.m */; };
+		24EF1BC0286D796800490D90 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24EF1BBF286D796800490D90 /* ViewController.m */; };
+		24EF1BC3286D796800490D90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24EF1BC1286D796800490D90 /* Main.storyboard */; };
+		24EF1BC5286D797200490D90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24EF1BC4286D797200490D90 /* Assets.xcassets */; };
+		24EF1BC8286D797200490D90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24EF1BC6286D797200490D90 /* LaunchScreen.storyboard */; };
+		24EF1BCB286D797200490D90 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24EF1BCA286D797200490D90 /* main.m */; };
+		24EF1BDC286D7A5C00490D90 /* apptics-config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24EF1BDB286D7A5C00490D90 /* apptics-config.plist */; };
+		67DE07448E732E834F63E7A0 /* Pods_AppticsDemoTvApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7CFA846268B96AEC9B494E9 /* Pods_AppticsDemoTvApp.framework */; };
+		A2791E86287E8BDE0047A3FF /* APAppticsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2791E84287E8BDC0047A3FF /* APAppticsExtension.swift */; };
+		A2791E87287E8BDE0047A3FF /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2791E85287E8BDE0047A3FF /* NewViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		24EF1BB8286D796800490D90 /* AppticsDemoTvApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppticsDemoTvApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		24EF1BBB286D796800490D90 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		24EF1BBC286D796800490D90 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		24EF1BBE286D796800490D90 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		24EF1BBF286D796800490D90 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		24EF1BC2286D796800490D90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		24EF1BC4286D797200490D90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		24EF1BC7286D797200490D90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		24EF1BC9286D797200490D90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24EF1BCA286D797200490D90 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		24EF1BDB286D7A5C00490D90 /* apptics-config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "apptics-config.plist"; sourceTree = "<group>"; };
+		34B142312336237337D4A63F /* Pods-AppticsDemoTvApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppticsDemoTvApp.debug.xcconfig"; path = "Target Support Files/Pods-AppticsDemoTvApp/Pods-AppticsDemoTvApp.debug.xcconfig"; sourceTree = "<group>"; };
+		7ABAFEE40990DAFF61B1F5A2 /* Pods-AppticsDemoTvApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppticsDemoTvApp.release.xcconfig"; path = "Target Support Files/Pods-AppticsDemoTvApp/Pods-AppticsDemoTvApp.release.xcconfig"; sourceTree = "<group>"; };
+		A2791E83287E8BD80047A3FF /* AppticsDemoTvApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppticsDemoTvApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		A2791E84287E8BDC0047A3FF /* APAppticsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APAppticsExtension.swift; sourceTree = "<group>"; };
+		A2791E85287E8BDE0047A3FF /* NewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
+		E7CFA846268B96AEC9B494E9 /* Pods_AppticsDemoTvApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppticsDemoTvApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		24EF1BB5286D796800490D90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67DE07448E732E834F63E7A0 /* Pods_AppticsDemoTvApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24EF1BAF286D796800490D90 = {
+			isa = PBXGroup;
+			children = (
+				24EF1BDB286D7A5C00490D90 /* apptics-config.plist */,
+				24EF1BBA286D796800490D90 /* AppticsDemoTvApp */,
+				24EF1BB9286D796800490D90 /* Products */,
+				4546F21B248FCFDB0BBD65F8 /* Pods */,
+				7C7571AFE896EB1341CA7DE1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		24EF1BB9286D796800490D90 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24EF1BB8286D796800490D90 /* AppticsDemoTvApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		24EF1BBA286D796800490D90 /* AppticsDemoTvApp */ = {
+			isa = PBXGroup;
+			children = (
+				24EF1BBB286D796800490D90 /* AppDelegate.h */,
+				24EF1BBC286D796800490D90 /* AppDelegate.m */,
+				24EF1BBE286D796800490D90 /* ViewController.h */,
+				24EF1BBF286D796800490D90 /* ViewController.m */,
+				A2791E84287E8BDC0047A3FF /* APAppticsExtension.swift */,
+				A2791E85287E8BDE0047A3FF /* NewViewController.swift */,
+				24EF1BC1286D796800490D90 /* Main.storyboard */,
+				24EF1BC4286D797200490D90 /* Assets.xcassets */,
+				24EF1BC6286D797200490D90 /* LaunchScreen.storyboard */,
+				24EF1BC9286D797200490D90 /* Info.plist */,
+				24EF1BCA286D797200490D90 /* main.m */,
+				A2791E83287E8BD80047A3FF /* AppticsDemoTvApp-Bridging-Header.h */,
+			);
+			path = AppticsDemoTvApp;
+			sourceTree = "<group>";
+		};
+		4546F21B248FCFDB0BBD65F8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				34B142312336237337D4A63F /* Pods-AppticsDemoTvApp.debug.xcconfig */,
+				7ABAFEE40990DAFF61B1F5A2 /* Pods-AppticsDemoTvApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7C7571AFE896EB1341CA7DE1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E7CFA846268B96AEC9B494E9 /* Pods_AppticsDemoTvApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		24EF1BB7286D796800490D90 /* AppticsDemoTvApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24EF1BCE286D797200490D90 /* Build configuration list for PBXNativeTarget "AppticsDemoTvApp" */;
+			buildPhases = (
+				F9B3D51A321995042D684A40 /* [CP] Check Pods Manifest.lock */,
+				75E1C0EEE00DE7136F1BF546 /* [CP-User] Apptics pre build */,
+				24EF1BB4286D796800490D90 /* Sources */,
+				24EF1BB5286D796800490D90 /* Frameworks */,
+				24EF1BB6286D796800490D90 /* Resources */,
+				1D56E03D6DE032D6F70B1B00 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppticsDemoTvApp;
+			productName = AppticsDemoTvApp;
+			productReference = 24EF1BB8286D796800490D90 /* AppticsDemoTvApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		24EF1BB0286D796800490D90 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					24EF1BB7286D796800490D90 = {
+						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1330;
+					};
+				};
+			};
+			buildConfigurationList = 24EF1BB3286D796800490D90 /* Build configuration list for PBXProject "AppticsDemoTvApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 24EF1BAF286D796800490D90;
+			productRefGroup = 24EF1BB9286D796800490D90 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				24EF1BB7286D796800490D90 /* AppticsDemoTvApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		24EF1BB6286D796800490D90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24EF1BC8286D797200490D90 /* LaunchScreen.storyboard in Resources */,
+				24EF1BDC286D7A5C00490D90 /* apptics-config.plist in Resources */,
+				24EF1BC5286D797200490D90 /* Assets.xcassets in Resources */,
+				24EF1BC3286D796800490D90 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1D56E03D6DE032D6F70B1B00 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppticsDemoTvApp/Pods-AppticsDemoTvApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppticsDemoTvApp/Pods-AppticsDemoTvApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppticsDemoTvApp/Pods-AppticsDemoTvApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75E1C0EEE00DE7136F1BF546 /* [CP-User] Apptics pre build */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "[CP-User] Apptics pre build";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sh \"./Pods/Apptics-SDK/scripts/run\" --upload-symbols-for-configurations=\"Release, AppStore\"";
+		};
+		F9B3D51A321995042D684A40 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AppticsDemoTvApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24EF1BB4286D796800490D90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24EF1BC0286D796800490D90 /* ViewController.m in Sources */,
+				A2791E86287E8BDE0047A3FF /* APAppticsExtension.swift in Sources */,
+				A2791E87287E8BDE0047A3FF /* NewViewController.swift in Sources */,
+				24EF1BCB286D797200490D90 /* main.m in Sources */,
+				24EF1BBD286D796800490D90 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		24EF1BC1286D796800490D90 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24EF1BC2286D796800490D90 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		24EF1BC6286D797200490D90 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24EF1BC7286D797200490D90 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		24EF1BCC286D797200490D90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				TVOS_DEPLOYMENT_TARGET = 14.2;
+			};
+			name = Debug;
+		};
+		24EF1BCD286D797200490D90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = appletvos;
+				TVOS_DEPLOYMENT_TARGET = 14.2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		24EF1BCF286D797200490D90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34B142312336237337D4A63F /* Pods-AppticsDemoTvApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G8T3WV9A3U;
+				INFOPLIST_FILE = AppticsDemoTvApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zoho.apptics.AppticsDemoTvApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AppticsDemoTvApp/AppticsDemoTvApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Debug;
+		};
+		24EF1BD0286D797200490D90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7ABAFEE40990DAFF61B1F5A2 /* Pods-AppticsDemoTvApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G8T3WV9A3U;
+				INFOPLIST_FILE = AppticsDemoTvApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zoho.apptics.AppticsDemoTvApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AppticsDemoTvApp/AppticsDemoTvApp-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24EF1BB3286D796800490D90 /* Build configuration list for PBXProject "AppticsDemoTvApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24EF1BCC286D797200490D90 /* Debug */,
+				24EF1BCD286D797200490D90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24EF1BCE286D797200490D90 /* Build configuration list for PBXNativeTarget "AppticsDemoTvApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24EF1BCF286D797200490D90 /* Debug */,
+				24EF1BD0286D797200490D90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 24EF1BB0286D796800490D90 /* Project object */;
+}
