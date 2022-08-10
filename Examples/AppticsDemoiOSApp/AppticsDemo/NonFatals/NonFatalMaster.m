@@ -6,7 +6,7 @@
 //
 
 #import "NonFatalMaster.h"
-#import <Apptics/Apptics.h>
+//#import <Apptics/Apptics.h>
 #import <pthread.h>
 #import <sys/mman.h>
 

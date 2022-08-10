@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1431DCAF0D5C5E64E0D521F5 /* Pods_AppticsDemoWatchApp_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BF884916F9D7D38B04891AD /* Pods_AppticsDemoWatchApp_WatchKit_Extension.framework */; };
 		24EF1BF4286D7D4D00490D90 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24EF1BF3286D7D4D00490D90 /* AppDelegate.m */; };
 		24EF1BF7286D7D4D00490D90 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24EF1BF6286D7D4D00490D90 /* SceneDelegate.m */; };
 		24EF1BFA286D7D4D00490D90 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24EF1BF9286D7D4D00490D90 /* ViewController.m */; };
@@ -25,11 +26,8 @@
 		24EF1C29286D7D5A00490D90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24EF1C28286D7D5A00490D90 /* Assets.xcassets */; };
 		24EF1C54286D7F4F00490D90 /* apptics-config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24EF1C53286D7F4F00490D90 /* apptics-config.plist */; };
 		24EF1CA5286D880000490D90 /* apptics-config-watch.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24EF1C58286D7F5D00490D90 /* apptics-config-watch.plist */; };
-		A2C926C3287E9F9100F1387F /* Apptics in Frameworks */ = {isa = PBXBuildFile; productRef = A2C926C2287E9F9100F1387F /* Apptics */; };
-		A2C926C5287E9F9100F1387F /* AppticsCrashKit in Frameworks */ = {isa = PBXBuildFile; productRef = A2C926C4287E9F9100F1387F /* AppticsCrashKit */; };
-		A2C926C7287E9F9100F1387F /* AppticsEventTracker in Frameworks */ = {isa = PBXBuildFile; productRef = A2C926C6287E9F9100F1387F /* AppticsEventTracker */; };
-		A2C926C9287E9F9100F1387F /* AppticsRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = A2C926C8287E9F9100F1387F /* AppticsRemoteConfig */; };
-		A2C926CB287E9F9100F1387F /* AppticsScreenTracker in Frameworks */ = {isa = PBXBuildFile; productRef = A2C926CA287E9F9100F1387F /* AppticsScreenTracker */; };
+		57A3388CF52CDC649F516C08 /* Pods_AppticsDemoWatchApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5553F2B6A7DD5658D2F53729 /* Pods_AppticsDemoWatchApp.framework */; };
+		E99415A3E6E48F2330ABF6EA /* Pods_AppticsDemoWatchApp_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EFA2898823CE7C67A38A2C1 /* Pods_AppticsDemoWatchApp_WatchKit_App.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +73,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0BF884916F9D7D38B04891AD /* Pods_AppticsDemoWatchApp_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppticsDemoWatchApp_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		24EF1BEF286D7D4D00490D90 /* AppticsDemoWatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppticsDemoWatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24EF1BF2286D7D4D00490D90 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		24EF1BF3286D7D4D00490D90 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -105,6 +104,14 @@
 		24EF1C2B286D7D5A00490D90 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		24EF1C53286D7F4F00490D90 /* apptics-config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "apptics-config.plist"; sourceTree = "<group>"; };
 		24EF1C58286D7F5D00490D90 /* apptics-config-watch.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "apptics-config-watch.plist"; sourceTree = "<group>"; };
+		3A991F160F69E9125D8B2E1F /* Pods-AppticsDemoWatchApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppticsDemoWatchApp.release.xcconfig"; path = "Target Support Files/Pods-AppticsDemoWatchApp/Pods-AppticsDemoWatchApp.release.xcconfig"; sourceTree = "<group>"; };
+		3EFA2898823CE7C67A38A2C1 /* Pods_AppticsDemoWatchApp_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppticsDemoWatchApp_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42E5A96DE958F4E838D2191C /* Pods-AppticsDemoWatchApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppticsDemoWatchApp.debug.xcconfig"; path = "Target Support Files/Pods-AppticsDemoWatchApp/Pods-AppticsDemoWatchApp.debug.xcconfig"; sourceTree = "<group>"; };
+		5553F2B6A7DD5658D2F53729 /* Pods_AppticsDemoWatchApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppticsDemoWatchApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		658CFF461BAF4BA192F187B3 /* Pods-AppticsDemoWatchApp WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppticsDemoWatchApp WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-AppticsDemoWatchApp WatchKit App/Pods-AppticsDemoWatchApp WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		6972F52F947715699810CCF7 /* Pods-AppticsDemoWatchApp WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppticsDemoWatchApp WatchKit App.debug.xcconfig"; path = "Target Support Files/Pods-AppticsDemoWatchApp WatchKit App/Pods-AppticsDemoWatchApp WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		A3AABB78E0D8982B0579847C /* Pods-AppticsDemoWatchApp WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppticsDemoWatchApp WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-AppticsDemoWatchApp WatchKit Extension/Pods-AppticsDemoWatchApp WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		A8DE53A01434E1CDD0018855 /* Pods-AppticsDemoWatchApp WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppticsDemoWatchApp WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-AppticsDemoWatchApp WatchKit Extension/Pods-AppticsDemoWatchApp WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57A3388CF52CDC649F516C08 /* Pods_AppticsDemoWatchApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,11 +127,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2C926CB287E9F9100F1387F /* AppticsScreenTracker in Frameworks */,
-				A2C926C5287E9F9100F1387F /* AppticsCrashKit in Frameworks */,
-				A2C926C7287E9F9100F1387F /* AppticsEventTracker in Frameworks */,
-				A2C926C9287E9F9100F1387F /* AppticsRemoteConfig in Frameworks */,
-				A2C926C3287E9F9100F1387F /* Apptics in Frameworks */,
+				1431DCAF0D5C5E64E0D521F5 /* Pods_AppticsDemoWatchApp_WatchKit_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +135,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E99415A3E6E48F2330ABF6EA /* Pods_AppticsDemoWatchApp_WatchKit_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +152,7 @@
 				24EF1C1B286D7D5900490D90 /* AppticsDemoWatchApp WatchKit Extension */,
 				24EF1BF0286D7D4D00490D90 /* Products */,
 				BB557CAE8FCB03ADEEBABA3A /* Pods */,
+				98083C63EFEF5479613C7ADA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -206,9 +212,25 @@
 			path = "AppticsDemoWatchApp WatchKit Extension";
 			sourceTree = "<group>";
 		};
+		98083C63EFEF5479613C7ADA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5553F2B6A7DD5658D2F53729 /* Pods_AppticsDemoWatchApp.framework */,
+				3EFA2898823CE7C67A38A2C1 /* Pods_AppticsDemoWatchApp_WatchKit_App.framework */,
+				0BF884916F9D7D38B04891AD /* Pods_AppticsDemoWatchApp_WatchKit_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BB557CAE8FCB03ADEEBABA3A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				42E5A96DE958F4E838D2191C /* Pods-AppticsDemoWatchApp.debug.xcconfig */,
+				3A991F160F69E9125D8B2E1F /* Pods-AppticsDemoWatchApp.release.xcconfig */,
+				6972F52F947715699810CCF7 /* Pods-AppticsDemoWatchApp WatchKit App.debug.xcconfig */,
+				658CFF461BAF4BA192F187B3 /* Pods-AppticsDemoWatchApp WatchKit App.release.xcconfig */,
+				A8DE53A01434E1CDD0018855 /* Pods-AppticsDemoWatchApp WatchKit Extension.debug.xcconfig */,
+				A3AABB78E0D8982B0579847C /* Pods-AppticsDemoWatchApp WatchKit Extension.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -220,10 +242,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 24EF1C36286D7D5A00490D90 /* Build configuration list for PBXNativeTarget "AppticsDemoWatchApp" */;
 			buildPhases = (
+				2D15A7CE57856FF0AD8CA847 /* [CP] Check Pods Manifest.lock */,
 				24EF1BEB286D7D4D00490D90 /* Sources */,
 				24EF1BEC286D7D4D00490D90 /* Frameworks */,
 				24EF1BED286D7D4D00490D90 /* Resources */,
 				24EF1C35286D7D5A00490D90 /* Embed Watch Content */,
+				E523986812FDED55DB3FCB1F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -239,6 +263,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 24EF1C32286D7D5A00490D90 /* Build configuration list for PBXNativeTarget "AppticsDemoWatchApp WatchKit App" */;
 			buildPhases = (
+				599F2EC7E31E00353047417F /* [CP] Check Pods Manifest.lock */,
 				24EF1C06286D7D5700490D90 /* Resources */,
 				24EF1C31286D7D5A00490D90 /* Embed App Extensions */,
 				CE9BB4829CF0FCB407035156 /* Frameworks */,
@@ -257,6 +282,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 24EF1C2E286D7D5A00490D90 /* Build configuration list for PBXNativeTarget "AppticsDemoWatchApp WatchKit Extension" */;
 			buildPhases = (
+				A0CAC73342BE1264DA91B5A6 /* [CP] Check Pods Manifest.lock */,
 				24EF1C13286D7D5900490D90 /* Sources */,
 				24EF1C14286D7D5900490D90 /* Frameworks */,
 				24EF1C15286D7D5900490D90 /* Resources */,
@@ -266,13 +292,6 @@
 			dependencies = (
 			);
 			name = "AppticsDemoWatchApp WatchKit Extension";
-			packageProductDependencies = (
-				A2C926C2287E9F9100F1387F /* Apptics */,
-				A2C926C4287E9F9100F1387F /* AppticsCrashKit */,
-				A2C926C6287E9F9100F1387F /* AppticsEventTracker */,
-				A2C926C8287E9F9100F1387F /* AppticsRemoteConfig */,
-				A2C926CA287E9F9100F1387F /* AppticsScreenTracker */,
-			);
 			productName = "AppticsDemoWatchApp WatchKit Extension";
 			productReference = 24EF1C17286D7D5900490D90 /* AppticsDemoWatchApp WatchKit Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
@@ -305,9 +324,6 @@
 				Base,
 			);
 			mainGroup = 24EF1BE6286D7D4D00490D90;
-			packageReferences = (
-				A2C926C1287E9F9100F1387F /* XCRemoteSwiftPackageReference "Apptics-SP.git" */,
-			);
 			productRefGroup = 24EF1BF0286D7D4D00490D90 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -350,6 +366,92 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2D15A7CE57856FF0AD8CA847 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AppticsDemoWatchApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		599F2EC7E31E00353047417F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AppticsDemoWatchApp WatchKit App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0CAC73342BE1264DA91B5A6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AppticsDemoWatchApp WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E523986812FDED55DB3FCB1F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppticsDemoWatchApp/Pods-AppticsDemoWatchApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppticsDemoWatchApp/Pods-AppticsDemoWatchApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppticsDemoWatchApp/Pods-AppticsDemoWatchApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		24EF1BEB286D7D4D00490D90 /* Sources */ = {
@@ -532,6 +634,7 @@
 		};
 		24EF1C2F286D7D5A00490D90 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8DE53A01434E1CDD0018855 /* Pods-AppticsDemoWatchApp WatchKit Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_IDENTITY = "";
@@ -554,6 +657,7 @@
 		};
 		24EF1C30286D7D5A00490D90 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3AABB78E0D8982B0579847C /* Pods-AppticsDemoWatchApp WatchKit Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_IDENTITY = "";
@@ -577,6 +681,7 @@
 		};
 		24EF1C33286D7D5A00490D90 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6972F52F947715699810CCF7 /* Pods-AppticsDemoWatchApp WatchKit App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -596,6 +701,7 @@
 		};
 		24EF1C34286D7D5A00490D90 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 658CFF461BAF4BA192F187B3 /* Pods-AppticsDemoWatchApp WatchKit App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -616,6 +722,7 @@
 		};
 		24EF1C37286D7D5A00490D90 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42E5A96DE958F4E838D2191C /* Pods-AppticsDemoWatchApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -637,6 +744,7 @@
 		};
 		24EF1C38286D7D5A00490D90 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A991F160F69E9125D8B2E1F /* Pods-AppticsDemoWatchApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -697,45 +805,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		A2C926C1287E9F9100F1387F /* XCRemoteSwiftPackageReference "Apptics-SP.git" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/zoho/Apptics-SP.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.6;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		A2C926C2287E9F9100F1387F /* Apptics */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A2C926C1287E9F9100F1387F /* XCRemoteSwiftPackageReference "Apptics-SP.git" */;
-			productName = Apptics;
-		};
-		A2C926C4287E9F9100F1387F /* AppticsCrashKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A2C926C1287E9F9100F1387F /* XCRemoteSwiftPackageReference "Apptics-SP.git" */;
-			productName = AppticsCrashKit;
-		};
-		A2C926C6287E9F9100F1387F /* AppticsEventTracker */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A2C926C1287E9F9100F1387F /* XCRemoteSwiftPackageReference "Apptics-SP.git" */;
-			productName = AppticsEventTracker;
-		};
-		A2C926C8287E9F9100F1387F /* AppticsRemoteConfig */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A2C926C1287E9F9100F1387F /* XCRemoteSwiftPackageReference "Apptics-SP.git" */;
-			productName = AppticsRemoteConfig;
-		};
-		A2C926CA287E9F9100F1387F /* AppticsScreenTracker */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A2C926C1287E9F9100F1387F /* XCRemoteSwiftPackageReference "Apptics-SP.git" */;
-			productName = AppticsScreenTracker;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 24EF1BE7286D7D4D00490D90 /* Project object */;
 }

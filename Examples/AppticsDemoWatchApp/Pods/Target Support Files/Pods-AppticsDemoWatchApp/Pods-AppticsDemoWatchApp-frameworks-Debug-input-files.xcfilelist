@@ -1,0 +1,9 @@
+${PODS_ROOT}/Target Support Files/Pods-AppticsDemoWatchApp/Pods-AppticsDemoWatchApp-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Apptics-SDK/Apptics_SDK.framework
+${BUILT_PRODUCTS_DIR}/Apptics-Swift/Apptics_Swift.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/Apptics/Apptics.framework/Apptics
+${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/CrashKit/AppticsCrashKit.framework/AppticsCrashKit
+${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/EventTracker/AppticsEventTracker.framework/AppticsEventTracker
+${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/JWT/JWT.framework/JWT
+${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/KSCrash/KSCrash.framework/KSCrash
+${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/ScreenTracker/AppticsScreenTracker.framework/AppticsScreenTracker

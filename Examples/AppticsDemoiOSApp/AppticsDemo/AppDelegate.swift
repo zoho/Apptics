@@ -7,10 +7,10 @@
 
 import UIKit
 import CoreData
-import Apptics
+//import Apptics
 import MetricKit
-import AppticsFeedbackKit
-
+//import AppticsFeedbackKit
+//import Apptics_Swift
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -26,35 +26,35 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         logger.log("\(email, privacy: .private(mask: .hash))")
         logger.log("\(email, privacy: .sensitive)")
         logger.log("\(email, privacy: .sensitive(mask: .hash))")
+//        AppticsExtensionManager.trackEvent(groupname: "", eventName: "", property: [:])
+//        let metricManager = MXMetricManager.shared
+//        metricManager.add(self)
+//
+//        AppticsConfig.default.sendDataOnMobileNetworkByDefault=true // 🤖​ Set true to send data on mobile network.
+//        AppticsConfig.default.trackOnByDefault=true // 🤖​ Set true to track on by default before user consent.
+//        AppticsConfig.default.anonymousType = .pseudoAnonymous // 🤖​ Choose type of tracking you prefer, we support sudo-anonymous and non-anonymous.
+//
+//        AppticsConfig.default.enableCrossPromotionAppsList = true // To enable Cross Promotion
+//        AppticsConfig.default.enableRateUs = true // To enable Rate us
+//
+//        Apptics.initialize(withVerbose: true) // 🤖​ To initialise Apptics framework with or without verbose.
+////        Apptics.enableReviewAndSendCrashReport(true) // 🤖​ To show review prompt before sending the crash report.
+//
+//        Apptics.setTheme(AppTheme())
 
-        let metricManager = MXMetricManager.shared
-        metricManager.add(self)
+//        FeedbackKit.startMonitoring(withShake: true, maxToleranceLimit: 3)
+//                FeedbackKit.setSenderEmailAddress("ssaravanan@zohocorp.com")
+//                FeedbackKit.setMaskTextByDefault(true)
+//
+//                FeedbackKit.setSupportEmailAddress("ssaravanan@zoho.com")
+//
+//                FeedbackKit.showInfoBeforeSendingFeedback(toUser: false)
+//                let dignoInfo = [[["key": "", "value": "ZUID - 869382"], ["key": "Conversation View", "value": "All Folders"], ["key": "Conversation Action", "value": "Folders based"], ["key": "Mark entire conversation as read", "value": "off"], ["key": "Notification status", "value": "on"], ["key": "User timezone", "value": "Asia/Calcutta"], ["key": "Sender based notification", "value": "off"], ["key": "Folder based notification", "value": "off"], ["key": "Badge Notification", "value": "Inbox"], ["key": "Streams enabled", "value": "on"], ["key": "Streams notification enabled", "value": "on"]], [["key": "", "value": "DEVICE DETAILS"], ["key": "Device cache count", "value": "231 200 325"], ["key": "Device timezone", "value": "Asia/Kolkata"], ["key": "Device Notification status", "value": "Authorized"]]]
+//                FeedbackKit.setDiagnosticInfo(dignoInfo)
 
-        AppticsConfig.default.sendDataOnMobileNetworkByDefault=true // 🤖​ Set true to send data on mobile network.
-        AppticsConfig.default.trackOnByDefault=true // 🤖​ Set true to track on by default before user consent.
-        AppticsConfig.default.anonymousType = .pseudoAnonymous // 🤖​ Choose type of tracking you prefer, we support sudo-anonymous and non-anonymous.
-
-        AppticsConfig.default.enableCrossPromotionAppsList = true // To enable Cross Promotion
-        AppticsConfig.default.enableRateUs = true // To enable Rate us
-
-        Apptics.initialize(withVerbose: true) // 🤖​ To initialise Apptics framework with or without verbose.
-//        Apptics.enableReviewAndSendCrashReport(true) // 🤖​ To show review prompt before sending the crash report.
-
-        Apptics.setTheme(AppTheme())
-
-        FeedbackKit.startMonitoring(withShake: true, maxToleranceLimit: 3)
-                FeedbackKit.setSenderEmailAddress("ssaravanan@zohocorp.com")
-                FeedbackKit.setMaskTextByDefault(true)
-
-                FeedbackKit.setSupportEmailAddress("ssaravanan@zoho.com")
-
-                FeedbackKit.showInfoBeforeSendingFeedback(toUser: false)
-                let dignoInfo = [[["key": "", "value": "ZUID - 869382"], ["key": "Conversation View", "value": "All Folders"], ["key": "Conversation Action", "value": "Folders based"], ["key": "Mark entire conversation as read", "value": "off"], ["key": "Notification status", "value": "on"], ["key": "User timezone", "value": "Asia/Calcutta"], ["key": "Sender based notification", "value": "off"], ["key": "Folder based notification", "value": "off"], ["key": "Badge Notification", "value": "Inbox"], ["key": "Streams enabled", "value": "on"], ["key": "Streams notification enabled", "value": "on"]], [["key": "", "value": "DEVICE DETAILS"], ["key": "Device cache count", "value": "231 200 325"], ["key": "Device timezone", "value": "Asia/Kolkata"], ["key": "Device Notification status", "value": "Authorized"]]]
-                FeedbackKit.setDiagnosticInfo(dignoInfo)
-
-        APLog.getInstance().shouldLog=true
-        APLog.setLogLevel(APLogLevel.all)
-        APLog.setMaximumNumberOfLogFiles(2)
+//        APLog.getInstance().shouldLog=true
+//        APLog.setLogLevel(APLogLevel.all)
+//        APLog.setMaximumNumberOfLogFiles(2)
 //        APLog.clearConsoleLogs()
         Test().log()
 //        

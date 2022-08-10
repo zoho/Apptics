@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -14,7 +14,7 @@
 				5BF0E0926C0FA67308960F16D8F201AF /* [CP] Copy XCFrameworks */,
 			);
 			dependencies = (
-				5729738EFD73FB53C3EF7A1CB0AD1B9A /* PBXTargetDependency */,
+				3CE952C8BF970C4763305D5EE8382E68 /* PBXTargetDependency */,
 			);
 			name = AppticsFeedbackKit;
 		};
@@ -25,8 +25,8 @@
 				B8085440AD6DB77C1B6D2DFABE177958 /* [CP] Copy XCFrameworks */,
 			);
 			dependencies = (
-				D35519104E73F9D1915D9F8561A307E7 /* PBXTargetDependency */,
-				9F5234C3536082F3911EE61E975CC643 /* PBXTargetDependency */,
+				EE07D48D97BE07353C9F03A514F0426C /* PBXTargetDependency */,
+				4CF7FB84D9CBFC36D740E406A7EA6AEB /* PBXTargetDependency */,
 			);
 			name = AppticsInAppUpdate;
 		};
@@ -37,7 +37,7 @@
 				60924C0F002011A57BE36280C69C6E00 /* [CP] Copy XCFrameworks */,
 			);
 			dependencies = (
-				A8D25FB97895A017F928371FC26D01BF /* PBXTargetDependency */,
+				04AEFEC841545B76D60D7B6919BFE49A /* PBXTargetDependency */,
 			);
 			name = AppticsRemoteConfig;
 		};
@@ -48,7 +48,7 @@
 				8922840ABEF5161A9498870C47176273 /* [CP] Copy XCFrameworks */,
 			);
 			dependencies = (
-				33F0C2AA5DE1762E6C141EEFC1695B83 /* PBXTargetDependency */,
+				6A5A9DA9C43AE39584EAB60986E9C17C /* PBXTargetDependency */,
 			);
 			name = AppticsApiTracker;
 		};
@@ -59,16 +59,16 @@
 				C8128471DB13626574D646148409DEC3 /* [CP] Copy XCFrameworks */,
 			);
 			dependencies = (
-				53437755EF5FBA462DC5A1B05486B7FB /* PBXTargetDependency */,
-				548E2A2106980755A8C092CB85573116 /* PBXTargetDependency */,
+				ACA930DABCC3934DCD615DF93520E839 /* PBXTargetDependency */,
+				5C819E95D37DCAA7EBAD868538B9B3E4 /* PBXTargetDependency */,
 			);
 			name = AppticsRateUs;
 		};
 		E2CE24BC09F14AA1800797A9A2320628 /* AppticsAnalytics */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = E710D6F3C6F29638F1D880206CB8D887 /* Build configuration list for PBXAggregateTarget "AppticsAnalytics" */;
+			buildConfigurationList = 01F1FBFBA29E4C3134629F8D87C21AB4 /* Build configuration list for PBXAggregateTarget "AppticsAnalytics" */;
 			buildPhases = (
-				E43915AA84B427D6672FEDB7F42EFCD2 /* [CP] Copy XCFrameworks */,
+				DE60264FA5A17A76BD4FE30453FC3C56 /* [CP] Copy XCFrameworks */,
 			);
 			dependencies = (
 			);
@@ -77,455 +77,460 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		05C6160BE9A3EEE9571DC2B91798A455 /* sv.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 553CA93CDD874A7E171AA4233B7D9817 /* sv.lproj */; };
-		0D6E90AB8605D39CFE1367F1EEDF8D24 /* tr.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 6B41F2658504F32FA1ECA979B1C17E3A /* tr.lproj */; };
+		037ECCE988F63F21FADA6BFA45EE8398 /* cs.lproj in Resources */ = {isa = PBXBuildFile; fileRef = A8C2625AC3FAA3838767654294F58B03 /* cs.lproj */; };
+		0C327DFC656110CE919E6A52511D56DD /* ko.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 5061E7A58209A5AD3F511A1F4C46A514 /* ko.lproj */; };
+		11CFFF7860B072BCEBDD6EE620F0EB68 /* zh-Hans.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 768369C797815676DFE8B2CBC205863C /* zh-Hans.lproj */; };
 		11ED8D6EF88E571613C81BCE6AA37493 /* Pods-AppticsDemoTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3975394514E9A0D249530D609A68308B /* Pods-AppticsDemoTests-dummy.m */; };
-		12E2EAB5E942C5C75BB5EB3634C2ADF0 /* pt.lproj in Resources */ = {isa = PBXBuildFile; fileRef = CE9441AF7160144D5E35C2D202B02B02 /* pt.lproj */; };
-		12FACB8B0510AF5CECB1FFE4E66933DC /* ur.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 1A09ABF1133A104D8D7E48A014F24F0C /* ur.lproj */; };
+		15BC41421BF4AAE2492654CC1CAA2321 /* bn-IN.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 549EB1CC808C30AA65CB9BFFD3751EC5 /* bn-IN.lproj */; };
 		164EFA911F0374D05A6ED6D07C779472 /* Pods-AppticsDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A7AB3A55FA2BD0457FDEB524FF2568A4 /* Pods-AppticsDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		16A92BC2FAFDD50A3567DE28F9007378 /* fr-CA.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 1B88CAE875C8F6EB308F1DC1EE949DAC /* fr-CA.lproj */; };
-		17315C61076EABC9EB15C97CC9040654 /* es-MX.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 6355B8E804FF964597C02F0F22EF70BE /* es-MX.lproj */; };
-		1D13F42460EEEC87D64AB5125BEFFF69 /* cs.lproj in Resources */ = {isa = PBXBuildFile; fileRef = C2C3960C8EB4BA6C73D83C17589B6EF1 /* cs.lproj */; };
-		1EFB054C6F1BBFD5128BBB86A033D324 /* ml.lproj in Resources */ = {isa = PBXBuildFile; fileRef = A133FEB0674770A71991BE2A29B0847A /* ml.lproj */; };
-		2070CD793FB49E0BE66F61549E69202A /* ko.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 7F45F2B3B5345775C24E4A40823CDE9B /* ko.lproj */; };
-		211B8D4EADEAE63DEA2DCAAA158DD04F /* mr.lproj in Resources */ = {isa = PBXBuildFile; fileRef = DD3BE26B0A275B47E35CA4B8388C4640 /* mr.lproj */; };
-		219757238723DAE88590720F960C3E3E /* zh-Hant.lproj in Resources */ = {isa = PBXBuildFile; fileRef = D43E38AABB704627650D7284D7E7889E /* zh-Hant.lproj */; };
-		2D1A2A51A15A57A917CC6938D095464D /* pa.lproj in Resources */ = {isa = PBXBuildFile; fileRef = C94A785757AFB4D53297F8301A655D04 /* pa.lproj */; };
-		2DCA79B1EED9AD572FE742A0E03DCEF9 /* AppticsCrossPromotion-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9003BFC24D81180325AAC1F326183EDE /* AppticsCrossPromotion-dummy.m */; };
+		17792352B323078A23460ACCD50617B9 /* pl.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 2507061341E5792D85F0EDF42A61C538 /* pl.lproj */; };
+		17C84B4CD2452558AA6778C1A9DFF50C /* ur-Arab.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 3CC8EAFF5EFA48F796D592D7BECBB23C /* ur-Arab.lproj */; };
+		213D6DC620E51449E437ED8E4B68999A /* tr.lproj in Resources */ = {isa = PBXBuildFile; fileRef = AC9E07E9D872004C4A74884BF0901B3E /* tr.lproj */; };
+		23F2D53E7F524C515832ABCDD1F4ACA9 /* Apptics-Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCCE7EF5204A0D82CFE36F5071AAC5D /* Apptics-Swift-dummy.m */; };
+		2AABD3EFBBB26157A456399809ED4229 /* ar.lproj in Resources */ = {isa = PBXBuildFile; fileRef = E0341283C644816FBA244087D6D767A3 /* ar.lproj */; };
+		2DCA79B1EED9AD572FE742A0E03DCEF9 /* AppticsCrossPromotion-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 74458418D56B4419E7BDA5B888B19893 /* AppticsCrossPromotion-dummy.m */; };
+		2F03B93C48886BD13208A8AFE44D5BF0 /* pt-BR.lproj in Resources */ = {isa = PBXBuildFile; fileRef = C904EE20ACB631BA1C11060E5CDDC793 /* pt-BR.lproj */; };
 		300D10AE5EA938193974052C32E67073 /* Pods-AppticsDemoTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F093AFB53C255933C94825849F5B4348 /* Pods-AppticsDemoTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		349E4DD4100D0F04AD27DD7B978AB865 /* PromotedAppsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F03B1C9D7DFC977AE116047C1A077F /* PromotedAppsController.swift */; };
-		37D4057A0C124BDB0A99C55530630A70 /* AppticsCrossPromotion-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA6EA8DE8265C0ED29CD0BEC88BF6C4 /* AppticsCrossPromotion-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		392DC5B92E1B2C885D534C2F74A5CA63 /* Apptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9052A3C6F3B0F9C278110215424CD2 /* Apptics.swift */; };
-		3A3AFC1B596774E9453A2C88BD32AE37 /* PromotedAppsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C6E6B99576C9A6321E18080874F897 /* PromotedAppsKit.swift */; };
+		30D28CD0D51D5924EC9EC4A33316A63B /* PromotedAppsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2628E51B7CBFEB6F194A76BC1DA0C90 /* PromotedAppsController.xib */; };
+		349E4DD4100D0F04AD27DD7B978AB865 /* PromotedAppsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFCB15409AF4F1CBF0A2A5DC3F53ABF /* PromotedAppsController.swift */; };
+		367CC78F97D0C2EE8D4846440729B293 /* promotedAppViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FC768C6BBFFD987C1A700DE8CFD92D0 /* promotedAppViewCell.xib */; };
+		37D4057A0C124BDB0A99C55530630A70 /* AppticsCrossPromotion-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B6295B329EE291B5D32183B5D7DC2017 /* AppticsCrossPromotion-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A3AFC1B596774E9453A2C88BD32AE37 /* PromotedAppsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C03F4081E236F3AA37CE6664DA49B66 /* PromotedAppsKit.swift */; };
 		3A3DCB0DE850D3AF724F552414DEFDBA /* Pods-AppticsDemo-AppticsDemoUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B653DEFC8BBA0072EB7A06CE17C0AB93 /* Pods-AppticsDemo-AppticsDemoUITests-dummy.m */; };
 		3AAE5B108B8A65A6F373E562468E9CD6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74BEDF7BAE19FA7A10DDE305CBC19EB3 /* Foundation.framework */; };
+		3CBC204C44C6FB8696E10FB1D4AB8017 /* fr.lproj in Resources */ = {isa = PBXBuildFile; fileRef = C8532AA0597E277753A51526A1268367 /* fr.lproj */; };
 		3D9CAA8BF7752A75E24C253F0A6191E6 /* Pods-AppticsDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D990776AE138E37CD5E4BBBEB915D6 /* Pods-AppticsDemo-dummy.m */; };
-		3DBE392585BD2C3BC760224EE33B1A07 /* fr.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 25F7FB6B39F1AE5765AA2015A522200F /* fr.lproj */; };
-		3FE307279F3E0525073774F89C4C7C46 /* id.lproj in Resources */ = {isa = PBXBuildFile; fileRef = D23B87994C91EBCE54220FFCF749885A /* id.lproj */; };
-		4633A669AA89CDB9D0227DD2033F3AA6 /* zh-Hans.lproj in Resources */ = {isa = PBXBuildFile; fileRef = D899FA811096C877C0DD3948D66B8219 /* zh-Hans.lproj */; };
-		4DF98D20A870FAE4122D20B9D1740362 /* Apptics-Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ACD71F3F628A838943F66E5574C098C7 /* Apptics-Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4FE151F540B31A63DAF0016C2C803D7D /* gu.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 8304DBB3AD75F90773583A02E7A61DD2 /* gu.lproj */; };
-		573494215388FC205D44B47023B32774 /* ur-Arab.lproj in Resources */ = {isa = PBXBuildFile; fileRef = A5959BA66B95D1C07EE928C7E3ABAC96 /* ur-Arab.lproj */; };
-		599F1946B0A5E7CFF557565F03EF6734 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D39183F5EB02BF8E914E93578B25B694 /* UIKit.framework */; };
+		44ECF91D9498B6F7C0FC9640073A56E3 /* es-MX.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 1B61164D8DA61C0D04D717FE88A81D42 /* es-MX.lproj */; };
+		4561806F5E5FBF5CD9F5ECC46650C149 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D39183F5EB02BF8E914E93578B25B694 /* UIKit.framework */; };
+		4C8C8B9745436A26BF679CE75D7078E8 /* ml.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 0AA5406B8B38E93D74DCC3A5E17F2345 /* ml.lproj */; };
+		4DF62892324C7C87C8BF42513A1A900D /* es.lproj in Resources */ = {isa = PBXBuildFile; fileRef = D7444D668E9EA1B6286DB2A40461C179 /* es.lproj */; };
 		59B0649A28FEBC15998A341DFFAD0C1C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74BEDF7BAE19FA7A10DDE305CBC19EB3 /* Foundation.framework */; };
-		6012A445131ECBEA8FB389CC0578032C /* Apptics-CP.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 465E7B98746A7746A59CE0B118103791 /* Apptics-CP.ttf */; };
-		64FEDE92789526277A7E45241DA732A0 /* ar.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 6BBC152B539E0F3105656BD3EAD8AE84 /* ar.lproj */; };
-		6E237A6756FDE57958404C8F2D65D8DE /* ja.lproj in Resources */ = {isa = PBXBuildFile; fileRef = DB0D0651F17855AD76CE546304356613 /* ja.lproj */; };
-		6EC3423C89952D5058B586E9D7773EEB /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 13123C733FDB9D1E33BC607219863827 /* Base.lproj */; };
-		713B9E46DB3A2589976ABCE7739EA947 /* he.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 5054067092B7BEBE8A2F001A71FE9112 /* he.lproj */; };
-		7CD1D1C5B14DC6942322B4303AC91E3B /* Apptics-SDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27BF48072FDAA9125D830BCEDE1FE3FB /* Apptics-SDK-dummy.m */; };
-		82059E9E3CB8FEDD6A37084C9171B703 /* promotedAppViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6F60018BEF72589BC5D7D68E390344E /* promotedAppViewCell.xib */; };
-		82755F4450EF589755E6EC13E31E6C13 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74BEDF7BAE19FA7A10DDE305CBC19EB3 /* Foundation.framework */; };
-		82BB2CFF83DC9454CE6340C1651716A6 /* te.lproj in Resources */ = {isa = PBXBuildFile; fileRef = AC3BCA0E28827375AE45FA5D41E4B0DD /* te.lproj */; };
-		82C206FE82DC6343A8CC9243BAF837E3 /* hr.lproj in Resources */ = {isa = PBXBuildFile; fileRef = F3A8C49A6894BFC898ABF2743BC4D3F0 /* hr.lproj */; };
-		831F867F5367D55F0BEEDC22E50D3805 /* sdk_info in Sources */ = {isa = PBXBuildFile; fileRef = 8CFB60027A1A82C529D1405ED37D44EC /* sdk_info */; };
-		867E2B53B6E25269372AE65AA0D66983 /* dsym_upload in Sources */ = {isa = PBXBuildFile; fileRef = 30B4D02DAB9378472890BECA4DFC6986 /* dsym_upload */; };
-		888278F678E6C148ADBDEC89F061F71F /* it.lproj in Resources */ = {isa = PBXBuildFile; fileRef = FFD2438A38DCEE76A44B3E67E8D6F702 /* it.lproj */; };
-		8AE74F92B2C025FF61963583F5DECC91 /* run in Sources */ = {isa = PBXBuildFile; fileRef = 774831EA2430C874B79A1C6A327A1EA6 /* run */; };
-		9B9442E577228B6B30011CE8A720D958 /* ru.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 04D7AAB70F1A61097243D70ABCEF333A /* ru.lproj */; };
-		A6595E337DDBF4D0CFBBBB2D11D1A90E /* el.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 7AA4D0CC94BEAB757D42E2F4FA3B9693 /* el.lproj */; };
+		59DD06D35AC33D9D822637BDFD41A52C /* bg.lproj in Resources */ = {isa = PBXBuildFile; fileRef = EABAB69351673A4653F79C042551F872 /* bg.lproj */; };
+		67FDBF947045AD236592B2B21F7EA0D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74BEDF7BAE19FA7A10DDE305CBC19EB3 /* Foundation.framework */; };
+		710D776EC0E3EEC27085DD8E4DC32E84 /* nl.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 8AAE095897BA4DF58FB731B192AC8B6E /* nl.lproj */; };
+		72D0BDFA8C1F2C3DC7827BBDA8EB6CD2 /* he.lproj in Resources */ = {isa = PBXBuildFile; fileRef = D2DCB37F8F6469ED02DC62934636E010 /* he.lproj */; };
+		776CB33BC62F9A6E59947238E6AD6974 /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = BBA2882CAEF63CC64E898A70F9EED634 /* Base.lproj */; };
+		7CD1D1C5B14DC6942322B4303AC91E3B /* Apptics-SDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B12DFE5AF0B4158D6069BFD1EB9AC5D9 /* Apptics-SDK-dummy.m */; };
+		831F867F5367D55F0BEEDC22E50D3805 /* sdk_info in Sources */ = {isa = PBXBuildFile; fileRef = 954C8605422434DD7C10B5E6C4004BD6 /* sdk_info */; };
+		83EC2299DFEE7B5986F251944DE5383B /* kn.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 505D6F45BBFC614D2B06C55700176F88 /* kn.lproj */; };
+		84C93A1FECDC4FE9991F2EA06BECF2A7 /* da.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 24A0208E99190CC305F93D90E270CF71 /* da.lproj */; };
+		867E2B53B6E25269372AE65AA0D66983 /* dsym_upload in Sources */ = {isa = PBXBuildFile; fileRef = 88C9A33F69B567165DB873D246D2D586 /* dsym_upload */; };
+		8AE74F92B2C025FF61963583F5DECC91 /* run in Sources */ = {isa = PBXBuildFile; fileRef = 52877DBFDA4A602FECAF12E044050BC2 /* run */; };
+		8B6DA02D56CB5FCD71B569F32D9E3FDD /* fr-CA.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 74057544F8C2FA0B8910B59022787991 /* fr-CA.lproj */; };
+		8D34FCC06886FA059A0DAE00256146B6 /* te.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 8EB2ECF6AAB93837983529CCF1E4C134 /* te.lproj */; };
+		9D7BBB1C6031495BC051D026F68597DD /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 76BE62D44EDB061AC743D3C2FA91A13C /* en.lproj */; };
+		A28F7D98E68CF9606F4D4107A4C1190B /* sv.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 9A9F84732E54217BED5459D9DD086FF9 /* sv.lproj */; };
 		A6744F020D694A68512E7E6633B76583 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74BEDF7BAE19FA7A10DDE305CBC19EB3 /* Foundation.framework */; };
-		A710829F9877340E2B9E48E3BC17BCCC /* pt-BR.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 61953A7C9FCDC4E3B7A626D0F842A86C /* pt-BR.lproj */; };
-		A7ECC48F9CE290DD8579DCAA0528E3A8 /* Apptics-SDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 470B3769D8BED67573BF4937DAFFA48A /* Apptics-SDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A8AFC9D75A6EC3EE49D9DC5CB6F403BD /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 85AF00A2B886DCC28193D8229D93846F /* en.lproj */; };
-		A8CFFDFA6D1A4203EBD6A88F4D739833 /* pl.lproj in Resources */ = {isa = PBXBuildFile; fileRef = E146E21BA962AA42113ECA0F806DF08E /* pl.lproj */; };
-		B0226CFE18409B9CB9A241D932D8942D /* ta.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 8684B8517A6D8A368655D59A8788888A /* ta.lproj */; };
+		A7ECC48F9CE290DD8579DCAA0528E3A8 /* Apptics-SDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 01D01290E312BF1D98BD2E0A769BB533 /* Apptics-SDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD5033DE56DF2FE164B2DE4906B26B2C /* zh-Hant.lproj in Resources */ = {isa = PBXBuildFile; fileRef = B59F8D697C564C9DA0616D26C94A88D5 /* zh-Hant.lproj */; };
+		AF300D781E6540718D7E14E2587857BD /* ur.lproj in Resources */ = {isa = PBXBuildFile; fileRef = FFECE85AFBA1B81E785E9F92C5C6736D /* ur.lproj */; };
+		AFAA4DF26C765EAC72A091BF43DCEA91 /* id.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 65D607591038AB62ECFD37D03E2CFF48 /* id.lproj */; };
 		B2A96D68EC944384B2C8E3DC5CD0B2BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74BEDF7BAE19FA7A10DDE305CBC19EB3 /* Foundation.framework */; };
-		B933432D17882E621D6D92288FB4A195 /* sdk_info.bu in Sources */ = {isa = PBXBuildFile; fileRef = A86FE82C08FB9D4B81A1F731907487F7 /* sdk_info.bu */; };
-		BBB8569630DB1AE78B9FAE134F519E96 /* de.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 97CE58AC7FE7EC15857D063F00578021 /* de.lproj */; };
-		C40258898AC7AEDA1DBABB6887930647 /* bg.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 882B43FD0321EF6E27552D1695DE50DA /* bg.lproj */; };
+		B308229C5812E0B7A9A699DE7CF3F399 /* mr.lproj in Resources */ = {isa = PBXBuildFile; fileRef = F6795306B44FF950822B1A7DD8FD41E1 /* mr.lproj */; };
+		B933432D17882E621D6D92288FB4A195 /* sdk_info.bu in Sources */ = {isa = PBXBuildFile; fileRef = D1B7B0A3F7997DEBDE85C7E4AEE186EA /* sdk_info.bu */; };
+		CAF1CF63FB47F27408BE4EB7CB3D633A /* ja.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 97660C052F84D697E18BAAA2B60722F2 /* ja.lproj */; };
+		CB00F0874BE8E8EE2A0E060861E03915 /* it.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 9F2FB7D69016B3F80358C97320D0AC91 /* it.lproj */; };
 		CBB2D9E2DFD58A5593DE794E5C56DBC9 /* Pods-AppticsDemo-AppticsDemoUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 00745DF9FE5AD288D0A2E50159EF6266 /* Pods-AppticsDemo-AppticsDemoUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CEDF6DD2249F0B36CAAD2CD017741460 /* hi.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 2F736A5AAEB53D29DA3852ADCB72408C /* hi.lproj */; };
+		D058AFA693875BA8895468D7C67A7CA8 /* hi.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 7691865A84E17BFE13CF5FA10D71E505 /* hi.lproj */; };
 		D4221A4FEF46B2EF4294A8FB4D1D116D /* AppticsCrossPromotion-Apptics_SwiftResources in Resources */ = {isa = PBXBuildFile; fileRef = C294ECF8482E926741EA281FF36F1A8B /* AppticsCrossPromotion-Apptics_SwiftResources */; };
-		D527D586A7F46BA9E3047714E6F0D2D5 /* bn-IN.lproj in Resources */ = {isa = PBXBuildFile; fileRef = BEC72A26CDB15F29611185A6A29F33C8 /* bn-IN.lproj */; };
-		D5D15CA7D0E0ECA4F8726E6AFE2A25DA /* da.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 1481DB0D18D3682F67F458627F35006E /* da.lproj */; };
-		D8348C44EE52232810FED7B1E9C39F83 /* kn.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 59E2C4407C67F913080368F6EBEF82D9 /* kn.lproj */; };
-		E393C7AEEA110E2BFA08B118D88EA4B4 /* APThemeSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A6D06C8860E439EB26BB9C2813EF2 /* APThemeSwift.swift */; };
-		EBA0DCB8B0732AF8AE4F2CFB7FFA1FF8 /* postinstaller in Sources */ = {isa = PBXBuildFile; fileRef = FB203A8074C7896EE6B6273A5A0FE59A /* postinstaller */; };
+		D5B41625FEA9A8EF27D452409869BE62 /* ru.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 6915246AB6DCA42FAC2264F6AE87B6E8 /* ru.lproj */; };
+		DD7A588601CAD8404014A6EF3146258B /* Apptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159E194C33DCEC916656BAB3043DFFBA /* Apptics.swift */; };
+		DE5A012DDAFABF95A632ADCDE5A7B9F4 /* pa.lproj in Resources */ = {isa = PBXBuildFile; fileRef = D273328D4ACA1D021FB9B28D8FC027AD /* pa.lproj */; };
+		DE8B236F1A485E31C09E80F3AE41B093 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 942AFE161D205FED746D8168A73D214F /* StoreKit.framework */; };
+		E393C7AEEA110E2BFA08B118D88EA4B4 /* APThemeSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3CAFFA3F0E9009D6B6BDE6DCBF1E45 /* APThemeSwift.swift */; };
+		E3ADFF4FEBBAD2E25041AE5B040A08DE /* APAppticsForExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1F76847DDE26127BD27151D16080B2 /* APAppticsForExtension.swift */; };
+		E875D91EE1EC178E1F9E919DEC61FCEF /* el.lproj in Resources */ = {isa = PBXBuildFile; fileRef = D3D955A664554961FD50F78E2899AEEC /* el.lproj */; };
+		EB3A87809B60A0B702F7A76027A19BE5 /* vi.lproj in Resources */ = {isa = PBXBuildFile; fileRef = DFF4E3666C5C7BE7D5387681D95DA200 /* vi.lproj */; };
+		EB6F9C7A4AC67748389D69C8CED1AFB7 /* hr.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 800764042D30EC3EE1C47D8ADDA9EA99 /* hr.lproj */; };
+		EBA0DCB8B0732AF8AE4F2CFB7FFA1FF8 /* postinstaller in Sources */ = {isa = PBXBuildFile; fileRef = D12C54119EEF95349F942203C6C2FAD4 /* postinstaller */; };
 		ED896C394CBAA16915C8CD4FAA7DB35C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74BEDF7BAE19FA7A10DDE305CBC19EB3 /* Foundation.framework */; };
-		EFA7FA7FF33A235C93884D8A1FD504C5 /* Apptics-Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 584A36C4B2B3DBC84F3A952B67B9B890 /* Apptics-Swift-dummy.m */; };
-		F13B451DC95ABC8B30F1451958DFF04E /* appticshelper.rb in Sources */ = {isa = PBXBuildFile; fileRef = 7888785BEC43BC705778A694CC875E1D /* appticshelper.rb */; };
-		F47110A2A4D9801D3F85002850477DD6 /* nl.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 8E1337C38E311410D1783B4589FEE592 /* nl.lproj */; };
-		F61EB541C51BB89EE24AA75E64F62C02 /* promotedAppViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BE8C87BCB23CD238877AEAB229F9DD /* promotedAppViewCell.swift */; };
-		F7E3B8D0C3820AA35B77288D8F95DF4B /* PromotedAppsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77D657E6846E3340ADD9421E0010F9D1 /* PromotedAppsController.xib */; };
-		FB484064BA99FEF702D5402285E53C45 /* vi.lproj in Resources */ = {isa = PBXBuildFile; fileRef = F17A4C010F874E7FDD4F811C20B79FE9 /* vi.lproj */; };
-		FD2DDEE0B9792EE8D3E6B0AF9AEAB4B4 /* es.lproj in Resources */ = {isa = PBXBuildFile; fileRef = F3F5B36FA296730E622670631A965620 /* es.lproj */; };
-		FF8B5B8C26D2366A4AA73A04756B0679 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 942AFE161D205FED746D8168A73D214F /* StoreKit.framework */; };
+		EE40CE48C7A0B20B4896B9399FEDC923 /* de.lproj in Resources */ = {isa = PBXBuildFile; fileRef = DC47CAB384D757DEB0B976F452BC0932 /* de.lproj */; };
+		F13B451DC95ABC8B30F1451958DFF04E /* appticshelper.rb in Sources */ = {isa = PBXBuildFile; fileRef = 8800A27620A24D86A7B85628F1341405 /* appticshelper.rb */; };
+		F1DE92448225393EEF50B511EA7D7650 /* ta.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 864431D7B81F30420541DD86C7B190CA /* ta.lproj */; };
+		F61EB541C51BB89EE24AA75E64F62C02 /* promotedAppViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89413D37B0AF1F8CE9DF11AC23060564 /* promotedAppViewCell.swift */; };
+		F7AD04D72320016680A10C4B2990E904 /* gu.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 6324C93A5B9ACF04D2A496C83D0FF5BF /* gu.lproj */; };
+		FC9244F4F11B6670A56802B3003F8273 /* Apptics-Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 47ED04CFABEBA6423EBF80716F5787AB /* Apptics-Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE6C8B411BA2CE6E503EB064052B4EAF /* pt.lproj in Resources */ = {isa = PBXBuildFile; fileRef = DB15AFF8B54A9F0A8C4D3E1CD92308BA /* pt.lproj */; };
+		FFA21374B29EBCEDE7E1A677216DD72B /* Apptics-CP.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 98EBB0CD2F5FA3DC7B6387706A54D676 /* Apptics-CP.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		079B059466427249B4375D053CB6334C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DECA5F8CF3BFB441450008C20E9F4FEA;
-			remoteInfo = AppticsRateUs;
-		};
-		07EA69DC6DFCB13DC4067C19159BAE90 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 767128F2D2E11E1EDD2C46A2C4BE20FC;
-			remoteInfo = AppticsInAppUpdate;
-		};
-		10A4AF289A464A400BF33A32907B7AB6 /* PBXContainerItemProxy */ = {
+		025BA9C0B7741DFDA63FAD896629BFD5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E2CE24BC09F14AA1800797A9A2320628;
 			remoteInfo = AppticsAnalytics;
 		};
-		1D0969BF3F52F3F71E017A638350028C /* PBXContainerItemProxy */ = {
+		37801C49B6FBA13A6E31D52B66859427 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CC64011E1624187F4B9594559639696F;
-			remoteInfo = "Apptics-SDK";
+			remoteGlobalIDString = 43D3E0C6C92D2DF0481369573FF9EB87;
+			remoteInfo = AppticsFeedbackKit;
 		};
-		22C28AAF7AEC655D230B180DB600A650 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E2CE24BC09F14AA1800797A9A2320628;
-			remoteInfo = AppticsAnalytics;
-		};
-		2C5AB5DACF27051EC068128898857E37 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E4D4D79903CC10C0D5365EB232FB29F7;
-			remoteInfo = AppticsCrossPromotion;
-		};
-		31084B63E84F560CEAC2E5B3BB1C2CA7 /* PBXContainerItemProxy */ = {
+		38B6D01E3C1121218270BE14163029D8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 8EBC8655649388CBDC47522E7E9D695A;
 			remoteInfo = AppticsRemoteConfig;
 		};
-		385B319F9DA200F22A3118B02DE2EF14 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 43D3E0C6C92D2DF0481369573FF9EB87;
-			remoteInfo = AppticsFeedbackKit;
-		};
-		3B4BC832FBD588B2AB63882B7FBE6415 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 767128F2D2E11E1EDD2C46A2C4BE20FC;
-			remoteInfo = AppticsInAppUpdate;
-		};
-		4062E2809BEF5D589B440B78C3FBD247 /* PBXContainerItemProxy */ = {
+		3BB509ED1FCCA02466CBFB3306762FE4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = CC64011E1624187F4B9594559639696F;
 			remoteInfo = "Apptics-SDK";
 		};
-		48372D906974B691F8D5CFB1F3DC038E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E2CE24BC09F14AA1800797A9A2320628;
-			remoteInfo = AppticsAnalytics;
-		};
-		56927E78D680410BF0014554E80C4B7A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 43D3E0C6C92D2DF0481369573FF9EB87;
-			remoteInfo = AppticsFeedbackKit;
-		};
-		5DFCFC33552A81151765D51F38D0C520 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 897A636713908C0E3E7B5B4DF0BA1722;
-			remoteInfo = "Apptics-Swift";
-		};
-		60DA019FA2A08684A5854EDC9F0576EE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E2CE24BC09F14AA1800797A9A2320628;
-			remoteInfo = AppticsAnalytics;
-		};
-		6573435F81952E7505FD69DD87B58DB8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 43D3E0C6C92D2DF0481369573FF9EB87;
-			remoteInfo = AppticsFeedbackKit;
-		};
-		702A8205EA542F888DDF794A73899E93 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E2CE24BC09F14AA1800797A9A2320628;
-			remoteInfo = AppticsAnalytics;
-		};
-		892CA9B03F6399F7207BBBFA506E50E4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C36B4994FD303F36D155F0EA14997F12;
-			remoteInfo = AppticsApiTracker;
-		};
-		8A0949E5A9651310C1B0197D41D75C58 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E2CE24BC09F14AA1800797A9A2320628;
-			remoteInfo = AppticsAnalytics;
-		};
-		903BD328658842EFA9E016D834407B01 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 897A636713908C0E3E7B5B4DF0BA1722;
-			remoteInfo = "Apptics-Swift";
-		};
-		933E38D335EA2372A496FF234E4E8DEA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 897A636713908C0E3E7B5B4DF0BA1722;
-			remoteInfo = "Apptics-Swift";
-		};
-		96E832458A23D2E137F396B2E41FAE50 /* PBXContainerItemProxy */ = {
+		47DD0356FAC5E06B416372690CF77703 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = DECA5F8CF3BFB441450008C20E9F4FEA;
 			remoteInfo = AppticsRateUs;
 		};
-		A1146C627EA7706035C8D7E6BCF8BC5E /* PBXContainerItemProxy */ = {
+		5837F58D87E708101C03E6B8F80C9B50 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 43D3E0C6C92D2DF0481369573FF9EB87;
-			remoteInfo = AppticsFeedbackKit;
+			remoteGlobalIDString = CC64011E1624187F4B9594559639696F;
+			remoteInfo = "Apptics-SDK";
 		};
-		A895AA2233477AABA8C5FCAB7EED465B /* PBXContainerItemProxy */ = {
+		5AD805651FA5EA238072A9D835DD8A7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8EBC8655649388CBDC47522E7E9D695A;
+			remoteInfo = AppticsRemoteConfig;
+		};
+		5BCD9D4BA15E20C4939C8D65F2A61974 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = C36B4994FD303F36D155F0EA14997F12;
 			remoteInfo = AppticsApiTracker;
 		};
-		AD17DA549E6985939B3A4A7DD5344221 /* PBXContainerItemProxy */ = {
+		5D8ABDF31F8F8E0C4F1D188904E96AD2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43D3E0C6C92D2DF0481369573FF9EB87;
+			remoteInfo = AppticsFeedbackKit;
+		};
+		5DC9AF512664CAB75B1BB5432D568981 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC64011E1624187F4B9594559639696F;
+			remoteInfo = "Apptics-SDK";
+		};
+		621FBF2794ED5AF348D24C226780B0F6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E2CE24BC09F14AA1800797A9A2320628;
 			remoteInfo = AppticsAnalytics;
 		};
-		BA4284488D9235BBFF687756F6F5FDF1 /* PBXContainerItemProxy */ = {
+		6D185E7F2FB3F349165DD39C1A33F751 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2CE24BC09F14AA1800797A9A2320628;
+			remoteInfo = AppticsAnalytics;
+		};
+		7E465B750BB45354694FF9632EF6A195 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43D3E0C6C92D2DF0481369573FF9EB87;
+			remoteInfo = AppticsFeedbackKit;
+		};
+		7FA3B212CBD724B8636E84EB9C323639 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E4D4D79903CC10C0D5365EB232FB29F7;
 			remoteInfo = AppticsCrossPromotion;
 		};
-		BF38F5D87E05E87AD1286D5DD9DCBD26 /* PBXContainerItemProxy */ = {
+		8A37FA156DE474DD85B2FD021F6D1F5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 767128F2D2E11E1EDD2C46A2C4BE20FC;
+			remoteInfo = AppticsInAppUpdate;
+		};
+		8A46ABF8EF4100BC3B5C18A193ED65E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DECA5F8CF3BFB441450008C20E9F4FEA;
+			remoteInfo = AppticsRateUs;
+		};
+		99E300B976AF33B98A71CB4629369E9B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E2CE24BC09F14AA1800797A9A2320628;
 			remoteInfo = AppticsAnalytics;
 		};
-		C3F8565B785948FC1C9E35831F641B38 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FE0A69678B37EEC1C951F2F540C59ECF;
-			remoteInfo = "Pods-AppticsDemo";
-		};
-		E89CE3267AD26E29C51F8BCE54DEE2A6 /* PBXContainerItemProxy */ = {
+		9F4129151C39F35FF3065B338B1CF8A9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 43439EC19E2347C639D0C0A3F38E635C;
 			remoteInfo = "AppticsCrossPromotion-Apptics_SwiftResources";
 		};
-		FA94AC17F88525F28C108038ED4F9E0B /* PBXContainerItemProxy */ = {
+		A7FE2DA5E5C351B322398FD8E99A49AF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8EBC8655649388CBDC47522E7E9D695A;
-			remoteInfo = AppticsRemoteConfig;
+			remoteGlobalIDString = 897A636713908C0E3E7B5B4DF0BA1722;
+			remoteInfo = "Apptics-Swift";
 		};
-		FD385E2E4C400BA1FC0FFC35FA8555E3 /* PBXContainerItemProxy */ = {
+		AA79CD70A5F7092DA35A3E2C62B1BA01 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CC64011E1624187F4B9594559639696F;
-			remoteInfo = "Apptics-SDK";
+			remoteGlobalIDString = FE0A69678B37EEC1C951F2F540C59ECF;
+			remoteInfo = "Pods-AppticsDemo";
+		};
+		AAA1CEF06422FBD43A99B9398CBE9E0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2CE24BC09F14AA1800797A9A2320628;
+			remoteInfo = AppticsAnalytics;
+		};
+		B2EC29B6259091260324C4208748CAC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2CE24BC09F14AA1800797A9A2320628;
+			remoteInfo = AppticsAnalytics;
+		};
+		B3DC65D444CA37246C8B8609613FCA4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2CE24BC09F14AA1800797A9A2320628;
+			remoteInfo = AppticsAnalytics;
+		};
+		C5A02624013F6F557B25EEFA4B5F583C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43D3E0C6C92D2DF0481369573FF9EB87;
+			remoteInfo = AppticsFeedbackKit;
+		};
+		C8F42F342F63C3225AA613BBE5A92A5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 767128F2D2E11E1EDD2C46A2C4BE20FC;
+			remoteInfo = AppticsInAppUpdate;
+		};
+		CB521F18FFE83DAB90DBD44CD6C13AD3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 897A636713908C0E3E7B5B4DF0BA1722;
+			remoteInfo = "Apptics-Swift";
+		};
+		DD1BDABB9CD81D75DE85A55ED1F3AF93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 897A636713908C0E3E7B5B4DF0BA1722;
+			remoteInfo = "Apptics-Swift";
+		};
+		E0EE6471F754EAE4EC25BBC445A22EAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4D4D79903CC10C0D5365EB232FB29F7;
+			remoteInfo = AppticsCrossPromotion;
+		};
+		E695FF05F635F1BF3F65BBAA487B538D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2CE24BC09F14AA1800797A9A2320628;
+			remoteInfo = AppticsAnalytics;
+		};
+		EFD799888B60E985018B153052CD850F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C36B4994FD303F36D155F0EA14997F12;
+			remoteInfo = AppticsApiTracker;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		00745DF9FE5AD288D0A2E50159EF6266 /* Pods-AppticsDemo-AppticsDemoUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AppticsDemo-AppticsDemoUITests-umbrella.h"; sourceTree = "<group>"; };
 		008C7FAE428A6A508E081C426597AA75 /* Pods-AppticsDemo-AppticsDemoUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AppticsDemo-AppticsDemoUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		03FA944DC56D7DB3C42E7B8F57D65AB1 /* AppticsRemoteConfig.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppticsRemoteConfig.debug.xcconfig; sourceTree = "<group>"; };
-		04D7AAB70F1A61097243D70ABCEF333A /* ru.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ru.lproj; path = SwiftFiles/CrossPromoApps/StringFiles/ru.lproj; sourceTree = "<group>"; };
+		01D01290E312BF1D98BD2E0A769BB533 /* Apptics-SDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Apptics-SDK-umbrella.h"; sourceTree = "<group>"; };
+		03B82666F962513C7EEE6BDB00920A0B /* AppticsCrossPromotion-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AppticsCrossPromotion-prefix.pch"; sourceTree = "<group>"; };
+		04AB34F85D4B02FB089721CCAD29D5DF /* Apptics-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Apptics-Swift.debug.xcconfig"; sourceTree = "<group>"; };
 		06F82BA98A4AAFB53E90C9F9C6C81C9D /* Pods-AppticsDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AppticsDemo.release.xcconfig"; sourceTree = "<group>"; };
-		0969CB12F6A20F15E19C4913C7CCADE2 /* Apptics-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Apptics-Swift.release.xcconfig"; sourceTree = "<group>"; };
+		0AA5406B8B38E93D74DCC3A5E17F2345 /* ml.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ml.lproj; path = SwiftFiles/CrossPromoApps/StringFiles/ml.lproj; sourceTree = "<group>"; };
 		0AC25295F52DD4A5BCD4878876EB0710 /* Pods-AppticsDemo-AppticsDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AppticsDemo-AppticsDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
-		0C859E5D82572F7AB874AE4A2026E99B /* AppticsCrossPromotion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppticsCrossPromotion.release.xcconfig; sourceTree = "<group>"; };
-		0E9052A3C6F3B0F9C278110215424CD2 /* Apptics.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Apptics.swift; path = SwiftFiles/Apptics.swift; sourceTree = "<group>"; };
+		0BF183CCD22A8DAF920CBA65827E4916 /* AppticsRateUs.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = AppticsRateUs.xcframework; sourceTree = "<group>"; };
+		0EB8E44CE283643253191918A0FEBC83 /* AppticsCrossPromotion-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AppticsCrossPromotion-Info.plist"; sourceTree = "<group>"; };
 		0FF98BC536CE374DD29233033438B2E4 /* Pods-AppticsDemoTests.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AppticsDemoTests.appstore.xcconfig"; sourceTree = "<group>"; };
 		111ED70B6D22EB1026CC8FFDE8D8E112 /* Pods-AppticsDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AppticsDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
-		13123C733FDB9D1E33BC607219863827 /* Base.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = Base.lproj; path = SwiftFiles/CrossPromoApps/StringFiles/Base.lproj; sourceTree = "<group>"; };
-		140E0A73B0E2CA810A76FBEEAA649815 /* AppticsInAppUpdate-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "AppticsInAppUpdate-xcframeworks.sh"; sourceTree = "<group>"; };
-		1481DB0D18D3682F67F458627F35006E /* da.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = da.lproj; path = SwiftFiles/CrossPromoApps/StringFiles/da.lproj; sourceTree = "<group>"; };
-		1A09ABF1133A104D8D7E48A014F24F0C /* ur.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ur.lproj; path = SwiftFiles/CrossPromoApps/StringFiles/ur.lproj; sourceTree = "<group>"; };
-		1B79D0251CFB43EE777F0379CA5C39AC /* Apptics-Swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Apptics-Swift-Info.plist"; sourceTree = "<group>"; };
-		1B88CAE875C8F6EB308F1DC1EE949DAC /* fr-CA.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "fr-CA.lproj"; path = "SwiftFiles/CrossPromoApps/StringFiles/fr-CA.lproj"; sourceTree = "<group>"; };
-		1DFE1B5E8467337DC36F57AA8F1E0623 /* Apptics-SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Apptics-SDK.release.xcconfig"; sourceTree = "<group>"; };
+		13E7AF77D9F07307DDE7F9B17D1DED5F /* AppticsRateUs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppticsRateUs.release.xcconfig; sourceTree = "<group>"; };
+		159E194C33DCEC916656BAB3043DFFBA /* Apptics.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Apptics.swift; path = SwiftFiles/Apptics.swift; sourceTree = "<group>"; };
+		1A3CAFFA3F0E9009D6B6BDE6DCBF1E45 /* APThemeSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APThemeSwift.swift; path = SwiftFiles/CrossPromoApps/APThemeSwift.swift; sourceTree = "<group>"; };
+		1B61164D8DA61C0D04D717FE88A81D42 /* es-MX.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "es-MX.lproj"; path = "SwiftFiles/CrossPromoApps/StringFiles/es-MX.lproj"; sourceTree = "<group>"; };
 		203783D5FB522AB60A3B887BF93F5724 /* Pods-AppticsDemo.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AppticsDemo.appstore.xcconfig"; sourceTree = "<group>"; };
 		2452990E26B42DB07BB2A74B81A5671F /* Pods-AppticsDemo-AppticsDemoUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AppticsDemo-AppticsDemoUITests.modulemap"; sourceTree = "<group>"; };
+		24A0208E99190CC305F93D90E270CF71 /* da.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = da.lproj; path = SwiftFiles/CrossPromoApps/StringFiles/da.lproj; sourceTree = "<group>"; };
+		2507061341E5792D85F0EDF42A61C538 /* pl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = pl.lproj; path = SwiftFiles/CrossPromoApps/StringFiles/pl.lproj; sourceTree = "<group>"; };
 		25A613A730399FC0F3936B926C3571F6 /* Apptics-SDK */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Apptics-SDK"; path = Apptics_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		25F7FB6B39F1AE5765AA2015A522200F /* fr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = fr.lproj; path = SwiftFiles/CrossPromoApps/StringFiles/fr.lproj; sourceTree = "<group>"; };
-		26DCBFBFCB2EB90B4F21DCA6842E8D2B /* AppticsScreenTracker.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = AppticsScreenTracker.xcframework; sourceTree = "<group>"; };
-		27BF48072FDAA9125D830BCEDE1FE3FB /* Apptics-SDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Apptics-SDK-dummy.m"; sourceTree = "<group>"; };
-		2DC5346A54902370212A259C81AE4E02 /* AppticsCrossPromotion.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AppticsCrossPromotion.modulemap; sourceTree = "<group>"; };
+		29564258F02AEB7516EE43E7FBB6CD80 /* Apptics-Swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Apptics-Swift-Info.plist"; sourceTree = "<group>"; };
 		2E91F0715C4B538B0F8C0074C65ABFB4 /* Pods-AppticsDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AppticsDemoTests.release.xcconfig"; sourceTree = "<group>"; };
-		2EC1478193EE77C889B795E76679C875 /* Apptics-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Apptics-Swift.debug.xcconfig"; sourceTree = "<group>"; };
-		2F736A5AAEB53D29DA3852ADCB72408C /* hi.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = hi.lproj; path = SwiftFiles/CrossPromoApps/StringFiles/hi.lproj; sourceTree = "<group>"; };
 		309F3BF6E3A9E3CD2878C8E6C841D166 /* Pods-AppticsDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AppticsDemo-frameworks.sh"; sourceTree = "<group>"; };
-		30B4D02DAB9378472890BECA4DFC6986 /* dsym_upload */ = {isa = PBXFileReference; includeInIndex = 1; name = dsym_upload; path = scripts/dsym_upload; sourceTree = "<group>"; };
 		31862EF07C19507FD06968AA6E86FCC7 /* Pods-AppticsDemo-AppticsDemoUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AppticsDemo-AppticsDemoUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		350DA2A76BCC19AE3768DDFF77552E7F /* AppticsAnalytics-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "AppticsAnalytics-xcframeworks.sh"; sourceTree = "<group>"; };
+		344E8E69890FE5021DBFD695E5628828 /* AppticsInAppUpdate.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = AppticsInAppUpdate.xcframework; sourceTree = "<group>"; };
 		3593F575B3A426152156D039340BD348 /* Pods-AppticsDemo-AppticsDemoUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-AppticsDemo-AppticsDemoUITests"; path = Pods_AppticsDemo_AppticsDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		370C6CF03153F8A11BE453EC3F062DEB /* AppticsCrossPromotion.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AppticsCrossPromotion.modulemap; sourceTree = "<group>"; };
+		38B5A2CD5D0301D3D7A6828BA0A1C7C7 /* AppticsAnalytics-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "AppticsAnalytics-xcframeworks.sh"; sourceTree = "<group>"; };
 		3975394514E9A0D249530D609A68308B /* Pods-AppticsDemoTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AppticsDemoTests-dummy.m"; sourceTree = "<group>"; };
 		3BCC73A21AA62D7BFB52BD2FEAD5AE46 /* Pods-AppticsDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AppticsDemo.modulemap"; sourceTree = "<group>"; };
+		3CC8EAFF5EFA48F796D592D7BECBB23C /* ur-Arab.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "ur-Arab.lproj"; path = "SwiftFiles/CrossPromoApps/StringFiles/ur-Arab.lproj"; sourceTree = "<group>"; };
+		3CFCB15409AF4F1CBF0A2A5DC3F53ABF /* PromotedAppsController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PromotedAppsController.swift; path = SwiftFiles/CrossPromoApps/PromotedAppsController.swift; sourceTree = "<group>"; };
 		3D78779DD59B7EEB369C836B76AE38E0 /* Pods-AppticsDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AppticsDemo-Info.plist"; sourceTree = "<group>"; };
+		3DCCE7EF5204A0D82CFE36F5071AAC5D /* Apptics-Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Apptics-Swift-dummy.m"; sourceTree = "<group>"; };
 		40DB5FCDAD94E0F58FCBB0B40E2A0A28 /* Pods-AppticsDemoTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AppticsDemoTests.modulemap"; sourceTree = "<group>"; };
-		44BE8C87BCB23CD238877AEAB229F9DD /* promotedAppViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = promotedAppViewCell.swift; path = SwiftFiles/CrossPromoApps/promotedAppViewCell.swift; sourceTree = "<group>"; };
-		465E7B98746A7746A59CE0B118103791 /* Apptics-CP.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Apptics-CP.ttf"; path = "SwiftFiles/CrossPromoApps/Fonts/Apptics-CP.ttf"; sourceTree = "<group>"; };
-		470B3769D8BED67573BF4937DAFFA48A /* Apptics-SDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Apptics-SDK-umbrella.h"; sourceTree = "<group>"; };
 		47D990776AE138E37CD5E4BBBEB915D6 /* Pods-AppticsDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AppticsDemo-dummy.m"; sourceTree = "<group>"; };
-		4A8C94A9CD4AA036649CBD097707843F /* Apptics-SDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Apptics-SDK-Info.plist"; sourceTree = "<group>"; };
-		4D5763ED67B73083AF89E8A3E82BB0DC /* AppticsRateUs-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "AppticsRateUs-xcframeworks.sh"; sourceTree = "<group>"; };
-		5054067092B7BEBE8A2F001A71FE9112 /* he.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = he.lproj; path = SwiftFiles/CrossPromoApps/StringFiles/he.lproj; sourceTree = "<group>"; };
-		553CA93CDD874A7E171AA4233B7D9817 /* sv.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = sv.lproj; path = SwiftFiles/CrossPromoApps/StringFiles/sv.lproj; sourceTree = "<group>"; };
-		572063FCB1273DC4DB6FDEBDC167EBF9 /* Apptics-SDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Apptics-SDK-prefix.pch"; sourceTree = "<group>"; };
-		584A36C4B2B3DBC84F3A952B67B9B890 /* Apptics-Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Apptics-Swift-dummy.m"; sourceTree = "<group>"; };
-		59E2C4407C67F913080368F6EBEF82D9 /* kn.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = kn.lproj; path = SwiftFiles/CrossPromoApps/StringFiles/kn.lproj; sourceTree = "<group>"; };
+		47ED04CFABEBA6423EBF80716F5787AB /* Apptics-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Apptics-Swift-umbrella.h"; sourceTree = "<group>"; };
+		4B97128079E84344D4BA3D6EE1117895 /* Apptics-SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Apptics-SDK.debug.xcconfig"; sourceTree = "<group>"; };
+		4FC7D8082CE4146F6CF103020D984FAE /* AppticsRemoteConfig.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppticsRemoteConfig.release.xcconfig; sourceTree = "<group>"; };
+		505D6F45BBFC614D2B06C55700176F88 /* kn.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = kn.lproj; path = SwiftFiles/CrossPromoApps/StringFiles/kn.lproj; sourceTree = "<group>"; };
+		5061E7A58209A5AD3F511A1F4C46A514 /* ko.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ko.lproj; path = SwiftFiles/CrossPromoApps/StringFiles/ko.lproj; sourceTree = "<group>"; };
+		52877DBFDA4A602FECAF12E044050BC2 /* run */ = {isa = PBXFileReference; includeInIndex = 1; name = run; path = scripts/run; sourceTree = "<group>"; };
+		549EB1CC808C30AA65CB9BFFD3751EC5 /* bn-IN.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "bn-IN.lproj"; path = "SwiftFiles/CrossPromoApps/StringFiles/bn-IN.lproj"; sourceTree = "<group>"; };
+		5663EEAFBF43429E66A6E1128FA2C7A6 /* Apptics-SDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Apptics-SDK.modulemap"; sourceTree = "<group>"; };
 		5AF1A010E505A1D7355FB3450E5B1092 /* Pods-AppticsDemo-AppticsDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AppticsDemo-AppticsDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		5B15E17DA96B922AA844D137612E9639 /* AppticsFeedbackKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppticsFeedbackKit.debug.xcconfig; sourceTree = "<group>"; };
-		5C8A6D06C8860E439EB26BB9C2813EF2 /* APThemeSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APThemeSwift.swift; path = SwiftFiles/CrossPromoApps/APThemeSwift.swift; sourceTree = "<group>"; };
-		61953A7C9FCDC4E3B7A626D0F842A86C /* pt-BR.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "pt-BR.lproj"; path = "SwiftFiles/CrossPromoApps/StringFiles/pt-BR.lproj"; sourceTree = "<group>"; };
-		6355B8E804FF964597C02F0F22EF70BE /* es-MX.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "es-MX.lproj"; path = "SwiftFiles/CrossPromoApps/StringFiles/es-MX.lproj"; sourceTree = "<group>"; };
-		6500AFB8846E36453D5B9EDCB134F5B5 /* AppticsCrashKit.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = AppticsCrashKit.xcframework; sourceTree = "<group>"; };
-		6A0AE8C61AAB1355C47B02A0CA7B606B /* AppticsRemoteConfig.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = AppticsRemoteConfig.xcframework; sourceTree = "<group>"; };
-		6B41F2658504F32FA1ECA979B1C17E3A /* tr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = tr.lproj; path = SwiftFiles/CrossPromoApps/StringFiles/tr.lproj; sourceTree = "<group>"; };
-		6BBC152B539E0F3105656BD3EAD8AE84 /* ar.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ar.lproj; path = SwiftFiles/CrossPromoApps/StringFiles/ar.lproj; sourceTree = "<group>"; };
+		60CEA49912A39093ED0FFACCF3D74381 /* Apptics-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Apptics-Swift.release.xcconfig"; sourceTree = "<group>"; };
+		61344E5C618346F47417AC460A14D53F /* Apptics-SDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Apptics-SDK-Info.plist"; sourceTree = "<group>"; };
+		61CFA0314F4ECEA527E77483EADECA4A /* AppticsAnalytics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppticsAnalytics.release.xcconfig; sourceTree = "<group>"; };
+		6324C93A5B9ACF04D2A496C83D0FF5BF /* gu.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = gu.lproj; path = SwiftFiles/CrossPromoApps/StringFiles/gu.lproj; sourceTree = "<group>"; };
+		63C22F710E86B6769510D0C5949B0D08 /* AppticsFeedbackKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppticsFeedbackKit.debug.xcconfig; sourceTree = "<group>"; };
+		65D607591038AB62ECFD37D03E2CFF48 /* id.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = id.lproj; path = SwiftFiles/CrossPromoApps/StringFiles/id.lproj; sourceTree = "<group>"; };
+		6915246AB6DCA42FAC2264F6AE87B6E8 /* ru.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ru.lproj; path = SwiftFiles/CrossPromoApps/StringFiles/ru.lproj; sourceTree = "<group>"; };
+		6C03F4081E236F3AA37CE6664DA49B66 /* PromotedAppsKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PromotedAppsKit.swift; path = SwiftFiles/CrossPromoApps/PromotedAppsKit.swift; sourceTree = "<group>"; };
+		6DBA4AEB3DD9419A3D4D67FCE17635A1 /* Apptics.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = Apptics.xcframework; sourceTree = "<group>"; };
 		6E1B14BF86ADA11C579EDC886DC13506 /* Apptics-Swift */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Apptics-Swift"; path = Apptics_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		72C8B6493BF548FA26CB5549767DD7A5 /* AppticsAnalytics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppticsAnalytics.debug.xcconfig; sourceTree = "<group>"; };
+		7116E1F2D1128C328A32AE43CC3A1136 /* AppticsRateUs-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "AppticsRateUs-xcframeworks.sh"; sourceTree = "<group>"; };
+		74057544F8C2FA0B8910B59022787991 /* fr-CA.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "fr-CA.lproj"; path = "SwiftFiles/CrossPromoApps/StringFiles/fr-CA.lproj"; sourceTree = "<group>"; };
+		74458418D56B4419E7BDA5B888B19893 /* AppticsCrossPromotion-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AppticsCrossPromotion-dummy.m"; sourceTree = "<group>"; };
 		74BEDF7BAE19FA7A10DDE305CBC19EB3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		774831EA2430C874B79A1C6A327A1EA6 /* run */ = {isa = PBXFileReference; includeInIndex = 1; name = run; path = scripts/run; sourceTree = "<group>"; };
-		77D657E6846E3340ADD9421E0010F9D1 /* PromotedAppsController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = PromotedAppsController.xib; path = "SwiftFiles/CrossPromoApps/ios-xibs/PromotedAppsController.xib"; sourceTree = "<group>"; };
-		7888785BEC43BC705778A694CC875E1D /* appticshelper.rb */ = {isa = PBXFileReference; includeInIndex = 1; name = appticshelper.rb; path = scripts/appticshelper.rb; sourceTree = "<group>"; };
+		768369C797815676DFE8B2CBC205863C /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-Hans.lproj"; path = "SwiftFiles/CrossPromoApps/StringFiles/zh-Hans.lproj"; sourceTree = "<group>"; };
+		7691865A84E17BFE13CF5FA10D71E505 /* hi.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = hi.lproj; path = SwiftFiles/CrossPromoApps/StringFiles/hi.lproj; sourceTree = "<group>"; };
+		76BE62D44EDB061AC743D3C2FA91A13C /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = en.lproj; path = SwiftFiles/CrossPromoApps/StringFiles/en.lproj; sourceTree = "<group>"; };
+		794BC4A66FFBB0FBA6FDA5612F5BBCA6 /* AppticsApiTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppticsApiTracker.debug.xcconfig; sourceTree = "<group>"; };
 		7A7DD55726D7DF18F92D3371DED7D3AC /* Pods-AppticsDemoTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AppticsDemoTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		7AA4D0CC94BEAB757D42E2F4FA3B9693 /* el.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = el.lproj; path = SwiftFiles/CrossPromoApps/StringFiles/el.lproj; sourceTree = "<group>"; };
-		7F45F2B3B5345775C24E4A40823CDE9B /* ko.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ko.lproj; path = SwiftFiles/CrossPromoApps/StringFiles/ko.lproj; sourceTree = "<group>"; };
-		7FFA7AF21FA0AB0FB09BE8890686DBF8 /* KSCrash.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = KSCrash.xcframework; sourceTree = "<group>"; };
-		80DC90F364295074FADDABB82DF81367 /* Apptics-Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Apptics-Swift.modulemap"; sourceTree = "<group>"; };
-		8304DBB3AD75F90773583A02E7A61DD2 /* gu.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = gu.lproj; path = SwiftFiles/CrossPromoApps/StringFiles/gu.lproj; sourceTree = "<group>"; };
-		84D24FBB5702B8F53B0CD862ECB958D1 /* AppticsCrossPromotion-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AppticsCrossPromotion-prefix.pch"; sourceTree = "<group>"; };
-		85AF00A2B886DCC28193D8229D93846F /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = en.lproj; path = SwiftFiles/CrossPromoApps/StringFiles/en.lproj; sourceTree = "<group>"; };
-		8684B8517A6D8A368655D59A8788888A /* ta.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ta.lproj; path = SwiftFiles/CrossPromoApps/StringFiles/ta.lproj; sourceTree = "<group>"; };
-		8819E585B9AC8134D439D830DCCABC23 /* AppticsApiTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppticsApiTracker.release.xcconfig; sourceTree = "<group>"; };
-		882B43FD0321EF6E27552D1695DE50DA /* bg.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = bg.lproj; path = SwiftFiles/CrossPromoApps/StringFiles/bg.lproj; sourceTree = "<group>"; };
+		7EB83821EB9C962D9DB5615B594B1341 /* AppticsRemoteConfig-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "AppticsRemoteConfig-xcframeworks.sh"; sourceTree = "<group>"; };
+		7FC768C6BBFFD987C1A700DE8CFD92D0 /* promotedAppViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = promotedAppViewCell.xib; path = "SwiftFiles/CrossPromoApps/ios-xibs/promotedAppViewCell.xib"; sourceTree = "<group>"; };
+		800764042D30EC3EE1C47D8ADDA9EA99 /* hr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = hr.lproj; path = SwiftFiles/CrossPromoApps/StringFiles/hr.lproj; sourceTree = "<group>"; };
+		8340150B6FBBF07A33141CE322917B73 /* AppticsFeedbackKit-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "AppticsFeedbackKit-xcframeworks.sh"; sourceTree = "<group>"; };
+		84B4169C5B3D0A9C80A8913B61D4366F /* AppticsInAppUpdate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppticsInAppUpdate.release.xcconfig; sourceTree = "<group>"; };
+		864431D7B81F30420541DD86C7B190CA /* ta.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ta.lproj; path = SwiftFiles/CrossPromoApps/StringFiles/ta.lproj; sourceTree = "<group>"; };
+		86D5735CDAE4B91770E2127F29B139DB /* AppticsRateUs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppticsRateUs.debug.xcconfig; sourceTree = "<group>"; };
+		8800A27620A24D86A7B85628F1341405 /* appticshelper.rb */ = {isa = PBXFileReference; includeInIndex = 1; name = appticshelper.rb; path = scripts/appticshelper.rb; sourceTree = "<group>"; };
+		88C9A33F69B567165DB873D246D2D586 /* dsym_upload */ = {isa = PBXFileReference; includeInIndex = 1; name = dsym_upload; path = scripts/dsym_upload; sourceTree = "<group>"; };
+		89413D37B0AF1F8CE9DF11AC23060564 /* promotedAppViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = promotedAppViewCell.swift; path = SwiftFiles/CrossPromoApps/promotedAppViewCell.swift; sourceTree = "<group>"; };
+		8AAE095897BA4DF58FB731B192AC8B6E /* nl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = nl.lproj; path = SwiftFiles/CrossPromoApps/StringFiles/nl.lproj; sourceTree = "<group>"; };
 		8AFF7A1004775D6A9D7C8F4CDECF254F /* Pods-AppticsDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AppticsDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		8B1F76847DDE26127BD27151D16080B2 /* APAppticsForExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APAppticsForExtension.swift; path = SwiftFiles/AppExtension/APAppticsForExtension.swift; sourceTree = "<group>"; };
 		8BE8243C49D074CB4573D7CD13466DAC /* Pods-AppticsDemoTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AppticsDemoTests-Info.plist"; sourceTree = "<group>"; };
-		8CFB60027A1A82C529D1405ED37D44EC /* sdk_info */ = {isa = PBXFileReference; includeInIndex = 1; name = sdk_info; path = scripts/sdk_info; sourceTree = "<group>"; };
-		8DF75D4D9DBC5BF05804A114CE542DB2 /* AppticsRateUs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppticsRateUs.debug.xcconfig; sourceTree = "<group>"; };
-		8E1337C38E311410D1783B4589FEE592 /* nl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = nl.lproj; path = SwiftFiles/CrossPromoApps/StringFiles/nl.lproj; sourceTree = "<group>"; };
+		8EB2ECF6AAB93837983529CCF1E4C134 /* te.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = te.lproj; path = SwiftFiles/CrossPromoApps/StringFiles/te.lproj; sourceTree = "<group>"; };
 		8F02884B701340E0141737E8D6C3CB56 /* Pods-AppticsDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AppticsDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		9003BFC24D81180325AAC1F326183EDE /* AppticsCrossPromotion-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AppticsCrossPromotion-dummy.m"; sourceTree = "<group>"; };
-		9037B0A8E09B91D4272199323B060FB9 /* AppticsApiTracker.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = AppticsApiTracker.xcframework; sourceTree = "<group>"; };
 		9149E829CCF52A90A0F161B874804645 /* Pods-AppticsDemo-AppticsDemoUITests.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AppticsDemo-AppticsDemoUITests.appstore.xcconfig"; sourceTree = "<group>"; };
 		942AFE161D205FED746D8168A73D214F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/StoreKit.framework; sourceTree = DEVELOPER_DIR; };
-		972359F3873BABA2F789D1DD5F073529 /* AppticsInAppUpdate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppticsInAppUpdate.release.xcconfig; sourceTree = "<group>"; };
-		97CE58AC7FE7EC15857D063F00578021 /* de.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = de.lproj; path = SwiftFiles/CrossPromoApps/StringFiles/de.lproj; sourceTree = "<group>"; };
+		954C8605422434DD7C10B5E6C4004BD6 /* sdk_info */ = {isa = PBXFileReference; includeInIndex = 1; name = sdk_info; path = scripts/sdk_info; sourceTree = "<group>"; };
+		97660C052F84D697E18BAAA2B60722F2 /* ja.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ja.lproj; path = SwiftFiles/CrossPromoApps/StringFiles/ja.lproj; sourceTree = "<group>"; };
+		97F257EA94910599068711EE76AAB0C4 /* KSCrash.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = KSCrash.xcframework; sourceTree = "<group>"; };
+		984492D96FF637E7B7DD860C6F764A7F /* Apptics-Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Apptics-Swift.modulemap"; sourceTree = "<group>"; };
 		98E790FDC51E9AE75A75ECDF64024A2A /* AppticsCrossPromotion */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AppticsCrossPromotion; path = AppticsCrossPromotion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		98F198812EDF0110EBACF9ADC1A7212B /* AppticsRateUs.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = AppticsRateUs.xcframework; sourceTree = "<group>"; };
-		9BC94E8A8D51C47F207C6DC20E66EDB1 /* AppticsFeedbackKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppticsFeedbackKit.release.xcconfig; sourceTree = "<group>"; };
+		98EBB0CD2F5FA3DC7B6387706A54D676 /* Apptics-CP.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Apptics-CP.ttf"; path = "SwiftFiles/CrossPromoApps/Fonts/Apptics-CP.ttf"; sourceTree = "<group>"; };
+		99C6A52A50519C7A1A2F13C8FCA2BAC6 /* AppticsFeedbackKit.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = AppticsFeedbackKit.xcframework; sourceTree = "<group>"; };
+		9A9F84732E54217BED5459D9DD086FF9 /* sv.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = sv.lproj; path = SwiftFiles/CrossPromoApps/StringFiles/sv.lproj; sourceTree = "<group>"; };
+		9B972B988942CC10BEE45F45710F7092 /* AppticsCrossPromotion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppticsCrossPromotion.release.xcconfig; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F2FB7D69016B3F80358C97320D0AC91 /* it.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = it.lproj; path = SwiftFiles/CrossPromoApps/StringFiles/it.lproj; sourceTree = "<group>"; };
 		A0214D01A04439DA162CD9E3B312F6DF /* Pods-AppticsDemoTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AppticsDemoTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A133FEB0674770A71991BE2A29B0847A /* ml.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ml.lproj; path = SwiftFiles/CrossPromoApps/StringFiles/ml.lproj; sourceTree = "<group>"; };
-		A30E2320D109CCF4020A0475273BB88D /* AppticsFeedbackKit.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = AppticsFeedbackKit.xcframework; sourceTree = "<group>"; };
-		A41044C565FCB424B9FBDA16B4B33791 /* ResourceBundle-Apptics_SwiftResources-AppticsCrossPromotion-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Apptics_SwiftResources-AppticsCrossPromotion-Info.plist"; sourceTree = "<group>"; };
-		A5959BA66B95D1C07EE928C7E3ABAC96 /* ur-Arab.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "ur-Arab.lproj"; path = "SwiftFiles/CrossPromoApps/StringFiles/ur-Arab.lproj"; sourceTree = "<group>"; };
+		A709FEC4D86D520E11238DD4BDE7ECDB /* JWT.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = JWT.xcframework; sourceTree = "<group>"; };
+		A727EE628E6B530D0BC88EDA58A23D0C /* AppticsRemoteConfig.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppticsRemoteConfig.debug.xcconfig; sourceTree = "<group>"; };
 		A7AB3A55FA2BD0457FDEB524FF2568A4 /* Pods-AppticsDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AppticsDemo-umbrella.h"; sourceTree = "<group>"; };
-		A86FE82C08FB9D4B81A1F731907487F7 /* sdk_info.bu */ = {isa = PBXFileReference; includeInIndex = 1; name = sdk_info.bu; path = scripts/sdk_info.bu; sourceTree = "<group>"; };
-		AC3BCA0E28827375AE45FA5D41E4B0DD /* te.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = te.lproj; path = SwiftFiles/CrossPromoApps/StringFiles/te.lproj; sourceTree = "<group>"; };
-		ACD71F3F628A838943F66E5574C098C7 /* Apptics-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Apptics-Swift-umbrella.h"; sourceTree = "<group>"; };
-		AE0DB33DD1AF48165B3118AA57E03701 /* AppticsInAppUpdate.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = AppticsInAppUpdate.xcframework; sourceTree = "<group>"; };
-		B0A64689B41DFEDFC7836EC4BEA8252A /* AppticsFeedbackKit-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "AppticsFeedbackKit-xcframeworks.sh"; sourceTree = "<group>"; };
-		B1F03B1C9D7DFC977AE116047C1A077F /* PromotedAppsController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PromotedAppsController.swift; path = SwiftFiles/CrossPromoApps/PromotedAppsController.swift; sourceTree = "<group>"; };
-		B23067822AC46E18EA5E6E7AD3783B80 /* AppticsInAppUpdate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppticsInAppUpdate.debug.xcconfig; sourceTree = "<group>"; };
-		B25429F650F73D6548F490FEC8FE82E3 /* AppticsAnalytics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppticsAnalytics.release.xcconfig; sourceTree = "<group>"; };
+		A8C2625AC3FAA3838767654294F58B03 /* cs.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = cs.lproj; path = SwiftFiles/CrossPromoApps/StringFiles/cs.lproj; sourceTree = "<group>"; };
+		AC9E07E9D872004C4A74884BF0901B3E /* tr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = tr.lproj; path = SwiftFiles/CrossPromoApps/StringFiles/tr.lproj; sourceTree = "<group>"; };
+		B044AC4E7E69DC848C67EBB5D22FD119 /* ResourceBundle-Apptics_SwiftResources-AppticsCrossPromotion-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Apptics_SwiftResources-AppticsCrossPromotion-Info.plist"; sourceTree = "<group>"; };
+		B12DFE5AF0B4158D6069BFD1EB9AC5D9 /* Apptics-SDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Apptics-SDK-dummy.m"; sourceTree = "<group>"; };
+		B2628E51B7CBFEB6F194A76BC1DA0C90 /* PromotedAppsController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = PromotedAppsController.xib; path = "SwiftFiles/CrossPromoApps/ios-xibs/PromotedAppsController.xib"; sourceTree = "<group>"; };
 		B2EE2F346E807F7EB0FD4721FFE33B4E /* Pods-AppticsDemo-AppticsDemoUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AppticsDemo-AppticsDemoUITests-frameworks.sh"; sourceTree = "<group>"; };
-		B5A181EED7F006ACF8D5DCDCC3DD1541 /* Apptics.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = Apptics.xcframework; sourceTree = "<group>"; };
+		B59F8D697C564C9DA0616D26C94A88D5 /* zh-Hant.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-Hant.lproj"; path = "SwiftFiles/CrossPromoApps/StringFiles/zh-Hant.lproj"; sourceTree = "<group>"; };
+		B6295B329EE291B5D32183B5D7DC2017 /* AppticsCrossPromotion-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AppticsCrossPromotion-umbrella.h"; sourceTree = "<group>"; };
 		B653DEFC8BBA0072EB7A06CE17C0AB93 /* Pods-AppticsDemo-AppticsDemoUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AppticsDemo-AppticsDemoUITests-dummy.m"; sourceTree = "<group>"; };
-		B780953BA8F71067D7FB24A2A4995448 /* JWT.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = JWT.xcframework; sourceTree = "<group>"; };
-		BEA6EA8DE8265C0ED29CD0BEC88BF6C4 /* AppticsCrossPromotion-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AppticsCrossPromotion-umbrella.h"; sourceTree = "<group>"; };
-		BEC72A26CDB15F29611185A6A29F33C8 /* bn-IN.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "bn-IN.lproj"; path = "SwiftFiles/CrossPromoApps/StringFiles/bn-IN.lproj"; sourceTree = "<group>"; };
+		B8DBA36D5389EBBD92EF180D7E234230 /* AppticsRemoteConfig.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = AppticsRemoteConfig.xcframework; sourceTree = "<group>"; };
+		BBA2882CAEF63CC64E898A70F9EED634 /* Base.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = Base.lproj; path = SwiftFiles/CrossPromoApps/StringFiles/Base.lproj; sourceTree = "<group>"; };
+		C072423A64203A729A3D4267D654D6A7 /* AppticsFeedbackKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppticsFeedbackKit.release.xcconfig; sourceTree = "<group>"; };
+		C0910155597B7BD4DF84EC391DBF2969 /* Apptics-Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Apptics-Swift-prefix.pch"; sourceTree = "<group>"; };
+		C2301187CFA1F9315A84FBED68F6E25F /* AppticsApiTracker-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "AppticsApiTracker-xcframeworks.sh"; sourceTree = "<group>"; };
 		C294ECF8482E926741EA281FF36F1A8B /* AppticsCrossPromotion-Apptics_SwiftResources */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "AppticsCrossPromotion-Apptics_SwiftResources"; path = Apptics_SwiftResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2B7AC21EF05B42A266CDBCE899EFBD3 /* Pods-AppticsDemo-AppticsDemoUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AppticsDemo-AppticsDemoUITests-Info.plist"; sourceTree = "<group>"; };
-		C2C3960C8EB4BA6C73D83C17589B6EF1 /* cs.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = cs.lproj; path = SwiftFiles/CrossPromoApps/StringFiles/cs.lproj; sourceTree = "<group>"; };
-		C3C6E6B99576C9A6321E18080874F897 /* PromotedAppsKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PromotedAppsKit.swift; path = SwiftFiles/CrossPromoApps/PromotedAppsKit.swift; sourceTree = "<group>"; };
-		C7B6C8F82A321ABCED92BCE2037B8AF4 /* Apptics-SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Apptics-SDK.debug.xcconfig"; sourceTree = "<group>"; };
-		C88358B3636BB054F35796DE774667D3 /* AppticsRemoteConfig-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "AppticsRemoteConfig-xcframeworks.sh"; sourceTree = "<group>"; };
-		C94A785757AFB4D53297F8301A655D04 /* pa.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = pa.lproj; path = SwiftFiles/CrossPromoApps/StringFiles/pa.lproj; sourceTree = "<group>"; };
-		CB2391C51C69E4166A2C0CA34B98A55B /* AppticsCrossPromotion-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AppticsCrossPromotion-Info.plist"; sourceTree = "<group>"; };
-		CE9441AF7160144D5E35C2D202B02B02 /* pt.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = pt.lproj; path = SwiftFiles/CrossPromoApps/StringFiles/pt.lproj; sourceTree = "<group>"; };
-		D23B87994C91EBCE54220FFCF749885A /* id.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = id.lproj; path = SwiftFiles/CrossPromoApps/StringFiles/id.lproj; sourceTree = "<group>"; };
+		C4EA2BEA93829151F3F5F94435414E62 /* AppticsCrashKit.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = AppticsCrashKit.xcframework; sourceTree = "<group>"; };
+		C8532AA0597E277753A51526A1268367 /* fr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = fr.lproj; path = SwiftFiles/CrossPromoApps/StringFiles/fr.lproj; sourceTree = "<group>"; };
+		C904EE20ACB631BA1C11060E5CDDC793 /* pt-BR.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "pt-BR.lproj"; path = "SwiftFiles/CrossPromoApps/StringFiles/pt-BR.lproj"; sourceTree = "<group>"; };
+		C94F97C2C7F3F6F1319CAD3ACB5347A9 /* AppticsAnalytics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppticsAnalytics.debug.xcconfig; sourceTree = "<group>"; };
+		CAE8769348924207248BC0BCA9C0A215 /* AppticsInAppUpdate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppticsInAppUpdate.debug.xcconfig; sourceTree = "<group>"; };
+		CCAF39AD542F0FC1B87C847CE441DA60 /* AppticsInAppUpdate-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "AppticsInAppUpdate-xcframeworks.sh"; sourceTree = "<group>"; };
+		D12C54119EEF95349F942203C6C2FAD4 /* postinstaller */ = {isa = PBXFileReference; includeInIndex = 1; name = postinstaller; path = scripts/postinstaller; sourceTree = "<group>"; };
+		D1B7B0A3F7997DEBDE85C7E4AEE186EA /* sdk_info.bu */ = {isa = PBXFileReference; includeInIndex = 1; name = sdk_info.bu; path = scripts/sdk_info.bu; sourceTree = "<group>"; };
+		D273328D4ACA1D021FB9B28D8FC027AD /* pa.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = pa.lproj; path = SwiftFiles/CrossPromoApps/StringFiles/pa.lproj; sourceTree = "<group>"; };
+		D2DC503A318DDC89AA29B6360B1D599E /* AppticsApiTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppticsApiTracker.release.xcconfig; sourceTree = "<group>"; };
+		D2DCB37F8F6469ED02DC62934636E010 /* he.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = he.lproj; path = SwiftFiles/CrossPromoApps/StringFiles/he.lproj; sourceTree = "<group>"; };
+		D372C9CF33144D1C38C00437DA772BBC /* AppticsCrossPromotion.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppticsCrossPromotion.debug.xcconfig; sourceTree = "<group>"; };
 		D39183F5EB02BF8E914E93578B25B694 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		D43E38AABB704627650D7284D7E7889E /* zh-Hant.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-Hant.lproj"; path = "SwiftFiles/CrossPromoApps/StringFiles/zh-Hant.lproj"; sourceTree = "<group>"; };
-		D6F60018BEF72589BC5D7D68E390344E /* promotedAppViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = promotedAppViewCell.xib; path = "SwiftFiles/CrossPromoApps/ios-xibs/promotedAppViewCell.xib"; sourceTree = "<group>"; };
-		D899FA811096C877C0DD3948D66B8219 /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-Hans.lproj"; path = "SwiftFiles/CrossPromoApps/StringFiles/zh-Hans.lproj"; sourceTree = "<group>"; };
-		DB0D0651F17855AD76CE546304356613 /* ja.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ja.lproj; path = SwiftFiles/CrossPromoApps/StringFiles/ja.lproj; sourceTree = "<group>"; };
-		DB9262D02C0485F6983CAB7DFD0FFA04 /* AppticsRateUs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppticsRateUs.release.xcconfig; sourceTree = "<group>"; };
-		DD3BE26B0A275B47E35CA4B8388C4640 /* mr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = mr.lproj; path = SwiftFiles/CrossPromoApps/StringFiles/mr.lproj; sourceTree = "<group>"; };
-		E146E21BA962AA42113ECA0F806DF08E /* pl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = pl.lproj; path = SwiftFiles/CrossPromoApps/StringFiles/pl.lproj; sourceTree = "<group>"; };
+		D3D955A664554961FD50F78E2899AEEC /* el.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = el.lproj; path = SwiftFiles/CrossPromoApps/StringFiles/el.lproj; sourceTree = "<group>"; };
+		D7444D668E9EA1B6286DB2A40461C179 /* es.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = es.lproj; path = SwiftFiles/CrossPromoApps/StringFiles/es.lproj; sourceTree = "<group>"; };
+		D8BD09046926FDC36131499AB6919E1D /* AppticsEventTracker.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = AppticsEventTracker.xcframework; sourceTree = "<group>"; };
+		DB15AFF8B54A9F0A8C4D3E1CD92308BA /* pt.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = pt.lproj; path = SwiftFiles/CrossPromoApps/StringFiles/pt.lproj; sourceTree = "<group>"; };
+		DC47CAB384D757DEB0B976F452BC0932 /* de.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = de.lproj; path = SwiftFiles/CrossPromoApps/StringFiles/de.lproj; sourceTree = "<group>"; };
+		DE64C8EE7962E844EA17682B79A60333 /* Apptics-SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Apptics-SDK.release.xcconfig"; sourceTree = "<group>"; };
+		DFF4E3666C5C7BE7D5387681D95DA200 /* vi.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = vi.lproj; path = SwiftFiles/CrossPromoApps/StringFiles/vi.lproj; sourceTree = "<group>"; };
+		E0341283C644816FBA244087D6D767A3 /* ar.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ar.lproj; path = SwiftFiles/CrossPromoApps/StringFiles/ar.lproj; sourceTree = "<group>"; };
+		E206B6C394E3DE57B0E6D042650554DB /* Apptics-SDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Apptics-SDK-prefix.pch"; sourceTree = "<group>"; };
 		E44BD72BEF369AF0CB8A54B8537250D3 /* Pods-AppticsDemoTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-AppticsDemoTests"; path = Pods_AppticsDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E661F3F8C116A121FF17AA432C53762D /* AppticsCrossPromotion.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppticsCrossPromotion.debug.xcconfig; sourceTree = "<group>"; };
-		E7470DA0DCCABBD51C904A3C3CB0BD15 /* Apptics-Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Apptics-Swift-prefix.pch"; sourceTree = "<group>"; };
-		E82B3B4A232ACCC2A2243FF4B2AB1AC1 /* AppticsApiTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppticsApiTracker.debug.xcconfig; sourceTree = "<group>"; };
+		EABAB69351673A4653F79C042551F872 /* bg.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = bg.lproj; path = SwiftFiles/CrossPromoApps/StringFiles/bg.lproj; sourceTree = "<group>"; };
 		EE1F69E59B2BA519AD8679260FF26270 /* Pods-AppticsDemo */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-AppticsDemo"; path = Pods_AppticsDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF24EA175545892FD0F878A4D8939905 /* AppticsApiTracker.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = AppticsApiTracker.xcframework; sourceTree = "<group>"; };
 		F093AFB53C255933C94825849F5B4348 /* Pods-AppticsDemoTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AppticsDemoTests-umbrella.h"; sourceTree = "<group>"; };
-		F17A4C010F874E7FDD4F811C20B79FE9 /* vi.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = vi.lproj; path = SwiftFiles/CrossPromoApps/StringFiles/vi.lproj; sourceTree = "<group>"; };
-		F19E3BB85E86B1CEEB5265D0B4A553EB /* Apptics-SDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Apptics-SDK.modulemap"; sourceTree = "<group>"; };
-		F22465A5A4BB21DFABBB07C6B831D8B3 /* AppticsApiTracker-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "AppticsApiTracker-xcframeworks.sh"; sourceTree = "<group>"; };
-		F3A8C49A6894BFC898ABF2743BC4D3F0 /* hr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = hr.lproj; path = SwiftFiles/CrossPromoApps/StringFiles/hr.lproj; sourceTree = "<group>"; };
-		F3F5B36FA296730E622670631A965620 /* es.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = es.lproj; path = SwiftFiles/CrossPromoApps/StringFiles/es.lproj; sourceTree = "<group>"; };
+		F6795306B44FF950822B1A7DD8FD41E1 /* mr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = mr.lproj; path = SwiftFiles/CrossPromoApps/StringFiles/mr.lproj; sourceTree = "<group>"; };
 		F8BE7B50AEEC10B0450478E02794B92D /* Pods-AppticsDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AppticsDemo-acknowledgements.plist"; sourceTree = "<group>"; };
-		FB203A8074C7896EE6B6273A5A0FE59A /* postinstaller */ = {isa = PBXFileReference; includeInIndex = 1; name = postinstaller; path = scripts/postinstaller; sourceTree = "<group>"; };
-		FC391C6833941F58FBA05C16DE01BE7A /* AppticsEventTracker.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = AppticsEventTracker.xcframework; sourceTree = "<group>"; };
-		FFD0F6E7F971E0D3B0F5718F80A87F8B /* AppticsRemoteConfig.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppticsRemoteConfig.release.xcconfig; sourceTree = "<group>"; };
-		FFD2438A38DCEE76A44B3E67E8D6F702 /* it.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = it.lproj; path = SwiftFiles/CrossPromoApps/StringFiles/it.lproj; sourceTree = "<group>"; };
+		FC29AACD1436BCB834BC2DC28BE535C3 /* AppticsScreenTracker.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = AppticsScreenTracker.xcframework; sourceTree = "<group>"; };
+		FFECE85AFBA1B81E785E9F92C5C6736D /* ur.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ur.lproj; path = SwiftFiles/CrossPromoApps/StringFiles/ur.lproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		011021BD1037EB5AA1842790B6AD9044 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1E0CC6C515A9ADD5499572B0EE787F12 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				3AAE5B108B8A65A6F373E562468E9CD6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		288D0EF5264749D012895A317C331877 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67FDBF947045AD236592B2B21F7EA0D4 /* Foundation.framework in Frameworks */,
+				DE8B236F1A485E31C09E80F3AE41B093 /* StoreKit.framework in Frameworks */,
+				4561806F5E5FBF5CD9F5ECC46650C149 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -545,13 +550,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BBE475563677B78403596F42AA4E9BEC /* Frameworks */ = {
+		CDD1E1B92FEFDD431566A2DEDA7EC254 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82755F4450EF589755E6EC13E31E6C13 /* Foundation.framework in Frameworks */,
-				FF8B5B8C26D2366A4AA73A04756B0679 /* StoreKit.framework in Frameworks */,
-				599F1946B0A5E7CFF557565F03EF6734 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,236 +598,257 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		07FFAA3F82D3E143CC299591DAAE62A9 /* CrossPromotion */ = {
+		04355D4E30B51C50622B461C54095124 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				5C8A6D06C8860E439EB26BB9C2813EF2 /* APThemeSwift.swift */,
-				B1F03B1C9D7DFC977AE116047C1A077F /* PromotedAppsController.swift */,
-				C3C6E6B99576C9A6321E18080874F897 /* PromotedAppsKit.swift */,
-				44BE8C87BCB23CD238877AEAB229F9DD /* promotedAppViewCell.swift */,
-				0D90AEE4565C0029035D41B0E2D18299 /* Resources */,
-			);
-			name = CrossPromotion;
-			sourceTree = "<group>";
-		};
-		0C17449BABE8D8D5FCC5EE0997943C57 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				F22465A5A4BB21DFABBB07C6B831D8B3 /* AppticsApiTracker-xcframeworks.sh */,
-				E82B3B4A232ACCC2A2243FF4B2AB1AC1 /* AppticsApiTracker.debug.xcconfig */,
-				8819E585B9AC8134D439D830DCCABC23 /* AppticsApiTracker.release.xcconfig */,
+				C2301187CFA1F9315A84FBED68F6E25F /* AppticsApiTracker-xcframeworks.sh */,
+				794BC4A66FFBB0FBA6FDA5612F5BBCA6 /* AppticsApiTracker.debug.xcconfig */,
+				D2DC503A318DDC89AA29B6360B1D599E /* AppticsApiTracker.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/AppticsApiTracker";
 			sourceTree = "<group>";
 		};
-		0D90AEE4565C0029035D41B0E2D18299 /* Resources */ = {
+		08DBFA3992833DE4F33505336329176F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				465E7B98746A7746A59CE0B118103791 /* Apptics-CP.ttf */,
-				6BBC152B539E0F3105656BD3EAD8AE84 /* ar.lproj */,
-				13123C733FDB9D1E33BC607219863827 /* Base.lproj */,
-				882B43FD0321EF6E27552D1695DE50DA /* bg.lproj */,
-				BEC72A26CDB15F29611185A6A29F33C8 /* bn-IN.lproj */,
-				C2C3960C8EB4BA6C73D83C17589B6EF1 /* cs.lproj */,
-				1481DB0D18D3682F67F458627F35006E /* da.lproj */,
-				97CE58AC7FE7EC15857D063F00578021 /* de.lproj */,
-				7AA4D0CC94BEAB757D42E2F4FA3B9693 /* el.lproj */,
-				85AF00A2B886DCC28193D8229D93846F /* en.lproj */,
-				F3F5B36FA296730E622670631A965620 /* es.lproj */,
-				6355B8E804FF964597C02F0F22EF70BE /* es-MX.lproj */,
-				25F7FB6B39F1AE5765AA2015A522200F /* fr.lproj */,
-				1B88CAE875C8F6EB308F1DC1EE949DAC /* fr-CA.lproj */,
-				8304DBB3AD75F90773583A02E7A61DD2 /* gu.lproj */,
-				5054067092B7BEBE8A2F001A71FE9112 /* he.lproj */,
-				2F736A5AAEB53D29DA3852ADCB72408C /* hi.lproj */,
-				F3A8C49A6894BFC898ABF2743BC4D3F0 /* hr.lproj */,
-				D23B87994C91EBCE54220FFCF749885A /* id.lproj */,
-				FFD2438A38DCEE76A44B3E67E8D6F702 /* it.lproj */,
-				DB0D0651F17855AD76CE546304356613 /* ja.lproj */,
-				59E2C4407C67F913080368F6EBEF82D9 /* kn.lproj */,
-				7F45F2B3B5345775C24E4A40823CDE9B /* ko.lproj */,
-				A133FEB0674770A71991BE2A29B0847A /* ml.lproj */,
-				DD3BE26B0A275B47E35CA4B8388C4640 /* mr.lproj */,
-				8E1337C38E311410D1783B4589FEE592 /* nl.lproj */,
-				C94A785757AFB4D53297F8301A655D04 /* pa.lproj */,
-				E146E21BA962AA42113ECA0F806DF08E /* pl.lproj */,
-				77D657E6846E3340ADD9421E0010F9D1 /* PromotedAppsController.xib */,
-				D6F60018BEF72589BC5D7D68E390344E /* promotedAppViewCell.xib */,
-				CE9441AF7160144D5E35C2D202B02B02 /* pt.lproj */,
-				61953A7C9FCDC4E3B7A626D0F842A86C /* pt-BR.lproj */,
-				04D7AAB70F1A61097243D70ABCEF333A /* ru.lproj */,
-				553CA93CDD874A7E171AA4233B7D9817 /* sv.lproj */,
-				8684B8517A6D8A368655D59A8788888A /* ta.lproj */,
-				AC3BCA0E28827375AE45FA5D41E4B0DD /* te.lproj */,
-				6B41F2658504F32FA1ECA979B1C17E3A /* tr.lproj */,
-				1A09ABF1133A104D8D7E48A014F24F0C /* ur.lproj */,
-				A5959BA66B95D1C07EE928C7E3ABAC96 /* ur-Arab.lproj */,
-				F17A4C010F874E7FDD4F811C20B79FE9 /* vi.lproj */,
-				D899FA811096C877C0DD3948D66B8219 /* zh-Hans.lproj */,
-				D43E38AABB704627650D7284D7E7889E /* zh-Hant.lproj */,
+				99C6A52A50519C7A1A2F13C8FCA2BAC6 /* AppticsFeedbackKit.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1056C04C9BD569A428425D2732352D4A /* Apptics-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				E177F844E511B6E949BCC37D8B4A5911 /* Scripts */,
+				198DC3106DBCEFC1E43D5D605C607C11 /* Support Files */,
+			);
+			name = "Apptics-SDK";
+			path = "Apptics-SDK";
+			sourceTree = "<group>";
+		};
+		198DC3106DBCEFC1E43D5D605C607C11 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5663EEAFBF43429E66A6E1128FA2C7A6 /* Apptics-SDK.modulemap */,
+				B12DFE5AF0B4158D6069BFD1EB9AC5D9 /* Apptics-SDK-dummy.m */,
+				61344E5C618346F47417AC460A14D53F /* Apptics-SDK-Info.plist */,
+				E206B6C394E3DE57B0E6D042650554DB /* Apptics-SDK-prefix.pch */,
+				01D01290E312BF1D98BD2E0A769BB533 /* Apptics-SDK-umbrella.h */,
+				4B97128079E84344D4BA3D6EE1117895 /* Apptics-SDK.debug.xcconfig */,
+				DE64C8EE7962E844EA17682B79A60333 /* Apptics-SDK.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Apptics-SDK";
+			sourceTree = "<group>";
+		};
+		243FF89A9D15DD9E9370F7FA3B04BA53 /* AppticsApiTracker */ = {
+			isa = PBXGroup;
+			children = (
+				4B096AB1F87560E497E1A5406F69983F /* ApiTracker */,
+				04355D4E30B51C50622B461C54095124 /* Support Files */,
+			);
+			name = AppticsApiTracker;
+			path = AppticsApiTracker;
+			sourceTree = "<group>";
+		};
+		2FF3DD10720B0E552ACE107C738AF95C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				98EBB0CD2F5FA3DC7B6387706A54D676 /* Apptics-CP.ttf */,
+				E0341283C644816FBA244087D6D767A3 /* ar.lproj */,
+				BBA2882CAEF63CC64E898A70F9EED634 /* Base.lproj */,
+				EABAB69351673A4653F79C042551F872 /* bg.lproj */,
+				549EB1CC808C30AA65CB9BFFD3751EC5 /* bn-IN.lproj */,
+				A8C2625AC3FAA3838767654294F58B03 /* cs.lproj */,
+				24A0208E99190CC305F93D90E270CF71 /* da.lproj */,
+				DC47CAB384D757DEB0B976F452BC0932 /* de.lproj */,
+				D3D955A664554961FD50F78E2899AEEC /* el.lproj */,
+				76BE62D44EDB061AC743D3C2FA91A13C /* en.lproj */,
+				D7444D668E9EA1B6286DB2A40461C179 /* es.lproj */,
+				1B61164D8DA61C0D04D717FE88A81D42 /* es-MX.lproj */,
+				C8532AA0597E277753A51526A1268367 /* fr.lproj */,
+				74057544F8C2FA0B8910B59022787991 /* fr-CA.lproj */,
+				6324C93A5B9ACF04D2A496C83D0FF5BF /* gu.lproj */,
+				D2DCB37F8F6469ED02DC62934636E010 /* he.lproj */,
+				7691865A84E17BFE13CF5FA10D71E505 /* hi.lproj */,
+				800764042D30EC3EE1C47D8ADDA9EA99 /* hr.lproj */,
+				65D607591038AB62ECFD37D03E2CFF48 /* id.lproj */,
+				9F2FB7D69016B3F80358C97320D0AC91 /* it.lproj */,
+				97660C052F84D697E18BAAA2B60722F2 /* ja.lproj */,
+				505D6F45BBFC614D2B06C55700176F88 /* kn.lproj */,
+				5061E7A58209A5AD3F511A1F4C46A514 /* ko.lproj */,
+				0AA5406B8B38E93D74DCC3A5E17F2345 /* ml.lproj */,
+				F6795306B44FF950822B1A7DD8FD41E1 /* mr.lproj */,
+				8AAE095897BA4DF58FB731B192AC8B6E /* nl.lproj */,
+				D273328D4ACA1D021FB9B28D8FC027AD /* pa.lproj */,
+				2507061341E5792D85F0EDF42A61C538 /* pl.lproj */,
+				B2628E51B7CBFEB6F194A76BC1DA0C90 /* PromotedAppsController.xib */,
+				7FC768C6BBFFD987C1A700DE8CFD92D0 /* promotedAppViewCell.xib */,
+				DB15AFF8B54A9F0A8C4D3E1CD92308BA /* pt.lproj */,
+				C904EE20ACB631BA1C11060E5CDDC793 /* pt-BR.lproj */,
+				6915246AB6DCA42FAC2264F6AE87B6E8 /* ru.lproj */,
+				9A9F84732E54217BED5459D9DD086FF9 /* sv.lproj */,
+				864431D7B81F30420541DD86C7B190CA /* ta.lproj */,
+				8EB2ECF6AAB93837983529CCF1E4C134 /* te.lproj */,
+				AC9E07E9D872004C4A74884BF0901B3E /* tr.lproj */,
+				FFECE85AFBA1B81E785E9F92C5C6736D /* ur.lproj */,
+				3CC8EAFF5EFA48F796D592D7BECBB23C /* ur-Arab.lproj */,
+				DFF4E3666C5C7BE7D5387681D95DA200 /* vi.lproj */,
+				768369C797815676DFE8B2CBC205863C /* zh-Hans.lproj */,
+				B59F8D697C564C9DA0616D26C94A88D5 /* zh-Hant.lproj */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		104AF54C0E895D30DA9353FED3273A66 /* AppticsRateUs */ = {
+		305E88112E10DE35B790637EFFD41EF6 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				7FF36D33B76F863B1BF33C2C610EDCE4 /* RateUs */,
-				41E6A0B5ABCA8AF54F4C8E0DFFA18712 /* Support Files */,
-			);
-			name = AppticsRateUs;
-			path = AppticsRateUs;
-			sourceTree = "<group>";
-		};
-		10BC31F3B7085F1A6A01593BF42BB7D7 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				350DA2A76BCC19AE3768DDFF77552E7F /* AppticsAnalytics-xcframeworks.sh */,
-				72C8B6493BF548FA26CB5549767DD7A5 /* AppticsAnalytics.debug.xcconfig */,
-				B25429F650F73D6548F490FEC8FE82E3 /* AppticsAnalytics.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/AppticsAnalytics";
-			sourceTree = "<group>";
-		};
-		181EF21D42E0C8FEC9355B7C977D26AF /* AppticsInAppUpdate */ = {
-			isa = PBXGroup;
-			children = (
-				72BB669820F90FADE9AEBB2CBF515CFB /* AppUpdate */,
-				B20815056A83FE5B17A9DB3FBABB84D2 /* Support Files */,
-			);
-			name = AppticsInAppUpdate;
-			path = AppticsInAppUpdate;
-			sourceTree = "<group>";
-		};
-		1C0CBB49250D2B2EEE30E9604C86D9DD /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				26DCBFBFCB2EB90B4F21DCA6842E8D2B /* AppticsScreenTracker.xcframework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		2667DB0F09D303B00151D53C7A23AC89 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				FC391C6833941F58FBA05C16DE01BE7A /* AppticsEventTracker.xcframework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		3929E0EA45F113466ADDAF4A8A0CAD55 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				6A0AE8C61AAB1355C47B02A0CA7B606B /* AppticsRemoteConfig.xcframework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		399CFB8F0358AD77D47F88AB58045E6B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				98F198812EDF0110EBACF9ADC1A7212B /* AppticsRateUs.xcframework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		41E6A0B5ABCA8AF54F4C8E0DFFA18712 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				4D5763ED67B73083AF89E8A3E82BB0DC /* AppticsRateUs-xcframeworks.sh */,
-				8DF75D4D9DBC5BF05804A114CE542DB2 /* AppticsRateUs.debug.xcconfig */,
-				DB9262D02C0485F6983CAB7DFD0FFA04 /* AppticsRateUs.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/AppticsRateUs";
-			sourceTree = "<group>";
-		};
-		4466B81D9D261822A1AD032E7B714210 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				80DC90F364295074FADDABB82DF81367 /* Apptics-Swift.modulemap */,
-				584A36C4B2B3DBC84F3A952B67B9B890 /* Apptics-Swift-dummy.m */,
-				1B79D0251CFB43EE777F0379CA5C39AC /* Apptics-Swift-Info.plist */,
-				E7470DA0DCCABBD51C904A3C3CB0BD15 /* Apptics-Swift-prefix.pch */,
-				ACD71F3F628A838943F66E5574C098C7 /* Apptics-Swift-umbrella.h */,
-				2EC1478193EE77C889B795E76679C875 /* Apptics-Swift.debug.xcconfig */,
-				0969CB12F6A20F15E19C4913C7CCADE2 /* Apptics-Swift.release.xcconfig */,
+				984492D96FF637E7B7DD860C6F764A7F /* Apptics-Swift.modulemap */,
+				3DCCE7EF5204A0D82CFE36F5071AAC5D /* Apptics-Swift-dummy.m */,
+				29564258F02AEB7516EE43E7FBB6CD80 /* Apptics-Swift-Info.plist */,
+				C0910155597B7BD4DF84EC391DBF2969 /* Apptics-Swift-prefix.pch */,
+				47ED04CFABEBA6423EBF80716F5787AB /* Apptics-Swift-umbrella.h */,
+				04AB34F85D4B02FB089721CCAD29D5DF /* Apptics-Swift.debug.xcconfig */,
+				60CEA49912A39093ED0FFACCF3D74381 /* Apptics-Swift.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Apptics-Swift";
 			sourceTree = "<group>";
 		};
-		574361418CA192779518BABD74DAE12B /* Frameworks */ = {
+		35AF1453B49C4AC1EA81E6B212839751 /* RemoteConfig */ = {
 			isa = PBXGroup;
 			children = (
-				7FFA7AF21FA0AB0FB09BE8890686DBF8 /* KSCrash.xcframework */,
+				8A16F5D4081E6EA38DCBFDA89B0AF2C9 /* Frameworks */,
+			);
+			name = RemoteConfig;
+			sourceTree = "<group>";
+		};
+		37DEEBD8CF400B1FC9DAD566765EE79E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				344E8E69890FE5021DBFD695E5628828 /* AppticsInAppUpdate.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		586C3C696805DBD64644EB61F8FDAF2A /* Support Files */ = {
+		3B246A7AAF473606FBA21F44D3985108 /* FeedbackKit */ = {
 			isa = PBXGroup;
 			children = (
-				C88358B3636BB054F35796DE774667D3 /* AppticsRemoteConfig-xcframeworks.sh */,
-				03FA944DC56D7DB3C42E7B8F57D65AB1 /* AppticsRemoteConfig.debug.xcconfig */,
-				FFD0F6E7F971E0D3B0F5718F80A87F8B /* AppticsRemoteConfig.release.xcconfig */,
+				08DBFA3992833DE4F33505336329176F /* Frameworks */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/AppticsRemoteConfig";
+			name = FeedbackKit;
 			sourceTree = "<group>";
 		};
-		5BD169DDDF01587460D210E9023D052A /* Apptics */ = {
+		3D810D5167C867F7D0ABDE106C6F76BB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B272CE2ACF0D4C05E703E5ABE05D7461 /* Frameworks */,
-			);
-			name = Apptics;
-			sourceTree = "<group>";
-		};
-		65763142EE24A9C0048CEBEF5E337DCC /* Scripts */ = {
-			isa = PBXGroup;
-			children = (
-				7888785BEC43BC705778A694CC875E1D /* appticshelper.rb */,
-				30B4D02DAB9378472890BECA4DFC6986 /* dsym_upload */,
-				FB203A8074C7896EE6B6273A5A0FE59A /* postinstaller */,
-				774831EA2430C874B79A1C6A327A1EA6 /* run */,
-				8CFB60027A1A82C529D1405ED37D44EC /* sdk_info */,
-				A86FE82C08FB9D4B81A1F731907487F7 /* sdk_info.bu */,
-			);
-			name = Scripts;
-			sourceTree = "<group>";
-		};
-		70B18A4AE6B0ADA2776989B58E33FC55 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				9037B0A8E09B91D4272199323B060FB9 /* AppticsApiTracker.xcframework */,
+				6DBA4AEB3DD9419A3D4D67FCE17635A1 /* Apptics.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		72BB669820F90FADE9AEBB2CBF515CFB /* AppUpdate */ = {
+		3F06C9ACFF6FF54CE95AEE137176E360 /* AppticsFeedbackKit */ = {
 			isa = PBXGroup;
 			children = (
-				E275A053A244A916958440A97EDA4A0A /* Frameworks */,
+				3B246A7AAF473606FBA21F44D3985108 /* FeedbackKit */,
+				8B6FC1DE1A906B35183160EC18ADD0EE /* Support Files */,
 			);
-			name = AppUpdate;
+			name = AppticsFeedbackKit;
+			path = AppticsFeedbackKit;
 			sourceTree = "<group>";
 		};
-		73E69383E5D75B9447734B986D47A616 /* AppticsAnalytics */ = {
+		4B096AB1F87560E497E1A5406F69983F /* ApiTracker */ = {
 			isa = PBXGroup;
 			children = (
-				5BD169DDDF01587460D210E9023D052A /* Apptics */,
-				D10B47F8723C6525B0E090B0B751FA95 /* CrashKit */,
-				FB20BAAF9074884AB05E6BF7F9BB7F44 /* EventTracker */,
-				947D52B12FA4DA4F35E8BF1CD6BDBCC6 /* JWT */,
-				B59C2531F3D48FAC56C71412D047214B /* KSCrash */,
-				B3BD178C79D1091EFE36179471096ACF /* ScreenTracker */,
-				10BC31F3B7085F1A6A01593BF42BB7D7 /* Support Files */,
+				976D0DC9977F1407A9F98D781B0140B2 /* Frameworks */,
+			);
+			name = ApiTracker;
+			sourceTree = "<group>";
+		};
+		50A717FC3BE5155748398684879C0B92 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC29AACD1436BCB834BC2DC28BE535C3 /* AppticsScreenTracker.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5956B98421190818AF784CBED03F36EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8BD09046926FDC36131499AB6919E1D /* AppticsEventTracker.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5B68D364373D5D929F5B7E2EDA724EBB /* RateUs */ = {
+			isa = PBXGroup;
+			children = (
+				625DA5C9ADCF56EA79893464D78DCBC8 /* Frameworks */,
+			);
+			name = RateUs;
+			sourceTree = "<group>";
+		};
+		5CF3F7A6C27BBF5C534D8A3B8677533F /* JWT */ = {
+			isa = PBXGroup;
+			children = (
+				EAA793DBF0CF6A863045D8BF8C7EBA39 /* Frameworks */,
+			);
+			name = JWT;
+			sourceTree = "<group>";
+		};
+		625DA5C9ADCF56EA79893464D78DCBC8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0BF183CCD22A8DAF920CBA65827E4916 /* AppticsRateUs.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6C521F029A815D5C9E48B7F635D990DD /* AppticsAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				7B70E78AB10A4E2068B7AB8F6338D040 /* Apptics */,
+				7FE45FC0E20867D0B7EA61B2DAEBE5FD /* CrashKit */,
+				ED8C112FF52890F29E24C247CF578CC0 /* EventTracker */,
+				5CF3F7A6C27BBF5C534D8A3B8677533F /* JWT */,
+				7C92A1F65BCB9B9D640BD6B01DD105A3 /* KSCrash */,
+				A975FDBEA1702E9D382CE4784526F8F0 /* ScreenTracker */,
+				E03A301237FCA25D76A2ACCB6A660271 /* Support Files */,
 			);
 			name = AppticsAnalytics;
 			path = AppticsAnalytics;
+			sourceTree = "<group>";
+		};
+		71A724995357C5B840CB5DC26BF052B5 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8B1F76847DDE26127BD27151D16080B2 /* APAppticsForExtension.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		72DE0833BBB0DB27BEC4216EAC5BF47B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7116E1F2D1128C328A32AE43CC3A1136 /* AppticsRateUs-xcframeworks.sh */,
+				86D5735CDAE4B91770E2127F29B139DB /* AppticsRateUs.debug.xcconfig */,
+				13E7AF77D9F07307DDE7F9B17D1DED5F /* AppticsRateUs.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AppticsRateUs";
+			sourceTree = "<group>";
+		};
+		73B2DC7AE88955AA46CF38016FF8972D /* Apptics-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				A19C6E418A747252C5FF7C8F25146CAF /* Analytics */,
+				71A724995357C5B840CB5DC26BF052B5 /* Extension */,
+				305E88112E10DE35B790637EFFD41EF6 /* Support Files */,
+			);
+			name = "Apptics-Swift";
+			path = "Apptics-Swift";
 			sourceTree = "<group>";
 		};
 		75E676E7232FF09E29FD41791C80D76F /* iOS */ = {
@@ -838,33 +861,74 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		7FF36D33B76F863B1BF33C2C610EDCE4 /* RateUs */ = {
+		7B70E78AB10A4E2068B7AB8F6338D040 /* Apptics */ = {
 			isa = PBXGroup;
 			children = (
-				399CFB8F0358AD77D47F88AB58045E6B /* Frameworks */,
+				3D810D5167C867F7D0ABDE106C6F76BB /* Frameworks */,
 			);
-			name = RateUs;
+			name = Apptics;
 			sourceTree = "<group>";
 		};
-		800BDF34078E305F55146D6EC7FC345E /* Support Files */ = {
+		7C92A1F65BCB9B9D640BD6B01DD105A3 /* KSCrash */ = {
 			isa = PBXGroup;
 			children = (
-				F19E3BB85E86B1CEEB5265D0B4A553EB /* Apptics-SDK.modulemap */,
-				27BF48072FDAA9125D830BCEDE1FE3FB /* Apptics-SDK-dummy.m */,
-				4A8C94A9CD4AA036649CBD097707843F /* Apptics-SDK-Info.plist */,
-				572063FCB1273DC4DB6FDEBDC167EBF9 /* Apptics-SDK-prefix.pch */,
-				470B3769D8BED67573BF4937DAFFA48A /* Apptics-SDK-umbrella.h */,
-				C7B6C8F82A321ABCED92BCE2037B8AF4 /* Apptics-SDK.debug.xcconfig */,
-				1DFE1B5E8467337DC36F57AA8F1E0623 /* Apptics-SDK.release.xcconfig */,
+				A89A0A6440E764248524B896EF9C85F5 /* Frameworks */,
+			);
+			name = KSCrash;
+			sourceTree = "<group>";
+		};
+		7FE45FC0E20867D0B7EA61B2DAEBE5FD /* CrashKit */ = {
+			isa = PBXGroup;
+			children = (
+				919D9374F624B2821920F06AAABA0B5A /* Frameworks */,
+			);
+			name = CrashKit;
+			sourceTree = "<group>";
+		};
+		80957D47B0CD4D318CD3CEBFB7473B63 /* AppticsInAppUpdate */ = {
+			isa = PBXGroup;
+			children = (
+				D55F600B500FBD2AF41D15906D704BED /* AppUpdate */,
+				8215BF120F272BAEBAF6DA38C1D69DF1 /* Support Files */,
+			);
+			name = AppticsInAppUpdate;
+			path = AppticsInAppUpdate;
+			sourceTree = "<group>";
+		};
+		8215BF120F272BAEBAF6DA38C1D69DF1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CCAF39AD542F0FC1B87C847CE441DA60 /* AppticsInAppUpdate-xcframeworks.sh */,
+				CAE8769348924207248BC0BCA9C0A215 /* AppticsInAppUpdate.debug.xcconfig */,
+				84B4169C5B3D0A9C80A8913B61D4366F /* AppticsInAppUpdate.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/Apptics-SDK";
+			path = "../Target Support Files/AppticsInAppUpdate";
 			sourceTree = "<group>";
 		};
-		86474C51922DC5DAFF14A8F6E92C0105 /* Frameworks */ = {
+		8A16F5D4081E6EA38DCBFDA89B0AF2C9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6500AFB8846E36453D5B9EDCB134F5B5 /* AppticsCrashKit.xcframework */,
+				B8DBA36D5389EBBD92EF180D7E234230 /* AppticsRemoteConfig.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8B6FC1DE1A906B35183160EC18ADD0EE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8340150B6FBBF07A33141CE322917B73 /* AppticsFeedbackKit-xcframeworks.sh */,
+				63C22F710E86B6769510D0C5949B0D08 /* AppticsFeedbackKit.debug.xcconfig */,
+				C072423A64203A729A3D4267D654D6A7 /* AppticsFeedbackKit.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AppticsFeedbackKit";
+			sourceTree = "<group>";
+		};
+		919D9374F624B2821920F06AAABA0B5A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4EA2BEA93829151F3F5F94435414E62 /* AppticsCrashKit.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -886,111 +950,52 @@
 			path = "Target Support Files/Pods-AppticsDemoTests";
 			sourceTree = "<group>";
 		};
-		947D52B12FA4DA4F35E8BF1CD6BDBCC6 /* JWT */ = {
+		976D0DC9977F1407A9F98D781B0140B2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				EF541DB25F8BE23765A01F8EF81687B7 /* Frameworks */,
-			);
-			name = JWT;
-			sourceTree = "<group>";
-		};
-		9FB4A0BC431D0DF29799DDFE97814EFD /* AppticsApiTracker */ = {
-			isa = PBXGroup;
-			children = (
-				FB378B4D60799FC173FC3A6B6BF47448 /* ApiTracker */,
-				0C17449BABE8D8D5FCC5EE0997943C57 /* Support Files */,
-			);
-			name = AppticsApiTracker;
-			path = AppticsApiTracker;
-			sourceTree = "<group>";
-		};
-		A429CC4EE7CDBAD03F60DBB6F387BF31 /* AppticsRemoteConfig */ = {
-			isa = PBXGroup;
-			children = (
-				A7AB9E754C0BEC2221446A3C5AED0EA1 /* RemoteConfig */,
-				586C3C696805DBD64644EB61F8FDAF2A /* Support Files */,
-			);
-			name = AppticsRemoteConfig;
-			path = AppticsRemoteConfig;
-			sourceTree = "<group>";
-		};
-		A7AB9E754C0BEC2221446A3C5AED0EA1 /* RemoteConfig */ = {
-			isa = PBXGroup;
-			children = (
-				3929E0EA45F113466ADDAF4A8A0CAD55 /* Frameworks */,
-			);
-			name = RemoteConfig;
-			sourceTree = "<group>";
-		};
-		A9E3BF7D7D644D7FA2090580E5215668 /* AppticsFeedbackKit */ = {
-			isa = PBXGroup;
-			children = (
-				CECF3DC5F600A6329DCD2B2F39764A46 /* FeedbackKit */,
-				C7325E624916AB7287FFE76B065C5AF7 /* Support Files */,
-			);
-			name = AppticsFeedbackKit;
-			path = AppticsFeedbackKit;
-			sourceTree = "<group>";
-		};
-		ADA6958324D48BEAC36FD2F76A505BD0 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				E815BF3123022533163BB2E33DA00F7D /* Apptics-SDK */,
-				B873C6F468EB09CFFC98221ED4FE18AF /* Apptics-Swift */,
-				73E69383E5D75B9447734B986D47A616 /* AppticsAnalytics */,
-				9FB4A0BC431D0DF29799DDFE97814EFD /* AppticsApiTracker */,
-				D0590340B0557E7429CCE99EAC9BD9C5 /* AppticsCrossPromotion */,
-				A9E3BF7D7D644D7FA2090580E5215668 /* AppticsFeedbackKit */,
-				181EF21D42E0C8FEC9355B7C977D26AF /* AppticsInAppUpdate */,
-				104AF54C0E895D30DA9353FED3273A66 /* AppticsRateUs */,
-				A429CC4EE7CDBAD03F60DBB6F387BF31 /* AppticsRemoteConfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		B20815056A83FE5B17A9DB3FBABB84D2 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				140E0A73B0E2CA810A76FBEEAA649815 /* AppticsInAppUpdate-xcframeworks.sh */,
-				B23067822AC46E18EA5E6E7AD3783B80 /* AppticsInAppUpdate.debug.xcconfig */,
-				972359F3873BABA2F789D1DD5F073529 /* AppticsInAppUpdate.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/AppticsInAppUpdate";
-			sourceTree = "<group>";
-		};
-		B272CE2ACF0D4C05E703E5ABE05D7461 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B5A181EED7F006ACF8D5DCDCC3DD1541 /* Apptics.xcframework */,
+				EF24EA175545892FD0F878A4D8939905 /* AppticsApiTracker.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B3BD178C79D1091EFE36179471096ACF /* ScreenTracker */ = {
+		A19C6E418A747252C5FF7C8F25146CAF /* Analytics */ = {
 			isa = PBXGroup;
 			children = (
-				1C0CBB49250D2B2EEE30E9604C86D9DD /* Frameworks */,
+				159E194C33DCEC916656BAB3043DFFBA /* Apptics.swift */,
+			);
+			name = Analytics;
+			sourceTree = "<group>";
+		};
+		A89A0A6440E764248524B896EF9C85F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				97F257EA94910599068711EE76AAB0C4 /* KSCrash.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A975FDBEA1702E9D382CE4784526F8F0 /* ScreenTracker */ = {
+			isa = PBXGroup;
+			children = (
+				50A717FC3BE5155748398684879C0B92 /* Frameworks */,
 			);
 			name = ScreenTracker;
 			sourceTree = "<group>";
 		};
-		B59C2531F3D48FAC56C71412D047214B /* KSCrash */ = {
+		B510B866AA816E8B15F0F7A36F9CE9F3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				574361418CA192779518BABD74DAE12B /* Frameworks */,
+				1056C04C9BD569A428425D2732352D4A /* Apptics-SDK */,
+				73B2DC7AE88955AA46CF38016FF8972D /* Apptics-Swift */,
+				6C521F029A815D5C9E48B7F635D990DD /* AppticsAnalytics */,
+				243FF89A9D15DD9E9370F7FA3B04BA53 /* AppticsApiTracker */,
+				CFB0D852AE3AD11E5E1E823E16BB78CC /* AppticsCrossPromotion */,
+				3F06C9ACFF6FF54CE95AEE137176E360 /* AppticsFeedbackKit */,
+				80957D47B0CD4D318CD3CEBFB7473B63 /* AppticsInAppUpdate */,
+				C85B078674D318507750C9F358267400 /* AppticsRateUs */,
+				E0EB51A5DAEF3DEAAE0771237965868F /* AppticsRemoteConfig */,
 			);
-			name = KSCrash;
-			sourceTree = "<group>";
-		};
-		B873C6F468EB09CFFC98221ED4FE18AF /* Apptics-Swift */ = {
-			isa = PBXGroup;
-			children = (
-				D221203BBAE9F25436609043311899BF /* Analytics */,
-				4466B81D9D261822A1AD032E7B714210 /* Support Files */,
-			);
-			name = "Apptics-Swift";
-			path = "Apptics-Swift";
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		BD91DECE776584A693A9542F37732321 /* Targets Support Files */ = {
@@ -1003,23 +1008,37 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		C7325E624916AB7287FFE76B065C5AF7 /* Support Files */ = {
+		BE140DE39789E2D0B17537533636BAFF /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B0A64689B41DFEDFC7836EC4BEA8252A /* AppticsFeedbackKit-xcframeworks.sh */,
-				5B15E17DA96B922AA844D137612E9639 /* AppticsFeedbackKit.debug.xcconfig */,
-				9BC94E8A8D51C47F207C6DC20E66EDB1 /* AppticsFeedbackKit.release.xcconfig */,
+				7EB83821EB9C962D9DB5615B594B1341 /* AppticsRemoteConfig-xcframeworks.sh */,
+				A727EE628E6B530D0BC88EDA58A23D0C /* AppticsRemoteConfig.debug.xcconfig */,
+				4FC7D8082CE4146F6CF103020D984FAE /* AppticsRemoteConfig.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/AppticsFeedbackKit";
+			path = "../Target Support Files/AppticsRemoteConfig";
 			sourceTree = "<group>";
 		};
-		CECF3DC5F600A6329DCD2B2F39764A46 /* FeedbackKit */ = {
+		C169E7473C8C49905EB2C2E5E72F977C /* CrossPromotion */ = {
 			isa = PBXGroup;
 			children = (
-				EEC55CB108505B8321CF2AEEE901BA49 /* Frameworks */,
+				1A3CAFFA3F0E9009D6B6BDE6DCBF1E45 /* APThemeSwift.swift */,
+				3CFCB15409AF4F1CBF0A2A5DC3F53ABF /* PromotedAppsController.swift */,
+				6C03F4081E236F3AA37CE6664DA49B66 /* PromotedAppsKit.swift */,
+				89413D37B0AF1F8CE9DF11AC23060564 /* promotedAppViewCell.swift */,
+				2FF3DD10720B0E552ACE107C738AF95C /* Resources */,
 			);
-			name = FeedbackKit;
+			name = CrossPromotion;
+			sourceTree = "<group>";
+		};
+		C85B078674D318507750C9F358267400 /* AppticsRateUs */ = {
+			isa = PBXGroup;
+			children = (
+				5B68D364373D5D929F5B7E2EDA724EBB /* RateUs */,
+				72DE0833BBB0DB27BEC4216EAC5BF47B /* Support Files */,
+			);
+			name = AppticsRateUs;
+			path = AppticsRateUs;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -1027,70 +1046,86 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				03C5C200A0787E300053CFA8F53CA094 /* Frameworks */,
-				ADA6958324D48BEAC36FD2F76A505BD0 /* Pods */,
+				B510B866AA816E8B15F0F7A36F9CE9F3 /* Pods */,
 				02176B3DB059AEAB72F82AEB6AA7E70E /* Products */,
 				BD91DECE776584A693A9542F37732321 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D0590340B0557E7429CCE99EAC9BD9C5 /* AppticsCrossPromotion */ = {
+		CFB0D852AE3AD11E5E1E823E16BB78CC /* AppticsCrossPromotion */ = {
 			isa = PBXGroup;
 			children = (
-				07FFAA3F82D3E143CC299591DAAE62A9 /* CrossPromotion */,
-				E2EF39BCE145372F539C44E59F5C3CDF /* Support Files */,
+				C169E7473C8C49905EB2C2E5E72F977C /* CrossPromotion */,
+				E259748B4676038109366A752E0E2410 /* Support Files */,
 			);
 			name = AppticsCrossPromotion;
 			path = AppticsCrossPromotion;
 			sourceTree = "<group>";
 		};
-		D10B47F8723C6525B0E090B0B751FA95 /* CrashKit */ = {
+		D55F600B500FBD2AF41D15906D704BED /* AppUpdate */ = {
 			isa = PBXGroup;
 			children = (
-				86474C51922DC5DAFF14A8F6E92C0105 /* Frameworks */,
+				37DEEBD8CF400B1FC9DAD566765EE79E /* Frameworks */,
 			);
-			name = CrashKit;
+			name = AppUpdate;
 			sourceTree = "<group>";
 		};
-		D221203BBAE9F25436609043311899BF /* Analytics */ = {
+		E03A301237FCA25D76A2ACCB6A660271 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				0E9052A3C6F3B0F9C278110215424CD2 /* Apptics.swift */,
+				38B5A2CD5D0301D3D7A6828BA0A1C7C7 /* AppticsAnalytics-xcframeworks.sh */,
+				C94F97C2C7F3F6F1319CAD3ACB5347A9 /* AppticsAnalytics.debug.xcconfig */,
+				61CFA0314F4ECEA527E77483EADECA4A /* AppticsAnalytics.release.xcconfig */,
 			);
-			name = Analytics;
+			name = "Support Files";
+			path = "../Target Support Files/AppticsAnalytics";
 			sourceTree = "<group>";
 		};
-		E275A053A244A916958440A97EDA4A0A /* Frameworks */ = {
+		E0EB51A5DAEF3DEAAE0771237965868F /* AppticsRemoteConfig */ = {
 			isa = PBXGroup;
 			children = (
-				AE0DB33DD1AF48165B3118AA57E03701 /* AppticsInAppUpdate.xcframework */,
+				35AF1453B49C4AC1EA81E6B212839751 /* RemoteConfig */,
+				BE140DE39789E2D0B17537533636BAFF /* Support Files */,
 			);
-			name = Frameworks;
+			name = AppticsRemoteConfig;
+			path = AppticsRemoteConfig;
 			sourceTree = "<group>";
 		};
-		E2EF39BCE145372F539C44E59F5C3CDF /* Support Files */ = {
+		E177F844E511B6E949BCC37D8B4A5911 /* Scripts */ = {
 			isa = PBXGroup;
 			children = (
-				2DC5346A54902370212A259C81AE4E02 /* AppticsCrossPromotion.modulemap */,
-				9003BFC24D81180325AAC1F326183EDE /* AppticsCrossPromotion-dummy.m */,
-				CB2391C51C69E4166A2C0CA34B98A55B /* AppticsCrossPromotion-Info.plist */,
-				84D24FBB5702B8F53B0CD862ECB958D1 /* AppticsCrossPromotion-prefix.pch */,
-				BEA6EA8DE8265C0ED29CD0BEC88BF6C4 /* AppticsCrossPromotion-umbrella.h */,
-				E661F3F8C116A121FF17AA432C53762D /* AppticsCrossPromotion.debug.xcconfig */,
-				0C859E5D82572F7AB874AE4A2026E99B /* AppticsCrossPromotion.release.xcconfig */,
-				A41044C565FCB424B9FBDA16B4B33791 /* ResourceBundle-Apptics_SwiftResources-AppticsCrossPromotion-Info.plist */,
+				8800A27620A24D86A7B85628F1341405 /* appticshelper.rb */,
+				88C9A33F69B567165DB873D246D2D586 /* dsym_upload */,
+				D12C54119EEF95349F942203C6C2FAD4 /* postinstaller */,
+				52877DBFDA4A602FECAF12E044050BC2 /* run */,
+				954C8605422434DD7C10B5E6C4004BD6 /* sdk_info */,
+				D1B7B0A3F7997DEBDE85C7E4AEE186EA /* sdk_info.bu */,
+			);
+			name = Scripts;
+			sourceTree = "<group>";
+		};
+		E259748B4676038109366A752E0E2410 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				370C6CF03153F8A11BE453EC3F062DEB /* AppticsCrossPromotion.modulemap */,
+				74458418D56B4419E7BDA5B888B19893 /* AppticsCrossPromotion-dummy.m */,
+				0EB8E44CE283643253191918A0FEBC83 /* AppticsCrossPromotion-Info.plist */,
+				03B82666F962513C7EEE6BDB00920A0B /* AppticsCrossPromotion-prefix.pch */,
+				B6295B329EE291B5D32183B5D7DC2017 /* AppticsCrossPromotion-umbrella.h */,
+				D372C9CF33144D1C38C00437DA772BBC /* AppticsCrossPromotion.debug.xcconfig */,
+				9B972B988942CC10BEE45F45710F7092 /* AppticsCrossPromotion.release.xcconfig */,
+				B044AC4E7E69DC848C67EBB5D22FD119 /* ResourceBundle-Apptics_SwiftResources-AppticsCrossPromotion-Info.plist */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/AppticsCrossPromotion";
 			sourceTree = "<group>";
 		};
-		E815BF3123022533163BB2E33DA00F7D /* Apptics-SDK */ = {
+		EAA793DBF0CF6A863045D8BF8C7EBA39 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				65763142EE24A9C0048CEBEF5E337DCC /* Scripts */,
-				800BDF34078E305F55146D6EC7FC345E /* Support Files */,
+				A709FEC4D86D520E11238DD4BDE7ECDB /* JWT.xcframework */,
 			);
-			name = "Apptics-SDK";
-			path = "Apptics-SDK";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		EC4F8C50DB4995DC9D19CD408E46A634 /* Pods-AppticsDemo-AppticsDemoUITests */ = {
@@ -1111,20 +1146,12 @@
 			path = "Target Support Files/Pods-AppticsDemo-AppticsDemoUITests";
 			sourceTree = "<group>";
 		};
-		EEC55CB108505B8321CF2AEEE901BA49 /* Frameworks */ = {
+		ED8C112FF52890F29E24C247CF578CC0 /* EventTracker */ = {
 			isa = PBXGroup;
 			children = (
-				A30E2320D109CCF4020A0475273BB88D /* AppticsFeedbackKit.xcframework */,
+				5956B98421190818AF784CBED03F36EF /* Frameworks */,
 			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		EF541DB25F8BE23765A01F8EF81687B7 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B780953BA8F71067D7FB24A2A4995448 /* JWT.xcframework */,
-			);
-			name = Frameworks;
+			name = EventTracker;
 			sourceTree = "<group>";
 		};
 		F86BAD3152A6342799A6293ED7D5BFD7 /* Pods-AppticsDemo */ = {
@@ -1145,33 +1172,9 @@
 			path = "Target Support Files/Pods-AppticsDemo";
 			sourceTree = "<group>";
 		};
-		FB20BAAF9074884AB05E6BF7F9BB7F44 /* EventTracker */ = {
-			isa = PBXGroup;
-			children = (
-				2667DB0F09D303B00151D53C7A23AC89 /* Frameworks */,
-			);
-			name = EventTracker;
-			sourceTree = "<group>";
-		};
-		FB378B4D60799FC173FC3A6B6BF47448 /* ApiTracker */ = {
-			isa = PBXGroup;
-			children = (
-				70B18A4AE6B0ADA2776989B58E33FC55 /* Frameworks */,
-			);
-			name = ApiTracker;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		3B77D69289CA6A9A85EB4E6A8CCCDA14 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4DF98D20A870FAE4122D20B9D1740362 /* Apptics-Swift-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4AC17534E20EF72423917A28DF808B33 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -1204,6 +1207,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C71F11F22EF23723CF51CBC67A40D989 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC9244F4F11B6670A56802B3003F8273 /* Apptics-Swift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F3BDD224047D098FCD3804AB9FF116CB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -1217,11 +1228,11 @@
 /* Begin PBXNativeTarget section */
 		43439EC19E2347C639D0C0A3F38E635C /* AppticsCrossPromotion-Apptics_SwiftResources */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 99986D657E598A8C197FA704594FE2D3 /* Build configuration list for PBXNativeTarget "AppticsCrossPromotion-Apptics_SwiftResources" */;
+			buildConfigurationList = 47E7E2C4843536E48BE33A54CAA0226C /* Build configuration list for PBXNativeTarget "AppticsCrossPromotion-Apptics_SwiftResources" */;
 			buildPhases = (
-				2F568243FC4915899D11247725E17C48 /* Sources */,
-				011021BD1037EB5AA1842790B6AD9044 /* Frameworks */,
-				A1D29CF7D875A0A49370090B2BF58E9B /* Resources */,
+				CB988DC5620C527E97B82B7B0C77C9B8 /* Sources */,
+				CDD1E1B92FEFDD431566A2DEDA7EC254 /* Frameworks */,
+				39735B0C5037B1F7A4078FE5CD8A3B7F /* Resources */,
 			);
 			buildRules = (
 			);
@@ -1244,7 +1255,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				2DDBB5242C891D4D68ADFC040E49BE84 /* PBXTargetDependency */,
+				1066747C4FCA9FD0388EFA527D386B0C /* PBXTargetDependency */,
 			);
 			name = "Pods-AppticsDemoTests";
 			productName = Pods_AppticsDemoTests;
@@ -1253,17 +1264,17 @@
 		};
 		897A636713908C0E3E7B5B4DF0BA1722 /* Apptics-Swift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 15F180DFE975CA7D5ACD437AED867621 /* Build configuration list for PBXNativeTarget "Apptics-Swift" */;
+			buildConfigurationList = 308DD04A3A1C19AF1B44FFA3661173F6 /* Build configuration list for PBXNativeTarget "Apptics-Swift" */;
 			buildPhases = (
-				3B77D69289CA6A9A85EB4E6A8CCCDA14 /* Headers */,
-				AC92B8AFDB34CE60B77F9930B64C0974 /* Sources */,
-				BBE475563677B78403596F42AA4E9BEC /* Frameworks */,
-				BECAC1D265D06F15CDE633DF16CF91C5 /* Resources */,
+				C71F11F22EF23723CF51CBC67A40D989 /* Headers */,
+				A401F0C28B671A83EBF53C17A83DA7B8 /* Sources */,
+				288D0EF5264749D012895A317C331877 /* Frameworks */,
+				616B4B54884B9594C36273566B45873C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				08F002235C2CC450D6F01A57F2436089 /* PBXTargetDependency */,
+				91839C1061AD184ED9C6E3A1AC6E6990 /* PBXTargetDependency */,
 			);
 			name = "Apptics-Swift";
 			productName = Apptics_Swift;
@@ -1282,7 +1293,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				066CA0CF40A436D9D2688E010CEBB188 /* PBXTargetDependency */,
+				CC9AF3FDACA0C1C20AD597D376D9D7FE /* PBXTargetDependency */,
 			);
 			name = "Apptics-SDK";
 			productName = Apptics_SDK;
@@ -1301,15 +1312,15 @@
 			buildRules = (
 			);
 			dependencies = (
-				853F42A5E4BBAB436640821896535B83 /* PBXTargetDependency */,
-				1DC2D00937EA9E483F5E7113050EAA31 /* PBXTargetDependency */,
-				A6580BD70C0238758818289D0C920C0D /* PBXTargetDependency */,
-				781DAACD2C42321837303F0934646B69 /* PBXTargetDependency */,
-				293DB8122A2AE0054595E660CAEFC063 /* PBXTargetDependency */,
-				B5D4CDB02707A8F886CC45E9F2D3D7A2 /* PBXTargetDependency */,
-				130E43BED7AD18EE600749A597CED886 /* PBXTargetDependency */,
-				A9F11886359817495A98C4366C409F19 /* PBXTargetDependency */,
-				59B18C932EB0E9063A4618EF90568F12 /* PBXTargetDependency */,
+				649D91D4BD29A0E41EB880642734B52C /* PBXTargetDependency */,
+				F19E041701E38B1B473B4F3985B1D55B /* PBXTargetDependency */,
+				3F626B05A2AEC6A9544D76668B06DF31 /* PBXTargetDependency */,
+				D2D834E03674F04D3CB0D594A1887195 /* PBXTargetDependency */,
+				C3864F141899A42C2CCC74A042E045FA /* PBXTargetDependency */,
+				1453BA278746806E58072B4F8A2E63FF /* PBXTargetDependency */,
+				4EDC8B7EE2E525E3AE0120E7FFD56BBD /* PBXTargetDependency */,
+				F2A8BD795C9F988066B2110CB71D3993 /* PBXTargetDependency */,
+				78CC029A97F7A80DA15B062B79573DAD /* PBXTargetDependency */,
 			);
 			name = "Pods-AppticsDemo-AppticsDemoUITests";
 			productName = Pods_AppticsDemo_AppticsDemoUITests;
@@ -1328,8 +1339,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				9C7F6CD08BA3EDBFE1283C12D419B2D0 /* PBXTargetDependency */,
-				A3D886F0367C633959B349E880132E62 /* PBXTargetDependency */,
+				A883E5973BBD3E973E605DE3CCC3C610 /* PBXTargetDependency */,
+				17D8F16F37AD866B12A6E92CBE006A16 /* PBXTargetDependency */,
 			);
 			name = AppticsCrossPromotion;
 			productName = AppticsCrossPromotion;
@@ -1348,15 +1359,15 @@
 			buildRules = (
 			);
 			dependencies = (
-				F34650A2A6963B46ED0BBABCFAF690CB /* PBXTargetDependency */,
-				0A16D0CF14B0C1439207AE4FEA3286B6 /* PBXTargetDependency */,
-				B039B8304A675D83017F58A095214618 /* PBXTargetDependency */,
-				493B4A73E6501660D2E588519705A75D /* PBXTargetDependency */,
-				955968D4BB4CFAC9D8D1BC068B584897 /* PBXTargetDependency */,
-				B6F8D0AD427A9EFF1B380FC303F70456 /* PBXTargetDependency */,
-				CE7E76E44AF770A0A2BC4E7659590797 /* PBXTargetDependency */,
-				BE0748641E1F23816073BF85DDDADA1B /* PBXTargetDependency */,
-				40E89996ED0465C2AD84F19C29B8E36C /* PBXTargetDependency */,
+				9B889A46DCB7C235964A5D5C4EDE6FDF /* PBXTargetDependency */,
+				CA1D788A40AB8F56BF01CE7BA0F68E16 /* PBXTargetDependency */,
+				CBFAE25B6A609CDC820E6295546A64C0 /* PBXTargetDependency */,
+				17703BBDA8F6A47801994C0E2499149D /* PBXTargetDependency */,
+				8FEA0D4A04CCC86BE1457D825116DBD3 /* PBXTargetDependency */,
+				F16B5321A1F609892AD9845B9560DB6D /* PBXTargetDependency */,
+				645391DFBDC03772303E112EF5A22F2B /* PBXTargetDependency */,
+				96440358EC2658706D625371152F6C31 /* PBXTargetDependency */,
+				D27CC26DB9811C293A068796E7862215 /* PBXTargetDependency */,
 			);
 			name = "Pods-AppticsDemo";
 			productName = Pods_AppticsDemo;
@@ -1373,7 +1384,7 @@
 				LastUpgradeCheck = 1240;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 11.0";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -1440,6 +1451,62 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		39735B0C5037B1F7A4078FE5CD8A3B7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFA21374B29EBCEDE7E1A677216DD72B /* Apptics-CP.ttf in Resources */,
+				2AABD3EFBBB26157A456399809ED4229 /* ar.lproj in Resources */,
+				776CB33BC62F9A6E59947238E6AD6974 /* Base.lproj in Resources */,
+				59DD06D35AC33D9D822637BDFD41A52C /* bg.lproj in Resources */,
+				15BC41421BF4AAE2492654CC1CAA2321 /* bn-IN.lproj in Resources */,
+				037ECCE988F63F21FADA6BFA45EE8398 /* cs.lproj in Resources */,
+				84C93A1FECDC4FE9991F2EA06BECF2A7 /* da.lproj in Resources */,
+				EE40CE48C7A0B20B4896B9399FEDC923 /* de.lproj in Resources */,
+				E875D91EE1EC178E1F9E919DEC61FCEF /* el.lproj in Resources */,
+				9D7BBB1C6031495BC051D026F68597DD /* en.lproj in Resources */,
+				4DF62892324C7C87C8BF42513A1A900D /* es.lproj in Resources */,
+				44ECF91D9498B6F7C0FC9640073A56E3 /* es-MX.lproj in Resources */,
+				3CBC204C44C6FB8696E10FB1D4AB8017 /* fr.lproj in Resources */,
+				8B6DA02D56CB5FCD71B569F32D9E3FDD /* fr-CA.lproj in Resources */,
+				F7AD04D72320016680A10C4B2990E904 /* gu.lproj in Resources */,
+				72D0BDFA8C1F2C3DC7827BBDA8EB6CD2 /* he.lproj in Resources */,
+				D058AFA693875BA8895468D7C67A7CA8 /* hi.lproj in Resources */,
+				EB6F9C7A4AC67748389D69C8CED1AFB7 /* hr.lproj in Resources */,
+				AFAA4DF26C765EAC72A091BF43DCEA91 /* id.lproj in Resources */,
+				CB00F0874BE8E8EE2A0E060861E03915 /* it.lproj in Resources */,
+				CAF1CF63FB47F27408BE4EB7CB3D633A /* ja.lproj in Resources */,
+				83EC2299DFEE7B5986F251944DE5383B /* kn.lproj in Resources */,
+				0C327DFC656110CE919E6A52511D56DD /* ko.lproj in Resources */,
+				4C8C8B9745436A26BF679CE75D7078E8 /* ml.lproj in Resources */,
+				B308229C5812E0B7A9A699DE7CF3F399 /* mr.lproj in Resources */,
+				710D776EC0E3EEC27085DD8E4DC32E84 /* nl.lproj in Resources */,
+				DE5A012DDAFABF95A632ADCDE5A7B9F4 /* pa.lproj in Resources */,
+				17792352B323078A23460ACCD50617B9 /* pl.lproj in Resources */,
+				30D28CD0D51D5924EC9EC4A33316A63B /* PromotedAppsController.xib in Resources */,
+				367CC78F97D0C2EE8D4846440729B293 /* promotedAppViewCell.xib in Resources */,
+				FE6C8B411BA2CE6E503EB064052B4EAF /* pt.lproj in Resources */,
+				2F03B93C48886BD13208A8AFE44D5BF0 /* pt-BR.lproj in Resources */,
+				D5B41625FEA9A8EF27D452409869BE62 /* ru.lproj in Resources */,
+				A28F7D98E68CF9606F4D4107A4C1190B /* sv.lproj in Resources */,
+				F1DE92448225393EEF50B511EA7D7650 /* ta.lproj in Resources */,
+				8D34FCC06886FA059A0DAE00256146B6 /* te.lproj in Resources */,
+				213D6DC620E51449E437ED8E4B68999A /* tr.lproj in Resources */,
+				AF300D781E6540718D7E14E2587857BD /* ur.lproj in Resources */,
+				17C84B4CD2452558AA6778C1A9DFF50C /* ur-Arab.lproj in Resources */,
+				EB3A87809B60A0B702F7A76027A19BE5 /* vi.lproj in Resources */,
+				11CFFF7860B072BCEBDD6EE620F0EB68 /* zh-Hans.lproj in Resources */,
+				AD5033DE56DF2FE164B2DE4906B26B2C /* zh-Hant.lproj in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		616B4B54884B9594C36273566B45873C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		89A47B29611AD360EE92921545FDC32C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1455,62 +1522,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		9481E30281B9D446CC5A3C22AD652DA6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A1D29CF7D875A0A49370090B2BF58E9B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6012A445131ECBEA8FB389CC0578032C /* Apptics-CP.ttf in Resources */,
-				64FEDE92789526277A7E45241DA732A0 /* ar.lproj in Resources */,
-				6EC3423C89952D5058B586E9D7773EEB /* Base.lproj in Resources */,
-				C40258898AC7AEDA1DBABB6887930647 /* bg.lproj in Resources */,
-				D527D586A7F46BA9E3047714E6F0D2D5 /* bn-IN.lproj in Resources */,
-				1D13F42460EEEC87D64AB5125BEFFF69 /* cs.lproj in Resources */,
-				D5D15CA7D0E0ECA4F8726E6AFE2A25DA /* da.lproj in Resources */,
-				BBB8569630DB1AE78B9FAE134F519E96 /* de.lproj in Resources */,
-				A6595E337DDBF4D0CFBBBB2D11D1A90E /* el.lproj in Resources */,
-				A8AFC9D75A6EC3EE49D9DC5CB6F403BD /* en.lproj in Resources */,
-				FD2DDEE0B9792EE8D3E6B0AF9AEAB4B4 /* es.lproj in Resources */,
-				17315C61076EABC9EB15C97CC9040654 /* es-MX.lproj in Resources */,
-				3DBE392585BD2C3BC760224EE33B1A07 /* fr.lproj in Resources */,
-				16A92BC2FAFDD50A3567DE28F9007378 /* fr-CA.lproj in Resources */,
-				4FE151F540B31A63DAF0016C2C803D7D /* gu.lproj in Resources */,
-				713B9E46DB3A2589976ABCE7739EA947 /* he.lproj in Resources */,
-				CEDF6DD2249F0B36CAAD2CD017741460 /* hi.lproj in Resources */,
-				82C206FE82DC6343A8CC9243BAF837E3 /* hr.lproj in Resources */,
-				3FE307279F3E0525073774F89C4C7C46 /* id.lproj in Resources */,
-				888278F678E6C148ADBDEC89F061F71F /* it.lproj in Resources */,
-				6E237A6756FDE57958404C8F2D65D8DE /* ja.lproj in Resources */,
-				D8348C44EE52232810FED7B1E9C39F83 /* kn.lproj in Resources */,
-				2070CD793FB49E0BE66F61549E69202A /* ko.lproj in Resources */,
-				1EFB054C6F1BBFD5128BBB86A033D324 /* ml.lproj in Resources */,
-				211B8D4EADEAE63DEA2DCAAA158DD04F /* mr.lproj in Resources */,
-				F47110A2A4D9801D3F85002850477DD6 /* nl.lproj in Resources */,
-				2D1A2A51A15A57A917CC6938D095464D /* pa.lproj in Resources */,
-				A8CFFDFA6D1A4203EBD6A88F4D739833 /* pl.lproj in Resources */,
-				F7E3B8D0C3820AA35B77288D8F95DF4B /* PromotedAppsController.xib in Resources */,
-				82059E9E3CB8FEDD6A37084C9171B703 /* promotedAppViewCell.xib in Resources */,
-				12E2EAB5E942C5C75BB5EB3634C2ADF0 /* pt.lproj in Resources */,
-				A710829F9877340E2B9E48E3BC17BCCC /* pt-BR.lproj in Resources */,
-				9B9442E577228B6B30011CE8A720D958 /* ru.lproj in Resources */,
-				05C6160BE9A3EEE9571DC2B91798A455 /* sv.lproj in Resources */,
-				B0226CFE18409B9CB9A241D932D8942D /* ta.lproj in Resources */,
-				82BB2CFF83DC9454CE6340C1651716A6 /* te.lproj in Resources */,
-				0D6E90AB8605D39CFE1367F1EEDF8D24 /* tr.lproj in Resources */,
-				12FACB8B0510AF5CECB1FFE4E66933DC /* ur.lproj in Resources */,
-				573494215388FC205D44B47023B32774 /* ur-Arab.lproj in Resources */,
-				FB484064BA99FEF702D5402285E53C45 /* vi.lproj in Resources */,
-				4633A669AA89CDB9D0227DD2033F3AA6 /* zh-Hans.lproj in Resources */,
-				219757238723DAE88590720F960C3E3E /* zh-Hant.lproj in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BECAC1D265D06F15CDE633DF16CF91C5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1620,7 +1631,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/AppticsRateUs/AppticsRateUs-xcframeworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E43915AA84B427D6672FEDB7F42EFCD2 /* [CP] Copy XCFrameworks */ = {
+		DE60264FA5A17A76BD4FE30453FC3C56 /* [CP] Copy XCFrameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1640,13 +1651,6 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2F568243FC4915899D11247725E17C48 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		6317A809ED53F7CFBCE4F4BDEF97822B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1689,12 +1693,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AC92B8AFDB34CE60B77F9930B64C0974 /* Sources */ = {
+		A401F0C28B671A83EBF53C17A83DA7B8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				392DC5B92E1B2C885D534C2F74A5CA63 /* Apptics.swift in Sources */,
-				EFA7FA7FF33A235C93884D8A1FD504C5 /* Apptics-Swift-dummy.m in Sources */,
+				E3ADFF4FEBBAD2E25041AE5B040A08DE /* APAppticsForExtension.swift in Sources */,
+				DD7A588601CAD8404014A6EF3146258B /* Apptics.swift in Sources */,
+				23F2D53E7F524C515832ABCDD1F4ACA9 /* Apptics-Swift-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB988DC5620C527E97B82B7B0C77C9B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1709,192 +1721,208 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		066CA0CF40A436D9D2688E010CEBB188 /* PBXTargetDependency */ = {
+		04AEFEC841545B76D60D7B6919BFE49A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AppticsAnalytics;
 			target = E2CE24BC09F14AA1800797A9A2320628 /* AppticsAnalytics */;
-			targetProxy = BF38F5D87E05E87AD1286D5DD9DCBD26 /* PBXContainerItemProxy */;
+			targetProxy = 621FBF2794ED5AF348D24C226780B0F6 /* PBXContainerItemProxy */;
 		};
-		08F002235C2CC450D6F01A57F2436089 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Apptics-SDK";
-			target = CC64011E1624187F4B9594559639696F /* Apptics-SDK */;
-			targetProxy = 4062E2809BEF5D589B440B78C3FBD247 /* PBXContainerItemProxy */;
-		};
-		0A16D0CF14B0C1439207AE4FEA3286B6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Apptics-Swift";
-			target = 897A636713908C0E3E7B5B4DF0BA1722 /* Apptics-Swift */;
-			targetProxy = 903BD328658842EFA9E016D834407B01 /* PBXContainerItemProxy */;
-		};
-		130E43BED7AD18EE600749A597CED886 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = AppticsInAppUpdate;
-			target = 767128F2D2E11E1EDD2C46A2C4BE20FC /* AppticsInAppUpdate */;
-			targetProxy = 3B4BC832FBD588B2AB63882B7FBE6415 /* PBXContainerItemProxy */;
-		};
-		1DC2D00937EA9E483F5E7113050EAA31 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Apptics-Swift";
-			target = 897A636713908C0E3E7B5B4DF0BA1722 /* Apptics-Swift */;
-			targetProxy = 933E38D335EA2372A496FF234E4E8DEA /* PBXContainerItemProxy */;
-		};
-		293DB8122A2AE0054595E660CAEFC063 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = AppticsCrossPromotion;
-			target = E4D4D79903CC10C0D5365EB232FB29F7 /* AppticsCrossPromotion */;
-			targetProxy = BA4284488D9235BBFF687756F6F5FDF1 /* PBXContainerItemProxy */;
-		};
-		2DDBB5242C891D4D68ADFC040E49BE84 /* PBXTargetDependency */ = {
+		1066747C4FCA9FD0388EFA527D386B0C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-AppticsDemo";
 			target = FE0A69678B37EEC1C951F2F540C59ECF /* Pods-AppticsDemo */;
-			targetProxy = C3F8565B785948FC1C9E35831F641B38 /* PBXContainerItemProxy */;
+			targetProxy = AA79CD70A5F7092DA35A3E2C62B1BA01 /* PBXContainerItemProxy */;
 		};
-		33F0C2AA5DE1762E6C141EEFC1695B83 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = AppticsAnalytics;
-			target = E2CE24BC09F14AA1800797A9A2320628 /* AppticsAnalytics */;
-			targetProxy = 22C28AAF7AEC655D230B180DB600A650 /* PBXContainerItemProxy */;
-		};
-		40E89996ED0465C2AD84F19C29B8E36C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = AppticsRemoteConfig;
-			target = 8EBC8655649388CBDC47522E7E9D695A /* AppticsRemoteConfig */;
-			targetProxy = 31084B63E84F560CEAC2E5B3BB1C2CA7 /* PBXContainerItemProxy */;
-		};
-		493B4A73E6501660D2E588519705A75D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = AppticsApiTracker;
-			target = C36B4994FD303F36D155F0EA14997F12 /* AppticsApiTracker */;
-			targetProxy = 892CA9B03F6399F7207BBBFA506E50E4 /* PBXContainerItemProxy */;
-		};
-		53437755EF5FBA462DC5A1B05486B7FB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = AppticsAnalytics;
-			target = E2CE24BC09F14AA1800797A9A2320628 /* AppticsAnalytics */;
-			targetProxy = AD17DA549E6985939B3A4A7DD5344221 /* PBXContainerItemProxy */;
-		};
-		548E2A2106980755A8C092CB85573116 /* PBXTargetDependency */ = {
+		1453BA278746806E58072B4F8A2E63FF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AppticsFeedbackKit;
 			target = 43D3E0C6C92D2DF0481369573FF9EB87 /* AppticsFeedbackKit */;
-			targetProxy = 385B319F9DA200F22A3118B02DE2EF14 /* PBXContainerItemProxy */;
+			targetProxy = C5A02624013F6F557B25EEFA4B5F583C /* PBXContainerItemProxy */;
 		};
-		5729738EFD73FB53C3EF7A1CB0AD1B9A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = AppticsAnalytics;
-			target = E2CE24BC09F14AA1800797A9A2320628 /* AppticsAnalytics */;
-			targetProxy = 8A0949E5A9651310C1B0197D41D75C58 /* PBXContainerItemProxy */;
-		};
-		59B18C932EB0E9063A4618EF90568F12 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = AppticsRemoteConfig;
-			target = 8EBC8655649388CBDC47522E7E9D695A /* AppticsRemoteConfig */;
-			targetProxy = FA94AC17F88525F28C108038ED4F9E0B /* PBXContainerItemProxy */;
-		};
-		781DAACD2C42321837303F0934646B69 /* PBXTargetDependency */ = {
+		17703BBDA8F6A47801994C0E2499149D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AppticsApiTracker;
 			target = C36B4994FD303F36D155F0EA14997F12 /* AppticsApiTracker */;
-			targetProxy = A895AA2233477AABA8C5FCAB7EED465B /* PBXContainerItemProxy */;
+			targetProxy = EFD799888B60E985018B153052CD850F /* PBXContainerItemProxy */;
 		};
-		853F42A5E4BBAB436640821896535B83 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Apptics-SDK";
-			target = CC64011E1624187F4B9594559639696F /* Apptics-SDK */;
-			targetProxy = FD385E2E4C400BA1FC0FFC35FA8555E3 /* PBXContainerItemProxy */;
-		};
-		955968D4BB4CFAC9D8D1BC068B584897 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = AppticsCrossPromotion;
-			target = E4D4D79903CC10C0D5365EB232FB29F7 /* AppticsCrossPromotion */;
-			targetProxy = 2C5AB5DACF27051EC068128898857E37 /* PBXContainerItemProxy */;
-		};
-		9C7F6CD08BA3EDBFE1283C12D419B2D0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Apptics-Swift";
-			target = 897A636713908C0E3E7B5B4DF0BA1722 /* Apptics-Swift */;
-			targetProxy = 5DFCFC33552A81151765D51F38D0C520 /* PBXContainerItemProxy */;
-		};
-		9F5234C3536082F3911EE61E975CC643 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = AppticsFeedbackKit;
-			target = 43D3E0C6C92D2DF0481369573FF9EB87 /* AppticsFeedbackKit */;
-			targetProxy = A1146C627EA7706035C8D7E6BCF8BC5E /* PBXContainerItemProxy */;
-		};
-		A3D886F0367C633959B349E880132E62 /* PBXTargetDependency */ = {
+		17D8F16F37AD866B12A6E92CBE006A16 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "AppticsCrossPromotion-Apptics_SwiftResources";
 			target = 43439EC19E2347C639D0C0A3F38E635C /* AppticsCrossPromotion-Apptics_SwiftResources */;
-			targetProxy = E89CE3267AD26E29C51F8BCE54DEE2A6 /* PBXContainerItemProxy */;
+			targetProxy = 9F4129151C39F35FF3065B338B1CF8A9 /* PBXContainerItemProxy */;
 		};
-		A6580BD70C0238758818289D0C920C0D /* PBXTargetDependency */ = {
+		3CE952C8BF970C4763305D5EE8382E68 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AppticsAnalytics;
 			target = E2CE24BC09F14AA1800797A9A2320628 /* AppticsAnalytics */;
-			targetProxy = 10A4AF289A464A400BF33A32907B7AB6 /* PBXContainerItemProxy */;
+			targetProxy = B2EC29B6259091260324C4208748CAC5 /* PBXContainerItemProxy */;
 		};
-		A8D25FB97895A017F928371FC26D01BF /* PBXTargetDependency */ = {
+		3F626B05A2AEC6A9544D76668B06DF31 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AppticsAnalytics;
 			target = E2CE24BC09F14AA1800797A9A2320628 /* AppticsAnalytics */;
-			targetProxy = 702A8205EA542F888DDF794A73899E93 /* PBXContainerItemProxy */;
+			targetProxy = B3DC65D444CA37246C8B8609613FCA4E /* PBXContainerItemProxy */;
 		};
-		A9F11886359817495A98C4366C409F19 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = AppticsRateUs;
-			target = DECA5F8CF3BFB441450008C20E9F4FEA /* AppticsRateUs */;
-			targetProxy = 079B059466427249B4375D053CB6334C /* PBXContainerItemProxy */;
-		};
-		B039B8304A675D83017F58A095214618 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = AppticsAnalytics;
-			target = E2CE24BC09F14AA1800797A9A2320628 /* AppticsAnalytics */;
-			targetProxy = 60DA019FA2A08684A5854EDC9F0576EE /* PBXContainerItemProxy */;
-		};
-		B5D4CDB02707A8F886CC45E9F2D3D7A2 /* PBXTargetDependency */ = {
+		4CF7FB84D9CBFC36D740E406A7EA6AEB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AppticsFeedbackKit;
 			target = 43D3E0C6C92D2DF0481369573FF9EB87 /* AppticsFeedbackKit */;
-			targetProxy = 6573435F81952E7505FD69DD87B58DB8 /* PBXContainerItemProxy */;
+			targetProxy = 5D8ABDF31F8F8E0C4F1D188904E96AD2 /* PBXContainerItemProxy */;
 		};
-		B6F8D0AD427A9EFF1B380FC303F70456 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = AppticsFeedbackKit;
-			target = 43D3E0C6C92D2DF0481369573FF9EB87 /* AppticsFeedbackKit */;
-			targetProxy = 56927E78D680410BF0014554E80C4B7A /* PBXContainerItemProxy */;
-		};
-		BE0748641E1F23816073BF85DDDADA1B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = AppticsRateUs;
-			target = DECA5F8CF3BFB441450008C20E9F4FEA /* AppticsRateUs */;
-			targetProxy = 96E832458A23D2E137F396B2E41FAE50 /* PBXContainerItemProxy */;
-		};
-		CE7E76E44AF770A0A2BC4E7659590797 /* PBXTargetDependency */ = {
+		4EDC8B7EE2E525E3AE0120E7FFD56BBD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AppticsInAppUpdate;
 			target = 767128F2D2E11E1EDD2C46A2C4BE20FC /* AppticsInAppUpdate */;
-			targetProxy = 07EA69DC6DFCB13DC4067C19159BAE90 /* PBXContainerItemProxy */;
+			targetProxy = C8F42F342F63C3225AA613BBE5A92A5E /* PBXContainerItemProxy */;
 		};
-		D35519104E73F9D1915D9F8561A307E7 /* PBXTargetDependency */ = {
+		5C819E95D37DCAA7EBAD868538B9B3E4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = AppticsAnalytics;
-			target = E2CE24BC09F14AA1800797A9A2320628 /* AppticsAnalytics */;
-			targetProxy = 48372D906974B691F8D5CFB1F3DC038E /* PBXContainerItemProxy */;
+			name = AppticsFeedbackKit;
+			target = 43D3E0C6C92D2DF0481369573FF9EB87 /* AppticsFeedbackKit */;
+			targetProxy = 7E465B750BB45354694FF9632EF6A195 /* PBXContainerItemProxy */;
 		};
-		F34650A2A6963B46ED0BBABCFAF690CB /* PBXTargetDependency */ = {
+		645391DFBDC03772303E112EF5A22F2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AppticsInAppUpdate;
+			target = 767128F2D2E11E1EDD2C46A2C4BE20FC /* AppticsInAppUpdate */;
+			targetProxy = 8A37FA156DE474DD85B2FD021F6D1F5C /* PBXContainerItemProxy */;
+		};
+		649D91D4BD29A0E41EB880642734B52C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Apptics-SDK";
 			target = CC64011E1624187F4B9594559639696F /* Apptics-SDK */;
-			targetProxy = 1D0969BF3F52F3F71E017A638350028C /* PBXContainerItemProxy */;
+			targetProxy = 5837F58D87E708101C03E6B8F80C9B50 /* PBXContainerItemProxy */;
+		};
+		6A5A9DA9C43AE39584EAB60986E9C17C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AppticsAnalytics;
+			target = E2CE24BC09F14AA1800797A9A2320628 /* AppticsAnalytics */;
+			targetProxy = 99E300B976AF33B98A71CB4629369E9B /* PBXContainerItemProxy */;
+		};
+		78CC029A97F7A80DA15B062B79573DAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AppticsRemoteConfig;
+			target = 8EBC8655649388CBDC47522E7E9D695A /* AppticsRemoteConfig */;
+			targetProxy = 38B6D01E3C1121218270BE14163029D8 /* PBXContainerItemProxy */;
+		};
+		8FEA0D4A04CCC86BE1457D825116DBD3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AppticsCrossPromotion;
+			target = E4D4D79903CC10C0D5365EB232FB29F7 /* AppticsCrossPromotion */;
+			targetProxy = 7FA3B212CBD724B8636E84EB9C323639 /* PBXContainerItemProxy */;
+		};
+		91839C1061AD184ED9C6E3A1AC6E6990 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Apptics-SDK";
+			target = CC64011E1624187F4B9594559639696F /* Apptics-SDK */;
+			targetProxy = 5DC9AF512664CAB75B1BB5432D568981 /* PBXContainerItemProxy */;
+		};
+		96440358EC2658706D625371152F6C31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AppticsRateUs;
+			target = DECA5F8CF3BFB441450008C20E9F4FEA /* AppticsRateUs */;
+			targetProxy = 47DD0356FAC5E06B416372690CF77703 /* PBXContainerItemProxy */;
+		};
+		9B889A46DCB7C235964A5D5C4EDE6FDF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Apptics-SDK";
+			target = CC64011E1624187F4B9594559639696F /* Apptics-SDK */;
+			targetProxy = 3BB509ED1FCCA02466CBFB3306762FE4 /* PBXContainerItemProxy */;
+		};
+		A883E5973BBD3E973E605DE3CCC3C610 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Apptics-Swift";
+			target = 897A636713908C0E3E7B5B4DF0BA1722 /* Apptics-Swift */;
+			targetProxy = A7FE2DA5E5C351B322398FD8E99A49AF /* PBXContainerItemProxy */;
+		};
+		ACA930DABCC3934DCD615DF93520E839 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AppticsAnalytics;
+			target = E2CE24BC09F14AA1800797A9A2320628 /* AppticsAnalytics */;
+			targetProxy = 6D185E7F2FB3F349165DD39C1A33F751 /* PBXContainerItemProxy */;
+		};
+		C3864F141899A42C2CCC74A042E045FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AppticsCrossPromotion;
+			target = E4D4D79903CC10C0D5365EB232FB29F7 /* AppticsCrossPromotion */;
+			targetProxy = E0EE6471F754EAE4EC25BBC445A22EAD /* PBXContainerItemProxy */;
+		};
+		CA1D788A40AB8F56BF01CE7BA0F68E16 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Apptics-Swift";
+			target = 897A636713908C0E3E7B5B4DF0BA1722 /* Apptics-Swift */;
+			targetProxy = DD1BDABB9CD81D75DE85A55ED1F3AF93 /* PBXContainerItemProxy */;
+		};
+		CBFAE25B6A609CDC820E6295546A64C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AppticsAnalytics;
+			target = E2CE24BC09F14AA1800797A9A2320628 /* AppticsAnalytics */;
+			targetProxy = AAA1CEF06422FBD43A99B9398CBE9E0E /* PBXContainerItemProxy */;
+		};
+		CC9AF3FDACA0C1C20AD597D376D9D7FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AppticsAnalytics;
+			target = E2CE24BC09F14AA1800797A9A2320628 /* AppticsAnalytics */;
+			targetProxy = E695FF05F635F1BF3F65BBAA487B538D /* PBXContainerItemProxy */;
+		};
+		D27CC26DB9811C293A068796E7862215 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AppticsRemoteConfig;
+			target = 8EBC8655649388CBDC47522E7E9D695A /* AppticsRemoteConfig */;
+			targetProxy = 5AD805651FA5EA238072A9D835DD8A7A /* PBXContainerItemProxy */;
+		};
+		D2D834E03674F04D3CB0D594A1887195 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AppticsApiTracker;
+			target = C36B4994FD303F36D155F0EA14997F12 /* AppticsApiTracker */;
+			targetProxy = 5BCD9D4BA15E20C4939C8D65F2A61974 /* PBXContainerItemProxy */;
+		};
+		EE07D48D97BE07353C9F03A514F0426C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AppticsAnalytics;
+			target = E2CE24BC09F14AA1800797A9A2320628 /* AppticsAnalytics */;
+			targetProxy = 025BA9C0B7741DFDA63FAD896629BFD5 /* PBXContainerItemProxy */;
+		};
+		F16B5321A1F609892AD9845B9560DB6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AppticsFeedbackKit;
+			target = 43D3E0C6C92D2DF0481369573FF9EB87 /* AppticsFeedbackKit */;
+			targetProxy = 37801C49B6FBA13A6E31D52B66859427 /* PBXContainerItemProxy */;
+		};
+		F19E041701E38B1B473B4F3985B1D55B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Apptics-Swift";
+			target = 897A636713908C0E3E7B5B4DF0BA1722 /* Apptics-Swift */;
+			targetProxy = CB521F18FFE83DAB90DBD44CD6C13AD3 /* PBXContainerItemProxy */;
+		};
+		F2A8BD795C9F988066B2110CB71D3993 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AppticsRateUs;
+			target = DECA5F8CF3BFB441450008C20E9F4FEA /* AppticsRateUs */;
+			targetProxy = 8A46ABF8EF4100BC3B5C18A193ED65E0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0001FBEF066F500E61CD0ED45EE4DE98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B972B988942CC10BEE45F45710F7092 /* AppticsCrossPromotion.release.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/AppticsCrossPromotion";
+				IBSC_MODULE = AppticsCrossPromotion;
+				INFOPLIST_FILE = "Target Support Files/AppticsCrossPromotion/ResourceBundle-Apptics_SwiftResources-AppticsCrossPromotion-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				PRODUCT_NAME = Apptics_SwiftResources;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		0740FB059E8CE984A6A797753BF3D7EE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B15E17DA96B922AA844D137612E9639 /* AppticsFeedbackKit.debug.xcconfig */;
+			baseConfigurationReference = 63C22F710E86B6769510D0C5949B0D08 /* AppticsFeedbackKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1910,7 +1938,7 @@
 		};
 		0FD5869B29502869DBD817F05E8B0C1E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1DFE1B5E8467337DC36F57AA8F1E0623 /* Apptics-SDK.release.xcconfig */;
+			baseConfigurationReference = DE64C8EE7962E844EA17682B79A60333 /* Apptics-SDK.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1945,7 +1973,7 @@
 		};
 		12DF6F3971EEAC82252D2E9E790030ED /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E82B3B4A232ACCC2A2243FF4B2AB1AC1 /* AppticsApiTracker.debug.xcconfig */;
+			baseConfigurationReference = 794BC4A66FFBB0FBA6FDA5612F5BBCA6 /* AppticsApiTracker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1958,6 +1986,23 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
+		};
+		19E745494462373874055E4E07BC1358 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61CFA0314F4ECEA527E77483EADECA4A /* AppticsAnalytics.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
 		};
 		1B18FEC6107CEFDA21EC7DA2A71487EC /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1998,7 +2043,7 @@
 		};
 		1B48B8AC69129A5B8246D9F7798C6462 /* AppStore */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DB9262D02C0485F6983CAB7DFD0FFA04 /* AppticsRateUs.release.xcconfig */;
+			baseConfigurationReference = 13E7AF77D9F07307DDE7F9B17D1DED5F /* AppticsRateUs.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -2015,7 +2060,7 @@
 		};
 		20D3F5597595516ACE70730955139042 /* AppStore */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0C859E5D82572F7AB874AE4A2026E99B /* AppticsCrossPromotion.release.xcconfig */;
+			baseConfigurationReference = 9B972B988942CC10BEE45F45710F7092 /* AppticsCrossPromotion.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -2050,7 +2095,7 @@
 		};
 		24E4EE5A4B0EA4B7FB0F919A1332F3C0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8819E585B9AC8134D439D830DCCABC23 /* AppticsApiTracker.release.xcconfig */;
+			baseConfigurationReference = D2DC503A318DDC89AA29B6360B1D599E /* AppticsApiTracker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -2067,7 +2112,7 @@
 		};
 		2CA10677A06A4C46805971467556EF73 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0C859E5D82572F7AB874AE4A2026E99B /* AppticsCrossPromotion.release.xcconfig */;
+			baseConfigurationReference = 9B972B988942CC10BEE45F45710F7092 /* AppticsCrossPromotion.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -2102,7 +2147,7 @@
 		};
 		2CD32960D49C9BBC84156C9898CEDFC5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 972359F3873BABA2F789D1DD5F073529 /* AppticsInAppUpdate.release.xcconfig */;
+			baseConfigurationReference = 84B4169C5B3D0A9C80A8913B61D4366F /* AppticsInAppUpdate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -2117,22 +2162,23 @@
 			};
 			name = Release;
 		};
-		31F02E44A79D7BDD98BE626E816B3D6C /* Release */ = {
+		341C26DEEABF3A59531E7868E949657C /* AppStore */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B25429F650F73D6548F490FEC8FE82E3 /* AppticsAnalytics.release.xcconfig */;
+			baseConfigurationReference = 9B972B988942CC10BEE45F45710F7092 /* AppticsCrossPromotion.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/AppticsCrossPromotion";
+				IBSC_MODULE = AppticsCrossPromotion;
+				INFOPLIST_FILE = "Target Support Files/AppticsCrossPromotion/ResourceBundle-Apptics_SwiftResources-AppticsCrossPromotion-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				PRODUCT_NAME = Apptics_SwiftResources;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = bundle;
 			};
-			name = Release;
+			name = AppStore;
 		};
 		3950420279F53A2253BDAEEB536E2D10 /* AppStore */ = {
 			isa = XCBuildConfiguration;
@@ -2346,58 +2392,6 @@
 			};
 			name = Debug;
 		};
-		4496703C167136EB81F8AB2D5ED498CA /* AppStore */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B25429F650F73D6548F490FEC8FE82E3 /* AppticsAnalytics.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = AppStore;
-		};
-		4BE9A54DD3DAA009521CB2C1B5986015 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0969CB12F6A20F15E19C4913C7CCADE2 /* Apptics-Swift.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Apptics-Swift/Apptics-Swift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Apptics-Swift/Apptics-Swift-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/Apptics-Swift/Apptics-Swift.modulemap";
-				PRODUCT_MODULE_NAME = Apptics_Swift;
-				PRODUCT_NAME = Apptics_Swift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		4DC20EF7691D3AE78069480365014E45 /* AppStore */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9149E829CCF52A90A0F161B874804645 /* Pods-AppticsDemo-AppticsDemoUITests.appstore.xcconfig */;
@@ -2436,9 +2430,44 @@
 			};
 			name = AppStore;
 		};
+		52F4FAAA6001F3F11E5F2F1B8AB58E92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60CEA49912A39093ED0FFACCF3D74381 /* Apptics-Swift.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Apptics-Swift/Apptics-Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Apptics-Swift/Apptics-Swift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Apptics-Swift/Apptics-Swift.modulemap";
+				PRODUCT_MODULE_NAME = Apptics_Swift;
+				PRODUCT_NAME = Apptics_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		534EDF0132E164A3F81732E3CFEDD8C9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9BC94E8A8D51C47F207C6DC20E66EDB1 /* AppticsFeedbackKit.release.xcconfig */;
+			baseConfigurationReference = C072423A64203A729A3D4267D654D6A7 /* AppticsFeedbackKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -2455,7 +2484,7 @@
 		};
 		627CE90D1E6BD8F1FD6B75FAF6A2F953 /* AppStore */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 972359F3873BABA2F789D1DD5F073529 /* AppticsInAppUpdate.release.xcconfig */;
+			baseConfigurationReference = 84B4169C5B3D0A9C80A8913B61D4366F /* AppticsInAppUpdate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -2472,7 +2501,7 @@
 		};
 		629D2637837C35029B5E4BEF84CBC1E8 /* AppStore */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FFD0F6E7F971E0D3B0F5718F80A87F8B /* AppticsRemoteConfig.release.xcconfig */;
+			baseConfigurationReference = 4FC7D8082CE4146F6CF103020D984FAE /* AppticsRemoteConfig.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -2489,7 +2518,7 @@
 		};
 		654214E8F96D5FFF456F334EB07EF0DC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DB9262D02C0485F6983CAB7DFD0FFA04 /* AppticsRateUs.release.xcconfig */;
+			baseConfigurationReference = 13E7AF77D9F07307DDE7F9B17D1DED5F /* AppticsRateUs.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -2504,9 +2533,26 @@
 			};
 			name = Release;
 		};
+		68F4FFAE888E486F67B917FF24BD43A2 /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61CFA0314F4ECEA527E77483EADECA4A /* AppticsAnalytics.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = AppStore;
+		};
 		6A821D4884E5ED42933FCDBA0FA40493 /* AppStore */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8819E585B9AC8134D439D830DCCABC23 /* AppticsApiTracker.release.xcconfig */;
+			baseConfigurationReference = D2DC503A318DDC89AA29B6360B1D599E /* AppticsApiTracker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -2523,7 +2569,7 @@
 		};
 		6D8F492AFEED898C354E69E44140CF30 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 03FA944DC56D7DB3C42E7B8F57D65AB1 /* AppticsRemoteConfig.debug.xcconfig */;
+			baseConfigurationReference = A727EE628E6B530D0BC88EDA58A23D0C /* AppticsRemoteConfig.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -2539,7 +2585,7 @@
 		};
 		6F7EE3F946AA7B9068C4718D87039FF7 /* AppStore */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1DFE1B5E8467337DC36F57AA8F1E0623 /* Apptics-SDK.release.xcconfig */;
+			baseConfigurationReference = DE64C8EE7962E844EA17682B79A60333 /* Apptics-SDK.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -2574,7 +2620,7 @@
 		};
 		70844CB94CE4518DC91C3DECDDDDC363 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C7B6C8F82A321ABCED92BCE2037B8AF4 /* Apptics-SDK.debug.xcconfig */;
+			baseConfigurationReference = 4B97128079E84344D4BA3D6EE1117895 /* Apptics-SDK.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -2596,56 +2642,6 @@
 				MODULEMAP_FILE = "Target Support Files/Apptics-SDK/Apptics-SDK.modulemap";
 				PRODUCT_MODULE_NAME = Apptics_SDK;
 				PRODUCT_NAME = Apptics_SDK;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		79FB696BBAC92D299C599C271C1D0D00 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E661F3F8C116A121FF17AA432C53762D /* AppticsCrossPromotion.debug.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/AppticsCrossPromotion";
-				IBSC_MODULE = AppticsCrossPromotion;
-				INFOPLIST_FILE = "Target Support Files/AppticsCrossPromotion/ResourceBundle-Apptics_SwiftResources-AppticsCrossPromotion-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				PRODUCT_NAME = Apptics_SwiftResources;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		7D0CAAF27B5867791A68C1EAE78A55B9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2EC1478193EE77C889B795E76679C875 /* Apptics-Swift.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Apptics-Swift/Apptics-Swift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Apptics-Swift/Apptics-Swift-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/Apptics-Swift/Apptics-Swift.modulemap";
-				PRODUCT_MODULE_NAME = Apptics_Swift;
-				PRODUCT_NAME = Apptics_Swift;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -2694,9 +2690,94 @@
 			};
 			name = AppStore;
 		};
-		AFDD2C973E5BEB8818E16A4EEEF3BD03 /* Debug */ = {
+		8B7571101D07CD9183E98BAC4609FD5E /* AppStore */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72C8B6493BF548FA26CB5549767DD7A5 /* AppticsAnalytics.debug.xcconfig */;
+			baseConfigurationReference = 60CEA49912A39093ED0FFACCF3D74381 /* Apptics-Swift.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Apptics-Swift/Apptics-Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Apptics-Swift/Apptics-Swift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Apptics-Swift/Apptics-Swift.modulemap";
+				PRODUCT_MODULE_NAME = Apptics_Swift;
+				PRODUCT_NAME = Apptics_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = AppStore;
+		};
+		A489AB9E6EA2C4836C009955AEFEBD19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D372C9CF33144D1C38C00437DA772BBC /* AppticsCrossPromotion.debug.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/AppticsCrossPromotion";
+				IBSC_MODULE = AppticsCrossPromotion;
+				INFOPLIST_FILE = "Target Support Files/AppticsCrossPromotion/ResourceBundle-Apptics_SwiftResources-AppticsCrossPromotion-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				PRODUCT_NAME = Apptics_SwiftResources;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		A840C8A86F1E216C23A850608CAC06CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04AB34F85D4B02FB089721CCAD29D5DF /* Apptics-Swift.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Apptics-Swift/Apptics-Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Apptics-Swift/Apptics-Swift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Apptics-Swift/Apptics-Swift.modulemap";
+				PRODUCT_MODULE_NAME = Apptics_Swift;
+				PRODUCT_NAME = Apptics_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BB92AFA7866C8C8B6D29840728F3D283 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86D5735CDAE4B91770E2127F29B139DB /* AppticsRateUs.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -2710,43 +2791,9 @@
 			};
 			name = Debug;
 		};
-		B0F881F73D0C35EE57752717C7E68A54 /* AppStore */ = {
+		BBB82188179E8FCB214796C106E9042A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0C859E5D82572F7AB874AE4A2026E99B /* AppticsCrossPromotion.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/AppticsCrossPromotion";
-				IBSC_MODULE = AppticsCrossPromotion;
-				INFOPLIST_FILE = "Target Support Files/AppticsCrossPromotion/ResourceBundle-Apptics_SwiftResources-AppticsCrossPromotion-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				PRODUCT_NAME = Apptics_SwiftResources;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = AppStore;
-		};
-		B6F648BE00A6230A3A8460F8FBB8B6C5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0C859E5D82572F7AB874AE4A2026E99B /* AppticsCrossPromotion.release.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/AppticsCrossPromotion";
-				IBSC_MODULE = AppticsCrossPromotion;
-				INFOPLIST_FILE = "Target Support Files/AppticsCrossPromotion/ResourceBundle-Apptics_SwiftResources-AppticsCrossPromotion-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				PRODUCT_NAME = Apptics_SwiftResources;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		BB92AFA7866C8C8B6D29840728F3D283 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8DF75D4D9DBC5BF05804A114CE542DB2 /* AppticsRateUs.debug.xcconfig */;
+			baseConfigurationReference = C94F97C2C7F3F6F1319CAD3ACB5347A9 /* AppticsAnalytics.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -2828,7 +2875,7 @@
 		};
 		C1A7B8300C03B6E5F6834A347A36D923 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FFD0F6E7F971E0D3B0F5718F80A87F8B /* AppticsRemoteConfig.release.xcconfig */;
+			baseConfigurationReference = 4FC7D8082CE4146F6CF103020D984FAE /* AppticsRemoteConfig.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -2905,44 +2952,9 @@
 			};
 			name = Release;
 		};
-		D4ADEAF91D26AED52B9AFE6AA23B6327 /* AppStore */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0969CB12F6A20F15E19C4913C7CCADE2 /* Apptics-Swift.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Apptics-Swift/Apptics-Swift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Apptics-Swift/Apptics-Swift-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/Apptics-Swift/Apptics-Swift.modulemap";
-				PRODUCT_MODULE_NAME = Apptics_Swift;
-				PRODUCT_NAME = Apptics_Swift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = AppStore;
-		};
 		DC1B35C63B6490D7339ED49A25F2E1FF /* AppStore */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9BC94E8A8D51C47F207C6DC20E66EDB1 /* AppticsFeedbackKit.release.xcconfig */;
+			baseConfigurationReference = C072423A64203A729A3D4267D654D6A7 /* AppticsFeedbackKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -2959,7 +2971,7 @@
 		};
 		DC68042F38670E30FD27281C0ABE9B3A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B23067822AC46E18EA5E6E7AD3783B80 /* AppticsInAppUpdate.debug.xcconfig */;
+			baseConfigurationReference = CAE8769348924207248BC0BCA9C0A215 /* AppticsInAppUpdate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -3051,7 +3063,7 @@
 		};
 		F4C93F444851F5B2B1EB2D959CF148BD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E661F3F8C116A121FF17AA432C53762D /* AppticsCrossPromotion.debug.xcconfig */;
+			baseConfigurationReference = D372C9CF33144D1C38C00437DA772BBC /* AppticsCrossPromotion.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -3086,12 +3098,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		15F180DFE975CA7D5ACD437AED867621 /* Build configuration list for PBXNativeTarget "Apptics-Swift" */ = {
+		01F1FBFBA29E4C3134629F8D87C21AB4 /* Build configuration list for PBXAggregateTarget "AppticsAnalytics" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D4ADEAF91D26AED52B9AFE6AA23B6327 /* AppStore */,
-				7D0CAAF27B5867791A68C1EAE78A55B9 /* Debug */,
-				4BE9A54DD3DAA009521CB2C1B5986015 /* Release */,
+				68F4FFAE888E486F67B917FF24BD43A2 /* AppStore */,
+				BBB82188179E8FCB214796C106E9042A /* Debug */,
+				19E745494462373874055E4E07BC1358 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		308DD04A3A1C19AF1B44FFA3661173F6 /* Build configuration list for PBXNativeTarget "Apptics-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B7571101D07CD9183E98BAC4609FD5E /* AppStore */,
+				A840C8A86F1E216C23A850608CAC06CF /* Debug */,
+				52F4FAAA6001F3F11E5F2F1B8AB58E92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3102,6 +3124,16 @@
 				6A821D4884E5ED42933FCDBA0FA40493 /* AppStore */,
 				12DF6F3971EEAC82252D2E9E790030ED /* Debug */,
 				24E4EE5A4B0EA4B7FB0F919A1332F3C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47E7E2C4843536E48BE33A54CAA0226C /* Build configuration list for PBXNativeTarget "AppticsCrossPromotion-Apptics_SwiftResources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				341C26DEEABF3A59531E7868E949657C /* AppStore */,
+				A489AB9E6EA2C4836C009955AEFEBD19 /* Debug */,
+				0001FBEF066F500E61CD0ED45EE4DE98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3166,16 +3198,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		99986D657E598A8C197FA704594FE2D3 /* Build configuration list for PBXNativeTarget "AppticsCrossPromotion-Apptics_SwiftResources" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B0F881F73D0C35EE57752717C7E68A54 /* AppStore */,
-				79FB696BBAC92D299C599C271C1D0D00 /* Debug */,
-				B6F648BE00A6230A3A8460F8FBB8B6C5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		A33CED67117A1CD5B12F197321C50C8E /* Build configuration list for PBXNativeTarget "Pods-AppticsDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -3202,16 +3224,6 @@
 				6F7EE3F946AA7B9068C4718D87039FF7 /* AppStore */,
 				70844CB94CE4518DC91C3DECDDDDC363 /* Debug */,
 				0FD5869B29502869DBD817F05E8B0C1E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E710D6F3C6F29638F1D880206CB8D887 /* Build configuration list for PBXAggregateTarget "AppticsAnalytics" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4496703C167136EB81F8AB2D5ED498CA /* AppStore */,
-				AFDD2C973E5BEB8818E16A4EEEF3BD03 /* Debug */,
-				31F02E44A79D7BDD98BE626E816B3D6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

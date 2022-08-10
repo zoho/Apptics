@@ -10,10 +10,10 @@
 #import "CrashMaster.h"
 #import "NonFatalMaster.h"
 
-#import <AppticsFeedbackKit/AppticsFeedbackKit.h>
+//#import <AppticsFeedbackKit/AppticsFeedbackKit.h>
 //#import <AppticsApiTracker/AppticsApiTracker.h>
-#import <AppticsInAppUpdate/AppticsInAppUpdate.h>
-#import <AppticsRateUs/AppticsRateUs.h>
-#import <AppticsRemoteConfig/AppticsRemoteConfig.h>
+//#import <AppticsInAppUpdate/AppticsInAppUpdate.h>
+//#import <AppticsRateUs/AppticsRateUs.h>
+//#import <AppticsRemoteConfig/AppticsRemoteConfig.h>
 //#import <AppticsCrossPromotion/AppticsCrossPromotion-Swift.h>
 #import "Test.h"

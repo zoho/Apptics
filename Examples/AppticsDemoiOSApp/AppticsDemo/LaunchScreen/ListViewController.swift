@@ -42,13 +42,13 @@ extension ListViewController {
             self.navigationController?.pushViewController(nonFatalListController, animated: true)
             break
         case .Feedback:
-            FeedbackKit.setFromEmailAddress("ssaravanan@zohocorp.com")
-            FeedbackKit.showFeedback()
+//            FeedbackKit.setFromEmailAddress("ssaravanan@zohocorp.com")
+//            FeedbackKit.showFeedback()
             break
         case .Appupdate:
-            APAppUpdateManager.check { info in
-                 print("update info \(info)")
-            }
+//            APAppUpdateManager.check { info in
+//                 print("update info \(info)")
+//            }
             break
         case .Apitracking:
             let apiListController = storyboard.instantiateViewController(withIdentifier: "APIListViewController")
@@ -59,7 +59,7 @@ extension ListViewController {
         case .Logout:
             break
         case .Opensettings:
-            Apptics.openAnalyticSettingsController()
+//            Apptics.openAnalyticSettingsController()
             break
         case .Crosspromotion:
 //            PromotedAppsKit.presentPromotedAppsController(sectionHeader1: "Related apps", sectionHeader2: "More apps")

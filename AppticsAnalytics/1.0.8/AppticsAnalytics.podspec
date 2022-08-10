@@ -31,7 +31,7 @@ DESC
   
 spec.homepage         = "https://github.com/zoho/Apptics"
 spec.author           = { "Saravanan Selvam" => "ssaravanan@zohocorp.com", "Prakash Redrouthu" => "prakash.redrouthu@zohocorp.com" }
-spec.source = { :git => 'https://github.com/zoho/Apptics.git', :tag => spec.version }
+spec.source = { :http => "https://github.com/zoho/Apptics/releases/download/#{spec.version}/Apptics.zip"}
 
 spec.social_media_url = "http://zoho.com"
 spec.documentation_url = "https://prezoho.zohocorp.com/apptics/resources/SDK/iOS/integration.html"
@@ -40,7 +40,6 @@ spec.ios.deployment_target = '9.1'
 spec.tvos.deployment_target = '9.0'
 spec.osx.deployment_target =  '10.10'
 spec.watchos.deployment_target = '2.0'
-
 spec.default_subspecs = 'Core'
 
 spec.requires_arc = true

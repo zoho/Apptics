@@ -17,23 +17,23 @@ RSYNC_PROTECT_TMP_FILES=(--filter "P .*.??????")
 variant_for_slice()
 {
   case "$1" in
-  "AppticsApiTracker.xcframework/macos-x86_64")
-    echo ""
-    ;;
-  "AppticsApiTracker.xcframework/tvos-arm64")
-    echo ""
-    ;;
-  "AppticsApiTracker.xcframework/ios-arm64_armv7")
-    echo ""
+  "AppticsApiTracker.xcframework/ios-arm64_i386_x86_64-simulator")
+    echo "simulator"
     ;;
   "AppticsApiTracker.xcframework/ios-arm64_x86_64-maccatalyst")
     echo "maccatalyst"
     ;;
+  "AppticsApiTracker.xcframework/ios-arm64_armv7")
+    echo ""
+    ;;
+  "AppticsApiTracker.xcframework/macos-x86_64")
+    echo ""
+    ;;
   "AppticsApiTracker.xcframework/tvos-arm64_x86_64-simulator")
     echo "simulator"
     ;;
-  "AppticsApiTracker.xcframework/ios-arm64_i386_x86_64-simulator")
-    echo "simulator"
+  "AppticsApiTracker.xcframework/tvos-arm64")
+    echo ""
     ;;
   esac
 }
@@ -41,23 +41,23 @@ variant_for_slice()
 archs_for_slice()
 {
   case "$1" in
-  "AppticsApiTracker.xcframework/macos-x86_64")
-    echo "x86_64"
-    ;;
-  "AppticsApiTracker.xcframework/tvos-arm64")
-    echo "arm64"
-    ;;
-  "AppticsApiTracker.xcframework/ios-arm64_armv7")
-    echo "arm64 armv7"
+  "AppticsApiTracker.xcframework/ios-arm64_i386_x86_64-simulator")
+    echo "arm64 i386 x86_64"
     ;;
   "AppticsApiTracker.xcframework/ios-arm64_x86_64-maccatalyst")
     echo "arm64 x86_64"
     ;;
+  "AppticsApiTracker.xcframework/ios-arm64_armv7")
+    echo "arm64 armv7"
+    ;;
+  "AppticsApiTracker.xcframework/macos-x86_64")
+    echo "x86_64"
+    ;;
   "AppticsApiTracker.xcframework/tvos-arm64_x86_64-simulator")
     echo "arm64 x86_64"
     ;;
-  "AppticsApiTracker.xcframework/ios-arm64_i386_x86_64-simulator")
-    echo "arm64 i386 x86_64"
+  "AppticsApiTracker.xcframework/tvos-arm64")
+    echo "arm64"
     ;;
   esac
 }
@@ -141,5 +141,5 @@ install_xcframework() {
   echo "Copied $source to $destination"
 }
 
-install_xcframework "${PODS_ROOT}/AppticsApiTracker/AppticsApiTracker.xcframework" "AppticsApiTracker/ApiTracker" "framework" "ios-arm64_armv7" "ios-arm64_x86_64-maccatalyst" "ios-arm64_i386_x86_64-simulator"
+install_xcframework "${PODS_ROOT}/AppticsApiTracker/AppticsApiTracker.xcframework" "AppticsApiTracker/ApiTracker" "framework" "ios-arm64_i386_x86_64-simulator" "ios-arm64_x86_64-maccatalyst" "ios-arm64_armv7"
 

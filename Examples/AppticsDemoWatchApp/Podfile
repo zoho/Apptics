@@ -7,7 +7,7 @@ source_url = 'https://github.com/zoho/Apptics.git' #build source url.
 target 'AppticsDemoWatchApp' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-
+  pod 'Apptics-Swift/Extension', '1.0.8', :source=>'https://github.com/zoho/Apptics.git'
 #  # Apptics for Swift
 #  pod 'Apptics-Swift', apptics_version , :source => source_url
 #  # Apptics RemoteConfig
