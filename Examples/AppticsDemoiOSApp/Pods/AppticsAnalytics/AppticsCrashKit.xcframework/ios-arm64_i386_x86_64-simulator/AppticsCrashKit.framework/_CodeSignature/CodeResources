@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/AppticsCrashKit.h</key>
 		<data>
-		IZ5hY1cGQS/QRneYQAAko/01cRs=
+		lvJcscPwNKVBiKtKk/BYj+XA0S8=
 		</data>
 		<key>Headers/ZACrash.h</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		e1Rxp//3q9mwtqbq3pKaY92gvMM=
+		URb3fLFQdtUjGZ2/PTYaIJ6lcms=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -31,11 +31,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			IZ5hY1cGQS/QRneYQAAko/01cRs=
+			lvJcscPwNKVBiKtKk/BYj+XA0S8=
 			</data>
 			<key>hash2</key>
 			<data>
-			L0JXIFV/4YGBxRYlD3JiaSoWC4AGuNVpYmBd0KzlqXo=
+			jsBGAXx4tZbuibDAXOLQ/A0gU4NgUn1kvSUgoaBhGDM=
 			</data>
 		</dict>
 		<key>Headers/ZACrash.h</key>

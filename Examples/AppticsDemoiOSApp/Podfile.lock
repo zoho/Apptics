@@ -80,7 +80,7 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Apptics-SDK: aca80a82e58b1317e20c5bcb6baf51f13d9a8957
   Apptics-Swift: d67e6ffe5de961941a6b5cb8068370f9bcc90835
-  AppticsAnalytics: 6cb65a7104b1f4b835fa74df516580bd3d3ef7dc
+  AppticsAnalytics: 6d8c3a7b427429c78279662a482fde54133a91b3
   AppticsApiTracker: 24a8e8b569acc825c624112ce241c737d2a10eb2
   AppticsCrossPromotion: c380654a90b1c454a6d314a2d2b55a63acb58362
   AppticsFeedbackKit: 25ed9aa3e9ba2590546b1efdbfae4f75cfc3336c

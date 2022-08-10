@@ -25,6 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) bool enableRateUs API_UNAVAILABLE(macos, watchos);
 @property (nonatomic) bool sendDataOnMobileNetworkByDefault;
 
+//@property (nonatomic) bool completeOffByDefault;
 @property (nonatomic) bool trackOnByDefault;
 @property (nonatomic) bool enableAutomaticSessionTracking;
 @property (nonatomic) bool enableAutomaticScreenTracking;

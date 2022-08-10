@@ -144,9 +144,9 @@
 		<data>
 		bYBg08+LRpcu4n184TTz0Ttbw84=
 		</data>
-		<key>LICENSE.txt</key>
+		<key>LICENSE.TXT</key>
 		<data>
-		n7rSP+Ex/MKT2ZssUXuZDaovCm4=
+		SuYitqYPMq09CjLis663lpu2TN4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -745,15 +745,15 @@
 			SU2ltYkydeGwkzDRzOh3a3Mx9vX7p+V6UdcnEapCLbk=
 			</data>
 		</dict>
-		<key>LICENSE.txt</key>
+		<key>LICENSE.TXT</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			n7rSP+Ex/MKT2ZssUXuZDaovCm4=
+			SuYitqYPMq09CjLis663lpu2TN4=
 			</data>
 			<key>hash2</key>
 			<data>
-			GGxfAZKnVHFKflQiM92qrSh0VibgrTLjWNP1rwCvuEo=
+			chyxHeYY/Pm7t9JaOJIHvyInNX5mlLwyarMqZpn5uVE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

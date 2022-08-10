@@ -1,6 +1,6 @@
 
 import Foundation
-//import Apptics_Swift
+import Apptics_Swift
 
 enum NonFatalListType {
     case ObjcException
@@ -29,7 +29,7 @@ class NonFatalMasterSwift: NSObject {
             let str = try String(contentsOfFile: filename ?? "")
             
         } catch let error{
-//            trackError(error as NSError)
+            APTrackError(error as NSError)
         }
     }
 }

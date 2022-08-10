@@ -9,7 +9,7 @@
 //#import <Apptics/Apptics.h>
 //#import <Apptics/Analytics.h>
 //#import <Apptics/APTheme.h>
-//#import <Apptics/APLog.h>
+#import <Apptics/APLog.h>
 //#import <AppticsScreenTracker/AppticsScreenTracker.h>
 //#import <ATTrackingManager>
 //#import <Apptics/Apptics-Swift.h>
@@ -72,10 +72,10 @@
 @implementation Test
 
 -(void) log{
-//    APLogInfo(@"Info Log %i",isatty(STDERR_FILENO));
-//    APLogDebug(@"Info Debug");
-//    APLogWarn(@"Info Warn");
-//    APLogError(@"Info Error");
+    APLogInfo(@"Info Log %i",isatty(STDERR_FILENO));
+    APLogDebug(@"Info Debug");
+    APLogWarn(@"Info Warn");
+    APLogError(@"Info Error");
 //    [APScreentracker trackViewEnter:<#(nonnull NSString *)#>]
 //    [ATTrackingManager requestTrackingAuthorizationWithCompletionHandler:^(ATTrackingManagerAuthorizationStatus status) {
 //        // Check for status after request
