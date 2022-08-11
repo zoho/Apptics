@@ -48,9 +48,9 @@ spec.subspec 'Core' do |an|
 an.dependency 'AppticsAnalytics/Apptics'
 an.dependency 'AppticsAnalytics/EventTracker'
 an.dependency 'AppticsAnalytics/ScreenTracker'
-an.dependency 'AppticsAnalytics/CrashKit'
+# an.dependency 'AppticsAnalytics/CrashKit'
 an.dependency 'AppticsAnalytics/JWT'
-an.dependency 'AppticsAnalytics/KSCrash'
+# an.dependency 'AppticsAnalytics/KSCrash'
 end
 
 spec.subspec 'JWT' do |jwt|
