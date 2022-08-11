@@ -6,11 +6,7 @@
 	<dict>
 		<key>Resources/Info.plist</key>
 		<data>
-		GeLEOG1qMN/h8Cx1YPESZfGoSBA=
-		</data>
-		<key>Resources/JWT-Info.plist</key>
-		<data>
-		z4UNND/dvaT+CGWIvgkqVwlId+M=
+		fo+lqWEVQj+5k+sbgKcndC33cdk=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -404,22 +400,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GeLEOG1qMN/h8Cx1YPESZfGoSBA=
+			fo+lqWEVQj+5k+sbgKcndC33cdk=
 			</data>
 			<key>hash2</key>
 			<data>
-			FUyETiVYVFzkTdpyr6zgNdNmCaiI/TaxL/IP1lPuyeE=
-			</data>
-		</dict>
-		<key>Resources/JWT-Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			z4UNND/dvaT+CGWIvgkqVwlId+M=
-			</data>
-			<key>hash2</key>
-			<data>
-			VPLp36+PjD6utlyP+OrTvkAQ1I8O8Y3Q0FHL5VLbOM8=
+			opNZpNJRiS0SxE2QWJJXT7qrGQhA7KU94E4XtapRb1k=
 			</data>
 		</dict>
 	</dict>

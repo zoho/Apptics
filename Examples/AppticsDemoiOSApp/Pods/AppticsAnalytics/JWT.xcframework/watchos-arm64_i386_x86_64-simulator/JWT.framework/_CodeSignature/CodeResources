@@ -142,11 +142,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		JzyyjcRC2211Kl1OhCFclVml0No=
-		</data>
-		<key>JWT-Info.plist</key>
-		<data>
-		sA9s1kqSYwDnrh2T0n+N8b6Bs3Q=
+		zSj7+TFUslt780Mkh+QEfik+GvU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -527,17 +523,6 @@
 			<key>hash2</key>
 			<data>
 			X9yUIxlu8osxZPzK+Dro0bCHPLLnj3uffPiAzjnbb24=
-			</data>
-		</dict>
-		<key>JWT-Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			sA9s1kqSYwDnrh2T0n+N8b6Bs3Q=
-			</data>
-			<key>hash2</key>
-			<data>
-			cEz6J0Y3RbTJSxT8yhzB94ND3IpSbYNvrrpj5GZRV5s=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
