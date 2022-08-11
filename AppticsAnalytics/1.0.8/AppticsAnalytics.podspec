@@ -49,8 +49,6 @@ an.dependency 'AppticsAnalytics/Apptics'
 an.dependency 'AppticsAnalytics/EventTracker'
 an.dependency 'AppticsAnalytics/ScreenTracker'
 # an.dependency 'AppticsAnalytics/CrashKit'
-an.dependency 'AppticsAnalytics/JWT'
-# an.dependency 'AppticsAnalytics/KSCrash'
 end
 
 spec.subspec 'JWT' do |jwt|
@@ -59,6 +57,7 @@ end
 
 spec.subspec 'Apptics' do |ap|
 ap.vendored_frameworks = 'Apptics.xcframework'
+ap.dependency 'AppticsAnalytics/JWT'
 end
 
 spec.subspec 'EventTracker' do |et|
@@ -75,6 +74,7 @@ end
 
 spec.subspec 'CrashKit' do |ck|
 ck.vendored_frameworks = 'AppticsCrashKit.xcframework'
+ck.dependency 'AppticsAnalytics/KSCrash'
 end
 
 end
