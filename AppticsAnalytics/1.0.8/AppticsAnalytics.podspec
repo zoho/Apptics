@@ -41,7 +41,6 @@ spec.tvos.deployment_target = '9.0'
 spec.osx.deployment_target =  '10.10'
 spec.watchos.deployment_target = '2.0'
 spec.default_subspecs = 'Core'
-spec.static_framework = true
 
 spec.requires_arc = true
 
@@ -50,6 +49,8 @@ an.dependency 'AppticsAnalytics/Apptics'
 an.dependency 'AppticsAnalytics/EventTracker'
 an.dependency 'AppticsAnalytics/ScreenTracker'
 an.dependency 'AppticsAnalytics/CrashKit'
+an.dependency 'AppticsAnalytics/JWT'
+an.dependency 'AppticsAnalytics/KSCrash'
 end
 
 spec.subspec 'JWT' do |jwt|
@@ -58,7 +59,6 @@ end
 
 spec.subspec 'Apptics' do |ap|
 ap.vendored_frameworks = 'Apptics.xcframework'
-ap.dependency 'AppticsAnalytics/JWT'
 end
 
 spec.subspec 'EventTracker' do |et|
@@ -75,7 +75,6 @@ end
 
 spec.subspec 'CrashKit' do |ck|
 ck.vendored_frameworks = 'AppticsCrashKit.xcframework'
-ck.dependency 'AppticsAnalytics/KSCrash'
 end
 
 end
