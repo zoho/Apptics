@@ -37,7 +37,7 @@ pod 'AppticsApiTracker', apptics_version , :source => source_url
 ## Apptics Cross Promotion
 pod 'AppticsCrossPromotion', apptics_version , :source => source_url
 
-#  script_phase :name => 'Apptics pre build', :script => 'sh "./Pods/Apptics-SDK/scripts/run" --upload-symbols-for-configurations="Release, AppStore"', :execution_position => :before_compile
+  script_phase :name => 'Apptics pre build', :script => 'sh "./Pods/Apptics-SDK/scripts/run" --upload-symbols-for-configurations="Release, AppStore"', :execution_position => :before_compile
 #script_phase :name => 'Apptics pre build', :script => 'sh "${BUILD_DIR%Build/*}SourcePackages/checkouts/Apptics-SP/scripts/run" --upload-symbols-for-configurations="Release, Appstore" "', :execution_position => :before_compile
   
   target 'AppticsDemoTests' do

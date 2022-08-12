@@ -55,6 +55,7 @@ PODS:
     - AppticsAnalytics/Apptics (= 1.0.8)
 
 DEPENDENCIES:
+  - Apptics-SDK (= 1.0.8)
   - Apptics-Swift (= 1.0.8)
   - Apptics-Swift/Extension (= 1.0.8)
   - AppticsApiTracker (= 1.0.8)
@@ -87,6 +88,6 @@ SPEC CHECKSUMS:
   AppticsRateUs: 64d5b7064ddfa1082c53e081f1437f73c522d2b6
   AppticsRemoteConfig: 5c4890bb3643d33ecebec3403aec0d44a52cdcb3
 
-PODFILE CHECKSUM: 7250c3d7ea82f63cb89903c66b7b38b34b27e118
+PODFILE CHECKSUM: ad3adb1c7d693255ce37ac91cf64a750d5a316aa
 
 COCOAPODS: 1.11.3
