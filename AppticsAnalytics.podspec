@@ -74,7 +74,7 @@ end
 
 spec.subspec 'CrashKit' do |ck|
 ck.vendored_frameworks = 'AppticsCrashKit.xcframework'
-# ck.dependency 'AppticsAnalytics/KSCrash'
+ck.dependency 'AppticsAnalytics/KSCrash'
 end
 
 end
