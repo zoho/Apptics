@@ -11,6 +11,7 @@ import Apptics
 import MetricKit
 import AppticsFeedbackKit
 import Apptics_Swift
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -38,7 +39,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         AppticsConfig.default.enableRateUs = true // To enable Rate us
 
         Apptics.initialize(withVerbose: true) // 🤖​ To initialise Apptics framework with or without verbose.
-        Apptics.setCompleteOff(true)
+        Apptics.setCompleteOff(false)
         Apptics.enableReviewAndSendCrashReport(true) // 🤖​ To show review prompt before sending the crash report.
 
         Apptics.setTheme(AppTheme())
@@ -58,6 +59,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         APLog.setMaximumNumberOfLogFiles(2)
         APLog.clearConsoleLogs()
         Test().log()
+        
+        APLogVerbose("Verbose \(("someones@email.com" as NSString).ap_privacy(.sensitiveMask))")
 //        
         return true
     }

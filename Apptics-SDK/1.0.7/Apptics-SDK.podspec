@@ -31,7 +31,7 @@ DESC
   
 spec.homepage         = "https://github.com/zoho/Apptics"
 spec.author           = { "Saravanan Selvam" => "ssaravanan@zohocorp.com", "Prakash Redrouthu" => "prakash.redrouthu@zohocorp.com" }
-spec.source = { :http => "https://github.com/zoho/Apptics/releases/download/#{spec.version}/Apptics.zip" }
+spec.source = { :http => "https://github.com/zoho/Apptics/releases/download/#{spec.version}/HelperScripts.zip" }
 
 spec.social_media_url = "http://zoho.com"
 
@@ -45,27 +45,8 @@ spec.default_subspecs = 'Analytics'
 spec.requires_arc = true
 
 spec.subspec 'Analytics' do |an|
-an.dependency 'Apptics-SDK/Core'
-an.dependency 'Apptics-SDK/EventTracker'
-an.dependency 'Apptics-SDK/ScreenTracker'
-an.dependency 'Apptics-SDK/CrashKit'
-end
-
-spec.subspec 'Core' do |co|
-co.vendored_frameworks = 'Apptics.xcframework'
-co.dependency 'Apptics-SDK/Scripts'
-end
-
-spec.subspec 'EventTracker' do |et|
-et.vendored_frameworks = 'AppticsEventTracker.xcframework'
-end
-
-spec.subspec 'ScreenTracker' do |st|
-st.vendored_frameworks = 'AppticsScreenTracker.xcframework'
-end
-
-spec.subspec 'CrashKit' do |ck|
-ck.vendored_frameworks = 'AppticsCrashKit.xcframework'
+an.dependency 'Apptics-SDK/Scripts'
+an.dependency 'AppticsAnalytics', "#{spec.version}"
 end
 
 spec.subspec 'Scripts' do |sc|

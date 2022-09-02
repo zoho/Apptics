@@ -242,3 +242,9 @@ typedef NS_ENUM(NSUInteger, APLogPrivacy){
     APLogPrivacySensitive,
     APLogPrivacySensitiveMask    
 };
+
+typedef NS_ENUM(NSInteger, APDeviceIdentifierType)
+{
+    APDeviceIdentifierTypeVendorId = 0,
+    APDeviceIdentifierTypeRandomId
+};

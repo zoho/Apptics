@@ -43,7 +43,7 @@ spec.subspec 'AppUpdate' do |au|
 au.platform     = :ios, '9.1'
 au.vendored_frameworks = 'AppticsInAppUpdate.xcframework'
 au.ios.dependency 'AppticsFeedbackKit', "#{spec.version}"
-au.ios.dependency 'Apptics-SDK/Core', "#{spec.version}"
+au.ios.dependency 'AppticsAnalytics/Apptics', "#{spec.version}"
 end
 
 end

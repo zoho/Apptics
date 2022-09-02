@@ -43,9 +43,9 @@ spec.requires_arc = true
 
 spec.subspec 'ApiTracker' do |at|
 at.vendored_frameworks = 'AppticsApiTracker.xcframework'
-at.ios.dependency 'Apptics-SDK/Core', "#{spec.version}"
-at.tvos.dependency 'Apptics-SDK/Core', "#{spec.version}"
-at.osx.dependency 'Apptics-SDK/Core', "#{spec.version}"
+at.ios.dependency 'AppticsAnalytics/Apptics', "#{spec.version}"
+at.tvos.dependency 'AppticsAnalytics/Apptics', "#{spec.version}"
+at.osx.dependency 'AppticsAnalytics/Apptics', "#{spec.version}"
 end
 
 end

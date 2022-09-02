@@ -72,10 +72,13 @@
 @implementation Test
 
 -(void) log{
+//    [APLog getInstance].shouldPrint = false;
     APLogInfo(@"Info Log %i",isatty(STDERR_FILENO));
-    APLogDebug(@"Info Debug");
-    APLogWarn(@"Info Warn");
-    APLogError(@"Info Error");
+    APLogDebug(@"Info Debug %@", [@"someones@email.com" ap_privacy:APLogPrivacyPrivateMask]);
+    APLogWarn(@"Info Warn %@", [@"someones@email.com" ap_privacy:APLogPrivacyPrivate]);
+    APLogError(@"Info Error %@", [@"someones@email.com" ap_privacy:APLogPrivacySensitiveMask]);
+    APLogError(@"Info Error %@", [@"someones@email.com" ap_privacy:APLogPrivacySensitive]);
+//    [APLog getInstance].shouldPrint = true;
 //    [APScreentracker trackViewEnter:<#(nonnull NSString *)#>]
 //    [ATTrackingManager requestTrackingAuthorizationWithCompletionHandler:^(ATTrackingManagerAuthorizationStatus status) {
 //        // Check for status after request
