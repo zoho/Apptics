@@ -28,7 +28,8 @@ extension APIListViewController {
         switch list.type {
 
         case .SimpleMatch, .SingleWithParam, .RegexMatch:
-            self.request(url: list.url, apiId: nil)
+            self.request(url: list.url, apiId: "62000000002355")
+//            self.request(url: list.url, apiId: nil)
             Toast.show(message: "Tracked api by \(list.name)", controller: self)
             break
         case .TrackByApiID:
@@ -51,7 +52,7 @@ extension APIListViewController {
             }
             
             let configuration = URLSessionConfiguration.default
-//            APAPIManager.enable(for: configuration)
+            APAPIManager.enable(for: configuration)
             let session = URLSession(configuration: configuration)
 
             let task = session.dataTask(with: mutableRequest as URLRequest, completionHandler: { data, response, error -> Void in

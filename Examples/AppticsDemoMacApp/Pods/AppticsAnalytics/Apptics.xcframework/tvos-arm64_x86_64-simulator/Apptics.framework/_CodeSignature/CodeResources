@@ -10,11 +10,11 @@
 		</data>
 		<key>AppticsResources_tvOS.bundle/Info.plist</key>
 		<data>
-		m9/l/FNugJdHs0HPUXkAiMp8qPs=
+		OR5R2AfSvedfYsQJ0V5ZjEzKw9g=
 		</data>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		pU/Cm09lbWz9y7J1z7SZ8ocvBMA=
+		iT9mf985zjjsSgybV+NZCvpEI2o=
 		</data>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		kI9ysiRXr001rJ8MtvZNa34sLw4=
+		06nwtkt2EGW8uML1e+yOMZVzsRA=
 		</data>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeResources</key>
 		<data>
@@ -304,15 +304,15 @@
 		</data>
 		<key>Headers/Analytics.h</key>
 		<data>
-		7X3e6IooZPscS0ecQdLpzXO5RT4=
+		vrCU1Nlt2o2hnXZuYEprtaluVYg=
 		</data>
 		<key>Headers/Apptics.h</key>
 		<data>
-		uvWEC4dQzw5YFr0XKIzAHDj28Qc=
+		99GfIrgt/vhGsXyP4oTaJMYbh9E=
 		</data>
 		<key>Headers/AppticsConfig.h</key>
 		<data>
-		khN3TpvHBgL/FTfduJ2j1ZFxlR0=
+		mM+pk0IouSYJkHc97UR8pcGMtnc=
 		</data>
 		<key>Headers/NSData+APGunZip.h</key>
 		<data>
@@ -352,11 +352,11 @@
 		</data>
 		<key>Headers/ZAEnums.h</key>
 		<data>
-		7gQDWMBhVm37t0ZjrGW/J4zw4d4=
+		2BdmTZZwn5yx/x3eSFceZmdO2tg=
 		</data>
 		<key>Headers/ZAEvent.h</key>
 		<data>
-		yr4RH/OGBIgm8QYwFj1PgJVwk+M=
+		3aElfddacVD4KdJOeni293ozNcU=
 		</data>
 		<key>Headers/ZAFileManager.h</key>
 		<data>
@@ -432,7 +432,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		cMEnwddgr5JAmtKYiRyIjm5jQOE=
+		3cOSC4eJZA2COIfaPYLbXea4lzs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -456,22 +456,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			m9/l/FNugJdHs0HPUXkAiMp8qPs=
+			OR5R2AfSvedfYsQJ0V5ZjEzKw9g=
 			</data>
 			<key>hash2</key>
 			<data>
-			CxzX7dxOFQzegDBAF7b3cgdTw0zgjRg6FdUhe3inHuA=
+			IXpARFxs0ooneh20pmEYUVSIoY+Sf62CJZ3kUgiWhuw=
 			</data>
 		</dict>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeDirectory</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			pU/Cm09lbWz9y7J1z7SZ8ocvBMA=
+			iT9mf985zjjsSgybV+NZCvpEI2o=
 			</data>
 			<key>hash2</key>
 			<data>
-			CpN1puDxuVz97I2KmgdofBRLp2an9p6eZIR1DchbIKY=
+			7/U04812n8IkuABlQfqg/s85PdFAxS7N9QzCop8qQuw=
 			</data>
 		</dict>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeRequirements</key>
@@ -489,11 +489,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kI9ysiRXr001rJ8MtvZNa34sLw4=
+			06nwtkt2EGW8uML1e+yOMZVzsRA=
 			</data>
 			<key>hash2</key>
 			<data>
-			EkpMVymWEIrngMN1/vsCWSIQhCXVZZTVpnAFPjtt86U=
+			fuThkjaYUaE01A+0+gnD0+jb0267Kh/qZesai0hfApc=
 			</data>
 		</dict>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeResources</key>
@@ -959,33 +959,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7X3e6IooZPscS0ecQdLpzXO5RT4=
+			vrCU1Nlt2o2hnXZuYEprtaluVYg=
 			</data>
 			<key>hash2</key>
 			<data>
-			NGIrS1aK+cAXUp0J6irTLFpLmlFhKaNT5XrTpkQ80Hc=
+			Bj1JMb6mnwrOnDejfXE5t8nWc+6Ykov18NoTUBryA3Q=
 			</data>
 		</dict>
 		<key>Headers/Apptics.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			uvWEC4dQzw5YFr0XKIzAHDj28Qc=
+			99GfIrgt/vhGsXyP4oTaJMYbh9E=
 			</data>
 			<key>hash2</key>
 			<data>
-			IGuYDJEUKxz8i8/j5jYWEuW2Fu7QuUeUDxVtRTepPKA=
+			dAiBFVdgJsoDMB8TNMxLn06hB2oFYqzq5LxalQZAzJU=
 			</data>
 		</dict>
 		<key>Headers/AppticsConfig.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			khN3TpvHBgL/FTfduJ2j1ZFxlR0=
+			mM+pk0IouSYJkHc97UR8pcGMtnc=
 			</data>
 			<key>hash2</key>
 			<data>
-			9TAtlNr+bm+Av0g2oRunTdlI99IVYjjQn5DcmzjDfWI=
+			uwtNWYQE31jTQML9rE4kPRqia6fpfYOFbc6KesYyyZM=
 			</data>
 		</dict>
 		<key>Headers/NSData+APGunZip.h</key>
@@ -1091,22 +1091,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7gQDWMBhVm37t0ZjrGW/J4zw4d4=
+			2BdmTZZwn5yx/x3eSFceZmdO2tg=
 			</data>
 			<key>hash2</key>
 			<data>
-			dndsctchb7yfS7Mi/eM9eZTD3am07ebzOhUxD20NEYE=
+			Mnr4RPipX456EskTbrDShzVigdLYANMNz2UfuxR97Zs=
 			</data>
 		</dict>
 		<key>Headers/ZAEvent.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			yr4RH/OGBIgm8QYwFj1PgJVwk+M=
+			3aElfddacVD4KdJOeni293ozNcU=
 			</data>
 			<key>hash2</key>
 			<data>
-			NzuK7ArqSzwi7BdCtefnpsyIVdpNhwn9yuFxBeir9F0=
+			aVhg443iFefqHaNxYCMWuPepFRYnswkHk0gpVGAFjzs=
 			</data>
 		</dict>
 		<key>Headers/ZAFileManager.h</key>

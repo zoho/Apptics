@@ -2,8 +2,9 @@
 //  AppticsCrashKit.h
 //  AppticsCrashKit
 //
-//  Created by Saravanan S on 22/11/21.
+//  Created by Saravanan S on 05/07/22.
 //
+
 
 #import <Foundation/Foundation.h>
 
@@ -17,3 +18,27 @@ FOUNDATION_EXPORT const unsigned char AppticsCrashKitVersionString[];
 
 #import "ZACrash.h"
 #import "ZACrashReportUploadOperation.h"
+
+NS_ASSUME_NONNULL_BEGIN
+
+@interface AppticsCrashKit : NSObject
+
++(NSTimeInterval) activeDurationSinceLastCrash;
+
++(NSTimeInterval) backgroundDurationSinceLastCrash;
+    
++(int) launchesSinceLastCrash;
+
++(int) sessionsSinceLastCrash;
+
++(NSTimeInterval) activeDurationSinceLaunch;
+
++(NSTimeInterval) backgroundDurationSinceLaunch;
+
++(int) sessionsSinceLaunch;
+
++(int) crashedLastLaunch;
+
+@end
+
+NS_ASSUME_NONNULL_END

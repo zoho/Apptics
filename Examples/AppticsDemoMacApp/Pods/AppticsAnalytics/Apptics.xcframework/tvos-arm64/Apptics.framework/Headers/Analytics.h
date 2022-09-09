@@ -70,6 +70,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property BOOL isApplicationValid;
 
+@property BOOL isCompleteStopIsActive;
+
 @property BOOL enableBackgroundTask;
 
 @property BOOL isApplicationInBg;

@@ -18,7 +18,7 @@ HELP=0
 
 ZA_INFO_FILE_NAME="apptics-config.plist"
 
-ZA_META_FILE_NAME="${uuidgen}-apptics-meta.json"
+ZA_META_FILE_NAME="$(uuidgen)-apptics-meta.json"
 
 #Apple script alert before dSYM upload
 function error_prompt() {

@@ -113,6 +113,8 @@ NS_EXTENSION_UNAVAILABLE("don't use this method in your extensions")
 
 #pragma mark — Developer Config apis
 
++ (void) setCompleteOff:(BOOL) status;
+    
 + (void) setConfig:(nonnull AppticsConfig *) config;
     
 /**
