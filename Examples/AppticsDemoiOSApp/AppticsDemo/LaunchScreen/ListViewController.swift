@@ -32,7 +32,7 @@ extension ListViewController {
         case .Event:
             let eventsListController = storyboard.instantiateViewController(withIdentifier: "EventsListViewController") 
             self.navigationController?.pushViewController(eventsListController, animated: true)
-            Apptics.setCompleteOff(false)
+//            Apptics.setCompleteOff(false)
             break
         case .Crash:
             let crashListController = storyboard.instantiateViewController(withIdentifier: "CrashListViewController")

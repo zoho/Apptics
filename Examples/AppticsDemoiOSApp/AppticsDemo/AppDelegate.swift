@@ -27,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         logger.log("\(email, privacy: .private(mask: .hash))")
         logger.log("\(email, privacy: .sensitive)")
         logger.log("\(email, privacy: .sensitive(mask: .hash))")
-        AppticsExtensionManager.trackEvent(groupname: "", eventName: "", property: [:])
+//        AppticsExtensionManager.trackEvent(groupname: "", eventName: "", property: [:])
         let metricManager = MXMetricManager.shared
         metricManager.add(self)
 
@@ -39,7 +39,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         AppticsConfig.default.enableRateUs = true // To enable Rate us
 
         Apptics.initialize(withVerbose: true) // 🤖​ To initialise Apptics framework with or without verbose.
-        Apptics.setCompleteOff(false)
+//        Apptics.setCompleteOff(false)
         Apptics.enableReviewAndSendCrashReport(true) // 🤖​ To show review prompt before sending the crash report.
 
         Apptics.setTheme(AppTheme())
@@ -60,7 +60,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         APLog.clearConsoleLogs()
         Test().log()
         
-        APLogVerbose("Verbose \(("someones@email.com" as NSString).ap_privacy(.sensitiveMask))")
+//        APLogVerbose("Verbose \(("someones@email.com" as NSString).ap_privacy(.sensitiveMask))")
 //        
         return true
     }

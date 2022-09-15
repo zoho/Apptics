@@ -498,7 +498,7 @@
 			name = "[CP-User] Apptics pre build";
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "sh \"./Pods/Apptics-SDK/scripts/run\" --upload-symbols-for-configurations=\"Release, AppStore\"\n";
+			shellScript = "sh \"./Pods/Apptics-SDK/scripts/run\" --upload-symbols-for-configurations=\"Release, AppStore\"";
 		};
 		58C525FF21C2BA58EB5AD333 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

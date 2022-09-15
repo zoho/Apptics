@@ -2,7 +2,7 @@
 //  AppticsFeedbackKit.h
 //  AppticsFeedbackKit
 //
-//  Created by Saravanan S on 29/06/22.
+//  Created by Saravanan S on 18/11/21.
 //
 
 #import <Foundation/Foundation.h>
@@ -15,6 +15,4 @@ FOUNDATION_EXPORT const unsigned char AppticsFeedbackKitVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <AppticsFeedbackKit/PublicHeader.h>
 
-#import <AppticsFeedbackKit/FeedbackKit.h>
-#import <AppticsFeedbackKit/ZAPresenter.h>
-#import <AppticsFeedbackKit/FKCustomHandler.h>
+#import "FeedbackKit.h"
