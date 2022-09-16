@@ -31,8 +31,13 @@ typedef enum : NSInteger {
 @end
 
 @protocol APSettingsTheme <APTheme>
+
+
 #if !TARGET_OS_OSX
 @optional
+#if !TARGET_OS_WATCH
+-(UITableViewStyle)tableViewStyle;
+#endif
 -(UIColor *_Nullable)viewBGColor;
 -(UIColor *_Nullable)cellBGColor;
 -(UIColor *_Nullable)cellTextColor;

@@ -1,6 +1,0 @@
-framework module AppticsCrossPromotion {
-  umbrella header "AppticsCrossPromotion-umbrella.h"
-
-  export *
-  module * { export * }
-}
