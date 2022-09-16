@@ -51,6 +51,7 @@ pod 'AppticsCrossPromotion', apptics_version , :source => source_url
   
 end
 
-#target 'AppticsWidgetExtension' do
-#  use_frameworks!
-#end
+target 'AppticsWidgetExtension' do
+  use_frameworks!
+  pod 'Apptics-Swift/Extension'
+end

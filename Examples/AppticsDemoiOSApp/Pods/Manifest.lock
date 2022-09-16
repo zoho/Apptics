@@ -1,60 +1,73 @@
 PODS:
-  - Apptics-SDK (1.0.6):
-    - Apptics-SDK/Analytics (= 1.0.6)
-  - Apptics-SDK/Analytics (1.0.6):
-    - Apptics-SDK/Core
-    - Apptics-SDK/CrashKit
-    - Apptics-SDK/EventTracker
-    - Apptics-SDK/ScreenTracker
-  - Apptics-SDK/Core (1.0.6):
+  - Apptics-SDK (1.0.8):
+    - Apptics-SDK/Analytics (= 1.0.8)
+  - Apptics-SDK/Analytics (1.0.8):
     - Apptics-SDK/Scripts
-  - Apptics-SDK/CrashKit (1.0.6)
-  - Apptics-SDK/EventTracker (1.0.6)
-  - Apptics-SDK/ScreenTracker (1.0.6)
-  - Apptics-SDK/Scripts (1.0.6)
-  - Apptics-Swift (1.0.6):
-    - Apptics-SDK (= 1.0.6)
-    - Apptics-Swift/Analytics (= 1.0.6)
-  - Apptics-Swift/Analytics (1.0.6):
-    - Apptics-SDK (= 1.0.6)
-  - AppticsApiTracker (1.0.6):
-    - AppticsApiTracker/ApiTracker (= 1.0.6)
-  - AppticsApiTracker/ApiTracker (1.0.6):
-    - Apptics-SDK/Core (= 1.0.6)
-  - AppticsCrossPromotion (1.0.6):
-    - AppticsCrossPromotion/CrossPromotion (= 1.0.6)
-  - AppticsCrossPromotion/CrossPromotion (1.0.6):
-    - Apptics-Swift/Analytics (= 1.0.6)
-  - AppticsFeedbackKit (1.0.6):
-    - AppticsFeedbackKit/FeedbackKit (= 1.0.6)
-  - AppticsFeedbackKit/FeedbackKit (1.0.6):
-    - Apptics-SDK/Core (= 1.0.6)
-  - AppticsInAppUpdate (1.0.6):
-    - AppticsInAppUpdate/AppUpdate (= 1.0.6)
-  - AppticsInAppUpdate/AppUpdate (1.0.6):
-    - Apptics-SDK/Core (= 1.0.6)
-    - AppticsFeedbackKit (= 1.0.6)
-  - AppticsRateUs (1.0.6):
-    - AppticsRateUs/RateUs (= 1.0.6)
-  - AppticsRateUs/RateUs (1.0.6):
-    - Apptics-SDK/Core (= 1.0.6)
-    - AppticsFeedbackKit (= 1.0.6)
-  - AppticsRemoteConfig (1.0.6):
-    - AppticsRemoteConfig/RemoteConfig (= 1.0.6)
-  - AppticsRemoteConfig/RemoteConfig (1.0.6):
-    - Apptics-SDK/Core (= 1.0.6)
+    - AppticsAnalytics (= 1.0.8)
+  - Apptics-SDK/Scripts (1.0.8)
+  - Apptics-Swift (1.0.8):
+    - Apptics-SDK (= 1.0.8)
+    - Apptics-Swift/Analytics (= 1.0.8)
+  - Apptics-Swift/Analytics (1.0.8):
+    - Apptics-SDK (= 1.0.8)
+  - Apptics-Swift/Extension (1.0.8):
+    - Apptics-SDK (= 1.0.8)
+  - AppticsAnalytics (1.0.8):
+    - AppticsAnalytics/Core (= 1.0.8)
+  - AppticsAnalytics/Apptics (1.0.8):
+    - AppticsAnalytics/JWT
+  - AppticsAnalytics/Core (1.0.8):
+    - AppticsAnalytics/Apptics
+    - AppticsAnalytics/CrashKit
+    - AppticsAnalytics/EventTracker
+    - AppticsAnalytics/ScreenTracker
+  - AppticsAnalytics/CrashKit (1.0.8):
+    - AppticsAnalytics/KSCrash
+  - AppticsAnalytics/EventTracker (1.0.8)
+  - AppticsAnalytics/JWT (1.0.8)
+  - AppticsAnalytics/KSCrash (1.0.8)
+  - AppticsAnalytics/ScreenTracker (1.0.8)
+  - AppticsApiTracker (1.0.8):
+    - AppticsApiTracker/ApiTracker (= 1.0.8)
+  - AppticsApiTracker/ApiTracker (1.0.8):
+    - AppticsAnalytics/Apptics (= 1.0.8)
+  - AppticsCrossPromotion (1.0.8):
+    - AppticsCrossPromotion/CrossPromotion (= 1.0.8)
+  - AppticsCrossPromotion/CrossPromotion (1.0.8):
+    - Apptics-Swift/Analytics (= 1.0.8)
+  - AppticsFeedbackKit (1.0.8):
+    - AppticsFeedbackKit/FeedbackKit (= 1.0.8)
+  - AppticsFeedbackKit/FeedbackKit (1.0.8):
+    - AppticsAnalytics/Apptics (= 1.0.8)
+  - AppticsInAppUpdate (1.0.8):
+    - AppticsInAppUpdate/AppUpdate (= 1.0.8)
+  - AppticsInAppUpdate/AppUpdate (1.0.8):
+    - AppticsAnalytics/Apptics (= 1.0.8)
+    - AppticsFeedbackKit (= 1.0.8)
+  - AppticsRateUs (1.0.8):
+    - AppticsRateUs/RateUs (= 1.0.8)
+  - AppticsRateUs/RateUs (1.0.8):
+    - AppticsAnalytics/Apptics (= 1.0.8)
+    - AppticsFeedbackKit (= 1.0.8)
+  - AppticsRemoteConfig (1.0.8):
+    - AppticsRemoteConfig/RemoteConfig (= 1.0.8)
+  - AppticsRemoteConfig/RemoteConfig (1.0.8):
+    - AppticsAnalytics/Apptics (= 1.0.8)
 
 DEPENDENCIES:
-  - Apptics-SDK (= 1.0.6)
-  - Apptics-Swift (= 1.0.6)
-  - AppticsApiTracker (= 1.0.6)
-  - AppticsCrossPromotion (= 1.0.6)
-  - AppticsFeedbackKit (= 1.0.6)
-  - AppticsInAppUpdate (= 1.0.6)
-  - AppticsRateUs (= 1.0.6)
-  - AppticsRemoteConfig (= 1.0.6)
+  - Apptics-SDK (= 1.0.8)
+  - Apptics-Swift (= 1.0.8)
+  - Apptics-Swift/Extension
+  - AppticsApiTracker (= 1.0.8)
+  - AppticsCrossPromotion (= 1.0.8)
+  - AppticsFeedbackKit (= 1.0.8)
+  - AppticsInAppUpdate (= 1.0.8)
+  - AppticsRateUs (= 1.0.8)
+  - AppticsRemoteConfig (= 1.0.8)
 
 SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - AppticsAnalytics
   https://github.com/zoho/Apptics.git:
     - Apptics-SDK
     - Apptics-Swift
@@ -66,15 +79,16 @@ SPEC REPOS:
     - AppticsRemoteConfig
 
 SPEC CHECKSUMS:
-  Apptics-SDK: 9e17a12a8a4b423cf15736ec68cb2e8b3ef9b0e4
-  Apptics-Swift: 2f1397e59a0597f66cd43841f2b37b117c025a25
-  AppticsApiTracker: 018d5a25e6163ca1bab642b9937ded49c12291ef
-  AppticsCrossPromotion: ae7f8c791355560a6db3fea239e694ab5725133c
-  AppticsFeedbackKit: 5aba0367c8ef4d3af2b03da8c8eb95b1c5a4f3a2
-  AppticsInAppUpdate: ea1241eb9a9f25f4153f7c067241517b597ce105
-  AppticsRateUs: 344a3c3f17349af2cbf6338024ae36ec6b57e530
-  AppticsRemoteConfig: c8e5d9d95f2c57cb4b9e4925619dff10b7f40e3a
+  Apptics-SDK: aca80a82e58b1317e20c5bcb6baf51f13d9a8957
+  Apptics-Swift: d67e6ffe5de961941a6b5cb8068370f9bcc90835
+  AppticsAnalytics: 3400155b939b147ba42b7f5b3f2dd448cdc68d90
+  AppticsApiTracker: 24a8e8b569acc825c624112ce241c737d2a10eb2
+  AppticsCrossPromotion: c380654a90b1c454a6d314a2d2b55a63acb58362
+  AppticsFeedbackKit: 25ed9aa3e9ba2590546b1efdbfae4f75cfc3336c
+  AppticsInAppUpdate: f251efc3e56355f2538a6e4eecbaef6efbf19616
+  AppticsRateUs: 64d5b7064ddfa1082c53e081f1437f73c522d2b6
+  AppticsRemoteConfig: 5c4890bb3643d33ecebec3403aec0d44a52cdcb3
 
-PODFILE CHECKSUM: 5572410b13b225596b4d1ca3500cc5c7dd078dc5
+PODFILE CHECKSUM: 1a0fb7500f243277e16ab98f0416ca5ef802a474
 
 COCOAPODS: 1.11.3

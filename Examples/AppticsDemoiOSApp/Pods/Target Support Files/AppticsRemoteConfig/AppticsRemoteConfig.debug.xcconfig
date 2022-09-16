@@ -1,7 +1,8 @@
 CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
 CONFIGURATION_BUILD_DIR = ${PODS_CONFIGURATION_BUILD_DIR}/AppticsRemoteConfig
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Apptics-SDK" "${PODS_ROOT}/Apptics-SDK" "${PODS_ROOT}/AppticsRemoteConfig" "${PODS_XCFRAMEWORKS_BUILD_DIR}/Apptics-SDK/Core" "${PODS_XCFRAMEWORKS_BUILD_DIR}/Apptics-SDK/CrashKit" "${PODS_XCFRAMEWORKS_BUILD_DIR}/Apptics-SDK/EventTracker" "${PODS_XCFRAMEWORKS_BUILD_DIR}/Apptics-SDK/ScreenTracker" "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsRemoteConfig/RemoteConfig"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/AppticsAnalytics" "${PODS_ROOT}/AppticsRemoteConfig" "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/Apptics" "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/CrashKit" "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/EventTracker" "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/JWT" "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/KSCrash" "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/ScreenTracker" "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsRemoteConfig/RemoteConfig"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+OTHER_LDFLAGS = $(inherited) -framework "Apptics" -framework "AppticsCrashKit" -framework "AppticsEventTracker" -framework "AppticsScreenTracker" -framework "JWT" -framework "KSCrash"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_ROOT = ${SRCROOT}

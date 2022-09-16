@@ -1,5 +1,0 @@
-${PODS_ROOT}/Target Support Files/Apptics-SDK/Apptics-SDK-xcframeworks.sh
-${PODS_ROOT}/Apptics-SDK/Apptics.xcframework
-${PODS_ROOT}/Apptics-SDK/AppticsCrashKit.xcframework
-${PODS_ROOT}/Apptics-SDK/AppticsEventTracker.xcframework
-${PODS_ROOT}/Apptics-SDK/AppticsScreenTracker.xcframework

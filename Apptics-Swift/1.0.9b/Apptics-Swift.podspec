@@ -53,7 +53,7 @@ DESC
     spec.osx.deployment_target =  '10.10'
     spec.watchos.deployment_target = '2.0'
 
-    spec.default_subspecs = 'Analytics'
+    # spec.default_subspecs = 'Analytics'
 
   spec.dependency 'Apptics-SDK', "#{spec.version}"
   

@@ -1,9 +1,13 @@
-
+begin
 require 'xcodeproj'
 require 'fileutils'
 require "net/http"
 require "uri"
 require "json"
+rescue LoadError => error
+  puts "echo #{error.message}, check if commandline tools are installed"
+  exit
+end
 
 class AppticsModerator
   
@@ -621,7 +625,7 @@ class AppticsBot
     data_hash = data_hash["data"]
     
     if data_hash == nil
-      puts "Invalid entries found for AppticsMeta"
+      puts "echo 'Invalid entries found in the response'"
       return false
     end
        
