@@ -53,5 +53,5 @@ end
 
 target 'AppticsWidgetExtension' do
   use_frameworks!
-  pod 'Apptics-Swift/Extension',  apptics_version , :source => source_url
+  pod 'AppticsExtension',  apptics_version , :source => source_url
 end
