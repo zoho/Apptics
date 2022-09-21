@@ -1,0 +1,6 @@
+framework module AppticsFeedbackKit {
+  umbrella header "AppticsFeedbackKit.h"
+
+  export *
+  module * { export * }
+}

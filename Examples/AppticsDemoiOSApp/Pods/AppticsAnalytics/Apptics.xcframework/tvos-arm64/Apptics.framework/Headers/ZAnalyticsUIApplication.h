@@ -43,11 +43,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (BOOL)canPresentFromViewController:(UIViewController *_Nullable)viewController;
 
-+(void) openPIIManagerController : (id _Nullable) viewController withStyle : (UITableViewStyle) style;;
++(void) openPIIManagerController : (id _Nullable) viewController;
 
 +(id _Nonnull) getAnalyticSettingsController;
-
-+(id _Nonnull) getAnalyticSettingsController : (UITableViewStyle) style;
 
 + (UIViewController*_Nullable) getTopMostController;
 
