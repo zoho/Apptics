@@ -41,7 +41,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Apptics.initialize(withVerbose: true) // 🤖​ To initialise Apptics framework with or without verbose.
 //        Apptics.setCompleteOff(false)
         Apptics.enableReviewAndSendCrashReport(true) // 🤖​ To show review prompt before sending the crash report.
-
+//        Apptics.setDefaultLanguage("ar")
         Apptics.setTheme(AppTheme())
 
         FeedbackKit.startMonitoring(withShake: true, maxToleranceLimit: 3)

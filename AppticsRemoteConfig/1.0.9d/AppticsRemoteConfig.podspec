@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
-spec.name             = "AppticsFeedbackKit"
-spec.version          = "1.0.9d"
-spec.summary          = "Apptics FeedbackKit for iOS"
+spec.name             = "AppticsRemoteConfig"
+spec.version          = "1.0.9b"
+spec.summary          = "Apptics Remote Config for iOS"
 spec.license          = { :type => "MIT", :text=> <<-LICENSE
 MIT License
 Copyright (c) 2020 Zoho Corporation
@@ -31,18 +31,20 @@ Apptics is a library that enables your app to send in-app usage reports and data
   
 spec.homepage         = "https://github.com/zoho/Apptics"
 spec.author           = { "Saravanan Selvam" => "ssaravanan@zohocorp.com", "Prakash Redrouthu" => "prakash.redrouthu@zohocorp.com" }
-spec.source = { :http => "https://github.com/zoho/Apptics/releases/download/#{spec.version}/AppticsFeedbackKit.zip" }
+spec.source = { :http => "https://github.com/zoho/Apptics/releases/download/#{spec.version}/AppticsRemoteConfig.zip" }
 
 spec.ios.deployment_target = '9.1'
+spec.tvos.deployment_target = '9.0'
+spec.osx.deployment_target =  '10.10'
+spec.watchos.deployment_target = '2.0'
 
-spec.default_subspecs = 'FeedbackKit'
+spec.default_subspecs = 'RemoteConfig'
 
 spec.requires_arc = true
 
-spec.subspec 'FeedbackKit' do |fk|
-fk.platform     = :ios, '9.1'
-fk.vendored_frameworks = 'AppticsFeedbackKit.xcframework'
-fk.ios.dependency 'AppticsAnalytics/Apptics', "#{spec.version}"
+spec.subspec 'RemoteConfig' do |rc|
+rc.vendored_frameworks = 'AppticsRemoteConfig.xcframework'
+rc.dependency 'AppticsAnalytics/Apptics', "#{spec.version}"
 end
 
 end
