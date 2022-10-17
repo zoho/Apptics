@@ -101,7 +101,7 @@ NS_EXTENSION_UNAVAILABLE("don't use this method in your extensions")
 #endif
 ;
   /**
-   *  This method call will perform initialisation of Apptics framework.
+   *  This method will initialise the Apptics framework.
    *
    */
   
@@ -112,19 +112,19 @@ NS_EXTENSION_UNAVAILABLE("don't use this method in your extensions")
 ;
 
 #pragma mark — Developer Config apis
-
+ 
 + (void) setConfig:(nonnull AppticsConfig *) config;
     
 /**
  
- For any configuration changes to get reflect in the App.
+ This method should be called whenever a configuration change is made in order for those changes to be reflected in the App.
 
  */
 
 + (void) synchronizeConfig;
 
 /**
- Enable automatic event tracking to track application lifecycle events.
+ Enable automatic event tracking, it allows you to track key events in your application's lifecycle. This information can be used to improve your application's performance and stability.
  
  @param status boolean
  */
@@ -132,7 +132,7 @@ NS_EXTENSION_UNAVAILABLE("don't use this method in your extensions")
 + (void) enableAutomaticEventTracking:(BOOL) status;
 
 /**
- Enable automatic session tracking, it is enabled by default
+Enable or disable automatic session tracking using this method. This feature is usually enabled by default.
  
  @param status boolean
  */
@@ -140,7 +140,7 @@ NS_EXTENSION_UNAVAILABLE("don't use this method in your extensions")
 + (void) enableAutomaticSessionTracking:(BOOL) status;
 
 /**
- Enable automatic screen tracking, it is enabled by default
+ Enable or disable automatic screen tracking using this method. This feature is usually enabled by default.
  
  @param status boolean
  */
@@ -148,7 +148,7 @@ NS_EXTENSION_UNAVAILABLE("don't use this method in your extensions")
 + (void) enableAutomaticScreenTracking:(BOOL) status;
 
 /**
- Enable automatic crash tracking, it is enabled by default
+ Enable or disable automatic crash tracking using this method. This feature is usually enabled by default.
  
  @param status boolean
  */
@@ -156,7 +156,7 @@ NS_EXTENSION_UNAVAILABLE("don't use this method in your extensions")
 + (void) enableAutomaticCrashTracking:(BOOL) status;
 
 /**
- Sets custom information that gets attached with the crash report
+ This method allows you to include custom information with your crash report that can help you troubleshoot the issue.
  
  @param object any object that is conforms to JSON Encoding
  */
@@ -164,15 +164,7 @@ NS_EXTENSION_UNAVAILABLE("don't use this method in your extensions")
 + (void) setCrashCustomProperty:(nonnull NSDictionary*) object;
 
 /**
- Set a custom User agent for the network calls
- 
- @param userAgent useragent string
- */
-
-+ (void) setUserAgent:(NSString*_Nonnull) userAgent;
-
-/**
- Enable background task to send the analytics data to the server when your apps is in background.
+ Enable background task to send the analytics data to the server when your app is in the background.
  
  @param status  BOOL
  */
@@ -181,49 +173,60 @@ NS_EXTENSION_UNAVAILABLE("don't use this method in your extensions")
 
 
 /**
- Enable show review prompt before sending the crash report.
+ Enable the option to review the crash report before sending it.
  */
-//API_AVAILABLE(macos(10.5), ios(2.0), watchos(2.0), tvos(9.0));
 + (void) enableReviewAndSendCrashReport : (BOOL) status API_AVAILABLE(ios(2.0));
 
-
 /**
- *  A Setter method to set timezone
- *
- *  @param timeZone String
+ 
+ Use the 'complete off' method to prevent Apptics from communicating with the server. This will pause Apptics activities while the user is consenting.
+
  */
 
-+ (void) setTimeZone:(NSString *_Nonnull)timeZone;
-
++ (void) setCompleteOff:(BOOL) status;
+   
 #pragma mark - Device consent
 
 /**
- *  Get privacy status
+ *  Returns an enum of privacy status:
+ *  TrackingAuthOff=-2
+ *  Unknown=-1
+ *  UnAuthorized=0
+ *  Authorized=1
  */
 
 +(APPrivacyStatus) getPrivacyStatus;
 
 /**
- *  Show privacy concent
+ *  This method will show the user the privacy options that are built into the Apptics SDK.
  */
 + (void) showPrivacyConsent;
 
 /**
- *  Show privacy concent with top viewcontroller.
+ *  This method will displays in built privacy concern on top of the viewcontroller passed.
  */
 
 + (void) showPrivacyConsent : (id _Nullable) viewController;
 
+/**
+ *  This method clears all user info from the app, including cached data and preferences.
+ *
+ *  - Warning:
+ *  This method should not be called in a production environment.
+ */
+
++ (void) resetConsentPreference;
+    
 #pragma mark — Flush
 
 /**
- *  Clears all stored data, without sending info to the server.
+ *  This will clear all stored data on your device without sending any information to the server.
  */
 
 + (void) reset;
 
 /**
- *  Flushes all events that's tracked so far to the server, right away. You might typically want to use this when the user is gonna log out, or pretty much, whenever you need it.
+ *  Flushes all events that have been tracked so far to the server right away. You might typically want to use this when the user is going to log out, or pretty much whenever you need it.
  */
 
 + (void) flush;
@@ -231,7 +234,7 @@ NS_EXTENSION_UNAVAILABLE("don't use this method in your extensions")
 #pragma mark — Non-fatals apis
 
 /**
- Tracks an NSError
+ Use this method to track any NSError:
 
  @param error Error.
  */
@@ -239,7 +242,7 @@ NS_EXTENSION_UNAVAILABLE("don't use this method in your extensions")
 void AP_TrackError(const char *file, int lineNumber, const char *functionName,const char *type, NSError *error,...);
 
 /**
- Tracks Non-fatal and handled exceptions
+ Use this method to track any NSException.
  
  @param exception A handled exception
  */
@@ -249,55 +252,31 @@ void AP_TrackException(const char *file, int lineNumber, const char *functionNam
 #pragma mark — User apis
 
 /**
- Log a Signup event to see how many users have logged in your app in real-time.
+ Log the user signup to see how many users have signed up from your app
+ 
  @param userID String
  */
 
 + (void) trackSignUp:(NSString* _Nullable)userID NS_EXTENSION_UNAVAILABLE("don't use this method in your extensions");
 
 /**
- Log a Signup event, along with send BD Base domain.
+ Log the user login to see how many users have logged in to your app
  
- @param userID String, BD String.
- */
-
-+ (void) trackSignUp:(NSString* _Nullable)userID withBaseDomain:(NSString*_Nonnull)BD NS_EXTENSION_UNAVAILABLE("don't use this method in your extensions");
-
-
-/**
-  Log a Login event to see how many users have logged in your app in real-time.
  @param userID String
  */
 
 + (void) trackLogIn:(NSString* _Nullable)userID NS_EXTENSION_UNAVAILABLE("don't use this method in your extensions");
 
 /**
- Log a Login event, along with send BD Base domain.
- 
- @param userID String, BD String.
- */
-
-+ (void) trackLogIn:(NSString* _Nullable)userID withBaseDomain:(NSString*_Nonnull)BD NS_EXTENSION_UNAVAILABLE("don't use this method in your extensions");
-
-/**
- Log a Logout event.
+ Log the user out to see how many users have logged out to your app.
  
  @param userID String.
  */
 
 + (void) trackLogOut:(NSString* _Nullable)userID NS_EXTENSION_UNAVAILABLE("don't use this method in your extensions");
 
-///**
-// Log a Logout event, along with send BD Base domain.
-// 
-// @param userID String, dclpfx String, dclBD String and is_pfx bool.
-// */
-//
-//+ (void) trackLogOut:(NSString* _Nullable)userID withBaseDomain:(NSString*_Nonnull)BD NS_EXTENSION_UNAVAILABLE("don't use this method in your extensions");
-
-
 /**
- Log a Signup event to see how many users have logged in your app in real-time.
+ Log the signup event to see how many users have logged in your app in real-time.
  @param userID String, groupID String
  */
 

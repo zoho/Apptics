@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/APRateUs.h</key>
 		<data>
-		bV2qdhVLZztMBUNFZSI7k/9nKTQ=
+		RoWTke0k6qHJ9RcSG4r6aSHIwdA=
 		</data>
 		<key>Headers/ARCustomHandler.h</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		tZGgW5u8Nl13WKr1DqakNz7zTr0=
+		c01xkQuj7DQ/Y1KpYdEurqkJyeo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -31,11 +31,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bV2qdhVLZztMBUNFZSI7k/9nKTQ=
+			RoWTke0k6qHJ9RcSG4r6aSHIwdA=
 			</data>
 			<key>hash2</key>
 			<data>
-			47PP9l/CMg4D/wt+NlTGtrLRo5mipUFHoJ5kRc1EBxo=
+			5LEQOHUkbtyb5nqLq62tkq5GXu/qHVKRVglMBeEhH8g=
 			</data>
 		</dict>
 		<key>Headers/ARCustomHandler.h</key>

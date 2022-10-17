@@ -1,9 +1,13 @@
-
+begin
 require 'xcodeproj'
 require 'fileutils'
 require "net/http"
 require "uri"
 require "json"
+rescue LoadError => error
+  puts "echo #{error.message}, check if commandline tools are installed"
+  exit
+end
 
 class AppticsModerator
   
@@ -33,11 +37,11 @@ class AppticsModerator
 #    return generated_group
 #  end
   
-  def self.main(projectName, selectedTargetName, targetgroup, projectRootDir, lang, prefix)
+  def self.main(projectName, selectedTargetName, targetgroup, projectRootDir, lang, prefix, metafilename)
     $prefix=prefix
     $fileName=$prefix+$fileName
     $apiClassName=$prefix+$apiClassName
-    data_hash = JSON.parse(File.read('/tmp/AppticsMeta.json'))
+    data_hash = JSON.parse(File.read("/tmp/#{metafilename}"))
     
     if data_hash == nil || data_hash["result"] != "success"
       puts "Response : #{data_hash}"
@@ -621,7 +625,7 @@ class AppticsBot
     data_hash = data_hash["data"]
     
     if data_hash == nil
-      puts "Invalid entries found for AppticsMeta"
+      puts "echo 'Invalid entries found in the response'"
       return false
     end
        

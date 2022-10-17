@@ -97,6 +97,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, assign) BOOL reviewAndSendFeedback;
 
+@property (nonatomic, strong) NSString *messageBody;
+
 @property (nonatomic, strong) NSArray *diagnoInfo;
 
 @property (strong,nonatomic) NSNumber *networkReachableStatus;
@@ -368,6 +370,12 @@ Set this true to mask the text detected in a screenshot by default. Setting to F
 
 + (void) showInfoBeforeSendingFeedbackToUser : (BOOL) status;
 
+/**
+ Set body text of the message, this method prefills the body content of feedback controller.
+ */
+
++ (void) setMessageBody : (NSString*) messageBody;
+    
 @end
 
 NS_ASSUME_NONNULL_END

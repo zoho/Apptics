@@ -10,7 +10,7 @@ DIR="$(command dirname -- "${0}")"
 source "${DIR}/sdk_info"
 
 ZA_INFOPLIST_FILE="apptics-config.plist"
-ZA_META_FILE_NAME="Apptics.json"
+ZA_META_FILE_NAME="$(uuidgen)-apptics.json"
 projectname="."
 projectfilepath=""
 PREFIX="AP"
@@ -183,11 +183,29 @@ fi
 BUNDLE_VERSION=${CURRENT_PROJECT_VERSION}
 if [ "$BUNDLE_VERSION" == "" ]; then
 BUNDLE_VERSION=$(/usr/libexec/PlistBuddy -c 'Print CFBundleVersion' "${AP_INFO_FILE_NAME}")
+if [[ $BUNDLE_VERSION == \$\(* ]]; then
+BUNDLE_VERSION=$(echo $BUNDLE_VERSION | awk -F '\\$\\(|\\)' '{print $2}')
+eval BUNDLE_VERSION="$(echo "\${$BUNDLE_VERSION}")"
+elif [[ $BUNDLE_VERSION == \$\{* ]]; then
+BUNDLE_VERSION=$(echo $BUNDLE_VERSION | awk -F '\\$\\{|\\}' '{print $2}')
+eval BUNDLE_VERSION="$(echo "\${$BUNDLE_VERSION}")"
+elif [[ $BUNDLE_VERSION == \$* ]]; then
+eval BUNDLE_VERSION="$(echo "$BUNDLE_VERSION")"
+fi
 fi
 
 BUNDLE_SHORT_VERSION=${MARKETING_VERSION}
 if [ "$BUNDLE_SHORT_VERSION" == "" ]; then
 BUNDLE_SHORT_VERSION=$(/usr/libexec/PlistBuddy -c 'Print CFBundleShortVersionString' "${AP_INFO_FILE_NAME}")
+if [[ $BUNDLE_SHORT_VERSION == \$\(* ]]; then
+BUNDLE_SHORT_VERSION=$(echo $BUNDLE_SHORT_VERSION | awk -F '\\$\\(|\\)' '{print $2}')
+eval BUNDLE_SHORT_VERSION="$(echo "\${$BUNDLE_SHORT_VERSION}")"
+elif [[ $BUNDLE_SHORT_VERSION == \$\{* ]]; then
+BUNDLE_SHORT_VERSION=$(echo $BUNDLE_SHORT_VERSION | awk -F '\\$\\{|\\}' '{print $2}')
+eval BUNDLE_SHORT_VERSION="$(echo "\${$BUNDLE_SHORT_VERSION}")"
+elif [[ $BUNDLE_SHORT_VERSION == \$* ]]; then
+eval BUNDLE_SHORT_VERSION="$(echo "$BUNDLE_SHORT_VERSION")"
+fi
 fi
 
 APP_VERSION_ID=$(/usr/libexec/PlistBuddy -c 'Print APP_VERSION_META:APP_VERSION_ID' "${ZA_INFOPLIST_FILE}" 2>/dev/null || printf "")
@@ -255,9 +273,29 @@ if [ "${APPTICS_SDK_ID}" != "${ZA_APPTICS_SDK_ID}" ] || [ "${BUNDLE_VERSION}" !=
   
   if [ $STATUS -eq 200 ]; then
   echo "Data downloaded"
+  
   echo "$(command dirname -- "${0}")/appticshelper.rb" -e "AppticsBot.main '${out_file}'"
   $(ruby -r "$(command dirname -- "${0}")/appticshelper.rb" -e "AppticsBot.main '${out_file}'")
-  echo "rsakey $rsakey "
+  
+  response=$(ruby -rjson -e 'j = JSON.parse(File.read("'${out_file}'")); puts j["result"]')
+  if [ "$response" != "success" ]; then
+    echo "Error while regestering app version : $(cat "${out_file}")"
+    exit 1
+  fi
+            
+  if [ "$appversionid" == "" ] || [ "$appreleaseversionid" == "" ] || [ "$aaid" == "" ] || [ "$apid" == "" ] || [ "$mapid" == "" ] || [ "$rsakey" == "" ] || [ "$platformid" == "" ] || [ "$APPTICS_SDK_ID" == "" ]; then
+      echo "APP_VERSION_ID" "$appversionid"
+      echo "APP_RELEASE_VERSION_ID" "$appreleaseversionid"
+      echo "AAID" "$aaid"
+      echo "APID" "$apid"
+      echo "MAPID" "$mapid"
+      echo "RSAKEY" "$rsakey"
+      echo "PLATFORM_ID" "$platformid"
+      echo "BUNDLE_VERSION" "$BUNDLE_VERSION"
+      echo "BUNDLE_SHORT_VERSION" "$BUNDLE_SHORT_VERSION"
+      echo "APPTICS_SDK_ID" "${APPTICS_SDK_ID}"    
+  exit 1;
+  fi
   checkAndUpdate "APP_VERSION_ID" "$appversionid"
   checkAndUpdate "APP_RELEASE_VERSION_ID" "$appreleaseversionid"
   checkAndUpdate "AAID" "$aaid"

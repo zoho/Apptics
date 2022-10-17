@@ -1,0 +1,22 @@
+/*
+ Localizable.strings
+ Apptics
+ 
+ Created by Prakash Red.
+ Copyright © 2021 zoho. All rights reserved.
+ */
+
+"zanalytics.crosspromotion.navbar.button.title.back" = "వెనక్కి";
+"zanalytics.crosspromotion.title" = "మరిన్ని యాప్స్";
+"zanalytics.crosspromotion.otherapps" = "ఇతర యాప్‌లు";
+"zanalytics.crosspromotion.relevantapps" = "సంబంధిత యాప్‌లు";
+"zanalytics.crosspromotion.noappstodisplay" = "ప్రదర్శించడానికి ఎలాంటి యాప్‌లు లేవు";
+"zanalytics.crosspromotion.nodatafound" = "డేటా కనుగొనబడలేదు";
+"zanalytics.crosspromotion.somethingwrong" = "ఏదో తప్పు జరిగింది";
+"zanalytics.crosspromotion.nointernet" = "ఇంటర్నెట్ కనెక్షన్ లేదు";
+"zanalytics.crosspromotion.open" = "ఓపెన్";
+"zanalytics.crosspromotion.install" = "ఇన్‌స్టాల్ చేయండి";
+"zanalytics.crosspromotion.get" = "పొందండి";
+"zanalytics.crosspromotion.appsyoumaylike" = "మీరు ఇష్టపడగల యాప్‌లు";
+"zanalytics.crosspromotion.moreappsfromus" = "మా నుంచి మరిన్ని యాప్‌లు";
+"zanalytics.crosspromotion.viewallapps" = "అన్ని యాప్‌లను వీక్షించండి";
