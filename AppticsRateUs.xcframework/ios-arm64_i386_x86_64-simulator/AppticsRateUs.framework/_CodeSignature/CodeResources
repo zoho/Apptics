@@ -8,6 +8,10 @@
 		<data>
 		RoWTke0k6qHJ9RcSG4r6aSHIwdA=
 		</data>
+		<key>Headers/APStoreReviewManager.h</key>
+		<data>
+		HP8tFFwemjP5PY4ekv9cYGpY4T8=
+		</data>
 		<key>Headers/ARCustomHandler.h</key>
 		<data>
 		93kPa3iZbTZvCVULNyHmVV3i+jk=
@@ -18,7 +22,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		c01xkQuj7DQ/Y1KpYdEurqkJyeo=
+		xqg9FWkybX/ykqpm3bMhKSQfXD4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -36,6 +40,17 @@
 			<key>hash2</key>
 			<data>
 			5LEQOHUkbtyb5nqLq62tkq5GXu/qHVKRVglMBeEhH8g=
+			</data>
+		</dict>
+		<key>Headers/APStoreReviewManager.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HP8tFFwemjP5PY4ekv9cYGpY4T8=
+			</data>
+			<key>hash2</key>
+			<data>
+			rtn5AvRdU0573GiH9zz9fQnmy/d+Bn/HHyaMVzlVyfE=
 			</data>
 		</dict>
 		<key>Headers/ARCustomHandler.h</key>
