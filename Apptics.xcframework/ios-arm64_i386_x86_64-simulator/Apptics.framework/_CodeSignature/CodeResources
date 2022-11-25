@@ -23,7 +23,7 @@
 		</data>
 		<key>AppticsResources.bundle/Info.plist</key>
 		<data>
-		Rt//rbMExW5teCh4Xuzl0MNCCG8=
+		3WGcq2FAA8OGt+dDqDZOpm4XaUo=
 		</data>
 		<key>AppticsResources.bundle/ZAAppUpdateAlert.nib</key>
 		<data>
@@ -67,7 +67,7 @@
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		hRNOBYFXzFfE1UYbzLjoeHhxVJA=
+		EZyIUEn3OAmmzoZvTQNSOS2W9gI=
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -75,7 +75,7 @@
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		EEsODFK1KBV6GCu2J54Vz7HiUrY=
+		dq4nJgGW/EOUDrkpDNJF98nlwN0=
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeResources</key>
 		<data>
@@ -684,7 +684,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		3i+ac90KmqqXn5SQHRWRlBnK/ik=
+		DJQXndOaI+4611H5NZcT3T38Ew0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -732,11 +732,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Rt//rbMExW5teCh4Xuzl0MNCCG8=
+			3WGcq2FAA8OGt+dDqDZOpm4XaUo=
 			</data>
 			<key>hash2</key>
 			<data>
-			vDgxaO60TNdlUHgFUQz1fAdFj7WFOlYiZ8lPHxeIjv0=
+			NvAB638WidiUaTiiJ0WkLrR16ad/bh4mFb6xveu8Gnw=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/ZAAppUpdateAlert.nib</key>
@@ -853,11 +853,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hRNOBYFXzFfE1UYbzLjoeHhxVJA=
+			EZyIUEn3OAmmzoZvTQNSOS2W9gI=
 			</data>
 			<key>hash2</key>
 			<data>
-			Dz6hU9U1lhAsIJd+Bpdqjv3TRDdYvKci75MNFuLDvI4=
+			12+gOQqsKlIIv9H9t2uJ0iOHde0nzjT9pMQfblQjZ40=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/_CodeSignature/CodeRequirements</key>
@@ -875,11 +875,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			EEsODFK1KBV6GCu2J54Vz7HiUrY=
+			dq4nJgGW/EOUDrkpDNJF98nlwN0=
 			</data>
 			<key>hash2</key>
 			<data>
-			EN6srREwJemrjlneMV6e7YhpuDkt9YLFuvQwxxTRvIQ=
+			krM/wBXCY04KqJcNT4UJ/wNEDESdDsT/dB9gvRyn4fs=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/_CodeSignature/CodeResources</key>
