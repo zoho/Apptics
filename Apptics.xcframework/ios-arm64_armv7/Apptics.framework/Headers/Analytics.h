@@ -166,6 +166,8 @@ typedef void (^internbgConsoleLogsRequestSuccessBlock)(void);
 
 - (void) trackError:(NSError*_Nonnull) error withKey : (NSString*) key;
 
+- (void) trackNonNativeException:(NSString *_Nonnull) name message :(NSString *_Nonnull) message stackTrace : (NSString* _Nonnull) stackTrace type : (NSString* _Nonnull) type withKey : (NSString*) key;
+
 - (void) trackSignUp:(NSString* _Nullable)userID groupId : (NSString*_Nullable)groupid;
 
 - (void) trackLogIn:(NSString* _Nullable)userID groupId : (NSString*_Nullable)groupid;
