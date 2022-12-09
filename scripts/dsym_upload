@@ -19,11 +19,28 @@ end tell
 EOT
 }
 
-if [[ "$INFOPLIST_FILE" == *"$TARGET_BUILD_DIR"* ]]; then
-AP_INFO_FILE_NAME="$INFOPLIST_FILE"
-else
-AP_INFO_FILE_NAME="$TARGET_BUILD_DIR/$INFOPLIST_PATH"
-fi
+function prompt() {
+osascript <<EOT
+tell app "System Events"
+
+button returned of (display alert "$1" message "$2" buttons {"Upload", "Cancel"} default button 1 cancel button 2 as critical giving up after 10)
+
+end tell
+EOT
+}
+
+exitOperation() {
+value=$(error_prompt "Error occured" "$1")
+exit ${2}
+}
+
+AP_INFO_FILE_NAME="$PRODUCT_SETTINGS_PATH" #INFOPLIST_FILE
+
+#if [[ "$INFOPLIST_FILE" == *"$TARGET_BUILD_DIR"* ]]; then
+#AP_INFO_FILE_NAME="$INFOPLIST_FILE"
+#else
+#AP_INFO_FILE_NAME="$TARGET_BUILD_DIR/$INFOPLIST_PATH"
+#fi
 
 ZA_INFO_FILE_NAME="apptics-config.plist"
 
@@ -91,6 +108,23 @@ esac
 shift
 done
 
+if [ $UPLOAD_DSYM -eq 1 ]; then
+
+CM_ZA_INFOPLIST_FILE="$(find "${TARGET_BUILD_DIR}" -name "${ZA_INFO_FILE_NAME}")"
+while ([ ! -f "$CM_ZA_INFOPLIST_FILE" ])
+do
+  CM_ZA_INFOPLIST_FILE="$(find "${TARGET_BUILD_DIR}" -name "${ZA_INFO_FILE_NAME}")"
+echo "Waiting for the file to be copied ${CM_ZA_INFOPLIST_FILE}"
+sleep 1;
+done
+  
+/usr/libexec/PlistBuddy -c "Delete :APP_VERSION_META" "${ZA_INFOPLIST_FILE}"
+/usr/libexec/PlistBuddy -c "Delete :EVENTS_INFO" "${ZA_INFOPLIST_FILE}"
+/usr/libexec/PlistBuddy -c "Delete :API_INFO" "${ZA_INFOPLIST_FILE}"
+
+/usr/libexec/PlistBuddy -c "Delete :AP_INFOPLIST_FILE" "${AP_INFO_FILE_NAME}"
+/usr/libexec/PlistBuddy -c "Delete :AP_APP_GROUP_IDENTIFIER" "${AP_INFO_FILE_NAME}"
+
 if [ ! -f "${ZA_INFOPLIST_FILE}" ]; then
 echo "dsym upload : Please check if the ${ZA_INFO_FILE_NAME} is in your projects' root dir, or else provide the proper path by passing value to the param '--config-file-path'"
 exit 1
@@ -116,11 +150,6 @@ else
 value=$(error_prompt "Missing SERVER_URL in your ${ZA_INFO_FILE_NAME}" "Please if the file is up to date?" )
 exit 0
 fi
-
-exitOperation() {
-value=$(error_prompt "Error occured" "$1")
-exit ${2}
-}
 
 echo "Uploading dSYM to Apptics server..."
 
@@ -159,13 +188,13 @@ if [ "${PLATFORM}" ]; then
 OS=${PLATFORM}
 fi
 
-APP_VERSION_ID=$(/usr/libexec/PlistBuddy -c 'Print APP_VERSION_META:APP_VERSION_ID' "${ZA_INFOPLIST_FILE}")
-APP_RELEASE_VERSION_ID=$(/usr/libexec/PlistBuddy -c 'Print APP_VERSION_META:APP_RELEASE_VERSION_ID' "${ZA_INFOPLIST_FILE}")
-PLATFORM_ID=$(/usr/libexec/PlistBuddy -c 'Print APP_VERSION_META:PLATFORM_ID' "${ZA_INFOPLIST_FILE}")
-APID=$(/usr/libexec/PlistBuddy -c 'Print APP_VERSION_META:APID' "${ZA_INFOPLIST_FILE}")
+APP_VERSION_ID=$(/usr/libexec/PlistBuddy -c 'Print APP_VERSION_META:APP_VERSION_ID' "${CM_ZA_INFOPLIST_FILE}")
+APP_RELEASE_VERSION_ID=$(/usr/libexec/PlistBuddy -c 'Print APP_VERSION_META:APP_RELEASE_VERSION_ID' "${CM_ZA_INFOPLIST_FILE}")
+PLATFORM_ID=$(/usr/libexec/PlistBuddy -c 'Print APP_VERSION_META:PLATFORM_ID' "${CM_ZA_INFOPLIST_FILE}")
+APID=$(/usr/libexec/PlistBuddy -c 'Print APP_VERSION_META:APID' "${CM_ZA_INFOPLIST_FILE}")
 
 
-echo "Plist Path : ${ZA_INFOPLIST_FILE}"
+echo "Plist Path : ${CM_ZA_INFOPLIST_FILE}"
 echo "Deployment target: ${ZA_DEPLOYMENT_TARGET}"
 echo "Product Name: ${PRODUCT_NAME}"
 echo "Version: ${BUNDLE_SHORT_VERSION}"
@@ -198,35 +227,9 @@ exitOperation "skipping simulator build" 0
 fi
 fi
 
-CM_ZA_INFOPLIST_FILE="$(find "${TARGET_BUILD_DIR}" -name "${ZA_INFO_FILE_NAME}")"
-while ([ ! -f "$CM_ZA_INFOPLIST_FILE" ])
-do
-  CM_ZA_INFOPLIST_FILE="$(find "${TARGET_BUILD_DIR}" -name "${ZA_INFO_FILE_NAME}")"
-echo "Waiting for the file to be copied ${CM_ZA_INFOPLIST_FILE}"
-sleep 1;
-done
-  
-/usr/libexec/PlistBuddy -c "Delete :APP_VERSION_META" "${ZA_INFOPLIST_FILE}"
-/usr/libexec/PlistBuddy -c "Delete :EVENTS_INFO" "${ZA_INFOPLIST_FILE}"
-/usr/libexec/PlistBuddy -c "Delete :API_INFO" "${ZA_INFOPLIST_FILE}"
-if [ $UPLOAD_DSYM -eq 0 ]; then
-exit
-fi
-    
 DSYM_SRC=${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}
 AP_DWARF_DSYM_FILE_NAME="$(echo $DWARF_DSYM_FILE_NAME | sed -e "s/\./\_/g")"
 DSYM_ZIP_FPATH="/tmp/$AP_DWARF_DSYM_FILE_NAME"
-
-#Apple script alert before dSYM upload
-function prompt() {
-osascript <<EOT
-tell app "System Events"
-
-button returned of (display alert "$1" message "$2" buttons {"Upload", "Cancel"} default button 1 cancel button 2 as critical giving up after 10)
-
-end tell
-EOT
-}
 
 if [ $SKIP_PROMPT -eq 0 ]; then
   value=$(prompt "Should upload dSYMs?" "App name:$PRODUCT_NAME\nBundle id: $PRODUCT_BUNDLE_IDENTIFIER\nVersion:$BUNDLE_SHORT_VERSION($BUNDLE_VERSION)")
@@ -284,6 +287,21 @@ else
     exitOperation "Please select 'Debug information format' to 'DWARF with DSYM File' under Target Build Settings" 0
 fi
 
+else
+CM_ZA_INFOPLIST_FILE="$(find "${TARGET_BUILD_DIR}" -name "${ZA_INFO_FILE_NAME}")"
+while ([ ! -f "$CM_ZA_INFOPLIST_FILE" ])
+do
+  CM_ZA_INFOPLIST_FILE="$(find "${TARGET_BUILD_DIR}" -name "${ZA_INFO_FILE_NAME}")"
+echo "Waiting for the file to be copied ${CM_ZA_INFOPLIST_FILE}"
+sleep 1;
+done
+  
+/usr/libexec/PlistBuddy -c "Delete :APP_VERSION_META" "${ZA_INFOPLIST_FILE}"
+/usr/libexec/PlistBuddy -c "Delete :EVENTS_INFO" "${ZA_INFOPLIST_FILE}"
+/usr/libexec/PlistBuddy -c "Delete :API_INFO" "${ZA_INFOPLIST_FILE}"
 
+/usr/libexec/PlistBuddy -c "Delete :AP_INFOPLIST_FILE" "${AP_INFO_FILE_NAME}"
+/usr/libexec/PlistBuddy -c "Delete :AP_APP_GROUP_IDENTIFIER" "${AP_INFO_FILE_NAME}"
 
-
+exit
+fi

@@ -46,6 +46,9 @@ ZA_INFOPLIST_FILE="${1#*=}"
 --app-group-identifier=*)
 AP_APP_GROUP_IDENTIFIER="${1#*=}"
 ;;
+--log-file-path=*)
+LOG_FILE_PATH="${1#*=}"
+;;
 *)
 printf "**********************************\n"
 printf "* Error: Invalid argument passed.*\n"
@@ -402,16 +405,19 @@ COMMAND_PATH="$DIR/dsym_upload"
 IFS=', ' read -r -a SKIP_PROMPT_CONFIGURATIONS <<< "${SKIP_PROMPT_FOR}"
 
 LOGNAME="/tmp/${PRODUCT_BUNDLE_IDENTIFIER}/${UUIDGEN}-apptics-output.txt"
-MAXSIZE=100000
-
-  if [ -f "${LOGNAME}" ]; then
-    LOGNAME_SIZE=$(ls -l $LOGNAME | awk '{print $5}')
-    if [ $LOGNAME_SIZE -ge $MAXSIZE ];
-    then
-        echo "$LOGNAME exceeds max threshold"
-        rm $LOGNAME
-    fi
-  fi
+if [ "${LOG_FILE_PATH}" ];then
+LOGNAME="${LOG_FILE_PATH}"
+fi
+    #MAXSIZE=100000
+    #
+    #  if [ -f "${LOGNAME}" ]; then
+    #    LOGNAME_SIZE=$(ls -l $LOGNAME | awk '{print $5}')
+    #    if [ $LOGNAME_SIZE -ge $MAXSIZE ];
+    #    then
+    #        echo "$LOGNAME exceeds max threshold"
+    #        rm $LOGNAME
+    #    fi
+    #  fi
   
 if [[ " ${SKIP_PROMPT_CONFIGURATIONS[@]} " =~ " ${CONFIGURATION} " ]]; then
  
