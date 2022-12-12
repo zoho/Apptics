@@ -8,6 +8,7 @@ eval "${GCC_PREPROCESSOR_DEFINITIONS}"
 
 SKIP_PROMPT=0
 UPLOAD_DSYM=0
+PROCESS_TYPE=1
 #Apple script alert before dSYM upload
 function error_prompt() {
 osascript <<EOT
@@ -95,6 +96,9 @@ case "$1" in
 --skip-prompt=*)
 SKIP_PROMPT=${1#*=}
 ;;
+--process-type=*)
+PROCESS_TYPE=${1#*=}
+;;
 --upload-dsym=*)
 UPLOAD_DSYM=${1#*=}
 ;;
@@ -118,12 +122,12 @@ echo "Waiting for the file to be copied ${CM_ZA_INFOPLIST_FILE}"
 sleep 1;
 done
   
-/usr/libexec/PlistBuddy -c "Delete :APP_VERSION_META" "${ZA_INFOPLIST_FILE}"
-/usr/libexec/PlistBuddy -c "Delete :EVENTS_INFO" "${ZA_INFOPLIST_FILE}"
-/usr/libexec/PlistBuddy -c "Delete :API_INFO" "${ZA_INFOPLIST_FILE}"
+echo $(/usr/libexec/PlistBuddy -c "Delete :APP_VERSION_META" "${ZA_INFOPLIST_FILE}")
+echo $(/usr/libexec/PlistBuddy -c "Delete :EVENTS_INFO" "${ZA_INFOPLIST_FILE}")
+echo $(/usr/libexec/PlistBuddy -c "Delete :API_INFO" "${ZA_INFOPLIST_FILE}")
 
-/usr/libexec/PlistBuddy -c "Delete :AP_INFOPLIST_FILE" "${AP_INFO_FILE_NAME}"
-/usr/libexec/PlistBuddy -c "Delete :AP_APP_GROUP_IDENTIFIER" "${AP_INFO_FILE_NAME}"
+echo $(/usr/libexec/PlistBuddy -c "Delete :AP_INFOPLIST_FILE" "${AP_INFO_FILE_NAME}")
+echo $(/usr/libexec/PlistBuddy -c "Delete :AP_APP_GROUP_IDENTIFIER" "${AP_INFO_FILE_NAME}")
 
 if [ ! -f "${ZA_INFOPLIST_FILE}" ]; then
 echo "dsym upload : Please check if the ${ZA_INFO_FILE_NAME} is in your projects' root dir, or else provide the proper path by passing value to the param '--config-file-path'"
@@ -219,7 +223,7 @@ if [ "$ENABLE_BITCODE" == "YES" ]; then
 AP_ENABLE_BITCODE="true"
 fi
 
-DSYM_UPLOAD_PARAMS="appversionid=${APP_VERSION_ID}&appreleaseversionid=${APP_RELEASE_VERSION_ID}&pid=${PLATFORM_ID}&apid=${APID}&isBitcodeenabled=${AP_ENABLE_BITCODE}&host=${WHOAMI}&remoteaddress=${IPADDRESS}"
+DSYM_UPLOAD_PARAMS="appv ersionid=${APP_VERSION_ID}&appreleaseversionid=${APP_RELEASE_VERSION_ID}&pid=${PLATFORM_ID}&apid=${APID}&isBitcodeenabled=${AP_ENABLE_BITCODE}&host=${WHOAMI}&remoteaddress=${IPADDRESS}"
 
 if [ "$EFFECTIVE_PLATFORM_NAME" == "-iphonesimulator" ]; then
 if [ "$UPLOAD_SIMULATOR_SYMBOLS" == "0" ]; then
@@ -243,19 +247,21 @@ fi
 
 # create dSYM .zip file
 echo "dSYM location: ${DSYM_SRC}"
-
+DWARF_DATA="${DSYM_SRC}/Contents/Resources/DWARF"
 if [ ${DEBUG_INFORMATION_FORMAT} == "dwarf-with-dsym" ]; then
-    while (! dwarfdump -u "${DSYM_SRC}" 2> /dev/null)
+ 
+ if [ $PROCESS_TYPE -eq 0 ]; then
+    while ( [ ! -d $DWARF_DATA ] || ! dwarfdump -u "${DSYM_SRC}" 2> /dev/null)
     do
     echo "Waiting to finish dSYM file creation..."
     sleep 1;
     done
-
+ fi
     cd "${DWARF_DSYM_FOLDER_PATH}"
     mkdir -p "${DSYM_ZIP_FPATH}"
 
-    cp -r *.dSYM "${DSYM_ZIP_FPATH}"
-    cp -r **/*.dSYM "${DSYM_ZIP_FPATH}" 2>/dev/null
+    cp -Rvf *.dSYM "${DSYM_ZIP_FPATH}"
+    cp -Rvf **/*.dSYM "${DSYM_ZIP_FPATH}" 2>/dev/null
 
     echo "Compressing dSYM to: ${DSYM_ZIP_FPATH} ..."
     #come to the native dir.
@@ -288,20 +294,20 @@ else
 fi
 
 else
-CM_ZA_INFOPLIST_FILE="$(find "${TARGET_BUILD_DIR}" -name "${ZA_INFO_FILE_NAME}")"
-while ([ ! -f "$CM_ZA_INFOPLIST_FILE" ])
-do
-  CM_ZA_INFOPLIST_FILE="$(find "${TARGET_BUILD_DIR}" -name "${ZA_INFO_FILE_NAME}")"
-echo "Waiting for the file to be copied ${CM_ZA_INFOPLIST_FILE}"
-sleep 1;
-done
-  
-/usr/libexec/PlistBuddy -c "Delete :APP_VERSION_META" "${ZA_INFOPLIST_FILE}"
-/usr/libexec/PlistBuddy -c "Delete :EVENTS_INFO" "${ZA_INFOPLIST_FILE}"
-/usr/libexec/PlistBuddy -c "Delete :API_INFO" "${ZA_INFOPLIST_FILE}"
+    
+    CM_ZA_INFOPLIST_FILE="$(find "${TARGET_BUILD_DIR}" -name "${ZA_INFO_FILE_NAME}")"
+    while ([ ! -f "$CM_ZA_INFOPLIST_FILE" ])
+    do
+      CM_ZA_INFOPLIST_FILE="$(find "${TARGET_BUILD_DIR}" -name "${ZA_INFO_FILE_NAME}")"
+    echo "Waiting for the file to be copied ${CM_ZA_INFOPLIST_FILE}"
+    sleep 1;
+    done
+      
+    echo $(/usr/libexec/PlistBuddy -c "Delete :APP_VERSION_META" "${ZA_INFOPLIST_FILE}")
+    echo $(/usr/libexec/PlistBuddy -c "Delete :EVENTS_INFO" "${ZA_INFOPLIST_FILE}")
+    echo $(/usr/libexec/PlistBuddy -c "Delete :API_INFO" "${ZA_INFOPLIST_FILE}")
 
-/usr/libexec/PlistBuddy -c "Delete :AP_INFOPLIST_FILE" "${AP_INFO_FILE_NAME}"
-/usr/libexec/PlistBuddy -c "Delete :AP_APP_GROUP_IDENTIFIER" "${AP_INFO_FILE_NAME}"
-
-exit
+    echo $(/usr/libexec/PlistBuddy -c "Delete :AP_INFOPLIST_FILE" "${AP_INFO_FILE_NAME}")
+    echo $(/usr/libexec/PlistBuddy -c "Delete :AP_APP_GROUP_IDENTIFIER" "${AP_INFO_FILE_NAME}")
+    
 fi

@@ -51,6 +51,7 @@ typedef void (^bgConsoleLogsRequestSuccessBlock)(void);
 + (NSNumber*) sessionStartTime;
 + (NSString*) currentScreenName;
 
+- (void) addToErrorQueue:(id)errorObject forKey:(NSString*)aKey;
 - (void) addToQueue:(ZAObject*)object;
 - (void) removeAllData;
 

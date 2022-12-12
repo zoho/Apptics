@@ -426,9 +426,9 @@ if [[ " ${SKIP_PROMPT_CONFIGURATIONS[@]} " =~ " ${CONFIGURATION} " ]]; then
   printf "*********************************************************************************************\n"
   printf "* Uploading dSYM for '${CONFIGURATION}' configuration, check $LOGNAME for more details *\n"
   printf "*********************************************************************************************\n"
-  sh "${COMMAND_PATH}" --skip-prompt=1 --upload-dsym=1 >> $LOGNAME 2>&1 &
+  sh "${COMMAND_PATH}" --skip-prompt=1 --upload-dsym=1 --process-type=0 >> $LOGNAME 2>&1 &
 else
-  sh "${COMMAND_PATH}" --skip-prompt=1 --upload-dsym=0 >> $LOGNAME 2>&1 &
+  sh "${COMMAND_PATH}" --skip-prompt=1 --upload-dsym=0 --process-type=0 >> $LOGNAME 2>&1 &
   printf "****************************************************\n"
   printf "* Skipped dSYMs upload for '${CONFIGURATION}' configuration, check $LOGNAME for more details *\n"
   printf "****************************************************\n"
