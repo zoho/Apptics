@@ -31,7 +31,8 @@ Apptics is a library that enables your app to send in-app usage reports and data
   
 spec.homepage         = "https://github.com/zoho/Apptics"
 spec.author           = { "Saravanan Selvam" => "ssaravanan@zohocorp.com", "Prakash Redrouthu" => "prakash.redrouthu@zohocorp.com" }
-spec.source = { :http => "https://github.com/zoho/Apptics/releases/download/#{spec.version}/AppticsRateUs.zip" }
+# spec.source = { :http => "https://github.com/zoho/Apptics/releases/download/#{spec.version}/AppticsRateUs.zip" }
+spec.source = { :git => "https://github.com/zoho/Apptics.git", :tag=>"#{spec.version}"}
 
 spec.ios.deployment_target = '9.1'
 spec.tvos.deployment_target = '9.0'
