@@ -23,7 +23,7 @@
 		</data>
 		<key>AppticsResources.bundle/Info.plist</key>
 		<data>
-		hfEUhojEOmj31rfEZfE7sUEwHGg=
+		FC3tQn0/UNmjwRN3HVQ84K1AVVc=
 		</data>
 		<key>AppticsResources.bundle/ZAAppUpdateAlert.nib</key>
 		<data>
@@ -67,7 +67,7 @@
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		SuXdV2ZTYvVfP0l14p7C6caVMzU=
+		T9dZgrRqrdid6EM6DRYGt03yUD8=
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -75,7 +75,7 @@
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		EFM6O9fNMfQjjMq3nWgHT21i26I=
+		EAHSH3j8gXb8fM+hlI6U3TyJD44=
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeResources</key>
 		<data>
@@ -688,7 +688,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		/DE/mGM/g6BcBTePdCaJg5B3D58=
+		eYKhYDtChrlMfjOIKt1W33bxJ60=
 		</data>
 		<key>Modules/Apptics.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -720,7 +720,7 @@
 		</data>
 		<key>apptics_utils.rb</key>
 		<data>
-		JN3yQFvm8DVECGYjOvDydXrDO5k=
+		9WGQVVpMBaptB2N3JlYB2v5vFXM=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -764,11 +764,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hfEUhojEOmj31rfEZfE7sUEwHGg=
+			FC3tQn0/UNmjwRN3HVQ84K1AVVc=
 			</data>
 			<key>hash2</key>
 			<data>
-			G6iTD5B8G+khPXEcbJkuk2OJcPYBiyMvaDRbaJ22ZDw=
+			O1I7ha64nLuR5snpdsbOoawNt9EGX8v1zDcyWwuLKqo=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/ZAAppUpdateAlert.nib</key>
@@ -885,11 +885,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SuXdV2ZTYvVfP0l14p7C6caVMzU=
+			T9dZgrRqrdid6EM6DRYGt03yUD8=
 			</data>
 			<key>hash2</key>
 			<data>
-			Zla3QQ1znAUCdThTC6jNmcPdqwmBEwhC0GGQAE/y27M=
+			zgvNjAfasaXjCexjuns3dHT3gs1Qlj6Vh4Ob0fJNY14=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/_CodeSignature/CodeRequirements</key>
@@ -907,11 +907,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			EFM6O9fNMfQjjMq3nWgHT21i26I=
+			EAHSH3j8gXb8fM+hlI6U3TyJD44=
 			</data>
 			<key>hash2</key>
 			<data>
-			Ndi1mK8acKvui0g43HNGjVuOo8nD2zXhVjiUvtLRt9A=
+			cwERc369i28r47sZy8okkBFqQ8IRRz6VZTV7m3Vag9w=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/_CodeSignature/CodeResources</key>
@@ -2235,11 +2235,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JN3yQFvm8DVECGYjOvDydXrDO5k=
+			9WGQVVpMBaptB2N3JlYB2v5vFXM=
 			</data>
 			<key>hash2</key>
 			<data>
-			QnAWXqC+aXsvT/ECe6tbIwE+lH2q2WyoxmDIYfPAoT4=
+			Y4oqxeiarvssQ3d+AuVM+PZJyp/WN8H/sjJF/hHA19s=
 			</data>
 		</dict>
 	</dict>

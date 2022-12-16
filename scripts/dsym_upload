@@ -8,16 +8,11 @@ eval "${GCC_PREPROCESSOR_DEFINITIONS}"
 
 SKIP_PROMPT=0
 UPLOAD_DSYM=0
-PROCESS_TYPE=1
+PROCESS_TYPE=0
+FAIL_ON_ERROR=0
 #Apple script alert before dSYM upload
 function error_prompt() {
-osascript <<EOT
-tell app "System Events"
-
-button returned of (display alert "$1" message "$2" buttons {"Ok"} default button 1 as critical giving up after 10)
-
-end tell
-EOT
+echo "$1: $2"
 }
 
 function prompt() {
@@ -31,8 +26,10 @@ EOT
 }
 
 exitOperation() {
-value=$(error_prompt "Error occured" "$1")
+value=$(error_prompt "Error" "$1")
+if [ $FAIL_ON_ERROR -eq 1 ]; then
 exit ${2}
+fi
 }
 
 AP_INFO_FILE_NAME="$PRODUCT_SETTINGS_PATH" #INFOPLIST_FILE
@@ -93,14 +90,17 @@ echo "ZA_INFOPLIST_FILE --- ${ZA_INFOPLIST_FILE}"
 
 while [ $# -gt 0 ]; do
 case "$1" in
---skip-prompt=*)
-SKIP_PROMPT=${1#*=}
+--skip-prompt)
+SKIP_PROMPT=1
 ;;
---process-type=*)
-PROCESS_TYPE=${1#*=}
+--process-in-background)
+PROCESS_TYPE=1
 ;;
---upload-dsym=*)
-UPLOAD_DSYM=${1#*=}
+--upload-dsym)
+UPLOAD_DSYM=1
+;;
+--fail-on-error)
+FAIL_ON_ERROR=1
 ;;
 *)
 printf "**********************************\n"
@@ -113,19 +113,20 @@ shift
 done
 
 if [ $UPLOAD_DSYM -eq 1 ]; then
-
-CM_ZA_INFOPLIST_FILE="$(find "${TARGET_BUILD_DIR}" -name "${ZA_INFO_FILE_NAME}")"
-while ([ ! -f "$CM_ZA_INFOPLIST_FILE" ])
+# We are searcing for the file excluding hidden dirs "-not -path '*/.*'"
+CM_ZA_INFOPLIST_FILE="$(find "${TARGET_BUILD_DIR}" -name "${ZA_INFO_FILE_NAME}" -not -path '*/.*' | head -1)"
+while ([ ! -f "${CM_ZA_INFOPLIST_FILE}" ])
 do
-  CM_ZA_INFOPLIST_FILE="$(find "${TARGET_BUILD_DIR}" -name "${ZA_INFO_FILE_NAME}")"
-echo "Waiting for the file to be copied ${CM_ZA_INFOPLIST_FILE}"
+  CM_ZA_INFOPLIST_FILE="$(find "${TARGET_BUILD_DIR}" -name "${ZA_INFO_FILE_NAME}" -not -path '*/.*' | head -1)"
+echo "Waiting for the file to be copied at line number 121 ${CM_ZA_INFOPLIST_FILE}"
 sleep 1;
 done
   
 echo $(/usr/libexec/PlistBuddy -c "Delete :APP_VERSION_META" "${ZA_INFOPLIST_FILE}")
 echo $(/usr/libexec/PlistBuddy -c "Delete :EVENTS_INFO" "${ZA_INFOPLIST_FILE}")
 echo $(/usr/libexec/PlistBuddy -c "Delete :API_INFO" "${ZA_INFOPLIST_FILE}")
-
+echo $(/usr/libexec/PlistBuddy -c "Delete :LAST_MODIFIED" "${ZA_INFOPLIST_FILE}")
+    
 echo $(/usr/libexec/PlistBuddy -c "Delete :AP_INFOPLIST_FILE" "${AP_INFO_FILE_NAME}")
 echo $(/usr/libexec/PlistBuddy -c "Delete :AP_APP_GROUP_IDENTIFIER" "${AP_INFO_FILE_NAME}")
 
@@ -139,7 +140,7 @@ API_KEY=$(/usr/libexec/PlistBuddy -c 'Print API_KEY' "${ZA_INFOPLIST_FILE}")
 fi
 
 if [ ! "${API_KEY}" ]; then
-value=$(error_prompt "Missing API_KEY" "Please check if the ${ZA_INFO_FILE_NAME} file is up to date?")
+value=$(error_prompt "Error" "Missing API_KEY, please check if the ${ZA_INFO_FILE_NAME} file is up to date?")
 exit 1
 fi
 
@@ -151,8 +152,8 @@ if [ "${SERVER_URL}" ]; then
 DSYM_UPLOAD_ENDPOINT="${SERVER_URL}/sdk/api/apptics/v1/adddsymfile"
 echo "SERVER_URL : ${SERVER_URL}"
 else
-value=$(error_prompt "Missing SERVER_URL in your ${ZA_INFO_FILE_NAME}" "Please if the file is up to date?" )
-exit 0
+value=$(error_prompt "Error" "Missing SERVER_URL in your ${ZA_INFO_FILE_NAME}, please if the file is up to date?" )
+exit 1
 fi
 
 echo "Uploading dSYM to Apptics server..."
@@ -223,7 +224,7 @@ if [ "$ENABLE_BITCODE" == "YES" ]; then
 AP_ENABLE_BITCODE="true"
 fi
 
-DSYM_UPLOAD_PARAMS="appv ersionid=${APP_VERSION_ID}&appreleaseversionid=${APP_RELEASE_VERSION_ID}&pid=${PLATFORM_ID}&apid=${APID}&isBitcodeenabled=${AP_ENABLE_BITCODE}&host=${WHOAMI}&remoteaddress=${IPADDRESS}"
+DSYM_UPLOAD_PARAMS="appversionid=${APP_VERSION_ID}&appreleaseversionid=${APP_RELEASE_VERSION_ID}&pid=${PLATFORM_ID}&apid=${APID}&isBitcodeenabled=${AP_ENABLE_BITCODE}&host=${WHOAMI}&remoteaddress=${IPADDRESS}"
 
 if [ "$EFFECTIVE_PLATFORM_NAME" == "-iphonesimulator" ]; then
 if [ "$UPLOAD_SIMULATOR_SYMBOLS" == "0" ]; then
@@ -269,7 +270,7 @@ if [ ${DEBUG_INFORMATION_FORMAT} == "dwarf-with-dsym" ]; then
     #move to tmp dir to make zip.
     cd /tmp/
 
-    (/usr/bin/zip -rv --quiet "${DSYM_ZIP_FPATH}.zip" "$AP_DWARF_DSYM_FILE_NAME") || exitOperation "error: failed creating zip" 0
+    (/usr/bin/zip -rv --quiet "${DSYM_ZIP_FPATH}.zip" "$AP_DWARF_DSYM_FILE_NAME") || exitOperation "Error: failed creating zip" 1
 
     echo "${DSYM_ZIP_FPATH}.zip"
     echo "Archive created."
@@ -280,32 +281,42 @@ if [ ${DEBUG_INFORMATION_FORMAT} == "dwarf-with-dsym" ]; then
     #come to the native dir.
     cd -
     #upload dsym through ruby script.
-    echo $(ruby -r "$(command dirname -- "${0}")/apptics_utils.rb" -e "AppticsUploader.main '${DSYM_ZIP_FPATH}.zip','${URL}?${DSYM_UPLOAD_PARAMS}','${API_KEY}'")
+    value=$(ruby -r "$(command dirname -- "${0}")/apptics_utils.rb" -e "AppticsUploader.main '${DSYM_ZIP_FPATH}.zip','${URL}?${DSYM_UPLOAD_PARAMS}','${API_KEY}'")
     # Remove dSYM archive from tmp dir
+    echo "$value"
+    
+    if [[ "$value" =~ ^Error:* ]]; then
+    if [ $FAIL_ON_ERROR -eq 1 ]; then
+        exit 1
+    fi
+    fi
+        
     echo "Cleaning up dSYM archive from temp dir..."
     /bin/rm -rv "${DSYM_ZIP_FPATH}.zip"
     /bin/rm -rv "${DSYM_ZIP_FPATH}"
 
     if [ "$?" -ne 0 ]; then
-    exitOperation "an error was encountered while uploading dSYM to the server" 0
+    exitOperation "an error was encountered while uploading dSYM to the server" 1
     fi
 else
-    exitOperation "Please select 'Debug information format' to 'DWARF with DSYM File' under Target Build Settings" 0
+    exitOperation "Please select 'Debug information format' to 'DWARF with DSYM File' under Target Build Settings" 1
 fi
 
 else
     
-    CM_ZA_INFOPLIST_FILE="$(find "${TARGET_BUILD_DIR}" -name "${ZA_INFO_FILE_NAME}")"
-    while ([ ! -f "$CM_ZA_INFOPLIST_FILE" ])
+    CM_ZA_INFOPLIST_FILE="$(find "${TARGET_BUILD_DIR}" -name "${ZA_INFO_FILE_NAME}" -not -path '*/.*' | head -1)"
+    while ([ ! -f "${CM_ZA_INFOPLIST_FILE}" ])
     do
-      CM_ZA_INFOPLIST_FILE="$(find "${TARGET_BUILD_DIR}" -name "${ZA_INFO_FILE_NAME}")"
-    echo "Waiting for the file to be copied ${CM_ZA_INFOPLIST_FILE}"
+      CM_ZA_INFOPLIST_FILE="$(find "${TARGET_BUILD_DIR}" -name "${ZA_INFO_FILE_NAME}" -not -path '*/.*' | head -1)"
+    echo "Waiting for the file to be copied at line number 311 ${CM_ZA_INFOPLIST_FILE}"
     sleep 1;
     done
       
+    echo "Data from target to source - skip upload dsym : ${CM_ZA_INFOPLIST_FILE}"
     echo $(/usr/libexec/PlistBuddy -c "Delete :APP_VERSION_META" "${ZA_INFOPLIST_FILE}")
     echo $(/usr/libexec/PlistBuddy -c "Delete :EVENTS_INFO" "${ZA_INFOPLIST_FILE}")
     echo $(/usr/libexec/PlistBuddy -c "Delete :API_INFO" "${ZA_INFOPLIST_FILE}")
+    echo $(/usr/libexec/PlistBuddy -c "Delete :LAST_MODIFIED" "${ZA_INFOPLIST_FILE}")
 
     echo $(/usr/libexec/PlistBuddy -c "Delete :AP_INFOPLIST_FILE" "${AP_INFO_FILE_NAME}")
     echo $(/usr/libexec/PlistBuddy -c "Delete :AP_APP_GROUP_IDENTIFIER" "${AP_INFO_FILE_NAME}")

@@ -22,7 +22,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		wWIdIa7o67V8a6nFZwQS8QIghAk=
+		q4Q9z9XGAAe9lTsihVmCMsfjjBE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -84,7 +84,7 @@
 		</data>
 		<key>ZBugSquashResources.bundle/Info.plist</key>
 		<data>
-		dDq7PQcRyHjf4QCs1GwjObGTSco=
+		LMJl8Zaf2ci2RUlJiNA9fpXEo+4=
 		</data>
 		<key>ZBugSquashResources.bundle/NewBugViewController.nib/objects-11.0+.nib</key>
 		<data>
@@ -168,7 +168,7 @@
 		</data>
 		<key>ZBugSquashResources.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		4qnIRP52/Y6KVhHB3XXVKNF9Dyw=
+		j2P5OkOokaZnYn7TerwCyLf72sA=
 		</data>
 		<key>ZBugSquashResources.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -176,7 +176,7 @@
 		</data>
 		<key>ZBugSquashResources.bundle/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		hVkBAUg9pwfqH8Ki8eaHO6wBZ04=
+		g2Q9ER2s+cXeRkOVjNPK+wAeY7g=
 		</data>
 		<key>ZBugSquashResources.bundle/_CodeSignature/CodeResources</key>
 		<data>
@@ -1075,11 +1075,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dDq7PQcRyHjf4QCs1GwjObGTSco=
+			LMJl8Zaf2ci2RUlJiNA9fpXEo+4=
 			</data>
 			<key>hash2</key>
 			<data>
-			qLsYYhKPRVrkpResbIGzDVUtgq+h+PxqpYFwrzCoFME=
+			Mn4xPQcmpu0lgCpboztvmXTOIi+DLSV/soPekx4QbYU=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/NewBugViewController.nib/objects-11.0+.nib</key>
@@ -1306,11 +1306,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4qnIRP52/Y6KVhHB3XXVKNF9Dyw=
+			j2P5OkOokaZnYn7TerwCyLf72sA=
 			</data>
 			<key>hash2</key>
 			<data>
-			UhTU5tVuOYfSTx/w+D1oXXoJ1NWWCvsnyIiZ60t4TUQ=
+			D+xH5UZkPJpXYXJOsL5IRZR4v53fMtPIr/qKH+0HuI0=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/_CodeSignature/CodeRequirements</key>
@@ -1328,11 +1328,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hVkBAUg9pwfqH8Ki8eaHO6wBZ04=
+			g2Q9ER2s+cXeRkOVjNPK+wAeY7g=
 			</data>
 			<key>hash2</key>
 			<data>
-			veBQZ9ScxAan9aZccGX+oiYS2/KIcrWfXlNlNNTu+lI=
+			6kGBuAGOFTaiPeVYrnVJXvMPic4SmfHRxF4MQbR0UzA=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/_CodeSignature/CodeResources</key>
