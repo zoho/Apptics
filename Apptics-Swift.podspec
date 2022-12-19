@@ -42,8 +42,8 @@ DESC
   spec.homepage         = "https://github.com/zoho/Apptics"
   spec.author           = {"Saravanan S" => "ssaravanan@zohocorp.com", "Prakash Red" => "prakash.redrouthu@zohocorp.com"}
   spec.social_media_url = 'https://twitter.com/zoho'
-  # spec.source = { :http => "https://github.com/zoho/Apptics/releases/download/#{spec.version}/AppticsSwiftFiles.zip" }
-  spec.source = { :git => "https://github.com/zoho/Apptics.git", :tag=>"#{spec.version}"}
+  spec.source = { :http => "https://github.com/zoho/Apptics/releases/download/#{spec.version}/AppticsSwiftFiles.zip" }
+  # spec.source = { :git => "https://github.com/zoho/Apptics.git", :tag=>"#{spec.version}"}
     spec.requires_arc = true
   spec.swift_version = '5.0'
   
