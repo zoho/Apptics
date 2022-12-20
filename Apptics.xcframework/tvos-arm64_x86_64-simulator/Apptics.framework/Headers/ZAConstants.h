@@ -53,6 +53,7 @@ static NSString * kJA_RegisteredApDeviceInfo = @"kJA_RegisteredApDeviceInfo";
 //static NSString * kJA_RegisteredUpdatedTime = @"kJA_RegisteredUpdatedTime";
 
 static NSString * kJA_AnalyticUserId = @"kJA_AnalyticUserId";
+static NSString * kJA_AnalyticGroupId = @"kJA_AnalyticGroupId";
 static NSString * kJA_Default = @"default";
 static NSString * kJA_DefaultDc = @"com";
 static NSString * kJA_MamDc = @"kJA_MamDc";
@@ -61,6 +62,7 @@ static NSString * kJA_OrgID = @"kJA_OrgID";
 static NSString * kJA_MamKey = @"kJA_MamKey";
 static NSString * kJA_MamInfo = @"kJA_MamInfo";
 static NSString * kJA_UserIds = @"kJA_UserIds";
+static NSString * kJA_UserGroupIds = @"kJA_UserGroupIds";
 static NSString * kJA_MamPIIInfo = @"kJA_MamPIIInfo";
 static NSString * kJA_MamDCInfo = @"kJA_MamDCInfo";
 static NSString * kJA_MamTrackingInfo = @"kJA_MamTrackingInfo";

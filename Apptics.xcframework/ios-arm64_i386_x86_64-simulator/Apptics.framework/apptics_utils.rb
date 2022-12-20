@@ -2,7 +2,7 @@ begin
 require "net/http"
 require "json"
 rescue LoadError => error
-  puts "error: #{error.message}, check if commandline tools are installed"
+  puts "Error: #{error.message}, check if commandline tools are installed"
   exit
 end
 
@@ -13,14 +13,14 @@ class AppticsBot
     data_hash = JSON.parse(File.read(filePath))
     
     if data_hash["result"] == "failure"
-        puts "error: #{data_hash['error_message']}"
+        puts "Error: #{data_hash['error_message']}"
         return false
     end
   
     data_hash = data_hash["data"]
     
     if data_hash == nil
-      puts "error: 'Invalid entries found in the response : #{data_hash}'"
+      puts "Error: 'Invalid entries found in the response : #{data_hash}'"
       return false
     end
        
@@ -76,15 +76,15 @@ class AppticsUploader
           if data_hash["result"] == "success"
                 puts "Success: #{data_hash['data']}"
                 else
-                puts "error: #{data_hash['error_message']}"
+                puts "Error: #{data_hash['error_message']}"
           end
           else
-              puts "error: #{res.body}"
+              puts "Error: #{res.body}"
           end
           end
         rescue StandardError => e
           # run code if StandardError or anything that inherits from StandardError is raised (most errors)
-          puts "error: #{e}"
+          puts "Error: #{e}"
         end
                 
     end

@@ -39,6 +39,8 @@ NS_ASSUME_NONNULL_BEGIN
 //@property (nonatomic) NSString* timeZone;
 @property (nonatomic) NSString* defaultLang;
 
+@property (nonatomic) double minimumSessionInterval;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -10,11 +10,11 @@
 		</data>
 		<key>AppticsResources_tvOS.bundle/Info.plist</key>
 		<data>
-		HKIanRC6LL4aCBd2u/7vJVapBzY=
+		dXN1uD9282Nswfd9Gv0styjUbEM=
 		</data>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		VLxJN/L9UT2tEM8bVFcXeWvEg2U=
+		E0jNjoMN/28wDEaWzsCfGf3AJn4=
 		</data>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		hLiR4k6P32nCweDlCuWLTRncnfc=
+		kYPKQkavJlL4gVkU84g/dgQPKCY=
 		</data>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeResources</key>
 		<data>
@@ -312,7 +312,7 @@
 		</data>
 		<key>Headers/AppticsConfig.h</key>
 		<data>
-		mM+pk0IouSYJkHc97UR8pcGMtnc=
+		mrHSWgtaoCtbwkuggfXzfYSwR1M=
 		</data>
 		<key>Headers/NSData+APGunZip.h</key>
 		<data>
@@ -340,7 +340,7 @@
 		</data>
 		<key>Headers/ZAConstants.h</key>
 		<data>
-		CxINj2iTu8HFPjR9pxWs4sSgyd8=
+		LFwwuFASKK9OF+CTTZBoHUChaOU=
 		</data>
 		<key>Headers/ZACustomNavigationController.h</key>
 		<data>
@@ -400,7 +400,7 @@
 		</data>
 		<key>Headers/ZAPIIManager.h</key>
 		<data>
-		+PNtsf/TW71QvozZAXfm0+pWHnE=
+		wBoZTKEVcxqmkWanhPcHFsqB/Fk=
 		</data>
 		<key>Headers/ZAPIManager.h</key>
 		<data>
@@ -432,7 +432,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		1I3XxROSHcduPqcmOhMzNkkGRD8=
+		Qc1q+AplxebvDIO+9cRZ6fz4Mts=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -456,22 +456,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HKIanRC6LL4aCBd2u/7vJVapBzY=
+			dXN1uD9282Nswfd9Gv0styjUbEM=
 			</data>
 			<key>hash2</key>
 			<data>
-			Dogk84O2ebhHAxHefnwupEIC7AKZX5NSl8j3Av6fZoM=
+			zzvjJlIBlqTPMp8GbK6w9Dl5oGRuyk5eFjKqSqtpMNM=
 			</data>
 		</dict>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeDirectory</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			VLxJN/L9UT2tEM8bVFcXeWvEg2U=
+			E0jNjoMN/28wDEaWzsCfGf3AJn4=
 			</data>
 			<key>hash2</key>
 			<data>
-			sW6d4vMee2SU/8110li63cUSKUyGJ35jc8i1mrLW6pc=
+			vNTenIhBu+5I7VdBRt24DN7ETJzAs0hGq/D7IIBaiHw=
 			</data>
 		</dict>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeRequirements</key>
@@ -489,11 +489,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hLiR4k6P32nCweDlCuWLTRncnfc=
+			kYPKQkavJlL4gVkU84g/dgQPKCY=
 			</data>
 			<key>hash2</key>
 			<data>
-			B61GQuaowmCXQpoU+CSxaug8mY37Ez1h/BdvexbLOMs=
+			o4sFMdROekQgmNWKXDtE8xVK7pISEw4fsPNGyUtRPjE=
 			</data>
 		</dict>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeResources</key>
@@ -981,11 +981,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mM+pk0IouSYJkHc97UR8pcGMtnc=
+			mrHSWgtaoCtbwkuggfXzfYSwR1M=
 			</data>
 			<key>hash2</key>
 			<data>
-			uwtNWYQE31jTQML9rE4kPRqia6fpfYOFbc6KesYyyZM=
+			3tI5QwqlnVJS4ECKhCT1Ws0QD6NA4d2jYE5bUd37zF0=
 			</data>
 		</dict>
 		<key>Headers/NSData+APGunZip.h</key>
@@ -1058,11 +1058,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CxINj2iTu8HFPjR9pxWs4sSgyd8=
+			LFwwuFASKK9OF+CTTZBoHUChaOU=
 			</data>
 			<key>hash2</key>
 			<data>
-			7ooMHHHRnc6SgYGI50mRx2PtrynD3zXregwlPEUhzoo=
+			69K+bUV5sn7YitWSdQrx4wE1CS5HgpRP3IScIEcE9ok=
 			</data>
 		</dict>
 		<key>Headers/ZACustomNavigationController.h</key>
@@ -1223,11 +1223,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+PNtsf/TW71QvozZAXfm0+pWHnE=
+			wBoZTKEVcxqmkWanhPcHFsqB/Fk=
 			</data>
 			<key>hash2</key>
 			<data>
-			Jj1OsEtpCdQPN+9lC0Ckv8eGjDZgPCgjak04BgFwNEM=
+			qjNpaBmdvQg0+OVxJCuKWxoquczc9MpFoKtrECfR4Vc=
 			</data>
 		</dict>
 		<key>Headers/ZAPIManager.h</key>

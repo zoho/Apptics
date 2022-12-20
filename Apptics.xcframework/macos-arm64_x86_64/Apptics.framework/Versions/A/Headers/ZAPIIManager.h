@@ -28,6 +28,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic,strong) NSString *zauid;//Zoho Analytics User Id
 
+@property (nonatomic,strong) NSString *customergroupid;//Zoho Analytics Group Id
+
 @property (nonatomic,strong) NSString *regDeviceId;//Registered Device Id
 
 @property (nonatomic,strong) NSString *anonid;//Anonymous Id
@@ -47,6 +49,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,strong) NSMutableDictionary *_Nullable mamInfo;//Encrypted email id (Mail id)
 
 @property (nonatomic,strong) NSMutableDictionary *_Nullable userids;//users associated with this device
+
+@property (nonatomic,strong) NSMutableDictionary *_Nullable groupids;//user groups associated with the respective users
 
 @property (nonatomic,strong) NSMutableDictionary *_Nullable mamTrackingInfo;//Here we save all Tracking info
 
@@ -112,6 +116,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (NSString *) getCurrentUserId;
 
+- (NSString *) getUserGroupId : (NSString*) userId;
+    
 - (NSString *_Nullable) getUserIdForMamId : (NSString*) mamId;
 
 - (void) regMamInfoForKey : (NSString*_Nonnull) key;
