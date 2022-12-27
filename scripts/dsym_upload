@@ -76,8 +76,11 @@ ZA_DEPLOYMENT_TARGET=${WATCHOS_DEPLOYMENT_TARGET}
 PLATFORM="watchOS"
 fi
 
-if [ ! "${ZA_INFOPLIST_FILE}" ]; then
-ZA_INFOPLIST_FILE=$(/usr/libexec/PlistBuddy -c 'Print AP_INFOPLIST_FILE' "${AP_INFO_FILE_NAME}")
+CM_AP_INFO_FILE_NAME="$TARGET_BUILD_DIR/$INFOPLIST_PATH"
+
+if [ ! "${ZA_INFO_FILE_NAME}" ]; then
+# check the file name in target build dir info.plist 
+ZA_INFO_FILE_NAME=$(/usr/libexec/PlistBuddy -c 'Print AP_INFOPLIST_FILE' "${CM_AP_INFO_FILE_NAME}")
 fi
 
 UPLOAD_SIMULATOR_SYMBOLS="1"
@@ -118,10 +121,19 @@ CM_ZA_INFOPLIST_FILE="$(find "${TARGET_BUILD_DIR}" -name "${ZA_INFO_FILE_NAME}" 
 while ([ ! -f "${CM_ZA_INFOPLIST_FILE}" ])
 do
   CM_ZA_INFOPLIST_FILE="$(find "${TARGET_BUILD_DIR}" -name "${ZA_INFO_FILE_NAME}" -not -path '*/.*' | head -1)"
-echo "Waiting for the file to be copied at line number 121 ${CM_ZA_INFOPLIST_FILE}"
+echo "Waiting for the file ${ZA_INFO_FILE_NAME} to be copied at line number 123 ${CM_ZA_INFOPLIST_FILE}"
 sleep 1;
 done
   
+TMP_AP_INFOPLIST_FILE=$(/usr/libexec/PlistBuddy -c "Print AP_INFOPLIST_FILE" "${CM_AP_INFO_FILE_NAME}" 2>/dev/null || printf "nil")
+
+while ([ "${TMP_AP_INFOPLIST_FILE}" == "nil" ])
+do
+  TMP_AP_INFOPLIST_FILE=$(/usr/libexec/PlistBuddy -c "Print AP_INFOPLIST_FILE" "${CM_AP_INFO_FILE_NAME}" 2>/dev/null || printf "nil")
+echo "Waiting for the info file to be copied at line number 132 ${TMP_AP_INFOPLIST_FILE}"
+sleep 1;
+done
+
 echo $(/usr/libexec/PlistBuddy -c "Delete :APP_VERSION_META" "${ZA_INFOPLIST_FILE}")
 echo $(/usr/libexec/PlistBuddy -c "Delete :EVENTS_INFO" "${ZA_INFOPLIST_FILE}")
 echo $(/usr/libexec/PlistBuddy -c "Delete :API_INFO" "${ZA_INFOPLIST_FILE}")
@@ -308,10 +320,19 @@ else
     while ([ ! -f "${CM_ZA_INFOPLIST_FILE}" ])
     do
       CM_ZA_INFOPLIST_FILE="$(find "${TARGET_BUILD_DIR}" -name "${ZA_INFO_FILE_NAME}" -not -path '*/.*' | head -1)"
-    echo "Waiting for the file to be copied at line number 311 ${CM_ZA_INFOPLIST_FILE}"
+    echo "Waiting for the file to be copied at line number 322 ${CM_ZA_INFOPLIST_FILE}"
     sleep 1;
     done
-      
+
+    TMP_AP_INFOPLIST_FILE=$(/usr/libexec/PlistBuddy -c "Print AP_INFOPLIST_FILE" "${CM_AP_INFO_FILE_NAME}" 2>/dev/null || printf "nil")
+
+    while ([ "${TMP_AP_INFOPLIST_FILE}" == "nil" ])
+    do
+      TMP_AP_INFOPLIST_FILE=$(/usr/libexec/PlistBuddy -c "Print AP_INFOPLIST_FILE" "${CM_AP_INFO_FILE_NAME}" 2>/dev/null || printf "nil")
+    echo "Waiting for the info file to be copied at line number 331 ${TMP_AP_INFOPLIST_FILE}"
+    sleep 1;
+    done
+
     echo "Data from target to source - skip upload dsym : ${CM_ZA_INFOPLIST_FILE}"
     echo $(/usr/libexec/PlistBuddy -c "Delete :APP_VERSION_META" "${ZA_INFOPLIST_FILE}")
     echo $(/usr/libexec/PlistBuddy -c "Delete :EVENTS_INFO" "${ZA_INFOPLIST_FILE}")
