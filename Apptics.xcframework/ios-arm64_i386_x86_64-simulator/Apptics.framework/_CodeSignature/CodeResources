@@ -23,7 +23,7 @@
 		</data>
 		<key>AppticsResources.bundle/Info.plist</key>
 		<data>
-		7/7Vf6mYUmx0Ah1Bavo5xIaLwFU=
+		XFRm8oEzrYhLgb+t9g1bWqEKTsw=
 		</data>
 		<key>AppticsResources.bundle/ZAAppUpdateAlert.nib</key>
 		<data>
@@ -67,7 +67,7 @@
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		nPaKZY89r5kK+F/GOgjCteMoNx8=
+		BtIF3j/XzCqVvcLxeTIWXl5Y97E=
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -75,7 +75,7 @@
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		dhedKLy+3lxJId1O4g64iG0hn6g=
+		a/3yEH7t+jCSEpKq5QXHPoNww88=
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeResources</key>
 		<data>
@@ -688,7 +688,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		o0cN1VI3iBmSdHACUgKrN4omq4c=
+		BdE+Jf1jE2vicSgKQrWvT90jlnY=
 		</data>
 		<key>Modules/Apptics.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -729,18 +729,6 @@
 		<key>Modules/module.modulemap</key>
 		<data>
 		rrmNYjIcD065qnDrQAUD6ylYZ5k=
-		</data>
-		<key>apptics_event_sync.rb</key>
-		<data>
-		c8gqVgcqOi1+uHq4oJEFHKAZwY8=
-		</data>
-		<key>apptics_utils.rb</key>
-		<data>
-		Xy/s8VyHwpKraTabEhiSFS3BtqU=
-		</data>
-		<key>postinstaller</key>
-		<data>
-		O/wnSG2E21/jP8xJIognBWe1L0o=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -784,11 +772,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7/7Vf6mYUmx0Ah1Bavo5xIaLwFU=
+			XFRm8oEzrYhLgb+t9g1bWqEKTsw=
 			</data>
 			<key>hash2</key>
 			<data>
-			DS/hIeMJKmHOUGeSHIZlizrVX1E/pYLI/BrtBtB5h5g=
+			w6Kt/390zn6k68ZTY+x9+iTGpUTTPrdD7ELQoqPS2tE=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/ZAAppUpdateAlert.nib</key>
@@ -905,11 +893,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nPaKZY89r5kK+F/GOgjCteMoNx8=
+			BtIF3j/XzCqVvcLxeTIWXl5Y97E=
 			</data>
 			<key>hash2</key>
 			<data>
-			4dQ2MxRNdrji9DNRdpEkwVI1NWHUoG66frZwxL+pKjE=
+			oNqQFVjcvGwsgrVyVbFnOMfcyASOgQSEHzU++jFVeco=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/_CodeSignature/CodeRequirements</key>
@@ -927,11 +915,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dhedKLy+3lxJId1O4g64iG0hn6g=
+			a/3yEH7t+jCSEpKq5QXHPoNww88=
 			</data>
 			<key>hash2</key>
 			<data>
-			swchFjtJQECH5rvYjILcOGgSNajo0hRNB5RXUJmTGiI=
+			5jRgOfDaM9HrnDFNqndk1DHuepap+TbJWOoj7AFM5UQ=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/_CodeSignature/CodeResources</key>
@@ -2282,39 +2270,6 @@
 			<key>hash2</key>
 			<data>
 			h5d2C+aAE/WU6RMo5GTB10zTR3VY7wxAYQHJpX/ZZho=
-			</data>
-		</dict>
-		<key>apptics_event_sync.rb</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			c8gqVgcqOi1+uHq4oJEFHKAZwY8=
-			</data>
-			<key>hash2</key>
-			<data>
-			qewaubHsxqbuLYr6d8QUYXmYDfWQxv7qPWTxS90K7CY=
-			</data>
-		</dict>
-		<key>apptics_utils.rb</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Xy/s8VyHwpKraTabEhiSFS3BtqU=
-			</data>
-			<key>hash2</key>
-			<data>
-			hjsry83BvE1g5ualvOK+37i3EsWVQ7ZrqGRuR33XNUk=
-			</data>
-		</dict>
-		<key>postinstaller</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			O/wnSG2E21/jP8xJIognBWe1L0o=
-			</data>
-			<key>hash2</key>
-			<data>
-			K1gnR5Mp9VIS2/5kDOgDm/hOmkUj/finpTrJNzG4uZY=
 			</data>
 		</dict>
 	</dict>

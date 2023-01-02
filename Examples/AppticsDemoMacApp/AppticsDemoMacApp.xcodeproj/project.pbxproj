@@ -12,7 +12,6 @@
 		24EF1B94286D61A500490D90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24EF1B93286D61A500490D90 /* Assets.xcassets */; };
 		24EF1B97286D61A500490D90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24EF1B95286D61A500490D90 /* Main.storyboard */; };
 		24EF1B9A286D61A500490D90 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24EF1B99286D61A500490D90 /* main.m */; };
-		24EF1BAB286D654800490D90 /* apptics-config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24EF1BAA286D654800490D90 /* apptics-config.plist */; };
 		8375FF805DE30028D3C089FA /* Pods_AppticsDemoMacApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639D8792723EFBD36BFF8D0B /* Pods_AppticsDemoMacApp.framework */; };
 		A2791E80287E88F30047A3FF /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2791E7F287E88F20047A3FF /* NewViewController.swift */; };
 		A2791E82287E89A70047A3FF /* APAppticsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2791E81287E89A70047A3FF /* APAppticsExtension.swift */; };
@@ -30,7 +29,6 @@
 		24EF1B98286D61A500490D90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24EF1B99286D61A500490D90 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		24EF1B9B286D61A500490D90 /* AppticsDemoMacApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppticsDemoMacApp.entitlements; sourceTree = "<group>"; };
-		24EF1BAA286D654800490D90 /* apptics-config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "apptics-config.plist"; sourceTree = "<group>"; };
 		639D8792723EFBD36BFF8D0B /* Pods_AppticsDemoMacApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppticsDemoMacApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2791E7E287E88ED0047A3FF /* AppticsDemoMacApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppticsDemoMacApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		A2791E7F287E88F20047A3FF /* NewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
@@ -53,7 +51,6 @@
 		24EF1B81286D61A400490D90 = {
 			isa = PBXGroup;
 			children = (
-				24EF1BAA286D654800490D90 /* apptics-config.plist */,
 				24EF1B8C286D61A400490D90 /* AppticsDemoMacApp */,
 				24EF1B8B286D61A400490D90 /* Products */,
 				6F78ED4DAF544F9506CFE21B /* Pods */,
@@ -166,7 +163,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				24EF1B94286D61A500490D90 /* Assets.xcassets in Resources */,
-				24EF1BAB286D654800490D90 /* apptics-config.plist in Resources */,
 				24EF1B97286D61A500490D90 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

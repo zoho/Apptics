@@ -13,7 +13,6 @@
 		24EF1BC5286D797200490D90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24EF1BC4286D797200490D90 /* Assets.xcassets */; };
 		24EF1BC8286D797200490D90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24EF1BC6286D797200490D90 /* LaunchScreen.storyboard */; };
 		24EF1BCB286D797200490D90 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24EF1BCA286D797200490D90 /* main.m */; };
-		24EF1BDC286D7A5C00490D90 /* apptics-config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24EF1BDB286D7A5C00490D90 /* apptics-config.plist */; };
 		67DE07448E732E834F63E7A0 /* Pods_AppticsDemoTvApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7CFA846268B96AEC9B494E9 /* Pods_AppticsDemoTvApp.framework */; };
 		A2791E86287E8BDE0047A3FF /* APAppticsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2791E84287E8BDC0047A3FF /* APAppticsExtension.swift */; };
 		A2791E87287E8BDE0047A3FF /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2791E85287E8BDE0047A3FF /* NewViewController.swift */; };
@@ -30,7 +29,6 @@
 		24EF1BC7286D797200490D90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24EF1BC9286D797200490D90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24EF1BCA286D797200490D90 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		24EF1BDB286D7A5C00490D90 /* apptics-config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "apptics-config.plist"; sourceTree = "<group>"; };
 		34B142312336237337D4A63F /* Pods-AppticsDemoTvApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppticsDemoTvApp.debug.xcconfig"; path = "Target Support Files/Pods-AppticsDemoTvApp/Pods-AppticsDemoTvApp.debug.xcconfig"; sourceTree = "<group>"; };
 		7ABAFEE40990DAFF61B1F5A2 /* Pods-AppticsDemoTvApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppticsDemoTvApp.release.xcconfig"; path = "Target Support Files/Pods-AppticsDemoTvApp/Pods-AppticsDemoTvApp.release.xcconfig"; sourceTree = "<group>"; };
 		A2791E83287E8BD80047A3FF /* AppticsDemoTvApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppticsDemoTvApp-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -54,7 +52,6 @@
 		24EF1BAF286D796800490D90 = {
 			isa = PBXGroup;
 			children = (
-				24EF1BDB286D7A5C00490D90 /* apptics-config.plist */,
 				24EF1BBA286D796800490D90 /* AppticsDemoTvApp */,
 				24EF1BB9286D796800490D90 /* Products */,
 				4546F21B248FCFDB0BBD65F8 /* Pods */,
@@ -167,7 +164,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				24EF1BC8286D797200490D90 /* LaunchScreen.storyboard in Resources */,
-				24EF1BDC286D7A5C00490D90 /* apptics-config.plist in Resources */,
 				24EF1BC5286D797200490D90 /* Assets.xcassets in Resources */,
 				24EF1BC3286D796800490D90 /* Main.storyboard in Resources */,
 			);

@@ -139,8 +139,8 @@ echo $(/usr/libexec/PlistBuddy -c "Delete :EVENTS_INFO" "${ZA_INFOPLIST_FILE}")
 echo $(/usr/libexec/PlistBuddy -c "Delete :API_INFO" "${ZA_INFOPLIST_FILE}")
 echo $(/usr/libexec/PlistBuddy -c "Delete :LAST_MODIFIED" "${ZA_INFOPLIST_FILE}")
     
-echo $(/usr/libexec/PlistBuddy -c "Delete :AP_INFOPLIST_FILE" "${AP_INFO_FILE_NAME}")
-echo $(/usr/libexec/PlistBuddy -c "Delete :AP_APP_GROUP_IDENTIFIER" "${AP_INFO_FILE_NAME}")
+#echo $(/usr/libexec/PlistBuddy -c "Delete :AP_INFOPLIST_FILE" "${AP_INFO_FILE_NAME}")
+#echo $(/usr/libexec/PlistBuddy -c "Delete :AP_APP_GROUP_IDENTIFIER" "${AP_INFO_FILE_NAME}")
 
 if [ ! -f "${ZA_INFOPLIST_FILE}" ]; then
 echo "dsym upload : Please check if the ${ZA_INFO_FILE_NAME} is in your projects' root dir, or else provide the proper path by passing value to the param '--config-file-path'"
@@ -339,7 +339,7 @@ else
     echo $(/usr/libexec/PlistBuddy -c "Delete :API_INFO" "${ZA_INFOPLIST_FILE}")
     echo $(/usr/libexec/PlistBuddy -c "Delete :LAST_MODIFIED" "${ZA_INFOPLIST_FILE}")
 
-    echo $(/usr/libexec/PlistBuddy -c "Delete :AP_INFOPLIST_FILE" "${AP_INFO_FILE_NAME}")
-    echo $(/usr/libexec/PlistBuddy -c "Delete :AP_APP_GROUP_IDENTIFIER" "${AP_INFO_FILE_NAME}")
+#    echo $(/usr/libexec/PlistBuddy -c "Delete :AP_INFOPLIST_FILE" "${AP_INFO_FILE_NAME}")
+#    echo $(/usr/libexec/PlistBuddy -c "Delete :AP_APP_GROUP_IDENTIFIER" "${AP_INFO_FILE_NAME}")
     
 fi
