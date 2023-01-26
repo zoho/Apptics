@@ -13,7 +13,7 @@ projectname="."
 projectfilepath=""
 SOURCE="proj"
 LANG="objc"
-PREFIX="ZA"
+PREFIX="AP"
 HELP=0
 
 ZA_INFO_FILE_NAME="apptics-config.plist"
@@ -209,7 +209,7 @@ echo "STATUS ${STATUS}"
 if [ $STATUS -eq 200 ]; then
 echo "Downloaded the data from Apptics"
 
-echo $(ruby -r "$(command dirname -- "${0}")/appticshelper.rb" -e "AppticsModerator.main '$(getXcodeproj)','${targetname}','${targetgroup}','${SRCROOT}','${LANG}','${PREFIX}','${ZA_META_FILE_NAME}'")
+echo $(ruby -r "$(command dirname -- "${0}")/apptics_event_sync.rb" -e "AppticsModerator.main '$(getXcodeproj)','${targetname}','${targetgroup}','${SRCROOT}','${LANG}','${PREFIX}','${ZA_META_FILE_NAME}'")
 echo "AppticsModerator.main '$(getXcodeproj)','${targetname}','${targetgroup}','${SRCROOT}','${LANG}','${PREFIX}','${ZA_META_FILE_NAME}'"
 
 else

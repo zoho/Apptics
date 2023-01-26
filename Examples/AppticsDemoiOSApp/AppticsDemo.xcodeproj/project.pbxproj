@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2A3C50015965E8031DBF166A /* Pods_AppticsWidgetExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8864A7AD9579D347E1B0451 /* Pods_AppticsWidgetExtension.framework */; };
 		3A289F4C3C24F97C4DB26EB8 /* Pods_AppticsDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D417BE7A512DE4EA36B73F22 /* Pods_AppticsDemoTests.framework */; };
 		A23C922228D475E00014FCBA /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A22DE1FC2762212200FF7A21 /* WidgetKit.framework */; };
 		A23C922328D475E00014FCBA /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A22DE1FE2762212200FF7A21 /* SwiftUI.framework */; };
@@ -168,7 +167,6 @@
 			files = (
 				A23C922328D475E00014FCBA /* SwiftUI.framework in Frameworks */,
 				A23C922228D475E00014FCBA /* WidgetKit.framework in Frameworks */,
-				2A3C50015965E8031DBF166A /* Pods_AppticsWidgetExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

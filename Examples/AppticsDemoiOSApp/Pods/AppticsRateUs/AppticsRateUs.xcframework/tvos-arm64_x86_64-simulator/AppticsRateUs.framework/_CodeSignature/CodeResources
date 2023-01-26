@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/APRateUs.h</key>
 		<data>
-		bV2qdhVLZztMBUNFZSI7k/9nKTQ=
+		RoWTke0k6qHJ9RcSG4r6aSHIwdA=
 		</data>
 		<key>Headers/ARCustomHandler.h</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		SSZ+jbwjCsHDj/Fh8NrImyxguB0=
+		SoohU/5/4LFkC0rEHS0bwSpABxM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>Version.debug.xcconfig</key>
 		<data>
-		DSAJ/yuqj5vvs80RZX0Z8elp8ak=
+		IbDnsvpKvtn1yUiAcPqZv0z6OJQ=
 		</data>
 		<key>Version.release.xcconfig</key>
 		<data>
-		DSAJ/yuqj5vvs80RZX0Z8elp8ak=
+		IbDnsvpKvtn1yUiAcPqZv0z6OJQ=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -39,11 +39,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bV2qdhVLZztMBUNFZSI7k/9nKTQ=
+			RoWTke0k6qHJ9RcSG4r6aSHIwdA=
 			</data>
 			<key>hash2</key>
 			<data>
-			47PP9l/CMg4D/wt+NlTGtrLRo5mipUFHoJ5kRc1EBxo=
+			5LEQOHUkbtyb5nqLq62tkq5GXu/qHVKRVglMBeEhH8g=
 			</data>
 		</dict>
 		<key>Headers/ARCustomHandler.h</key>
@@ -83,22 +83,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DSAJ/yuqj5vvs80RZX0Z8elp8ak=
+			IbDnsvpKvtn1yUiAcPqZv0z6OJQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			6/DMv2CTHnqqI6Te3+xcgl5+XYtN5YQFg1IuQALEivc=
+			junShMsaCIbg8OffOYAxXug+hQmQUMHVphO7GluL81I=
 			</data>
 		</dict>
 		<key>Version.release.xcconfig</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			DSAJ/yuqj5vvs80RZX0Z8elp8ak=
+			IbDnsvpKvtn1yUiAcPqZv0z6OJQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			6/DMv2CTHnqqI6Te3+xcgl5+XYtN5YQFg1IuQALEivc=
+			junShMsaCIbg8OffOYAxXug+hQmQUMHVphO7GluL81I=
 			</data>
 		</dict>
 	</dict>

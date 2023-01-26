@@ -7,10 +7,24 @@
 
 #ifndef APRateUs_h
 #define APRateUs_h
+/**
+ *  Apptics is a library that enables your app to send usage reports and data securly to our servers. You get Session tracking, Screen tracking and Crash Reporting. Which means, with minimal setup of initializing the framework you can get these three features working without any other configuration.
+ 
+    # Important:
+    Make sure your build settings has the following when you ship your app so that you get proper symbolicated crashes.
 
+    * Strip Build Symbols During Copy - **NO**
+    * Strip Linked Product - **NO**
+    * Strip Style - **Debugging Symbols**
+ */
 @interface APRateUs : NSObject
 
 #pragma mark — In-App Ratings and Reviews apis
+
+/**
+ *  This method call will perform initialisation of APRateUs framework.
+ *
+ */
 
 +(APRateUs* _Nonnull)listener;
 
@@ -101,6 +115,12 @@ Call this method to update user action for feedback when you open your custom fe
  */
 
 +(void) updateAppRatingShownForCurrentVersion;
+
+/**
+ This method will prevent rateus prompt being shown for that session.
+ */
+
++ (void) shouldPauseRateUsAndReview : (BOOL) status;
 
 ///**
 //This method will prompt ratings alert which will take you to the store.
