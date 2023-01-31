@@ -12,7 +12,6 @@ NS_ASSUME_NONNULL_BEGIN
 @interface APScreentracker : NSObject
 +(void) trackViewEnter:(NSString*) screenName;
 +(void) trackViewExit:(NSString*) screenName;
-
 @end
 
 NS_ASSUME_NONNULL_END

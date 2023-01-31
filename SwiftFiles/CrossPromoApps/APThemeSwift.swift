@@ -28,8 +28,8 @@ class ZAColorSwift: NSObject {
 @objc public class APThemeSwiftManager : NSObject {
     
   @objc public static var crosspromotheme = CrossPromoTheme()
-    
-   @objc public static var sharedTheme = APThemeSwift()
+
+    @objc public static var sharedTheme = APThemeSwift()
     
 //    @objc public static let instance = APThemeSwiftManager()
     
@@ -121,8 +121,13 @@ protocol APThemeSwiftDelegate : NSObject {
 
 
 @objcMembers
-@objc open class CrossPromoTheme : APThemeSwift {
+@objc public class CrossPromoTheme : APThemeSwift {
     
+ @objc public static let sharedInstance = CrossPromoTheme()
+    
+    public override init()
+     {
+     }
     
     #if !TARGET_OS_OSX && !TARGET_OS_WATCH
     
