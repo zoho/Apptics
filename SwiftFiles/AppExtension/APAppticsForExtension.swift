@@ -7,8 +7,6 @@
 
 
 import Foundation
-import AppticsFeedbackKitSwift
-
 
 @objcMembers
 class APExtensionEventList: NSObject, NSCoding {
@@ -80,6 +78,7 @@ var ExtensionEventKey = "WidgetData"
         }
     }
     
+//    class var retrievedata: [[String : Any]] {
     class func retrievedata(appGroup: String) -> [[String : Any]] {
         guard let taskData =  UserDefaults(suiteName: appGroup)?.data(forKey: ExtensionEventKey) else {
             return []
@@ -91,6 +90,25 @@ var ExtensionEventKey = "WidgetData"
         }
         
     }
+    
+//    class func retrieveallData() -> [String] {
+//        var Array = [String]()
+//        if let data = userDefaults?.dictionaryRepresentation(){
+//            for (key, value) in data {
+//                if key == ExtensionEventKey{
+//                    if let decodedPeople = try? NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(value as! Data) as? [[String : Any]] {
+//                        for object in decodedPeople{
+//                            let i = APExtensionEventList.init(object: object)
+//                            let newV = "\(i.groupName),\(i.start_time),\(i.end_time),\(i.event_Name),\(i.properties)"
+//                            Array.append(newV)
+//                        }
+//                    }
+//                }
+//            }
+//        }
+//        return Array
+//    }
+    
     
     
     @objc public class func trackEvent(groupname:String,eventName:String,property:[String : Any],appGroup:String){
@@ -108,6 +126,5 @@ var ExtensionEventKey = "WidgetData"
         
         let E = APExtensionEventList(groupName: groupname, start_time:(Int64(NSDate().timeIntervalSince1970 * 1000)) as NSNumber, event_Name: eventName)
         AppticsExtensionManager.saveEvent(E,appGroup: appGroup)
-        
     }
 }

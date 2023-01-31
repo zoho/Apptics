@@ -142,11 +142,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		YQfS+xMWFd6YJnmweeH6ch5jXoQ=
+		9a4dJJfqSfRMv3It2K4t5shd44E=
 		</data>
-		<key>LICENSE.TXT</key>
+		<key>LICENSE.txt</key>
 		<data>
-		SuYitqYPMq09CjLis663lpu2TN4=
+		n7rSP+Ex/MKT2ZssUXuZDaovCm4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -745,15 +745,15 @@
 			SU2ltYkydeGwkzDRzOh3a3Mx9vX7p+V6UdcnEapCLbk=
 			</data>
 		</dict>
-		<key>LICENSE.TXT</key>
+		<key>LICENSE.txt</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			SuYitqYPMq09CjLis663lpu2TN4=
+			n7rSP+Ex/MKT2ZssUXuZDaovCm4=
 			</data>
 			<key>hash2</key>
 			<data>
-			chyxHeYY/Pm7t9JaOJIHvyInNX5mlLwyarMqZpn5uVE=
+			GGxfAZKnVHFKflQiM92qrSh0VibgrTLjWNP1rwCvuEo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

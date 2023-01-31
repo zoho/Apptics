@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="dark"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -28,15 +28,15 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="EQf-31-G4w">
-                                <rect key="frame" x="95" y="27" width="15.5" height="40.5"/>
+                                <rect key="frame" x="95" y="29.5" width="13" height="35.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m6E-pL-1Yl">
-                                        <rect key="frame" x="0.0" y="0.0" width="15.5" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="13" height="17"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZa-wf-b0H">
-                                        <rect key="frame" x="0.0" y="24.5" width="12.5" height="16"/>
+                                        <rect key="frame" x="0.0" y="21" width="11.5" height="14.5"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                         <color key="textColor" systemColor="secondaryLabelColor"/>
                                         <nil key="highlightedColor"/>
@@ -50,7 +50,7 @@
                                     <constraint firstAttribute="height" constant="60" id="gcL-md-ZK9"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="YBa-0e-DSh">
+                            <button opaque="NO" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="YBa-0e-DSh">
                                 <rect key="frame" x="401" y="32" width="75" height="30"/>
                                 <color key="backgroundColor" red="0.086274509803921567" green="0.086274509803921567" blue="0.090196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <accessibility key="accessibilityConfiguration">

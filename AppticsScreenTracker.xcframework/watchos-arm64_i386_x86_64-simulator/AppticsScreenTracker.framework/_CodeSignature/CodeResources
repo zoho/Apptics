@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/APScreentracker.h</key>
 		<data>
-		7ZVD3lOhJWabM3ig6AJHHAvpL7M=
+		HvvkdR7Hz6GwO16RRZT2U7RjGSw=
 		</data>
 		<key>Headers/AppticsScreenTracker.h</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		uQ8EUz+6sCjXdDayazNwgCzUdcw=
+		7iejp+mGOn+wxENo7U0aUtJ4EIg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -27,11 +27,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7ZVD3lOhJWabM3ig6AJHHAvpL7M=
+			HvvkdR7Hz6GwO16RRZT2U7RjGSw=
 			</data>
 			<key>hash2</key>
 			<data>
-			yyu+aMM4aLHG0vLhqG1FTiNMXZKQYgeULa2iS/Goh6Y=
+			8LMXsgynZwlNpXjW3A413xMPXo78aZLaddtx0l9z/SY=
 			</data>
 		</dict>
 		<key>Headers/AppticsScreenTracker.h</key>

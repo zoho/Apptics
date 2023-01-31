@@ -36,8 +36,7 @@ struct promotedDatasource {
     @IBOutlet var bottomLayout: NSLayoutConstraint!
     
     var defaultTheme : APThemeSwift = APThemeSwift()
-//    var crossPromoTheme : CrossPromoTheme = CrossPromoTheme()
-    var crossPromoTheme = CrossPromoTheme.sharedInstance
+    var crossPromoTheme : CrossPromoTheme = CrossPromoTheme()
     var showAllAppsView : Bool = false
     var allAppsLink : String?
     var dataSource : [[promotedDatasource]] = []
@@ -96,7 +95,7 @@ struct promotedDatasource {
         super.viewDidLoad()
         UIView.appearance().semanticContentAttribute = .forceLeftToRight
         defaultTheme = APThemeSwiftManager.sharedTheme
-//        crossPromoTheme = APThemeSwiftManager.crosspromotheme
+        crossPromoTheme = APThemeSwiftManager.crosspromotheme
         
         let bundler = self.getcurrentBundle()
         
@@ -119,7 +118,7 @@ struct promotedDatasource {
         if let leftBarButtonItem = crossPromoTheme.leftBarButtonItem{
             self.navigationItem.leftBarButtonItem = leftBarButtonItem
         }else{
-            let backbutton = UIButton(type: .custom) // "zanalytics.crosspromotion.navbar.button.title.back"
+            let backbutton = UIButton(type: .system) // "zanalytics.crosspromotion.navbar.button.title.back"
             backbutton.setTitle(NSLocalizedString("zanalytics.crosspromotion.navbar.button.title.back", tableName: "CrossPromo", bundle: self.getcurrentBundle(), value: "Back", comment: "Back"), for: .normal)
             if let tintcolor = crossPromoTheme.tintColor {
                 backbutton.setTitleColor(tintcolor, for: .normal)
