@@ -429,7 +429,7 @@
 			buildConfigurationList = A25BD387273B454E00FA196D /* Build configuration list for PBXNativeTarget "AppticsDemo" */;
 			buildPhases = (
 				ED28666B8A0D514D23E2E4F1 /* [CP] Check Pods Manifest.lock */,
-				73CE4D252A37BAF6DD755D1E /* [CP-User] Apptics pre build */,
+				C4DC114963A81BE7020460C4 /* [CP-User] Apptics pre build */,
 				A25BD356273B454B00FA196D /* Sources */,
 				A25BD357273B454B00FA196D /* Frameworks */,
 				A25BD358273B454B00FA196D /* Resources */,
@@ -626,16 +626,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppticsDemo/Pods-AppticsDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		73CE4D252A37BAF6DD755D1E /* [CP-User] Apptics pre build */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			name = "[CP-User] Apptics pre build";
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "sh \"./Pods/Apptics-SDK/scripts/run\" --upload-symbols-for-configurations=\"Release, AppStore\"";
-		};
 		7C0A08F3BA930D5D1616452D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -657,6 +647,16 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		C4DC114963A81BE7020460C4 /* [CP-User] Apptics pre build */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "[CP-User] Apptics pre build";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sh \"./Pods/Apptics-SDK/scripts/run\" --upload-symbols-for-configurations=\"Release, AppStore\"";
 		};
 		D71E894F522993B1D8202F63 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

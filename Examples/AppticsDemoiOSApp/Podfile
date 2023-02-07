@@ -2,10 +2,10 @@
 # platform :ios, '9.0'
 
 apptics_version = '1.1.3' #debug version
-source_url = 'https://github.com/zoho/Apptics.git' #build source url.
+#source_url = 'https://github.com/zoho/Apptics.git' #build source url.
 
 #apptics_version = '1.0.7' #use non debug version for your Release build.
-#source_url = 'https://github.com/CocoaPods/Specs.git' #build source url.
+source_url = 'https://github.com/CocoaPods/Specs.git' #build source url.
 
 source 'https://github.com/CocoaPods/Specs.git'
 
@@ -15,28 +15,28 @@ target 'AppticsDemo' do
 
 # Pods for Apptics, either one is required based on your requirement.
 
-#pod 'AppticsAnalytics/Apptics', apptics_version , :source => source_url
+pod 'AppticsAnalytics', apptics_version , :source => source_url
 #pod 'AppticsAnalytics/KSCrash', apptics_version , :source => source_url
 
 ## Apptics for Objc
-#pod 'Apptics-Swift/Extension', apptics_version , :source => source_url
+#pod 'AppticsExtension', apptics_version , :source => source_url
 # Apptics-SDK for Objc
 pod 'Apptics-SDK', apptics_version , :source => source_url
-# Apptics for Swift
+## Apptics for Swift
 pod 'Apptics-Swift', apptics_version , :source => source_url
-# Apptics Feedback Kit
+## Apptics Feedback Kit
 pod 'AppticsFeedbackKit', apptics_version , :source => source_url
-## Apptics In-App Update
+### Apptics In-App Update
 pod 'AppticsInAppUpdate', apptics_version , :source => source_url
-## Apptics Rate us
+### Apptics Rate us
 pod 'AppticsRateUs', apptics_version , :source => source_url
-## Apptics RemoteConfig
+### Apptics RemoteConfig
 pod 'AppticsRemoteConfig', apptics_version , :source => source_url
-## Apptics Api Tracker
+### Apptics Api Tracker
 pod 'AppticsApiTracker', apptics_version , :source => source_url
-## Apptics Cross Promotion
+### Apptics Cross Promotion
 pod 'AppticsCrossPromotion', apptics_version , :source => source_url
-
+#
   script_phase :name => 'Apptics pre build', :script => 'sh "./Pods/Apptics-SDK/scripts/run" --upload-symbols-for-configurations="Release, AppStore"', :execution_position => :before_compile
 #script_phase :name => 'Apptics pre build', :script => 'sh "${BUILD_DIR%Build/*}SourcePackages/checkouts/Apptics-SP/scripts/run" --upload-symbols-for-configurations="Release, Appstore" "', :execution_position => :before_compile
   

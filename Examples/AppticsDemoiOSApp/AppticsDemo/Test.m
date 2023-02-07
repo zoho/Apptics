@@ -10,6 +10,7 @@
 //#import <Apptics/Analytics.h>
 //#import <Apptics/APTheme.h>
 #import <Apptics/APLog.h>
+
 //#import <AppticsScreenTracker/AppticsScreenTracker.h>
 //#import <ATTrackingManager>
 //#import <Apptics/Apptics-Swift.h>
@@ -72,6 +73,7 @@
 @implementation Test
 
 -(void) log{
+    
 //    [APLog getInstance].shouldPrint = false;
 //    APLogInfo(@"Info Log %i",isatty(STDERR_FILENO));
 //    APLogDebug(@"Info Debug %@", [@"someones@email.com" ap_privacy:APLogPrivacyPrivateMask]);

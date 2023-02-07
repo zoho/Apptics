@@ -47,7 +47,6 @@ DESC
     spec.requires_arc = true
   spec.swift_version = '5.0'
   
-  spec.ios.frameworks = 'UIKit','StoreKit'
 
     spec.ios.deployment_target = '9.1'
     spec.tvos.deployment_target = '9.0'

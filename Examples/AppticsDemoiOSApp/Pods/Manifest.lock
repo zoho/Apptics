@@ -55,6 +55,7 @@ PODS:
 DEPENDENCIES:
   - Apptics-SDK (= 1.1.3)
   - Apptics-Swift (= 1.1.3)
+  - AppticsAnalytics (= 1.1.3)
   - AppticsApiTracker (= 1.1.3)
   - AppticsCrossPromotion (= 1.1.3)
   - AppticsFeedbackKit (= 1.1.3)
@@ -63,7 +64,7 @@ DEPENDENCIES:
   - AppticsRemoteConfig (= 1.1.3)
 
 SPEC REPOS:
-  https://github.com/zoho/Apptics.git:
+  https://github.com/CocoaPods/Specs.git:
     - Apptics-SDK
     - Apptics-Swift
     - AppticsAnalytics
@@ -75,16 +76,16 @@ SPEC REPOS:
     - AppticsRemoteConfig
 
 SPEC CHECKSUMS:
-  Apptics-SDK: 12237959cd92ce91a553e20fc3b4785d756d1c73
-  Apptics-Swift: 58c5109843f0287c696c980ce677509f5dd88ac4
-  AppticsAnalytics: af535e9fa7b9243d3ab2b6f42704b4538c801fb6
-  AppticsApiTracker: fc2f2be2e6ed1a4189927fed2e71db5a891ec26e
-  AppticsCrossPromotion: efcc036e5ce46afad4c5e1f11338a5920655eabc
-  AppticsFeedbackKit: 71be91fa8fe3aab648ee9666f9430e0cfe76d094
-  AppticsInAppUpdate: e59746587e71bb0c06fa0e6916494bab0960b2d0
-  AppticsRateUs: 601d39d82bedf1130442a7eeb199fb16719a10db
-  AppticsRemoteConfig: 3eb61fe4821ac3bd2abf2bc749786541cece4e8f
+  Apptics-SDK: cda558f43f7476ab9dff16fe30c51a115e8f9dcf
+  Apptics-Swift: 133fa80ea0ff720423f6e8a14f01b2774eba4cd5
+  AppticsAnalytics: c4829f4f9710be88992e274bdd56a2ff73c7d7ee
+  AppticsApiTracker: 0394d7a3bd77dbf9ff7476440ea79a0d76e3477c
+  AppticsCrossPromotion: 2331cca75c1cbc8d3d4b4452b732b1dc745519fc
+  AppticsFeedbackKit: 2abba9d662bef4e3adeb54244f4bd1c9f7199e3f
+  AppticsInAppUpdate: 412b2dfc713b13839b3c34680ef406bd887d9518
+  AppticsRateUs: 5e5f621ed47ea345a47b599c1748ee3a82422552
+  AppticsRemoteConfig: bd89f916d9b734062288e1def2f4f95f375685de
 
-PODFILE CHECKSUM: 0ca1d819b9f275b2ed5afbdf58247c1b7377fff2
+PODFILE CHECKSUM: c0ffa551af9f42f01f22a51713e4857681df9861
 
 COCOAPODS: 1.11.3
