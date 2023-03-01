@@ -259,17 +259,19 @@ else
 fi
 
 # create dSYM .zip file
-echo "dSYM location: ${DSYM_SRC}"
+echo "BACKGROUND_PROCESS :: $PROCESS_TYPE dSYM location: ${DSYM_SRC} "
 DWARF_DATA="${DSYM_SRC}/Contents/Resources/DWARF"
 if [ ${DEBUG_INFORMATION_FORMAT} == "dwarf-with-dsym" ]; then
- 
- if [ $PROCESS_TYPE -eq 0 ]; then
+     
+ if [ $PROCESS_TYPE -eq 1 ]; then
     while ( [ ! -d $DWARF_DATA ] || ! dwarfdump -u "${DSYM_SRC}" 2> /dev/null)
     do
     echo "Waiting to finish dSYM file creation..."
     sleep 1;
     done
+    
  fi
+
     cd "${DWARF_DSYM_FOLDER_PATH}"
     mkdir -p "${DSYM_ZIP_FPATH}"
 
@@ -277,6 +279,7 @@ if [ ${DEBUG_INFORMATION_FORMAT} == "dwarf-with-dsym" ]; then
     cp -Rvf **/*.dSYM "${DSYM_ZIP_FPATH}" 2>/dev/null
 
     echo "Compressing dSYM to: ${DSYM_ZIP_FPATH} ..."
+         
     #come to the native dir.
     cd -
     #move to tmp dir to make zip.

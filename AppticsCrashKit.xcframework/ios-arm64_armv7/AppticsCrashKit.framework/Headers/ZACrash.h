@@ -41,6 +41,8 @@
 
 + (void) installCrashServicesWith:(NSURL*) url apiToken : (NSString*) apiToken UUID : (NSString*) uuid shouldReportOnStartCrash : (BOOL) shouldReportOnStartCrash minSessionDuration : (NSInteger) minSessionDuration;
 
++ (void) savePendingReports;
+
 + (void) sendPendingReports;
 
 + (void) setCrashCustomProperty:(id)object;

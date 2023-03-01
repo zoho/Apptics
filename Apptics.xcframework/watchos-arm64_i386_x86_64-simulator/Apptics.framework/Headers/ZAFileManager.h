@@ -54,6 +54,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (BOOL) bs_fileExistsAtPath : (NSString*) dirPath;
 
 + (NSArray*) getListOfCrashes;
++ (NSArray*) getCrashCount;
 + (void) archiveCrashReport:(NSDictionary*)crashReport withFileName : fileName;
 + (id) unarchiveCrashReportForFileName : fileName;
 

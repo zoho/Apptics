@@ -24,6 +24,7 @@
 		A25BD378273B454E00FA196D /* AppticsDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25BD377273B454E00FA196D /* AppticsDemoTests.swift */; };
 		A25BD383273B454E00FA196D /* AppticsDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25BD382273B454E00FA196D /* AppticsDemoUITests.swift */; };
 		A25BD62E27426C2E00FA196D /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = A25BD62D27426C2E00FA196D /* Test.m */; };
+		A2657860299A13BF0021D47E /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A265785F299A13BF0021D47E /* Media.xcassets */; };
 		A27C2856279935B900EA16CF /* TableList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27C2853279935B500EA16CF /* TableList.swift */; };
 		A27C2857279935B900EA16CF /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27C2854279935B700EA16CF /* ListCell.swift */; };
 		A27C2858279935B900EA16CF /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27C2855279935B900EA16CF /* ListViewController.swift */; };
@@ -130,6 +131,7 @@
 		A25BD62B27426C2E00FA196D /* AppticsDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppticsDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		A25BD62C27426C2E00FA196D /* Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
 		A25BD62D27426C2E00FA196D /* Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
+		A265785F299A13BF0021D47E /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		A27C2853279935B500EA16CF /* TableList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableList.swift; sourceTree = "<group>"; };
 		A27C2854279935B700EA16CF /* ListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 		A27C2855279935B900EA16CF /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
@@ -243,6 +245,7 @@
 			children = (
 				A23C923028D475E10014FCBA /* AppticsWidgetExtension.entitlements */,
 				A23C921828D45A4F0014FCBA /* WidgetExtension.entitlements */,
+				A265785F299A13BF0021D47E /* Media.xcassets */,
 				A25BD35C273B454B00FA196D /* AppticsDemo */,
 				A25BD376273B454E00FA196D /* AppticsDemoTests */,
 				A25BD381273B454E00FA196D /* AppticsDemoUITests */,
@@ -549,6 +552,7 @@
 			files = (
 				A25BD36D273B454E00FA196D /* LaunchScreen.storyboard in Resources */,
 				A25BD36A273B454E00FA196D /* Assets.xcassets in Resources */,
+				A2657860299A13BF0021D47E /* Media.xcassets in Resources */,
 				A25BD365273B454B00FA196D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
