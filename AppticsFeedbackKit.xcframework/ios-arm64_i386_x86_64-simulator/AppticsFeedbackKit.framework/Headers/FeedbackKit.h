@@ -166,6 +166,8 @@ Set sender email address to which the support emails will be sent from feedback 
 
 + (void) setFromEmailAddress:(NSString*_Nonnull) email __deprecated_msg("use setSenderEmailAddress method instead.");
 
++ (void) enableAnonymousUserAlert:(BOOL)status;
+    
 + (void) openNativeMailAppWithLogs : (BOOL) includeLogs diagnosticInfo : (BOOL) includeDiagnosticInfo viewController : (ZAIncludeLogConsent*) viewController;
 
 + (void) dismissViewController : (ZAIncludeLogConsent*) viewController;
@@ -213,6 +215,10 @@ Set this true to mask the text detected in a screenshot by default. Setting to F
 -(void) setCustomHandler:(id <FKCustomHandler> _Nonnull) handler;
 
 #pragma mark - Other Important Properties
+/**
+ :nodoc:
+ */
+@property (nonatomic, assign) BOOL anonymStatus;
 /**
  :nodoc:
  */
