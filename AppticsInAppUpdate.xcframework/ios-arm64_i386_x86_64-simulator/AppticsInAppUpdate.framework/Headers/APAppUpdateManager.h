@@ -60,7 +60,7 @@ typedef void (^updateResponseBlock)(NSDictionary *_Nullable updateInfo);
  
  - Note :
  You should configure the update details in the [Apptics web](https://apptics.zoho.com) and conform openURL protocol by extending APCustomHandler and set back to us.
- 1. Imlementing the completion block `completionHandler` will disable the Apptics UI, you can show your custom UI inside completion handler on your own.
+ 1. Implementing the completion block `completionHandler` will disable the Apptics UI, you can show your custom UI inside completion handler on your own.
  2. SDK will present update popup up on top of the view controller you pass, else popup will be presented on top of any view controller on navigation stack.
 
  */

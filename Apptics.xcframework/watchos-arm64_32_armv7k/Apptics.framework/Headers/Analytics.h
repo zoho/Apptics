@@ -339,6 +339,16 @@ typedef void (^internbgConsoleLogsRequestSuccessBlock)(void);
 
 -(BOOL)isReachable;
 
+#pragma mark - Global Engagement Hit APIs
+
+-(void) resetGlobalEngagementCount;
+
+-(NSNumber*) getHitCountOfEvent : (NSString*) event inGroup : (NSString*) group;
+
+-(NSNumber*) getHitCountOfScreen : (NSString*) screen;
+
+-(NSNumber*) getSessionCount;
+                
 @end
 
 NS_ASSUME_NONNULL_END

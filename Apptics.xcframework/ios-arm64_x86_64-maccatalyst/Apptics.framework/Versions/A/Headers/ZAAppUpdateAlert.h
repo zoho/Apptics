@@ -35,6 +35,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy, nullable) void (^closeHandler)(id _Nullable sender);
 
 @property (strong, nonatomic) id <APAppUpdateConsentTheme> _Nonnull customAlertTheme;
+@property (strong, nonatomic) id <APAppUpdateConsentTheme> _Nonnull defaultCustomAlertTheme;
 
 @property (strong, nonatomic) IBOutlet UIView *view;
 @property (weak, nonatomic) IBOutlet UIImageView *bannerImageView;

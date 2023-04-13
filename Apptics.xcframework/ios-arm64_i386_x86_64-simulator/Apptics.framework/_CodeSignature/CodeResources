@@ -23,7 +23,7 @@
 		</data>
 		<key>AppticsResources.bundle/Info.plist</key>
 		<data>
-		vQqzRytWidq7RL8E7hdMZABSu98=
+		Hzq3Zb0KH7zeghYg5hsh9950VkU=
 		</data>
 		<key>AppticsResources.bundle/ZAAppUpdateAlert.nib</key>
 		<data>
@@ -67,7 +67,7 @@
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		HrixZjFVKoQ3YVrBpNFlVvyyC88=
+		7+1lofYwenzQJC8ruel3tq5tlbA=
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -75,7 +75,7 @@
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		DW5QLIbDGFqF14Fg2IcnLq0im6Q=
+		tA1q++acumxTvln/WNJGgdspqBg=
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeResources</key>
 		<data>
@@ -524,15 +524,15 @@
 		</data>
 		<key>Headers/APReviewViewController.h</key>
 		<data>
-		S6VusiLxL5JcZyvL5VSYgWggnAQ=
+		JMbGiVzQKRh6pbBwB4DLCALyBcw=
 		</data>
 		<key>Headers/APTheme.h</key>
 		<data>
-		Fs9uvG1E9y9VBspAeN5ejpWPMQ4=
+		XB33KIqUuQLEwrjlJquAeA083G8=
 		</data>
 		<key>Headers/Analytics.h</key>
 		<data>
-		CkTnRZEiY7h3jA+oqUnApo+QB78=
+		wmZmvbBVbUXr47g1ICMN1nFanUE=
 		</data>
 		<key>Headers/Apptics-Swift.h</key>
 		<data>
@@ -568,7 +568,7 @@
 		</data>
 		<key>Headers/ZAAppUpdateAlert.h</key>
 		<data>
-		Mv7/p+JgmHHz4d6AepzaHRw/XfA=
+		KzNFA/kMI/kcybnlkf9CJaxc1vA=
 		</data>
 		<key>Headers/ZAAppupdatePopupInfo.h</key>
 		<data>
@@ -676,11 +676,11 @@
 		</data>
 		<key>Headers/ZAUserConsentAlert.h</key>
 		<data>
-		N92+Npo4nmSd8mdJzGy0+fzuZT0=
+		9RE63VSri6mYl15z0OIW+R51QgA=
 		</data>
 		<key>Headers/ZAUserConsentAlertV2.h</key>
 		<data>
-		bUjjIi3hmich0CgDz7s1Pmgn2Ao=
+		4YsotegO2xkefWezj9rY0MEym/U=
 		</data>
 		<key>Headers/ZAnalyticsUIApplication.h</key>
 		<data>
@@ -688,7 +688,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		0VRN/2IRl9I9U/J5Fe+ygHNMF0Y=
+		G3I846HkMy+cSDyR9eTDtvP3Fnw=
 		</data>
 		<key>Modules/Apptics.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -772,11 +772,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vQqzRytWidq7RL8E7hdMZABSu98=
+			Hzq3Zb0KH7zeghYg5hsh9950VkU=
 			</data>
 			<key>hash2</key>
 			<data>
-			U8sQr/rtgIverWZttwlUBIHt8OXpSyxE8pk5hLD2C14=
+			bRuZfWu2qAquv5OOWbpB3+iZXXKZukjHbemXJlo0lkE=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/ZAAppUpdateAlert.nib</key>
@@ -893,11 +893,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HrixZjFVKoQ3YVrBpNFlVvyyC88=
+			7+1lofYwenzQJC8ruel3tq5tlbA=
 			</data>
 			<key>hash2</key>
 			<data>
-			S7GlaN83qp2KOcyn7tXnfVNKOJUfZKpigK2HmWNJlu4=
+			gLK/aMKW/MAUxxBt4n4Lx9+R7xcabovs5Az+Y00jMNs=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/_CodeSignature/CodeRequirements</key>
@@ -915,11 +915,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DW5QLIbDGFqF14Fg2IcnLq0im6Q=
+			tA1q++acumxTvln/WNJGgdspqBg=
 			</data>
 			<key>hash2</key>
 			<data>
-			aAMdor4DUA9amm/uEH78GS6DWFxN6iz9lku89W+Mnt4=
+			FwKtrw7GNVqK+QpZ5xu5+aDbpJ4biI3hikwYIofm1u4=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/_CodeSignature/CodeResources</key>
@@ -1715,33 +1715,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			S6VusiLxL5JcZyvL5VSYgWggnAQ=
+			JMbGiVzQKRh6pbBwB4DLCALyBcw=
 			</data>
 			<key>hash2</key>
 			<data>
-			yu4daGl2JGfiL78GlppqMWnJrjm5FBpVGxPTKU63ijc=
+			LILJ2DrCrjQd5RPxhq+Sc3qwOZW0UlB7zBMlVXUqnC8=
 			</data>
 		</dict>
 		<key>Headers/APTheme.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Fs9uvG1E9y9VBspAeN5ejpWPMQ4=
+			XB33KIqUuQLEwrjlJquAeA083G8=
 			</data>
 			<key>hash2</key>
 			<data>
-			bRef4tWy/dcTIaLxWILLAQrTX6qGSGogY1hvaFIMr54=
+			0XAjOniu8YCMOXfHv66+h/2ketU9KAy24GynJfFFC10=
 			</data>
 		</dict>
 		<key>Headers/Analytics.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			CkTnRZEiY7h3jA+oqUnApo+QB78=
+			wmZmvbBVbUXr47g1ICMN1nFanUE=
 			</data>
 			<key>hash2</key>
 			<data>
-			BHcT0XbvsA5203+SDAlfAmNDiaFqdIqtykHrtt0ZPBM=
+			rpdciTj+vaQ8YR3rPd18Sk41g/BgXzlF5KSLCS0WIgU=
 			</data>
 		</dict>
 		<key>Headers/Apptics-Swift.h</key>
@@ -1836,11 +1836,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Mv7/p+JgmHHz4d6AepzaHRw/XfA=
+			KzNFA/kMI/kcybnlkf9CJaxc1vA=
 			</data>
 			<key>hash2</key>
 			<data>
-			hsPG5VGg5P7/2/YBFVEHipTO/iw/RK25ourd5joRew4=
+			qYCgugzzv5UiG6XgaJ6qfI+/hNOzQEG64NtGZ+qNyXg=
 			</data>
 		</dict>
 		<key>Headers/ZAAppupdatePopupInfo.h</key>
@@ -2133,22 +2133,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			N92+Npo4nmSd8mdJzGy0+fzuZT0=
+			9RE63VSri6mYl15z0OIW+R51QgA=
 			</data>
 			<key>hash2</key>
 			<data>
-			WOf8CmW8qxH9BYkB1EdwL2oHXuHjYJr7OPnu+XOIaAI=
+			iJnmg2BTABEI7RBfcrmjoFeFrc/catgUaP6JiCxCm4k=
 			</data>
 		</dict>
 		<key>Headers/ZAUserConsentAlertV2.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			bUjjIi3hmich0CgDz7s1Pmgn2Ao=
+			4YsotegO2xkefWezj9rY0MEym/U=
 			</data>
 			<key>hash2</key>
 			<data>
-			MSZVmSqwuB8Wy/Gcjczmb31774ND7Tm9xkMGpXisk7Q=
+			gsYZLS6PJsueUw2x/sZEP+WJJ9pvF6HXesxcJDFw4b8=
 			</data>
 		</dict>
 		<key>Headers/ZAnalyticsUIApplication.h</key>

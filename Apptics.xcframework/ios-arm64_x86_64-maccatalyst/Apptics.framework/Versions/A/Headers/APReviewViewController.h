@@ -20,6 +20,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (strong, nonatomic) id <APTheme> theme;
 @property (strong, nonatomic) id <APFeedbackTheme> feedbackTheme;
+
+@property (strong, nonatomic) id <APTheme> defaultTheme;
+@property (strong, nonatomic) id <APFeedbackTheme> defaultFeedbackTheme;
+
 @property (nullable, nonatomic, retain) NSString *logText;
 @property (nonatomic, assign) BOOL isReviewScreen;
 @property (nonatomic, retain) NSString *fileName;
