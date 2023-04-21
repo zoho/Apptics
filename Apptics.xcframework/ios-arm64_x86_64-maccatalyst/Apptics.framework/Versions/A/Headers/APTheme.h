@@ -18,11 +18,11 @@ typedef enum : NSInteger {
 } DropDownImage;
 
 @interface APThemeUtil : NSObject
-
+#if !TARGET_OS_OSX && !TARGET_OS_WATCH
 + (void)appendAttributes :(NSDictionary *)attributes toButton : (UIButton*) button;
 + (void)appendAttributes :(NSDictionary *)attributes toLabel : (UILabel*) label;
 + (void)appendAttributes :(NSDictionary *)attributes toTextView : (UITextView*) textView;
-
+#endif
 @end
 
 @protocol APTheme <NSObject>
