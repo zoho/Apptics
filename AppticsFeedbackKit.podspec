@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
 spec.name             = "AppticsFeedbackKit"
-spec.version          = "1.1.6b"
+spec.version          = "1.1.6c"
 spec.summary          = "Apptics FeedbackKit for iOS"
 spec.license          = { :type => "MIT", :text=> <<-LICENSE
 MIT License
