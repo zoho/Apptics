@@ -35,6 +35,7 @@ extern NSString *kZAEngagementDataUploadFailureNotificationBg;
 @property (nonatomic, strong) NSString *apiToken;
 @property (nonatomic, strong) NSString *sessionToken;
 @property (nonatomic, strong) APAAAUtil *aaaUtil;
+@property (nonatomic, strong) NSURLSession *session;
 
 #if !TARGET_OS_OSX && !TARGET_OS_WATCH
 @property (nonatomic) UIBackgroundTaskIdentifier backgroundUpdateTask;

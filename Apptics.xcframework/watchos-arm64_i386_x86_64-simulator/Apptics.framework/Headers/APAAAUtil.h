@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface APAAAUtil : NSObject
 
 @property (nonatomic, strong) dispatch_queue_t serialDispatchQueue;
-@property (nonatomic, strong) NSOperationQueue *operationQueue;
+//@property (nonatomic, strong) NSOperationQueue *operationQueue;
 @property (nonatomic) BOOL operationinProgress;
 @property (nonatomic, strong) NSMutableArray *successblocks;
 @property (nonatomic, strong) NSMutableArray *failureblocks;

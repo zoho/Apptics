@@ -108,9 +108,7 @@ var ExtensionEventKey = "WidgetData"
 //        }
 //        return Array
 //    }
-    
-    
-    
+            
     @objc public class func trackEvent(groupname:String,eventName:String,property:[String : Any],appGroup:String){
         
         let jsonData = try! JSONSerialization.data(withJSONObject: property, options: [])
