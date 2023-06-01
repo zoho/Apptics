@@ -119,6 +119,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (void) endTimedEvent:(NSString *_Nonnull)eventName withGroup:(NSString*_Nonnull)group;
 
++ (void) addExtensionEventWithName:(NSString* _Nullable)_eventName
+                            group:(NSString* _Nullable)_group
+                            startTime : (NSNumber* _Nullable) event_start_Time
+                            endTime : (NSNumber* _Nullable) event_end_Time
+                            andProperties:(NSDictionary* _Nullable)props
+                           isTimed:(BOOL)isTimed;
+
 /**
  *  Use this method to track events. Make sure you give meaningful names for events. So that everyone, not just developers understand the event names.
  *  Call this when the event is completed. Put it in a success block if you have to, or put this line just below the line that calls the event, if blocks and closures aren't your thing.
