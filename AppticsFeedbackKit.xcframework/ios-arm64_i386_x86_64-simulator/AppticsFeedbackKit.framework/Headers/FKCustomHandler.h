@@ -30,6 +30,8 @@ NS_ASSUME_NONNULL_BEGIN
 -(void) sendReportBegan;
 -(void) sendReportEndWithSuccess;
 -(void) sendReportEndWithFailure;
+-(void) sendFeedbackEndWithReportBugActive;
+
 @end
 
 @interface FKCustomHandlerManager : NSObject
@@ -43,6 +45,8 @@ NS_ASSUME_NONNULL_BEGIN
 +(void) sendFeedbackBegan;
 +(void) sendFeedbackEndWithSuccess;
 +(void) sendFeedbackEndWithFailure;
++(void) sendFeedbackEndWithReportBugActive;
+
 +(NSString* _Nullable) setFeedbackTag;
 
 +(void) sendReportBegan;

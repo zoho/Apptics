@@ -4,3 +4,8 @@ framework module Apptics {
   export *
   module * { export * }
 }
+
+module Apptics.Swift {
+    header "Apptics-Swift.h"
+    requires objc
+}

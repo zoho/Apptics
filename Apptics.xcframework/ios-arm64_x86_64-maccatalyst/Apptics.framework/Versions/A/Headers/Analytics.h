@@ -75,6 +75,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property BOOL enableBackgroundTask;
 
 @property BOOL isApplicationInBg;
+@property (nonatomic,strong) NSString *consentWindowStatus;//from which window it came
 
 @property UserConsentPresentCompletionBlock _Nullable userConsentPresentCompletionBlock;
 

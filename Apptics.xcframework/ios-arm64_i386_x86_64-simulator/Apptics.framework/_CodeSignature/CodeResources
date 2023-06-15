@@ -532,7 +532,11 @@
 		</data>
 		<key>Headers/Analytics.h</key>
 		<data>
-		CkTnRZEiY7h3jA+oqUnApo+QB78=
+		hn6GHdV7ANPdZwNinAdz3rNfkyY=
+		</data>
+		<key>Headers/Apptics-Swift.h</key>
+		<data>
+		jdnNnREbKmD+hpjdxUSU1XCA8tU=
 		</data>
 		<key>Headers/Apptics.h</key>
 		<data>
@@ -592,7 +596,7 @@
 		</data>
 		<key>Headers/ZAEnums.h</key>
 		<data>
-		2BdmTZZwn5yx/x3eSFceZmdO2tg=
+		MPR7zT1ggFLLt0i6LVy9Ij/4FeY=
 		</data>
 		<key>Headers/ZAEvent.h</key>
 		<data>
@@ -686,9 +690,45 @@
 		<data>
 		htBcKFO7xnDs+mdL9dNfTJ+zOco=
 		</data>
+		<key>Modules/Apptics.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
+		<data>
+		qaEfr5EICFItC7yXbP2wEPfRBrg=
+		</data>
+		<key>Modules/Apptics.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
+		<data>
+		s/O3fHdxYShTidi4KRhLtqVghEw=
+		</data>
+		<key>Modules/Apptics.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
+		<data>
+		I39rdr2GcDfK71DgHCACfU2/j5o=
+		</data>
+		<key>Modules/Apptics.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
+		<data>
+		oTLJu5cfgDlD98WoPGgiNbFxi/Y=
+		</data>
+		<key>Modules/Apptics.swiftmodule/i386-apple-ios-simulator.swiftinterface</key>
+		<data>
+		2mDJ44FdbR8PwAC6OSwzxR+iKqc=
+		</data>
+		<key>Modules/Apptics.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
+		<data>
+		ydZ4fjQ5ju7TTltdek/7KRUm5+Y=
+		</data>
+		<key>Modules/Apptics.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<data>
+		6fGPdDEHqr26EJZQOcnaxPf6qsI=
+		</data>
+		<key>Modules/Apptics.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
+		<data>
+		thaqLFrZGE0G65R2Qm4SZDN8DRY=
+		</data>
+		<key>Modules/Apptics.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<data>
+		GwgCasIQS02wTsgjJxRm0FFqfS4=
+		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		vyvGDgYG+rYeSf9KICtJ0eqvvlA=
+		rrmNYjIcD065qnDrQAUD6ylYZ5k=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -1697,11 +1737,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CkTnRZEiY7h3jA+oqUnApo+QB78=
+			hn6GHdV7ANPdZwNinAdz3rNfkyY=
 			</data>
 			<key>hash2</key>
 			<data>
-			BHcT0XbvsA5203+SDAlfAmNDiaFqdIqtykHrtt0ZPBM=
+			sAsQSFzgnZQ27sQmNMn5CZoEBMJ/m7dZ4ss/yLgseQI=
+			</data>
+		</dict>
+		<key>Headers/Apptics-Swift.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jdnNnREbKmD+hpjdxUSU1XCA8tU=
+			</data>
+			<key>hash2</key>
+			<data>
+			GqluLBz/+oUt20OelZ7dJ9X3vxScB9zWfwYlF11SbIk=
 			</data>
 		</dict>
 		<key>Headers/Apptics.h</key>
@@ -1862,11 +1913,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2BdmTZZwn5yx/x3eSFceZmdO2tg=
+			MPR7zT1ggFLLt0i6LVy9Ij/4FeY=
 			</data>
 			<key>hash2</key>
 			<data>
-			Mnr4RPipX456EskTbrDShzVigdLYANMNz2UfuxR97Zs=
+			Y6y+Dk15kbiGkjZSNtRKATPL6SHj1e/agWQ/t29SHcU=
 			</data>
 		</dict>
 		<key>Headers/ZAEvent.h</key>
@@ -2111,15 +2162,114 @@
 			UN3siXvMJpJN/xYniFzfliIpE9idXKPN3bj1I71qGCE=
 			</data>
 		</dict>
+		<key>Modules/Apptics.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qaEfr5EICFItC7yXbP2wEPfRBrg=
+			</data>
+			<key>hash2</key>
+			<data>
+			CqzkMrVtrmF2q1GXip1pqBqEUTcvjPqGFYOfM+xVOH8=
+			</data>
+		</dict>
+		<key>Modules/Apptics.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			s/O3fHdxYShTidi4KRhLtqVghEw=
+			</data>
+			<key>hash2</key>
+			<data>
+			VBG/XuYUsimbc6aUzNZRbe0WaNf6YqeZ85TjQ/IQ6oI=
+			</data>
+		</dict>
+		<key>Modules/Apptics.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			I39rdr2GcDfK71DgHCACfU2/j5o=
+			</data>
+			<key>hash2</key>
+			<data>
+			u3yJz/TRTK064WsE7LpiwSWM3Pe8SMdU+tK2WidYiMs=
+			</data>
+		</dict>
+		<key>Modules/Apptics.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			oTLJu5cfgDlD98WoPGgiNbFxi/Y=
+			</data>
+			<key>hash2</key>
+			<data>
+			Ykf57yvc2V78Xy22CWyANLMGqTofPj3/mL4n8+I0e44=
+			</data>
+		</dict>
+		<key>Modules/Apptics.swiftmodule/i386-apple-ios-simulator.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2mDJ44FdbR8PwAC6OSwzxR+iKqc=
+			</data>
+			<key>hash2</key>
+			<data>
+			zhIYncjFKuiwircaritVCSldJb3bV27uvxpIfPS7hhU=
+			</data>
+		</dict>
+		<key>Modules/Apptics.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ydZ4fjQ5ju7TTltdek/7KRUm5+Y=
+			</data>
+			<key>hash2</key>
+			<data>
+			vUGUPWZFe9x2k3vamh8OHGs31pxxrTUmcbXdPjYu23E=
+			</data>
+		</dict>
+		<key>Modules/Apptics.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6fGPdDEHqr26EJZQOcnaxPf6qsI=
+			</data>
+			<key>hash2</key>
+			<data>
+			cmVYNj0R3+tEcsBf7kObUtc4IHisyE6OpZXlchn+iuo=
+			</data>
+		</dict>
+		<key>Modules/Apptics.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			thaqLFrZGE0G65R2Qm4SZDN8DRY=
+			</data>
+			<key>hash2</key>
+			<data>
+			9ERw9/DRk1C/2RU98BW988xKJ1AFxMzBntleyXa69a8=
+			</data>
+		</dict>
+		<key>Modules/Apptics.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GwgCasIQS02wTsgjJxRm0FFqfS4=
+			</data>
+			<key>hash2</key>
+			<data>
+			iWN1vVGL2pIbv0+kGrIvHoZYaARiZSpjEQXo9yWTLaA=
+			</data>
+		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vyvGDgYG+rYeSf9KICtJ0eqvvlA=
+			rrmNYjIcD065qnDrQAUD6ylYZ5k=
 			</data>
 			<key>hash2</key>
 			<data>
-			cIcDfbPqw84yrN2vO8sC6BSuTXHJnziyce9aVs2113g=
+			h5d2C+aAE/WU6RMo5GTB10zTR3VY7wxAYQHJpX/ZZho=
 			</data>
 		</dict>
 	</dict>

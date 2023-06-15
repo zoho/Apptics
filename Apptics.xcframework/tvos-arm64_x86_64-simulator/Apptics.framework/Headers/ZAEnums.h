@@ -193,7 +193,7 @@ typedef NS_ENUM(NSUInteger, ZUAlertType)
 {
   ZUAlertTypeIgnore = 1,   // Presents User with option to download the app now, remind him/her later, or to skip/ignore this version all together
   ZUAlertTypeRemind,       // Presents user with option to update app now or at next launch
-  ZUAlertTypeCustom,        // Customize the app update to your app
+    ZUAlertTypeForceUpdate,        // Customize the app update to your app
   ZUAlertTypeNone          // Don't show the alert type , useful for skipping Patch, Minor, Major updates
 };
 

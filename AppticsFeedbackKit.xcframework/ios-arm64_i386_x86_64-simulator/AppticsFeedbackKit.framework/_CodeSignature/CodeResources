@@ -10,11 +10,27 @@
 		</data>
 		<key>Headers/FKCustomHandler.h</key>
 		<data>
-		UFud8XYkMNYQgSVWG04Mmras40I=
+		5okorWElF21jnj8193HXbyE0I3I=
 		</data>
 		<key>Headers/FeedbackKit.h</key>
 		<data>
-		cD/Idj+OdkJ2Yc3pYiYWTkaBuE8=
+		T6anvoCohDsG0E6raQnmSTBt5Q4=
+		</data>
+		<key>Headers/ZAArrowCanvasView.h</key>
+		<data>
+		BE6+PM+L9IRtAKVn5C8tob9r+LI=
+		</data>
+		<key>Headers/ZAArrowView.h</key>
+		<data>
+		PEYrJF8E3fw+5THlt0JHn/t/vv0=
+		</data>
+		<key>Headers/ZADragBlurView.h</key>
+		<data>
+		2q0cacflIfhSH9WEhwF7T9HhcGc=
+		</data>
+		<key>Headers/ZAMathLibrary.h</key>
+		<data>
+		i1A6O5OHH7gtqirWiHAwszzRsPA=
 		</data>
 		<key>Headers/ZAPresenter.h</key>
 		<data>
@@ -906,22 +922,66 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UFud8XYkMNYQgSVWG04Mmras40I=
+			5okorWElF21jnj8193HXbyE0I3I=
 			</data>
 			<key>hash2</key>
 			<data>
-			OZ7nWen66MsxJVB5y6jFsOfZUnybJOPYjrP0dnBYx1o=
+			BrM9apFk03oYlAvysT36DLlTvmQwltr6qKwIDGdP/Mc=
 			</data>
 		</dict>
 		<key>Headers/FeedbackKit.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			cD/Idj+OdkJ2Yc3pYiYWTkaBuE8=
+			T6anvoCohDsG0E6raQnmSTBt5Q4=
 			</data>
 			<key>hash2</key>
 			<data>
-			izuBmSLenTuki6wtMYGhqql3cVYSp9y2jYwN2nHXPEM=
+			eiOFLL122LALXuPOxI+5sBDE8tY3B8cz3m1r5LDBgEU=
+			</data>
+		</dict>
+		<key>Headers/ZAArrowCanvasView.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BE6+PM+L9IRtAKVn5C8tob9r+LI=
+			</data>
+			<key>hash2</key>
+			<data>
+			P+eFa3i2tMyITcXjnJW9bW8LMHFlW9Zwq/Phh0QiSuQ=
+			</data>
+		</dict>
+		<key>Headers/ZAArrowView.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PEYrJF8E3fw+5THlt0JHn/t/vv0=
+			</data>
+			<key>hash2</key>
+			<data>
+			qGAjI1H+m7dVcWs4LmSttd0OlFOZzgstgdgEohACvu8=
+			</data>
+		</dict>
+		<key>Headers/ZADragBlurView.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2q0cacflIfhSH9WEhwF7T9HhcGc=
+			</data>
+			<key>hash2</key>
+			<data>
+			O94z+D0og6NmiT/dxBINY9UYltuSt+9gps3QwCOQZmE=
+			</data>
+		</dict>
+		<key>Headers/ZAMathLibrary.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			i1A6O5OHH7gtqirWiHAwszzRsPA=
+			</data>
+			<key>hash2</key>
+			<data>
+			y9LpCfEY3pilNhEBK6/oLOVuaUoHYTJGLiyjzfTlN3w=
 			</data>
 		</dict>
 		<key>Headers/ZAPresenter.h</key>

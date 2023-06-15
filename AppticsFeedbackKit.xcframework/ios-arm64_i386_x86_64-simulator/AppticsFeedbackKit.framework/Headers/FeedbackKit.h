@@ -17,6 +17,9 @@
 #import <Apptics/APTheme.h>
 #import <AppticsFeedbackKit/FKCustomHandler.h>
 #import <MessageUI/MessageUI.h>
+#import "ZAArrowCanvasView.h"
+#import "ZADragBlurView.h"
+
 @class ZAIncludeLogConsent;
 /**
  * The FeedbackKit class allows you to use the features of the Feedback module. Check out the properties and methods for more documentation.
@@ -167,6 +170,8 @@ Set sender email address to which the support emails will be sent from feedback 
 + (void) setFromEmailAddress:(NSString*_Nonnull) email __deprecated_msg("use setSenderEmailAddress method instead.");
 
 + (void) enableAnonymousUserAlert:(BOOL)status;
++ (void) reducedTransparencyStatus:(BOOL) status;
+
     
 + (void) openNativeMailAppWithLogs : (BOOL) includeLogs diagnosticInfo : (BOOL) includeDiagnosticInfo viewController : (ZAIncludeLogConsent*) viewController;
 
@@ -219,6 +224,12 @@ Set this true to mask the text detected in a screenshot by default. Setting to F
  :nodoc:
  */
 @property (nonatomic, assign) BOOL anonymStatus;
+@property (nonatomic, assign) BOOL setTransparencyStatus;
+@property (nonatomic) BOOL maskText;
+@property (nonatomic,strong) NSMutableArray*arrayOfimages;
+@property NSString* feedback_KitType;
+@property NSString* feedback_KitScreenCancel; //property used only to check floating bottom view closed or not
+
 /**
  :nodoc:
  */
@@ -279,6 +290,11 @@ extern NSString *bImageUploadFailureNotification;
  */
 extern NSString *bLogUploadFailureNotification;
 
++ (NSString*_Nullable) getLocalizableStringForKey : (NSString*_Nonnull) key;
+/**
+ :nodoc:
+ */
++ (ZAArrowCanvasView*) createArrowCanvasView : (CGRect)frame;
 
 @end
 
