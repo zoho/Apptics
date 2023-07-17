@@ -54,4 +54,28 @@ sc.source_files = 'scripts/*'
 sc.preserve_paths = 'scripts/*'
 end
 
+spec.subspec 'FeedbackKit' do |an|
+an.dependency 'AppticsFeedbackKitSwift', "#{spec.version}"
+end
+
+spec.subspec 'ApiTracker' do |an|
+an.dependency 'AppticsApiTracker', "#{spec.version}"
+end
+
+spec.subspec 'InAppUpdate' do |an|
+an.dependency 'AppticsInAppUpdate', "#{spec.version}"
+end
+
+spec.subspec 'RateUs' do |an|
+an.dependency 'AppticsRateUs', "#{spec.version}"
+end
+
+spec.subspec 'RemoteConfig' do |an|
+an.dependency 'AppticsRemoteConfig', "#{spec.version}"
+end
+
+spec.subspec 'Extension' do |an|
+an.dependency 'AppticsExtension', "#{spec.version}"
+end
+
 end

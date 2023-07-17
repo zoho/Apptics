@@ -48,7 +48,7 @@ ru.vendored_frameworks = 'AppticsRateUs.xcframework'
 ru.ios.dependency 'AppticsAnalytics/Apptics', "#{spec.version}"
 ru.tvos.dependency 'AppticsAnalytics/Apptics', "#{spec.version}"
 
-ru.ios.dependency 'AppticsFeedbackKit', "#{spec.version}"
+ru.ios.dependency 'AppticsFeedbackKitSwift', "#{spec.version}"
 
 end
 
