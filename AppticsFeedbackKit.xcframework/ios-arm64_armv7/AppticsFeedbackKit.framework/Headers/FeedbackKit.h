@@ -19,6 +19,7 @@
 #import <MessageUI/MessageUI.h>
 #import "ZAArrowCanvasView.h"
 #import "ZADragBlurView.h"
+#import "FeedbackDiagosticInfo.h"
 
 @class ZAIncludeLogConsent;
 /**
@@ -141,7 +142,13 @@ NS_ASSUME_NONNULL_BEGIN
  Set diagnostic information in the format of dictionary @[@"key":@"<value>"] of array.
  */
 
-+(void) setDiagnosticInfo : (NSArray<NSArray<NSDictionary*>*>* _Nonnull) info;
++(void) setDiagnosticInfo : (NSArray<NSArray<NSDictionary*>*>* _Nonnull) info __deprecated_msg("use setDiagnosticInfoDict method instead.");;
+
+/**
+ Set diagnostic information in the format of dictionary [@"key":@"value"]
+ */
+
++(void) setDiagnosticInfoObject : (FeedbackDiagosticInfo* _Nonnull) diagnosticInfo;
 
 /**
  Send silent report with trace.
@@ -250,6 +257,10 @@ Set this true to mask the text detected in a screenshot by default. Setting to F
  :nodoc:
  */
 @property (nonatomic, strong) NSArray *diagnoInfo;
+/**
+ :nodoc:
+ */
+@property (nonatomic, strong) FeedbackDiagosticInfo *feedbackDiagosticInfo;
 /**
  :nodoc:
  */

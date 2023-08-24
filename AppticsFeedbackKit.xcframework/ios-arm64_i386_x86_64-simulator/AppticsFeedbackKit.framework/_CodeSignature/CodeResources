@@ -12,9 +12,13 @@
 		<data>
 		5okorWElF21jnj8193HXbyE0I3I=
 		</data>
+		<key>Headers/FeedbackDiagosticInfo.h</key>
+		<data>
+		BXFISTBQ3aiwogrzyg8E321T5bY=
+		</data>
 		<key>Headers/FeedbackKit.h</key>
 		<data>
-		T6anvoCohDsG0E6raQnmSTBt5Q4=
+		O6HddzWUMEjF2OK20Lo/bv3p59M=
 		</data>
 		<key>Headers/ZAArrowCanvasView.h</key>
 		<data>
@@ -38,7 +42,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		b8ZMkCyjaacYvX08Z8IuDsLGT7A=
+		ywhcmUQZPWMKnW8dgnjG0LR1D2c=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -100,15 +104,15 @@
 		</data>
 		<key>ZBugSquashResources.bundle/Info.plist</key>
 		<data>
-		TwxCWWARpz7GLTHftKs+k4Sc2IU=
+		+BLhUKav+Y+Wf9verD4kNUbPO2Q=
 		</data>
 		<key>ZBugSquashResources.bundle/NewBugViewController.nib/objects-11.0+.nib</key>
 		<data>
-		P/kx8Qcg+p/56pNIZkd6fg1LIO0=
+		08kRYsOfC+uc7e1l8VhnB9gU++w=
 		</data>
 		<key>ZBugSquashResources.bundle/NewBugViewController.nib/runtime.nib</key>
 		<data>
-		JCvVAFL+IkEnpddQn1AK+n5bnlI=
+		KPykMomHVvONcbEUsKgxuif6P3A=
 		</data>
 		<key>ZBugSquashResources.bundle/Screenshot-app.ttf</key>
 		<data>
@@ -184,7 +188,7 @@
 		</data>
 		<key>ZBugSquashResources.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		agWPox6aOZtBNIgBzA5sSXjkoU8=
+		ELbFnGk9HblyQ7knz1wL02dypc4=
 		</data>
 		<key>ZBugSquashResources.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -192,11 +196,11 @@
 		</data>
 		<key>ZBugSquashResources.bundle/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		I7wgmW2CNFyoEvLdnW5PcO0uMj8=
+		LFhQDeJJP8BsKWqk1iVe1NhP+Xg=
 		</data>
 		<key>ZBugSquashResources.bundle/_CodeSignature/CodeResources</key>
 		<data>
-		Hc71zTI3vTIPZ7Z63bsXvkDZDRI=
+		b5lev9oOsvyQcI98aeQXQ4IrHpI=
 		</data>
 		<key>ZBugSquashResources.bundle/_CodeSignature/CodeSignature</key>
 		<data>
@@ -929,15 +933,26 @@
 			BrM9apFk03oYlAvysT36DLlTvmQwltr6qKwIDGdP/Mc=
 			</data>
 		</dict>
+		<key>Headers/FeedbackDiagosticInfo.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BXFISTBQ3aiwogrzyg8E321T5bY=
+			</data>
+			<key>hash2</key>
+			<data>
+			EpuyPNMT/UPWyWzX9JkneCDpMcU8w9Ku8Ivxo6dFRkE=
+			</data>
+		</dict>
 		<key>Headers/FeedbackKit.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			T6anvoCohDsG0E6raQnmSTBt5Q4=
+			O6HddzWUMEjF2OK20Lo/bv3p59M=
 			</data>
 			<key>hash2</key>
 			<data>
-			eiOFLL122LALXuPOxI+5sBDE8tY3B8cz3m1r5LDBgEU=
+			+3yDCg/rBIXkkEN2iQRxhLuid/jorXAP09L42wCfvr4=
 			</data>
 		</dict>
 		<key>Headers/ZAArrowCanvasView.h</key>
@@ -1135,33 +1150,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TwxCWWARpz7GLTHftKs+k4Sc2IU=
+			+BLhUKav+Y+Wf9verD4kNUbPO2Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			WErAqujVIuLJDrHUhbw+l/B6l2hQrHY5RolzIUCe3IQ=
+			X71xbHmooQa9vQLmzE6i5Qci8iVOWCV0uaBHVlSywyI=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/NewBugViewController.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			P/kx8Qcg+p/56pNIZkd6fg1LIO0=
+			08kRYsOfC+uc7e1l8VhnB9gU++w=
 			</data>
 			<key>hash2</key>
 			<data>
-			yJXC87BTgMkH+IcB9tMXcFD6uv3y8g4MwRI54kKdpxU=
+			Br4bjc3SOa+dlRWHJYiW3HNFjSbF8wPRioNGd017Apc=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/NewBugViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JCvVAFL+IkEnpddQn1AK+n5bnlI=
+			KPykMomHVvONcbEUsKgxuif6P3A=
 			</data>
 			<key>hash2</key>
 			<data>
-			VLSsftRypcXpxXT40PsAdEL1vrMrOC0FNZilZUOZ8ao=
+			0tfeLOVgsWGs9VmfNd8sribvyRFSkzcYUmvFq/c5sWI=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/Screenshot-app.ttf</key>
@@ -1366,11 +1381,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			agWPox6aOZtBNIgBzA5sSXjkoU8=
+			ELbFnGk9HblyQ7knz1wL02dypc4=
 			</data>
 			<key>hash2</key>
 			<data>
-			ynHuAgkeKkMcea6+zeubZlXWVyLqrRD+lk2IcUr7nA0=
+			/5/HUeV6XXR+gmF+j5feVIT3uVIEEmsiv9+agKsFLeY=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/_CodeSignature/CodeRequirements</key>
@@ -1388,22 +1403,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			I7wgmW2CNFyoEvLdnW5PcO0uMj8=
+			LFhQDeJJP8BsKWqk1iVe1NhP+Xg=
 			</data>
 			<key>hash2</key>
 			<data>
-			+aIoO5ox+nqRpbHSajGWM4ZLlpwI1ph8F9/FqMwWHaA=
+			QyuuEQTUCnu4GcqbuJR6iHqsj8q8gr8DoXAYV0G6Umg=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Hc71zTI3vTIPZ7Z63bsXvkDZDRI=
+			b5lev9oOsvyQcI98aeQXQ4IrHpI=
 			</data>
 			<key>hash2</key>
 			<data>
-			Lsdz5MQRFgPApNuIy1c57A4aa0N9721cQOTJ8a5bzKM=
+			T6zA59ss9f2VnEzA6U1Js/4xhFd6QCVtJ+kQOriHwSo=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/_CodeSignature/CodeSignature</key>

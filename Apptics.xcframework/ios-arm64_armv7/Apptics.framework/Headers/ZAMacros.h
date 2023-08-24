@@ -26,7 +26,7 @@
 #endif
 
 #if !defined(za_safeDictionary)
-#define za_safeDictionary(A)  ({ NSDictionary __a = A; (__a != nil) ? __a : @{}; })
+#define za_safeDictionary(A)  ({ NSDictionary *__a = A; (__a != nil) ? __a : @{}; })
 #endif
 
 #if !defined(za_Number)

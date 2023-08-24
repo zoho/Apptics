@@ -216,7 +216,7 @@ echo "Deployment target: ${ZA_DEPLOYMENT_TARGET}"
 echo "Product Name: ${PRODUCT_NAME}"
 echo "Version: ${BUNDLE_SHORT_VERSION}"
 echo "Build: ${BUNDLE_VERSION}"
-echo "Bundle Identifier: ${PRODUCT_BUNDLE_IDENTIFIER}"
+echo "Bundle Identifier: ${AP_BUNDLE_ID}"
 echo "App ID: ${APP_ID}"
 echo "OS : ${OS}"
 echo "API key: ${API_KEY}"
@@ -249,7 +249,7 @@ AP_DWARF_DSYM_FILE_NAME="$(echo $DWARF_DSYM_FILE_NAME | sed -e "s/\./\_/g")"
 DSYM_ZIP_FPATH="/tmp/$AP_DWARF_DSYM_FILE_NAME"
 
 if [ $SKIP_PROMPT -eq 0 ]; then
-  value=$(prompt "Should upload dSYMs?" "App name:$PRODUCT_NAME\nBundle id: $PRODUCT_BUNDLE_IDENTIFIER\nVersion:$BUNDLE_SHORT_VERSION($BUNDLE_VERSION)")
+  value=$(prompt "Should upload dSYMs?" "App name:$PRODUCT_NAME\nBundle id: $AP_BUNDLE_ID\nVersion:$BUNDLE_SHORT_VERSION($BUNDLE_VERSION)")
 
   if [ "$?" -ne 0 ]; then
     exit

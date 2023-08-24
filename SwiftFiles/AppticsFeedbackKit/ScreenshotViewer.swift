@@ -181,9 +181,14 @@ public class FloatScrollview:UIViewController{
     }
     func backAction(){
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
-            if #available(iOS 13.0, *) {
-                let keyWindow = UIApplication.shared.currentUIWindow()
-                keyWindow?.dismissWindow()
+            if #available(iOS 13.0, *) {                
+                if let _ = self.view.window?.windowScene?.delegate{
+                    let keyedWindow = UIApplication.shared.currentUIWindow()
+                    keyedWindow?.dismissWindow()
+                }
+                else{
+                    self.window.isHidden = true
+                }
             } else {
                 self.window.isHidden = true
             }

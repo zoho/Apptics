@@ -235,8 +235,13 @@ public class FloatScreenshotEditor:UIViewController,UIGestureRecognizerDelegate{
                 }
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.95) {
                     if #available(iOS 13.0, *) {
-                        let keyedWindow = UIApplication.shared.currentUIWindow()
-                        keyedWindow?.dismissWindow()
+                        if let _ = self.view.window?.windowScene?.delegate{
+                            let keyedWindow = UIApplication.shared.currentUIWindow()
+                            keyedWindow?.dismissWindow()
+                        }
+                        else{
+                            self.window.isHidden = true
+                        }
                     } else {
                         self.window.isHidden = true
                     }
@@ -258,8 +263,13 @@ public class FloatScreenshotEditor:UIViewController,UIGestureRecognizerDelegate{
             }
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.95) {
                 if #available(iOS 13.0, *) {
-                    let keyedWindow = UIApplication.shared.currentUIWindow()
-                    keyedWindow?.dismissWindow()
+                    if let _ = self.view.window?.windowScene?.delegate{
+                        let keyedWindow = UIApplication.shared.currentUIWindow()
+                        keyedWindow?.dismissWindow()
+                    }
+                    else{
+                        self.window.isHidden = true
+                    }
                 } else {
                     self.window.isHidden = true
                 }
@@ -283,8 +293,13 @@ public class FloatScreenshotEditor:UIViewController,UIGestureRecognizerDelegate{
             }, completion: nil)
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
                 if #available(iOS 13.0, *) {
-                    let keyedWindow = UIApplication.shared.currentUIWindow()
-                    keyedWindow?.dismissWindow()
+                    if let _ = self.view.window?.windowScene?.delegate{
+                        let keyedWindow = UIApplication.shared.currentUIWindow()
+                        keyedWindow?.dismissWindow()
+                    }
+                    else{
+                        self.window.isHidden = true
+                    }
                 } else {
                     self.window.isHidden = true
                 }
@@ -300,8 +315,13 @@ public class FloatScreenshotEditor:UIViewController,UIGestureRecognizerDelegate{
             
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.95) {
                 if #available(iOS 13.0, *) {
-                    let keyedWindow = UIApplication.shared.currentUIWindow()
-                    keyedWindow?.dismissWindow()
+                    if let _ = self.view.window?.windowScene?.delegate{
+                        let keyedWindow = UIApplication.shared.currentUIWindow()
+                        keyedWindow?.dismissWindow()
+                    }
+                    else{
+                        self.window.isHidden = true
+                    }
                 } else {
                     self.window.isHidden = true
                 }

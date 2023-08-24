@@ -65,7 +65,7 @@ typedef void (^updateResponseBlock)(NSDictionary *_Nullable updateInfo);
 
  */
 
-+ (void) checkForUpdateAvailability:(void (^_Nullable)(NSDictionary *_Nullable updateInfo))completionHandler with : (UIViewController*) viewController;
++ (void) checkForUpdateAvailability:(void (^_Nullable)(NSDictionary *_Nullable updateInfo))completionHandler with : (UIViewController*_Nullable) viewController;
 
 /**
  Set back the actions for custom app update.

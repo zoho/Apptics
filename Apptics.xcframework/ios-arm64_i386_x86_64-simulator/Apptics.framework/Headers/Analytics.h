@@ -29,6 +29,8 @@ FOUNDATION_EXPORT const unsigned char AnalyticsVersionString[];
 
 //static NSString * _Nonnull za_version = @"0.9";
 
+//static NSUncaughtExceptionHandler * _Nullable previousExceptionHandler;
+
 #if AP_CROSS_PROMO
 //@protocol PromotedAppsKitDelegate;
 #endif
@@ -56,7 +58,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property BOOL enableAutomaticScreenTracking;
 @property BOOL enableAutomaticCrashTracking;
 
-@property BOOL enableAutoCheckForAppUpdate;
+//@property BOOL enableAutoCheckForAppUpdate;
 
 @property BOOL enableAnonymousTracking;
 

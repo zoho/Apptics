@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/APAppUpdateManager.h</key>
 		<data>
-		z19l/K/hepXNKoKT2l0onQG9oVA=
+		oCYDMCbJW0jvp7NLJbMaTAwHJTs=
 		</data>
 		<key>Headers/AppticsInAppUpdate.h</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		uJ3fhDCqeqoi11PWJmbjGViogfE=
+		nY7gF9Rst/qNLQaQvxLcR2PFlmE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -27,11 +27,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			z19l/K/hepXNKoKT2l0onQG9oVA=
+			oCYDMCbJW0jvp7NLJbMaTAwHJTs=
 			</data>
 			<key>hash2</key>
 			<data>
-			DRKfzfygK3pgYxZEFWQ2y94R3xwzAA0Bj0a38pkAy3E=
+			Q+egPJ75mnLYi7OnKZSdiClCzdRoAToYrI2ot3Y3GdE=
 			</data>
 		</dict>
 		<key>Headers/AppticsInAppUpdate.h</key>
