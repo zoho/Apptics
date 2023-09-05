@@ -94,21 +94,30 @@ public class FloatScrollview:UIViewController{
         }
 //MARK: change theme based on traits
     func checkTheme(){
-        guard let textcolor = APThemeManager.sharedFeedbackThemeManager().textFieldTextColor?() else { return
-        }
-        FeedbackTheme.sharedInstance.textColor = textcolor
-        ScreenshotsView.pageView.pageIndicatorTintColor = FeedbackTheme.sharedInstance.textColor.withAlphaComponent(0.5)
-        ScreenshotsView.pageView.currentPageIndicatorTintColor = FeedbackTheme.sharedInstance.textColor
+        
+        FeedbackKit.listener().refreshTheme()
+        
+        ScreenshotsView.pageView.pageIndicatorTintColor = FeedbackTheme.sharedInstance.maskColor.withAlphaComponent(0.5)
+        ScreenshotsView.pageView.currentPageIndicatorTintColor = FeedbackTheme.sharedInstance.maskColor
         ScreenshotsView.pageNumberLabel.textColor = FeedbackTheme.sharedInstance.textColor.withAlphaComponent(0.6)
-        SetButtonColor()
+        
+//        SetButtonColor()
+        setTitleTextAttributesInButtons(textAttributes: FeedbackTheme.sharedInstance.barButtontitleTextAttributes)
     }
     
 //MARK: set colors for buttons
     func SetButtonColor(){
-        ScreenshotsView.hideBttn.setTitleColor(FeedbackTheme.sharedInstance.textColor, for: .normal)
-        ScreenshotsView.doneBttn.setTitleColor(FeedbackTheme.sharedInstance.textColor, for: .normal)
-        ScreenshotsView.deleteBttn.setTitleColor(FeedbackTheme.sharedInstance.textColor, for: .normal)
+        ScreenshotsView.hideBttn.setTitleColor(FeedbackTheme.sharedInstance.tintColor, for: .normal)
+        ScreenshotsView.doneBttn.setTitleColor(FeedbackTheme.sharedInstance.tintColor, for: .normal)
+        ScreenshotsView.deleteBttn.setTitleColor(FeedbackTheme.sharedInstance.tintColor, for: .normal)
         ScreenshotsView.noDataBttn.setTitleColor(FeedbackTheme.sharedInstance.textColor, for: .normal)
+    }
+    
+    func setTitleTextAttributesInButtons(textAttributes:NSDictionary){
+        ScreenshotsView.hideBttn.setAttributedText(attributes: textAttributes as! [NSAttributedString.Key : Any])
+        ScreenshotsView.doneBttn.setAttributedText(attributes: textAttributes as! [NSAttributedString.Key : Any])
+        ScreenshotsView.deleteBttn.setAttributedText(attributes: textAttributes as! [NSAttributedString.Key : Any])
+        ScreenshotsView.noDataBttn.setAttributedText(attributes: textAttributes as! [NSAttributedString.Key : Any])
     }
 //MARK: strings for localization
     func setLocalizableString(){
@@ -123,7 +132,10 @@ public class FloatScrollview:UIViewController{
         changeScreenshotViewColor(color: FeedbackTheme.sharedInstance.ViewColor)
         ScreenshotsView.doneBttn.addTarget(self, action:#selector(self.donebuttonClicked), for: .touchUpInside)
         ScreenshotsView.hideBttn.addTarget(self, action:#selector(self.cancellbuttonClicked), for: .touchUpInside)
-        SetButtonColor()
+        
+//        SetButtonColor()
+        setTitleTextAttributesInButtons(textAttributes: FeedbackTheme.sharedInstance.barButtontitleTextAttributes)
+        
         ScreenshotsView.noDataBttn.setTitle(FeedbackKit.getLocalizableString(forKey: "zanalytics.feedback.navbar.title.noscreenshots"), for: .normal)
         setLocalizableString()
         view.addSubview(ScreenshotsView)
@@ -149,8 +161,8 @@ public class FloatScrollview:UIViewController{
         ScreenshotsView.commoninit(color: color, frame: CGRect(x: 0, y: 0, width:view.frame.size.width , height: view.frame.size.height))
         ScreenshotsView.cardView.backgroundColor = .clear
         ScreenshotsView.cardView.layer.borderWidth = 5.0
-        ScreenshotsView.pageView.pageIndicatorTintColor = FeedbackTheme.sharedInstance.textColor.withAlphaComponent(0.5)
-        ScreenshotsView.pageView.currentPageIndicatorTintColor = FeedbackTheme.sharedInstance.textColor
+        ScreenshotsView.pageView.pageIndicatorTintColor = FeedbackTheme.sharedInstance.maskColor.withAlphaComponent(0.5)
+        ScreenshotsView.pageView.currentPageIndicatorTintColor = FeedbackTheme.sharedInstance.maskColor
         ScreenshotsView.pageNumberLabel.textColor = FeedbackTheme.sharedInstance.textColor.withAlphaComponent(0.6)
     }
     

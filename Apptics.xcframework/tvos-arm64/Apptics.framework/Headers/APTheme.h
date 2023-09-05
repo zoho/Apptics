@@ -261,4 +261,25 @@ typedef enum : NSInteger {
 
 @interface APDefaultAppUpdateConsentTheme : NSObject <APAppUpdateConsentTheme>
 @end
+
+@interface APSharedTheme : NSObject <APTheme>
+@end
+
+@interface APSharedSettingsTheme : NSObject <APSettingsTheme>
+@end
+
+@interface APSharedFeedbackTheme : NSObject <APFeedbackTheme>
+@end
+
+@interface APSharedFeedbackPrivacyTheme : NSObject <APFeedbackPrivacyTheme>
+@end
+
+@interface APSharedCustomAlertTheme : NSObject <APCustomAlertTheme>
+@end
+
+@interface APSharedUserConsentTheme : NSObject <APUserConsentTheme>
+@end
+
+@interface APSharedAppUpdateConsentTheme : NSObject <APAppUpdateConsentTheme>
+@end
 NS_ASSUME_NONNULL_END

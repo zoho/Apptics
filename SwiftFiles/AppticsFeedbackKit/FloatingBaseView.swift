@@ -91,7 +91,7 @@ import AppticsFeedbackKit
     
 //MARK: set color for the text in view // need to add theme switch inbetween
     
-    func setTextColorInViews(textColor:UIColor,bgColor:UIColor){
+    func setTextColorInViews(textColor:UIColor){
         floatview.cancelBttn.setTitleColor(textColor, for: .normal)
         floatview.snapBttn.setTitleColor(textColor, for: .normal)
         floatview.screenshotBttn.setTitleColor(textColor, for: .normal)
@@ -100,17 +100,22 @@ import AppticsFeedbackKit
         floatview.screenshotsImage.setTitleColor(textColor, for: .normal)
     }
 
+    func setTitleTextAttributesInButtons(textAttributes:NSDictionary){
+        floatview.cancelBttn.setAttributedText(attributes: textAttributes as! [NSAttributedString.Key : Any])
+        floatview.snapBttn.setAttributedText(attributes: textAttributes as! [NSAttributedString.Key : Any])
+        floatview.screenshotBttn.setAttributedText(attributes: textAttributes as! [NSAttributedString.Key : Any])
+        floatview.cancelImage.setAttributedText(attributes: textAttributes as! [NSAttributedString.Key : Any])
+        floatview.snapImage.setAttributedText(attributes: textAttributes as! [NSAttributedString.Key : Any])
+        floatview.screenshotsImage.setAttributedText(attributes: textAttributes as! [NSAttributedString.Key : Any])
+    }
+    
     //MARK: change theme accouding to traits
     
     func checkTheme(){
         
-        guard let viewBgcolor = APThemeManager.sharedFeedbackThemeManager().viewBGColor?() else { return
-        }
-        guard let textcolor = APThemeManager.sharedFeedbackThemeManager().textFieldTextColor?() else { return
-        }
-        print(textcolor)
-        setTextColorInViews(textColor: textcolor, bgColor: viewBgcolor)
-        FeedbackTheme.sharedInstance.textColor = textcolor
+        FeedbackKit.listener().refreshTheme()                
+//        setTextColorInViews(textColor: FeedbackTheme.sharedInstance.tintColor)
+        setTitleTextAttributesInButtons(textAttributes: FeedbackTheme.sharedInstance.barButtontitleTextAttributes)
     }
     
 //MARK: hide view for next dismiss 1action
@@ -183,7 +188,8 @@ import AppticsFeedbackKit
         floatview.snapBttn.addTarget(self, action:#selector(self.snapbuttonClicked), for: .touchUpInside)
         floatview.screenshotBttn.addTarget(self, action:#selector(self.viewScreenshotbuttonClicked), for: .touchUpInside)
         setLocalizableString()
-        setTextColorInViews(textColor: FeedbackTheme.sharedInstance.textColor, bgColor: FeedbackTheme.sharedInstance.ViewColor)
+//        setTextColorInViews(textColor: FeedbackTheme.sharedInstance.tintColor)
+        setTitleTextAttributesInButtons(textAttributes: FeedbackTheme.sharedInstance.barButtontitleTextAttributes)
         view.addSubview(floatview)
         window.views = floatview
                 

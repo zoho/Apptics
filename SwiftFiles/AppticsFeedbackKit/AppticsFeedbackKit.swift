@@ -11,32 +11,65 @@ import Apptics
 
 
 extension FeedbackKit{
+    @objc public func refreshTheme(){
+        if let tintColor = APThemeManager.sharedFeedbackThemeManager().tintColor?(){
+            FeedbackTheme.sharedInstance.tintColor = tintColor
+        }else if let tintColor = APThemeManager.defaultFeedbackThemeManager().tintColor?(){
+            FeedbackTheme.sharedInstance.tintColor = tintColor
+        }
+        
+        if let barButtontitleTextAttributes = APThemeManager.sharedFeedbackThemeManager().barButtontitleTextAttributes?(){
+            FeedbackTheme.sharedInstance.barButtontitleTextAttributes = barButtontitleTextAttributes as NSDictionary
+            
+            if let barButtontitleTextAttributes = barButtontitleTextAttributes as? [NSAttributedString.Key : Any]{
+                if let forgroundColor = barButtontitleTextAttributes[.foregroundColor] as? UIColor {
+                    FeedbackTheme.sharedInstance.maskColor = forgroundColor
+                }
+            }
+                                                              
+        }else if let barButtontitleTextAttributes = APThemeManager.defaultFeedbackThemeManager().barButtontitleTextAttributes?(){
+            FeedbackTheme.sharedInstance.barButtontitleTextAttributes = barButtontitleTextAttributes as NSDictionary
+            
+            if let barButtontitleTextAttributes = barButtontitleTextAttributes as? [NSAttributedString.Key : Any]{
+                if let forgroundColor = barButtontitleTextAttributes[.foregroundColor] as? UIColor {
+                    FeedbackTheme.sharedInstance.maskColor = forgroundColor
+                }
+            }
+        }
+        
+        if let viewBgcolor = APThemeManager.sharedFeedbackThemeManager().viewBGColor?(){
+            FeedbackTheme.sharedInstance.ViewColor = viewBgcolor
+        }else if let viewBgcolor = APThemeManager.defaultFeedbackThemeManager().viewBGColor?(){
+            FeedbackTheme.sharedInstance.ViewColor = viewBgcolor
+        }
+        
+        if let textcolor = APThemeManager.sharedFeedbackThemeManager().textFieldTextColor?()  {
+            FeedbackTheme.sharedInstance.textColor = textcolor
+        }else if let textcolor = APThemeManager.defaultFeedbackThemeManager().textFieldTextColor?()  {
+            FeedbackTheme.sharedInstance.textColor = textcolor
+        }
+        
+    }
+    
     @objc public func swift_load(){
         if #available(iOS 11.0, *) {
-            loadFontForCPResourceBundle()
             
-            if let viewBgcolor = APThemeManager.sharedFeedbackThemeManager().viewBGColor?(){
-                FeedbackTheme.sharedInstance.ViewColor = viewBgcolor
-            }
-            if let textcolor = APThemeManager.sharedFeedbackThemeManager().textFieldTextColor?()  {
-                FeedbackTheme.sharedInstance.textColor = textcolor
-            }
+            loadFontForCPResourceBundle()
+                    
+            refreshTheme()
+            
             FeedbackTheme.sharedInstance.setTransparencySettingsEnabled = FeedbackKit.listener().setTransparencyStatus
             FeedbackTheme.sharedInstance.setMaskTextDefault = FeedbackKit.listener().maskText
             FeedbackTheme.sharedInstance.isfromClass = "FloatScreenshotEditor"
             _ = FloatingBottomView()
         }
-       
     }
     
     @objc public func getGalleryImages_swift(){
         loadFontForCPResourceBundle()
-        if let viewBgcolor = APThemeManager.sharedFeedbackThemeManager().viewBGColor?(){
-            FeedbackTheme.sharedInstance.ViewColor = viewBgcolor
-        }
-        if let textcolor = APThemeManager.sharedFeedbackThemeManager().textFieldTextColor?()  {
-            FeedbackTheme.sharedInstance.textColor = textcolor
-        }
+        
+        refreshTheme()
+        
         if let imageData = UserDefaults.standard.object(forKey: "apptics_imageGallery_swift") as? Data,
          let image = UIImage(data: imageData) {
             FeedbackTheme.sharedInstance.gotImageFromgallery = image

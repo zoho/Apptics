@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface AppticsConfig : NSObject
 
-@property (nonatomic) bool enableBackgroundTask API_AVAILABLE(ios(13.0), tvos(13.0)) API_UNAVAILABLE(macos, watchos);
+@property (nonatomic) bool enableBackgroundTask API_AVAILABLE(ios(13.0), tvos(13.0), watchos(3.0)) API_UNAVAILABLE(macos);
 //@property (nonatomic) bool enableAutoCheckForAppUpdate;
 @property (nonatomic) bool enableAutomaticEventTracking;
 @property (nonatomic) bool enableCrossPromotionAppsList API_UNAVAILABLE(macos, tvos, watchos);
@@ -40,6 +40,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) NSString* defaultLang;
 
 @property (nonatomic) double minimumSessionInterval;
+@property (nonatomic) double maximumSessionTimeout;
 
 @end
 

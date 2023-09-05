@@ -39,7 +39,7 @@ static NSString* _Nonnull engagementTaskID = @"com.apptics.engagement.bgtaskiden
 static NSString* _Nonnull nonfatalTaskID = @"com.apptics.nonfatal.bgtaskidentifier";
 
 NS_ASSUME_NONNULL_BEGIN
-
+@class APTimerManager;
 /**
  *  Apptics is a library that enables your app to send usage reports and data securly to our servers. You get Session tracking, Screen tracking and Crash Reporting. Which means, with minimal setup of initializing the framework you can get these three features working without any other configuration.
  */
@@ -50,6 +50,7 @@ NS_ASSUME_NONNULL_BEGIN
  *  Time to push all collected data to the servers
  */
 @property (nonatomic) NSInteger flushInterval;
+@property (nonatomic, retain) APTimerManager *timerManager;
 
 @property long zuid;//Zoho User Id
 @property (strong,nonatomic) NSString *apiToken;
@@ -59,6 +60,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property BOOL enableAutomaticCrashTracking;
 
 //@property BOOL enableAutoCheckForAppUpdate;
+@property (nonatomic, strong) dispatch_block_t scheduledBlock;
 
 @property BOOL enableAnonymousTracking;
 
@@ -341,6 +343,19 @@ typedef void (^internbgConsoleLogsRequestSuccessBlock)(void);
 #pragma mark - Reachability 
 
 -(BOOL)isReachable;
+
+-(BOOL) isMacCatalystOrDesignedForiPad;
+
+@end
+
+@interface APTimerManager : NSObject
+
+@property (nonatomic, strong) dispatch_queue_t _Nullable timerQueue;
+@property (nonatomic, strong) dispatch_source_t _Nullable timer;
+@property (nonatomic, assign) BOOL shouldExecuteBlock;
+
+- (void)startTimerWithInterval:(NSTimeInterval)interval;
+- (void)stopTimer;
 
 @end
 
