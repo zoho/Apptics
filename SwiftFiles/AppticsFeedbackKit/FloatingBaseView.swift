@@ -14,6 +14,11 @@ import AppticsFeedbackKit
     
     public var views: UIView?
     
+    public func isAppticsWindow() -> ObjCBool
+    {
+        return true
+    }
+    
     init() {
         super.init(frame: UIScreen.main.bounds)
         backgroundColor = nil

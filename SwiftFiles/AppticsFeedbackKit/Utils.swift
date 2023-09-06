@@ -206,9 +206,19 @@ extension CGImagePropertyOrientation {
 
 extension UIWindow {
     func dismissWindow() {
-        isHidden = true
-        if #available(iOS 13, *) {
-            windowScene = nil
+        if ((self as? FloatingscreenshotWindow) != nil) {
+            isHidden = true
+            if #available(iOS 13, *) {                                
+                    windowScene = nil
+            }
+        }
+        if #available(iOS 11.0, *) {
+            if ((self.rootViewController as? FloatScreenshotEditor) != nil) {
+                isHidden = true
+                if #available(iOS 13, *) {
+                        windowScene = nil
+                }
+            }
         }
     }
 }
