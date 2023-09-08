@@ -173,7 +173,7 @@ public class FeedbackTheme{
     {}
     public var maskColor = UIColor.lightGray
     public var tintColor = (UINavigationBar.appearance().tintColor != nil) ? UINavigationBar.appearance().tintColor! : UIColor.systemBlue
-    public var barButtontitleTextAttributes : NSDictionary = ((UIBarButtonItem.appearance().titleTextAttributes(for: .normal)) != nil) ? UIBarButtonItem.appearance().titleTextAttributes(for: .normal)! as NSDictionary : [NSAttributedString.Key.foregroundColor : UIColor.systemBlue]
+    public var barButtontitleTextAttributes : NSDictionary = ((UIBarButtonItem.appearance().titleTextAttributes(for: .normal)) != nil) ? UIBarButtonItem.appearance().titleTextAttributes(for: .normal)! as NSDictionary : [NSAttributedString.Key.foregroundColor : (UINavigationBar.appearance().tintColor != nil) ? UINavigationBar.appearance().tintColor! : UIColor.systemBlue]
     public var textColor = UIColor.black
     public var ViewColor = UIColor.lightGray
     public var arrowcolor = UIColor(red: 160.0/255.0, green: 50.0/255.0, blue: 105.0/255.0, alpha: 1.0)

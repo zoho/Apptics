@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
 spec.name             = "Apptics-SDK"
-spec.version          = "1.2.0d"
+spec.version          = "1.2.0"
 spec.summary          = "An in-app usage tracking and analytics library for iOS"
 spec.license          = { :type => "MIT", :text=> <<-LICENSE
 MIT License
@@ -52,36 +52,6 @@ end
 spec.subspec 'Scripts' do |sc|
 sc.source_files = 'scripts/*'
 sc.preserve_paths = 'scripts/*'
-end
-
-spec.subspec 'FeedbackKit' do |fbk|
-fbk.platform     = :ios, '9.1'
-fbk.dependency 'AppticsFeedbackKitSwift', "#{spec.version}"
-end
-
-spec.subspec 'ApiTracker' do |at|
-at.platforms = {:ios => '9.1', :tvos => '9.0', :osx => '10.10'}
-at.dependency 'AppticsApiTracker', "#{spec.version}"
-end
-
-spec.subspec 'InAppUpdate' do |au|
-au.platform     = :ios, '9.1'
-au.dependency 'AppticsInAppUpdate', "#{spec.version}"
-end
-
-spec.subspec 'RateUs' do |ru|
-ru.platforms = {:ios => '9.1', :tvos => '9.0'}
-ru.dependency 'AppticsRateUs', "#{spec.version}"
-end
-
-spec.subspec 'RemoteConfig' do |rc|
-rc.platforms = {:ios => '9.1', :tvos => '9.0', :osx => '10.10', :watchos => '2.0'}
-rc.dependency 'AppticsRemoteConfig', "#{spec.version}"
-end
-
-spec.subspec 'Extension' do |ex|
-ex.platforms = {:ios => '9.1', :tvos => '9.0', :osx => '10.10', :watchos => '2.0'}
-ex.dependency 'AppticsExtension', "#{spec.version}"
 end
 
 end
