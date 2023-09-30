@@ -1,10 +1,7 @@
-////
-////  FloatingSetup.swift
-////  MyFramework
-////
-////  Created by jai-13322 on 06/07/22.
-////
-//
+//  FloatingSetup.swift
+//  MyFramework
+//  Created by jai-13322 on 06/07/22.
+
 import Foundation
 import UIKit
 import AppticsFeedbackKit
@@ -118,7 +115,7 @@ import AppticsFeedbackKit
     
     func checkTheme(){
         
-        FeedbackKit.listener().refreshTheme()                
+        FeedbackKit.listener().refreshTheme()
 //        setTextColorInViews(textColor: FeedbackTheme.sharedInstance.tintColor)
         setTitleTextAttributesInButtons(textAttributes: FeedbackTheme.sharedInstance.barButtontitleTextAttributes)
     }
@@ -205,7 +202,7 @@ import AppticsFeedbackKit
         getallImages()
         self.floatview.center.y += self.floatview.frame.height
         UIView.animate(withDuration: 1.0, delay: 0.0, usingSpringWithDamping: 0.5, initialSpringVelocity: 1.0, options: [.curveEaseIn],animations: {
-            self.floatview.center.y -= self.floatview.frame.height + 40 
+            self.floatview.center.y -= self.floatview.frame.height + 40
         })
         
     }
@@ -255,7 +252,7 @@ import AppticsFeedbackKit
         floatview.center = bestSocket
     }
 
-    //MARK: place floating button 4 sides
+//MARK: place floating button 4 sides
     public var panSockets: [CGPoint] {
         let buttonSize = floatview.bounds.size
         let rect = view.bounds.insetBy(dx: 2 + buttonSize.width / 2, dy: 2 + buttonSize.height / 2)
@@ -288,9 +285,28 @@ import AppticsFeedbackKit
 //MARK: hide view on cancel click
     
     func floatviewHide(){
-        UIView.animate(withDuration: 1.0, delay: 0.0, usingSpringWithDamping: 0.5, initialSpringVelocity: 1.0, options: [.curveEaseInOut],animations: {
+        
+        UIView.animate(withDuration: 1.20, animations: {
             self.floatview.center.y += self.view.frame.height
-        })
+        }) { (completed) in
+            if completed {
+                FeedbackKit.listener().feedback_KitScreenCancel = "ZAScreenCancel"
+                FeedbackKit.listener().feedback_KitType = "ZAScreenShotCancel"
+                FeedbackKit.startMonitoring()
+                clearAllImages()
+                self.filesCount = 0
+
+            }
+        }
+        
+        
+        
+        
+        
+        
+        
+//        UIView.animate(withDuration: 2.0, delay: 0.0, usingSpringWithDamping: 1.0, initialSpringVelocity: 1.0, options: [.curveEaseOut],animations: {
+//        })
     }
     
 //MARK: show alert for window
@@ -302,13 +318,8 @@ import AppticsFeedbackKit
         alertController.addAction(UIAlertAction(title: FeedbackKit.getLocalizableString(forKey: "zanalytics.bug.alert.detectscreen.yes"), style: UIAlertAction.Style.cancel, handler: { _ in
             
             self.floatviewHide()
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                 self.window.isHidden = true
-                self.filesCount = 0
-                FeedbackKit.listener().feedback_KitScreenCancel = "ZAScreenCancel"
-                FeedbackKit.startMonitoring()
-                FeedbackKit.listener().feedback_KitType = "ZAScreenShotCancel"
-                clearAllImages()
             }
         }))
         alertController.addAction(UIAlertAction(title: FeedbackKit.getLocalizableString(forKey: "zanalytics.feedback.privacy.consent.cancel")!, style: UIAlertAction.Style.default, handler: { _ in
@@ -331,16 +342,11 @@ import AppticsFeedbackKit
                 let alertController = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
                 alertController.addAction(UIAlertAction(title: FeedbackKit.getLocalizableString(forKey: "zanalytics.bug.alert.detectscreen.yes"), style: UIAlertAction.Style.cancel, handler: { _ in
                     self.floatviewHide()
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                         self.window.isHidden = true
                         self.window.removeFromSuperview()
                         self.sceneAlertWindow.isHidden = true
                         self.sceneAlertWindow.removeFromSuperview()
-                        self.filesCount = 0
-                        FeedbackKit.listener().feedback_KitScreenCancel = "ZAScreenCancel"
-                        FeedbackKit.listener().feedback_KitType = "ZAScreenShotCancel"
-                        FeedbackKit.startMonitoring()
-                        clearAllImages()
                     }
                 }))
                 alertController.addAction(UIAlertAction(title: FeedbackKit.getLocalizableString(forKey: "zanalytics.feedback.privacy.consent.cancel")!, style: UIAlertAction.Style.default, handler: { _ in
@@ -542,23 +548,4 @@ extension UIImage {
         self.init(cgImage: cgImage, scale: image.scale, orientation: image.imageOrientation)
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
