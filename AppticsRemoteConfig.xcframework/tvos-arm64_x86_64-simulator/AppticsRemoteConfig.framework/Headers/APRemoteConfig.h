@@ -70,9 +70,9 @@ static NSString* APRemoteConfigUpdateNotification = @"APRemoteConfigUpdateNotifi
 
 -(void) setCurrentLocation : (NSString *) location;
 
-- (nonnull APRemoteConfigValue *)objectForKeyedSubscript:(nonnull NSString *)key;
+- (APRemoteConfigValue * _Nullable)objectForKeyedSubscript:(nonnull NSString *)key;
 
-- (nonnull APRemoteConfigValue *)configValueForKey:(nullable NSString *)key;
+- (APRemoteConfigValue * _Nullable)configValueForKey:(nullable NSString *)key;
 
 -(void) addCustomCriteria : (NSString *) key value : (NSString*) value;
 

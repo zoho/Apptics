@@ -105,6 +105,9 @@ UPLOAD_DSYM=1
 --fail-on-error)
 FAIL_ON_ERROR=1
 ;;
+--upload-symbols-for-frameworks=*)
+UPLOAD_SYMBOLS_FOR="${1#*=}"
+;;
 *)
 printf "**********************************\n"
 printf "* Error: Invalid argument passed.*\n"
@@ -275,8 +278,17 @@ if [ ${DEBUG_INFORMATION_FORMAT} == "dwarf-with-dsym" ]; then
     cd "${DWARF_DSYM_FOLDER_PATH}"
     mkdir -p "${DSYM_ZIP_FPATH}"
 
-    cp -Rvf *.dSYM "${DSYM_ZIP_FPATH}"
-    cp -Rvf **/*.dSYM "${DSYM_ZIP_FPATH}" 2>/dev/null
+    cp -Rvf "${DSYM_SRC}" "${DSYM_ZIP_FPATH}"
+    
+    IFS=', ' read -r -a UPLOAD_SYMBOLS_FOR_FRAMEWORKS <<< "${UPLOAD_SYMBOLS_FOR}"
+    
+    for FRAMEWORK in "${UPLOAD_SYMBOLS_FOR_FRAMEWORKS[@]}"
+    do
+        cp -Rvf "${FRAMEWORK}.framework.dSYM" "${DSYM_ZIP_FPATH}"
+    done
+
+#    cp -Rvf *.dSYM "${DSYM_ZIP_FPATH}"
+#    cp -Rvf **/*.dSYM "${DSYM_ZIP_FPATH}" 2>/dev/null
 
     echo "Compressing dSYM to: ${DSYM_ZIP_FPATH} ..."
          

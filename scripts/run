@@ -34,6 +34,9 @@ HELP=1
 --upload-symbols-for-configurations=*)
 SKIP_PROMPT_FOR="${1#*=}"
 ;;
+--upload-symbols-for-frameworks=*)
+UPLOAD_SYMBOLS_FOR="${1#*=}"
+;;
 --config-file-path=*)
 ZA_INFOPLIST_FILE="${1#*=}"
 ;;
@@ -444,7 +447,7 @@ if [[ " ${SKIP_PROMPT_CONFIGURATIONS[@]} " =~ " ${CONFIGURATION} " ]]; then
   printf "*********************************************************************************************\n"
   printf "* Uploading dSYM for '${CONFIGURATION}' configuration, check $LOGNAME for more details *\n"
   printf "*********************************************************************************************\n"
-  sh "${COMMAND_PATH}" --skip-prompt --upload-dsym --process-in-background >> $LOGNAME 2>&1 &
+  sh "${COMMAND_PATH}" --skip-prompt --upload-dsym --upload-symbols-for-frameworks="$UPLOAD_SYMBOLS_FOR" --process-in-background >> $LOGNAME 2>&1 &
 else
   sh "${COMMAND_PATH}" --skip-prompt --process-in-background >> $LOGNAME 2>&1 &
   printf "****************************************************\n"
