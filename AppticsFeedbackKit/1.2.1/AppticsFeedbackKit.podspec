@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
-spec.name             = "AppticsInAppUpdate"
-spec.version          = "1.2.1"
-spec.summary          = "Apptics In App Update for iOS"
+spec.name             = "AppticsFeedbackKit"
+spec.version          = "1.2.1b"
+spec.summary          = "Apptics FeedbackKit for iOS"
 spec.license          = { :type => "MIT", :text=> <<-LICENSE
 MIT License
 Copyright (c) 2020 Zoho Corporation
@@ -31,20 +31,19 @@ Apptics is a library that enables your app to send in-app usage reports and data
   
 spec.homepage         = "https://github.com/zoho/Apptics"
 spec.author           = { "Saravanan Selvam" => "ssaravanan@zohocorp.com", "Prakash Redrouthu" => "prakash.redrouthu@zohocorp.com" }
-spec.source = { :http => "https://github.com/zoho/Apptics/releases/download/#{spec.version}/AppticsInAppUpdate.zip" }
+spec.source = { :http => "https://github.com/zoho/Apptics/releases/download/#{spec.version}/AppticsFeedbackKit.zip" }
 # spec.source = { :git => "https://github.com/zoho/Apptics.git", :tag=>"#{spec.version}"}
 
 spec.ios.deployment_target = '9.1'
 
-spec.default_subspecs = 'AppUpdate'
+spec.default_subspecs = 'FeedbackKit'
 
 spec.requires_arc = true
 
-spec.subspec 'AppUpdate' do |au|
-au.platform     = :ios, '9.1'
-au.vendored_frameworks = 'AppticsInAppUpdate.xcframework'
-au.ios.dependency 'AppticsAnalytics/Apptics', "#{spec.version}"
+spec.subspec 'FeedbackKit' do |fk|
+fk.platform     = :ios, '9.1'
+fk.vendored_frameworks = 'AppticsFeedbackKit.xcframework'
+fk.ios.dependency 'AppticsAnalytics/Apptics', "#{spec.version}"
 end
 
 end
-
