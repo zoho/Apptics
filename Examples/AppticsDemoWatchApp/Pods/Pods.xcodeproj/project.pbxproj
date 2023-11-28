@@ -3,201 +3,410 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		E2CE24BC09F14AA1800797A9A2320628 /* AppticsAnalytics */ = {
+		4E287118DAC9C6D9455C38F460CCD838 /* AppticsAnalytics-iOS */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 3D7F2261B8B798625E9076C4EEBAFA2C /* Build configuration list for PBXAggregateTarget "AppticsAnalytics" */;
+			buildConfigurationList = 20CE581D0B45233F9B51F3B79331F6F6 /* Build configuration list for PBXAggregateTarget "AppticsAnalytics-iOS" */;
 			buildPhases = (
-				425960CD9D64B13C4DD19AD96EE60FE6 /* [CP] Copy XCFrameworks */,
+				135F643F124BA4CF201CF99FBF0346FB /* [CP] Copy XCFrameworks */,
 			);
 			dependencies = (
 			);
-			name = AppticsAnalytics;
+			name = "AppticsAnalytics-iOS";
+		};
+		589525C930370204F9A912863AFC5DB4 /* AppticsRemoteConfig-watchOS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D86DE5B9200C4C147903F980991821C7 /* Build configuration list for PBXAggregateTarget "AppticsRemoteConfig-watchOS" */;
+			buildPhases = (
+				4FC476233BA7A56EC4ABCAB7C73D159E /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+				A140132834F0271B1FCC49A06CB10038 /* PBXTargetDependency */,
+			);
+			name = "AppticsRemoteConfig-watchOS";
+		};
+		B44992874D9B3EAD59EB00AFEF6990B4 /* AppticsRemoteConfig-iOS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = C4915A6CB9FD31C2BBF31ECB13101B39 /* Build configuration list for PBXAggregateTarget "AppticsRemoteConfig-iOS" */;
+			buildPhases = (
+				850A48B4FC73398FE52250E3BD98131F /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+				B5AB21CC26E89FFB7F62C5D8C86DD1ED /* PBXTargetDependency */,
+			);
+			name = "AppticsRemoteConfig-iOS";
+		};
+		E25D22803228B3AFDF3ECAEBDBF8D53E /* AppticsAnalytics-watchOS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = F157FB06BD2E0D35869E63C385BF9B43 /* Build configuration list for PBXAggregateTarget "AppticsAnalytics-watchOS" */;
+			buildPhases = (
+				0C9CB1165FF1A7565817E203A4E22D2F /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+			);
+			name = "AppticsAnalytics-watchOS";
 		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		03D4FAFE3F58967E29C7F21574C129F4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D83F1DCDDC5946D2785EB40C4B563F6 /* UIKit.framework */; };
-		16E87307205DC7A28B7038D2C9F0802E /* run in Sources */ = {isa = PBXBuildFile; fileRef = 9DD4001A2BF23BD4AF7BE49254799633 /* run */; };
-		1B14D19CFF82C447881BD76CFA91114C /* dsym_upload in Sources */ = {isa = PBXBuildFile; fileRef = A950A2B1A9186F4087BDAAFAB88F834D /* dsym_upload */; };
-		1DA9A75EA50C0A342CF3ABF2A76E47BE /* Apptics-SDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B170FCCFDD51CB7C6DF5BB4DBE81BB /* Apptics-SDK-dummy.m */; };
-		1F5188483E62449B004446DFA73D747F /* Apptics-Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DDCEC68381145CD9C837079316D804 /* Apptics-Swift-dummy.m */; };
-		2C634E559D56F87DF25FD59848659C2C /* Pods-AppticsDemoWatchApp WatchKit Extension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D5A76819EF9BBFA9F51EDAFBE59A98D /* Pods-AppticsDemoWatchApp WatchKit Extension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		364730C67FF154174590BE5FCA389BCE /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 434F7F71AF3E93155C2C83FE77C16B53 /* StoreKit.framework */; };
-		413CC9F7C5303B8DB88B273B586E706A /* Apptics-SDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C1E7CDFC9C5C7525D3785EAA9718B89C /* Apptics-SDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4522F02788A1F1B89322B41DAF7380EF /* sdk_info in Sources */ = {isa = PBXBuildFile; fileRef = 3B4D73EF80E857CEEEB9F5D845AA7AB7 /* sdk_info */; };
-		4BA825757C3047A176646B28971CADF2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BF75E4B8BC1CD1E683F0DB4ADD81A17 /* Foundation.framework */; };
-		4CBCA0C1AA6F28E9FDEAEDEB8CA44447 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84461564F8F344746670F209A9206757 /* Foundation.framework */; };
-		645AEA7767B0D50249CC2D66ED7DFC1C /* appticshelper.rb in Sources */ = {isa = PBXBuildFile; fileRef = C61B13EAF45100A694B95BF69BE82416 /* appticshelper.rb */; };
-		681C4739D0046BA155B374968F5855CC /* APAppticsForExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90D9495A1A3D3D749E317C0C134FF48 /* APAppticsForExtension.swift */; };
-		776FA70064DCA235B63F51DAECD7C656 /* sdk_info.bu in Sources */ = {isa = PBXBuildFile; fileRef = F6B6CB99F8A0AFF3E768E07E8BD61517 /* sdk_info.bu */; };
-		A52FCF8ECD8D765D423E8E2CA9786E8B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BF75E4B8BC1CD1E683F0DB4ADD81A17 /* Foundation.framework */; };
-		A644664690DF4BCBC26709AA082B9BE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84461564F8F344746670F209A9206757 /* Foundation.framework */; };
-		C0DBB63D7B6E8D42EB79787EC7DAE1F3 /* Apptics-Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D3230A310436D43DBC653745C77559B /* Apptics-Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C104AA58C8DC83CD9089E1768BCC17EE /* Pods-AppticsDemoWatchApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C43F83F2AB5A6357790FDE746671F0 /* Pods-AppticsDemoWatchApp-dummy.m */; };
-		C1BE2581822B8F50EAB2FC7F4D3CD8B4 /* postinstaller in Sources */ = {isa = PBXBuildFile; fileRef = 534B002471F4AFCB55E98B323285A841 /* postinstaller */; };
-		C8493FE089570DCC038932E530621AA6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BF75E4B8BC1CD1E683F0DB4ADD81A17 /* Foundation.framework */; };
-		D2820C7950D4A768A6FA14D1F87844C1 /* Pods-AppticsDemoWatchApp WatchKit Extension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD366DE978214F57FA85D4CE1AD08FB9 /* Pods-AppticsDemoWatchApp WatchKit Extension-dummy.m */; };
-		DDC1F1EC6C82F81CC9B84F04514FD214 /* Pods-AppticsDemoWatchApp WatchKit App-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EC17376B1578694296C3941CCE2E43A /* Pods-AppticsDemoWatchApp WatchKit App-dummy.m */; };
-		E441571B8671ECE4D921719C5002A82C /* Pods-AppticsDemoWatchApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C7F02A033DA26D99EFB2B77EE3CF1685 /* Pods-AppticsDemoWatchApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F92424CDB9C542508FE64A4852C64135 /* Pods-AppticsDemoWatchApp WatchKit App-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E197775B05A308CDDD37C631E0A20FA4 /* Pods-AppticsDemoWatchApp WatchKit App-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		029FDF50E45F02F0A7CB6581048DAD55 /* Pods-AppticsDemoWatchApp WatchKit Extension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7F6CB92F994D398B116A19408A990C /* Pods-AppticsDemoWatchApp WatchKit Extension-dummy.m */; };
+		04B195566AC73A61FCF86E5F7A76EF23 /* postinstaller in Sources */ = {isa = PBXBuildFile; fileRef = 34FD47CAF781B65C491639CB0C83A488 /* postinstaller */; };
+		0A6533378CF8D9A90C45A93798A94F69 /* Pods-AppticsDemoWatchApp WatchKit Extension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 65D7BBA16EDE183E435D23DD612EB991 /* Pods-AppticsDemoWatchApp WatchKit Extension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		10E20EEC48180740F27A7566CDDB5251 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BF75E4B8BC1CD1E683F0DB4ADD81A17 /* Foundation.framework */; };
+		1BC86B70ADE1B6510686121C40ADE7EA /* Apptics-Swift-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE716FABFEF239E2FCB85990A4FAD42 /* Apptics-Swift-iOS-dummy.m */; };
+		1D9E098C118F16CD7CA18BA37A1A405F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BF75E4B8BC1CD1E683F0DB4ADD81A17 /* Foundation.framework */; };
+		1E19726F5265A5CD324461AFA0DA9821 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84461564F8F344746670F209A9206757 /* Foundation.framework */; };
+		1F59A7A65CC87E78242C49758EC16CE9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84461564F8F344746670F209A9206757 /* Foundation.framework */; };
+		2CE8381D610B902A77771CFC74C52EE9 /* Pods-AppticsDemoWatchApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D2F5848BA6C76E022D4DC74D3ACA35B /* Pods-AppticsDemoWatchApp-dummy.m */; };
+		319A5D46805D88542EB6264D68625DFB /* sdk_info.bu in Sources */ = {isa = PBXBuildFile; fileRef = A1B2DA78BC3DC61628361D4CDC8E70A8 /* sdk_info.bu */; };
+		355C618CAED32866038C9AC2D24E0F72 /* Apptics-Swift-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FCA55DEDD8CA01CC5C5A3DA696739034 /* Apptics-Swift-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E106DEB15B864EE3FC4E8D13C448573 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BF75E4B8BC1CD1E683F0DB4ADD81A17 /* Foundation.framework */; };
+		4EF7590709583373E588CB5D5516BF1A /* dsym_upload in Sources */ = {isa = PBXBuildFile; fileRef = 2BD83AA8D1EA9671006D4CCA6725290C /* dsym_upload */; };
+		56BF3A3C100DF4C46B5047C10B1739D0 /* Apptics-Swift-watchOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FD4E6A9D172C4AF756AD901BD048BD /* Apptics-Swift-watchOS-dummy.m */; };
+		59A97A328A48C9C6AFAD948D456A9AEE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D83F1DCDDC5946D2785EB40C4B563F6 /* UIKit.framework */; };
+		5ACE0F9243D6221BBAD23CD6A0E1AD31 /* run in Sources */ = {isa = PBXBuildFile; fileRef = AF91FC926531E15217F56DF2001393A5 /* run */; };
+		613E03372E0F21E3182A986DAB93B1B8 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 434F7F71AF3E93155C2C83FE77C16B53 /* StoreKit.framework */; };
+		64136D4ABBE189BD2BA98042F727CA9D /* sdk_info.bu in Sources */ = {isa = PBXBuildFile; fileRef = A1B2DA78BC3DC61628361D4CDC8E70A8 /* sdk_info.bu */; };
+		662AD496C027A9A976C6CB889F657736 /* Apptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D705653878C3A44624EED900E692887 /* Apptics.swift */; };
+		6B968BBCB056356E3A58C4F00A53EF7F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84461564F8F344746670F209A9206757 /* Foundation.framework */; };
+		7BC8FC794FFF622499C3BA17F70C0C34 /* Apptics-SDK-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F83594FFB2041F2A3C7727CFA0F7641C /* Apptics-SDK-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C92E953DF5BC70FBC0D6CBD8FA3F25E /* Apptics-SDK-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C4FCA0A6F263E8DC578E82414EFAC515 /* Apptics-SDK-iOS-dummy.m */; };
+		909F2762ADD72601853C48B8EB6C7EB9 /* Apptics-SDK-watchOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB457D713000E612CDD9995BD0BC684 /* Apptics-SDK-watchOS-dummy.m */; };
+		963BF1867DCA3D7B9BAF380EF4963F86 /* dsym_upload in Sources */ = {isa = PBXBuildFile; fileRef = 2BD83AA8D1EA9671006D4CCA6725290C /* dsym_upload */; };
+		980FCB1764D181033BCC61B524793350 /* run in Sources */ = {isa = PBXBuildFile; fileRef = AF91FC926531E15217F56DF2001393A5 /* run */; };
+		9C12221592DDDA2DA17FA9336F4E642A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84461564F8F344746670F209A9206757 /* Foundation.framework */; };
+		A179695EC6130D46D088515FD90B7A8D /* postinstaller in Sources */ = {isa = PBXBuildFile; fileRef = 34FD47CAF781B65C491639CB0C83A488 /* postinstaller */; };
+		A316E15B368F05688F95ADE9AC2AFCA2 /* apptics_utils.rb in Sources */ = {isa = PBXBuildFile; fileRef = 420923F0EE060506291CDC88DC4BC0CC /* apptics_utils.rb */; };
+		A6D547B5DEC27C98597F90E92DF2A528 /* Pods-AppticsDemoWatchApp WatchKit App-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CF1322C4A305AFB1EF4AF8160061F7A /* Pods-AppticsDemoWatchApp WatchKit App-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B573E9BB684E84F1C847A8B2489993AA /* sdk_info in Sources */ = {isa = PBXBuildFile; fileRef = 2AC158686B4D6442295EE9560720C46A /* sdk_info */; };
+		BBD3EEA610DD9D492C77F9D8A92667ED /* Apptics-SDK-watchOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FEC1D6912E1EBB4DC2B0C71407945D59 /* Apptics-SDK-watchOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BCE3801B3AC482A88579E9967225CE7C /* sdk_info in Sources */ = {isa = PBXBuildFile; fileRef = 2AC158686B4D6442295EE9560720C46A /* sdk_info */; };
+		C0D01F1135AF9DADA6E13E83D50BF8A8 /* apptics_helper.rb in Sources */ = {isa = PBXBuildFile; fileRef = 432AE8B3FF341C8A7368444126FDD09E /* apptics_helper.rb */; };
+		C9494A95D0DD507A287790D3857B5BC0 /* apptics_event_sync.rb in Sources */ = {isa = PBXBuildFile; fileRef = 6BC7E89046E4D45A1D65DFF1CBEB4D81 /* apptics_event_sync.rb */; };
+		CB2026B7AA0A7E072A70B5FBA77A875B /* apptics_event_sync.rb in Sources */ = {isa = PBXBuildFile; fileRef = 6BC7E89046E4D45A1D65DFF1CBEB4D81 /* apptics_event_sync.rb */; };
+		DCD32CA8D5A349BCDAA28134514E609D /* Pods-AppticsDemoWatchApp WatchKit App-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 100B00F6C5FE831FA24A7FAA8CDF482E /* Pods-AppticsDemoWatchApp WatchKit App-dummy.m */; };
+		E0C6DDEEF51B508C9A52BCB00A6E8064 /* apptics_helper.rb in Sources */ = {isa = PBXBuildFile; fileRef = 432AE8B3FF341C8A7368444126FDD09E /* apptics_helper.rb */; };
+		ED67F4A9DEC3C130209F76356A73CDF0 /* apptics_utils.rb in Sources */ = {isa = PBXBuildFile; fileRef = 420923F0EE060506291CDC88DC4BC0CC /* apptics_utils.rb */; };
+		F155CAA424CB85B0284F1DB37709B2E0 /* Pods-AppticsDemoWatchApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 43A9E2E251C931AFD665C005B9F068B5 /* Pods-AppticsDemoWatchApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F3340902848828433BF8E3701A4573EF /* Apptics-Swift-watchOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 68B27EBF577BE47426FA74C563D7D19A /* Apptics-Swift-watchOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F67C76535266EE09E9B64A34E5AC7839 /* Apptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D705653878C3A44624EED900E692887 /* Apptics.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0F57BA824A0610DD7FA306B495F9B9CA /* PBXContainerItemProxy */ = {
+		148E183CD362B50873E7A864C1BDC58E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CC64011E1624187F4B9594559639696F;
-			remoteInfo = "Apptics-SDK";
+			remoteGlobalIDString = CE09A49BC48270F9763727221F442302;
+			remoteInfo = "Apptics-SDK-watchOS";
 		};
-		4B1601D616B99247065B7D52BF4B5E78 /* PBXContainerItemProxy */ = {
+		1A6CCFABD4D2FEE09B9A84B0659E4130 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 897A636713908C0E3E7B5B4DF0BA1722;
-			remoteInfo = "Apptics-Swift";
+			remoteGlobalIDString = EDEF047B57D021C7CA5AC6A1C5E20434;
+			remoteInfo = "Apptics-SDK-iOS";
 		};
-		4BFE1DB3634FD6FB1542F992F99F2D30 /* PBXContainerItemProxy */ = {
+		281EB613F5795DDFCD63307828834971 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E2CE24BC09F14AA1800797A9A2320628;
-			remoteInfo = AppticsAnalytics;
+			remoteGlobalIDString = 4E287118DAC9C6D9455C38F460CCD838;
+			remoteInfo = "AppticsAnalytics-iOS";
 		};
-		5CCA8D45164618844D5243708AE9CD3D /* PBXContainerItemProxy */ = {
+		518D11CA7AE31514264B9D5DEEFDDA24 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E2CE24BC09F14AA1800797A9A2320628;
-			remoteInfo = AppticsAnalytics;
+			remoteGlobalIDString = B44992874D9B3EAD59EB00AFEF6990B4;
+			remoteInfo = "AppticsRemoteConfig-iOS";
 		};
-		BA1E11E19A2F75899879BA665747DBB0 /* PBXContainerItemProxy */ = {
+		54A67499676BABF3F8220F983C69CE58 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CC64011E1624187F4B9594559639696F;
-			remoteInfo = "Apptics-SDK";
+			remoteGlobalIDString = B51D56C1FDB39F9F71604551F455984E;
+			remoteInfo = "Apptics-Swift-watchOS";
+		};
+		62B66E97F9540F5CE6C2D6E71C4B928F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E25D22803228B3AFDF3ECAEBDBF8D53E;
+			remoteInfo = "AppticsAnalytics-watchOS";
+		};
+		6648371DA62CA0EFD6C6F5593A9D8C86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B51D56C1FDB39F9F71604551F455984E;
+			remoteInfo = "Apptics-Swift-watchOS";
+		};
+		67D9B278006AE648B651689BC0F20619 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E287118DAC9C6D9455C38F460CCD838;
+			remoteInfo = "AppticsAnalytics-iOS";
+		};
+		7EA820B278335777DF1054B5B9017CAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 589525C930370204F9A912863AFC5DB4;
+			remoteInfo = "AppticsRemoteConfig-watchOS";
+		};
+		A4386BA89F4EAFEA96057A8066D65731 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE09A49BC48270F9763727221F442302;
+			remoteInfo = "Apptics-SDK-watchOS";
+		};
+		B24C77F940EF52F927F7D6981D82E719 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E25D22803228B3AFDF3ECAEBDBF8D53E;
+			remoteInfo = "AppticsAnalytics-watchOS";
+		};
+		B42AAB5D8D479C40E173FA0E430251C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E287118DAC9C6D9455C38F460CCD838;
+			remoteInfo = "AppticsAnalytics-iOS";
+		};
+		C374926247262A4DD419E22198BFCC4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCD44D08D0255D37C39AE1040D24FAB9;
+			remoteInfo = "Apptics-Swift-iOS";
+		};
+		D2273819F84BEC25FB441B93C677C829 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E25D22803228B3AFDF3ECAEBDBF8D53E;
+			remoteInfo = "AppticsAnalytics-watchOS";
+		};
+		DED46704CDA03A5478FC1D4AE012CD64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 589525C930370204F9A912863AFC5DB4;
+			remoteInfo = "AppticsRemoteConfig-watchOS";
+		};
+		E68E5417644DA576B6D9CCDA666DE6DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E25D22803228B3AFDF3ECAEBDBF8D53E;
+			remoteInfo = "AppticsAnalytics-watchOS";
+		};
+		F7FDF3CFFD1DE185860877CB29C86939 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDEF047B57D021C7CA5AC6A1C5E20434;
+			remoteInfo = "Apptics-SDK-iOS";
+		};
+		FDDC87001F80765ED02FF6E1A40697E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE09A49BC48270F9763727221F442302;
+			remoteInfo = "Apptics-SDK-watchOS";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01D595261DE9E6360C154FE372DD6B87 /* Pods-AppticsDemoWatchApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AppticsDemoWatchApp-frameworks.sh"; sourceTree = "<group>"; };
-		0912917E06D2FFFE5E8B1FD584FFA337 /* Apptics-SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Apptics-SDK.debug.xcconfig"; sourceTree = "<group>"; };
+		012A0E8D4C286023755D69609B9D148B /* Apptics-Swift-watchOS */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Apptics-Swift-watchOS"; path = Apptics_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0186ED6EFAEC63519B4C0609BB1058E3 /* Pods-AppticsDemoWatchApp WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AppticsDemoWatchApp WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		06F8F4ABF23D96DADC39137B8D274C54 /* AppticsRemoteConfig-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "AppticsRemoteConfig-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		0712ACDD628157D2AFFC0E6B822CB5D9 /* Pods-AppticsDemoWatchApp WatchKit App-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AppticsDemoWatchApp WatchKit App-acknowledgements.markdown"; sourceTree = "<group>"; };
+		098300BB1008539601CBE8199BC02824 /* Pods-AppticsDemoWatchApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AppticsDemoWatchApp-Info.plist"; sourceTree = "<group>"; };
+		0CFDDAEB46E599D559056CD18D6576E8 /* Apptics-SDK-watchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Apptics-SDK-watchOS.release.xcconfig"; path = "../Apptics-SDK-watchOS/Apptics-SDK-watchOS.release.xcconfig"; sourceTree = "<group>"; };
+		0D705653878C3A44624EED900E692887 /* Apptics.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Apptics.swift; path = SwiftFiles/Analytics/Apptics.swift; sourceTree = "<group>"; };
 		0D83F1DCDDC5946D2785EB40C4B563F6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		0FEA2CBCF8A428DF6D53DB8297ABA245 /* Apptics-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Apptics-Swift.release.xcconfig"; sourceTree = "<group>"; };
-		15B2E660165637653A6C15494295D909 /* Pods-AppticsDemoWatchApp WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AppticsDemoWatchApp WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
-		15FD360B0350A687E4AB2A7B22DF9700 /* Apptics-SDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Apptics-SDK.modulemap"; sourceTree = "<group>"; };
-		166CBC50BDA1729C498C32B6A20F1847 /* Pods-AppticsDemoWatchApp WatchKit App-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AppticsDemoWatchApp WatchKit App-Info.plist"; sourceTree = "<group>"; };
+		100B00F6C5FE831FA24A7FAA8CDF482E /* Pods-AppticsDemoWatchApp WatchKit App-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AppticsDemoWatchApp WatchKit App-dummy.m"; sourceTree = "<group>"; };
+		131B0902CC80AD83511EE16C9CCE68DA /* KSCrash.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = KSCrash.xcframework; path = Apptics/KSCrash.xcframework; sourceTree = "<group>"; };
+		16C4C52FE6727E9E36D8B89EAF464FA5 /* AppticsAnalytics-watchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "AppticsAnalytics-watchOS.release.xcconfig"; path = "../AppticsAnalytics-watchOS/AppticsAnalytics-watchOS.release.xcconfig"; sourceTree = "<group>"; };
+		190BCA957BB041197997F5548C89F253 /* Pods-AppticsDemoWatchApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AppticsDemoWatchApp-frameworks.sh"; sourceTree = "<group>"; };
+		1A4958DC6209B4EFA9B8A5BA32B8039D /* AppticsRemoteConfig-watchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "AppticsRemoteConfig-watchOS.release.xcconfig"; path = "../AppticsRemoteConfig-watchOS/AppticsRemoteConfig-watchOS.release.xcconfig"; sourceTree = "<group>"; };
+		1AD7D67516D5F7D7C17AF0304678A065 /* Apptics-Swift-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Apptics-Swift-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		1BF75E4B8BC1CD1E683F0DB4ADD81A17 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		22BCA5EDD48F52308C07386899E21B3A /* Apptics-SDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Apptics-SDK-Info.plist"; sourceTree = "<group>"; };
-		25A613A730399FC0F3936B926C3571F6 /* Apptics-SDK */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Apptics-SDK"; path = Apptics_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2B8A6A7BCE4E3C7C7CD09380126446A3 /* JWT.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = JWT.xcframework; sourceTree = "<group>"; };
-		34E6D69FACC44FBCCD199067A3E34D81 /* Apptics-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Apptics-Swift.debug.xcconfig"; sourceTree = "<group>"; };
-		379741EFD46D5D0CDD91DC895AB2DB87 /* Pods-AppticsDemoWatchApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AppticsDemoWatchApp.modulemap"; sourceTree = "<group>"; };
-		37B91CEE6F02685A4ADFC295E5DA16E9 /* AppticsAnalytics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppticsAnalytics.debug.xcconfig; sourceTree = "<group>"; };
-		3B4D73EF80E857CEEEB9F5D845AA7AB7 /* sdk_info */ = {isa = PBXFileReference; includeInIndex = 1; name = sdk_info; path = scripts/sdk_info; sourceTree = "<group>"; };
-		3BA18B46E05A1ADA2F7C553DC046C8DB /* Pods-AppticsDemoWatchApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AppticsDemoWatchApp-acknowledgements.markdown"; sourceTree = "<group>"; };
-		432370A97C116DC5FB9B03D064C34949 /* Pods-AppticsDemoWatchApp WatchKit Extension-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AppticsDemoWatchApp WatchKit Extension-Info.plist"; sourceTree = "<group>"; };
+		1D5AFC499FFAC8FAE31C6D7A945A346F /* Apptics-SDK-watchOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Apptics-SDK-watchOS-prefix.pch"; path = "../Apptics-SDK-watchOS/Apptics-SDK-watchOS-prefix.pch"; sourceTree = "<group>"; };
+		1F1E585EBECAEC0F50487A22372F8007 /* Apptics-Swift-watchOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Apptics-Swift-watchOS-Info.plist"; path = "../Apptics-Swift-watchOS/Apptics-Swift-watchOS-Info.plist"; sourceTree = "<group>"; };
+		2AC158686B4D6442295EE9560720C46A /* sdk_info */ = {isa = PBXFileReference; includeInIndex = 1; name = sdk_info; path = scripts/sdk_info; sourceTree = "<group>"; };
+		2BD83AA8D1EA9671006D4CCA6725290C /* dsym_upload */ = {isa = PBXFileReference; includeInIndex = 1; name = dsym_upload; path = scripts/dsym_upload; sourceTree = "<group>"; };
+		2D2F5848BA6C76E022D4DC74D3ACA35B /* Pods-AppticsDemoWatchApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AppticsDemoWatchApp-dummy.m"; sourceTree = "<group>"; };
+		337545711EEE9CE38502AA1D05471762 /* Pods-AppticsDemoWatchApp WatchKit Extension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AppticsDemoWatchApp WatchKit Extension.modulemap"; sourceTree = "<group>"; };
+		34BCF1B8D277FD4F587F5F854B12A41B /* Pods-AppticsDemoWatchApp WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AppticsDemoWatchApp WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		34FD47CAF781B65C491639CB0C83A488 /* postinstaller */ = {isa = PBXFileReference; includeInIndex = 1; name = postinstaller; path = scripts/postinstaller; sourceTree = "<group>"; };
+		3582656674534803F158639AE9CA3A09 /* AppticsRemoteConfig-watchOS-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; name = "AppticsRemoteConfig-watchOS-xcframeworks.sh"; path = "../AppticsRemoteConfig-watchOS/AppticsRemoteConfig-watchOS-xcframeworks.sh"; sourceTree = "<group>"; };
+		3E7F6CB92F994D398B116A19408A990C /* Pods-AppticsDemoWatchApp WatchKit Extension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AppticsDemoWatchApp WatchKit Extension-dummy.m"; sourceTree = "<group>"; };
+		40ED86C6810BCEC158030B7E096B4665 /* Apptics-SDK-iOS */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Apptics-SDK-iOS"; path = Apptics_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		420923F0EE060506291CDC88DC4BC0CC /* apptics_utils.rb */ = {isa = PBXFileReference; includeInIndex = 1; name = apptics_utils.rb; path = scripts/apptics_utils.rb; sourceTree = "<group>"; };
+		432AE8B3FF341C8A7368444126FDD09E /* apptics_helper.rb */ = {isa = PBXFileReference; includeInIndex = 1; name = apptics_helper.rb; path = scripts/apptics_helper.rb; sourceTree = "<group>"; };
 		434F7F71AF3E93155C2C83FE77C16B53 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/StoreKit.framework; sourceTree = DEVELOPER_DIR; };
-		44C43F83F2AB5A6357790FDE746671F0 /* Pods-AppticsDemoWatchApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AppticsDemoWatchApp-dummy.m"; sourceTree = "<group>"; };
-		4C87E06A44D681F6ED88C957E118ED74 /* Pods-AppticsDemoWatchApp WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AppticsDemoWatchApp WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
-		4D3230A310436D43DBC653745C77559B /* Apptics-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Apptics-Swift-umbrella.h"; sourceTree = "<group>"; };
-		51DEFCB767291241D68A18815154D0C5 /* Pods-AppticsDemoWatchApp WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AppticsDemoWatchApp WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
-		534B002471F4AFCB55E98B323285A841 /* postinstaller */ = {isa = PBXFileReference; includeInIndex = 1; name = postinstaller; path = scripts/postinstaller; sourceTree = "<group>"; };
-		559257A9416D479DACDCED78B9E7A2D0 /* Pods-AppticsDemoWatchApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AppticsDemoWatchApp-acknowledgements.plist"; sourceTree = "<group>"; };
-		5F842F8ED863B71005444F9A7EC4634A /* Apptics-Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Apptics-Swift.modulemap"; sourceTree = "<group>"; };
-		603F5464B1C9C2CB470ECD7FA0E1036A /* Pods-AppticsDemoWatchApp WatchKit App-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AppticsDemoWatchApp WatchKit App-acknowledgements.plist"; sourceTree = "<group>"; };
-		60A027C9D21E4CBCD3EDF24A02CE7449 /* Pods-AppticsDemoWatchApp WatchKit Extension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AppticsDemoWatchApp WatchKit Extension.modulemap"; sourceTree = "<group>"; };
+		43A9E2E251C931AFD665C005B9F068B5 /* Pods-AppticsDemoWatchApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AppticsDemoWatchApp-umbrella.h"; sourceTree = "<group>"; };
+		4B67225FEA6B04B3754AD8C886BB90B8 /* Pods-AppticsDemoWatchApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AppticsDemoWatchApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		50460DD14E38DE1F80A57786EC0A37CB /* Pods-AppticsDemoWatchApp WatchKit Extension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AppticsDemoWatchApp WatchKit Extension-acknowledgements.markdown"; sourceTree = "<group>"; };
+		55C3CF5B54093062B0D067E229A6A478 /* Pods-AppticsDemoWatchApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AppticsDemoWatchApp.debug.xcconfig"; sourceTree = "<group>"; };
+		55CD9F6D4A1096FA9900F5B99CE32F77 /* AppticsAnalytics-watchOS-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; name = "AppticsAnalytics-watchOS-xcframeworks.sh"; path = "../AppticsAnalytics-watchOS/AppticsAnalytics-watchOS-xcframeworks.sh"; sourceTree = "<group>"; };
+		58E98E48EB21562F7FE9053118A7DC70 /* Apptics-Swift-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Apptics-Swift-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		5B2F634DE01B22923A4786D9BFC3E179 /* Pods-AppticsDemoWatchApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AppticsDemoWatchApp.modulemap"; sourceTree = "<group>"; };
+		60749C50438AF2BC5574E583C0FEA71E /* JWT.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = JWT.xcframework; path = Apptics/JWT.xcframework; sourceTree = "<group>"; };
 		650E04F50340A90A6E415548CE25D095 /* Pods-AppticsDemoWatchApp */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-AppticsDemoWatchApp"; path = Pods_AppticsDemoWatchApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6633383C86CC23B4CA33784682DF33AD /* Pods-AppticsDemoWatchApp WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AppticsDemoWatchApp WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
-		6712425A8A6E67CF8DA8E1FC460A6EBA /* Apptics.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = Apptics.xcframework; sourceTree = "<group>"; };
-		6E1B14BF86ADA11C579EDC886DC13506 /* Apptics-Swift */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Apptics-Swift"; path = Apptics_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7004F70D7E5C916AA5EF76A2BC54EB1C /* Pods-AppticsDemoWatchApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AppticsDemoWatchApp.debug.xcconfig"; sourceTree = "<group>"; };
-		7B6474AAA0388C430BD039F2A16D4B37 /* AppticsCrashKit.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = AppticsCrashKit.xcframework; sourceTree = "<group>"; };
-		7C8EE26DDE0A27D32ACFF2A41E26017B /* AppticsEventTracker.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = AppticsEventTracker.xcframework; sourceTree = "<group>"; };
-		7EC17376B1578694296C3941CCE2E43A /* Pods-AppticsDemoWatchApp WatchKit App-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AppticsDemoWatchApp WatchKit App-dummy.m"; sourceTree = "<group>"; };
-		7EDC2FD2C165C98BAD074AE5BED98AC0 /* KSCrash.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = KSCrash.xcframework; sourceTree = "<group>"; };
-		810843FDA7CE6266A1EB5082E7F6E991 /* AppticsAnalytics-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "AppticsAnalytics-xcframeworks.sh"; sourceTree = "<group>"; };
-		832BBB53AF2214485A163B98BF8B9F9C /* Apptics-SDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Apptics-SDK-prefix.pch"; sourceTree = "<group>"; };
+		65D7BBA16EDE183E435D23DD612EB991 /* Pods-AppticsDemoWatchApp WatchKit Extension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AppticsDemoWatchApp WatchKit Extension-umbrella.h"; sourceTree = "<group>"; };
+		68B27EBF577BE47426FA74C563D7D19A /* Apptics-Swift-watchOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Apptics-Swift-watchOS-umbrella.h"; path = "../Apptics-Swift-watchOS/Apptics-Swift-watchOS-umbrella.h"; sourceTree = "<group>"; };
+		69DB4A0469C6C63E1D62E82710CA0D30 /* Apptics-SDK-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Apptics-SDK-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		6A6F3DF2E608B7B996FA1311E8A2E1C8 /* AppticsRemoteConfig-watchOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "AppticsRemoteConfig-watchOS.debug.xcconfig"; path = "../AppticsRemoteConfig-watchOS/AppticsRemoteConfig-watchOS.debug.xcconfig"; sourceTree = "<group>"; };
+		6AC30A3DC8CB28803FEA3997A96D0031 /* Pods-AppticsDemoWatchApp WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AppticsDemoWatchApp WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		6AEBDDF5972684833775C2FCCBC16B5E /* Apptics-Swift-watchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Apptics-Swift-watchOS.release.xcconfig"; path = "../Apptics-Swift-watchOS/Apptics-Swift-watchOS.release.xcconfig"; sourceTree = "<group>"; };
+		6B2527422EF7F960663664EA5E8CB50D /* Apptics-Swift-watchOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "Apptics-Swift-watchOS.modulemap"; path = "../Apptics-Swift-watchOS/Apptics-Swift-watchOS.modulemap"; sourceTree = "<group>"; };
+		6BC7E89046E4D45A1D65DFF1CBEB4D81 /* apptics_event_sync.rb */ = {isa = PBXFileReference; includeInIndex = 1; name = apptics_event_sync.rb; path = scripts/apptics_event_sync.rb; sourceTree = "<group>"; };
+		6CF1322C4A305AFB1EF4AF8160061F7A /* Pods-AppticsDemoWatchApp WatchKit App-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AppticsDemoWatchApp WatchKit App-umbrella.h"; sourceTree = "<group>"; };
+		6F099CE5D84A5E3D036F553F11A7841B /* AppticsAnalytics-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "AppticsAnalytics-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		73D779E0F63C6F5E77B55A7C3E96DDC2 /* AppticsRemoteConfig.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = AppticsRemoteConfig.xcframework; sourceTree = "<group>"; };
+		74A191BB5C58F27F36A06B66B03F300A /* AppticsAnalytics-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "AppticsAnalytics-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		7C29728EFEAE26BE344AAA62F815C634 /* AppticsCrashKit.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = AppticsCrashKit.xcframework; path = Apptics/AppticsCrashKit.xcframework; sourceTree = "<group>"; };
+		802BC0A4600852514FDC13686B406B22 /* Apptics-Swift-iOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Apptics-Swift-iOS-Info.plist"; sourceTree = "<group>"; };
+		83CF5FFD22E51A8F82426EB083AAA12B /* Pods-AppticsDemoWatchApp WatchKit Extension-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AppticsDemoWatchApp WatchKit Extension-Info.plist"; sourceTree = "<group>"; };
+		83E7DD9D8C8B712D7A37213727A03000 /* Apptics-Swift-watchOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Apptics-Swift-watchOS.debug.xcconfig"; path = "../Apptics-Swift-watchOS/Apptics-Swift-watchOS.debug.xcconfig"; sourceTree = "<group>"; };
 		84461564F8F344746670F209A9206757 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS7.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		8D5A76819EF9BBFA9F51EDAFBE59A98D /* Pods-AppticsDemoWatchApp WatchKit Extension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AppticsDemoWatchApp WatchKit Extension-umbrella.h"; sourceTree = "<group>"; };
+		86C1C50FAC2DAD0F186F5A01AEA9E4AB /* Pods-AppticsDemoWatchApp WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AppticsDemoWatchApp WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		8751FB587BB7B749C4149473F4C5D20D /* Pods-AppticsDemoWatchApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AppticsDemoWatchApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		877E11002B77E40702453D762E5FCBE7 /* Apptics-Swift-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Apptics-Swift-iOS.modulemap"; sourceTree = "<group>"; };
+		90512DFC28D6CCC712719F84203A5116 /* Apptics-Swift-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Apptics-Swift-iOS-prefix.pch"; sourceTree = "<group>"; };
+		90AD6248DFACBBCD74C53A5F0923D101 /* AppticsRemoteConfig-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "AppticsRemoteConfig-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		9828BE473CD68596D4DF35042974695F /* Pods-AppticsDemoWatchApp WatchKit App */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-AppticsDemoWatchApp WatchKit App"; path = Pods_AppticsDemoWatchApp_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9DD4001A2BF23BD4AF7BE49254799633 /* run */ = {isa = PBXFileReference; includeInIndex = 1; name = run; path = scripts/run; sourceTree = "<group>"; };
-		A216C933CA9A11688E86FA58659217F9 /* Pods-AppticsDemoWatchApp WatchKit Extension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AppticsDemoWatchApp WatchKit Extension-acknowledgements.plist"; sourceTree = "<group>"; };
-		A74F04FA5B46E31014F625B4224CCD9E /* Pods-AppticsDemoWatchApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AppticsDemoWatchApp-Info.plist"; sourceTree = "<group>"; };
-		A950A2B1A9186F4087BDAAFAB88F834D /* dsym_upload */ = {isa = PBXFileReference; includeInIndex = 1; name = dsym_upload; path = scripts/dsym_upload; sourceTree = "<group>"; };
-		A9B32A83F6BEA966B7696796877DB614 /* AppticsAnalytics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppticsAnalytics.release.xcconfig; sourceTree = "<group>"; };
-		AD366DE978214F57FA85D4CE1AD08FB9 /* Pods-AppticsDemoWatchApp WatchKit Extension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AppticsDemoWatchApp WatchKit Extension-dummy.m"; sourceTree = "<group>"; };
-		AEC1BCAA90BD9B8994D6512A69B8C206 /* Pods-AppticsDemoWatchApp WatchKit App.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AppticsDemoWatchApp WatchKit App.modulemap"; sourceTree = "<group>"; };
-		B3252DD2476563889F25DB9DC39839CF /* Pods-AppticsDemoWatchApp WatchKit Extension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AppticsDemoWatchApp WatchKit Extension-acknowledgements.markdown"; sourceTree = "<group>"; };
-		BB884F8D6402BAC512A7C6333D407235 /* Pods-AppticsDemoWatchApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AppticsDemoWatchApp.release.xcconfig"; sourceTree = "<group>"; };
-		C1E7CDFC9C5C7525D3785EAA9718B89C /* Apptics-SDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Apptics-SDK-umbrella.h"; sourceTree = "<group>"; };
-		C4E570B9384241B03F29CE54AC538483 /* Apptics-Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Apptics-Swift-prefix.pch"; sourceTree = "<group>"; };
-		C61B13EAF45100A694B95BF69BE82416 /* appticshelper.rb */ = {isa = PBXFileReference; includeInIndex = 1; name = appticshelper.rb; path = scripts/appticshelper.rb; sourceTree = "<group>"; };
-		C7F02A033DA26D99EFB2B77EE3CF1685 /* Pods-AppticsDemoWatchApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AppticsDemoWatchApp-umbrella.h"; sourceTree = "<group>"; };
-		D08C1A5CBB19A695AED4DBCCD64DAF6C /* Pods-AppticsDemoWatchApp WatchKit App-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AppticsDemoWatchApp WatchKit App-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D42417E6474E7B6DCD6E48390E526E50 /* Apptics-SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Apptics-SDK.release.xcconfig"; sourceTree = "<group>"; };
-		D6A4FB2FFB7FDAB56C60C081E538EDBF /* AppticsScreenTracker.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = AppticsScreenTracker.xcframework; sourceTree = "<group>"; };
+		9DB457D713000E612CDD9995BD0BC684 /* Apptics-SDK-watchOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Apptics-SDK-watchOS-dummy.m"; path = "../Apptics-SDK-watchOS/Apptics-SDK-watchOS-dummy.m"; sourceTree = "<group>"; };
+		9E23B2C6B1DE4359354C4435A14301A9 /* Apptics-SDK-iOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Apptics-SDK-iOS-Info.plist"; sourceTree = "<group>"; };
+		9F4739CEA3676EB8454FB248F0CEA99B /* AppticsEventTracker.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = AppticsEventTracker.xcframework; path = Apptics/AppticsEventTracker.xcframework; sourceTree = "<group>"; };
+		A1B2DA78BC3DC61628361D4CDC8E70A8 /* sdk_info.bu */ = {isa = PBXFileReference; includeInIndex = 1; name = sdk_info.bu; path = scripts/sdk_info.bu; sourceTree = "<group>"; };
+		AAE716FABFEF239E2FCB85990A4FAD42 /* Apptics-Swift-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Apptics-Swift-iOS-dummy.m"; sourceTree = "<group>"; };
+		ADF6266F94DB044B88EC1A60337C3566 /* Apptics-SDK-watchOS */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Apptics-SDK-watchOS"; path = Apptics_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF91FC926531E15217F56DF2001393A5 /* run */ = {isa = PBXFileReference; includeInIndex = 1; name = run; path = scripts/run; sourceTree = "<group>"; };
+		B78BC66835330821F243A79F3A21988A /* Apptics-SDK-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Apptics-SDK-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		C09AF49752E46F7B8D33E65AE0CBDF60 /* AppticsAnalytics-iOS-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "AppticsAnalytics-iOS-xcframeworks.sh"; sourceTree = "<group>"; };
+		C40942563DD0B51C268DD80245659453 /* Pods-AppticsDemoWatchApp WatchKit Extension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AppticsDemoWatchApp WatchKit Extension-acknowledgements.plist"; sourceTree = "<group>"; };
+		C4FCA0A6F263E8DC578E82414EFAC515 /* Apptics-SDK-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Apptics-SDK-iOS-dummy.m"; sourceTree = "<group>"; };
+		CAFBC144F0A4A8DE06F52A0D9417FA3D /* AppticsScreenTracker.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = AppticsScreenTracker.xcframework; path = Apptics/AppticsScreenTracker.xcframework; sourceTree = "<group>"; };
+		CB0965C170488D45CE1FC2FFD0495581 /* Pods-AppticsDemoWatchApp WatchKit App-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AppticsDemoWatchApp WatchKit App-frameworks.sh"; sourceTree = "<group>"; };
+		D2FD4E6A9D172C4AF756AD901BD048BD /* Apptics-Swift-watchOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Apptics-Swift-watchOS-dummy.m"; path = "../Apptics-Swift-watchOS/Apptics-Swift-watchOS-dummy.m"; sourceTree = "<group>"; };
+		D7155AD0F49E503B1AB1AE866C58BEF7 /* AppticsRemoteConfig-iOS-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "AppticsRemoteConfig-iOS-xcframeworks.sh"; sourceTree = "<group>"; };
+		D9CCD2D7E07AA773D9A4DDF3D9231DB3 /* Pods-AppticsDemoWatchApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AppticsDemoWatchApp.release.xcconfig"; sourceTree = "<group>"; };
+		DBCFD5B080BCFDA13E45C9D419F0941E /* Apptics-Swift-watchOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Apptics-Swift-watchOS-prefix.pch"; path = "../Apptics-Swift-watchOS/Apptics-Swift-watchOS-prefix.pch"; sourceTree = "<group>"; };
+		DEDDD86898BF84D1F99581E1568CC7CA /* Pods-AppticsDemoWatchApp WatchKit Extension-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AppticsDemoWatchApp WatchKit Extension-frameworks.sh"; sourceTree = "<group>"; };
 		DFF22633E5EE725DF312FC4BE75D7032 /* Pods-AppticsDemoWatchApp WatchKit Extension */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-AppticsDemoWatchApp WatchKit Extension"; path = Pods_AppticsDemoWatchApp_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E197775B05A308CDDD37C631E0A20FA4 /* Pods-AppticsDemoWatchApp WatchKit App-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AppticsDemoWatchApp WatchKit App-umbrella.h"; sourceTree = "<group>"; };
-		E5B170FCCFDD51CB7C6DF5BB4DBE81BB /* Apptics-SDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Apptics-SDK-dummy.m"; sourceTree = "<group>"; };
-		E6EC3B68B7EEC0DFD8991515B7C2C9F7 /* Apptics-Swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Apptics-Swift-Info.plist"; sourceTree = "<group>"; };
-		F2DDCEC68381145CD9C837079316D804 /* Apptics-Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Apptics-Swift-dummy.m"; sourceTree = "<group>"; };
-		F6B6CB99F8A0AFF3E768E07E8BD61517 /* sdk_info.bu */ = {isa = PBXFileReference; includeInIndex = 1; name = sdk_info.bu; path = scripts/sdk_info.bu; sourceTree = "<group>"; };
-		F90D9495A1A3D3D749E317C0C134FF48 /* APAppticsForExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APAppticsForExtension.swift; path = SwiftFiles/AppExtension/APAppticsForExtension.swift; sourceTree = "<group>"; };
+		E16721E98FB9D3C2C01CB9DCE31129F7 /* Pods-AppticsDemoWatchApp WatchKit App-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AppticsDemoWatchApp WatchKit App-acknowledgements.plist"; sourceTree = "<group>"; };
+		E39729B2C182476EA9D0AD12E758DDAD /* Pods-AppticsDemoWatchApp WatchKit App.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AppticsDemoWatchApp WatchKit App.modulemap"; sourceTree = "<group>"; };
+		E5A2C72644D03CECFE342D614D8F54EE /* Apptics.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = Apptics.xcframework; path = Apptics/Apptics.xcframework; sourceTree = "<group>"; };
+		E60B7F5FC67897DC6BF2D16228ED0CCD /* Pods-AppticsDemoWatchApp WatchKit App-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AppticsDemoWatchApp WatchKit App-Info.plist"; sourceTree = "<group>"; };
+		E9347F04CFCF1BA9DFCBEF397115BCCE /* AppticsAnalytics-watchOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "AppticsAnalytics-watchOS.debug.xcconfig"; path = "../AppticsAnalytics-watchOS/AppticsAnalytics-watchOS.debug.xcconfig"; sourceTree = "<group>"; };
+		E9960EFC95124AD366439F2DEF94DC49 /* Apptics-SDK-watchOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Apptics-SDK-watchOS-Info.plist"; path = "../Apptics-SDK-watchOS/Apptics-SDK-watchOS-Info.plist"; sourceTree = "<group>"; };
+		EC05610F1E3ACF698E550D0E3DC75229 /* Apptics-SDK-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Apptics-SDK-iOS-prefix.pch"; sourceTree = "<group>"; };
+		EDADBC6DE719AF8B9AB5FAF00CB8C87E /* Apptics-SDK-watchOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "Apptics-SDK-watchOS.modulemap"; path = "../Apptics-SDK-watchOS/Apptics-SDK-watchOS.modulemap"; sourceTree = "<group>"; };
+		EEB31528134FECA8617BB1EE09B4CF7F /* Apptics-Swift-iOS */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Apptics-Swift-iOS"; path = Apptics_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F83594FFB2041F2A3C7727CFA0F7641C /* Apptics-SDK-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Apptics-SDK-iOS-umbrella.h"; sourceTree = "<group>"; };
+		F918F60BA0B8BFBAE3059959690927B6 /* Apptics-SDK-watchOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Apptics-SDK-watchOS.debug.xcconfig"; path = "../Apptics-SDK-watchOS/Apptics-SDK-watchOS.debug.xcconfig"; sourceTree = "<group>"; };
+		FC383BAE20E9FD1108F72E182678FACB /* Apptics-SDK-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Apptics-SDK-iOS.modulemap"; sourceTree = "<group>"; };
+		FCA55DEDD8CA01CC5C5A3DA696739034 /* Apptics-Swift-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Apptics-Swift-iOS-umbrella.h"; sourceTree = "<group>"; };
+		FEC1D6912E1EBB4DC2B0C71407945D59 /* Apptics-SDK-watchOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Apptics-SDK-watchOS-umbrella.h"; path = "../Apptics-SDK-watchOS/Apptics-SDK-watchOS-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1C9E387E28E38081E4DD74851473B395 /* Frameworks */ = {
+		2FDEE81F007D0E5DF97116CCC5CEE3A9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BA825757C3047A176646B28971CADF2 /* Foundation.framework in Frameworks */,
+				6B968BBCB056356E3A58C4F00A53EF7F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		489DCA43B5BFAB440404DE6D731F1A23 /* Frameworks */ = {
+		3E607586A890F252010A1E80BB674DBD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A644664690DF4BCBC26709AA082B9BE0 /* Foundation.framework in Frameworks */,
+				3E106DEB15B864EE3FC4E8D13C448573 /* Foundation.framework in Frameworks */,
+				613E03372E0F21E3182A986DAB93B1B8 /* StoreKit.framework in Frameworks */,
+				59A97A328A48C9C6AFAD948D456A9AEE /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7805C2E519DD8F17B7ABFAFB9E634626 /* Frameworks */ = {
+		512DD0E47AEAC0B474E1A195641CEB73 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A52FCF8ECD8D765D423E8E2CA9786E8B /* Foundation.framework in Frameworks */,
-				364730C67FF154174590BE5FCA389BCE /* StoreKit.framework in Frameworks */,
-				03D4FAFE3F58967E29C7F21574C129F4 /* UIKit.framework in Frameworks */,
+				10E20EEC48180740F27A7566CDDB5251 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B06E006405C655F7EF54B8EEF07FBD90 /* Frameworks */ = {
+		704ECC75226A0F22EC8B50A2EBB0DA9D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CBCA0C1AA6F28E9FDEAEDEB8CA44447 /* Foundation.framework in Frameworks */,
+				9C12221592DDDA2DA17FA9336F4E642A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B9EBB146EFEA048063A1F91D2301F709 /* Frameworks */ = {
+		800C52771DABB4F445E5080B5C4F2EC6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8493FE089570DCC038932E530621AA6 /* Foundation.framework in Frameworks */,
+				1F59A7A65CC87E78242C49758EC16CE9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4F989080EBCC8D2E333682E93834C6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D9E098C118F16CD7CA18BA37A1A405F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFED4BF0DB55EE4C756E8687E6E5B33B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E19726F5265A5CD324461AFA0DA9821 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02D91643273D7B7607D28551525B453B /* AppticsAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				F1AE062971E2A85AE3AB42622BDD7276 /* Apptics */,
+				F2694C017D14C398B30DB9587C467280 /* CrashKit */,
+				65CC952AD00E32A6DC2BA3BB3DCD75D1 /* EventTracker */,
+				D0CE1DA3B3D14A43FD1AF1EE44352843 /* JWT */,
+				7F5A8EBB3BDB037162E94927789AD9C5 /* KSCrash */,
+				556B6C9ED64E1A2ED8EB4632728F6725 /* ScreenTracker */,
+				ACE5307E2F92DC4CF009FA9FF3B6ABA1 /* Support Files */,
+			);
+			name = AppticsAnalytics;
+			path = AppticsAnalytics;
+			sourceTree = "<group>";
+		};
+		04BCE22396DC7002516D358251499A4B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C29728EFEAE26BE344AAA62F815C634 /* AppticsCrashKit.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		0ECEA6E539E18CD01197538CE9DB5F53 /* watchOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,66 +415,66 @@
 			name = watchOS;
 			sourceTree = "<group>";
 		};
-		1199C27882B15D569575CEF3295ECCAC /* Pods-AppticsDemoWatchApp WatchKit Extension */ = {
+		12CA66E164778D0A2EB967BA086804B1 /* Apptics-Swift */ = {
 			isa = PBXGroup;
 			children = (
-				60A027C9D21E4CBCD3EDF24A02CE7449 /* Pods-AppticsDemoWatchApp WatchKit Extension.modulemap */,
-				B3252DD2476563889F25DB9DC39839CF /* Pods-AppticsDemoWatchApp WatchKit Extension-acknowledgements.markdown */,
-				A216C933CA9A11688E86FA58659217F9 /* Pods-AppticsDemoWatchApp WatchKit Extension-acknowledgements.plist */,
-				AD366DE978214F57FA85D4CE1AD08FB9 /* Pods-AppticsDemoWatchApp WatchKit Extension-dummy.m */,
-				432370A97C116DC5FB9B03D064C34949 /* Pods-AppticsDemoWatchApp WatchKit Extension-Info.plist */,
-				8D5A76819EF9BBFA9F51EDAFBE59A98D /* Pods-AppticsDemoWatchApp WatchKit Extension-umbrella.h */,
-				51DEFCB767291241D68A18815154D0C5 /* Pods-AppticsDemoWatchApp WatchKit Extension.debug.xcconfig */,
-				4C87E06A44D681F6ED88C957E118ED74 /* Pods-AppticsDemoWatchApp WatchKit Extension.release.xcconfig */,
-			);
-			name = "Pods-AppticsDemoWatchApp WatchKit Extension";
-			path = "Target Support Files/Pods-AppticsDemoWatchApp WatchKit Extension";
-			sourceTree = "<group>";
-		};
-		1786008CB4864DAFC12BF5FBE1045097 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				7B6474AAA0388C430BD039F2A16D4B37 /* AppticsCrashKit.xcframework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		2418C6E8AAC7F03B675150FB59310475 /* Scripts */ = {
-			isa = PBXGroup;
-			children = (
-				C61B13EAF45100A694B95BF69BE82416 /* appticshelper.rb */,
-				A950A2B1A9186F4087BDAAFAB88F834D /* dsym_upload */,
-				534B002471F4AFCB55E98B323285A841 /* postinstaller */,
-				9DD4001A2BF23BD4AF7BE49254799633 /* run */,
-				3B4D73EF80E857CEEEB9F5D845AA7AB7 /* sdk_info */,
-				F6B6CB99F8A0AFF3E768E07E8BD61517 /* sdk_info.bu */,
-			);
-			name = Scripts;
-			sourceTree = "<group>";
-		};
-		28C814A5A34ACE4AC46880E927C0C7D1 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				2B8A6A7BCE4E3C7C7CD09380126446A3 /* JWT.xcframework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		2A23D1A18171153056E34BA069815941 /* Apptics-Swift */ = {
-			isa = PBXGroup;
-			children = (
-				B363AD064BEB85CCBC5DEF78061E395F /* Extension */,
-				E75548D72DA201A47CEF87A1D0C2466F /* Support Files */,
+				C630BCA7A70D4981FFADF956F2AD5469 /* Analytics */,
+				B9A994B62B7D932A8361C54D70D0FC28 /* Support Files */,
 			);
 			name = "Apptics-Swift";
 			path = "Apptics-Swift";
 			sourceTree = "<group>";
 		};
-		2B4FDEDABC6D4014129DC02868CB9897 /* Products */ = {
+		2F16BF97D5C585336CED109A9E3568CE /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				25A613A730399FC0F3936B926C3571F6 /* Apptics-SDK */,
-				6E1B14BF86ADA11C579EDC886DC13506 /* Apptics-Swift */,
+				4007D3262E26C6286FE5CE07DEF6B0F4 /* Pods-AppticsDemoWatchApp */,
+				EF924485891DA675173B0E4BA8DBC980 /* Pods-AppticsDemoWatchApp WatchKit App */,
+				7F32DB2AC8C28138C45DFDD935B0B915 /* Pods-AppticsDemoWatchApp WatchKit Extension */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		4007D3262E26C6286FE5CE07DEF6B0F4 /* Pods-AppticsDemoWatchApp */ = {
+			isa = PBXGroup;
+			children = (
+				5B2F634DE01B22923A4786D9BFC3E179 /* Pods-AppticsDemoWatchApp.modulemap */,
+				8751FB587BB7B749C4149473F4C5D20D /* Pods-AppticsDemoWatchApp-acknowledgements.markdown */,
+				4B67225FEA6B04B3754AD8C886BB90B8 /* Pods-AppticsDemoWatchApp-acknowledgements.plist */,
+				2D2F5848BA6C76E022D4DC74D3ACA35B /* Pods-AppticsDemoWatchApp-dummy.m */,
+				190BCA957BB041197997F5548C89F253 /* Pods-AppticsDemoWatchApp-frameworks.sh */,
+				098300BB1008539601CBE8199BC02824 /* Pods-AppticsDemoWatchApp-Info.plist */,
+				43A9E2E251C931AFD665C005B9F068B5 /* Pods-AppticsDemoWatchApp-umbrella.h */,
+				55C3CF5B54093062B0D067E229A6A478 /* Pods-AppticsDemoWatchApp.debug.xcconfig */,
+				D9CCD2D7E07AA773D9A4DDF3D9231DB3 /* Pods-AppticsDemoWatchApp.release.xcconfig */,
+			);
+			name = "Pods-AppticsDemoWatchApp";
+			path = "Target Support Files/Pods-AppticsDemoWatchApp";
+			sourceTree = "<group>";
+		};
+		445A732D0C311966AF9A5CE57E539E60 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CAFBC144F0A4A8DE06F52A0D9417FA3D /* AppticsScreenTracker.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4E7ACA98B3AA101979B8184FC6A23624 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				73D779E0F63C6F5E77B55A7C3E96DDC2 /* AppticsRemoteConfig.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		547BA8DCADFB8168BF2CF8EC98420651 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				40ED86C6810BCEC158030B7E096B4665 /* Apptics-SDK-iOS */,
+				ADF6266F94DB044B88EC1A60337C3566 /* Apptics-SDK-watchOS */,
+				EEB31528134FECA8617BB1EE09B4CF7F /* Apptics-Swift-iOS */,
+				012A0E8D4C286023755D69609B9D148B /* Apptics-Swift-watchOS */,
 				650E04F50340A90A6E415548CE25D095 /* Pods-AppticsDemoWatchApp */,
 				9828BE473CD68596D4DF35042974695F /* Pods-AppticsDemoWatchApp WatchKit App */,
 				DFF22633E5EE725DF312FC4BE75D7032 /* Pods-AppticsDemoWatchApp WatchKit Extension */,
@@ -273,160 +482,131 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2BCBBD42DD925C99F8F133E062A5BDA6 /* Apptics */ = {
+		556B6C9ED64E1A2ED8EB4632728F6725 /* ScreenTracker */ = {
 			isa = PBXGroup;
 			children = (
-				6CC80DF09E4089E259D6CD08972A5040 /* Frameworks */,
-			);
-			name = Apptics;
-			sourceTree = "<group>";
-		};
-		2BF25DA804B75EDD5589B209244CDA74 /* Pods-AppticsDemoWatchApp */ = {
-			isa = PBXGroup;
-			children = (
-				379741EFD46D5D0CDD91DC895AB2DB87 /* Pods-AppticsDemoWatchApp.modulemap */,
-				3BA18B46E05A1ADA2F7C553DC046C8DB /* Pods-AppticsDemoWatchApp-acknowledgements.markdown */,
-				559257A9416D479DACDCED78B9E7A2D0 /* Pods-AppticsDemoWatchApp-acknowledgements.plist */,
-				44C43F83F2AB5A6357790FDE746671F0 /* Pods-AppticsDemoWatchApp-dummy.m */,
-				01D595261DE9E6360C154FE372DD6B87 /* Pods-AppticsDemoWatchApp-frameworks.sh */,
-				A74F04FA5B46E31014F625B4224CCD9E /* Pods-AppticsDemoWatchApp-Info.plist */,
-				C7F02A033DA26D99EFB2B77EE3CF1685 /* Pods-AppticsDemoWatchApp-umbrella.h */,
-				7004F70D7E5C916AA5EF76A2BC54EB1C /* Pods-AppticsDemoWatchApp.debug.xcconfig */,
-				BB884F8D6402BAC512A7C6333D407235 /* Pods-AppticsDemoWatchApp.release.xcconfig */,
-			);
-			name = "Pods-AppticsDemoWatchApp";
-			path = "Target Support Files/Pods-AppticsDemoWatchApp";
-			sourceTree = "<group>";
-		};
-		2C0750738D332B045D9E05C68746AF6F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				7C8EE26DDE0A27D32ACFF2A41E26017B /* AppticsEventTracker.xcframework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		32ACFBA1D9FB8FAC8ECE5F8395E1D75E /* EventTracker */ = {
-			isa = PBXGroup;
-			children = (
-				2C0750738D332B045D9E05C68746AF6F /* Frameworks */,
-			);
-			name = EventTracker;
-			sourceTree = "<group>";
-		};
-		4E14B5AE440738C63C60FB26112A9182 /* KSCrash */ = {
-			isa = PBXGroup;
-			children = (
-				5B871A6B13C4A5E7306D16FF2ED0E042 /* Frameworks */,
-			);
-			name = KSCrash;
-			sourceTree = "<group>";
-		};
-		5627C521D8FBC78CD2F75C9301C9509F /* Pods-AppticsDemoWatchApp WatchKit App */ = {
-			isa = PBXGroup;
-			children = (
-				AEC1BCAA90BD9B8994D6512A69B8C206 /* Pods-AppticsDemoWatchApp WatchKit App.modulemap */,
-				D08C1A5CBB19A695AED4DBCCD64DAF6C /* Pods-AppticsDemoWatchApp WatchKit App-acknowledgements.markdown */,
-				603F5464B1C9C2CB470ECD7FA0E1036A /* Pods-AppticsDemoWatchApp WatchKit App-acknowledgements.plist */,
-				7EC17376B1578694296C3941CCE2E43A /* Pods-AppticsDemoWatchApp WatchKit App-dummy.m */,
-				166CBC50BDA1729C498C32B6A20F1847 /* Pods-AppticsDemoWatchApp WatchKit App-Info.plist */,
-				E197775B05A308CDDD37C631E0A20FA4 /* Pods-AppticsDemoWatchApp WatchKit App-umbrella.h */,
-				15B2E660165637653A6C15494295D909 /* Pods-AppticsDemoWatchApp WatchKit App.debug.xcconfig */,
-				6633383C86CC23B4CA33784682DF33AD /* Pods-AppticsDemoWatchApp WatchKit App.release.xcconfig */,
-			);
-			name = "Pods-AppticsDemoWatchApp WatchKit App";
-			path = "Target Support Files/Pods-AppticsDemoWatchApp WatchKit App";
-			sourceTree = "<group>";
-		};
-		5B871A6B13C4A5E7306D16FF2ED0E042 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				7EDC2FD2C165C98BAD074AE5BED98AC0 /* KSCrash.xcframework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		693199106D61FB199378C1C2947002B0 /* ScreenTracker */ = {
-			isa = PBXGroup;
-			children = (
-				89255E9624D36BB487E4625BCF1EF865 /* Frameworks */,
+				445A732D0C311966AF9A5CE57E539E60 /* Frameworks */,
 			);
 			name = ScreenTracker;
 			sourceTree = "<group>";
 		};
-		6CC80DF09E4089E259D6CD08972A5040 /* Frameworks */ = {
+		5924AB25A795BF1CE894E6A349F4F93C /* AppticsRemoteConfig */ = {
 			isa = PBXGroup;
 			children = (
-				6712425A8A6E67CF8DA8E1FC460A6EBA /* Apptics.xcframework */,
+				8F3F627BF8C919F629D0C73C972E42BB /* RemoteConfig */,
+				E39E3744B4D3C1D0146D3029C6D89A8B /* Support Files */,
+			);
+			name = AppticsRemoteConfig;
+			path = AppticsRemoteConfig;
+			sourceTree = "<group>";
+		};
+		60B0C1E8237232A3F26D542AA6E0F7F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				60749C50438AF2BC5574E583C0FEA71E /* JWT.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		75982D180FEB20C7A5313CBA384BEBAB /* CrashKit */ = {
+		65CC952AD00E32A6DC2BA3BB3DCD75D1 /* EventTracker */ = {
 			isa = PBXGroup;
 			children = (
-				1786008CB4864DAFC12BF5FBE1045097 /* Frameworks */,
+				B8C03624C47FD377D950B0DA366FF24A /* Frameworks */,
 			);
-			name = CrashKit;
+			name = EventTracker;
 			sourceTree = "<group>";
 		};
-		76C68437A13423BB76BFBC4727C0AD01 /* JWT */ = {
+		7F32DB2AC8C28138C45DFDD935B0B915 /* Pods-AppticsDemoWatchApp WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				28C814A5A34ACE4AC46880E927C0C7D1 /* Frameworks */,
+				337545711EEE9CE38502AA1D05471762 /* Pods-AppticsDemoWatchApp WatchKit Extension.modulemap */,
+				50460DD14E38DE1F80A57786EC0A37CB /* Pods-AppticsDemoWatchApp WatchKit Extension-acknowledgements.markdown */,
+				C40942563DD0B51C268DD80245659453 /* Pods-AppticsDemoWatchApp WatchKit Extension-acknowledgements.plist */,
+				3E7F6CB92F994D398B116A19408A990C /* Pods-AppticsDemoWatchApp WatchKit Extension-dummy.m */,
+				DEDDD86898BF84D1F99581E1568CC7CA /* Pods-AppticsDemoWatchApp WatchKit Extension-frameworks.sh */,
+				83CF5FFD22E51A8F82426EB083AAA12B /* Pods-AppticsDemoWatchApp WatchKit Extension-Info.plist */,
+				65D7BBA16EDE183E435D23DD612EB991 /* Pods-AppticsDemoWatchApp WatchKit Extension-umbrella.h */,
+				86C1C50FAC2DAD0F186F5A01AEA9E4AB /* Pods-AppticsDemoWatchApp WatchKit Extension.debug.xcconfig */,
+				0186ED6EFAEC63519B4C0609BB1058E3 /* Pods-AppticsDemoWatchApp WatchKit Extension.release.xcconfig */,
 			);
-			name = JWT;
+			name = "Pods-AppticsDemoWatchApp WatchKit Extension";
+			path = "Target Support Files/Pods-AppticsDemoWatchApp WatchKit Extension";
 			sourceTree = "<group>";
 		};
-		7A812394897B441978A5986290925132 /* Pods */ = {
+		7F5A8EBB3BDB037162E94927789AD9C5 /* KSCrash */ = {
 			isa = PBXGroup;
 			children = (
-				BA88ADB9A936FD6A5D910D0D2B8F6495 /* Apptics-SDK */,
-				2A23D1A18171153056E34BA069815941 /* Apptics-Swift */,
-				D6B2BC7C499276D3BB1B12886091452D /* AppticsAnalytics */,
+				9B74C28134CE4714EE7519DE6504592F /* Frameworks */,
 			);
-			name = Pods;
+			name = KSCrash;
 			sourceTree = "<group>";
 		};
-		89255E9624D36BB487E4625BCF1EF865 /* Frameworks */ = {
+		8C2162BC91D3B0E2D0AC1432F95F0371 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D6A4FB2FFB7FDAB56C60C081E538EDBF /* AppticsScreenTracker.xcframework */,
+				E5A2C72644D03CECFE342D614D8F54EE /* Apptics.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		9D7867E5C25A5DEAA45E2251DBB39151 /* Support Files */ = {
+		8F3F627BF8C919F629D0C73C972E42BB /* RemoteConfig */ = {
 			isa = PBXGroup;
 			children = (
-				15FD360B0350A687E4AB2A7B22DF9700 /* Apptics-SDK.modulemap */,
-				E5B170FCCFDD51CB7C6DF5BB4DBE81BB /* Apptics-SDK-dummy.m */,
-				22BCA5EDD48F52308C07386899E21B3A /* Apptics-SDK-Info.plist */,
-				832BBB53AF2214485A163B98BF8B9F9C /* Apptics-SDK-prefix.pch */,
-				C1E7CDFC9C5C7525D3785EAA9718B89C /* Apptics-SDK-umbrella.h */,
-				0912917E06D2FFFE5E8B1FD584FFA337 /* Apptics-SDK.debug.xcconfig */,
-				D42417E6474E7B6DCD6E48390E526E50 /* Apptics-SDK.release.xcconfig */,
+				4E7ACA98B3AA101979B8184FC6A23624 /* Frameworks */,
+			);
+			name = RemoteConfig;
+			sourceTree = "<group>";
+		};
+		9B74C28134CE4714EE7519DE6504592F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				131B0902CC80AD83511EE16C9CCE68DA /* KSCrash.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ACE5307E2F92DC4CF009FA9FF3B6ABA1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C09AF49752E46F7B8D33E65AE0CBDF60 /* AppticsAnalytics-iOS-xcframeworks.sh */,
+				74A191BB5C58F27F36A06B66B03F300A /* AppticsAnalytics-iOS.debug.xcconfig */,
+				6F099CE5D84A5E3D036F553F11A7841B /* AppticsAnalytics-iOS.release.xcconfig */,
+				55CD9F6D4A1096FA9900F5B99CE32F77 /* AppticsAnalytics-watchOS-xcframeworks.sh */,
+				E9347F04CFCF1BA9DFCBEF397115BCCE /* AppticsAnalytics-watchOS.debug.xcconfig */,
+				16C4C52FE6727E9E36D8B89EAF464FA5 /* AppticsAnalytics-watchOS.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/Apptics-SDK";
+			path = "../Target Support Files/AppticsAnalytics-iOS";
 			sourceTree = "<group>";
 		};
-		B363AD064BEB85CCBC5DEF78061E395F /* Extension */ = {
+		B8C03624C47FD377D950B0DA366FF24A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F90D9495A1A3D3D749E317C0C134FF48 /* APAppticsForExtension.swift */,
+				9F4739CEA3676EB8454FB248F0CEA99B /* AppticsEventTracker.xcframework */,
 			);
-			name = Extension;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BA88ADB9A936FD6A5D910D0D2B8F6495 /* Apptics-SDK */ = {
+		B9A994B62B7D932A8361C54D70D0FC28 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				2418C6E8AAC7F03B675150FB59310475 /* Scripts */,
-				9D7867E5C25A5DEAA45E2251DBB39151 /* Support Files */,
+				877E11002B77E40702453D762E5FCBE7 /* Apptics-Swift-iOS.modulemap */,
+				AAE716FABFEF239E2FCB85990A4FAD42 /* Apptics-Swift-iOS-dummy.m */,
+				802BC0A4600852514FDC13686B406B22 /* Apptics-Swift-iOS-Info.plist */,
+				90512DFC28D6CCC712719F84203A5116 /* Apptics-Swift-iOS-prefix.pch */,
+				FCA55DEDD8CA01CC5C5A3DA696739034 /* Apptics-Swift-iOS-umbrella.h */,
+				1AD7D67516D5F7D7C17AF0304678A065 /* Apptics-Swift-iOS.debug.xcconfig */,
+				58E98E48EB21562F7FE9053118A7DC70 /* Apptics-Swift-iOS.release.xcconfig */,
+				6B2527422EF7F960663664EA5E8CB50D /* Apptics-Swift-watchOS.modulemap */,
+				D2FD4E6A9D172C4AF756AD901BD048BD /* Apptics-Swift-watchOS-dummy.m */,
+				1F1E585EBECAEC0F50487A22372F8007 /* Apptics-Swift-watchOS-Info.plist */,
+				DBCFD5B080BCFDA13E45C9D419F0941E /* Apptics-Swift-watchOS-prefix.pch */,
+				68B27EBF577BE47426FA74C563D7D19A /* Apptics-Swift-watchOS-umbrella.h */,
+				83E7DD9D8C8B712D7A37213727A03000 /* Apptics-Swift-watchOS.debug.xcconfig */,
+				6AEBDDF5972684833775C2FCCBC16B5E /* Apptics-Swift-watchOS.release.xcconfig */,
 			);
-			name = "Apptics-SDK";
-			path = "Apptics-SDK";
+			name = "Support Files";
+			path = "../Target Support Files/Apptics-Swift-iOS";
 			sourceTree = "<group>";
 		};
 		BFC9A8986ED351F9B00BE7521FE1A3E8 /* Frameworks */ = {
@@ -438,66 +618,136 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C41791FB0A2C4382641EAAFC1209B5B7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC383BAE20E9FD1108F72E182678FACB /* Apptics-SDK-iOS.modulemap */,
+				C4FCA0A6F263E8DC578E82414EFAC515 /* Apptics-SDK-iOS-dummy.m */,
+				9E23B2C6B1DE4359354C4435A14301A9 /* Apptics-SDK-iOS-Info.plist */,
+				EC05610F1E3ACF698E550D0E3DC75229 /* Apptics-SDK-iOS-prefix.pch */,
+				F83594FFB2041F2A3C7727CFA0F7641C /* Apptics-SDK-iOS-umbrella.h */,
+				69DB4A0469C6C63E1D62E82710CA0D30 /* Apptics-SDK-iOS.debug.xcconfig */,
+				B78BC66835330821F243A79F3A21988A /* Apptics-SDK-iOS.release.xcconfig */,
+				EDADBC6DE719AF8B9AB5FAF00CB8C87E /* Apptics-SDK-watchOS.modulemap */,
+				9DB457D713000E612CDD9995BD0BC684 /* Apptics-SDK-watchOS-dummy.m */,
+				E9960EFC95124AD366439F2DEF94DC49 /* Apptics-SDK-watchOS-Info.plist */,
+				1D5AFC499FFAC8FAE31C6D7A945A346F /* Apptics-SDK-watchOS-prefix.pch */,
+				FEC1D6912E1EBB4DC2B0C71407945D59 /* Apptics-SDK-watchOS-umbrella.h */,
+				F918F60BA0B8BFBAE3059959690927B6 /* Apptics-SDK-watchOS.debug.xcconfig */,
+				0CFDDAEB46E599D559056CD18D6576E8 /* Apptics-SDK-watchOS.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Apptics-SDK-iOS";
+			sourceTree = "<group>";
+		};
+		C630BCA7A70D4981FFADF956F2AD5469 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				0D705653878C3A44624EED900E692887 /* Apptics.swift */,
+			);
+			name = Analytics;
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				BFC9A8986ED351F9B00BE7521FE1A3E8 /* Frameworks */,
-				7A812394897B441978A5986290925132 /* Pods */,
-				2B4FDEDABC6D4014129DC02868CB9897 /* Products */,
-				EB913498D4C91FD6EC263CC0B160930E /* Targets Support Files */,
+				F059FEED152144B4E534D4FB15C1E3E2 /* Pods */,
+				547BA8DCADFB8168BF2CF8EC98420651 /* Products */,
+				2F16BF97D5C585336CED109A9E3568CE /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D6B2BC7C499276D3BB1B12886091452D /* AppticsAnalytics */ = {
+		D0CE1DA3B3D14A43FD1AF1EE44352843 /* JWT */ = {
 			isa = PBXGroup;
 			children = (
-				2BCBBD42DD925C99F8F133E062A5BDA6 /* Apptics */,
-				75982D180FEB20C7A5313CBA384BEBAB /* CrashKit */,
-				32ACFBA1D9FB8FAC8ECE5F8395E1D75E /* EventTracker */,
-				76C68437A13423BB76BFBC4727C0AD01 /* JWT */,
-				4E14B5AE440738C63C60FB26112A9182 /* KSCrash */,
-				693199106D61FB199378C1C2947002B0 /* ScreenTracker */,
-				EF742FF9D78598DED8CCD9393EA5E8E6 /* Support Files */,
+				60B0C1E8237232A3F26D542AA6E0F7F8 /* Frameworks */,
 			);
-			name = AppticsAnalytics;
-			path = AppticsAnalytics;
+			name = JWT;
 			sourceTree = "<group>";
 		};
-		E75548D72DA201A47CEF87A1D0C2466F /* Support Files */ = {
+		DBD978FCE19CE13F93C787D4933C2052 /* Scripts */ = {
 			isa = PBXGroup;
 			children = (
-				5F842F8ED863B71005444F9A7EC4634A /* Apptics-Swift.modulemap */,
-				F2DDCEC68381145CD9C837079316D804 /* Apptics-Swift-dummy.m */,
-				E6EC3B68B7EEC0DFD8991515B7C2C9F7 /* Apptics-Swift-Info.plist */,
-				C4E570B9384241B03F29CE54AC538483 /* Apptics-Swift-prefix.pch */,
-				4D3230A310436D43DBC653745C77559B /* Apptics-Swift-umbrella.h */,
-				34E6D69FACC44FBCCD199067A3E34D81 /* Apptics-Swift.debug.xcconfig */,
-				0FEA2CBCF8A428DF6D53DB8297ABA245 /* Apptics-Swift.release.xcconfig */,
+				6BC7E89046E4D45A1D65DFF1CBEB4D81 /* apptics_event_sync.rb */,
+				432AE8B3FF341C8A7368444126FDD09E /* apptics_helper.rb */,
+				420923F0EE060506291CDC88DC4BC0CC /* apptics_utils.rb */,
+				2BD83AA8D1EA9671006D4CCA6725290C /* dsym_upload */,
+				34FD47CAF781B65C491639CB0C83A488 /* postinstaller */,
+				AF91FC926531E15217F56DF2001393A5 /* run */,
+				2AC158686B4D6442295EE9560720C46A /* sdk_info */,
+				A1B2DA78BC3DC61628361D4CDC8E70A8 /* sdk_info.bu */,
+			);
+			name = Scripts;
+			sourceTree = "<group>";
+		};
+		E02DAE20A51BD96B90D9D33018D816CE /* Apptics-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				DBD978FCE19CE13F93C787D4933C2052 /* Scripts */,
+				C41791FB0A2C4382641EAAFC1209B5B7 /* Support Files */,
+			);
+			name = "Apptics-SDK";
+			path = "Apptics-SDK";
+			sourceTree = "<group>";
+		};
+		E39E3744B4D3C1D0146D3029C6D89A8B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D7155AD0F49E503B1AB1AE866C58BEF7 /* AppticsRemoteConfig-iOS-xcframeworks.sh */,
+				06F8F4ABF23D96DADC39137B8D274C54 /* AppticsRemoteConfig-iOS.debug.xcconfig */,
+				90AD6248DFACBBCD74C53A5F0923D101 /* AppticsRemoteConfig-iOS.release.xcconfig */,
+				3582656674534803F158639AE9CA3A09 /* AppticsRemoteConfig-watchOS-xcframeworks.sh */,
+				6A6F3DF2E608B7B996FA1311E8A2E1C8 /* AppticsRemoteConfig-watchOS.debug.xcconfig */,
+				1A4958DC6209B4EFA9B8A5BA32B8039D /* AppticsRemoteConfig-watchOS.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/Apptics-Swift";
+			path = "../Target Support Files/AppticsRemoteConfig-iOS";
 			sourceTree = "<group>";
 		};
-		EB913498D4C91FD6EC263CC0B160930E /* Targets Support Files */ = {
+		EF924485891DA675173B0E4BA8DBC980 /* Pods-AppticsDemoWatchApp WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
-				2BF25DA804B75EDD5589B209244CDA74 /* Pods-AppticsDemoWatchApp */,
-				5627C521D8FBC78CD2F75C9301C9509F /* Pods-AppticsDemoWatchApp WatchKit App */,
-				1199C27882B15D569575CEF3295ECCAC /* Pods-AppticsDemoWatchApp WatchKit Extension */,
+				E39729B2C182476EA9D0AD12E758DDAD /* Pods-AppticsDemoWatchApp WatchKit App.modulemap */,
+				0712ACDD628157D2AFFC0E6B822CB5D9 /* Pods-AppticsDemoWatchApp WatchKit App-acknowledgements.markdown */,
+				E16721E98FB9D3C2C01CB9DCE31129F7 /* Pods-AppticsDemoWatchApp WatchKit App-acknowledgements.plist */,
+				100B00F6C5FE831FA24A7FAA8CDF482E /* Pods-AppticsDemoWatchApp WatchKit App-dummy.m */,
+				CB0965C170488D45CE1FC2FFD0495581 /* Pods-AppticsDemoWatchApp WatchKit App-frameworks.sh */,
+				E60B7F5FC67897DC6BF2D16228ED0CCD /* Pods-AppticsDemoWatchApp WatchKit App-Info.plist */,
+				6CF1322C4A305AFB1EF4AF8160061F7A /* Pods-AppticsDemoWatchApp WatchKit App-umbrella.h */,
+				6AC30A3DC8CB28803FEA3997A96D0031 /* Pods-AppticsDemoWatchApp WatchKit App.debug.xcconfig */,
+				34BCF1B8D277FD4F587F5F854B12A41B /* Pods-AppticsDemoWatchApp WatchKit App.release.xcconfig */,
 			);
-			name = "Targets Support Files";
+			name = "Pods-AppticsDemoWatchApp WatchKit App";
+			path = "Target Support Files/Pods-AppticsDemoWatchApp WatchKit App";
 			sourceTree = "<group>";
 		};
-		EF742FF9D78598DED8CCD9393EA5E8E6 /* Support Files */ = {
+		F059FEED152144B4E534D4FB15C1E3E2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				810843FDA7CE6266A1EB5082E7F6E991 /* AppticsAnalytics-xcframeworks.sh */,
-				37B91CEE6F02685A4ADFC295E5DA16E9 /* AppticsAnalytics.debug.xcconfig */,
-				A9B32A83F6BEA966B7696796877DB614 /* AppticsAnalytics.release.xcconfig */,
+				E02DAE20A51BD96B90D9D33018D816CE /* Apptics-SDK */,
+				12CA66E164778D0A2EB967BA086804B1 /* Apptics-Swift */,
+				02D91643273D7B7607D28551525B453B /* AppticsAnalytics */,
+				5924AB25A795BF1CE894E6A349F4F93C /* AppticsRemoteConfig */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/AppticsAnalytics";
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F1AE062971E2A85AE3AB42622BDD7276 /* Apptics */ = {
+			isa = PBXGroup;
+			children = (
+				8C2162BC91D3B0E2D0AC1432F95F0371 /* Frameworks */,
+			);
+			name = Apptics;
+			sourceTree = "<group>";
+		};
+		F2694C017D14C398B30DB9587C467280 /* CrashKit */ = {
+			isa = PBXGroup;
+			children = (
+				04BCE22396DC7002516D358251499A4B /* Frameworks */,
+			);
+			name = CrashKit;
 			sourceTree = "<group>";
 		};
 		FD8C5B2AAC2267159427636D32AAC71E /* iOS */ = {
@@ -513,43 +763,59 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2221DD94A01E23F5DF90B7BCCC7F7233 /* Headers */ = {
+		7196EC4A3D7AA70CA18E2D6A862E8305 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E441571B8671ECE4D921719C5002A82C /* Pods-AppticsDemoWatchApp-umbrella.h in Headers */,
+				A6D547B5DEC27C98597F90E92DF2A528 /* Pods-AppticsDemoWatchApp WatchKit App-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		59CCBD9626B92F9A16888D67403DB152 /* Headers */ = {
+		87F22B12543129C2D94FC465252CCFAF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				413CC9F7C5303B8DB88B273B586E706A /* Apptics-SDK-umbrella.h in Headers */,
+				BBD3EEA610DD9D492C77F9D8A92667ED /* Apptics-SDK-watchOS-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		59E6237762149804532ADFC9491D509A /* Headers */ = {
+		ADFE243CC87D94A3B0D8FAEEB1FA3ECC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F92424CDB9C542508FE64A4852C64135 /* Pods-AppticsDemoWatchApp WatchKit App-umbrella.h in Headers */,
+				F155CAA424CB85B0284F1DB37709B2E0 /* Pods-AppticsDemoWatchApp-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B9D1AA6D093B3970340564281678D975 /* Headers */ = {
+		CBAEAA5DFBBB9A71E0D94BD41D0A14D1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C634E559D56F87DF25FD59848659C2C /* Pods-AppticsDemoWatchApp WatchKit Extension-umbrella.h in Headers */,
+				0A6533378CF8D9A90C45A93798A94F69 /* Pods-AppticsDemoWatchApp WatchKit Extension-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BD41FFCEDCDA942EBE76458C1186236E /* Headers */ = {
+		CFC3334D3580081E091EC07C25E9E4D1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0DBB63D7B6E8D42EB79787EC7DAE1F3 /* Apptics-Swift-umbrella.h in Headers */,
+				F3340902848828433BF8E3701A4573EF /* Apptics-Swift-watchOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1905BE4EE4DD6E696F234E40B815305 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BC8FC794FFF622499C3BA17F70C0C34 /* Apptics-SDK-iOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3ACE884A33AC1BF5170A1096C4A97EF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				355C618CAED32866038C9AC2D24E0F72 /* Apptics-Swift-iOS-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,93 +824,140 @@
 /* Begin PBXNativeTarget section */
 		658F6E530FD90FED0AD735EDBC10BA93 /* Pods-AppticsDemoWatchApp WatchKit App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1897180E6BFC102219D2C050C266D286 /* Build configuration list for PBXNativeTarget "Pods-AppticsDemoWatchApp WatchKit App" */;
+			buildConfigurationList = 6CF1960EB60591BD8B3DEDC7A8207C3F /* Build configuration list for PBXNativeTarget "Pods-AppticsDemoWatchApp WatchKit App" */;
 			buildPhases = (
-				59E6237762149804532ADFC9491D509A /* Headers */,
-				2D8D3529873A013332B9D27953559EC4 /* Sources */,
-				489DCA43B5BFAB440404DE6D731F1A23 /* Frameworks */,
-				6A25514BBC96824DDF6F4FF2DB74635E /* Resources */,
+				7196EC4A3D7AA70CA18E2D6A862E8305 /* Headers */,
+				B5A58A829ADAA06783DA27DDCE863C18 /* Sources */,
+				FFED4BF0DB55EE4C756E8687E6E5B33B /* Frameworks */,
+				FCEAEE674DF91A3E7AE9D645F5B42C5E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BD56AE8C99929F2E4B61A1AF27059A1A /* PBXTargetDependency */,
+				AE90C9F2BF1B6F7E6A512D85D18249FA /* PBXTargetDependency */,
+				B759B487A077DF634B46B01558528808 /* PBXTargetDependency */,
+				88F46ADC944CD5E726705009AC889A0C /* PBXTargetDependency */,
 			);
 			name = "Pods-AppticsDemoWatchApp WatchKit App";
 			productName = Pods_AppticsDemoWatchApp_WatchKit_App;
 			productReference = 9828BE473CD68596D4DF35042974695F /* Pods-AppticsDemoWatchApp WatchKit App */;
 			productType = "com.apple.product-type.framework";
 		};
-		897A636713908C0E3E7B5B4DF0BA1722 /* Apptics-Swift */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 249E8DE3DB4A29BE7D245C9C56D880CF /* Build configuration list for PBXNativeTarget "Apptics-Swift" */;
-			buildPhases = (
-				BD41FFCEDCDA942EBE76458C1186236E /* Headers */,
-				9BA711920331ED79AB1C99313D2B6E60 /* Sources */,
-				7805C2E519DD8F17B7ABFAFB9E634626 /* Frameworks */,
-				BBEBD1A309E65C9D4FE8E026FF779A5C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8497CFC70572D3BFBB4E0EDC7DE510B5 /* PBXTargetDependency */,
-			);
-			name = "Apptics-Swift";
-			productName = Apptics_Swift;
-			productReference = 6E1B14BF86ADA11C579EDC886DC13506 /* Apptics-Swift */;
-			productType = "com.apple.product-type.framework";
-		};
 		A33BD0CD1D37A35A8142357A1D1781B0 /* Pods-AppticsDemoWatchApp WatchKit Extension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1976D02B6401E86D24FC9B12E71B2477 /* Build configuration list for PBXNativeTarget "Pods-AppticsDemoWatchApp WatchKit Extension" */;
+			buildConfigurationList = C92FF78B73E9E7714EBF97EAE351654F /* Build configuration list for PBXNativeTarget "Pods-AppticsDemoWatchApp WatchKit Extension" */;
 			buildPhases = (
-				B9D1AA6D093B3970340564281678D975 /* Headers */,
-				639A26514428B6172E8E5A69BBB2FE7F /* Sources */,
-				B06E006405C655F7EF54B8EEF07FBD90 /* Frameworks */,
-				856CEDE47271EF5B78E84CB68B209BD9 /* Resources */,
+				CBAEAA5DFBBB9A71E0D94BD41D0A14D1 /* Headers */,
+				8B100E1BA681546AB03C91D0644C7918 /* Sources */,
+				2FDEE81F007D0E5DF97116CCC5CEE3A9 /* Frameworks */,
+				6EC50D883F881E2B013010C1EEE2B89E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				01EF6B3BC4C5F4032A58BEF04935877A /* PBXTargetDependency */,
+				8DD0D82D1689E486A8110F85067AAD6E /* PBXTargetDependency */,
+				4FDC3CCB3884BD30F84F489C13C9BB83 /* PBXTargetDependency */,
+				BAD6F8701D4DEAE9E18CBB0742ED9B98 /* PBXTargetDependency */,
 			);
 			name = "Pods-AppticsDemoWatchApp WatchKit Extension";
 			productName = Pods_AppticsDemoWatchApp_WatchKit_Extension;
 			productReference = DFF22633E5EE725DF312FC4BE75D7032 /* Pods-AppticsDemoWatchApp WatchKit Extension */;
 			productType = "com.apple.product-type.framework";
 		};
-		CC64011E1624187F4B9594559639696F /* Apptics-SDK */ = {
+		B51D56C1FDB39F9F71604551F455984E /* Apptics-Swift-watchOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 862535B3F51BD6DFD1A08AFAC986498C /* Build configuration list for PBXNativeTarget "Apptics-SDK" */;
+			buildConfigurationList = 508D19777E670E91596C60FC43F23A69 /* Build configuration list for PBXNativeTarget "Apptics-Swift-watchOS" */;
 			buildPhases = (
-				59CCBD9626B92F9A16888D67403DB152 /* Headers */,
-				FD0721387A66CB832C34B9CB469614EA /* Sources */,
-				1C9E387E28E38081E4DD74851473B395 /* Frameworks */,
-				7ACC08C05EA925348166A18B7115BE39 /* Resources */,
+				CFC3334D3580081E091EC07C25E9E4D1 /* Headers */,
+				584B26B9AC46D2B9FB7623C9CC8A7677 /* Sources */,
+				704ECC75226A0F22EC8B50A2EBB0DA9D /* Frameworks */,
+				E71195C7A0075C5A2FEDA041AE407B20 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				BF64A35EFF7B257A34AAFF6D9E5F1E4F /* PBXTargetDependency */,
+				C84D21428BB7FB37B3B629CF7365051C /* PBXTargetDependency */,
 			);
-			name = "Apptics-SDK";
+			name = "Apptics-Swift-watchOS";
+			productName = Apptics_Swift;
+			productReference = 012A0E8D4C286023755D69609B9D148B /* Apptics-Swift-watchOS */;
+			productType = "com.apple.product-type.framework";
+		};
+		CE09A49BC48270F9763727221F442302 /* Apptics-SDK-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 713523EF137A00082D22022FD07B3C1A /* Build configuration list for PBXNativeTarget "Apptics-SDK-watchOS" */;
+			buildPhases = (
+				87F22B12543129C2D94FC465252CCFAF /* Headers */,
+				898AB660FE36397912E983732725A46A /* Sources */,
+				800C52771DABB4F445E5080B5C4F2EC6 /* Frameworks */,
+				1193EE0EDC8091CC77E6ABCDA123DCE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D5CF0866B80328D7A567868A741E51F6 /* PBXTargetDependency */,
+			);
+			name = "Apptics-SDK-watchOS";
 			productName = Apptics_SDK;
-			productReference = 25A613A730399FC0F3936B926C3571F6 /* Apptics-SDK */;
+			productReference = ADF6266F94DB044B88EC1A60337C3566 /* Apptics-SDK-watchOS */;
+			productType = "com.apple.product-type.framework";
+		};
+		DCD44D08D0255D37C39AE1040D24FAB9 /* Apptics-Swift-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F70FB8FE445D0D18073199ABB1E82F07 /* Build configuration list for PBXNativeTarget "Apptics-Swift-iOS" */;
+			buildPhases = (
+				F3ACE884A33AC1BF5170A1096C4A97EF /* Headers */,
+				837F18360DFB25D42A64B578FDA242FA /* Sources */,
+				3E607586A890F252010A1E80BB674DBD /* Frameworks */,
+				38730953790B0AB1E9682E9E2F532CC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A2EA278BA5BF558245F10411CA51B319 /* PBXTargetDependency */,
+			);
+			name = "Apptics-Swift-iOS";
+			productName = Apptics_Swift;
+			productReference = EEB31528134FECA8617BB1EE09B4CF7F /* Apptics-Swift-iOS */;
+			productType = "com.apple.product-type.framework";
+		};
+		EDEF047B57D021C7CA5AC6A1C5E20434 /* Apptics-SDK-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C98ABF3B520934DA27DB5FA25CD83B1 /* Build configuration list for PBXNativeTarget "Apptics-SDK-iOS" */;
+			buildPhases = (
+				D1905BE4EE4DD6E696F234E40B815305 /* Headers */,
+				A6577A76DCB29B22395961958C030540 /* Sources */,
+				F4F989080EBCC8D2E333682E93834C6B /* Frameworks */,
+				9B8D870B29CC41AC4FDAA3F5A67A99F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F925BB21293E282D40D5DAE9A5AE5493 /* PBXTargetDependency */,
+			);
+			name = "Apptics-SDK-iOS";
+			productName = Apptics_SDK;
+			productReference = 40ED86C6810BCEC158030B7E096B4665 /* Apptics-SDK-iOS */;
 			productType = "com.apple.product-type.framework";
 		};
 		FA7D432D98E10E46D125A330A72A521F /* Pods-AppticsDemoWatchApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 81B7833CB1DC4744A4CDA7DC26D0BBAE /* Build configuration list for PBXNativeTarget "Pods-AppticsDemoWatchApp" */;
+			buildConfigurationList = 4F17D8A6027E14C7296B37378AB7BD3A /* Build configuration list for PBXNativeTarget "Pods-AppticsDemoWatchApp" */;
 			buildPhases = (
-				2221DD94A01E23F5DF90B7BCCC7F7233 /* Headers */,
-				59A2EF69865888C463D9C8173489D7BE /* Sources */,
-				B9EBB146EFEA048063A1F91D2301F709 /* Frameworks */,
-				7379723003C4EC98C4A23B7F742F7F5C /* Resources */,
+				ADFE243CC87D94A3B0D8FAEEB1FA3ECC /* Headers */,
+				C30F8DC6716A58A9275B708F94EF3681 /* Sources */,
+				512DD0E47AEAC0B474E1A195641CEB73 /* Frameworks */,
+				4EBF9691E350B0068BE5532765C0EE14 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9B46B272A7847C47EE389456C2B398EF /* PBXTargetDependency */,
-				86EAA08F68C48310D45E6A827D870D44 /* PBXTargetDependency */,
-				456A1BD45876AD290296FB7493134662 /* PBXTargetDependency */,
+				28F94F85E5F3769559FCD99E18AC7731 /* PBXTargetDependency */,
+				4948CF494E1E34FC77686A44EC55AA92 /* PBXTargetDependency */,
+				2547EF8CFFBBF07B946810F118D673F6 /* PBXTargetDependency */,
+				3C8CC8A30474FAF9025136F9C8E7BC97 /* PBXTargetDependency */,
 			);
 			name = "Pods-AppticsDemoWatchApp";
 			productName = Pods_AppticsDemoWatchApp;
@@ -661,7 +974,7 @@
 				LastUpgradeCheck = 1240;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -669,13 +982,18 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 2B4FDEDABC6D4014129DC02868CB9897 /* Products */;
+			productRefGroup = 547BA8DCADFB8168BF2CF8EC98420651 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CC64011E1624187F4B9594559639696F /* Apptics-SDK */,
-				897A636713908C0E3E7B5B4DF0BA1722 /* Apptics-Swift */,
-				E2CE24BC09F14AA1800797A9A2320628 /* AppticsAnalytics */,
+				EDEF047B57D021C7CA5AC6A1C5E20434 /* Apptics-SDK-iOS */,
+				CE09A49BC48270F9763727221F442302 /* Apptics-SDK-watchOS */,
+				DCD44D08D0255D37C39AE1040D24FAB9 /* Apptics-Swift-iOS */,
+				B51D56C1FDB39F9F71604551F455984E /* Apptics-Swift-watchOS */,
+				4E287118DAC9C6D9455C38F460CCD838 /* AppticsAnalytics-iOS */,
+				E25D22803228B3AFDF3ECAEBDBF8D53E /* AppticsAnalytics-watchOS */,
+				B44992874D9B3EAD59EB00AFEF6990B4 /* AppticsRemoteConfig-iOS */,
+				589525C930370204F9A912863AFC5DB4 /* AppticsRemoteConfig-watchOS */,
 				FA7D432D98E10E46D125A330A72A521F /* Pods-AppticsDemoWatchApp */,
 				658F6E530FD90FED0AD735EDBC10BA93 /* Pods-AppticsDemoWatchApp WatchKit App */,
 				A33BD0CD1D37A35A8142357A1D1781B0 /* Pods-AppticsDemoWatchApp WatchKit Extension */,
@@ -684,35 +1002,49 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		6A25514BBC96824DDF6F4FF2DB74635E /* Resources */ = {
+		1193EE0EDC8091CC77E6ABCDA123DCE4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7379723003C4EC98C4A23B7F742F7F5C /* Resources */ = {
+		38730953790B0AB1E9682E9E2F532CC4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7ACC08C05EA925348166A18B7115BE39 /* Resources */ = {
+		4EBF9691E350B0068BE5532765C0EE14 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		856CEDE47271EF5B78E84CB68B209BD9 /* Resources */ = {
+		6EC50D883F881E2B013010C1EEE2B89E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BBEBD1A309E65C9D4FE8E026FF779A5C /* Resources */ = {
+		9B8D870B29CC41AC4FDAA3F5A67A99F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E71195C7A0075C5A2FEDA041AE407B20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCEAEE674DF91A3E7AE9D645F5B42C5E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -722,166 +1054,283 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		425960CD9D64B13C4DD19AD96EE60FE6 /* [CP] Copy XCFrameworks */ = {
+		0C9CB1165FF1A7565817E203A4E22D2F /* [CP] Copy XCFrameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/AppticsAnalytics/AppticsAnalytics-xcframeworks-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/AppticsAnalytics-watchOS/AppticsAnalytics-watchOS-xcframeworks-input-files.xcfilelist",
 			);
 			name = "[CP] Copy XCFrameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/AppticsAnalytics/AppticsAnalytics-xcframeworks-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/AppticsAnalytics-watchOS/AppticsAnalytics-watchOS-xcframeworks-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/AppticsAnalytics/AppticsAnalytics-xcframeworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/AppticsAnalytics-watchOS/AppticsAnalytics-watchOS-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		135F643F124BA4CF201CF99FBF0346FB /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/AppticsAnalytics-iOS/AppticsAnalytics-iOS-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/AppticsAnalytics-iOS/AppticsAnalytics-iOS-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/AppticsAnalytics-iOS/AppticsAnalytics-iOS-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4FC476233BA7A56EC4ABCAB7C73D159E /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/AppticsRemoteConfig-watchOS/AppticsRemoteConfig-watchOS-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/AppticsRemoteConfig-watchOS/AppticsRemoteConfig-watchOS-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/AppticsRemoteConfig-watchOS/AppticsRemoteConfig-watchOS-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		850A48B4FC73398FE52250E3BD98131F /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/AppticsRemoteConfig-iOS/AppticsRemoteConfig-iOS-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/AppticsRemoteConfig-iOS/AppticsRemoteConfig-iOS-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/AppticsRemoteConfig-iOS/AppticsRemoteConfig-iOS-xcframeworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2D8D3529873A013332B9D27953559EC4 /* Sources */ = {
+		584B26B9AC46D2B9FB7623C9CC8A7677 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDC1F1EC6C82F81CC9B84F04514FD214 /* Pods-AppticsDemoWatchApp WatchKit App-dummy.m in Sources */,
+				F67C76535266EE09E9B64A34E5AC7839 /* Apptics.swift in Sources */,
+				56BF3A3C100DF4C46B5047C10B1739D0 /* Apptics-Swift-watchOS-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		59A2EF69865888C463D9C8173489D7BE /* Sources */ = {
+		837F18360DFB25D42A64B578FDA242FA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C104AA58C8DC83CD9089E1768BCC17EE /* Pods-AppticsDemoWatchApp-dummy.m in Sources */,
+				662AD496C027A9A976C6CB889F657736 /* Apptics.swift in Sources */,
+				1BC86B70ADE1B6510686121C40ADE7EA /* Apptics-Swift-iOS-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		639A26514428B6172E8E5A69BBB2FE7F /* Sources */ = {
+		898AB660FE36397912E983732725A46A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2820C7950D4A768A6FA14D1F87844C1 /* Pods-AppticsDemoWatchApp WatchKit Extension-dummy.m in Sources */,
+				909F2762ADD72601853C48B8EB6C7EB9 /* Apptics-SDK-watchOS-dummy.m in Sources */,
+				CB2026B7AA0A7E072A70B5FBA77A875B /* apptics_event_sync.rb in Sources */,
+				C0D01F1135AF9DADA6E13E83D50BF8A8 /* apptics_helper.rb in Sources */,
+				A316E15B368F05688F95ADE9AC2AFCA2 /* apptics_utils.rb in Sources */,
+				963BF1867DCA3D7B9BAF380EF4963F86 /* dsym_upload in Sources */,
+				A179695EC6130D46D088515FD90B7A8D /* postinstaller in Sources */,
+				980FCB1764D181033BCC61B524793350 /* run in Sources */,
+				B573E9BB684E84F1C847A8B2489993AA /* sdk_info in Sources */,
+				319A5D46805D88542EB6264D68625DFB /* sdk_info.bu in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9BA711920331ED79AB1C99313D2B6E60 /* Sources */ = {
+		8B100E1BA681546AB03C91D0644C7918 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				681C4739D0046BA155B374968F5855CC /* APAppticsForExtension.swift in Sources */,
-				1F5188483E62449B004446DFA73D747F /* Apptics-Swift-dummy.m in Sources */,
+				029FDF50E45F02F0A7CB6581048DAD55 /* Pods-AppticsDemoWatchApp WatchKit Extension-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FD0721387A66CB832C34B9CB469614EA /* Sources */ = {
+		A6577A76DCB29B22395961958C030540 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DA9A75EA50C0A342CF3ABF2A76E47BE /* Apptics-SDK-dummy.m in Sources */,
-				645AEA7767B0D50249CC2D66ED7DFC1C /* appticshelper.rb in Sources */,
-				1B14D19CFF82C447881BD76CFA91114C /* dsym_upload in Sources */,
-				C1BE2581822B8F50EAB2FC7F4D3CD8B4 /* postinstaller in Sources */,
-				16E87307205DC7A28B7038D2C9F0802E /* run in Sources */,
-				4522F02788A1F1B89322B41DAF7380EF /* sdk_info in Sources */,
-				776FA70064DCA235B63F51DAECD7C656 /* sdk_info.bu in Sources */,
+				8C92E953DF5BC70FBC0D6CBD8FA3F25E /* Apptics-SDK-iOS-dummy.m in Sources */,
+				C9494A95D0DD507A287790D3857B5BC0 /* apptics_event_sync.rb in Sources */,
+				E0C6DDEEF51B508C9A52BCB00A6E8064 /* apptics_helper.rb in Sources */,
+				ED67F4A9DEC3C130209F76356A73CDF0 /* apptics_utils.rb in Sources */,
+				4EF7590709583373E588CB5D5516BF1A /* dsym_upload in Sources */,
+				04B195566AC73A61FCF86E5F7A76EF23 /* postinstaller in Sources */,
+				5ACE0F9243D6221BBAD23CD6A0E1AD31 /* run in Sources */,
+				BCE3801B3AC482A88579E9967225CE7C /* sdk_info in Sources */,
+				64136D4ABBE189BD2BA98042F727CA9D /* sdk_info.bu in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5A58A829ADAA06783DA27DDCE863C18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCD32CA8D5A349BCDAA28134514E609D /* Pods-AppticsDemoWatchApp WatchKit App-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C30F8DC6716A58A9275B708F94EF3681 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CE8381D610B902A77771CFC74C52EE9 /* Pods-AppticsDemoWatchApp-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		456A1BD45876AD290296FB7493134662 /* PBXTargetDependency */ = {
+		01EF6B3BC4C5F4032A58BEF04935877A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = AppticsAnalytics;
-			target = E2CE24BC09F14AA1800797A9A2320628 /* AppticsAnalytics */;
-			targetProxy = 4BFE1DB3634FD6FB1542F992F99F2D30 /* PBXContainerItemProxy */;
+			name = "Apptics-SDK-watchOS";
+			target = CE09A49BC48270F9763727221F442302 /* Apptics-SDK-watchOS */;
+			targetProxy = 148E183CD362B50873E7A864C1BDC58E /* PBXContainerItemProxy */;
 		};
-		8497CFC70572D3BFBB4E0EDC7DE510B5 /* PBXTargetDependency */ = {
+		2547EF8CFFBBF07B946810F118D673F6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Apptics-SDK";
-			target = CC64011E1624187F4B9594559639696F /* Apptics-SDK */;
-			targetProxy = BA1E11E19A2F75899879BA665747DBB0 /* PBXContainerItemProxy */;
+			name = "AppticsAnalytics-iOS";
+			target = 4E287118DAC9C6D9455C38F460CCD838 /* AppticsAnalytics-iOS */;
+			targetProxy = B42AAB5D8D479C40E173FA0E430251C1 /* PBXContainerItemProxy */;
 		};
-		86EAA08F68C48310D45E6A827D870D44 /* PBXTargetDependency */ = {
+		28F94F85E5F3769559FCD99E18AC7731 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Apptics-Swift";
-			target = 897A636713908C0E3E7B5B4DF0BA1722 /* Apptics-Swift */;
-			targetProxy = 4B1601D616B99247065B7D52BF4B5E78 /* PBXContainerItemProxy */;
+			name = "Apptics-SDK-iOS";
+			target = EDEF047B57D021C7CA5AC6A1C5E20434 /* Apptics-SDK-iOS */;
+			targetProxy = F7FDF3CFFD1DE185860877CB29C86939 /* PBXContainerItemProxy */;
 		};
-		9B46B272A7847C47EE389456C2B398EF /* PBXTargetDependency */ = {
+		3C8CC8A30474FAF9025136F9C8E7BC97 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Apptics-SDK";
-			target = CC64011E1624187F4B9594559639696F /* Apptics-SDK */;
-			targetProxy = 0F57BA824A0610DD7FA306B495F9B9CA /* PBXContainerItemProxy */;
+			name = "AppticsRemoteConfig-iOS";
+			target = B44992874D9B3EAD59EB00AFEF6990B4 /* AppticsRemoteConfig-iOS */;
+			targetProxy = 518D11CA7AE31514264B9D5DEEFDDA24 /* PBXContainerItemProxy */;
 		};
-		BF64A35EFF7B257A34AAFF6D9E5F1E4F /* PBXTargetDependency */ = {
+		4948CF494E1E34FC77686A44EC55AA92 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = AppticsAnalytics;
-			target = E2CE24BC09F14AA1800797A9A2320628 /* AppticsAnalytics */;
-			targetProxy = 5CCA8D45164618844D5243708AE9CD3D /* PBXContainerItemProxy */;
+			name = "Apptics-Swift-iOS";
+			target = DCD44D08D0255D37C39AE1040D24FAB9 /* Apptics-Swift-iOS */;
+			targetProxy = C374926247262A4DD419E22198BFCC4C /* PBXContainerItemProxy */;
+		};
+		4FDC3CCB3884BD30F84F489C13C9BB83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "AppticsAnalytics-watchOS";
+			target = E25D22803228B3AFDF3ECAEBDBF8D53E /* AppticsAnalytics-watchOS */;
+			targetProxy = 62B66E97F9540F5CE6C2D6E71C4B928F /* PBXContainerItemProxy */;
+		};
+		88F46ADC944CD5E726705009AC889A0C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "AppticsRemoteConfig-watchOS";
+			target = 589525C930370204F9A912863AFC5DB4 /* AppticsRemoteConfig-watchOS */;
+			targetProxy = 7EA820B278335777DF1054B5B9017CAD /* PBXContainerItemProxy */;
+		};
+		8DD0D82D1689E486A8110F85067AAD6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Apptics-Swift-watchOS";
+			target = B51D56C1FDB39F9F71604551F455984E /* Apptics-Swift-watchOS */;
+			targetProxy = 6648371DA62CA0EFD6C6F5593A9D8C86 /* PBXContainerItemProxy */;
+		};
+		A140132834F0271B1FCC49A06CB10038 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "AppticsAnalytics-watchOS";
+			target = E25D22803228B3AFDF3ECAEBDBF8D53E /* AppticsAnalytics-watchOS */;
+			targetProxy = E68E5417644DA576B6D9CCDA666DE6DB /* PBXContainerItemProxy */;
+		};
+		A2EA278BA5BF558245F10411CA51B319 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Apptics-SDK-iOS";
+			target = EDEF047B57D021C7CA5AC6A1C5E20434 /* Apptics-SDK-iOS */;
+			targetProxy = 1A6CCFABD4D2FEE09B9A84B0659E4130 /* PBXContainerItemProxy */;
+		};
+		AE90C9F2BF1B6F7E6A512D85D18249FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Apptics-Swift-watchOS";
+			target = B51D56C1FDB39F9F71604551F455984E /* Apptics-Swift-watchOS */;
+			targetProxy = 54A67499676BABF3F8220F983C69CE58 /* PBXContainerItemProxy */;
+		};
+		B5AB21CC26E89FFB7F62C5D8C86DD1ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "AppticsAnalytics-iOS";
+			target = 4E287118DAC9C6D9455C38F460CCD838 /* AppticsAnalytics-iOS */;
+			targetProxy = 281EB613F5795DDFCD63307828834971 /* PBXContainerItemProxy */;
+		};
+		B759B487A077DF634B46B01558528808 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "AppticsAnalytics-watchOS";
+			target = E25D22803228B3AFDF3ECAEBDBF8D53E /* AppticsAnalytics-watchOS */;
+			targetProxy = D2273819F84BEC25FB441B93C677C829 /* PBXContainerItemProxy */;
+		};
+		BAD6F8701D4DEAE9E18CBB0742ED9B98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "AppticsRemoteConfig-watchOS";
+			target = 589525C930370204F9A912863AFC5DB4 /* AppticsRemoteConfig-watchOS */;
+			targetProxy = DED46704CDA03A5478FC1D4AE012CD64 /* PBXContainerItemProxy */;
+		};
+		BD56AE8C99929F2E4B61A1AF27059A1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Apptics-SDK-watchOS";
+			target = CE09A49BC48270F9763727221F442302 /* Apptics-SDK-watchOS */;
+			targetProxy = FDDC87001F80765ED02FF6E1A40697E7 /* PBXContainerItemProxy */;
+		};
+		C84D21428BB7FB37B3B629CF7365051C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Apptics-SDK-watchOS";
+			target = CE09A49BC48270F9763727221F442302 /* Apptics-SDK-watchOS */;
+			targetProxy = A4386BA89F4EAFEA96057A8066D65731 /* PBXContainerItemProxy */;
+		};
+		D5CF0866B80328D7A567868A741E51F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "AppticsAnalytics-watchOS";
+			target = E25D22803228B3AFDF3ECAEBDBF8D53E /* AppticsAnalytics-watchOS */;
+			targetProxy = B24C77F940EF52F927F7D6981D82E719 /* PBXContainerItemProxy */;
+		};
+		F925BB21293E282D40D5DAE9A5AE5493 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "AppticsAnalytics-iOS";
+			target = 4E287118DAC9C6D9455C38F460CCD838 /* AppticsAnalytics-iOS */;
+			targetProxy = 67D9B278006AE648B651689BC0F20619 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0125CAAAFDD88CA13F2346352A852402 /* Release */ = {
+		0070ED1B29C8FADA881EACFE8853CDA1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A9B32A83F6BEA966B7696796877DB614 /* AppticsAnalytics.release.xcconfig */;
+			baseConfigurationReference = 1A4958DC6209B4EFA9B8A5BA32B8039D /* AppticsRemoteConfig-watchOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		147AC5EA1FAB43347A4444DB4BA14865 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0FEA2CBCF8A428DF6D53DB8297ABA245 /* Apptics-Swift.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Apptics-Swift/Apptics-Swift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Apptics-Swift/Apptics-Swift-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/Apptics-Swift/Apptics-Swift.modulemap";
-				PRODUCT_MODULE_NAME = Apptics_Swift;
-				PRODUCT_NAME = Apptics_Swift;
-				SDKROOT = iphoneos;
+				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
-		1B980ABAD68E30A20C625FF27BE94653 /* Debug */ = {
+		0ADAAC0FF0663CF9F2ADBB1F238E32A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 51DEFCB767291241D68A18815154D0C5 /* Pods-AppticsDemoWatchApp WatchKit Extension.debug.xcconfig */;
+			baseConfigurationReference = 83E7DD9D8C8B712D7A37213727A03000 /* Apptics-Swift-watchOS.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -891,33 +1340,34 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-AppticsDemoWatchApp WatchKit Extension/Pods-AppticsDemoWatchApp WatchKit Extension-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Apptics-Swift-watchOS/Apptics-Swift-watchOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Apptics-Swift-watchOS/Apptics-Swift-watchOS-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AppticsDemoWatchApp WatchKit Extension/Pods-AppticsDemoWatchApp WatchKit Extension.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/Apptics-Swift-watchOS/Apptics-Swift-watchOS.modulemap";
+				PRODUCT_MODULE_NAME = Apptics_Swift;
+				PRODUCT_NAME = Apptics_Swift;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
-		1D47CFAF083F9731F7FFEAB7CFA8FC8E /* Release */ = {
+		1BA4829640E7F7AD6BCD9D74E5629906 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D42417E6474E7B6DCD6E48390E526E50 /* Apptics-SDK.release.xcconfig */;
+			baseConfigurationReference = 55C3CF5B54093062B0D067E229A6A478 /* Pods-AppticsDemoWatchApp.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -926,31 +1376,68 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Apptics-SDK/Apptics-SDK-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Apptics-SDK/Apptics-SDK-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-AppticsDemoWatchApp/Pods-AppticsDemoWatchApp-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/Apptics-SDK/Apptics-SDK.modulemap";
-				PRODUCT_MODULE_NAME = Apptics_SDK;
-				PRODUCT_NAME = Apptics_SDK;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AppticsDemoWatchApp/Pods-AppticsDemoWatchApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
+			name = Debug;
+		};
+		2695EC9B502BB7D73091926BD0E533BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AEBDDF5972684833775C2FCCBC16B5E /* Apptics-Swift-watchOS.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Apptics-Swift-watchOS/Apptics-Swift-watchOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Apptics-Swift-watchOS/Apptics-Swift-watchOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Apptics-Swift-watchOS/Apptics-Swift-watchOS.modulemap";
+				PRODUCT_MODULE_NAME = Apptics_Swift;
+				PRODUCT_NAME = Apptics_Swift;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
 			name = Release;
 		};
-		353D9602FA01BF644656336CFBD56272 /* Debug */ = {
+		29641C87F3D8BF7B0F4CFAB5A90A2F10 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 37B91CEE6F02685A4ADFC295E5DA16E9 /* AppticsAnalytics.debug.xcconfig */;
+			baseConfigurationReference = 74A191BB5C58F27F36A06B66B03F300A /* AppticsAnalytics-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -964,9 +1451,39 @@
 			};
 			name = Debug;
 		};
-		3EE19C85D27B4D3A1FFFE97C165E83D8 /* Debug */ = {
+		35599BA6C686259353E1940F70A60206 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 15B2E660165637653A6C15494295D909 /* Pods-AppticsDemoWatchApp WatchKit App.debug.xcconfig */;
+			baseConfigurationReference = 6F099CE5D84A5E3D036F553F11A7841B /* AppticsAnalytics-iOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3BC72D21F0DD7BE575B0F86662750252 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9347F04CFCF1BA9DFCBEF397115BCCE /* AppticsAnalytics-watchOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		44F5269A1003A2A2673AC505072332A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AC30A3DC8CB28803FEA3997A96D0031 /* Pods-AppticsDemoWatchApp WatchKit App.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				APPLICATION_EXTENSION_API_ONLY = YES;
@@ -1001,10 +1518,29 @@
 			};
 			name = Debug;
 		};
-		5FADD2E3B4E903A176D699D14879EAE0 /* Debug */ = {
+		52B5AB4FA49769E39570F4495376B461 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0912917E06D2FFFE5E8B1FD584FFA337 /* Apptics-SDK.debug.xcconfig */;
+			baseConfigurationReference = 90AD6248DFACBBCD74C53A5F0923D101 /* AppticsRemoteConfig-iOS.release.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		595A71D598D80E83329B2D72152ED091 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86C1C50FAC2DAD0F186F5A01AEA9E4AB /* Pods-AppticsDemoWatchApp WatchKit Extension.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -1013,24 +1549,39 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Apptics-SDK/Apptics-SDK-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Apptics-SDK/Apptics-SDK-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-AppticsDemoWatchApp WatchKit Extension/Pods-AppticsDemoWatchApp WatchKit Extension-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/Apptics-SDK/Apptics-SDK.modulemap";
-				PRODUCT_MODULE_NAME = Apptics_SDK;
-				PRODUCT_NAME = Apptics_SDK;
-				SDKROOT = iphoneos;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AppticsDemoWatchApp WatchKit Extension/Pods-AppticsDemoWatchApp WatchKit Extension.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 4;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Debug;
+		};
+		5B20D36D6219AF058D270B63BDF4A12C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A6F3DF2E608B7B996FA1311E8A2E1C8 /* AppticsRemoteConfig-watchOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
@@ -1096,6 +1647,139 @@
 				WATCHOS_DEPLOYMENT_TARGET = 7.1;
 			};
 			name = Release;
+		};
+		68E1CFC935D15EC26E104418C8278DC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16C4C52FE6727E9E36D8B89EAF464FA5 /* AppticsAnalytics-watchOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		777124A13AB17D87BFC6A29740AE0A1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F918F60BA0B8BFBAE3059959690927B6 /* Apptics-SDK-watchOS.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Apptics-SDK-watchOS/Apptics-SDK-watchOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Apptics-SDK-watchOS/Apptics-SDK-watchOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Apptics-SDK-watchOS/Apptics-SDK-watchOS.modulemap";
+				PRODUCT_MODULE_NAME = Apptics_SDK;
+				PRODUCT_NAME = Apptics_SDK;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		7BFF86A62E91571C714EBE79A7C27357 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58E98E48EB21562F7FE9053118A7DC70 /* Apptics-Swift-iOS.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Apptics-Swift-iOS/Apptics-Swift-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Apptics-Swift-iOS/Apptics-Swift-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Apptics-Swift-iOS/Apptics-Swift-iOS.modulemap";
+				PRODUCT_MODULE_NAME = Apptics_Swift;
+				PRODUCT_NAME = Apptics_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8C153D7C984FFE6CEF016F5BFAC70F64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06F8F4ABF23D96DADC39137B8D274C54 /* AppticsRemoteConfig-iOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8E4FC9CEABABE448CB18D66464D6033B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AD7D67516D5F7D7C17AF0304678A065 /* Apptics-Swift-iOS.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Apptics-Swift-iOS/Apptics-Swift-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Apptics-Swift-iOS/Apptics-Swift-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Apptics-Swift-iOS/Apptics-Swift-iOS.modulemap";
+				PRODUCT_MODULE_NAME = Apptics_Swift;
+				PRODUCT_NAME = Apptics_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		8F1D8E7D5134DB3056C0C3B6024DA02C /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1164,9 +1848,47 @@
 			};
 			name = Debug;
 		};
-		90A0FEBBB39F5C1F62CF8D9161CDF230 /* Release */ = {
+		978AE921E51B333E84539EBC91EB9760 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6633383C86CC23B4CA33784682DF33AD /* Pods-AppticsDemoWatchApp WatchKit App.release.xcconfig */;
+			baseConfigurationReference = D9CCD2D7E07AA773D9A4DDF3D9231DB3 /* Pods-AppticsDemoWatchApp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AppticsDemoWatchApp/Pods-AppticsDemoWatchApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AppticsDemoWatchApp/Pods-AppticsDemoWatchApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9B10632613CEAE3B76C2D296F8F8C33F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34BCF1B8D277FD4F587F5F854B12A41B /* Pods-AppticsDemoWatchApp WatchKit App.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				APPLICATION_EXTENSION_API_ONLY = YES;
@@ -1202,12 +1924,11 @@
 			};
 			name = Release;
 		};
-		93F2BC792083168112E278D85784ADB8 /* Release */ = {
+		BD2E6BAA57167488619FF771E8EC9A69 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BB884F8D6402BAC512A7C6333D407235 /* Pods-AppticsDemoWatchApp.release.xcconfig */;
+			baseConfigurationReference = 0CFDDAEB46E599D559056CD18D6576E8 /* Apptics-SDK-watchOS.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -1216,67 +1937,31 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-AppticsDemoWatchApp/Pods-AppticsDemoWatchApp-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Apptics-SDK-watchOS/Apptics-SDK-watchOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Apptics-SDK-watchOS/Apptics-SDK-watchOS-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AppticsDemoWatchApp/Pods-AppticsDemoWatchApp.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
+				MODULEMAP_FILE = "Target Support Files/Apptics-SDK-watchOS/Apptics-SDK-watchOS.modulemap";
+				PRODUCT_MODULE_NAME = Apptics_SDK;
+				PRODUCT_NAME = Apptics_SDK;
+				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
-		B6BB5E37CEE57D5F16D3B5998CC4CA8D /* Debug */ = {
+		BEB63039E609CB2F63637B3B95B01B09 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 34E6D69FACC44FBCCD199067A3E34D81 /* Apptics-Swift.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Apptics-Swift/Apptics-Swift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Apptics-Swift/Apptics-Swift-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/Apptics-Swift/Apptics-Swift.modulemap";
-				PRODUCT_MODULE_NAME = Apptics_Swift;
-				PRODUCT_NAME = Apptics_Swift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B89CF39E21758E66C68CC41268058875 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4C87E06A44D681F6ED88C957E118ED74 /* Pods-AppticsDemoWatchApp WatchKit Extension.release.xcconfig */;
+			baseConfigurationReference = 0186ED6EFAEC63519B4C0609BB1058E3 /* Pods-AppticsDemoWatchApp WatchKit Extension.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				APPLICATION_EXTENSION_API_ONLY = YES;
@@ -1312,12 +1997,10 @@
 			};
 			name = Release;
 		};
-		DF7B7F22DBDD0FD62E43B7EF38C612AE /* Debug */ = {
+		DF7F3D80407ADE9EBE1E1E455E93FF43 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7004F70D7E5C916AA5EF76A2BC54EB1C /* Pods-AppticsDemoWatchApp.debug.xcconfig */;
+			baseConfigurationReference = 69DB4A0469C6C63E1D62E82710CA0D30 /* Apptics-SDK-iOS.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -1326,64 +2009,69 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-AppticsDemoWatchApp/Pods-AppticsDemoWatchApp-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Apptics-SDK-iOS/Apptics-SDK-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Apptics-SDK-iOS/Apptics-SDK-iOS-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AppticsDemoWatchApp/Pods-AppticsDemoWatchApp.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/Apptics-SDK-iOS/Apptics-SDK-iOS.modulemap";
+				PRODUCT_MODULE_NAME = Apptics_SDK;
+				PRODUCT_NAME = Apptics_SDK;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
+		FF667BD0B0B4483DAAF13EDEE5F60E96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B78BC66835330821F243A79F3A21988A /* Apptics-SDK-iOS.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Apptics-SDK-iOS/Apptics-SDK-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Apptics-SDK-iOS/Apptics-SDK-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Apptics-SDK-iOS/Apptics-SDK-iOS.modulemap";
+				PRODUCT_MODULE_NAME = Apptics_SDK;
+				PRODUCT_NAME = Apptics_SDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1897180E6BFC102219D2C050C266D286 /* Build configuration list for PBXNativeTarget "Pods-AppticsDemoWatchApp WatchKit App" */ = {
+		20CE581D0B45233F9B51F3B79331F6F6 /* Build configuration list for PBXAggregateTarget "AppticsAnalytics-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3EE19C85D27B4D3A1FFFE97C165E83D8 /* Debug */,
-				90A0FEBBB39F5C1F62CF8D9161CDF230 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1976D02B6401E86D24FC9B12E71B2477 /* Build configuration list for PBXNativeTarget "Pods-AppticsDemoWatchApp WatchKit Extension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1B980ABAD68E30A20C625FF27BE94653 /* Debug */,
-				B89CF39E21758E66C68CC41268058875 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		249E8DE3DB4A29BE7D245C9C56D880CF /* Build configuration list for PBXNativeTarget "Apptics-Swift" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B6BB5E37CEE57D5F16D3B5998CC4CA8D /* Debug */,
-				147AC5EA1FAB43347A4444DB4BA14865 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3D7F2261B8B798625E9076C4EEBAFA2C /* Build configuration list for PBXAggregateTarget "AppticsAnalytics" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				353D9602FA01BF644656336CFBD56272 /* Debug */,
-				0125CAAAFDD88CA13F2346352A852402 /* Release */,
+				29641C87F3D8BF7B0F4CFAB5A90A2F10 /* Debug */,
+				35599BA6C686259353E1940F70A60206 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1397,20 +2085,92 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		81B7833CB1DC4744A4CDA7DC26D0BBAE /* Build configuration list for PBXNativeTarget "Pods-AppticsDemoWatchApp" */ = {
+		4C98ABF3B520934DA27DB5FA25CD83B1 /* Build configuration list for PBXNativeTarget "Apptics-SDK-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DF7B7F22DBDD0FD62E43B7EF38C612AE /* Debug */,
-				93F2BC792083168112E278D85784ADB8 /* Release */,
+				DF7F3D80407ADE9EBE1E1E455E93FF43 /* Debug */,
+				FF667BD0B0B4483DAAF13EDEE5F60E96 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		862535B3F51BD6DFD1A08AFAC986498C /* Build configuration list for PBXNativeTarget "Apptics-SDK" */ = {
+		4F17D8A6027E14C7296B37378AB7BD3A /* Build configuration list for PBXNativeTarget "Pods-AppticsDemoWatchApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5FADD2E3B4E903A176D699D14879EAE0 /* Debug */,
-				1D47CFAF083F9731F7FFEAB7CFA8FC8E /* Release */,
+				1BA4829640E7F7AD6BCD9D74E5629906 /* Debug */,
+				978AE921E51B333E84539EBC91EB9760 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		508D19777E670E91596C60FC43F23A69 /* Build configuration list for PBXNativeTarget "Apptics-Swift-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0ADAAC0FF0663CF9F2ADBB1F238E32A2 /* Debug */,
+				2695EC9B502BB7D73091926BD0E533BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CF1960EB60591BD8B3DEDC7A8207C3F /* Build configuration list for PBXNativeTarget "Pods-AppticsDemoWatchApp WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44F5269A1003A2A2673AC505072332A7 /* Debug */,
+				9B10632613CEAE3B76C2D296F8F8C33F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		713523EF137A00082D22022FD07B3C1A /* Build configuration list for PBXNativeTarget "Apptics-SDK-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				777124A13AB17D87BFC6A29740AE0A1F /* Debug */,
+				BD2E6BAA57167488619FF771E8EC9A69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4915A6CB9FD31C2BBF31ECB13101B39 /* Build configuration list for PBXAggregateTarget "AppticsRemoteConfig-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C153D7C984FFE6CEF016F5BFAC70F64 /* Debug */,
+				52B5AB4FA49769E39570F4495376B461 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C92FF78B73E9E7714EBF97EAE351654F /* Build configuration list for PBXNativeTarget "Pods-AppticsDemoWatchApp WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				595A71D598D80E83329B2D72152ED091 /* Debug */,
+				BEB63039E609CB2F63637B3B95B01B09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D86DE5B9200C4C147903F980991821C7 /* Build configuration list for PBXAggregateTarget "AppticsRemoteConfig-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B20D36D6219AF058D270B63BDF4A12C /* Debug */,
+				0070ED1B29C8FADA881EACFE8853CDA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F157FB06BD2E0D35869E63C385BF9B43 /* Build configuration list for PBXAggregateTarget "AppticsAnalytics-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BC72D21F0DD7BE575B0F86662750252 /* Debug */,
+				68E1CFC935D15EC26E104418C8278DC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F70FB8FE445D0D18073199ABB1E82F07 /* Build configuration list for PBXNativeTarget "Apptics-Swift-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E4FC9CEABABE448CB18D66464D6033B /* Debug */,
+				7BFF86A62E91571C714EBE79A7C27357 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

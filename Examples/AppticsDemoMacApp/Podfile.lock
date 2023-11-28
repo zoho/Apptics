@@ -1,38 +1,60 @@
 PODS:
-  - Apptics-SDK (1.0.8):
-    - Apptics-SDK/Analytics (= 1.0.8)
-  - Apptics-SDK/Analytics (1.0.8):
+  - Apptics-SDK (1.2.1):
+    - Apptics-SDK/Analytics (= 1.2.1)
+  - Apptics-SDK/Analytics (1.2.1):
     - Apptics-SDK/Scripts
-    - AppticsAnalytics (= 1.0.8)
-  - Apptics-SDK/Scripts (1.0.8)
-  - AppticsAnalytics (1.0.8):
-    - AppticsAnalytics/Core (= 1.0.8)
-  - AppticsAnalytics/Apptics (1.0.8):
+    - AppticsAnalytics (= 1.2.1)
+  - Apptics-SDK/Scripts (1.2.1)
+  - Apptics-Swift (1.2.1):
+    - Apptics-SDK (= 1.2.1)
+    - Apptics-Swift/Analytics (= 1.2.1)
+  - Apptics-Swift/Analytics (1.2.1):
+    - Apptics-SDK (= 1.2.1)
+  - AppticsAnalytics (1.2.1):
+    - AppticsAnalytics/Core (= 1.2.1)
+  - AppticsAnalytics/Apptics (1.2.1):
     - AppticsAnalytics/JWT
-  - AppticsAnalytics/Core (1.0.8):
+  - AppticsAnalytics/Core (1.2.1):
     - AppticsAnalytics/Apptics
     - AppticsAnalytics/CrashKit
     - AppticsAnalytics/EventTracker
     - AppticsAnalytics/ScreenTracker
-  - AppticsAnalytics/CrashKit (1.0.8):
+  - AppticsAnalytics/CrashKit (1.2.1):
     - AppticsAnalytics/KSCrash
-  - AppticsAnalytics/EventTracker (1.0.8)
-  - AppticsAnalytics/JWT (1.0.8)
-  - AppticsAnalytics/KSCrash (1.0.8)
-  - AppticsAnalytics/ScreenTracker (1.0.8)
+  - AppticsAnalytics/EventTracker (1.2.1)
+  - AppticsAnalytics/JWT (1.2.1)
+  - AppticsAnalytics/KSCrash (1.2.1)
+  - AppticsAnalytics/ScreenTracker (1.2.1)
+  - AppticsApiTracker (1.2.1):
+    - AppticsApiTracker/ApiTracker (= 1.2.1)
+  - AppticsApiTracker/ApiTracker (1.2.1):
+    - AppticsAnalytics/Apptics (= 1.2.1)
+  - AppticsRemoteConfig (1.2.1):
+    - AppticsRemoteConfig/RemoteConfig (= 1.2.1)
+  - AppticsRemoteConfig/RemoteConfig (1.2.1):
+    - AppticsAnalytics/Apptics (= 1.2.1)
 
 DEPENDENCIES:
-  - Apptics-SDK (= 1.0.8)
+  - Apptics-SDK (= 1.2.1)
+  - Apptics-Swift (= 1.2.1)
+  - AppticsApiTracker (= 1.2.1)
+  - AppticsRemoteConfig (= 1.2.1)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/zoho/Apptics.git:
     - Apptics-SDK
+    - Apptics-Swift
     - AppticsAnalytics
+    - AppticsApiTracker
+    - AppticsRemoteConfig
 
 SPEC CHECKSUMS:
-  Apptics-SDK: a0b907b81f03b706b1f19e514d0015ec009dfe3e
-  AppticsAnalytics: 3400155b939b147ba42b7f5b3f2dd448cdc68d90
+  Apptics-SDK: e1e4b97c7332b881d0a860efac5e6bc802f9d489
+  Apptics-Swift: dc99e269f8d827b5c6b565de9755f6adc75f2509
+  AppticsAnalytics: 54ce6fe56369091ae73a65b86043a5a8d3795fa3
+  AppticsApiTracker: a5ebad5f1a1f89346a8cf1e4892d0f9d25ab4248
+  AppticsRemoteConfig: fad1282afd4abf1a39e2362e02891516e3344106
 
-PODFILE CHECKSUM: ae7b7b905d37eedc3466ceb157892f93765ba374
+PODFILE CHECKSUM: 0200494b36f24f56309b63765335cabf9e0c95b8
 
 COCOAPODS: 1.11.3

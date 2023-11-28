@@ -1,0 +1,7 @@
+${PODS_ROOT}/Target Support Files/AppticsAnalytics-iOS/AppticsAnalytics-iOS-xcframeworks.sh
+${PODS_ROOT}/AppticsAnalytics/Apptics/Apptics.xcframework
+${PODS_ROOT}/AppticsAnalytics/Apptics/AppticsCrashKit.xcframework
+${PODS_ROOT}/AppticsAnalytics/Apptics/AppticsEventTracker.xcframework
+${PODS_ROOT}/AppticsAnalytics/Apptics/JWT.xcframework
+${PODS_ROOT}/AppticsAnalytics/Apptics/KSCrash.xcframework
+${PODS_ROOT}/AppticsAnalytics/Apptics/AppticsScreenTracker.xcframework

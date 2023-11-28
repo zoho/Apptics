@@ -177,21 +177,27 @@ code_sign_if_enabled() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Apptics-SDK/Apptics_SDK.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Apptics-Swift/Apptics_Swift.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/Apptics/Apptics.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/CrashKit/AppticsCrashKit.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/EventTracker/AppticsEventTracker.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/JWT/JWT.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/KSCrash/KSCrash.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/ScreenTracker/AppticsScreenTracker.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsApiTracker/ApiTracker/AppticsApiTracker.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsRemoteConfig/RemoteConfig/AppticsRemoteConfig.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Apptics-SDK/Apptics_SDK.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Apptics-Swift/Apptics_Swift.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/Apptics/Apptics.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/CrashKit/AppticsCrashKit.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/EventTracker/AppticsEventTracker.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/JWT/JWT.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/KSCrash/KSCrash.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/ScreenTracker/AppticsScreenTracker.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsApiTracker/ApiTracker/AppticsApiTracker.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsRemoteConfig/RemoteConfig/AppticsRemoteConfig.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

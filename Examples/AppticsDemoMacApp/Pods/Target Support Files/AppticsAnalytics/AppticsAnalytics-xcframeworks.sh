@@ -17,94 +17,85 @@ RSYNC_PROTECT_TMP_FILES=(--filter "P .*.??????")
 variant_for_slice()
 {
   case "$1" in
-  "Apptics.xcframework/watchos-arm64_i386_x86_64-simulator")
+  "Apptics.xcframework/watchos-arm64_32_armv7k")
+    echo ""
+    ;;
+  "Apptics.xcframework/ios-arm64_x86_64-simulator")
     echo "simulator"
     ;;
   "Apptics.xcframework/ios-arm64_x86_64-maccatalyst")
     echo "maccatalyst"
     ;;
-  "Apptics.xcframework/tvos-arm64")
-    echo ""
-    ;;
-  "Apptics.xcframework/watchos-arm64_32_armv7k")
-    echo ""
+  "Apptics.xcframework/tvos-arm64_x86_64-simulator")
+    echo "simulator"
     ;;
   "Apptics.xcframework/macos-arm64_x86_64")
     echo ""
     ;;
-  "Apptics.xcframework/ios-arm64_armv7")
+  "Apptics.xcframework/tvos-arm64")
     echo ""
     ;;
-  "Apptics.xcframework/tvos-arm64_x86_64-simulator")
-    echo "simulator"
+  "Apptics.xcframework/ios-arm64")
+    echo ""
     ;;
-  "Apptics.xcframework/ios-arm64_i386_x86_64-simulator")
+  "Apptics.xcframework/watchos-arm64_i386_x86_64-simulator")
     echo "simulator"
     ;;
   "AppticsCrashKit.xcframework/macos-arm64_x86_64")
     echo ""
     ;;
-  "AppticsCrashKit.xcframework/tvos-arm64_x86_64-simulator")
+  "AppticsCrashKit.xcframework/watchos-arm64_i386_x86_64-simulator")
     echo "simulator"
     ;;
   "AppticsCrashKit.xcframework/ios-arm64_x86_64-maccatalyst")
     echo "maccatalyst"
     ;;
-  "AppticsCrashKit.xcframework/watchos-arm64_32_armv7k")
-    echo ""
+  "AppticsCrashKit.xcframework/tvos-arm64_x86_64-simulator")
+    echo "simulator"
     ;;
-  "AppticsCrashKit.xcframework/watchos-arm64_i386_x86_64-simulator")
+  "AppticsCrashKit.xcframework/ios-arm64_x86_64-simulator")
     echo "simulator"
     ;;
   "AppticsCrashKit.xcframework/tvos-arm64")
     echo ""
     ;;
-  "AppticsCrashKit.xcframework/ios-arm64_i386_x86_64-simulator")
-    echo "simulator"
-    ;;
-  "AppticsCrashKit.xcframework/ios-arm64_armv7")
+  "AppticsCrashKit.xcframework/watchos-arm64_32_armv7k")
     echo ""
     ;;
-  "AppticsEventTracker.xcframework/macos-arm64_x86_64")
-    echo ""
-    ;;
-  "AppticsEventTracker.xcframework/watchos-arm64_32_armv7k")
-    echo ""
-    ;;
-  "AppticsEventTracker.xcframework/tvos-arm64")
-    echo ""
-    ;;
-  "AppticsEventTracker.xcframework/ios-arm64_i386_x86_64-simulator")
-    echo "simulator"
-    ;;
-  "AppticsEventTracker.xcframework/ios-arm64_x86_64-maccatalyst")
-    echo "maccatalyst"
-    ;;
-  "AppticsEventTracker.xcframework/watchos-arm64_i386_x86_64-simulator")
-    echo "simulator"
-    ;;
-  "AppticsEventTracker.xcframework/ios-arm64_armv7")
+  "AppticsCrashKit.xcframework/ios-arm64")
     echo ""
     ;;
   "AppticsEventTracker.xcframework/tvos-arm64_x86_64-simulator")
     echo "simulator"
     ;;
-  "JWT.xcframework/ios-arm64_armv7")
+  "AppticsEventTracker.xcframework/watchos-arm64_i386_x86_64-simulator")
+    echo "simulator"
+    ;;
+  "AppticsEventTracker.xcframework/ios-arm64")
     echo ""
     ;;
-  "JWT.xcframework/watchos-arm64_i386_x86_64-simulator")
+  "AppticsEventTracker.xcframework/ios-arm64_x86_64-simulator")
     echo "simulator"
     ;;
-  "JWT.xcframework/ios-arm64_i386_x86_64-simulator")
-    echo "simulator"
+  "AppticsEventTracker.xcframework/ios-arm64_x86_64-maccatalyst")
+    echo "maccatalyst"
     ;;
-  "JWT.xcframework/tvos-arm64")
+  "AppticsEventTracker.xcframework/tvos-arm64")
+    echo ""
+    ;;
+  "AppticsEventTracker.xcframework/watchos-arm64_32_armv7k")
+    echo ""
+    ;;
+  "AppticsEventTracker.xcframework/macos-arm64_x86_64")
     echo ""
     ;;
   "JWT.xcframework/macos-arm64_x86_64")
     echo ""
     ;;
-  "JWT.xcframework/tvos-arm64_x86_64-simulator")
+  "JWT.xcframework/tvos-arm64")
+    echo ""
+    ;;
+  "JWT.xcframework/ios-arm64_x86_64-simulator")
     echo "simulator"
     ;;
   "JWT.xcframework/watchos-arm64_32_armv7k")
@@ -113,32 +104,44 @@ variant_for_slice()
   "JWT.xcframework/ios-arm64_x86_64-maccatalyst")
     echo "maccatalyst"
     ;;
-  "KSCrash.xcframework/ios-arm64_armv7")
+  "JWT.xcframework/ios-arm64")
     echo ""
     ;;
-  "KSCrash.xcframework/watchos-arm64_32_armv7k")
-    echo ""
+  "JWT.xcframework/tvos-arm64_x86_64-simulator")
+    echo "simulator"
+    ;;
+  "JWT.xcframework/watchos-arm64_i386_x86_64-simulator")
+    echo "simulator"
     ;;
   "KSCrash.xcframework/watchos-arm64_i386_x86_64-simulator")
     echo "simulator"
     ;;
-  "KSCrash.xcframework/tvos-arm64")
-    echo ""
-    ;;
-  "KSCrash.xcframework/ios-arm64_i386_x86_64-simulator")
+  "KSCrash.xcframework/ios-arm64_x86_64-simulator")
     echo "simulator"
     ;;
-  "KSCrash.xcframework/macos-arm64_x86_64")
+  "KSCrash.xcframework/ios-arm64")
     echo ""
     ;;
   "KSCrash.xcframework/tvos-arm64_x86_64-simulator")
     echo "simulator"
     ;;
+  "KSCrash.xcframework/watchos-arm64_32_armv7k")
+    echo ""
+    ;;
   "KSCrash.xcframework/ios-arm64_x86_64-maccatalyst")
     echo "maccatalyst"
     ;;
-  "AppticsScreenTracker.xcframework/macos-arm64_x86_64")
+  "KSCrash.xcframework/macos-arm64_x86_64")
     echo ""
+    ;;
+  "KSCrash.xcframework/tvos-arm64")
+    echo ""
+    ;;
+  "AppticsScreenTracker.xcframework/ios-arm64")
+    echo ""
+    ;;
+  "AppticsScreenTracker.xcframework/watchos-arm64_i386_x86_64-simulator")
+    echo "simulator"
     ;;
   "AppticsScreenTracker.xcframework/ios-arm64_x86_64-maccatalyst")
     echo "maccatalyst"
@@ -146,19 +149,16 @@ variant_for_slice()
   "AppticsScreenTracker.xcframework/tvos-arm64")
     echo ""
     ;;
-  "AppticsScreenTracker.xcframework/ios-arm64_i386_x86_64-simulator")
-    echo "simulator"
+  "AppticsScreenTracker.xcframework/macos-arm64_x86_64")
+    echo ""
     ;;
-  "AppticsScreenTracker.xcframework/ios-arm64_armv7")
+  "AppticsScreenTracker.xcframework/watchos-arm64_32_armv7k")
     echo ""
     ;;
   "AppticsScreenTracker.xcframework/tvos-arm64_x86_64-simulator")
     echo "simulator"
     ;;
-  "AppticsScreenTracker.xcframework/watchos-arm64_32_armv7k")
-    echo ""
-    ;;
-  "AppticsScreenTracker.xcframework/watchos-arm64_i386_x86_64-simulator")
+  "AppticsScreenTracker.xcframework/ios-arm64_x86_64-simulator")
     echo "simulator"
     ;;
   esac
@@ -167,94 +167,85 @@ variant_for_slice()
 archs_for_slice()
 {
   case "$1" in
-  "Apptics.xcframework/watchos-arm64_i386_x86_64-simulator")
-    echo "arm64 i386 x86_64"
+  "Apptics.xcframework/watchos-arm64_32_armv7k")
+    echo "arm64_32 armv7k"
+    ;;
+  "Apptics.xcframework/ios-arm64_x86_64-simulator")
+    echo "arm64 x86_64"
     ;;
   "Apptics.xcframework/ios-arm64_x86_64-maccatalyst")
+    echo "arm64 x86_64"
+    ;;
+  "Apptics.xcframework/tvos-arm64_x86_64-simulator")
+    echo "arm64 x86_64"
+    ;;
+  "Apptics.xcframework/macos-arm64_x86_64")
     echo "arm64 x86_64"
     ;;
   "Apptics.xcframework/tvos-arm64")
     echo "arm64"
     ;;
-  "Apptics.xcframework/watchos-arm64_32_armv7k")
-    echo "arm64_32 armv7k"
+  "Apptics.xcframework/ios-arm64")
+    echo "arm64"
     ;;
-  "Apptics.xcframework/macos-arm64_x86_64")
-    echo "arm64 x86_64"
-    ;;
-  "Apptics.xcframework/ios-arm64_armv7")
-    echo "arm64 armv7"
-    ;;
-  "Apptics.xcframework/tvos-arm64_x86_64-simulator")
-    echo "arm64 x86_64"
-    ;;
-  "Apptics.xcframework/ios-arm64_i386_x86_64-simulator")
+  "Apptics.xcframework/watchos-arm64_i386_x86_64-simulator")
     echo "arm64 i386 x86_64"
     ;;
   "AppticsCrashKit.xcframework/macos-arm64_x86_64")
     echo "arm64 x86_64"
     ;;
-  "AppticsCrashKit.xcframework/tvos-arm64_x86_64-simulator")
-    echo "arm64 x86_64"
+  "AppticsCrashKit.xcframework/watchos-arm64_i386_x86_64-simulator")
+    echo "arm64 i386 x86_64"
     ;;
   "AppticsCrashKit.xcframework/ios-arm64_x86_64-maccatalyst")
     echo "arm64 x86_64"
     ;;
-  "AppticsCrashKit.xcframework/watchos-arm64_32_armv7k")
-    echo "arm64_32 armv7k"
+  "AppticsCrashKit.xcframework/tvos-arm64_x86_64-simulator")
+    echo "arm64 x86_64"
     ;;
-  "AppticsCrashKit.xcframework/watchos-arm64_i386_x86_64-simulator")
-    echo "arm64 i386 x86_64"
+  "AppticsCrashKit.xcframework/ios-arm64_x86_64-simulator")
+    echo "arm64 x86_64"
     ;;
   "AppticsCrashKit.xcframework/tvos-arm64")
     echo "arm64"
     ;;
-  "AppticsCrashKit.xcframework/ios-arm64_i386_x86_64-simulator")
-    echo "arm64 i386 x86_64"
-    ;;
-  "AppticsCrashKit.xcframework/ios-arm64_armv7")
-    echo "arm64 armv7"
-    ;;
-  "AppticsEventTracker.xcframework/macos-arm64_x86_64")
-    echo "arm64 x86_64"
-    ;;
-  "AppticsEventTracker.xcframework/watchos-arm64_32_armv7k")
+  "AppticsCrashKit.xcframework/watchos-arm64_32_armv7k")
     echo "arm64_32 armv7k"
     ;;
-  "AppticsEventTracker.xcframework/tvos-arm64")
+  "AppticsCrashKit.xcframework/ios-arm64")
     echo "arm64"
     ;;
-  "AppticsEventTracker.xcframework/ios-arm64_i386_x86_64-simulator")
-    echo "arm64 i386 x86_64"
-    ;;
-  "AppticsEventTracker.xcframework/ios-arm64_x86_64-maccatalyst")
+  "AppticsEventTracker.xcframework/tvos-arm64_x86_64-simulator")
     echo "arm64 x86_64"
     ;;
   "AppticsEventTracker.xcframework/watchos-arm64_i386_x86_64-simulator")
     echo "arm64 i386 x86_64"
     ;;
-  "AppticsEventTracker.xcframework/ios-arm64_armv7")
-    echo "arm64 armv7"
+  "AppticsEventTracker.xcframework/ios-arm64")
+    echo "arm64"
     ;;
-  "AppticsEventTracker.xcframework/tvos-arm64_x86_64-simulator")
+  "AppticsEventTracker.xcframework/ios-arm64_x86_64-simulator")
     echo "arm64 x86_64"
     ;;
-  "JWT.xcframework/ios-arm64_armv7")
-    echo "arm64 armv7"
+  "AppticsEventTracker.xcframework/ios-arm64_x86_64-maccatalyst")
+    echo "arm64 x86_64"
     ;;
-  "JWT.xcframework/watchos-arm64_i386_x86_64-simulator")
-    echo "arm64 i386 x86_64"
-    ;;
-  "JWT.xcframework/ios-arm64_i386_x86_64-simulator")
-    echo "arm64 i386 x86_64"
-    ;;
-  "JWT.xcframework/tvos-arm64")
+  "AppticsEventTracker.xcframework/tvos-arm64")
     echo "arm64"
+    ;;
+  "AppticsEventTracker.xcframework/watchos-arm64_32_armv7k")
+    echo "arm64_32 armv7k"
+    ;;
+  "AppticsEventTracker.xcframework/macos-arm64_x86_64")
+    echo "arm64 x86_64"
     ;;
   "JWT.xcframework/macos-arm64_x86_64")
     echo "arm64 x86_64"
     ;;
-  "JWT.xcframework/tvos-arm64_x86_64-simulator")
+  "JWT.xcframework/tvos-arm64")
+    echo "arm64"
+    ;;
+  "JWT.xcframework/ios-arm64_x86_64-simulator")
     echo "arm64 x86_64"
     ;;
   "JWT.xcframework/watchos-arm64_32_armv7k")
@@ -263,32 +254,44 @@ archs_for_slice()
   "JWT.xcframework/ios-arm64_x86_64-maccatalyst")
     echo "arm64 x86_64"
     ;;
-  "KSCrash.xcframework/ios-arm64_armv7")
-    echo "arm64 armv7"
+  "JWT.xcframework/ios-arm64")
+    echo "arm64"
     ;;
-  "KSCrash.xcframework/watchos-arm64_32_armv7k")
-    echo "arm64_32 armv7k"
+  "JWT.xcframework/tvos-arm64_x86_64-simulator")
+    echo "arm64 x86_64"
+    ;;
+  "JWT.xcframework/watchos-arm64_i386_x86_64-simulator")
+    echo "arm64 i386 x86_64"
     ;;
   "KSCrash.xcframework/watchos-arm64_i386_x86_64-simulator")
     echo "arm64 i386 x86_64"
     ;;
-  "KSCrash.xcframework/tvos-arm64")
-    echo "arm64"
-    ;;
-  "KSCrash.xcframework/ios-arm64_i386_x86_64-simulator")
-    echo "arm64 i386 x86_64"
-    ;;
-  "KSCrash.xcframework/macos-arm64_x86_64")
+  "KSCrash.xcframework/ios-arm64_x86_64-simulator")
     echo "arm64 x86_64"
+    ;;
+  "KSCrash.xcframework/ios-arm64")
+    echo "arm64"
     ;;
   "KSCrash.xcframework/tvos-arm64_x86_64-simulator")
     echo "arm64 x86_64"
     ;;
+  "KSCrash.xcframework/watchos-arm64_32_armv7k")
+    echo "arm64_32 armv7k"
+    ;;
   "KSCrash.xcframework/ios-arm64_x86_64-maccatalyst")
     echo "arm64 x86_64"
     ;;
-  "AppticsScreenTracker.xcframework/macos-arm64_x86_64")
+  "KSCrash.xcframework/macos-arm64_x86_64")
     echo "arm64 x86_64"
+    ;;
+  "KSCrash.xcframework/tvos-arm64")
+    echo "arm64"
+    ;;
+  "AppticsScreenTracker.xcframework/ios-arm64")
+    echo "arm64"
+    ;;
+  "AppticsScreenTracker.xcframework/watchos-arm64_i386_x86_64-simulator")
+    echo "arm64 i386 x86_64"
     ;;
   "AppticsScreenTracker.xcframework/ios-arm64_x86_64-maccatalyst")
     echo "arm64 x86_64"
@@ -296,20 +299,17 @@ archs_for_slice()
   "AppticsScreenTracker.xcframework/tvos-arm64")
     echo "arm64"
     ;;
-  "AppticsScreenTracker.xcframework/ios-arm64_i386_x86_64-simulator")
-    echo "arm64 i386 x86_64"
-    ;;
-  "AppticsScreenTracker.xcframework/ios-arm64_armv7")
-    echo "arm64 armv7"
-    ;;
-  "AppticsScreenTracker.xcframework/tvos-arm64_x86_64-simulator")
+  "AppticsScreenTracker.xcframework/macos-arm64_x86_64")
     echo "arm64 x86_64"
     ;;
   "AppticsScreenTracker.xcframework/watchos-arm64_32_armv7k")
     echo "arm64_32 armv7k"
     ;;
-  "AppticsScreenTracker.xcframework/watchos-arm64_i386_x86_64-simulator")
-    echo "arm64 i386 x86_64"
+  "AppticsScreenTracker.xcframework/tvos-arm64_x86_64-simulator")
+    echo "arm64 x86_64"
+    ;;
+  "AppticsScreenTracker.xcframework/ios-arm64_x86_64-simulator")
+    echo "arm64 x86_64"
     ;;
   esac
 }
@@ -393,10 +393,10 @@ install_xcframework() {
   echo "Copied $source to $destination"
 }
 
-install_xcframework "${PODS_ROOT}/AppticsAnalytics/Apptics.xcframework" "AppticsAnalytics/Apptics" "framework" "macos-arm64_x86_64"
-install_xcframework "${PODS_ROOT}/AppticsAnalytics/AppticsCrashKit.xcframework" "AppticsAnalytics/CrashKit" "framework" "macos-arm64_x86_64"
-install_xcframework "${PODS_ROOT}/AppticsAnalytics/AppticsEventTracker.xcframework" "AppticsAnalytics/EventTracker" "framework" "macos-arm64_x86_64"
-install_xcframework "${PODS_ROOT}/AppticsAnalytics/JWT.xcframework" "AppticsAnalytics/JWT" "framework" "macos-arm64_x86_64"
-install_xcframework "${PODS_ROOT}/AppticsAnalytics/KSCrash.xcframework" "AppticsAnalytics/KSCrash" "framework" "macos-arm64_x86_64"
-install_xcframework "${PODS_ROOT}/AppticsAnalytics/AppticsScreenTracker.xcframework" "AppticsAnalytics/ScreenTracker" "framework" "macos-arm64_x86_64"
+install_xcframework "${PODS_ROOT}/AppticsAnalytics/Apptics/Apptics.xcframework" "AppticsAnalytics/Apptics" "framework" "macos-arm64_x86_64"
+install_xcframework "${PODS_ROOT}/AppticsAnalytics/Apptics/AppticsCrashKit.xcframework" "AppticsAnalytics/CrashKit" "framework" "macos-arm64_x86_64"
+install_xcframework "${PODS_ROOT}/AppticsAnalytics/Apptics/AppticsEventTracker.xcframework" "AppticsAnalytics/EventTracker" "framework" "macos-arm64_x86_64"
+install_xcframework "${PODS_ROOT}/AppticsAnalytics/Apptics/JWT.xcframework" "AppticsAnalytics/JWT" "framework" "macos-arm64_x86_64"
+install_xcframework "${PODS_ROOT}/AppticsAnalytics/Apptics/KSCrash.xcframework" "AppticsAnalytics/KSCrash" "framework" "macos-arm64_x86_64"
+install_xcframework "${PODS_ROOT}/AppticsAnalytics/Apptics/AppticsScreenTracker.xcframework" "AppticsAnalytics/ScreenTracker" "framework" "macos-arm64_x86_64"
 

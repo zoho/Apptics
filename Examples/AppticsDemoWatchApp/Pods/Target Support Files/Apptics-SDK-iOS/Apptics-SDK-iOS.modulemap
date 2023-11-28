@@ -1,0 +1,6 @@
+framework module Apptics_SDK {
+  umbrella header "Apptics-SDK-iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

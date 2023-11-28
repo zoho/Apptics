@@ -42,8 +42,8 @@ class NewViewController : NSViewController{
           if (status == .statusSuccess || status == .statusUpToDate){
               APRemoteConfig.shared().activateFetched()
           }
-          print(APRemoteConfig.shared()["feedback_module"].stringValue)
-          print(APRemoteConfig.shared().configValue(forKey: "secondary_color").stringValue )
+          print(APRemoteConfig.shared()["feedback_module"]?.stringValue)
+          print(APRemoteConfig.shared().configValue(forKey: "secondary_color")?.stringValue )
       }
       
     }
