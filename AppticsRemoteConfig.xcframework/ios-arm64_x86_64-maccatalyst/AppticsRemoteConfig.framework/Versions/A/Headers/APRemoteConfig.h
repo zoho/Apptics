@@ -78,6 +78,8 @@ static NSString* APRemoteConfigUpdateNotification = @"APRemoteConfigUpdateNotifi
 
 -(void) updateRemoteConfigWithData:(nullable NSDictionary*) rcInfo withCompletionHandler:(nullable void(^)(APRemoteConfigFetchStatus status))completion;
 
+-(NSString*) getStringValue:(NSString*) key coldFetch : (BOOL) coldFetch fallbackWithOfflineValue : (BOOL) fallbackWithOfflineValue;
+    
 @end
 
 NS_ASSUME_NONNULL_END

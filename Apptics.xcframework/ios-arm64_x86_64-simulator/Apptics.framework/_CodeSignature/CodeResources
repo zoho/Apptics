@@ -23,11 +23,11 @@
 		</data>
 		<key>AppticsResources.bundle/Info.plist</key>
 		<data>
-		oMFfoQdmrkjSYLAHZLmM3NSe/Vc=
+		DwkCZd/ZOUU9cQ2vIcY2qM3f+r8=
 		</data>
 		<key>AppticsResources.bundle/ZAAppUpdateAlert.nib</key>
 		<data>
-		kyf+KzsEoVUElL6qijktzWdffUA=
+		jQTSVdvtsfax2AjxLrrdwEFmvm8=
 		</data>
 		<key>AppticsResources.bundle/ZACustomAlertController.nib</key>
 		<data>
@@ -67,7 +67,7 @@
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		p/cWgqSb5hSwBQRLuQ4p1aO5WA4=
+		IO0ujSq5o7d7ivlC78XjGpGUWk0=
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -75,11 +75,11 @@
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		JCzYp5lejX33WzklPejvdcLNmes=
+		LKQ00lwJlRxH8mOk+E6krZy8vZ0=
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeResources</key>
 		<data>
-		8FP/fzoGsVdifeKlC8Sm2duou+c=
+		gQ2mR7xCFu8MFY98OTyp2okKA/M=
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeSignature</key>
 		<data>
@@ -739,7 +739,7 @@
 		</data>
 		<key>Headers/ZAAppUpdateAlert.h</key>
 		<data>
-		KzNFA/kMI/kcybnlkf9CJaxc1vA=
+		jrk9+CpbfmuQWKhwn+8H8aybSE8=
 		</data>
 		<key>Headers/ZAAppupdatePopupInfo.h</key>
 		<data>
@@ -755,7 +755,7 @@
 		</data>
 		<key>Headers/ZACustomAlertController.h</key>
 		<data>
-		YLzXhZ0TJzM73e/Gh4v5hVR9MOY=
+		EiBzDjVs3OIxRpvfsAPk1Dyxwbo=
 		</data>
 		<key>Headers/ZACustomNavigationController.h</key>
 		<data>
@@ -859,11 +859,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		RG6C6tArFDNRHVivEzRP78GDlDc=
+		7OmsiJYhiXhE4H49eArSCrWjiLg=
 		</data>
 		<key>Modules/Apptics.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		QOb2XS3odcH5wKDVAThanYcNL04=
+		4ks46Lb4ckrcuCfnHbeoV2LCwGo=
 		</data>
 		<key>Modules/Apptics.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -879,11 +879,11 @@
 		</data>
 		<key>Modules/Apptics.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		evIVMyd0kjSq5RzqLEt52mWIs0c=
+		vTCofXFXdzrQgs5nJr+z1gbDPFc=
 		</data>
 		<key>Modules/Apptics.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		QOb2XS3odcH5wKDVAThanYcNL04=
+		4ks46Lb4ckrcuCfnHbeoV2LCwGo=
 		</data>
 		<key>Modules/Apptics.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -899,7 +899,7 @@
 		</data>
 		<key>Modules/Apptics.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		78h7m0XIUEX1U3xipFxn6HSoonc=
+		175HLEgZQRSKqwsUWNHasGbYM7s=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -947,22 +947,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			oMFfoQdmrkjSYLAHZLmM3NSe/Vc=
+			DwkCZd/ZOUU9cQ2vIcY2qM3f+r8=
 			</data>
 			<key>hash2</key>
 			<data>
-			cYSZuztBnTmlLJqhOzUlZ0LQBSmuk/hj/qrb9pLOavI=
+			dj7A3ETTo+8RlHFRiOaGt5Epjed+uakIs3S/Lz/P1fo=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/ZAAppUpdateAlert.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			kyf+KzsEoVUElL6qijktzWdffUA=
+			jQTSVdvtsfax2AjxLrrdwEFmvm8=
 			</data>
 			<key>hash2</key>
 			<data>
-			VEHRzJj46QrG1Z6Og/7fUB8n4qWSf/ZogqiKTJwZqyw=
+			y+ZT636CxO/ceZIL3tggJE7Oukiqc+ku/y67z9s0TpA=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/ZACustomAlertController.nib</key>
@@ -1068,11 +1068,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			p/cWgqSb5hSwBQRLuQ4p1aO5WA4=
+			IO0ujSq5o7d7ivlC78XjGpGUWk0=
 			</data>
 			<key>hash2</key>
 			<data>
-			KXbc/OawrCFSsHK/E/tFCCgUa1SC6VK6xgSMik6yEg4=
+			WdjcJisabwA4fPCwDFdnUVQxPSt2umb8sRBi7L20Cyw=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/_CodeSignature/CodeRequirements</key>
@@ -1090,22 +1090,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JCzYp5lejX33WzklPejvdcLNmes=
+			LKQ00lwJlRxH8mOk+E6krZy8vZ0=
 			</data>
 			<key>hash2</key>
 			<data>
-			P9al2SWVnc0LIdkt9qJ2RYH5fnVnooz5tfCxIt8jbZw=
+			fgU8m1V+U/Vzo8/AO/FWnbfrx3ub5eq0POD9SFERwts=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8FP/fzoGsVdifeKlC8Sm2duou+c=
+			gQ2mR7xCFu8MFY98OTyp2okKA/M=
 			</data>
 			<key>hash2</key>
 			<data>
-			ltQly5YDj7mHN/qTEKTRdzH9sWYir9oZYCiilyD+zCk=
+			zX03PPGIGI1Li3OGzRAL43eo/TPA3hgtI5zSQ/JaMXE=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/_CodeSignature/CodeSignature</key>
@@ -2258,11 +2258,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KzNFA/kMI/kcybnlkf9CJaxc1vA=
+			jrk9+CpbfmuQWKhwn+8H8aybSE8=
 			</data>
 			<key>hash2</key>
 			<data>
-			qYCgugzzv5UiG6XgaJ6qfI+/hNOzQEG64NtGZ+qNyXg=
+			y8KxnQJu7q4hEHMgOEoiLn+JVABa4FosRI6Eam+hwJk=
 			</data>
 		</dict>
 		<key>Headers/ZAAppupdatePopupInfo.h</key>
@@ -2302,11 +2302,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YLzXhZ0TJzM73e/Gh4v5hVR9MOY=
+			EiBzDjVs3OIxRpvfsAPk1Dyxwbo=
 			</data>
 			<key>hash2</key>
 			<data>
-			0Qc8rRzR2Gx6nKYNrwZ3XoDQFGCRJuFaH+eN1qVXBPA=
+			JeCb1z1dlFicbUh8wmYLGx+jRpR0+CoEBj/V0qdHjbs=
 			</data>
 		</dict>
 		<key>Headers/ZACustomNavigationController.h</key>
@@ -2588,11 +2588,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QOb2XS3odcH5wKDVAThanYcNL04=
+			4ks46Lb4ckrcuCfnHbeoV2LCwGo=
 			</data>
 			<key>hash2</key>
 			<data>
-			UW4MG1usrcaddGsQQXHyb2fDXzJB8/SaJywJ1brIpxM=
+			aF4L0YdM15HGtvzJAnzKtamhhpgOE3tVKYgzMN+D76k=
 			</data>
 		</dict>
 		<key>Modules/Apptics.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -2632,22 +2632,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			evIVMyd0kjSq5RzqLEt52mWIs0c=
+			vTCofXFXdzrQgs5nJr+z1gbDPFc=
 			</data>
 			<key>hash2</key>
 			<data>
-			ket9WSkIvggRjPTfprdmMHH7ldkxxfYcqXWTFgnM0qQ=
+			ohwk5ycKAbB6jDzf8WHkS+8fiEqTl70CBep0+KmArfg=
 			</data>
 		</dict>
 		<key>Modules/Apptics.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			QOb2XS3odcH5wKDVAThanYcNL04=
+			4ks46Lb4ckrcuCfnHbeoV2LCwGo=
 			</data>
 			<key>hash2</key>
 			<data>
-			UW4MG1usrcaddGsQQXHyb2fDXzJB8/SaJywJ1brIpxM=
+			aF4L0YdM15HGtvzJAnzKtamhhpgOE3tVKYgzMN+D76k=
 			</data>
 		</dict>
 		<key>Modules/Apptics.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -2687,11 +2687,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			78h7m0XIUEX1U3xipFxn6HSoonc=
+			175HLEgZQRSKqwsUWNHasGbYM7s=
 			</data>
 			<key>hash2</key>
 			<data>
-			3xxsmsoWR1NH96dJrIuxv2LYZJp9TpG8p8h0f9E7TzM=
+			mukbt4nMDSeI3jwYH4CVktKluoyIgngPd3jj6bDsFlg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

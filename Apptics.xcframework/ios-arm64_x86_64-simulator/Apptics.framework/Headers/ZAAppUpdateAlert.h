@@ -20,6 +20,14 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, retain) NSDictionary *updateInfo;
 @property (nonatomic, retain) NSDictionary *localeInfo;
 
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *updateButtonLeadingConstraint;
+
+
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *updateButtonTrailingConstraint;
+
+
+
+
 @property (nonatomic, retain) NSNumber *option;
 @property (nonatomic, retain) NSString *titleString;
 @property (nonatomic, retain) NSString *descriptionString;
