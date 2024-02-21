@@ -21,33 +21,6 @@
 		</dict>
 		<dict>
 			<key>LibraryIdentifier</key>
-			<string>macos-arm64_x86_64</string>
-			<key>LibraryPath</key>
-			<string>AppticsEventTracker.framework</string>
-			<key>SupportedArchitectures</key>
-			<array>
-				<string>arm64</string>
-				<string>x86_64</string>
-			</array>
-			<key>SupportedPlatform</key>
-			<string>macos</string>
-		</dict>
-		<dict>
-			<key>LibraryIdentifier</key>
-			<string>watchos-arm64_arm64_32_armv7k</string>
-			<key>LibraryPath</key>
-			<string>AppticsEventTracker.framework</string>
-			<key>SupportedArchitectures</key>
-			<array>
-				<string>arm64</string>
-				<string>arm64_32</string>
-				<string>armv7k</string>
-			</array>
-			<key>SupportedPlatform</key>
-			<string>watchos</string>
-		</dict>
-		<dict>
-			<key>LibraryIdentifier</key>
 			<string>tvos-arm64_x86_64-simulator</string>
 			<key>LibraryPath</key>
 			<string>AppticsEventTracker.framework</string>
@@ -75,6 +48,33 @@
 			<string>ios</string>
 			<key>SupportedPlatformVariant</key>
 			<string>maccatalyst</string>
+		</dict>
+		<dict>
+			<key>LibraryIdentifier</key>
+			<string>watchos-arm64_arm64_32_armv7k</string>
+			<key>LibraryPath</key>
+			<string>AppticsEventTracker.framework</string>
+			<key>SupportedArchitectures</key>
+			<array>
+				<string>arm64</string>
+				<string>arm64_32</string>
+				<string>armv7k</string>
+			</array>
+			<key>SupportedPlatform</key>
+			<string>watchos</string>
+		</dict>
+		<dict>
+			<key>LibraryIdentifier</key>
+			<string>macos-arm64_x86_64</string>
+			<key>LibraryPath</key>
+			<string>AppticsEventTracker.framework</string>
+			<key>SupportedArchitectures</key>
+			<array>
+				<string>arm64</string>
+				<string>x86_64</string>
+			</array>
+			<key>SupportedPlatform</key>
+			<string>macos</string>
 		</dict>
 		<dict>
 			<key>LibraryIdentifier</key>

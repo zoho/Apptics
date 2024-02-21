@@ -11,13 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface APEvent : NSObject
 
-
 @property (nonatomic, retain) NSDictionary *events;
 @property (nonatomic, retain) NSDictionary *groups;
-@property (nonatomic, retain) NSDictionary *events_Dict_Plist;
-@property (nonatomic, retain) NSDictionary *events_Dict;
-@property (nonatomic, retain) NSDictionary *properties_dict;
-
 
 #pragma mark — Events apis
 

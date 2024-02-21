@@ -27,7 +27,7 @@
 		</data>
 		<key>AppticsResources.bundle/ZAAppUpdateAlert.nib</key>
 		<data>
-		jQTSVdvtsfax2AjxLrrdwEFmvm8=
+		kyf+KzsEoVUElL6qijktzWdffUA=
 		</data>
 		<key>AppticsResources.bundle/ZACustomAlertController.nib</key>
 		<data>
@@ -67,7 +67,7 @@
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		IO0ujSq5o7d7ivlC78XjGpGUWk0=
+		mUILpHIXo8tGpKPwcj1tM2VFdfk=
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -75,11 +75,11 @@
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		LKQ00lwJlRxH8mOk+E6krZy8vZ0=
+		BT89gyY/LzO6Xmzc88AOooBVesQ=
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeResources</key>
 		<data>
-		gQ2mR7xCFu8MFY98OTyp2okKA/M=
+		8FP/fzoGsVdifeKlC8Sm2duou+c=
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeSignature</key>
 		<data>
@@ -715,7 +715,7 @@
 		</data>
 		<key>Headers/AppticsConfig.h</key>
 		<data>
-		PDqxXXygWBlYf1O70kivOPFg9VQ=
+		ZlJ8BzZOdTNLtDmqbSdZcBkjmrI=
 		</data>
 		<key>Headers/NSData+APGunZip.h</key>
 		<data>
@@ -739,7 +739,7 @@
 		</data>
 		<key>Headers/ZAAppUpdateAlert.h</key>
 		<data>
-		jrk9+CpbfmuQWKhwn+8H8aybSE8=
+		KzNFA/kMI/kcybnlkf9CJaxc1vA=
 		</data>
 		<key>Headers/ZAAppupdatePopupInfo.h</key>
 		<data>
@@ -755,7 +755,7 @@
 		</data>
 		<key>Headers/ZACustomAlertController.h</key>
 		<data>
-		EiBzDjVs3OIxRpvfsAPk1Dyxwbo=
+		YLzXhZ0TJzM73e/Gh4v5hVR9MOY=
 		</data>
 		<key>Headers/ZACustomNavigationController.h</key>
 		<data>
@@ -863,7 +863,7 @@
 		</data>
 		<key>Modules/Apptics.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		4ks46Lb4ckrcuCfnHbeoV2LCwGo=
+		oyvaElYE4YHqsypqytyNieifwXs=
 		</data>
 		<key>Modules/Apptics.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -879,11 +879,11 @@
 		</data>
 		<key>Modules/Apptics.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		vTCofXFXdzrQgs5nJr+z1gbDPFc=
+		kAnvpN0FM5uP581OiVW+MBzt7O0=
 		</data>
 		<key>Modules/Apptics.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		4ks46Lb4ckrcuCfnHbeoV2LCwGo=
+		oyvaElYE4YHqsypqytyNieifwXs=
 		</data>
 		<key>Modules/Apptics.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -899,7 +899,7 @@
 		</data>
 		<key>Modules/Apptics.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		175HLEgZQRSKqwsUWNHasGbYM7s=
+		DqHeoA3mu7pw/Yf8C9nNeWJig3g=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -958,11 +958,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jQTSVdvtsfax2AjxLrrdwEFmvm8=
+			kyf+KzsEoVUElL6qijktzWdffUA=
 			</data>
 			<key>hash2</key>
 			<data>
-			y+ZT636CxO/ceZIL3tggJE7Oukiqc+ku/y67z9s0TpA=
+			VEHRzJj46QrG1Z6Og/7fUB8n4qWSf/ZogqiKTJwZqyw=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/ZACustomAlertController.nib</key>
@@ -1068,11 +1068,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			IO0ujSq5o7d7ivlC78XjGpGUWk0=
+			mUILpHIXo8tGpKPwcj1tM2VFdfk=
 			</data>
 			<key>hash2</key>
 			<data>
-			WdjcJisabwA4fPCwDFdnUVQxPSt2umb8sRBi7L20Cyw=
+			ZzwCFR9nCYC8KpzLafhaoum13je2d9+qXUEU1TDH6rM=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/_CodeSignature/CodeRequirements</key>
@@ -1090,22 +1090,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LKQ00lwJlRxH8mOk+E6krZy8vZ0=
+			BT89gyY/LzO6Xmzc88AOooBVesQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			fgU8m1V+U/Vzo8/AO/FWnbfrx3ub5eq0POD9SFERwts=
+			PgcmXZsTa+3xnkzWRt7n8KTmgv4tLzXQgRDpOz3cSqU=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			gQ2mR7xCFu8MFY98OTyp2okKA/M=
+			8FP/fzoGsVdifeKlC8Sm2duou+c=
 			</data>
 			<key>hash2</key>
 			<data>
-			zX03PPGIGI1Li3OGzRAL43eo/TPA3hgtI5zSQ/JaMXE=
+			ltQly5YDj7mHN/qTEKTRdzH9sWYir9oZYCiilyD+zCk=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/_CodeSignature/CodeSignature</key>
@@ -2192,11 +2192,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PDqxXXygWBlYf1O70kivOPFg9VQ=
+			ZlJ8BzZOdTNLtDmqbSdZcBkjmrI=
 			</data>
 			<key>hash2</key>
 			<data>
-			Qsxu1aW+6i6FhUbIPWstSLRx3FosHKNGJeAfViyP5SM=
+			LDU7T/KrPYeEgu+M9iqDo62H1ZlW3GlNYs0mu8Z81xY=
 			</data>
 		</dict>
 		<key>Headers/NSData+APGunZip.h</key>
@@ -2258,11 +2258,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jrk9+CpbfmuQWKhwn+8H8aybSE8=
+			KzNFA/kMI/kcybnlkf9CJaxc1vA=
 			</data>
 			<key>hash2</key>
 			<data>
-			y8KxnQJu7q4hEHMgOEoiLn+JVABa4FosRI6Eam+hwJk=
+			qYCgugzzv5UiG6XgaJ6qfI+/hNOzQEG64NtGZ+qNyXg=
 			</data>
 		</dict>
 		<key>Headers/ZAAppupdatePopupInfo.h</key>
@@ -2302,11 +2302,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			EiBzDjVs3OIxRpvfsAPk1Dyxwbo=
+			YLzXhZ0TJzM73e/Gh4v5hVR9MOY=
 			</data>
 			<key>hash2</key>
 			<data>
-			JeCb1z1dlFicbUh8wmYLGx+jRpR0+CoEBj/V0qdHjbs=
+			0Qc8rRzR2Gx6nKYNrwZ3XoDQFGCRJuFaH+eN1qVXBPA=
 			</data>
 		</dict>
 		<key>Headers/ZACustomNavigationController.h</key>
@@ -2588,11 +2588,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4ks46Lb4ckrcuCfnHbeoV2LCwGo=
+			oyvaElYE4YHqsypqytyNieifwXs=
 			</data>
 			<key>hash2</key>
 			<data>
-			aF4L0YdM15HGtvzJAnzKtamhhpgOE3tVKYgzMN+D76k=
+			hG6D37WNsckEUZKSw7iCJgVCgAp71RZqbSGQWfAnWCw=
 			</data>
 		</dict>
 		<key>Modules/Apptics.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -2632,22 +2632,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vTCofXFXdzrQgs5nJr+z1gbDPFc=
+			kAnvpN0FM5uP581OiVW+MBzt7O0=
 			</data>
 			<key>hash2</key>
 			<data>
-			ohwk5ycKAbB6jDzf8WHkS+8fiEqTl70CBep0+KmArfg=
+			9b74ikKEi4kW5n3WixveClDjE1/B1xj7ATzl8pxGGCE=
 			</data>
 		</dict>
 		<key>Modules/Apptics.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4ks46Lb4ckrcuCfnHbeoV2LCwGo=
+			oyvaElYE4YHqsypqytyNieifwXs=
 			</data>
 			<key>hash2</key>
 			<data>
-			aF4L0YdM15HGtvzJAnzKtamhhpgOE3tVKYgzMN+D76k=
+			hG6D37WNsckEUZKSw7iCJgVCgAp71RZqbSGQWfAnWCw=
 			</data>
 		</dict>
 		<key>Modules/Apptics.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -2687,11 +2687,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			175HLEgZQRSKqwsUWNHasGbYM7s=
+			DqHeoA3mu7pw/Yf8C9nNeWJig3g=
 			</data>
 			<key>hash2</key>
 			<data>
-			mukbt4nMDSeI3jwYH4CVktKluoyIgngPd3jj6bDsFlg=
+			H0I9zUEILUIpoLBassL3OvBFclahmtUe9sonuIVSNq8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

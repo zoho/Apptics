@@ -20,6 +20,5 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, retain) ZAAppUpdateAlert *appUpdateAlert;
 @property (nonatomic, retain) NSDictionary *info;
 @property (nonatomic, retain) NSDictionary *localeInfo;
-@property (nonatomic,retain) NSNumber *option;
 @end
 NS_ASSUME_NONNULL_END
