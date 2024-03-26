@@ -37,8 +37,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 -(void) incrementSessionHitCount : (NSInteger) sessionDuration;
 
--(void) incrementEventHitCountForEventId : (NSString*_Nonnull) eventId;
-
 -(void) incrementEventHitCount : (NSString*_Nonnull) name;
 
 -(void) incrementScreenHitCount : (NSString*_Nonnull) name;

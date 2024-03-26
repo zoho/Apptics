@@ -7,12 +7,100 @@
 
 #import <Foundation/Foundation.h>
 
+
+#define PROPERTY_KEYS_MAX_COUNT 25
+#define PROPERTY_OVERALL_LENGTH 7666
+
+#define PROPERTY_KEY_REGEX @"^[a-zA-Z][a-zA-Z0-9_]{0,50}$"
+#define PROPERTY_EVENT_GROUP_REGEX @"^[a-zA-Z][a-zA-Z0-9_]{0,100}$"
+
 NS_ASSUME_NONNULL_BEGIN
+
+
+//AP_EVENT_APP_LIFE_CYCLE
+extern NSString * _Nullable const  AP_EVENT_APP_INSTALL;
+extern NSString * _Nullable const  AP_EVENT_APP_UNINSTALL;
+extern NSString * _Nullable const  AP_EVENT_APP_UPDATE;
+extern NSString * _Nullable const  AP_EVENT_APP_CLEARDATA;
+extern NSString * _Nullable const  AP_EVENT_APP_OPEN;
+extern NSString * _Nullable const  AP_EVENT_APP_FOREGROUND;
+extern NSString * _Nullable const  AP_EVENT_APP_BACKGROUND;
+extern NSString * _Nullable const  AP_EVENT_APP_TERMINATE;
+extern NSString * _Nullable const  AP_EVENT_APP_OUT_OF_MEMORY;
+extern NSString * _Nullable const  AP_EVENT_APP_FIRST_OPEN;
+extern NSString * _Nullable const  AP_EVENT_APP_LAUNCHING;
+extern NSString * _Nullable const  AP_EVENT_APP_RESIGN_ACTIVE;
+extern NSString * _Nullable const  AP_EVENT_APP_WILL_CONNECT;
+
+
+
+//AP_EVENT_APPLICATION
+extern NSString *const AP_EVENT_DEEP_LINK_OPEN;
+extern NSString *const AP_EVENT_DEEP_LINK_UPDATE;
+extern NSString *const AP_EVENT_DEEP_LINK_FIRST_OPEN;
+extern NSString *const AP_EVENT_FIRST_OPEN;
+extern NSString *const AP_EVENT_IN_APP_PURCHASE;
+extern NSString *const AP_EVENT_NOTIFICATION_AUTHORIZATION_STATUS;
+extern NSString *const AP_EVENT_NOTIFICATION_RECEIVE;
+extern NSString *const AP_EVENT_NOTIFICATION_OPEN;
+extern NSString *const AP_EVENT_NOTIFICATION_DISMISS;
+extern NSString *const AP_EVENT_NOTIFICATION_FOREGROUND;
+extern NSString *const AP_EVENT_SEARCH;
+extern NSString *const AP_EVENT_SHARE;
+extern NSString *const AP_EVENT_BATTERY_LOW;
+extern NSString *const AP_EVENT_BATTERY_FULL;
+extern NSString *const AP_EVENT_LOW_POWER_MODE_ON;
+extern NSString *const AP_EVENT_LOW_POWER_MODE_OFF;
+extern NSString *const AP_EVENT_DYNAMIC_LINK_OPEN;
+extern NSString *const AP_EVENT_DYNAMIC_LINK_UPDATE;
+
+
+
+
+
+//Other
+
+
+extern NSString *const AP_EVENT_NETWORK_REACHABILITY_CHANGE;
+extern NSString *const AP_EVENT_NETWORK_BANDWIDTH_CHANGE;
+extern NSString *const AP_EVENT_SWITCH_THEME_LIGHT;
+extern NSString *const AP_EVENT_SWITCH_THEME_DARK;
+extern NSString *const AP_EVENT_SWITCH_THEME_CUSTOM;
+extern NSString *const AP_EVENT_SWITCH_ORIENTATION_LANDSCAPE;
+extern NSString *const AP_EVENT_SWITCH_ORIENTATION_PORTRAIT;
+
+
+// AP_EVENT_USER_LIFE_CYCLE
+
+extern NSString *const AP_EVENT_USER_SIGNUP;
+extern NSString *const AP_EVENT_USER_LOGIN;
+extern NSString *const AP_EVENT_USER_LOGOUT;
+
+//AP_EVENT_OS
+extern NSString *const AP_EVENT_OS_UNSUPPORTED;
+extern NSString *const AP_EVENT_OS_UPDATE;
+
+
+
+//Group Name
+
+extern NSString *const AP_GROUP_OS;
+extern NSString *const AP_GROUP_OTHERS;
+extern NSString *const AP_GROUP_APPLICATION;
+extern NSString *const AP_GROUP_APP_LIFE_CYCLE;
+extern NSString *const AP_GROUP_USER_LIFE_CYCLE;
+
+
 
 @interface APEvent : NSObject
 
+
 @property (nonatomic, retain) NSDictionary *events;
 @property (nonatomic, retain) NSDictionary *groups;
+@property (nonatomic, retain) NSDictionary *events_Dict_Plist;
+@property (nonatomic, retain) NSDictionary *events_Dict;
+@property (nonatomic, retain) NSDictionary *properties_dict;
+
 
 #pragma mark — Events apis
 
@@ -171,11 +259,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void) endTimedEvent:(NSString *_Nonnull)eventName withGroup:(NSString*_Nullable)group;
 
-- (void) trackEvent:(NSString *_Nullable) eventId groupId : (NSString *_Nullable) groupId andProperties:(NSDictionary*_Nullable)props isTimed:(BOOL)isTimed;
-
-- (void) startTimedEvent:(NSString *_Nullable) eventId groupId : (NSString *_Nullable) groupId andProperties:(NSDictionary * _Nullable)props;
-
-- (void) endTimedEvent:(NSString *_Nonnull) eventId;
 @end
 
 NS_ASSUME_NONNULL_END

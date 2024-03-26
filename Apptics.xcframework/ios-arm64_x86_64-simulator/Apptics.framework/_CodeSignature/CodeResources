@@ -23,7 +23,7 @@
 		</data>
 		<key>AppticsResources.bundle/Info.plist</key>
 		<data>
-		DwkCZd/ZOUU9cQ2vIcY2qM3f+r8=
+		PptF/TwoRn36RJrmleApfX/mvuk=
 		</data>
 		<key>AppticsResources.bundle/ZAAppUpdateAlert.nib</key>
 		<data>
@@ -67,7 +67,7 @@
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		mUILpHIXo8tGpKPwcj1tM2VFdfk=
+		xp2xY7oaUat4uFQ1uUZPB+r8qH4=
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -75,7 +75,7 @@
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		BT89gyY/LzO6Xmzc88AOooBVesQ=
+		bn7MXnSppfxLQfvvVv12pghcyTQ=
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeResources</key>
 		<data>
@@ -663,7 +663,7 @@
 		</dict>
 		<key>Headers/APAAAUtil.h</key>
 		<data>
-		es0fHNLWba/XY6ZHuPoAWWFqskI=
+		EOhSf3tqb/NanEBnKCKnCKHpPdw=
 		</data>
 		<key>Headers/APBundle.h</key>
 		<data>
@@ -675,7 +675,7 @@
 		</data>
 		<key>Headers/APEventsEnum.h</key>
 		<data>
-		KanC7NgoXXUCab/G3ww4aiuf/88=
+		8vWu/Vmb/R2Cf+SMeRJ61UzYJWY=
 		</data>
 		<key>Headers/APJWTWrapper.h</key>
 		<data>
@@ -683,7 +683,7 @@
 		</data>
 		<key>Headers/APLog.h</key>
 		<data>
-		moXalblUGS/mv8BD8GK4y0BZUQ0=
+		SteL6aEIirtPAdeWqklrmwD6jvQ=
 		</data>
 		<key>Headers/APRateusObject.h</key>
 		<data>
@@ -703,7 +703,7 @@
 		</data>
 		<key>Headers/Analytics.h</key>
 		<data>
-		WWUFFkZNP32Ubob75s+nQHaYw4E=
+		gj5zCfLuvN6v4wDoGpeJTgCj0O4=
 		</data>
 		<key>Headers/Apptics-Swift.h</key>
 		<data>
@@ -715,7 +715,7 @@
 		</data>
 		<key>Headers/AppticsConfig.h</key>
 		<data>
-		ZlJ8BzZOdTNLtDmqbSdZcBkjmrI=
+		4nqjwBwfLnvWz6R2lrG7iw1Z9P8=
 		</data>
 		<key>Headers/NSData+APGunZip.h</key>
 		<data>
@@ -751,11 +751,11 @@
 		</data>
 		<key>Headers/ZAConstants.h</key>
 		<data>
-		LFwwuFASKK9OF+CTTZBoHUChaOU=
+		IuhtYTz0FSD6DHnj9RogJflsWro=
 		</data>
 		<key>Headers/ZACustomAlertController.h</key>
 		<data>
-		YLzXhZ0TJzM73e/Gh4v5hVR9MOY=
+		EiBzDjVs3OIxRpvfsAPk1Dyxwbo=
 		</data>
 		<key>Headers/ZACustomNavigationController.h</key>
 		<data>
@@ -771,11 +771,11 @@
 		</data>
 		<key>Headers/ZAEvent.h</key>
 		<data>
-		3aElfddacVD4KdJOeni293ozNcU=
+		beENPEO6zcIu/NMKafZpgBPLNdk=
 		</data>
 		<key>Headers/ZAFileManager.h</key>
 		<data>
-		UOZ3uglHcMxxzOD3AQtCOnsiqCE=
+		SMx7jWGidNFc5Mi/pZnf+mwNLOw=
 		</data>
 		<key>Headers/ZAFilters.h</key>
 		<data>
@@ -783,7 +783,7 @@
 		</data>
 		<key>Headers/ZAGlobalQueue.h</key>
 		<data>
-		k5u4Jxq2SpQ2bH2c80oAKbNqZuU=
+		HR/b4TtcgjQRC9P1crdmEg1MLjE=
 		</data>
 		<key>Headers/ZAJSONString.h</key>
 		<data>
@@ -819,7 +819,7 @@
 		</data>
 		<key>Headers/ZAPIIManager.h</key>
 		<data>
-		wBoZTKEVcxqmkWanhPcHFsqB/Fk=
+		iwxkDuF9AEYzNaBo+hIlEBKkiDs=
 		</data>
 		<key>Headers/ZAPIManager.h</key>
 		<data>
@@ -827,7 +827,7 @@
 		</data>
 		<key>Headers/ZAPrivate.h</key>
 		<data>
-		dmAHdegEvdF/sYhdETlBqK71u2I=
+		XQx7E17zcZc8djzYehJdThi3cHs=
 		</data>
 		<key>Headers/ZAScreenObject.h</key>
 		<data>
@@ -839,7 +839,7 @@
 		</data>
 		<key>Headers/ZASystemInfo.h</key>
 		<data>
-		jzxWn5psCt6iD82nkFniYN9rc/g=
+		WlqHv67DOpSw/hEWNzrNTWl2pW4=
 		</data>
 		<key>Headers/ZASystemProperties.h</key>
 		<data>
@@ -859,11 +859,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		7OmsiJYhiXhE4H49eArSCrWjiLg=
+		KUrjFrY0odkSDt+J1FhdnD20APo=
 		</data>
 		<key>Modules/Apptics.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		oyvaElYE4YHqsypqytyNieifwXs=
+		4ks46Lb4ckrcuCfnHbeoV2LCwGo=
 		</data>
 		<key>Modules/Apptics.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -879,11 +879,11 @@
 		</data>
 		<key>Modules/Apptics.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		kAnvpN0FM5uP581OiVW+MBzt7O0=
+		vTCofXFXdzrQgs5nJr+z1gbDPFc=
 		</data>
 		<key>Modules/Apptics.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		oyvaElYE4YHqsypqytyNieifwXs=
+		4ks46Lb4ckrcuCfnHbeoV2LCwGo=
 		</data>
 		<key>Modules/Apptics.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -899,11 +899,15 @@
 		</data>
 		<key>Modules/Apptics.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		DqHeoA3mu7pw/Yf8C9nNeWJig3g=
+		175HLEgZQRSKqwsUWNHasGbYM7s=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		WbrnR/wk4tS8KGLCd6uqKo4b7qs=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		caSzzG7BYCKGeoAvToRCrrsamnk=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -947,11 +951,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DwkCZd/ZOUU9cQ2vIcY2qM3f+r8=
+			PptF/TwoRn36RJrmleApfX/mvuk=
 			</data>
 			<key>hash2</key>
 			<data>
-			dj7A3ETTo+8RlHFRiOaGt5Epjed+uakIs3S/Lz/P1fo=
+			4VAQ52mB7C9Ly3jCxKxEBEFOaNkABvL7TJiRg7PVmJo=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/ZAAppUpdateAlert.nib</key>
@@ -1068,11 +1072,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mUILpHIXo8tGpKPwcj1tM2VFdfk=
+			xp2xY7oaUat4uFQ1uUZPB+r8qH4=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZzwCFR9nCYC8KpzLafhaoum13je2d9+qXUEU1TDH6rM=
+			1QPtrYwiqBc81fDS6I2NZOW8I+mw1vPzh+/Srn4/mCI=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/_CodeSignature/CodeRequirements</key>
@@ -1090,11 +1094,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BT89gyY/LzO6Xmzc88AOooBVesQ=
+			bn7MXnSppfxLQfvvVv12pghcyTQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			PgcmXZsTa+3xnkzWRt7n8KTmgv4tLzXQgRDpOz3cSqU=
+			KaSwmMJnutopgBgnMTsCenHjWYWkvOGFsJSjKTzP/jM=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/_CodeSignature/CodeResources</key>
@@ -2049,11 +2053,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			es0fHNLWba/XY6ZHuPoAWWFqskI=
+			EOhSf3tqb/NanEBnKCKnCKHpPdw=
 			</data>
 			<key>hash2</key>
 			<data>
-			y6B33gNp142Hu65aR+PpOtRjenBZ9ABbtcY0wxdNRqs=
+			tqJFKui/m0EkR16vEhX14F+VPGXuv4eXCD/msRCjWlM=
 			</data>
 		</dict>
 		<key>Headers/APBundle.h</key>
@@ -2082,11 +2086,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KanC7NgoXXUCab/G3ww4aiuf/88=
+			8vWu/Vmb/R2Cf+SMeRJ61UzYJWY=
 			</data>
 			<key>hash2</key>
 			<data>
-			RLvJAo4qWQuxtbiB/jociXVtsn1V+aEjvohA/Wz13Fo=
+			KVxFuZMsIGfuwu2TJmdwRjJR5T00Y/DHQK3zcueJg78=
 			</data>
 		</dict>
 		<key>Headers/APJWTWrapper.h</key>
@@ -2104,11 +2108,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			moXalblUGS/mv8BD8GK4y0BZUQ0=
+			SteL6aEIirtPAdeWqklrmwD6jvQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			X247wthd2TAzhckK9drPspq4fibEGVVgf88TuENb5IU=
+			FToGkOgYPAKkf8r0OqAtutX9gCv52i0EtBcQJLmBFgE=
 			</data>
 		</dict>
 		<key>Headers/APRateusObject.h</key>
@@ -2159,11 +2163,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WWUFFkZNP32Ubob75s+nQHaYw4E=
+			gj5zCfLuvN6v4wDoGpeJTgCj0O4=
 			</data>
 			<key>hash2</key>
 			<data>
-			Yp3SGp5SF94ki/KMb3Fn6kqw8KIBirMWy0UP4xOjVhg=
+			wKECdSJ+sGurSKuWto9WSGNP14ET5o9kAumy9m7HT00=
 			</data>
 		</dict>
 		<key>Headers/Apptics-Swift.h</key>
@@ -2192,11 +2196,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZlJ8BzZOdTNLtDmqbSdZcBkjmrI=
+			4nqjwBwfLnvWz6R2lrG7iw1Z9P8=
 			</data>
 			<key>hash2</key>
 			<data>
-			LDU7T/KrPYeEgu+M9iqDo62H1ZlW3GlNYs0mu8Z81xY=
+			Aaa7mYkKKMTzSnbFyMWoZiO7uN831quR4cxLP5MecFU=
 			</data>
 		</dict>
 		<key>Headers/NSData+APGunZip.h</key>
@@ -2291,22 +2295,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LFwwuFASKK9OF+CTTZBoHUChaOU=
+			IuhtYTz0FSD6DHnj9RogJflsWro=
 			</data>
 			<key>hash2</key>
 			<data>
-			69K+bUV5sn7YitWSdQrx4wE1CS5HgpRP3IScIEcE9ok=
+			XibRFnX5tom704VVc2agaRnSI1tSJekAt38wv4RebTI=
 			</data>
 		</dict>
 		<key>Headers/ZACustomAlertController.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			YLzXhZ0TJzM73e/Gh4v5hVR9MOY=
+			EiBzDjVs3OIxRpvfsAPk1Dyxwbo=
 			</data>
 			<key>hash2</key>
 			<data>
-			0Qc8rRzR2Gx6nKYNrwZ3XoDQFGCRJuFaH+eN1qVXBPA=
+			JeCb1z1dlFicbUh8wmYLGx+jRpR0+CoEBj/V0qdHjbs=
 			</data>
 		</dict>
 		<key>Headers/ZACustomNavigationController.h</key>
@@ -2346,22 +2350,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3aElfddacVD4KdJOeni293ozNcU=
+			beENPEO6zcIu/NMKafZpgBPLNdk=
 			</data>
 			<key>hash2</key>
 			<data>
-			aVhg443iFefqHaNxYCMWuPepFRYnswkHk0gpVGAFjzs=
+			U6TZfnvlMAqlUnGZTUC1fhrfRePv7tyhYMkJNause4w=
 			</data>
 		</dict>
 		<key>Headers/ZAFileManager.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			UOZ3uglHcMxxzOD3AQtCOnsiqCE=
+			SMx7jWGidNFc5Mi/pZnf+mwNLOw=
 			</data>
 			<key>hash2</key>
 			<data>
-			4YSmR/x+fdy4gFlrENuuhgNfXo1WTQgje4iDZhvrPNo=
+			8SSMM0zJu7RscVxUSL3C9JrSuxIMaALYnVhjsaWvT5I=
 			</data>
 		</dict>
 		<key>Headers/ZAFilters.h</key>
@@ -2379,11 +2383,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			k5u4Jxq2SpQ2bH2c80oAKbNqZuU=
+			HR/b4TtcgjQRC9P1crdmEg1MLjE=
 			</data>
 			<key>hash2</key>
 			<data>
-			7TBufwndsaf9NeE+QZf9/YhTp1pxQnBDlU0lwQ0/BGI=
+			qkUTLP5DkRn9utEphhA9Fns9hHsLGw5oUfj9hnFJgjc=
 			</data>
 		</dict>
 		<key>Headers/ZAJSONString.h</key>
@@ -2478,11 +2482,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wBoZTKEVcxqmkWanhPcHFsqB/Fk=
+			iwxkDuF9AEYzNaBo+hIlEBKkiDs=
 			</data>
 			<key>hash2</key>
 			<data>
-			qjNpaBmdvQg0+OVxJCuKWxoquczc9MpFoKtrECfR4Vc=
+			7o8EhHYYQg9E49qhGrbgChqwmvX7lop9zzUxAcFcj3Q=
 			</data>
 		</dict>
 		<key>Headers/ZAPIManager.h</key>
@@ -2500,11 +2504,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dmAHdegEvdF/sYhdETlBqK71u2I=
+			XQx7E17zcZc8djzYehJdThi3cHs=
 			</data>
 			<key>hash2</key>
 			<data>
-			+eX7W4zkzTmQA8BJcpx3oqthRxvF/XZfAux08L7QSTk=
+			duhml7BNZl6XfB95g95wrLfJi3MG0QZWafiwPXp8Ewo=
 			</data>
 		</dict>
 		<key>Headers/ZAScreenObject.h</key>
@@ -2533,11 +2537,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jzxWn5psCt6iD82nkFniYN9rc/g=
+			WlqHv67DOpSw/hEWNzrNTWl2pW4=
 			</data>
 			<key>hash2</key>
 			<data>
-			LQfV8pgjDHmOSxCsCNGhP0KwaJ6AUDzzcuiu99MR0tE=
+			9veYs1u9JrwUcKk7kOjMhQZ2iVBwot5V50auKVsa5/M=
 			</data>
 		</dict>
 		<key>Headers/ZASystemProperties.h</key>
@@ -2588,11 +2592,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			oyvaElYE4YHqsypqytyNieifwXs=
+			4ks46Lb4ckrcuCfnHbeoV2LCwGo=
 			</data>
 			<key>hash2</key>
 			<data>
-			hG6D37WNsckEUZKSw7iCJgVCgAp71RZqbSGQWfAnWCw=
+			aF4L0YdM15HGtvzJAnzKtamhhpgOE3tVKYgzMN+D76k=
 			</data>
 		</dict>
 		<key>Modules/Apptics.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -2632,22 +2636,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kAnvpN0FM5uP581OiVW+MBzt7O0=
+			vTCofXFXdzrQgs5nJr+z1gbDPFc=
 			</data>
 			<key>hash2</key>
 			<data>
-			9b74ikKEi4kW5n3WixveClDjE1/B1xj7ATzl8pxGGCE=
+			ohwk5ycKAbB6jDzf8WHkS+8fiEqTl70CBep0+KmArfg=
 			</data>
 		</dict>
 		<key>Modules/Apptics.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			oyvaElYE4YHqsypqytyNieifwXs=
+			4ks46Lb4ckrcuCfnHbeoV2LCwGo=
 			</data>
 			<key>hash2</key>
 			<data>
-			hG6D37WNsckEUZKSw7iCJgVCgAp71RZqbSGQWfAnWCw=
+			aF4L0YdM15HGtvzJAnzKtamhhpgOE3tVKYgzMN+D76k=
 			</data>
 		</dict>
 		<key>Modules/Apptics.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -2687,11 +2691,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DqHeoA3mu7pw/Yf8C9nNeWJig3g=
+			175HLEgZQRSKqwsUWNHasGbYM7s=
 			</data>
 			<key>hash2</key>
 			<data>
-			H0I9zUEILUIpoLBassL3OvBFclahmtUe9sonuIVSNq8=
+			mukbt4nMDSeI3jwYH4CVktKluoyIgngPd3jj6bDsFlg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -2703,6 +2707,17 @@
 			<key>hash2</key>
 			<data>
 			TYdjuczV4xEdtPV8Ea6uRffJUekWa6vCYSu+NRkF4dQ=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			caSzzG7BYCKGeoAvToRCrrsamnk=
+			</data>
+			<key>hash2</key>
+			<data>
+			GI1USUBrKlfxZs0Y84jvZ1Z7Cg0Prc76sowLMgGPN1I=
 			</data>
 		</dict>
 	</dict>

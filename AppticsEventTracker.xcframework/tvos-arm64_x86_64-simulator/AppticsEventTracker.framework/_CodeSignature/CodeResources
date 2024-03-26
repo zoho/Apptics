@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/APEvent.h</key>
 		<data>
-		ou5FwrBCUMYlvKoOMlGcRIBNyKw=
+		Qi4goJnS9MmuKVbNlF1QcTeogow=
 		</data>
 		<key>Headers/AppticsEventTracker.h</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		PnKsq/47Es6Fhg2yWVLM4KPz3O0=
+		T8GSm3fgYOmh7vA5eUNuguLNDyU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -27,11 +27,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ou5FwrBCUMYlvKoOMlGcRIBNyKw=
+			Qi4goJnS9MmuKVbNlF1QcTeogow=
 			</data>
 			<key>hash2</key>
 			<data>
-			CQr3XkFRzTdbMaN+FV1RrNkOOA7S3xy6dsq1KNAhIdU=
+			NznafLaazU0q2PZXvaHhA54u70dje1QJwyTFaxJzBQE=
 			</data>
 		</dict>
 		<key>Headers/AppticsEventTracker.h</key>

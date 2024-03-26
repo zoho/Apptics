@@ -28,6 +28,8 @@ static NSString* APRemoteConfigUpdateNotification = @"APRemoteConfigUpdateNotifi
 @property (readonly, assign, nonatomic) APRemoteConfigFetchStatus lastFetchStatus;
 @property (nonatomic) bool enableRemoteConfig;
 
+- (void)setRcInfo:(NSDictionary *)rcInfo;
+
 /**
  * Returns a singleton instance of Remote Config.
  * @return APRemoteConfig.

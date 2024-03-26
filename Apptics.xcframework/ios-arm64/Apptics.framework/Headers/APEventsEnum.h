@@ -6,7 +6,6 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol APEventsProtocol <NSObject>
 + (APPrivateObject * _Nullable)formatTypeToPrivateObject:(NSString*)group event : (NSString*) event;
 
-+ (APPrivateObject * _Nullable)formatTypeToPrivateObjectFromEventId:(NSString*)eventId;
 @end
 
 @protocol APAPIProtocol <NSObject>

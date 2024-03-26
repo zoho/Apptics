@@ -77,7 +77,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (void) archiveConsoleLogs:(id)queue sessionId : (NSNumber*) sessionId mamId:(NSString * _Nullable)mam anonId : (NSString*) anonid;
 + (void) rotateConsoleLogsData;
     
-
++(NSMutableArray* _Nullable)   getListOfHistoricEngagementDataToPurge;
 +(NSMutableArray* _Nullable) getListOfHistoricEngagementDataToBeSynced;
 +(NSMutableArray* _Nullable) getListOfHistoricEngagementData;
 
