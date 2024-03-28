@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
 spec.name             = "AppticsFeedbackKitSwift"
-spec.version          = "2.0a"
+spec.version          = "2.1a"
 spec.summary          = "Apptics Remote Config for iOS"
 spec.license          = { :type => "MIT", :text=> <<-LICENSE
 MIT License
@@ -42,7 +42,7 @@ spec.requires_arc = true
 
 spec.subspec 'AppticsFeedbackKitSwift' do |cp|
       cp.source_files        = 'SwiftFiles/AppticsFeedbackKit/*.swift'
-      cp.resources           = 'SwiftFiles/AppticsFeedbackKit/*.{ttf,xib}'
+      cp.resources           = 'SwiftFiles/AppticsFeedbackKit/*.{ttf,xib,.xcprivacy}'
       cp.dependency 'AppticsFeedbackKit', "#{spec.version}"    
       cp.platform     = :ios, 9.1
   end

@@ -14,7 +14,11 @@
 		</data>
 		<key>Resources/LICENSE.txt</key>
 		<data>
-		SuYitqYPMq09CjLis663lpu2TN4=
+		n7rSP+Ex/MKT2ZssUXuZDaovCm4=
+		</data>
+		<key>Resources/PrivacyInfo.xcprivacy</key>
+		<data>
+		1ujRg/VANMPam+1xKwDX46izB8Y=
 		</data>
 		<key>Resources/ReferenceStorage.def</key>
 		<data>
@@ -979,11 +983,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SuYitqYPMq09CjLis663lpu2TN4=
+			n7rSP+Ex/MKT2ZssUXuZDaovCm4=
 			</data>
 			<key>hash2</key>
 			<data>
-			chyxHeYY/Pm7t9JaOJIHvyInNX5mlLwyarMqZpn5uVE=
+			GGxfAZKnVHFKflQiM92qrSh0VibgrTLjWNP1rwCvuEo=
+			</data>
+		</dict>
+		<key>Resources/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1ujRg/VANMPam+1xKwDX46izB8Y=
+			</data>
+			<key>hash2</key>
+			<data>
+			l8I1agymK+SCWUD2vY7VqIWk6oBRhsDV8UXWVZDTeF8=
 			</data>
 		</dict>
 		<key>Resources/ReferenceStorage.def</key>

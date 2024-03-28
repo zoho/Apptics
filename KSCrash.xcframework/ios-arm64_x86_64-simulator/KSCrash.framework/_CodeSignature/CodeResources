@@ -148,6 +148,10 @@
 		<data>
 		yg77hUVEXu3wNTKhf7hBDhIe8tg=
 		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		ROqN4g1jBrt0dxbAZYPuuaBFJGU=
+		</data>
 		<key>PrivateHeaders/AlignOf.h</key>
 		<data>
 		ebSAO5FmiLspktHg+6yNG3hNns8=
@@ -754,6 +758,17 @@
 			<key>hash2</key>
 			<data>
 			8v6A7ZFJDUSdIP89FUa5Yb5Jic7pL6i44IFcpmMOtzI=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ROqN4g1jBrt0dxbAZYPuuaBFJGU=
+			</data>
+			<key>hash2</key>
+			<data>
+			vjkNbHv6pNs/IZB/9yt7MEOUipja1t89ALhP/UykWp0=
 			</data>
 		</dict>
 		<key>PrivateHeaders/AlignOf.h</key>

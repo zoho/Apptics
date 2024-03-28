@@ -20,6 +20,10 @@
 		<data>
 		4tlhWEcngeCQalcdQAdqPYAaR9s=
 		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		TthOQs28WCqm5RKNUeAJrcfUG6o=
+		</data>
 		<key>Version.release.xcconfig</key>
 		<data>
 		Eo3VSrCLVbAU1LhodNE+2sHbkv8=
@@ -58,6 +62,17 @@
 			<key>hash2</key>
 			<data>
 			JhWGOid4nyPz0xlAn5mNuFz8ssjRAra9YR4CxtNiKT4=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TthOQs28WCqm5RKNUeAJrcfUG6o=
+			</data>
+			<key>hash2</key>
+			<data>
+			qn6FQWqfmW/kycceD6C4z30MYoNtOoSl3o40X1mCyLw=
 			</data>
 		</dict>
 		<key>Version.release.xcconfig</key>

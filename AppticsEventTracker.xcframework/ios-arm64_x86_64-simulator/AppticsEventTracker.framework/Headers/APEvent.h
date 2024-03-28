@@ -11,8 +11,21 @@
 #define PROPERTY_KEYS_MAX_COUNT 25
 #define PROPERTY_OVERALL_LENGTH 7666
 
-#define PROPERTY_KEY_REGEX @"^[a-zA-Z][a-zA-Z0-9_]{0,50}$"
-#define PROPERTY_EVENT_GROUP_REGEX @"^[a-zA-Z][a-zA-Z0-9_]{0,100}$"
+#define PROPERTY_KEY_REGEX @"^[a-zA-Z][a-zA-Z0-9_]{0,49}$"
+#define PROPERTY_EVENT_GROUP_REGEX @"^[a-zA-Z][a-zA-Z0-9_]{0,99}$"
+
+#define OBSERVER_APPUPDATE @"ap_app_update_Notification"
+#define OBSERVER_USERSIGNUP @"ap_user_signup_Notification"
+#define OBSERVER_NETWORKCHANGE @"ap_network_reachability_change_Notification"
+#define OBSERVER_USERLOGIN @"ap_user_login_Notification"
+#define OBSERVER_USERLOGOUT @"ap_user_logout_Notification"
+#define OBSERVER_USERClEARDATA @"ap_app_clear_data_Notification"
+
+
+
+
+
+
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -55,11 +68,7 @@ extern NSString *const AP_EVENT_DYNAMIC_LINK_OPEN;
 extern NSString *const AP_EVENT_DYNAMIC_LINK_UPDATE;
 
 
-
-
-
 //Other
-
 
 extern NSString *const AP_EVENT_NETWORK_REACHABILITY_CHANGE;
 extern NSString *const AP_EVENT_NETWORK_BANDWIDTH_CHANGE;
@@ -124,7 +133,7 @@ extern NSString *const AP_GROUP_USER_LIFE_CYCLE;
  *  @param properties A Key-Value pair NSDictionary for tracking custom properties
  */
 
-+ (void) trackEvent:(nonnull NSString *)eventName withProperties:(nonnull NSDictionary *)properties;
++ (void) trackEvent:(nonnull NSString *)eventName withProperties:(_Nullable id )properties;
 
 /**
  Use this method to track events. Make sure you give meaningful names for events and their groups
@@ -144,7 +153,7 @@ extern NSString *const AP_GROUP_USER_LIFE_CYCLE;
  *  @param properties Key-Value pair NSDictionary for tracking custom properties for the given event.Remember, the properties should be NSJSONSerializable, so use only data types that conforms the standard JSON protocol, like NSStrings, Integer, long etc.
  */
 
-+ (void) trackEvent:(nonnull NSString *)eventName andGroupName : (nonnull NSString*) groupName withProperties:(nonnull NSDictionary *)properties;
++ (void) trackEvent:(nonnull NSString *)eventName andGroupName : (nonnull NSString*) groupName withProperties:(_Nullable id)properties;
 
 /**
  *
@@ -182,7 +191,7 @@ extern NSString *const AP_GROUP_USER_LIFE_CYCLE;
  *  @param properties Key-Value pair NSDictionary for tracking custom properties for the given event.Remember, the properties should be NSJSONSerializable, so use only data types that conforms the standard JSON protocol, like NSStrings, Integer, long etc
  */
 
-+ (void) startTimedEvent:(nonnull NSString*)eventName group:(nonnull NSString*)group andProperties:(nonnull NSDictionary*)properties;
++ (void) startTimedEvent:(nonnull NSString*)eventName group:(nonnull NSString*)group andProperties:(_Nullable id)properties;
 
 /**
  *  Ends the Timed event. Make sure you give the same name of the event.
@@ -207,11 +216,11 @@ extern NSString *const AP_GROUP_USER_LIFE_CYCLE;
 
 + (void) endTimedEvent:(NSString *_Nonnull)eventName withGroup:(NSString*_Nonnull)group;
 
-+ (void) addExtensionEventWithName:(NSString* _Nullable)_eventName
-                            group:(NSString* _Nullable)_group
-                            startTime : (NSNumber* _Nullable) event_start_Time
-                            endTime : (NSNumber* _Nullable) event_end_Time
-                            andProperties:(NSDictionary* _Nullable)props
++ (void) addExtensionEventWithName:(NSString* _Nonnull)_eventName
+                            group:(NSString* _Nonnull)_group
+                            startTime : (NSNumber* _Nonnull) event_start_Time
+                            endTime : (NSNumber* _Nonnull) event_end_Time
+                            andProperties:(id _Nullable)props
                            isTimed:(BOOL)isTimed;
 
 /**
@@ -231,7 +240,7 @@ extern NSString *const AP_GROUP_USER_LIFE_CYCLE;
  *  @param properties A Key-Value pair NSDictionary for tracking custom properties
  */
 
-- (void) trackEvent:(NSString *_Nonnull)eventName withProperties:(NSDictionary *_Nullable)properties;
+- (void) trackEvent:(NSString *_Nonnull)eventName withProperties:(id _Nullable)properties;
 
 
 /**
@@ -242,7 +251,7 @@ extern NSString *const AP_GROUP_USER_LIFE_CYCLE;
  *  @param properties Key-Value pair NSDictionary for tracking custom properties for the given event.
  */
 
-- (void) trackEvent:(NSString *_Nonnull)eventName andGroupName : (NSString*_Nullable) groupName withProperties:(NSDictionary *_Nullable)properties;
+- (void) trackEvent:(NSString *_Nonnull)eventName andGroupName : (NSString*_Nonnull) groupName withProperties:(id _Nullable)properties;
 
 /**
  *  This method notifies the start of an event. Use this for events that take time to execute, like image uploads etc. To stop the timer, call the either of the "trackEvent" methods with the same Event name you passed to start the event.
@@ -255,7 +264,7 @@ extern NSString *const AP_GROUP_USER_LIFE_CYCLE;
 
 - (void) startTimedEvent:(NSString*_Nonnull)eventName group:(NSString*_Nullable)group;
 
-- (void) startTimedEvent:(NSString*_Nonnull)eventName group:(NSString*_Nullable)group andProperties:(NSDictionary*_Nullable)props;
+- (void) startTimedEvent:(NSString*_Nonnull)eventName group:(NSString*_Nullable)group andProperties:(id _Nullable)props;
 
 - (void) endTimedEvent:(NSString *_Nonnull)eventName withGroup:(NSString*_Nullable)group;
 

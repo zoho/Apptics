@@ -365,7 +365,7 @@
 		</data>
 		<key>Headers/ZAEvent.h</key>
 		<data>
-		beENPEO6zcIu/NMKafZpgBPLNdk=
+		Q4kwHevP/MWs0aqh3grK1set+0Q=
 		</data>
 		<key>Headers/ZAFileManager.h</key>
 		<data>
@@ -442,6 +442,10 @@
 		<key>Modules/module.modulemap</key>
 		<data>
 		vyvGDgYG+rYeSf9KICtJ0eqvvlA=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		1R5LnEW0h/jPaAmuKwprVoB596c=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -1120,11 +1124,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			beENPEO6zcIu/NMKafZpgBPLNdk=
+			Q4kwHevP/MWs0aqh3grK1set+0Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			U6TZfnvlMAqlUnGZTUC1fhrfRePv7tyhYMkJNause4w=
+			EBtyUSGqut+ZQVNEHSDJzk1neQRcK7nFRorRPN0A6j0=
 			</data>
 		</dict>
 		<key>Headers/ZAFileManager.h</key>
@@ -1323,6 +1327,17 @@
 			<key>hash2</key>
 			<data>
 			cIcDfbPqw84yrN2vO8sC6BSuTXHJnziyce9aVs2113g=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1R5LnEW0h/jPaAmuKwprVoB596c=
+			</data>
+			<key>hash2</key>
+			<data>
+			dq3PUt5GzwqtXQXcnJYilQgoQf8riwADC47BkAO28+8=
 			</data>
 		</dict>
 	</dict>

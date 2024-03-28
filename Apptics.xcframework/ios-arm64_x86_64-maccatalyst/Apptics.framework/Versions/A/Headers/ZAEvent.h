@@ -21,17 +21,17 @@ NS_ASSUME_NONNULL_BEGIN
 @property (strong,nonatomic) NSString *customproperties;
 @property BOOL isTimedEvent;
 
-+(void) addEventWithName:(NSString* _Nullable)eventName group:(NSString* _Nullable)group andProperties:(NSDictionary* _Nullable)props isTimed:(BOOL)isTimed;
++(void) addEventWithName:(NSString* _Nonnull)eventName group:(NSString* _Nonnull)group andProperties:(NSDictionary* _Nullable)props isTimed:(BOOL)isTimed;
 
 //MARK: Extension Event
-+(void) addExtensionEventWithName:(NSString* _Nullable)eventName
-                            group:(NSString* _Nullable)group
-                            startTime : (NSNumber* _Nullable) event_start_Time
-                            endTime : (NSNumber* _Nullable) event_end_Time
++(void) addExtensionEventWithName:(NSString* _Nonnull)eventName
+                            group:(NSString* _Nonnull)group
+                            startTime : (NSNumber* _Nonnull) event_start_Time
+                            endTime : (NSNumber* _Nonnull) event_end_Time
                             andProperties:(NSDictionary* _Nullable)props
                             isTimed:(BOOL)isTimed;
 
-+(void) endTimedEvent:(NSString*_Nullable)eventName group:(NSString*_Nullable)group;
++(void) endTimedEvent:(NSString*_Nonnull)eventName group:(NSString*_Nonnull)group;
 
 - (NSDictionary*)jsonify;
 

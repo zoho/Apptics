@@ -48,6 +48,10 @@
 		<data>
 		gc7UMhvmRms7W3T9BHga4T1fG00=
 		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		dTBsdsd0E1Jp2xpF9vCcjowxHVo=
+		</data>
 		<key>ZBugSquashResources.bundle/Apptics-Feedback.ttf</key>
 		<data>
 		tzZT/3uSAwionZ14ouk5BpSuZhk=
@@ -1361,6 +1365,17 @@
 			<key>hash2</key>
 			<data>
 			6bvkAHvGRkC6TzCjT6sxvT/NjCoz+PuN2HgZmiezpw8=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dTBsdsd0E1Jp2xpF9vCcjowxHVo=
+			</data>
+			<key>hash2</key>
+			<data>
+			x+I3o1TH4Bxg4R8U8CgnmkxwBH3OHqJMUcleG/P0RGk=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/Apptics-Feedback.ttf</key>
