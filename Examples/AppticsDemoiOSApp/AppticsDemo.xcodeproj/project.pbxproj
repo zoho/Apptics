@@ -3,19 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		3A289F4C3C24F97C4DB26EB8 /* Pods_AppticsDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D417BE7A512DE4EA36B73F22 /* Pods_AppticsDemoTests.framework */; };
-		78D50A88E81557650A139528 /* Pods_AppticsWidgetExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8864A7AD9579D347E1B0451 /* Pods_AppticsWidgetExtension.framework */; };
-		A23C922228D475E00014FCBA /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A22DE1FC2762212200FF7A21 /* WidgetKit.framework */; };
-		A23C922328D475E00014FCBA /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A22DE1FE2762212200FF7A21 /* SwiftUI.framework */; };
-		A23C922628D475E00014FCBA /* AppticsWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23C922528D475E00014FCBA /* AppticsWidget.swift */; };
-		A23C922928D475E10014FCBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A23C922828D475E10014FCBA /* Assets.xcassets */; };
-		A23C922B28D475E10014FCBA /* AppticsWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = A23C922728D475E00014FCBA /* AppticsWidget.intentdefinition */; };
+		A20865CA2BBD3BDB001ACBAD /* apptics-config.plist in Resources */ = {isa = PBXBuildFile; fileRef = A20865C92BBD3BDB001ACBAD /* apptics-config.plist */; };
 		A23C922C28D475E10014FCBA /* AppticsWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = A23C922728D475E00014FCBA /* AppticsWidget.intentdefinition */; };
-		A23C922F28D475E10014FCBA /* AppticsWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A23C922128D475E00014FCBA /* AppticsWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A25BD35E273B454B00FA196D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25BD35D273B454B00FA196D /* AppDelegate.swift */; };
 		A25BD360273B454B00FA196D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25BD35F273B454B00FA196D /* SceneDelegate.swift */; };
 		A25BD365273B454B00FA196D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A25BD363273B454B00FA196D /* Main.storyboard */; };
@@ -46,19 +40,11 @@
 		A27C287E27997F3200EA16CF /* APIListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27C287B27997F3200EA16CF /* APIListViewController.swift */; };
 		A27C287F27997F3200EA16CF /* APIListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27C287C27997F3200EA16CF /* APIListCell.swift */; };
 		A27C288027997F3200EA16CF /* APITableList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27C287D27997F3200EA16CF /* APITableList.swift */; };
-		ADB94474DA08D225B0BAAB45 /* APAppticsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF315A3ADC5FF9E536810E9 /* APAppticsExtension.swift */; };
 		C7DBCB975DB35355E3989E54 /* Pods_AppticsDemo_AppticsDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7A28F5CDAB8732CCD37EC0A /* Pods_AppticsDemo_AppticsDemoUITests.framework */; };
 		DCDF8A209A897D60C087E84F /* Pods_AppticsDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C9E25DE75B3F2F10F5D3620 /* Pods_AppticsDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A23C922D28D475E10014FCBA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A25BD352273B454B00FA196D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A23C922028D475E00014FCBA;
-			remoteInfo = AppticsWidgetExtension;
-		};
 		A25BD374273B454E00FA196D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A25BD352273B454B00FA196D /* Project object */;
@@ -82,7 +68,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				A23C922F28D475E10014FCBA /* AppticsWidgetExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -91,7 +76,6 @@
 
 /* Begin PBXFileReference section */
 		0AB545F10BE71A2C85B2F66C /* Pods-AppticsDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppticsDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-AppticsDemoTests/Pods-AppticsDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
-		19106CF92B41E4FE5C432204 /* APAppticsExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = APAppticsExtension.m; sourceTree = "<group>"; };
 		3405FE6C3A49E0D6F60B8B91 /* Pods-AppticsDemo-AppticsDemoUITests.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppticsDemo-AppticsDemoUITests.appstore.xcconfig"; path = "Target Support Files/Pods-AppticsDemo-AppticsDemoUITests/Pods-AppticsDemo-AppticsDemoUITests.appstore.xcconfig"; sourceTree = "<group>"; };
 		3A596BDF04C97A6960399A4C /* Pods-AppticsWidgetExtension.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppticsWidgetExtension.appstore.xcconfig"; path = "Target Support Files/Pods-AppticsWidgetExtension/Pods-AppticsWidgetExtension.appstore.xcconfig"; sourceTree = "<group>"; };
 		3B5D25F1A0A42B8DE4DE2B56 /* Pods-AppticsWidgetExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppticsWidgetExtension.debug.xcconfig"; path = "Target Support Files/Pods-AppticsWidgetExtension/Pods-AppticsWidgetExtension.debug.xcconfig"; sourceTree = "<group>"; };
@@ -101,15 +85,13 @@
 		5962A61B9806B250F97E8E25 /* Pods-AppticsDemo.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppticsDemo.appstore.xcconfig"; path = "Target Support Files/Pods-AppticsDemo/Pods-AppticsDemo.appstore.xcconfig"; sourceTree = "<group>"; };
 		65F6D4D5D79135BDCCAC119C /* Pods-AppticsDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppticsDemo.debug.xcconfig"; path = "Target Support Files/Pods-AppticsDemo/Pods-AppticsDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		676FE58F0C767999D7C1840E /* Pods-AppticsDemoTests.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppticsDemoTests.appstore.xcconfig"; path = "Target Support Files/Pods-AppticsDemoTests/Pods-AppticsDemoTests.appstore.xcconfig"; sourceTree = "<group>"; };
-		7643966BCD4823677B03A20F /* ZAAppticsExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZAAppticsExtension.m; sourceTree = "<group>"; };
 		83ABA56D259388DB7A849618 /* Pods-AppticsDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppticsDemoTests.release.xcconfig"; path = "Target Support Files/Pods-AppticsDemoTests/Pods-AppticsDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		8DF9ACF6D8BFBAB17FE8A651 /* Pods-AppticsWidgetExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppticsWidgetExtension.release.xcconfig"; path = "Target Support Files/Pods-AppticsWidgetExtension/Pods-AppticsWidgetExtension.release.xcconfig"; sourceTree = "<group>"; };
-		8F1BD77762BC1FAC61F8947E /* APAppticsExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = APAppticsExtension.h; sourceTree = "<group>"; };
+		A20865C92BBD3BDB001ACBAD /* apptics-config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "apptics-config.plist"; sourceTree = "<group>"; };
 		A22DE1FC2762212200FF7A21 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		A22DE1FE2762212200FF7A21 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		A23C4DCC275DD56F0020D210 /* AppticsDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppticsDemo.entitlements; sourceTree = "<group>"; };
 		A23C921828D45A4F0014FCBA /* WidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WidgetExtension.entitlements; sourceTree = "<group>"; };
-		A23C922128D475E00014FCBA /* AppticsWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AppticsWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		A23C922528D475E00014FCBA /* AppticsWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppticsWidget.swift; sourceTree = "<group>"; };
 		A23C922728D475E00014FCBA /* AppticsWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = AppticsWidget.intentdefinition; sourceTree = "<group>"; };
 		A23C922828D475E10014FCBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -158,22 +140,10 @@
 		A8864A7AD9579D347E1B0451 /* Pods_AppticsWidgetExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppticsWidgetExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D417BE7A512DE4EA36B73F22 /* Pods_AppticsDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppticsDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE326463EC9A63778884F207 /* Pods-AppticsDemo-AppticsDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppticsDemo-AppticsDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-AppticsDemo-AppticsDemoUITests/Pods-AppticsDemo-AppticsDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
-		F662234015330891C1A6893E /* ZAAppticsExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZAAppticsExtension.h; sourceTree = "<group>"; };
 		F7A28F5CDAB8732CCD37EC0A /* Pods_AppticsDemo_AppticsDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppticsDemo_AppticsDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FEF315A3ADC5FF9E536810E9 /* APAppticsExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = APAppticsExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A23C921E28D475E00014FCBA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A23C922328D475E00014FCBA /* SwiftUI.framework in Frameworks */,
-				A23C922228D475E00014FCBA /* WidgetKit.framework in Frameworks */,
-				78D50A88E81557650A139528 /* Pods_AppticsWidgetExtension.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A25BD357273B454B00FA196D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -220,17 +190,6 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		5A937B464D2F21194FE1D49A /* Apptics */ = {
-			isa = PBXGroup;
-			children = (
-				8F1BD77762BC1FAC61F8947E /* APAppticsExtension.h */,
-				19106CF92B41E4FE5C432204 /* APAppticsExtension.m */,
-				F662234015330891C1A6893E /* ZAAppticsExtension.h */,
-				7643966BCD4823677B03A20F /* ZAAppticsExtension.m */,
-			);
-			name = Apptics;
-			sourceTree = "<group>";
-		};
 		A23C922428D475E00014FCBA /* AppticsWidget */ = {
 			isa = PBXGroup;
 			children = (
@@ -245,6 +204,7 @@
 		A25BD351273B454B00FA196D = {
 			isa = PBXGroup;
 			children = (
+				A20865C92BBD3BDB001ACBAD /* apptics-config.plist */,
 				A23C923028D475E10014FCBA /* AppticsWidgetExtension.entitlements */,
 				A23C921828D45A4F0014FCBA /* WidgetExtension.entitlements */,
 				A265785F299A13BF0021D47E /* Media.xcassets */,
@@ -255,7 +215,6 @@
 				A25BD35B273B454B00FA196D /* Products */,
 				33783F8BDFD68C894C57D661 /* Pods */,
 				D87370360099F87C13241871 /* Frameworks */,
-				5A937B464D2F21194FE1D49A /* Apptics */,
 			);
 			sourceTree = "<group>";
 		};
@@ -265,7 +224,6 @@
 				A25BD35A273B454B00FA196D /* AppticsDemo.app */,
 				A25BD373273B454E00FA196D /* AppticsDemoTests.xctest */,
 				A25BD37E273B454E00FA196D /* AppticsDemoUITests.xctest */,
-				A23C922128D475E00014FCBA /* AppticsWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -290,7 +248,6 @@
 				A25BD36E273B454E00FA196D /* Info.plist */,
 				A25BD366273B454B00FA196D /* AppticsDemo.xcdatamodeld */,
 				A25BD62B27426C2E00FA196D /* AppticsDemo-Bridging-Header.h */,
-				A5C99F2D09CC8A37D078ABA6 /* Apptics */,
 			);
 			path = AppticsDemo;
 			sourceTree = "<group>";
@@ -375,14 +332,6 @@
 			path = APITracking;
 			sourceTree = "<group>";
 		};
-		A5C99F2D09CC8A37D078ABA6 /* Apptics */ = {
-			isa = PBXGroup;
-			children = (
-				FEF315A3ADC5FF9E536810E9 /* APAppticsExtension.swift */,
-			);
-			name = Apptics;
-			sourceTree = "<group>";
-		};
 		D87370360099F87C13241871 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -411,24 +360,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		A23C922028D475E00014FCBA /* AppticsWidgetExtension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A23C923128D475E10014FCBA /* Build configuration list for PBXNativeTarget "AppticsWidgetExtension" */;
-			buildPhases = (
-				059781FA64453D6480B3CDA4 /* [CP] Check Pods Manifest.lock */,
-				A23C921D28D475E00014FCBA /* Sources */,
-				A23C921E28D475E00014FCBA /* Frameworks */,
-				A23C921F28D475E00014FCBA /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = AppticsWidgetExtension;
-			productName = AppticsWidgetExtension;
-			productReference = A23C922128D475E00014FCBA /* AppticsWidgetExtension.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
 		A25BD359273B454B00FA196D /* AppticsDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A25BD387273B454E00FA196D /* Build configuration list for PBXNativeTarget "AppticsDemo" */;
@@ -445,7 +376,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				A23C922E28D475E10014FCBA /* PBXTargetDependency */,
 			);
 			name = AppticsDemo;
 			productName = AppticsDemo;
@@ -500,9 +430,6 @@
 				LastSwiftUpdateCheck = 1330;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
-					A23C922028D475E00014FCBA = {
-						CreatedOnToolsVersion = 13.3;
-					};
 					A25BD359273B454B00FA196D = {
 						CreatedOnToolsVersion = 12.5;
 						LastSwiftMigration = 1250;
@@ -534,20 +461,11 @@
 				A25BD359273B454B00FA196D /* AppticsDemo */,
 				A25BD372273B454E00FA196D /* AppticsDemoTests */,
 				A25BD37D273B454E00FA196D /* AppticsDemoUITests */,
-				A23C922028D475E00014FCBA /* AppticsWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A23C921F28D475E00014FCBA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A23C922928D475E10014FCBA /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A25BD358273B454B00FA196D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -556,6 +474,7 @@
 				A25BD36A273B454E00FA196D /* Assets.xcassets in Resources */,
 				A2657860299A13BF0021D47E /* Media.xcassets in Resources */,
 				A25BD365273B454B00FA196D /* Main.storyboard in Resources */,
+				A20865CA2BBD3BDB001ACBAD /* apptics-config.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -576,28 +495,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		059781FA64453D6480B3CDA4 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AppticsWidgetExtension-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		0BD1C44D8F0F0C259E86DA39 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -711,15 +608,6 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A23C921D28D475E00014FCBA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A23C922628D475E00014FCBA /* AppticsWidget.swift in Sources */,
-				A23C922B28D475E10014FCBA /* AppticsWidget.intentdefinition in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A25BD356273B454B00FA196D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -747,7 +635,6 @@
 				A27C2874279971A500EA16CF /* NonFatalMaster.m in Sources */,
 				A27C285F27993C0700EA16CF /* EventsTableList.swift in Sources */,
 				A27C287E27997F3200EA16CF /* APIListViewController.swift in Sources */,
-				ADB94474DA08D225B0BAAB45 /* APAppticsExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -770,11 +657,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A23C922E28D475E10014FCBA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A23C922028D475E00014FCBA /* AppticsWidgetExtension */;
-			targetProxy = A23C922D28D475E10014FCBA /* PBXContainerItemProxy */;
-		};
 		A25BD375273B454E00FA196D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A25BD359273B454B00FA196D /* AppticsDemo */;
@@ -809,105 +691,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		A23C923228D475E10014FCBA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B5D25F1A0A42B8DE4DE2B56 /* Pods-AppticsWidgetExtension.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
-				CODE_SIGN_ENTITLEMENTS = AppticsWidgetExtension.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = G8T3WV9A3U;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AppticsWidget/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = AppticsWidget;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.apptics.demo.ios.AppticsWidget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		A23C923328D475E10014FCBA /* AppStore */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3A596BDF04C97A6960399A4C /* Pods-AppticsWidgetExtension.appstore.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
-				CODE_SIGN_ENTITLEMENTS = AppticsWidgetExtension.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = G8T3WV9A3U;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AppticsWidget/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = AppticsWidget;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.apptics.demo.ios.AppticsWidget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = AppStore;
-		};
-		A23C923428D475E10014FCBA /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8DF9ACF6D8BFBAB17FE8A651 /* Pods-AppticsWidgetExtension.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
-				CODE_SIGN_ENTITLEMENTS = AppticsWidgetExtension.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = G8T3WV9A3U;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AppticsWidget/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = AppticsWidget;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.apptics.demo.ios.AppticsWidget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 		A25BD385273B454E00FA196D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1338,16 +1121,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A23C923128D475E10014FCBA /* Build configuration list for PBXNativeTarget "AppticsWidgetExtension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A23C923228D475E10014FCBA /* Debug */,
-				A23C923328D475E10014FCBA /* AppStore */,
-				A23C923428D475E10014FCBA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		A25BD355273B454B00FA196D /* Build configuration list for PBXProject "AppticsDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

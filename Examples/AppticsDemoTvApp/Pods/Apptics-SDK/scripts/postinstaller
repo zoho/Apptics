@@ -13,12 +13,12 @@ projectname="."
 projectfilepath=""
 SOURCE="proj"
 LANG="objc"
-PREFIX="ZA"
+PREFIX="AP"
 HELP=0
 
 ZA_INFO_FILE_NAME="apptics-config.plist"
 
-ZA_META_FILE_NAME="${uuidgen}-apptics-meta.json"
+ZA_META_FILE_NAME="$(uuidgen)-apptics-meta.json"
 
 #Apple script alert before dSYM upload
 function error_prompt() {
@@ -139,6 +139,8 @@ else
 AP_INFO_FILE_NAME="$SRCROOT/$INFOPLIST_FILE"
 fi
 
+ZA_INFOPLIST_FILE="$(find "${SRCROOT}" -name "${ZA_INFO_FILE_NAME}" | head -1)"
+
 if [ ! -f "${ZA_INFOPLIST_FILE}" ]; then
   ZA_INFOPLIST_FILE=${SRCROOT}/${ZA_INFO_FILE_NAME}
 fi
@@ -209,7 +211,7 @@ echo "STATUS ${STATUS}"
 if [ $STATUS -eq 200 ]; then
 echo "Downloaded the data from Apptics"
 
-echo $(ruby -r "$(command dirname -- "${0}")/appticshelper.rb" -e "AppticsModerator.main '$(getXcodeproj)','${targetname}','${targetgroup}','${SRCROOT}','${LANG}','${PREFIX}','${ZA_META_FILE_NAME}'")
+echo $(ruby -r "$(command dirname -- "${0}")/apptics_event_sync.rb" -e "AppticsModerator.main '$(getXcodeproj)','${targetname}','${targetgroup}','${SRCROOT}','${LANG}','${PREFIX}','${ZA_META_FILE_NAME}'")
 echo "AppticsModerator.main '$(getXcodeproj)','${targetname}','${targetgroup}','${SRCROOT}','${LANG}','${PREFIX}','${ZA_META_FILE_NAME}'"
 
 else

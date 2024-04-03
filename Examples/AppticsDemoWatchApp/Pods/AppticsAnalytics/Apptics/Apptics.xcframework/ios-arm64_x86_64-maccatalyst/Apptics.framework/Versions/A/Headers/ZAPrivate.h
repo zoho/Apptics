@@ -11,11 +11,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface APPrivateObject : NSObject
-@property NSString *eventId;
-@property NSString *groupId;
 @property NSString *group;
 @property NSString *event;
-- (instancetype)initWith:(NSString* _Nullable) eventId andGroupId : (NSString* _Nullable) groupId;
 - (instancetype)initWith:(NSString* _Nullable) group event:(NSString*) event;
 @end
 

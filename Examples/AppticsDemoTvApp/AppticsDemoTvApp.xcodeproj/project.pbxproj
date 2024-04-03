@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,7 +14,7 @@
 		24EF1BC8286D797200490D90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24EF1BC6286D797200490D90 /* LaunchScreen.storyboard */; };
 		24EF1BCB286D797200490D90 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24EF1BCA286D797200490D90 /* main.m */; };
 		67DE07448E732E834F63E7A0 /* Pods_AppticsDemoTvApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7CFA846268B96AEC9B494E9 /* Pods_AppticsDemoTvApp.framework */; };
-		A2791E86287E8BDE0047A3FF /* APAppticsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2791E84287E8BDC0047A3FF /* APAppticsExtension.swift */; };
+		A20865CE2BBD4ED4001ACBAD /* apptics-config.plist in Resources */ = {isa = PBXBuildFile; fileRef = A20865CD2BBD4ED4001ACBAD /* apptics-config.plist */; };
 		A2791E87287E8BDE0047A3FF /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2791E85287E8BDE0047A3FF /* NewViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,8 +31,8 @@
 		24EF1BCA286D797200490D90 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		34B142312336237337D4A63F /* Pods-AppticsDemoTvApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppticsDemoTvApp.debug.xcconfig"; path = "Target Support Files/Pods-AppticsDemoTvApp/Pods-AppticsDemoTvApp.debug.xcconfig"; sourceTree = "<group>"; };
 		7ABAFEE40990DAFF61B1F5A2 /* Pods-AppticsDemoTvApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppticsDemoTvApp.release.xcconfig"; path = "Target Support Files/Pods-AppticsDemoTvApp/Pods-AppticsDemoTvApp.release.xcconfig"; sourceTree = "<group>"; };
+		A20865CD2BBD4ED4001ACBAD /* apptics-config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "apptics-config.plist"; sourceTree = SOURCE_ROOT; };
 		A2791E83287E8BD80047A3FF /* AppticsDemoTvApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppticsDemoTvApp-Bridging-Header.h"; sourceTree = "<group>"; };
-		A2791E84287E8BDC0047A3FF /* APAppticsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APAppticsExtension.swift; sourceTree = "<group>"; };
 		A2791E85287E8BDE0047A3FF /* NewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
 		E7CFA846268B96AEC9B494E9 /* Pods_AppticsDemoTvApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppticsDemoTvApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -70,11 +70,11 @@
 		24EF1BBA286D796800490D90 /* AppticsDemoTvApp */ = {
 			isa = PBXGroup;
 			children = (
+				A20865CD2BBD4ED4001ACBAD /* apptics-config.plist */,
 				24EF1BBB286D796800490D90 /* AppDelegate.h */,
 				24EF1BBC286D796800490D90 /* AppDelegate.m */,
 				24EF1BBE286D796800490D90 /* ViewController.h */,
 				24EF1BBF286D796800490D90 /* ViewController.m */,
-				A2791E84287E8BDC0047A3FF /* APAppticsExtension.swift */,
 				A2791E85287E8BDE0047A3FF /* NewViewController.swift */,
 				24EF1BC1286D796800490D90 /* Main.storyboard */,
 				24EF1BC4286D797200490D90 /* Assets.xcassets */,
@@ -164,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24EF1BC8286D797200490D90 /* LaunchScreen.storyboard in Resources */,
+				A20865CE2BBD4ED4001ACBAD /* apptics-config.plist in Resources */,
 				24EF1BC5286D797200490D90 /* Assets.xcassets in Resources */,
 				24EF1BC3286D796800490D90 /* Main.storyboard in Resources */,
 			);
@@ -197,7 +198,7 @@
 			name = "[CP-User] Apptics pre build";
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "sh \"./Pods/Apptics-SDK/scripts/run\" --upload-symbols-for-configurations=\"Release, AppStore\"";
+			shellScript = "sh \"./Pods/Apptics-SDK/scripts/run\" --upload-symbols-for-configurations=\"Release, AppStore\"\n";
 		};
 		F9B3D51A321995042D684A40 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -229,7 +230,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				24EF1BC0286D796800490D90 /* ViewController.m in Sources */,
-				A2791E86287E8BDE0047A3FF /* APAppticsExtension.swift in Sources */,
 				A2791E87287E8BDE0047A3FF /* NewViewController.swift in Sources */,
 				24EF1BCB286D797200490D90 /* main.m in Sources */,
 				24EF1BBD286D796800490D90 /* AppDelegate.m in Sources */,

@@ -1,22 +1,19 @@
 
 import Foundation
-
+import AppticsEventTracker
 
 
 struct EventsTableList {
-    var type: APEventType
+    var group: String, name: String
+    
 }
 
 extension EventsTableList {
     static var eventData = [
-        EventsTableList(type: ._bill_transaction_pdf_click),
-        EventsTableList(type: ._bill_country_code),
-        EventsTableList(type: ._bill_mobile_number_change),
-        EventsTableList(type: ._bill_share_click),
-        EventsTableList(type: ._bill_country_code_change),
-        EventsTableList(type: ._bill_menu_click),
-        EventsTableList(type: ._bill_transaction_link_click),
-        EventsTableList(type: ._Bills_transaction_rejected)
+        EventsTableList(group: AP_GROUP_APP_LIFE_CYCLE, name: AP_EVENT_APP_FIRST_OPEN),
+        EventsTableList(group: AP_GROUP_APP_LIFE_CYCLE, name: AP_EVENT_APP_LAUNCHING),
+        EventsTableList(group: AP_GROUP_APP_LIFE_CYCLE, name: AP_EVENT_APP_UPDATE),
+        EventsTableList(group: AP_GROUP_APP_LIFE_CYCLE, name: AP_EVENT_APP_RESIGN_ACTIVE)
     ]
 }
 

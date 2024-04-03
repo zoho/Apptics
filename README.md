@@ -2,169 +2,210 @@
 [![License](https://img.shields.io/cocoapods/l/Apptics-SDK.svg?style=flat)](https://cocoapods.org/pods/Apptics-SDK)
 [![Platform](https://img.shields.io/cocoapods/p/Apptics-SDK.svg?style=flat)](https://cocoapods.org/pods/Apptics-SDK)
 
-# Apptics 
+# Apptics
+
 Apptics is a library that enables your app to send in-app usage reports and data securly to our servers. You can track Sessions, Screens, and we also offer Crash Reporting. With minimal initialization of the framework, you get these features without doing any other configuration.
 
-## Development Requirements: 
+## Development Requirements:
 
-The minimum support is for iOS 9.0, macOS 10.9, tvOS 9.0 and watchOS 3.0. 
-Supported Swift version - 4.0.
-Supported devices - iPhone, iPod, iPad, Mac, Apple watch and Apple tv.
-min Pod version - 1.5.3 
-min Xcode version 9.0
- 
+The minimum support is for iOS 9.0, macOS 10.9, tvOS 9.0 and watchOS 3.0. Supported Swift version - 4.0. Supported devices - iPhone, iPod, iPad, Mac, Apple Watch and Apple TV. min Pod version - 1.5.3 min Xcode version 9.0
+
 ## Getting Started
 
 * All you need to do is create a project in the Apptics console using this link [link](https://apptics.zoho.com/ac/admin/setup).
-
-* You can use cocoapods to install Apptics in your project. 
-
+* You can use CocoaPods to install Apptics in your project.
 * Your Podfile should look something like this.
-    
-          source 'https://github.com/CocoaPods/Specs.git'
-          
-          target 'TARGET NAME' do
-            pod 'Apptics-SDK'
-            
-            # Pre build script will register the app version, upload dSYM file to the server and add apptics specific information to the main info.plist which will be used by the SDK.
-            script_phase :name => 'Apptics pre build', :script => 'sh "./Pods/Apptics-SDK/scripts/run --upload-symbols-for-configurations="Release, AppStore"', :execution_position => :before_compile                        
-            
-          end
 
-          post_install do |installer|
-          
-            # (Optional) Add this line if you want to track custom events. 
-            puts system("sh ./Pods/Apptics-SDK/native/scripts/postinstaller --prefix=\"AP\" --target-name=\"MAIN TARGET NAME\" --config-file-path=\"YOUR_PATH/apptics-config.plist\"")
-            
-          end
-          
-     Usage: 
-     
-       run --upload-symbols-for-configurations="Release, Appstore" --config-file-path="YOUR_PATH/apptics-config.plist" --app-group-identifier="group.com.company.application [Optional]"
-
-     Parameters:
-     * `--upload-symbols-for-configurations`         String - Provide the configurations separated by comma for which the dSYM files should be uploaded.
-     * `--config-file-path`    		String - Provide the path of apptics-config.plist file if to any sub directory instead of root.
-	 * `--app-group-identifier`     String - App group identifier to support app extensions.	 				    
-     
-     postinstaller --prefix="PREFIX STRING" --target-name="MAIN TARGET NAME [Optional]" --target-group="TARGET GROUP NAME [Optional]" --project-name="PROJECT NAME [Optional]" --project-file-path="PROJECT FILE PATH [Optional]" --config-file-path="CONFIG FILE PATH [Optional]" --use-swift [Optional]      
-              
-     Parameters:
-     * `--prefix`              String - **AppticsExtension.* will be prefixed by this value.
-     * `--target-name`         String - Provide the name of your main target.
-     * `--target-group`        String - Provide the name of your target group.
-     * `--project-name`        String - Provide the name of the project.
-     * `--project-file-path`   String - Provide the path of the xcproject file.
-     * `--config-file-path`    String - Provide the path of apptics-config.plist file if to any sub directory instead of root.
-     * `--use-swift`           Void - Generate class for swift.
-     * `--help`                Show help banner of specified command.
-          
-     ***Note: The script `postinstaller` will add **AppticsExtension file(s) to your project, the class will have the events meta data.***
-     
+  ```plaintext
+      source 'https://github.com/CocoaPods/Specs.git'
       
-           
-* Run `pod install` and make sure you are connected to the lan or wifi to access the Git repo. 
+      target 'TARGET NAME' do
+        pod 'Apptics-SDK'
+        
+        # Pre build script will register the app version, upload dSYM file to the server and add apptics specific information to the main info.plist which will be used by the SDK.
+        script_phase :name => 'Apptics pre build', :script => 'sh "./Pods/Apptics-SDK/scripts/run --upload-symbols-for-configurations="Release, AppStore"', :execution_position => :before_compile                        
+        
+      end
+  ```
 
-* Create a new application or select an existing application from the quickstart page to download  the `apptics-config.plist`. Move the config file to the root of your Xcode project and add it to the necessary targets.
+  Usage:
 
+  ```plaintext
+   run --upload-symbols-for-configurations="Release, Appstore" --config-file-path="YOUR_PATH/apptics-config.plist" --app-group-identifier="group.com.company.application [Optional]"
+  ```
 
-* In your `Appdelegate` class make sure you call the initialize method in app launch.
+  Parameters:
+  * `--upload-symbols-for-configurations` String - Provide the configurations separated by comma for which the dSYM files should be uploaded.
+  * `--config-file-path` String - Provide the path of apptics-config.plist file if to any sub directory instead of root.
+  * `--app-group-identifier` String - App group identifier to support app extensions.
+* Run `pod install` and make sure you are connected to the LAN or wifi to access the Git repo.
+* Create a new application or select an existing application from the Quickstart page to download the `apptics-config.plist`. Move the config file to the root of your Xcode project and add it to the necessary targets.
+* In your `Appdelegate` class make sure you call the initialize method in the app launch.
 
-        Apptics.initialize(withVerbose: true)
+  ```plaintext
+    Apptics.initialize(withVerbose: true)
+  ```
+* To use Apptics in your Extensions, please refer to this [link](https://www.zoho.com/apptics/resources/SDK/iOS/app_extensions.html)
 
-* For AppExtensions call `Apptics.startExtensionSession("APP_GROUP_IDENTIFIER")` on start and `Apptics.stopExtensionSession()` at the end. 
-
-***Note : The analytic data of App-Extensions will be sent by the main application based on the network availability.***  
-
+**_Note: The analytic data of App-Extensions will be sent by the main application based on the network availability._**
 
 ## **Important**:
-To get proper symbolicated crashes, make sure your build settings have the following when you ship your app.
- 
-* Strip Build Symbols During Copy - **NO**
-* Strip Linked Product - **NO**
-* Strip Style - **Debugging Symbols**
-* Debug information format - **Dwarf with dSYM file**
 
+To get proper symbolicated crashes, make sure your build settings have the following when you ship your app.
+
+* Debug information format - **Dwarf with dSYM file**
 
 # Features
 
 ## Session Tracking:
 
-A session is considered when the app goes from foreground to background.  
+A session is a single period of user interaction with your app. For example, when a user opens the app for the first time and the app goes to the background, that is considered a session.
 
-## In-app Event Tracking: 
+Sessions are automatically tracked in Apptics, once you have integrated our SDK and called the initialization method.
 
-In-app event is tracking the post-install activities using the custom events.
+## In-app Event Tracking:
 
-## Screen Tracking: 
+Events help you track all the user actions within your app. For example, sign up, purchase made, feedback given, and so on. Events analytics and the associated data help you understand your users. \
+\
+**Event types**
 
-Screens are automatically tracked and the time spent on each screen is noted in iOS and tvOS. You can track screens manually using our [apis](https://prezoho.zohocorp.com/apptics/resources/SDK/iOS/screens.html)    
-***Note: Viewcontrollers aren't tracked properly if you use third party containment controllers like DDMenuController, IIViewdeckController etc. To ensure to get a proper tracking of viewcontroller override `viewDidAppear` and `viewWillDisappear` in all your viewcontrollers.***
+Zoho Apptics provides two types of event analytics; **Defined events and Custom events.** 
 
-## Crash Reporting: 
+**Defined events**: These are the default events that are available for your use once you have integrated our SDK.
 
-Crashes are automatically tracked and symbolicated. To get proper symbolicated reports please make sure to configure your build settings correctly. 
+**Custom events**: These are the events that you want to capture using our SDK.
 
-The crashes will not be captured if the debugger is attached at the launch, please follow the below steps. 
+### Logging custom events
 
-  * Run your app from Xcode and install it on your simulator or device.
-  * Quit the app using the stop button.
-  * Launch the app from home screen and try to crash the app by invoking our readymade method `Apptics.crash()`.
-  * Run the app again in order to push the crash to the server and get symbolicated.
+**\
+Objective C**
+
+```
+[APEvent trackEvent:<#(nonnull NSString *)#> andGroupName:<#(nonnull NSString *)#>]
+```
+
+**Swift**
+
+```
+APEvent.trackEvent(<#T##eventName: String##String#>, withGroupName: <#T##String#>)
+```
+
+Make sure that **the event name and group name** follow the below norms, or else the event won't be logged within the SDK.
+
+* should not be more than 100 characters.
+* should start with an alphabet.
+* should not contain any space or special characters apart from underscore (_).
+* cannot start with 'ap_' or 'AP_'. These are reserved for the defined events.
+
+An example of a valid event name: 'helloworld', 'Hello_world', 'helloWorld'\
+An example of an invalid event name: '_helloworld', '1hello', \`Hello World\`, 'ap_helloworld\`\
+\
+For more details, please visit our SDK guide for [In-App-Events](https://www.zoho.com/apptics/resources/SDK/iOS/in_app_events.html) 
+
+## \
+Screen Tracking:
+
+Screens are content that your users view in your app. Using Zoho Apptics' screen tracking, you can measure the screen views and associate the screen data with events. This helps you to understand user engagement and behavior. 
+
+* Make sure that you have integrated Apptics with your app. Refer to the [integration guide](https://www.zoho.com/apptics/resources/SDK/iOS/integration.html) for detailed steps.
+* Once the integration is done, you can track the screens either manually or automatically.
+
+### Manual screen tracking
+
+* You can track the screens manually and also provide custom screen names using Apptics. 
+* Use the below method to view the controller class that you want to track.\
+  \
+  To track the entry of the view, call the method viewDidAppear.**\
+  **\
+  **Objective C**
+
+  ```
+  [APScreentracker trackViewEnter:<#(nonnull NSString *)#>];
+  ```
+
+  **Swift**
+
+  ```
+  APScreentracker.trackViewEnter(<#T##screenName: String##String#>)
+  ```
+
+  To track the exit of the view, call the method viewWillDisappear.\
+  \
+  **Objective C**
+
+  ```
+  [APScreentracker trackViewExit:<#(nonnull NSString *)#>];
+  ```
+
+  **Swift**
+
+  ```
+  APScreentracker.trackViewExit(<#T##screenName: String##String#>)
+  ```
+
+**NOTE:** Make sure that **the screen name** follows the below norms, or else the event won't be logged within the SDK.
+
+* screen name is mandatory and cannot be nil or empty.
+* screen name should not be more than 250 characters.
+* should start with an alphabet.
+* only numbers, spaces, dots, and underscore are allowed after the first letter.
+* cannot start with 'ap_' or 'AP_'. These are reserved for the defined events.
+
+### Crash Reporting:
+
+Crashes are automatically tracked and symbolicated by Apptics. To get proper symbolicated reports please make sure to configure your build settings correctly.
+
+The crashes will not be captured if the debugger is attached at the launch, please follow the below steps.
+
+* Run your app from Xcode and install it on your simulator or device.
+* Quit the app using the stop button.
+* Launch the app from the home screen and try to crash the app by invoking our ready-made method `Apptics.crash()`.
+* Run the app again in order to push the crash to the server and get symbolicated.
 
 Check the web console, you should find the crash listed in the console.
 
-#### Missing a dSYM? 
+#### Missing a dSYM?
 
-Apptics includes a script to upload your project's dSYM automatically. The script is executed through the run-script in your projects build phases during the on-boarding process. There are some cases where dSYM upload fails because of network interruptions or if you have enabled bit code in your project. Missing dSYMs can be uploaded by following the below steps. 
+Apptics includes a script to upload your project's dSYM automatically. The script is executed through the run-script in your project build phases during the onboarding process. There are some cases where dSYM upload fails because of network interruptions or improper configuration of the run script. Missing dSYMs can be uploaded by following the below steps.
 
-#### Finding your dSYM 
+#### Finding your dSYM
 
-While archiving your project build dSYMs are placed inside the xarchive directory. To view, open Xcode organizer window, ctrl+click or right click on the list to go to the dir in Finder. ctrl+click to view its content, inside the content you will find a dir called "dSYMs" which will contain dSYMs files, also that is the location where dSYMs are placed when you hit "download dSYM" in Xcode organizer. 
+While archiving your project, build dSYMs are placed inside the xarchive directory. To view, open the Xcode organizer window, ctrl+click, or right-click on the list to go to the directory in Finder. ctrl+click to view its content, Inside the content, you will find a directory called "dSYMs" which will contain dSYMs files. Also,  that is the location where dSYMs are placed when you hit "download dSYM" in the Xcode organizer.
 
-For Bitcode enabled applications the first step would be to check in iTunes connect whether you have enabled bit-code for your application. For bit-code enabled builds Apple generates new dSYMs. You will have to download the dsyms from ituneconnect or from the Xcode's organizer and upload to Apptics server. 
+#### Uploading dSYMs
 
-#### To download the dSYM files from iTunes Connect: 
-* Log in to Apple [iTunes Connect](https://itunesconnect.apple.com/login).
-* Select My Apps > (selected app) > Activity.
-* From the list of builds for your application, select the build number you need for the dSYM.
-* Select Download dSYM.
+On the "Manage dSYM page" (Left menu -> Quality -> dSYM), upload the dSYMs.zip that you have downloaded from the iTunes connect for bitcode enabled or the one you find in xarchive directory.
 
-#### Uploading dSYMs 
+## Theme
 
-On "Manage dSYM page" (Left menu -> Quality -> dSYM), upload the dSYMs .zip that you have downloaded from the iTunes connect for bitcode enabled or the one you find in xarchive directory.
+You can use our protocols to customize the Analytics Settings, App updates and Feedback screens. Just create a swift/Obj class in the name of ThemeManager and extend those protocols to implement the required methods [link](https://prezoho.zohocorp.com/apptics/resources/SDK/iOS/customtheme.html).
 
-## Theme 
-
-You can use our protocols to customize the Analytics Settings, App updates and Feedback screens. Just create a swift/Obj class in the name of ThemeManager and extend those protocols to implement required methods [link](https://prezoho.zohocorp.com/apptics/resources/SDK/iOS/customtheme.html).
-
-## Callbacks 
+## Callbacks
 
 Get callbacks for all the events at a single point by extending `APCustomHandler`. It deals with user consent , crash consent, feedback, and ratings & reviews.
 
 ## Feedback and BugReporting
 
-A seperate module that does "Shake to Feedback", please check if it suits your needs [here](https://prezoho.zohocorp.com/apptics/resources/SDK/iOS/in_app_feedback.html).
-        
-## App Updates 
+A separate module that does "Shake to Feedback", Please check if it suits your needs [here](https://prezoho.zohocorp.com/apptics/resources/SDK/iOS/in_app_feedback.html).
 
-Now you can prompt user to update to the latest version of your app from the App Store.  
+## App Updates
 
-Please check our  guide before you start [here](https://prezoho.zohocorp.com/apptics/resources/SDK/iOS/in_app_updates.html).
+Now you can prompt users to update to the latest version of your app from the App Store.
+
+Please check our guide before you start [here](https://prezoho.zohocorp.com/apptics/resources/SDK/iOS/in_app_updates.html).
 
 ## Ratings and Reviews
 
-Engage with your users and learn about their experience. Promopt them to rate your app after they have fulfilled the configured criteria.
+Engage with your users and learn about their experience. Promote them to rate your app after they have fulfilled the configured criteria.
 
 Check how to configure automatic ratings [here](https://prezoho.zohocorp.com/apptics/resources/SDK/iOS/in_app_ratings.html).
 
-    
 ## To know more!
 
-For more information about how Apptics works, checkout the below links.    
+For more information about how Apptics works, check out the below links.
 
 * [Getting Started](https://prezoho.zohocorp.com/apptics/resources/user-guide/getting-started.html)
-* [iOS user guide](https://prezoho.zohocorp.com/apptics/resources/SDK/iOS/integration.html) 
+* [iOS user guide](https://prezoho.zohocorp.com/apptics/resources/SDK/iOS/integration.html)
 * [Sample app](https://github.com/zoho/Apptics/tree/master/Examples)
 
 For any assistance, contact Apptics at [support@zohoapptics.com](support@zohoapptics.com)

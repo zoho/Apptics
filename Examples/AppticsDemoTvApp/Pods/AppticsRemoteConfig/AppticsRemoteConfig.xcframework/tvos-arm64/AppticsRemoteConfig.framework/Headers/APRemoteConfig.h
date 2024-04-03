@@ -28,6 +28,8 @@ static NSString* APRemoteConfigUpdateNotification = @"APRemoteConfigUpdateNotifi
 @property (readonly, assign, nonatomic) APRemoteConfigFetchStatus lastFetchStatus;
 @property (nonatomic) bool enableRemoteConfig;
 
+- (void)setRcInfo:(NSDictionary *)rcInfo;
+
 /**
  * Returns a singleton instance of Remote Config.
  * @return APRemoteConfig.
@@ -70,14 +72,16 @@ static NSString* APRemoteConfigUpdateNotification = @"APRemoteConfigUpdateNotifi
 
 -(void) setCurrentLocation : (NSString *) location;
 
-- (nonnull APRemoteConfigValue *)objectForKeyedSubscript:(nonnull NSString *)key;
+- (APRemoteConfigValue * _Nullable)objectForKeyedSubscript:(nonnull NSString *)key;
 
-- (nonnull APRemoteConfigValue *)configValueForKey:(nullable NSString *)key;
+- (APRemoteConfigValue * _Nullable)configValueForKey:(nullable NSString *)key;
 
 -(void) addCustomCriteria : (NSString *) key value : (NSString*) value;
 
 -(void) updateRemoteConfigWithData:(nullable NSDictionary*) rcInfo withCompletionHandler:(nullable void(^)(APRemoteConfigFetchStatus status))completion;
 
+-(NSString*) getStringValue:(NSString*) key coldFetch : (BOOL) coldFetch fallbackWithOfflineValue : (BOOL) fallbackWithOfflineValue;
+    
 @end
 
 NS_ASSUME_NONNULL_END

@@ -1,0 +1,236 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Apptics",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AppticsExtensionManager",
+        "printedName": "AppticsExtensionManager",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "trackEvent",
+            "printedName": "trackEvent(groupname:eventName:property:appGroup:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Apptics@objc(cs)AppticsExtensionManager(cm)trackEventWithGroupname:eventName:property:appGroup:",
+            "mangledName": "$s7Apptics0A16ExtensionManagerC10trackEvent9groupname9eventName8property8appGroupySS_SSSDySSypGSStFZ",
+            "moduleName": "Apptics",
+            "static": true,
+            "objc_name": "trackEventWithGroupname:eventName:property:appGroup:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "trackEventWithProperty",
+            "printedName": "trackEventWithProperty(groupname:eventName:appGroup:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Apptics@objc(cs)AppticsExtensionManager(cm)trackEventWithPropertyWithGroupname:eventName:appGroup:",
+            "mangledName": "$s7Apptics0A16ExtensionManagerC22trackEventWithProperty9groupname9eventName8appGroupySS_S2StFZ",
+            "moduleName": "Apptics",
+            "static": true,
+            "objc_name": "trackEventWithPropertyWithGroupname:eventName:appGroup:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AppticsExtensionManager",
+                "printedName": "Apptics.AppticsExtensionManager",
+                "usr": "c:@M@Apptics@objc(cs)AppticsExtensionManager"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Apptics@objc(cs)AppticsExtensionManager(im)init",
+            "mangledName": "$s7Apptics0A16ExtensionManagerCACycfc",
+            "moduleName": "Apptics",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Apptics@objc(cs)AppticsExtensionManager",
+        "mangledName": "$s7Apptics0A16ExtensionManagerC",
+        "moduleName": "Apptics",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "ObjCMembers"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/jai-13322\/Documents\/GitLabs\/opensource\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppExtension\/APAppticsForExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 130,
+      "length": 20,
+      "value": "\"Apptics.APExtensionEventList\""
+    },
+    {
+      "filePath": "\/Users\/jai-13322\/Documents\/GitLabs\/opensource\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppExtension\/APAppticsForExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 1997,
+      "length": 12,
+      "value": "\"WidgetData\""
+    }
+  ]
+}

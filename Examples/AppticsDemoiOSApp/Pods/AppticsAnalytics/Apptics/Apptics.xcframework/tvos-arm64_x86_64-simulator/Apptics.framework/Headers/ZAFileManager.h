@@ -54,6 +54,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (BOOL) bs_fileExistsAtPath : (NSString*) dirPath;
 
 + (NSArray*) getListOfCrashes;
++ (NSArray*) getCrashCount;
 + (void) archiveCrashReport:(NSDictionary*)crashReport withFileName : fileName;
 + (id) unarchiveCrashReportForFileName : fileName;
 
@@ -76,7 +77,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (void) archiveConsoleLogs:(id)queue sessionId : (NSNumber*) sessionId mamId:(NSString * _Nullable)mam anonId : (NSString*) anonid;
 + (void) rotateConsoleLogsData;
     
-
++(NSMutableArray* _Nullable)   getListOfHistoricEngagementDataToPurge;
 +(NSMutableArray* _Nullable) getListOfHistoricEngagementDataToBeSynced;
 +(NSMutableArray* _Nullable) getListOfHistoricEngagementData;
 

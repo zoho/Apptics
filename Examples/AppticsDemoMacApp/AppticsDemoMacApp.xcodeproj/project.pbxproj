@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,8 +13,8 @@
 		24EF1B97286D61A500490D90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24EF1B95286D61A500490D90 /* Main.storyboard */; };
 		24EF1B9A286D61A500490D90 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24EF1B99286D61A500490D90 /* main.m */; };
 		8375FF805DE30028D3C089FA /* Pods_AppticsDemoMacApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639D8792723EFBD36BFF8D0B /* Pods_AppticsDemoMacApp.framework */; };
+		A20865CC2BBD4CB1001ACBAD /* apptics-config.plist in Resources */ = {isa = PBXBuildFile; fileRef = A20865CB2BBD4CB1001ACBAD /* apptics-config.plist */; };
 		A2791E80287E88F30047A3FF /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2791E7F287E88F20047A3FF /* NewViewController.swift */; };
-		A2791E82287E89A70047A3FF /* APAppticsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2791E81287E89A70047A3FF /* APAppticsExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,9 +30,9 @@
 		24EF1B99286D61A500490D90 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		24EF1B9B286D61A500490D90 /* AppticsDemoMacApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppticsDemoMacApp.entitlements; sourceTree = "<group>"; };
 		639D8792723EFBD36BFF8D0B /* Pods_AppticsDemoMacApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppticsDemoMacApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A20865CB2BBD4CB1001ACBAD /* apptics-config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "apptics-config.plist"; sourceTree = SOURCE_ROOT; };
 		A2791E7E287E88ED0047A3FF /* AppticsDemoMacApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppticsDemoMacApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		A2791E7F287E88F20047A3FF /* NewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
-		A2791E81287E89A70047A3FF /* APAppticsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APAppticsExtension.swift; sourceTree = "<group>"; };
 		A31F9C1A7FA936FE7FF49E81 /* Pods-AppticsDemoMacApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppticsDemoMacApp.debug.xcconfig"; path = "Target Support Files/Pods-AppticsDemoMacApp/Pods-AppticsDemoMacApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,12 +69,12 @@
 		24EF1B8C286D61A400490D90 /* AppticsDemoMacApp */ = {
 			isa = PBXGroup;
 			children = (
+				A20865CB2BBD4CB1001ACBAD /* apptics-config.plist */,
 				24EF1B8D286D61A400490D90 /* AppDelegate.h */,
 				24EF1B8E286D61A400490D90 /* AppDelegate.m */,
 				24EF1B90286D61A400490D90 /* ViewController.h */,
 				24EF1B91286D61A400490D90 /* ViewController.m */,
 				A2791E7F287E88F20047A3FF /* NewViewController.swift */,
-				A2791E81287E89A70047A3FF /* APAppticsExtension.swift */,
 				24EF1B93286D61A500490D90 /* Assets.xcassets */,
 				24EF1B95286D61A500490D90 /* Main.storyboard */,
 				24EF1B98286D61A500490D90 /* Info.plist */,
@@ -163,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24EF1B94286D61A500490D90 /* Assets.xcassets in Resources */,
+				A20865CC2BBD4CB1001ACBAD /* apptics-config.plist in Resources */,
 				24EF1B97286D61A500490D90 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -189,11 +190,11 @@
 		};
 		27CEDBA3C9425E35D2FF4C46 /* [CP-User] Apptics pre build */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 8;
+			buildActionMask = 12;
 			files = (
 			);
 			name = "[CP-User] Apptics pre build";
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "sh \"./Pods/Apptics-SDK/scripts/run\" --upload-symbols-for-configurations=\"Release, AppStore\"\n";
 		};
@@ -230,7 +231,6 @@
 				24EF1B9A286D61A500490D90 /* main.m in Sources */,
 				24EF1B8F286D61A400490D90 /* AppDelegate.m in Sources */,
 				A2791E80287E88F30047A3FF /* NewViewController.swift in Sources */,
-				A2791E82287E89A70047A3FF /* APAppticsExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

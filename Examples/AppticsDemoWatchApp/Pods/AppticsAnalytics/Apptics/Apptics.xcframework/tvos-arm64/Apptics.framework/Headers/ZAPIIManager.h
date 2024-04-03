@@ -130,6 +130,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (APPrivacyStatus) getPIIStatusForCurrentUser;
 
+- (BOOL) engagementtracking;
+
+- (BOOL) errortracking;
+
 - (BOOL) isUserLoggedIn;
 
 - (BOOL) isAnonymousUser;

@@ -142,11 +142,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		GyhLu3Q4baHRVIe3+SEt5j84vbQ=
+		ZneNHRLsrv8i4h+c1pQQjljrCpE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		yg77hUVEXu3wNTKhf7hBDhIe8tg=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		1ujRg/VANMPam+1xKwDX46izB8Y=
 		</data>
 		<key>PrivateHeaders/AlignOf.h</key>
 		<data>
@@ -750,6 +754,17 @@
 			<key>hash2</key>
 			<data>
 			8v6A7ZFJDUSdIP89FUa5Yb5Jic7pL6i44IFcpmMOtzI=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1ujRg/VANMPam+1xKwDX46izB8Y=
+			</data>
+			<key>hash2</key>
+			<data>
+			l8I1agymK+SCWUD2vY7VqIWk6oBRhsDV8UXWVZDTeF8=
 			</data>
 		</dict>
 		<key>PrivateHeaders/AlignOf.h</key>

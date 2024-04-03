@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScreenShotEditorView" customModule="AppticsFeedbackKitSwift" customModuleProvider="target">
+            <connections>
+                <outlet property="cardView" destination="QD4-Yr-Zst" id="GlR-lq-Gd7"/>
+                <outlet property="clobttnTopConst" destination="vsa-kj-rND" id="LbO-Dk-0Iu"/>
+                <outlet property="closeBttn" destination="wQs-br-yUu" id="425-5Y-22v"/>
+                <outlet property="doneBttn" destination="qIf-0k-gnD" id="Pb0-8K-jhB"/>
+                <outlet property="doneBttnTopConst" destination="48n-f4-fkE" id="FbZ-Wn-LTJ"/>
+                <outlet property="mainview" destination="Pcg-NR-p1O" id="sfw-EP-7h9"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="650"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QD4-Yr-Zst" customClass="CardViews" customModule="AppticsFeedbackKitSwift" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="650"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wQs-br-yUu">
+                            <rect key="frame" x="5" y="45" width="75" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="c3d-Vg-EbC"/>
+                                <constraint firstAttribute="width" constant="75" id="hGt-Zs-HBS"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Back"/>
+                            <variation key="heightClass=regular-widthClass=regular">
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                            </variation>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qIf-0k-gnD">
+                            <rect key="frame" x="295" y="45" width="75" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="75" id="Cpa-74-xyP"/>
+                                <constraint firstAttribute="height" constant="35" id="ycl-Hc-1To"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Done"/>
+                            <variation key="heightClass=regular-widthClass=regular">
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                            </variation>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pcg-NR-p1O">
+                            <rect key="frame" x="0.0" y="90" width="375" height="560"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="qIf-0k-gnD" firstAttribute="top" secondItem="QD4-Yr-Zst" secondAttribute="top" constant="45" id="48n-f4-fkE"/>
+                        <constraint firstAttribute="trailing" secondItem="qIf-0k-gnD" secondAttribute="trailing" constant="5" id="6p7-zB-B0o"/>
+                        <constraint firstAttribute="bottom" secondItem="Pcg-NR-p1O" secondAttribute="bottom" id="Tpa-Ca-xEK"/>
+                        <constraint firstAttribute="trailing" secondItem="Pcg-NR-p1O" secondAttribute="trailing" id="XSu-at-kWN"/>
+                        <constraint firstItem="Pcg-NR-p1O" firstAttribute="top" secondItem="wQs-br-yUu" secondAttribute="bottom" constant="10" id="dmH-rm-hqg"/>
+                        <constraint firstItem="Pcg-NR-p1O" firstAttribute="leading" secondItem="QD4-Yr-Zst" secondAttribute="leading" id="eDr-6w-mTo"/>
+                        <constraint firstItem="wQs-br-yUu" firstAttribute="leading" secondItem="QD4-Yr-Zst" secondAttribute="leading" constant="5" id="f8R-O7-XyJ"/>
+                        <constraint firstItem="wQs-br-yUu" firstAttribute="top" secondItem="QD4-Yr-Zst" secondAttribute="top" constant="45" id="vsa-kj-rND"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="QD4-Yr-Zst" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="254-3q-nec"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="QD4-Yr-Zst" secondAttribute="bottom" id="FY2-aO-gXl"/>
+                <constraint firstItem="QD4-Yr-Zst" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Zob-ky-lyz"/>
+                <constraint firstItem="QD4-Yr-Zst" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="ocx-c7-k5M"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="138.40579710144928" y="103.79464285714285"/>
+        </view>
+    </objects>
+</document>

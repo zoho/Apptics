@@ -29,6 +29,8 @@ FOUNDATION_EXPORT const unsigned char AnalyticsVersionString[];
 
 //static NSString * _Nonnull za_version = @"0.9";
 
+//static NSUncaughtExceptionHandler * _Nullable previousExceptionHandler;
+
 #if AP_CROSS_PROMO
 //@protocol PromotedAppsKitDelegate;
 #endif
@@ -37,7 +39,7 @@ static NSString* _Nonnull engagementTaskID = @"com.apptics.engagement.bgtaskiden
 static NSString* _Nonnull nonfatalTaskID = @"com.apptics.nonfatal.bgtaskidentifier";
 
 NS_ASSUME_NONNULL_BEGIN
-
+@class APTimerManager;
 /**
  *  Apptics is a library that enables your app to send usage reports and data securly to our servers. You get Session tracking, Screen tracking and Crash Reporting. Which means, with minimal setup of initializing the framework you can get these three features working without any other configuration.
  */
@@ -48,6 +50,7 @@ NS_ASSUME_NONNULL_BEGIN
  *  Time to push all collected data to the servers
  */
 @property (nonatomic) NSInteger flushInterval;
+@property (nonatomic, retain) APTimerManager *timerManager;
 
 @property long zuid;//Zoho User Id
 @property (strong,nonatomic) NSString *apiToken;
@@ -56,7 +59,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property BOOL enableAutomaticScreenTracking;
 @property BOOL enableAutomaticCrashTracking;
 
-@property BOOL enableAutoCheckForAppUpdate;
+//@property BOOL enableAutoCheckForAppUpdate;
+@property (nonatomic, strong) dispatch_block_t scheduledBlock;
 
 @property BOOL enableAnonymousTracking;
 
@@ -75,6 +79,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property BOOL enableBackgroundTask;
 
 @property BOOL isApplicationInBg;
+@property (nonatomic,strong) NSString *consentWindowStatus;//from which window it came
 
 @property UserConsentPresentCompletionBlock _Nullable userConsentPresentCompletionBlock;
 
@@ -315,6 +320,9 @@ typedef void (^internbgConsoleLogsRequestSuccessBlock)(void);
 
 - (void) sceneDidEnterBackground:(NSNotification *)notice;
 
+- (void) willRegisterDeviceWithDeviceId:(NSNotification*) notification;
+- (void) willSendTheFeedbackToTheServer:(NSNotification*) notification;
+
 #pragma mark - Cross Promotion Apps
 
 - (void) enableCrossPromotionAppsList : (bool) status;
@@ -338,6 +346,20 @@ typedef void (^internbgConsoleLogsRequestSuccessBlock)(void);
 #pragma mark - Reachability 
 
 -(BOOL)isReachable;
+
+-(BOOL) isMacCatalystOrDesignedForiPad;
+-(void) saveDataAndSendToTheServer;
+
+@end
+
+@interface APTimerManager : NSObject
+
+@property (nonatomic, strong) dispatch_queue_t _Nullable timerQueue;
+@property (nonatomic, strong) dispatch_source_t _Nullable timer;
+@property (nonatomic, assign) BOOL shouldExecuteBlock;
+
+- (void)startTimerWithInterval:(NSTimeInterval)interval;
+- (void)stopTimer;
 
 @end
 

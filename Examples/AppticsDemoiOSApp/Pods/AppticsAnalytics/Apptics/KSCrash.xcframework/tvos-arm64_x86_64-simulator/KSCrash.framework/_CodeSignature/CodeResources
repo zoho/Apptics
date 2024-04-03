@@ -142,15 +142,19 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		NnmqGxWmY5cPizLSFZF6FYQnO/o=
+		Di5QR4IMmcJiH5BckSzgZ6jV534=
 		</data>
-		<key>LICENSE.txt</key>
+		<key>LICENSE.TXT</key>
 		<data>
-		n7rSP+Ex/MKT2ZssUXuZDaovCm4=
+		SuYitqYPMq09CjLis663lpu2TN4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		yg77hUVEXu3wNTKhf7hBDhIe8tg=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		1ujRg/VANMPam+1xKwDX46izB8Y=
 		</data>
 		<key>PrivateHeaders/AlignOf.h</key>
 		<data>
@@ -745,15 +749,15 @@
 			SU2ltYkydeGwkzDRzOh3a3Mx9vX7p+V6UdcnEapCLbk=
 			</data>
 		</dict>
-		<key>LICENSE.txt</key>
+		<key>LICENSE.TXT</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			n7rSP+Ex/MKT2ZssUXuZDaovCm4=
+			SuYitqYPMq09CjLis663lpu2TN4=
 			</data>
 			<key>hash2</key>
 			<data>
-			GGxfAZKnVHFKflQiM92qrSh0VibgrTLjWNP1rwCvuEo=
+			chyxHeYY/Pm7t9JaOJIHvyInNX5mlLwyarMqZpn5uVE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -765,6 +769,17 @@
 			<key>hash2</key>
 			<data>
 			8v6A7ZFJDUSdIP89FUa5Yb5Jic7pL6i44IFcpmMOtzI=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1ujRg/VANMPam+1xKwDX46izB8Y=
+			</data>
+			<key>hash2</key>
+			<data>
+			l8I1agymK+SCWUD2vY7VqIWk6oBRhsDV8UXWVZDTeF8=
 			</data>
 		</dict>
 		<key>PrivateHeaders/AlignOf.h</key>

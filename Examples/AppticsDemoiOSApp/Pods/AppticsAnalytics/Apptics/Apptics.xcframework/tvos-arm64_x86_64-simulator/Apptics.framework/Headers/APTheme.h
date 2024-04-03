@@ -17,6 +17,14 @@ typedef enum : NSInteger {
   Light
 } DropDownImage;
 
+@interface APThemeUtil : NSObject
+#if !TARGET_OS_OSX && !TARGET_OS_WATCH
++ (void)appendAttributes :(NSDictionary *)attributes toButton : (UIButton*) button;
++ (void)appendAttributes :(NSDictionary *)attributes toLabel : (UILabel*) label;
++ (void)appendAttributes :(NSDictionary *)attributes toTextView : (UITextView*) textView;
+#endif
+@end
+
 @protocol APTheme <NSObject>
 #if !TARGET_OS_OSX && !TARGET_OS_WATCH
 @optional
@@ -193,6 +201,15 @@ typedef enum : NSInteger {
 @end
 
 @interface APThemeManager : NSObject
+
++(id <APTheme>)defaultThemeManager;
++(id <APSettingsTheme>)defaultSettingsThemeManager;
++(id <APFeedbackTheme>)defaultFeedbackThemeManager;
++(id <APFeedbackPrivacyTheme>)defaultFeedbackPrivacyThemeManager;
++(id <APCustomAlertTheme>)defaultCustomAlertThemeManager;
++(id <APUserConsentTheme>)defaultUserConsentThemeManager;
++(id <APAppUpdateConsentTheme>)defaultAppUpdateConsentThemeManager;
+
 +(id <APTheme>)sharedThemeManager;
 +(id <APSettingsTheme>)sharedSettingsThemeManager;
 +(id <APFeedbackTheme>)sharedFeedbackThemeManager;
@@ -243,5 +260,26 @@ typedef enum : NSInteger {
 @end
 
 @interface APDefaultAppUpdateConsentTheme : NSObject <APAppUpdateConsentTheme>
+@end
+
+@interface APSharedTheme : NSObject <APTheme>
+@end
+
+@interface APSharedSettingsTheme : NSObject <APSettingsTheme>
+@end
+
+@interface APSharedFeedbackTheme : NSObject <APFeedbackTheme>
+@end
+
+@interface APSharedFeedbackPrivacyTheme : NSObject <APFeedbackPrivacyTheme>
+@end
+
+@interface APSharedCustomAlertTheme : NSObject <APCustomAlertTheme>
+@end
+
+@interface APSharedUserConsentTheme : NSObject <APUserConsentTheme>
+@end
+
+@interface APSharedAppUpdateConsentTheme : NSObject <APAppUpdateConsentTheme>
 @end
 NS_ASSUME_NONNULL_END

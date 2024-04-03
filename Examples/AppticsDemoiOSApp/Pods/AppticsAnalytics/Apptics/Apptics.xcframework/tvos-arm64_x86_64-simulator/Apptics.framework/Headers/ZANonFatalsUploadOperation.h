@@ -28,6 +28,7 @@ extern NSString *kZANonFatalsDataUploadFailureNotification;
 @property (nonatomic,retain) NSString *urlString;
 @property (nonatomic,retain) NSString *apiToken;
 @property (nonatomic, strong) APAAAUtil *aaaUtil;
+@property (nonatomic, strong) NSURLSession *session;
 
 #if !TARGET_OS_OSX && !TARGET_OS_WATCH
 @property (nonatomic) UIBackgroundTaskIdentifier backgroundUpdateTask;

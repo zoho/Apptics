@@ -34,6 +34,7 @@
 
 //For Framework use only
 #define IVLog(args...) ZLogExtensionInternal(__FILE__,__LINE__,__func__,"​​​🤖​","apptics-log",args);
+#define IVLogWarn(args...) ZLogExtensionInternal(__FILE__,__LINE__,__func__,"​​​⚠️","apptics-warning",args);
 NS_ASSUME_NONNULL_BEGIN
 /**
  *  A Custome Logger for logging both Apptics data and your own app data.
@@ -44,7 +45,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  *  Shows Apptics logs, collected data, and other network calls when set as YES. Apptics doesn't log in Release mode.
  */
-@property BOOL shouldLog;
+@property (nonatomic) BOOL shouldLog;
 
 @property BOOL shouldPrint;
 
@@ -67,6 +68,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readwrite, assign, nonatomic) NSUInteger maximumNumberOfLogFiles;
 
 + (APLog *) getInstance;
+
++ (dispatch_queue_t)zlogQueue;
 
 - (void) ZLSExtension : (NSString*) file lineNumber : (int) linenumber functionName : (NSString*) functionname symbol : (NSString*) symbol type : (NSString*) type format : (NSString*) format;
 

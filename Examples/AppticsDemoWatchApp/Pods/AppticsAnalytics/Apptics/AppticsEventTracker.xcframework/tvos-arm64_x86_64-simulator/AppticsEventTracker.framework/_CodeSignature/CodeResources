@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/APEvent.h</key>
 		<data>
-		ou5FwrBCUMYlvKoOMlGcRIBNyKw=
+		aSriRtwmrAqhcCjQGwIndLk/xQk=
 		</data>
 		<key>Headers/AppticsEventTracker.h</key>
 		<data>
@@ -14,11 +14,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		2IGKPBkZ/TYltYpsurBoGrVCvuI=
+		T8GSm3fgYOmh7vA5eUNuguLNDyU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		qtQpHRxpbJqccF3j7NDfVHz2v0E=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		5ZGUtzqClni25FQaLxFaMzM6Tgk=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -27,11 +31,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ou5FwrBCUMYlvKoOMlGcRIBNyKw=
+			aSriRtwmrAqhcCjQGwIndLk/xQk=
 			</data>
 			<key>hash2</key>
 			<data>
-			CQr3XkFRzTdbMaN+FV1RrNkOOA7S3xy6dsq1KNAhIdU=
+			1fE/eMvc6bjseOKD4jhk2Ui8UXVRw4ybiEAADgQQoms=
 			</data>
 		</dict>
 		<key>Headers/AppticsEventTracker.h</key>
@@ -54,6 +58,17 @@
 			<key>hash2</key>
 			<data>
 			pm5NUIF711wT0O0tX8+c/9lSbILmI8BFJtfUd2UfNq8=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5ZGUtzqClni25FQaLxFaMzM6Tgk=
+			</data>
+			<key>hash2</key>
+			<data>
+			srkI3mYbSx85+pgspv+me5Eu5XnSXFcyqZlWSrSuGh0=
 			</data>
 		</dict>
 	</dict>

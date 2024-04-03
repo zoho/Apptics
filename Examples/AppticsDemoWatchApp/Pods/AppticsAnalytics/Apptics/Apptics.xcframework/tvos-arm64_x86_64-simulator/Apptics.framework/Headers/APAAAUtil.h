@@ -31,6 +31,7 @@ typedef void (^ apiRequestFailureBlock)(NSURLResponse *response, NSError *error)
 - (void) getTokenWithSuccess:(requestSuccessBlock)success andFailure:(requestFailureBlock)failure;
 - (void) setHeaderFields:(NSMutableURLRequest*) request migrateDevice : (bool) migrate;
 - (void) removeRefreshToken;
+- (void) removeTokenTime;
 - (void) updateToken : (NSString*_Nullable) refresh_token;
 - (void) updateToken : (NSString*_Nullable) refresh_token time : (NSNumber* _Nullable) token_time;
 

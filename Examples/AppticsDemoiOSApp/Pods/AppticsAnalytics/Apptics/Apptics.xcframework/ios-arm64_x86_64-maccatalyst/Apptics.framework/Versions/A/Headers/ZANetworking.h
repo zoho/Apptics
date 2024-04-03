@@ -13,7 +13,7 @@
 NS_ASSUME_NONNULL_BEGIN
 @interface ZANetworking : NSObject <NSURLSessionDelegate>
 
-@property (nonatomic, strong) NSOperationQueue *operationQueue;
+//@property (nonatomic, strong) NSOperationQueue *operationQueue;
 //@property (nonatomic, strong) NSString *baseUrl;
 //@property (nonatomic, assign) BOOL isNetrowkReachable;
 @property (strong, nonatomic) NSString* dclPfx;

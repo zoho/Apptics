@@ -41,13 +41,13 @@ class NewViewController : UIViewController{
           if (status == .statusSuccess || status == .statusUpToDate){
               APRemoteConfig.shared().activateFetched()
           }
-          print(APRemoteConfig.shared()["feedback_module"].stringValue)
-          print(APRemoteConfig.shared().configValue(forKey: "secondary_color").stringValue )
+          print(APRemoteConfig.shared()["feedback_module"]?.stringValue)
+          print(APRemoteConfig.shared().configValue(forKey: "secondary_color")?.stringValue )
       }
       
     }
     
     @objc @IBAction func trackEvent(_ sender: Any) {
-        APEvent.trackEvent(withType: APEventType._bill_country_code)
+        APEvent.trackEvent(AP_EVENT_APP_LAUNCHING, withGroupName: AP_GROUP_APP_LIFE_CYCLE)
     }
 }

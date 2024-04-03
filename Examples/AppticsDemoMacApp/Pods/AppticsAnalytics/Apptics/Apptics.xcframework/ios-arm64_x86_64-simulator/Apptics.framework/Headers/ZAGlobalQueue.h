@@ -25,12 +25,15 @@
 #import <Apptics/ZAScreenObject.h>
 
 NS_ASSUME_NONNULL_BEGIN
+
+#define maxDataRetentionTime ((24 * 60 * 60 * 1000) * 7)
+
 @interface ZAGlobalQueue : NSObject
 
-@property (strong,nonatomic) NSMutableArray *screensQueue, *sessionsQueue, *eventsQueue, *errorsQueue, *apisQueue, *remoteconfigQueue, *rateusQueue, *appupdatePopupQueue, *appupdateDetailQueue, *crosspromoQueue, *consoleLogsQueue;
+@property (strong,nonatomic) NSMutableArray *screensQueue, *sessionsQueue, *eventsQueue, *nonfatalQueue, *apisQueue, *remoteconfigQueue, *rateusQueue, *appupdatePopupQueue, *appupdateDetailQueue, *crosspromoQueue, *consoleLogsQueue;
 
-@property (strong,nonatomic) NSMutableDictionary *uniqErrors;
 @property (nonatomic) long long dataSize;
+@property (nonatomic) long long nonfatalDataSize;
 @property (nonatomic) long long logsDataSize;
 @property (strong,nonatomic) ZASession *currentSession;
 
@@ -51,9 +54,12 @@ typedef void (^bgConsoleLogsRequestSuccessBlock)(void);
 + (NSNumber*) sessionStartTime;
 + (NSString*) currentScreenName;
 
-- (void) addToErrorQueue:(id)errorObject forKey:(NSString*)aKey;
+- (void) addToNonfatalQueue:(id)errorObject;
 - (void) addToQueue:(ZAObject*)object;
+- (void) addLogsToQueue:(ZAObject*)object;
 - (void) removeAllData;
+- (void) removeConsoleLogsData;
+- (void) removeNonFatalData;
 
 - (void) purgeHistoricEngagementsData;
 - (void) purgeHistoricNonFatalsData;
@@ -74,7 +80,9 @@ typedef void (^bgConsoleLogsRequestSuccessBlock)(void);
 - (void) trackViewExit:(NSString*) screenName;
 - (void) startWithTime:(NSNumber*) startTime;
 - (void) endWithTime:(NSNumber*)endTime;
+- (void) saveData;
 - (void) saveSessionData:(NSNumber*) sessionId;
+- (void) saveNonFatalData:(NSNumber*) sessionId;
 //- (void) saveBgSessionData:(NSNumber*) sessionId;
 @end
 
