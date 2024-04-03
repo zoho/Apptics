@@ -80,13 +80,13 @@ Zoho Apptics provides two types of event analytics; **Defined events and Custom
 **\
 Objective C**
 
-```
+```plaintext
 [APEvent trackEvent:<#(nonnull NSString *)#> andGroupName:<#(nonnull NSString *)#>]
 ```
 
 **Swift**
 
-```
+```plaintext
 APEvent.trackEvent(<#T##eventName: String##String#>, withGroupName: <#T##String#>)
 ```
 
@@ -100,10 +100,9 @@ Make sure that **the event name and group name** follow the below norms, or el
 An example of a valid event name: 'helloworld', 'Hello_world', 'helloWorld'\
 An example of an invalid event name: '_helloworld', '1hello', \`Hello World\`, 'ap_helloworld\`\
 \
-For more details, please visit our SDK guide for [In-App-Events](https://www.zoho.com/apptics/resources/SDK/iOS/in_app_events.html) 
+For more details, please visit our SDK guide for [In-App-Events](https://www.zoho.com/apptics/resources/SDK/iOS/in_app_events.html)
 
-## \
-Screen Tracking:
+## Screen Tracking:
 
 Screens are content that your users view in your app. Using Zoho Apptics' screen tracking, you can measure the screen views and associate the screen data with events. This helps you to understand user engagement and behavior. 
 
@@ -115,17 +114,17 @@ Screens are content that your users view in your app. Using Zoho Apptics' screen
 * You can track the screens manually and also provide custom screen names using Apptics. 
 * Use the below method to view the controller class that you want to track.\
   \
-  To track the entry of the view, call the method viewDidAppear.**\
-  **\
+  To track the entry of the view, call the method viewDidAppear.\
+  \
   **Objective C**
 
-  ```
+  ```plaintext
   [APScreentracker trackViewEnter:<#(nonnull NSString *)#>];
   ```
 
   **Swift**
 
-  ```
+  ```plaintext
   APScreentracker.trackViewEnter(<#T##screenName: String##String#>)
   ```
 
@@ -133,16 +132,17 @@ Screens are content that your users view in your app. Using Zoho Apptics' screen
   \
   **Objective C**
 
-  ```
+  ```plaintext
   [APScreentracker trackViewExit:<#(nonnull NSString *)#>];
   ```
 
   **Swift**
 
-  ```
+  ```plaintext
   APScreentracker.trackViewExit(<#T##screenName: String##String#>)
   ```
 
+\
 **NOTE:** Make sure that **the screen name** follows the below norms, or else the event won't be logged within the SDK.
 
 * screen name is mandatory and cannot be nil or empty.
@@ -170,7 +170,7 @@ Apptics includes a script to upload your project's dSYM automatically. The scrip
 
 #### Finding your dSYM
 
-While archiving your project, build dSYMs are placed inside the xarchive directory. To view, open the Xcode organizer window, ctrl+click, or right-click on the list to go to the directory in Finder. ctrl+click to view its content, Inside the content, you will find a directory called "dSYMs" which will contain dSYMs files. Also,  that is the location where dSYMs are placed when you hit "download dSYM" in the Xcode organizer.
+While archiving your project, build dSYMs are placed inside the xarchive directory. To view, open the Xcode organizer window, ctrl+click, or right-click on the list to go to the directory in Finder. ctrl+click to view its content, Inside the content, you will find a directory called "dSYMs" which will contain dSYMs files. Also, that is the location where dSYMs are placed when you hit "download dSYM" in the Xcode organizer.
 
 #### Uploading dSYMs
 
