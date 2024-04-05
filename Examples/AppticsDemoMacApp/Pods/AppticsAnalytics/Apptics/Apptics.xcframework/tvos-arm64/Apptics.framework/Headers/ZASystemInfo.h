@@ -39,6 +39,8 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSString*) getSystemLanguage;
 + (NSString*) getSystemCurrency;
 + (NSString*) getTime;
++ (long long) getBeginingTimeinLong;
++ (NSDate *) beginningOfDay:(NSDate *)date;
 
 + (BOOL) isAppInBackground;
 
@@ -64,6 +66,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 //+(UIViewController*) topVisibleViewController : (UIViewController*) topController;
 + (long long) getTimeinLong;
++ (long long) getTimeinLong:(NSDate *)date;
 
 + (BOOL) isDebug;
 
@@ -91,6 +94,8 @@ NS_ASSUME_NONNULL_BEGIN
 +(APDeviceInfo*) defaultInfo;
 
 +(instancetype) initWithDictionary:(NSDictionary*) deviceInfo;
+
+- (void) updateDeviceInfo:(NSDictionary*) _deviceInfo;
 
 - (NSDictionary*)jsonify;
 

@@ -17,20 +17,20 @@ RSYNC_PROTECT_TMP_FILES=(--filter "P .*.??????")
 variant_for_slice()
 {
   case "$1" in
-  "AppticsRateUs.xcframework/ios-arm64_armv7")
+  "AppticsRateUs.xcframework/ios-arm64")
     echo ""
+    ;;
+  "AppticsRateUs.xcframework/ios-arm64_x86_64-maccatalyst")
+    echo "maccatalyst"
+    ;;
+  "AppticsRateUs.xcframework/ios-arm64_x86_64-simulator")
+    echo "simulator"
     ;;
   "AppticsRateUs.xcframework/tvos-arm64")
     echo ""
     ;;
   "AppticsRateUs.xcframework/tvos-arm64_x86_64-simulator")
     echo "simulator"
-    ;;
-  "AppticsRateUs.xcframework/ios-arm64_i386_x86_64-simulator")
-    echo "simulator"
-    ;;
-  "AppticsRateUs.xcframework/ios-arm64_x86_64-maccatalyst")
-    echo "maccatalyst"
     ;;
   esac
 }
@@ -38,19 +38,19 @@ variant_for_slice()
 archs_for_slice()
 {
   case "$1" in
-  "AppticsRateUs.xcframework/ios-arm64_armv7")
-    echo "arm64 armv7"
+  "AppticsRateUs.xcframework/ios-arm64")
+    echo "arm64"
+    ;;
+  "AppticsRateUs.xcframework/ios-arm64_x86_64-maccatalyst")
+    echo "arm64 x86_64"
+    ;;
+  "AppticsRateUs.xcframework/ios-arm64_x86_64-simulator")
+    echo "arm64 x86_64"
     ;;
   "AppticsRateUs.xcframework/tvos-arm64")
     echo "arm64"
     ;;
   "AppticsRateUs.xcframework/tvos-arm64_x86_64-simulator")
-    echo "arm64 x86_64"
-    ;;
-  "AppticsRateUs.xcframework/ios-arm64_i386_x86_64-simulator")
-    echo "arm64 i386 x86_64"
-    ;;
-  "AppticsRateUs.xcframework/ios-arm64_x86_64-maccatalyst")
     echo "arm64 x86_64"
     ;;
   esac

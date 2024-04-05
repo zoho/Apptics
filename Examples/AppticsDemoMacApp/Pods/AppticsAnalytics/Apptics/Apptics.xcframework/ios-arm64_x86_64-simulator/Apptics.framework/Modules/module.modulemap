@@ -6,6 +6,6 @@ framework module Apptics {
 }
 
 module Apptics.Swift {
-    header "Apptics-Swift.h"
-    requires objc
+  header "Apptics-Swift.h"
+  requires objc
 }

@@ -538,7 +538,7 @@ After initializing Apptics, call this method to enable auto check for updates.
 @param status BOOL
 */
 
-+ (void) enableAutoCheckForAppUpdate : (BOOL) status;
+//+ (void) enableAutoCheckForAppUpdate : (BOOL) status;
 
 #pragma mark — Crash
 

@@ -29,19 +29,19 @@ NS_ASSUME_NONNULL_BEGIN
 @interface RSA : NSObject
 
 // return base64 encoded string
-+ (NSString *_Nullable)encryptString:(NSString *)str publicKey:(NSString *)pubKey;
++ (NSString *_Nullable)encryptString:(NSString * _Nullable)str publicKey:(NSString * _Nullable)pubKey;
 // return raw data
-+ (NSData *_Nullable)encryptData:(NSData *)data publicKey:(NSString *)pubKey;
++ (NSData *_Nullable)encryptData:(NSData * _Nullable)data publicKey:(NSString * _Nullable)pubKey;
 // return base64 encoded string
-+ (NSString *_Nullable)encryptString:(NSString *)str privateKey:(NSString *)privKey;
++ (NSString *_Nullable)encryptString:(NSString * _Nullable)str privateKey:(NSString * _Nullable)privKey;
 // return raw data
-+ (NSData *_Nullable)encryptData:(NSData *)data privateKey:(NSString *)privKey;
++ (NSData *_Nullable)encryptData:(NSData * _Nullable)data privateKey:(NSString * _Nullable)privKey;
 
 // decrypt base64 encoded string, convert result to string(not base64 encoded)
-+ (NSString *_Nullable)decryptString:(NSString *)str publicKey:(NSString *)pubKey;
-+ (NSData *_Nullable)decryptData:(NSData *)data publicKey:(NSString *)pubKey;
-+ (NSString *_Nullable)decryptString:(NSString *)str privateKey:(NSString *)privKey;
-+ (NSData *_Nullable)decryptData:(NSData *)data privateKey:(NSString *)privKey;
++ (NSString *_Nullable)decryptString:(NSString * _Nullable)str publicKey:(NSString * _Nullable)pubKey;
++ (NSData *_Nullable)decryptData:(NSData * _Nullable)data publicKey:(NSString * _Nullable)pubKey;
++ (NSString *_Nullable)decryptString:(NSString * _Nullable)str privateKey:(NSString * _Nullable)privKey;
++ (NSData *_Nullable)decryptData:(NSData * _Nullable)data privateKey:(NSString * _Nullable)privKey;
 
 @end
 

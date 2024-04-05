@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface APAAAUtil : NSObject
 
 @property (nonatomic, strong) dispatch_queue_t serialDispatchQueue;
-@property (nonatomic, strong) NSOperationQueue *operationQueue;
+//@property (nonatomic, strong) NSOperationQueue *operationQueue;
 @property (nonatomic) BOOL operationinProgress;
 @property (nonatomic, strong) NSMutableArray *successblocks;
 @property (nonatomic, strong) NSMutableArray *failureblocks;
@@ -31,6 +31,7 @@ typedef void (^ apiRequestFailureBlock)(NSURLResponse *response, NSError *error)
 - (void) getTokenWithSuccess:(requestSuccessBlock)success andFailure:(requestFailureBlock)failure;
 - (void) setHeaderFields:(NSMutableURLRequest*) request migrateDevice : (bool) migrate;
 - (void) removeRefreshToken;
+- (void) removeTokenTime;
 - (void) updateToken : (NSString*_Nullable) refresh_token;
 - (void) updateToken : (NSString*_Nullable) refresh_token time : (NSNumber* _Nullable) token_time;
 

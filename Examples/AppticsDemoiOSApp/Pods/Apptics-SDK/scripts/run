@@ -34,6 +34,9 @@ HELP=1
 --upload-symbols-for-configurations=*)
 SKIP_PROMPT_FOR="${1#*=}"
 ;;
+--upload-symbols-for-frameworks=*)
+UPLOAD_SYMBOLS_FOR="${1#*=}"
+;;
 --config-file-path=*)
 ZA_INFOPLIST_FILE="${1#*=}"
 ;;
@@ -165,6 +168,8 @@ if [ ! "${AP_BUNDLE_ID}" ]; then
 AP_BUNDLE_ID=$(/usr/libexec/PlistBuddy -c 'Print BUNDLE_ID' "${ZA_INFOPLIST_FILE}")
 fi
 
+export AP_BUNDLE_ID=$AP_BUNDLE_ID
+
 if [ ! "${API_KEY}" ]; then
 API_KEY=$(/usr/libexec/PlistBuddy -c 'Print API_KEY' "${ZA_INFOPLIST_FILE}")
 fi
@@ -220,7 +225,7 @@ echo "Merging metadata from target to source"
 rm "${CM_ZA_INFOPLIST_FILE}"
 fi
 
-mkdir "/tmp/${PRODUCT_BUNDLE_IDENTIFIER}"
+mkdir "/tmp/${AP_BUNDLE_ID}"
   
 echo "adding app_version_meta to main file for upload api\n$ZA_INFOPLIST_FILE \n $CM_ZA_INFOPLIST_FILE"
 
@@ -280,20 +285,19 @@ fi
 
 prepare_build_apptics() {
 if [ "${PRODUCT_BUNDLE_IDENTIFIER}" != "${AP_BUNDLE_ID}" ]; then
-    echo "Product bundle identifier '${PRODUCT_BUNDLE_IDENTIFIER}' doesn't match with the bundle identifier in '${ZA_INFO_FILE_NAME}' '${AP_BUNDLE_ID}'"
-    exit 1
+    echo "warning: Product bundle identifier '${PRODUCT_BUNDLE_IDENTIFIER}' doesn't match with the bundle identifier in '${ZA_INFO_FILE_NAME}' '${AP_BUNDLE_ID}'"
 fi
 
 if [ "${APPTICS_SDK_ID}" != "${ZA_APPTICS_SDK_ID}" ] || [ "${BUNDLE_VERSION}" != "${ZA_BUNDLE_VERSION}" ] || [ "${BUNDLE_SHORT_VERSION}" != "${ZA_BUNDLE_SHORT_VERSION}" ] || [ "${APP_VERSION_ID}" == "" ] || [ "${AAID}" == "" ] || [ "${APID}" == "" ] || [ "${PLATFORM_ID}" == "" ] || [ "${APPTICS_SDK_ID}" == "" ] || [ "${RSAKEY}" == "" ]; then
   
-  reg_app_out_file="/tmp/${PRODUCT_BUNDLE_IDENTIFIER}/${ZA_VERSION_META_FILE_NAME}"
-  REG_APP_VERSION_PARAMS="platform=${OS}&identifier=${PRODUCT_BUNDLE_IDENTIFIER}&version=${BUNDLE_SHORT_VERSION}&appreleaseversion=${BUNDLE_VERSION}&frameworkid=${APPTICS_SDK_ID}&minosversion=${ZA_DEPLOYMENT_TARGET}"
+  reg_app_out_file="/tmp/${AP_BUNDLE_ID}/${ZA_VERSION_META_FILE_NAME}"
+  REG_APP_VERSION_PARAMS="platform=${OS}&identifier=${AP_BUNDLE_ID}&version=${BUNDLE_SHORT_VERSION}&appreleaseversion=${BUNDLE_VERSION}&frameworkid=${APPTICS_SDK_ID}&minosversion=${ZA_DEPLOYMENT_TARGET}"
   STATUS=$(curl "${URL_ENDPOINT}?${REG_APP_VERSION_PARAMS}" -v --write-out %{http_code} --silent -o "${reg_app_out_file}" -H "zak: ${API_KEY}" -X POST --connect-timeout 60 --max-time 900 --retry 2 --retry-delay 5)
   
   echo "${URL_ENDPOINT}?${REG_APP_VERSION_PARAMS} --write-out %{http_code} --silent -o "${reg_app_out_file}" -H "zak: ${API_KEY}" -X POST"
   
   if [ $STATUS -eq 200 ]; then
-  echo "Info: Data downloaded"
+  echo "info: Data downloaded"
   
   echo "$(command dirname -- "${0}")/apptics_utils.rb" -e "AppticsBot.main '${reg_app_out_file}'"
   value=$(ruby -r "$(command dirname -- "${0}")/apptics_utils.rb" -e "AppticsBot.main '${reg_app_out_file}'")
@@ -381,17 +385,17 @@ if [ "${SYNC_TYPE}" == "plist" ]; then
 URL_ENDPOINT="${SERVER_URL}/sdk/api/apptics/v1/engagement/getplist?${params}"
 fi
 
-#echo $(rm -v /tmp/"${PRODUCT_BUNDLE_IDENTIFIER}/${ZA_META_FILE_NAME}.json")
+#echo $(rm -v /tmp/"${AP_BUNDLE_ID}/${ZA_META_FILE_NAME}.json")
 
-STATUS=$(curl "${URL_ENDPOINT}" -v --write-out %{http_code} --silent -o "/tmp/${PRODUCT_BUNDLE_IDENTIFIER}/${ZA_META_FILE_NAME}.json" -H "zak: ${API_KEY}" -X POST --connect-timeout 60 --max-time 900 --retry 2 --retry-delay 5)
-echo "${URL_ENDPOINT}" --write-out %{http_code} --silent -o "/tmp/${PRODUCT_BUNDLE_IDENTIFIER}/${ZA_META_FILE_NAME}.json" -H "zak: ${API_KEY}"
+STATUS=$(curl "${URL_ENDPOINT}" -v --write-out %{http_code} --silent -o "/tmp/${AP_BUNDLE_ID}/${ZA_META_FILE_NAME}.json" -H "zak: ${API_KEY}" -X POST --connect-timeout 60 --max-time 900 --retry 2 --retry-delay 5)
+echo "${URL_ENDPOINT}" --write-out %{http_code} --silent -o "/tmp/${AP_BUNDLE_ID}/${ZA_META_FILE_NAME}.json" -H "zak: ${API_KEY}"
 
 echo "ENGAGEMENT RESULT STATUS ${STATUS}"
 
 if [ $STATUS -eq 200 ]; then
 echo "Downloaded the data from Apptics"
 
-value=$(ruby -r "$(command dirname -- "${0}")/apptics_helper.rb" -e "AppticsEventsParser.main '${PRODUCT_BUNDLE_IDENTIFIER}/${ZA_META_FILE_NAME}'")
+value=$(ruby -r "$(command dirname -- "${0}")/apptics_helper.rb" -e "AppticsEventsParser.main '${AP_BUNDLE_ID}/${ZA_META_FILE_NAME}'")
     
     if [[ "$value" =~ ^error:* ]]; then
         exit 1
@@ -399,16 +403,16 @@ value=$(ruby -r "$(command dirname -- "${0}")/apptics_helper.rb" -e "AppticsEven
     
     echo $value
         
-echo "AppticsEventsParser.main '${PRODUCT_BUNDLE_IDENTIFIER}/${ZA_META_FILE_NAME}'"
+echo "AppticsEventsParser.main '${AP_BUNDLE_ID}/${ZA_META_FILE_NAME}'"
 
 else
 echo "error: response status : $STATUS, ($?)"
 exit 1
 fi
 
-/usr/libexec/PlistBuddy -c "Merge /tmp/${PRODUCT_BUNDLE_IDENTIFIER}/${ZA_META_FILE_NAME}.plist" "${ZA_INFOPLIST_FILE}"
-echo $(rm -v /tmp/"${PRODUCT_BUNDLE_IDENTIFIER}/${ZA_META_FILE_NAME}.json")
-echo $(rm -v /tmp/"${PRODUCT_BUNDLE_IDENTIFIER}/${ZA_META_FILE_NAME}.plist")
+/usr/libexec/PlistBuddy -c "Merge /tmp/${AP_BUNDLE_ID}/${ZA_META_FILE_NAME}.plist" "${ZA_INFOPLIST_FILE}"
+echo $(rm -v /tmp/"${AP_BUNDLE_ID}/${ZA_META_FILE_NAME}.json")
+echo $(rm -v /tmp/"${AP_BUNDLE_ID}/${ZA_META_FILE_NAME}.plist")
 fi
 
 
@@ -421,7 +425,7 @@ COMMAND_PATH="$DIR/dsym_upload"
 
 IFS=', ' read -r -a SKIP_PROMPT_CONFIGURATIONS <<< "${SKIP_PROMPT_FOR}"
 
-LOGNAME="/tmp/${PRODUCT_BUNDLE_IDENTIFIER}/${UUIDGEN}-apptics-output.txt"
+LOGNAME="/tmp/${AP_BUNDLE_ID}/${UUIDGEN}-apptics-output.txt"
 if [ "${LOG_FILE_PATH}" ];then
 LOGNAME="${LOG_FILE_PATH}"
 fi
@@ -443,7 +447,7 @@ if [[ " ${SKIP_PROMPT_CONFIGURATIONS[@]} " =~ " ${CONFIGURATION} " ]]; then
   printf "*********************************************************************************************\n"
   printf "* Uploading dSYM for '${CONFIGURATION}' configuration, check $LOGNAME for more details *\n"
   printf "*********************************************************************************************\n"
-  sh "${COMMAND_PATH}" --skip-prompt --upload-dsym --process-in-background >> $LOGNAME 2>&1 &
+  sh "${COMMAND_PATH}" --skip-prompt --upload-dsym --upload-symbols-for-frameworks="$UPLOAD_SYMBOLS_FOR" --process-in-background >> $LOGNAME 2>&1 &
 else
   sh "${COMMAND_PATH}" --skip-prompt --process-in-background >> $LOGNAME 2>&1 &
   printf "****************************************************\n"

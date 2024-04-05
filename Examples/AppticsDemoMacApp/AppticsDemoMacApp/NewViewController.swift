@@ -7,6 +7,7 @@
  
 import Foundation
 import AppKit
+import AppticsEventTracker
 
 class NewViewController : NSViewController{
  
@@ -49,6 +50,6 @@ class NewViewController : NSViewController{
     }
     
     @objc @IBAction func trackEvent(_ sender: Any) {
-        APEvent.trackEvent(withType: APEventType._bill_country_code)
+        APEvent.trackEvent(AP_EVENT_APP_LAUNCHING, withGroupName: AP_GROUP_APP_LIFE_CYCLE)
     }
 }

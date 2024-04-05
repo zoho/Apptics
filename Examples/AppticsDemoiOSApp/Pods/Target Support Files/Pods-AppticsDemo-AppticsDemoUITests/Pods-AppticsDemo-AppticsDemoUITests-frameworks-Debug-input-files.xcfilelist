@@ -2,6 +2,7 @@ ${PODS_ROOT}/Target Support Files/Pods-AppticsDemo-AppticsDemoUITests/Pods-Appti
 ${BUILT_PRODUCTS_DIR}/Apptics-SDK/Apptics_SDK.framework
 ${BUILT_PRODUCTS_DIR}/Apptics-Swift/Apptics_Swift.framework
 ${BUILT_PRODUCTS_DIR}/AppticsCrossPromotion/AppticsCrossPromotion.framework
+${BUILT_PRODUCTS_DIR}/AppticsFeedbackKitSwift/AppticsFeedbackKitSwift.framework
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/Apptics/Apptics.framework/Apptics
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/CrashKit/AppticsCrashKit.framework/AppticsCrashKit
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/EventTracker/AppticsEventTracker.framework/AppticsEventTracker

@@ -320,6 +320,9 @@ typedef void (^internbgConsoleLogsRequestSuccessBlock)(void);
 
 - (void) sceneDidEnterBackground:(NSNotification *)notice;
 
+- (void) willRegisterDeviceWithDeviceId:(NSNotification*) notification;
+- (void) willSendTheFeedbackToTheServer:(NSNotification*) notification;
+
 #pragma mark - Cross Promotion Apps
 
 - (void) enableCrossPromotionAppsList : (bool) status;
@@ -345,6 +348,7 @@ typedef void (^internbgConsoleLogsRequestSuccessBlock)(void);
 -(BOOL)isReachable;
 
 -(BOOL) isMacCatalystOrDesignedForiPad;
+-(void) saveDataAndSendToTheServer;
 
 @end
 

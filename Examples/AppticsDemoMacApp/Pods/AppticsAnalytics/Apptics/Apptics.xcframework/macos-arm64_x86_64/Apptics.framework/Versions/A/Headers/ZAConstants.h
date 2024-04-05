@@ -22,6 +22,10 @@
 
 #define AppticsLocalizedString(key, value) (value != nil && ![value isEqualToString:@""]) ? value : NSLocalizedStringForZAnalytics(key, @"", @"ZAnalyticsLocalizable")
 
+
+static NSString *kJA_Lang_Change_flag = @"ap_Lang_Change_flag";
+
+
 static NSString *kJA_UserProperties = @"ja_userproperties";
 static NSString *kJA_FirstTimeInstallation = @"kJA_FirstTimeInstallation";
 static NSString *kJA_BeginningOfTheDay = @"kJA_BeginningOfTheDay";
