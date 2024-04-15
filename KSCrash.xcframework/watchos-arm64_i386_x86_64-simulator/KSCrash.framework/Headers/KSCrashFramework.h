@@ -32,7 +32,6 @@
 #import "KSCrashReportFilterStringify.h"
 #import "KSCrashReportSinkConsole.h"
 #import "KSCrashReportSinkEMail.h"
-#import "KSCrashReportSinkQuincyHockey.h"
 #import "KSCrashReportSinkStandard.h"
 #import "KSCrashReportSinkVictory.h"
 #import "KSCrashReportWriter.h"

@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/KSCrashFramework.h</key>
 		<data>
-		BMRmctEHLntD+a6FOLupdV7n2SY=
+		B3HDIy4GLVg4WUZixz+T4NyJmSY=
 		</data>
 		<key>Headers/KSCrashInstallation+Alert.h</key>
 		<data>
@@ -39,10 +39,6 @@
 		<key>Headers/KSCrashInstallationEmail.h</key>
 		<data>
 		WSjPdDo/yQtl0/pvjHUq2QBPzXg=
-		</data>
-		<key>Headers/KSCrashInstallationQuincyHockey.h</key>
-		<data>
-		JU1+m3cQTMX65QbaboB9G1x4igg=
 		</data>
 		<key>Headers/KSCrashInstallationStandard.h</key>
 		<data>
@@ -108,10 +104,6 @@
 		<data>
 		KHw2RJeVNLAVWmKQpdhzu07FErg=
 		</data>
-		<key>Headers/KSCrashReportSinkQuincyHockey.h</key>
-		<data>
-		HqYSgMvrqI/mR+aMytHk5tu/tG0=
-		</data>
 		<key>Headers/KSCrashReportSinkStandard.h</key>
 		<data>
 		ZMkXgpbdi/DsTX2El3VFFiSWuOI=
@@ -142,7 +134,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ZneNHRLsrv8i4h+c1pQQjljrCpE=
+		FvXPZV0PfcUcGpDyks/3tRVCmH0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -408,11 +400,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BMRmctEHLntD+a6FOLupdV7n2SY=
+			B3HDIy4GLVg4WUZixz+T4NyJmSY=
 			</data>
 			<key>hash2</key>
 			<data>
-			/nTvLvj9gDS1CdHqeOgOFmXzgnue6fleJ4JssTeBTNo=
+			fdh3bdLRcTqV9X87ZZMc/d8E/aFQMRymhVOxsacLuu0=
 			</data>
 		</dict>
 		<key>Headers/KSCrashInstallation+Alert.h</key>
@@ -468,17 +460,6 @@
 			<key>hash2</key>
 			<data>
 			ID3z3OpvTJxSkUuvghJBd2F2pPPBX9P+bW/lZ+TG4m0=
-			</data>
-		</dict>
-		<key>Headers/KSCrashInstallationQuincyHockey.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			JU1+m3cQTMX65QbaboB9G1x4igg=
-			</data>
-			<key>hash2</key>
-			<data>
-			dzGz9xue3H3JJUc4bkRJJw9wYZPwZkyUuFot2QYglGE=
 			</data>
 		</dict>
 		<key>Headers/KSCrashInstallationStandard.h</key>
@@ -655,17 +636,6 @@
 			<key>hash2</key>
 			<data>
 			9T0Lk9uas9BnFHwobfhcRwouZYRUCAuQFc/8fJ28wP0=
-			</data>
-		</dict>
-		<key>Headers/KSCrashReportSinkQuincyHockey.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HqYSgMvrqI/mR+aMytHk5tu/tG0=
-			</data>
-			<key>hash2</key>
-			<data>
-			g7iws+1KG820sTZ/z0QB8RkRh3597TgvzCpMnp39VU4=
 			</data>
 		</dict>
 		<key>Headers/KSCrashReportSinkStandard.h</key>
