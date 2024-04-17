@@ -363,59 +363,57 @@ else
   echo "App short version : ${BUNDLE_SHORT_VERSION}"
 fi
 
-#####################
-
-echo "EVENTS_TRACKING_ID : ${EVENTS_TRACKING_ID}"
-echo "API_TRACKING_ID : ${API_TRACKING_ID}"
-
-if [ "${EVENTS_INFO}" == "" ] || [ "${API_INFO}" == "" ];then
-params="moduleids"
-
-if [ "${EVENTS_TRACKING_ID}" ]; then
-params="${params}=5,"
-fi
-
-if [ "${API_TRACKING_ID}" ]; then
-params="${params}6,"
-fi
-
-URL_ENDPOINT="${SERVER_URL}/sdk/api/apptics/v1/engagement/getinfo?${params}"
-
-if [ "${SYNC_TYPE}" == "plist" ]; then
-URL_ENDPOINT="${SERVER_URL}/sdk/api/apptics/v1/engagement/getplist?${params}"
-fi
-
+######################
+#
+#echo "EVENTS_TRACKING_ID : ${EVENTS_TRACKING_ID}"
+#echo "API_TRACKING_ID : ${API_TRACKING_ID}"
+#
+#if [ "${EVENTS_INFO}" == "" ] || [ "${API_INFO}" == "" ];then
+#params="moduleids"
+#
+#if [ "${EVENTS_TRACKING_ID}" ]; then
+#params="${params}=5,"
+#fi
+#
+#if [ "${API_TRACKING_ID}" ]; then
+#params="${params}6,"
+#fi
+#
+#URL_ENDPOINT="${SERVER_URL}/sdk/api/apptics/v1/engagement/getinfo?${params}"
+#
+#if [ "${SYNC_TYPE}" == "plist" ]; then
+#URL_ENDPOINT="${SERVER_URL}/sdk/api/apptics/v1/engagement/getplist?${params}"
+#fi
+#
+##echo $(rm -v /tmp/"${AP_BUNDLE_ID}/${ZA_META_FILE_NAME}.json")
+#
+#STATUS=$(curl "${URL_ENDPOINT}" -v --write-out %{http_code} --silent -o "/tmp/${AP_BUNDLE_ID}/${ZA_META_FILE_NAME}.json" -H "zak: ${API_KEY}" -X POST --connect-timeout 60 --max-time 900 --retry 2 --retry-delay 5)
+#echo "${URL_ENDPOINT}" --write-out %{http_code} --silent -o "/tmp/${AP_BUNDLE_ID}/${ZA_META_FILE_NAME}.json" -H "zak: ${API_KEY}"
+#
+#echo "ENGAGEMENT RESULT STATUS ${STATUS}"
+#
+#if [ $STATUS -eq 200 ]; then
+#echo "Downloaded the data from Apptics"
+#
+#value=$(ruby -r "$(command dirname -- "${0}")/apptics_helper.rb" -e "AppticsEventsParser.main '${AP_BUNDLE_ID}/${ZA_META_FILE_NAME}'")
+#    
+#    if [[ "$value" =~ ^error:* ]]; then
+#        exit 1
+#    fi
+#    
+#    echo $value
+#        
+#echo "AppticsEventsParser.main '${AP_BUNDLE_ID}/${ZA_META_FILE_NAME}'"
+#
+#else
+#echo "error: response status : $STATUS, ($?)"
+#exit 1
+#fi
+#
+#/usr/libexec/PlistBuddy -c "Merge /tmp/${AP_BUNDLE_ID}/${ZA_META_FILE_NAME}.plist" "${ZA_INFOPLIST_FILE}"
 #echo $(rm -v /tmp/"${AP_BUNDLE_ID}/${ZA_META_FILE_NAME}.json")
-
-STATUS=$(curl "${URL_ENDPOINT}" -v --write-out %{http_code} --silent -o "/tmp/${AP_BUNDLE_ID}/${ZA_META_FILE_NAME}.json" -H "zak: ${API_KEY}" -X POST --connect-timeout 60 --max-time 900 --retry 2 --retry-delay 5)
-echo "${URL_ENDPOINT}" --write-out %{http_code} --silent -o "/tmp/${AP_BUNDLE_ID}/${ZA_META_FILE_NAME}.json" -H "zak: ${API_KEY}"
-
-echo "ENGAGEMENT RESULT STATUS ${STATUS}"
-
-if [ $STATUS -eq 200 ]; then
-echo "Downloaded the data from Apptics"
-
-value=$(ruby -r "$(command dirname -- "${0}")/apptics_helper.rb" -e "AppticsEventsParser.main '${AP_BUNDLE_ID}/${ZA_META_FILE_NAME}'")
-    
-    if [[ "$value" =~ ^error:* ]]; then
-        exit 1
-    fi
-    
-    echo $value
-        
-echo "AppticsEventsParser.main '${AP_BUNDLE_ID}/${ZA_META_FILE_NAME}'"
-
-else
-echo "error: response status : $STATUS, ($?)"
-exit 1
-fi
-
-/usr/libexec/PlistBuddy -c "Merge /tmp/${AP_BUNDLE_ID}/${ZA_META_FILE_NAME}.plist" "${ZA_INFOPLIST_FILE}"
-echo $(rm -v /tmp/"${AP_BUNDLE_ID}/${ZA_META_FILE_NAME}.json")
-echo $(rm -v /tmp/"${AP_BUNDLE_ID}/${ZA_META_FILE_NAME}.plist")
-fi
-
-
+#echo $(rm -v /tmp/"${AP_BUNDLE_ID}/${ZA_META_FILE_NAME}.plist")
+#fi
 
 #####################
 

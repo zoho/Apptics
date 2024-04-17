@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/KSCrashFramework.h</key>
 		<data>
-		B3HDIy4GLVg4WUZixz+T4NyJmSY=
+		Wkv9dTa5lfH7WIO3qyIHsQVvEEA=
 		</data>
 		<key>Headers/KSCrashInstallation+Alert.h</key>
 		<data>
@@ -138,7 +138,7 @@
 		</data>
 		<key>LICENSE.txt</key>
 		<data>
-		SuYitqYPMq09CjLis663lpu2TN4=
+		n7rSP+Ex/MKT2ZssUXuZDaovCm4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -404,11 +404,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			B3HDIy4GLVg4WUZixz+T4NyJmSY=
+			Wkv9dTa5lfH7WIO3qyIHsQVvEEA=
 			</data>
 			<key>hash2</key>
 			<data>
-			fdh3bdLRcTqV9X87ZZMc/d8E/aFQMRymhVOxsacLuu0=
+			iFxoyjcEU2c19M8VU4OMa05jxl1cY8SQMwndPOQoYoo=
 			</data>
 		</dict>
 		<key>Headers/KSCrashInstallation+Alert.h</key>
@@ -723,11 +723,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SuYitqYPMq09CjLis663lpu2TN4=
+			n7rSP+Ex/MKT2ZssUXuZDaovCm4=
 			</data>
 			<key>hash2</key>
 			<data>
-			chyxHeYY/Pm7t9JaOJIHvyInNX5mlLwyarMqZpn5uVE=
+			GGxfAZKnVHFKflQiM92qrSh0VibgrTLjWNP1rwCvuEo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

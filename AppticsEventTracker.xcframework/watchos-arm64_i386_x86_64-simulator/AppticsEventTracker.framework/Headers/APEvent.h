@@ -30,7 +30,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 
-//Group-> AP_GROUP_APP_LIFE_CYCLE
+//AP_EVENT_APP_LIFE_CYCLE
 extern NSString * _Nullable const  AP_EVENT_APP_INSTALL;
 extern NSString * _Nullable const  AP_EVENT_APP_UNINSTALL;
 extern NSString * _Nullable const  AP_EVENT_APP_UPDATE;
@@ -47,7 +47,7 @@ extern NSString * _Nullable const  AP_EVENT_APP_WILL_CONNECT;
 
 
 
-//Group-> AP_GROUP_APPLICATION
+//AP_EVENT_APPLICATION
 extern NSString *const AP_EVENT_DEEP_LINK_OPEN;
 extern NSString *const AP_EVENT_DEEP_LINK_UPDATE;
 extern NSString *const AP_EVENT_DEEP_LINK_FIRST_OPEN;
@@ -68,7 +68,7 @@ extern NSString *const AP_EVENT_DYNAMIC_LINK_OPEN;
 extern NSString *const AP_EVENT_DYNAMIC_LINK_UPDATE;
 
 
-// Group-> AP_GROUP_OTHERS
+//Other
 
 extern NSString *const AP_EVENT_NETWORK_REACHABILITY_CHANGE;
 extern NSString *const AP_EVENT_NETWORK_BANDWIDTH_CHANGE;
@@ -79,19 +79,19 @@ extern NSString *const AP_EVENT_SWITCH_ORIENTATION_LANDSCAPE;
 extern NSString *const AP_EVENT_SWITCH_ORIENTATION_PORTRAIT;
 
 
-//Group-> AP_GROUP_USER_LIFE_CYCLE
+// AP_EVENT_USER_LIFE_CYCLE
 
 extern NSString *const AP_EVENT_USER_SIGNUP;
 extern NSString *const AP_EVENT_USER_LOGIN;
 extern NSString *const AP_EVENT_USER_LOGOUT;
 
-//Group-> AP_GROUP_OS
+//AP_EVENT_OS
 extern NSString *const AP_EVENT_OS_UNSUPPORTED;
 extern NSString *const AP_EVENT_OS_UPDATE;
 
 
 
-//Groups
+//Group Name
 
 extern NSString *const AP_GROUP_OS;
 extern NSString *const AP_GROUP_OTHERS;
