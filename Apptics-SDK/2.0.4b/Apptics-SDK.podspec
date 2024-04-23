@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
-spec.name             = "AppticsAnalytics"
+spec.name             = "Apptics-SDK"
 spec.version          = "2.0.4b"
-spec.summary          = "Apptics iOS SDK"
+spec.summary          = "An in-app usage tracking and analytics library for iOS"
 spec.license          = { :type => "MIT", :text=> <<-LICENSE
 MIT License
 Copyright (c) 2020 Zoho Corporation
@@ -31,51 +31,27 @@ DESC
   
 spec.homepage         = "https://github.com/zoho/Apptics"
 spec.author           = { "Saravanan Selvam" => "ssaravanan@zohocorp.com", "Prakash Redrouthu" => "prakash.redrouthu@zohocorp.com","Jaikarthick" => "jaikarthick.jk@zohocorp.com" }
-spec.source = { :http => "https://github.com/zoho/Apptics/releases/download/#{spec.version}/Apptics.zip"}
+spec.source = { :http => "https://github.com/zoho/Apptics/releases/download/#{spec.version}/HelperScripts.zip" }
 # spec.source = { :git => "https://github.com/zoho/Apptics.git", :tag=>"#{spec.version}"}
-
 spec.social_media_url = "http://zoho.com"
-spec.documentation_url = "https://prezoho.zohocorp.com/apptics/resources/SDK/iOS/integration.html"
 
 spec.ios.deployment_target = '9.1'
 spec.tvos.deployment_target = '9.0'
 spec.osx.deployment_target =  '10.10'
 spec.watchos.deployment_target = '2.0'
-spec.default_subspecs = 'Core'
+
+spec.default_subspecs = 'Analytics'
 
 spec.requires_arc = true
 
-spec.subspec 'Core' do |an|
-an.dependency 'AppticsAnalytics/Apptics'
-an.dependency 'AppticsAnalytics/EventTracker'
-an.dependency 'AppticsAnalytics/ScreenTracker'
-an.dependency 'AppticsAnalytics/CrashKit'
+spec.subspec 'Analytics' do |an|
+an.dependency 'Apptics-SDK/Scripts'
+an.dependency 'AppticsAnalytics', "#{spec.version}"
 end
 
-spec.subspec 'JWT' do |jwt|
-jwt.vendored_frameworks = 'Apptics/JWT.xcframework'
-end
-
-spec.subspec 'Apptics' do |ap|
-ap.vendored_frameworks = 'Apptics/Apptics.xcframework'
-ap.dependency 'AppticsAnalytics/JWT'
-end
-
-spec.subspec 'EventTracker' do |et|
-et.vendored_frameworks = 'Apptics/AppticsEventTracker.xcframework'
-end
-
-spec.subspec 'ScreenTracker' do |st|
-st.vendored_frameworks = 'Apptics/AppticsScreenTracker.xcframework'
-end
-
-spec.subspec 'KSCrash' do |ks|
-ks.vendored_frameworks = 'Apptics/KSCrash.xcframework'
-end
-
-spec.subspec 'CrashKit' do |ck|
-ck.vendored_frameworks = 'Apptics/AppticsCrashKit.xcframework'
-ck.dependency 'AppticsAnalytics/KSCrash'
+spec.subspec 'Scripts' do |sc|
+sc.source_files = 'scripts/*'
+sc.preserve_paths = 'scripts/*'
 end
 
 end
