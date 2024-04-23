@@ -10,11 +10,11 @@
 		</data>
 		<key>AppticsResources_tvOS.bundle/Info.plist</key>
 		<data>
-		DiYcHxUtTIDkVPBcptUXlRlfqLM=
+		s7Smd6bStWYFPviYYa3rc4jCQdI=
 		</data>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		FK+/WakTJL1QC1xA/NrgdGEFJtE=
+		T1XLb18hIihBL4EWptf7l9ePEaQ=
 		</data>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		Ivji+ZonTq5WzKY9VXcuOnhwGCo=
+		GV7gus4UIYt1VFlW7RsutHuXQj0=
 		</data>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeResources</key>
 		<data>
@@ -432,7 +432,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		y73PWjZ8elICxadIB9j6Gh3Ysy4=
+		NxqGT74sIxMDwxLrSvVyHFETdfI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -460,22 +460,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DiYcHxUtTIDkVPBcptUXlRlfqLM=
+			s7Smd6bStWYFPviYYa3rc4jCQdI=
 			</data>
 			<key>hash2</key>
 			<data>
-			cjBFhXqEF4+qz/6pqpqEb9NJ/E5ZyWjFSelJNHVtIDA=
+			vwnvoK/YqZztJvt4BtBlNPxu2p19yxf9ro82Dtpzc68=
 			</data>
 		</dict>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeDirectory</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			FK+/WakTJL1QC1xA/NrgdGEFJtE=
+			T1XLb18hIihBL4EWptf7l9ePEaQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			+vyzuJ8A6ZztO6b6STgJZNBSjhf6tJHyTZJvbnjKe6M=
+			81pcy/ECR2W+7YoJ1FcDohBuaL+hpY+9yC9TRwwiKWw=
 			</data>
 		</dict>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeRequirements</key>
@@ -493,11 +493,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Ivji+ZonTq5WzKY9VXcuOnhwGCo=
+			GV7gus4UIYt1VFlW7RsutHuXQj0=
 			</data>
 			<key>hash2</key>
 			<data>
-			CPPxbrGYd7h/O1daF/gXB8avn3sg1kLxa7+faY9185A=
+			FePksIEG3UE+6QMEH0AsaWJKcN/ASn5K77UDelgYWko=
 			</data>
 		</dict>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeResources</key>
