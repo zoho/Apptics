@@ -11,7 +11,7 @@ Pod::Spec.new do |spec|
 
   spec.name             = "AppticsExtension"
   spec.module_name      = "AppticsExtension"
-  spec.version          = "2.0.4b"
+  spec.version          = "2.0.4c"
   spec.summary          = "An in-app usage tracking and analytics library for iOS app extensions"
   spec.license          = { :type => "MIT", :text=> <<-LICENSE
   MIT License
