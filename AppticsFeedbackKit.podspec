@@ -44,7 +44,6 @@ spec.subspec 'FeedbackKit' do |fk|
 fk.platform     = :ios, '9.1'
 fk.vendored_frameworks = 'AppticsFeedbackKit.xcframework'
 fk.ios.dependency 'AppticsAnalytics/Apptics', "#{spec.version}"
-fk.resources  = 'SwiftFiles/Feedback/*.{xcprivacy}'
 end
 
 end

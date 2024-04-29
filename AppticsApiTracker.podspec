@@ -47,7 +47,6 @@ at.vendored_frameworks = 'AppticsApiTracker.xcframework'
 at.ios.dependency 'AppticsAnalytics/Apptics', "#{spec.version}"
 at.tvos.dependency 'AppticsAnalytics/Apptics', "#{spec.version}"
 at.osx.dependency 'AppticsAnalytics/Apptics', "#{spec.version}"
-at.resources  = 'SwiftFiles/APITracker/*.{xcprivacy}'
 end
 
 end

@@ -54,34 +54,28 @@ end
 
 spec.subspec 'JWT' do |jwt|
 jwt.vendored_frameworks = 'Apptics/JWT.xcframework'
-jwt.resources  = 'SwiftFiles/JWT/*.{xcprivacy}'
 end
 
 spec.subspec 'Apptics' do |ap|
 ap.vendored_frameworks = 'Apptics/Apptics.xcframework'
-ap.resources  = 'SwiftFiles/Apptics/*.{xcprivacy}'
 ap.dependency 'AppticsAnalytics/JWT'
 end
 
 spec.subspec 'EventTracker' do |et|
 et.vendored_frameworks = 'Apptics/AppticsEventTracker.xcframework'
-et.resources  = 'SwiftFiles/EventTracker/*.{xcprivacy}'
 end
 
 spec.subspec 'ScreenTracker' do |st|
 st.vendored_frameworks = 'Apptics/AppticsScreenTracker.xcframework'
-st.resources  = 'SwiftFiles/ScreenTracker/*.{xcprivacy}'
 end
 
 spec.subspec 'KSCrash' do |ks|
 ks.vendored_frameworks = 'Apptics/KSCrash.xcframework'
-ks.resources  = 'SwiftFiles/KSCrash/*.{xcprivacy}'
 end
 
 spec.subspec 'CrashKit' do |ck|
 ck.vendored_frameworks = 'Apptics/AppticsCrashKit.xcframework'
 ck.dependency 'AppticsAnalytics/KSCrash'
-ck.resources  = 'SwiftFiles/CrashKit/*.{xcprivacy}'
 end
 
 end

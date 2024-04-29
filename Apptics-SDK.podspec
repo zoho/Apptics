@@ -47,7 +47,6 @@ spec.requires_arc = true
 spec.subspec 'Analytics' do |an|
 an.dependency 'Apptics-SDK/Scripts'
 an.dependency 'AppticsAnalytics', "#{spec.version}"
-an.resources  = 'SwiftFiles/Analytics/*.{xcprivacy}'
 end
 
 spec.subspec 'Scripts' do |sc|

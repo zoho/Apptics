@@ -44,7 +44,6 @@ spec.subspec 'AppUpdate' do |au|
 au.platform     = :ios, '9.1'
 au.vendored_frameworks = 'AppticsInAppUpdate.xcframework'
 au.ios.dependency 'AppticsAnalytics/Apptics', "#{spec.version}"
-au.resources  = 'SwiftFiles/InAppupdate/*.{xcprivacy}'
 end
 
 end

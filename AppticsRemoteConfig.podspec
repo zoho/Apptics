@@ -46,7 +46,6 @@ spec.requires_arc = true
 spec.subspec 'RemoteConfig' do |rc|
 rc.vendored_frameworks = 'AppticsRemoteConfig.xcframework'
 rc.dependency 'AppticsAnalytics/Apptics', "#{spec.version}"
-rc.resources  = 'SwiftFiles/RemoteConfig/*.{xcprivacy}'
 end
 
 end
