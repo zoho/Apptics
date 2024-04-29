@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
 spec.name             = "AppticsCrossPromotion"
-spec.version          = "2.0.4c"
+spec.version          = "2.0.4"
 spec.summary          = "Apptics Remote Config for iOS"
 spec.license          = { :type => "MIT", :text=> <<-LICENSE
 MIT License
@@ -45,6 +45,8 @@ spec.subspec 'CrossPromotion' do |cp|
     cp.dependency 'Apptics-Swift/Analytics', "#{spec.version}"
     cp.resource_bundles = {'Apptics_SwiftResources' => ["SwiftFiles/CrossPromoApps/Fonts/*.{ttf}", "SwiftFiles/CrossPromoApps/ios-xibs/*.{xib}", "SwiftFiles/CrossPromoApps/StringFiles/*.{lproj}"]}
     cp.platform     = :ios, 9.1
+    cp.resources = 'SwiftFiles/CrossPromoApps/*.{xcprivacy}'
+
   end
 
 end

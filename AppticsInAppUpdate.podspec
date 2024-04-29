@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
 spec.name             = "AppticsInAppUpdate"
-spec.version          = "2.0.4c"
+spec.version          = "2.0.4"
 spec.summary          = "Apptics In App Update for iOS"
 spec.license          = { :type => "MIT", :text=> <<-LICENSE
 MIT License
@@ -44,6 +44,7 @@ spec.subspec 'AppUpdate' do |au|
 au.platform     = :ios, '9.1'
 au.vendored_frameworks = 'AppticsInAppUpdate.xcframework'
 au.ios.dependency 'AppticsAnalytics/Apptics', "#{spec.version}"
+au.resources  = 'SwiftFiles/InAppupdate/*.{xcprivacy}'
 end
 
 end

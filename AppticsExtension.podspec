@@ -11,7 +11,7 @@ Pod::Spec.new do |spec|
 
   spec.name             = "AppticsExtension"
   spec.module_name      = "AppticsExtension"
-  spec.version          = "2.0.4c"
+  spec.version          = "2.0.4"
   spec.summary          = "An in-app usage tracking and analytics library for iOS app extensions"
   spec.license          = { :type => "MIT", :text=> <<-LICENSE
   MIT License
@@ -57,7 +57,9 @@ DESC
 
   spec.subspec 'Extension' do |ex|
       ex.source_files        = 'SwiftFiles/AppExtension/*.swift'
-      ex.ios.deployment_target = '9.1'      
+      ex.ios.deployment_target = '9.1'
+    ex.resources  = 'SwiftFiles/RemoteConfig/*.{xcprivacy}'
+
   end
 end
 

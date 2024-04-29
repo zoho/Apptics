@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
 spec.name             = "Apptics-SDK"
-spec.version          = "2.0.4c"
+spec.version          = "2.0.4"
 spec.summary          = "An in-app usage tracking and analytics library for iOS"
 spec.license          = { :type => "MIT", :text=> <<-LICENSE
 MIT License
@@ -47,6 +47,7 @@ spec.requires_arc = true
 spec.subspec 'Analytics' do |an|
 an.dependency 'Apptics-SDK/Scripts'
 an.dependency 'AppticsAnalytics', "#{spec.version}"
+an.resources  = 'SwiftFiles/Analytics/*.{xcprivacy}'
 end
 
 spec.subspec 'Scripts' do |sc|

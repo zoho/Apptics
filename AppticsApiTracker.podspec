@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
 spec.name             = "AppticsApiTracker"
-spec.version          = "2.0.4c"
+spec.version          = "2.0.4"
 spec.summary          = "Apptics Remote Config for iOS"
 spec.license          = { :type => "MIT", :text=> <<-LICENSE
 MIT License
@@ -47,6 +47,7 @@ at.vendored_frameworks = 'AppticsApiTracker.xcframework'
 at.ios.dependency 'AppticsAnalytics/Apptics', "#{spec.version}"
 at.tvos.dependency 'AppticsAnalytics/Apptics', "#{spec.version}"
 at.osx.dependency 'AppticsAnalytics/Apptics', "#{spec.version}"
+at.resources  = 'SwiftFiles/APITracker/*.{xcprivacy}'
 end
 
 end

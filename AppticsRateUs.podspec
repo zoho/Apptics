@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
 spec.name             = "AppticsRateUs"
-spec.version          = "2.0.4c"
+spec.version          = "2.0.4"
 spec.summary          = "Apptics RateUs module for iOS"
 spec.license          = { :type => "MIT", :text=> <<-LICENSE
 MIT License
@@ -47,7 +47,7 @@ ru.vendored_frameworks = 'AppticsRateUs.xcframework'
 
 ru.ios.dependency 'AppticsAnalytics/Apptics', "#{spec.version}"
 ru.tvos.dependency 'AppticsAnalytics/Apptics', "#{spec.version}"
-
+ru.resources  = 'SwiftFiles/RateUs/*.{xcprivacy}'
 end
 
 end

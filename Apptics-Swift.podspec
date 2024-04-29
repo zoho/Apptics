@@ -11,7 +11,7 @@ Pod::Spec.new do |spec|
 
   spec.name             = "Apptics-Swift"
   spec.module_name      = "Apptics_Swift"
-  spec.version          = "2.0.4c"
+  spec.version          = "2.0.4"
   spec.summary          = "An in-app usage tracking and analytics library for iOS"
   spec.license          = { :type => "MIT", :text=> <<-LICENSE
   MIT License
@@ -60,6 +60,8 @@ DESC
 
 	spec.subspec 'Analytics' do |co|
 	co.source_files        = 'SwiftFiles/Analytics/*.swift'
+    co.resources  = 'SwiftFiles/AppticsSwift/*.{xcprivacy}'
+
 	end
   	
 end
