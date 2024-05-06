@@ -10,11 +10,11 @@
 		</data>
 		<key>Resources/Info.plist</key>
 		<data>
-		5/7770S5aN9ljnOuF2S5UV6Okno=
+		1RRKlhYCkYMevDnGB5xuY5xzD4w=
 		</data>
-		<key>Resources/LICENSE.txt</key>
+		<key>Resources/LICENSE.TXT</key>
 		<data>
-		n7rSP+Ex/MKT2ZssUXuZDaovCm4=
+		SuYitqYPMq09CjLis663lpu2TN4=
 		</data>
 		<key>Resources/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -70,11 +70,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BMRmctEHLntD+a6FOLupdV7n2SY=
+			Wkv9dTa5lfH7WIO3qyIHsQVvEEA=
 			</data>
 			<key>hash2</key>
 			<data>
-			/nTvLvj9gDS1CdHqeOgOFmXzgnue6fleJ4JssTeBTNo=
+			iFxoyjcEU2c19M8VU4OMa05jxl1cY8SQMwndPOQoYoo=
 			</data>
 		</dict>
 		<key>Headers/KSCrashInstallation+Alert.h</key>
@@ -130,17 +130,6 @@
 			<key>hash2</key>
 			<data>
 			ID3z3OpvTJxSkUuvghJBd2F2pPPBX9P+bW/lZ+TG4m0=
-			</data>
-		</dict>
-		<key>Headers/KSCrashInstallationQuincyHockey.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			JU1+m3cQTMX65QbaboB9G1x4igg=
-			</data>
-			<key>hash2</key>
-			<data>
-			dzGz9xue3H3JJUc4bkRJJw9wYZPwZkyUuFot2QYglGE=
 			</data>
 		</dict>
 		<key>Headers/KSCrashInstallationStandard.h</key>
@@ -328,17 +317,6 @@
 			<key>hash2</key>
 			<data>
 			9T0Lk9uas9BnFHwobfhcRwouZYRUCAuQFc/8fJ28wP0=
-			</data>
-		</dict>
-		<key>Headers/KSCrashReportSinkQuincyHockey.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HqYSgMvrqI/mR+aMytHk5tu/tG0=
-			</data>
-			<key>hash2</key>
-			<data>
-			g7iws+1KG820sTZ/z0QB8RkRh3597TgvzCpMnp39VU4=
 			</data>
 		</dict>
 		<key>Headers/KSCrashReportSinkStandard.h</key>
@@ -972,22 +950,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5/7770S5aN9ljnOuF2S5UV6Okno=
+			1RRKlhYCkYMevDnGB5xuY5xzD4w=
 			</data>
 			<key>hash2</key>
 			<data>
-			pHSlL6Od0uPo6+7pmWU2xj5QYFQb9GCH79EG9qACB2k=
+			Ez3o5gCPp9MfLbYfc14axTVJU8clr2SSh7UIwL5g43Q=
 			</data>
 		</dict>
-		<key>Resources/LICENSE.txt</key>
+		<key>Resources/LICENSE.TXT</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			n7rSP+Ex/MKT2ZssUXuZDaovCm4=
+			SuYitqYPMq09CjLis663lpu2TN4=
 			</data>
 			<key>hash2</key>
 			<data>
-			GGxfAZKnVHFKflQiM92qrSh0VibgrTLjWNP1rwCvuEo=
+			chyxHeYY/Pm7t9JaOJIHvyInNX5mlLwyarMqZpn5uVE=
 			</data>
 		</dict>
 		<key>Resources/PrivacyInfo.xcprivacy</key>

@@ -20,11 +20,11 @@ variant_for_slice()
   "AppticsInAppUpdate.xcframework/ios-arm64")
     echo ""
     ;;
-  "AppticsInAppUpdate.xcframework/ios-arm64_x86_64-maccatalyst")
-    echo "maccatalyst"
-    ;;
   "AppticsInAppUpdate.xcframework/ios-arm64_x86_64-simulator")
     echo "simulator"
+    ;;
+  "AppticsInAppUpdate.xcframework/ios-arm64_x86_64-maccatalyst")
+    echo "maccatalyst"
     ;;
   esac
 }
@@ -35,10 +35,10 @@ archs_for_slice()
   "AppticsInAppUpdate.xcframework/ios-arm64")
     echo "arm64"
     ;;
-  "AppticsInAppUpdate.xcframework/ios-arm64_x86_64-maccatalyst")
+  "AppticsInAppUpdate.xcframework/ios-arm64_x86_64-simulator")
     echo "arm64 x86_64"
     ;;
-  "AppticsInAppUpdate.xcframework/ios-arm64_x86_64-simulator")
+  "AppticsInAppUpdate.xcframework/ios-arm64_x86_64-maccatalyst")
     echo "arm64 x86_64"
     ;;
   esac
@@ -123,5 +123,5 @@ install_xcframework() {
   echo "Copied $source to $destination"
 }
 
-install_xcframework "${PODS_ROOT}/AppticsInAppUpdate/AppticsInAppUpdate.xcframework" "AppticsInAppUpdate/AppUpdate" "framework" "ios-arm64" "ios-arm64_x86_64-maccatalyst" "ios-arm64_x86_64-simulator"
+install_xcframework "${PODS_ROOT}/AppticsInAppUpdate/AppticsInAppUpdate.xcframework" "AppticsInAppUpdate/AppUpdate" "framework" "ios-arm64" "ios-arm64_x86_64-simulator" "ios-arm64_x86_64-maccatalyst"
 

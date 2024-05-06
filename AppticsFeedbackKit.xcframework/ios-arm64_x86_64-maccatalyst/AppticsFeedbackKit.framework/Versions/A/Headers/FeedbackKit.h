@@ -178,6 +178,7 @@ Set sender email address to which the support emails will be sent from feedback 
 
 + (void) enableAnonymousUserAlert:(BOOL)status;
 + (void) reducedTransparencyStatus:(BOOL) status;
++ (void) enableAnonymousSender:(BOOL)status;
 
     
 + (void) openNativeMailAppWithLogs : (BOOL) includeLogs diagnosticInfo : (BOOL) includeDiagnosticInfo viewController : (ZAIncludeLogConsent*) viewController;
@@ -232,6 +233,9 @@ Set this true to mask the text detected in a screenshot by default. Setting to F
  */
 @property (nonatomic, assign) BOOL anonymStatus;
 @property (nonatomic, assign) BOOL setTransparencyStatus;
+
+@property (nonatomic, assign) BOOL enableAnonymousSender;
+
 @property (nonatomic) BOOL maskText;
 @property (nonatomic,strong) NSMutableArray*arrayOfimages;
 @property NSString* feedback_KitType;

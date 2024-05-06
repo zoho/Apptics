@@ -81,9 +81,11 @@ NS_ASSUME_NONNULL_BEGIN
 +(NSMutableArray* _Nullable) getListOfHistoricEngagementDataToBeSynced;
 +(NSMutableArray* _Nullable) getListOfHistoricEngagementData;
 
++(NSMutableArray* _Nullable) getListOfNonFatalsDataToPurge;
 +(NSMutableArray* _Nullable) getListOfNonFatalsDataToBeSynced;
 +(NSMutableArray* _Nullable) getListOfNonFatalsData;
 
++(NSMutableArray* _Nullable) getListOfConsoleLogsDataToPurge;
 +(NSMutableArray* _Nullable) getListOfConsoleLogsDataToBeSynced;
 +(NSMutableArray* _Nullable) getListOfConsoleLogsData;
 

@@ -37,7 +37,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) bool enableAutomaticCrashTracking;
 
 @property (nonatomic) APAnonymousType anonymousType;
-@property (nonatomic) APDeviceIdentifierType deviceIdentifierType API_UNAVAILABLE(macos, watchos);
+//@property (nonatomic) APDeviceIdentifierType deviceIdentifierType API_UNAVAILABLE(macos, watchos);
 
 @property (class) AppticsConfig *defaultConfig;
 

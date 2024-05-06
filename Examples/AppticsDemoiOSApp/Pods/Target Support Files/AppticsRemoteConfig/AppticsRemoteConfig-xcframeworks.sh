@@ -17,28 +17,28 @@ RSYNC_PROTECT_TMP_FILES=(--filter "P .*.??????")
 variant_for_slice()
 {
   case "$1" in
-  "AppticsRemoteConfig.xcframework/ios-arm64")
-    echo ""
-    ;;
-  "AppticsRemoteConfig.xcframework/ios-arm64_x86_64-maccatalyst")
-    echo "maccatalyst"
-    ;;
-  "AppticsRemoteConfig.xcframework/ios-arm64_x86_64-simulator")
-    echo "simulator"
-    ;;
-  "AppticsRemoteConfig.xcframework/macos-arm64_x86_64")
-    echo ""
-    ;;
   "AppticsRemoteConfig.xcframework/tvos-arm64")
+    echo ""
+    ;;
+  "AppticsRemoteConfig.xcframework/watchos-arm64_arm64_32_armv7k")
     echo ""
     ;;
   "AppticsRemoteConfig.xcframework/tvos-arm64_x86_64-simulator")
     echo "simulator"
     ;;
-  "AppticsRemoteConfig.xcframework/watchos-arm64_arm64_32_armv7k")
+  "AppticsRemoteConfig.xcframework/ios-arm64")
+    echo ""
+    ;;
+  "AppticsRemoteConfig.xcframework/macos-arm64_x86_64")
     echo ""
     ;;
   "AppticsRemoteConfig.xcframework/watchos-arm64_i386_x86_64-simulator")
+    echo "simulator"
+    ;;
+  "AppticsRemoteConfig.xcframework/ios-arm64_x86_64-maccatalyst")
+    echo "maccatalyst"
+    ;;
+  "AppticsRemoteConfig.xcframework/ios-arm64_x86_64-simulator")
     echo "simulator"
     ;;
   esac
@@ -47,29 +47,29 @@ variant_for_slice()
 archs_for_slice()
 {
   case "$1" in
+  "AppticsRemoteConfig.xcframework/tvos-arm64")
+    echo "arm64"
+    ;;
+  "AppticsRemoteConfig.xcframework/watchos-arm64_arm64_32_armv7k")
+    echo "arm64 arm64_32 armv7k"
+    ;;
+  "AppticsRemoteConfig.xcframework/tvos-arm64_x86_64-simulator")
+    echo "arm64 x86_64"
+    ;;
   "AppticsRemoteConfig.xcframework/ios-arm64")
     echo "arm64"
+    ;;
+  "AppticsRemoteConfig.xcframework/macos-arm64_x86_64")
+    echo "arm64 x86_64"
+    ;;
+  "AppticsRemoteConfig.xcframework/watchos-arm64_i386_x86_64-simulator")
+    echo "arm64 i386 x86_64"
     ;;
   "AppticsRemoteConfig.xcframework/ios-arm64_x86_64-maccatalyst")
     echo "arm64 x86_64"
     ;;
   "AppticsRemoteConfig.xcframework/ios-arm64_x86_64-simulator")
     echo "arm64 x86_64"
-    ;;
-  "AppticsRemoteConfig.xcframework/macos-arm64_x86_64")
-    echo "arm64 x86_64"
-    ;;
-  "AppticsRemoteConfig.xcframework/tvos-arm64")
-    echo "arm64"
-    ;;
-  "AppticsRemoteConfig.xcframework/tvos-arm64_x86_64-simulator")
-    echo "arm64 x86_64"
-    ;;
-  "AppticsRemoteConfig.xcframework/watchos-arm64_arm64_32_armv7k")
-    echo "arm64 arm64_32 armv7k"
-    ;;
-  "AppticsRemoteConfig.xcframework/watchos-arm64_i386_x86_64-simulator")
-    echo "arm64 i386 x86_64"
     ;;
   esac
 }

@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/KSCrashFramework.h</key>
 		<data>
-		Wkv9dTa5lfH7WIO3qyIHsQVvEEA=
+		BMRmctEHLntD+a6FOLupdV7n2SY=
 		</data>
 		<key>Headers/KSCrashInstallation+Alert.h</key>
 		<data>
@@ -39,6 +39,10 @@
 		<key>Headers/KSCrashInstallationEmail.h</key>
 		<data>
 		WSjPdDo/yQtl0/pvjHUq2QBPzXg=
+		</data>
+		<key>Headers/KSCrashInstallationQuincyHockey.h</key>
+		<data>
+		JU1+m3cQTMX65QbaboB9G1x4igg=
 		</data>
 		<key>Headers/KSCrashInstallationStandard.h</key>
 		<data>
@@ -104,6 +108,10 @@
 		<data>
 		KHw2RJeVNLAVWmKQpdhzu07FErg=
 		</data>
+		<key>Headers/KSCrashReportSinkQuincyHockey.h</key>
+		<data>
+		HqYSgMvrqI/mR+aMytHk5tu/tG0=
+		</data>
 		<key>Headers/KSCrashReportSinkStandard.h</key>
 		<data>
 		ZMkXgpbdi/DsTX2El3VFFiSWuOI=
@@ -134,11 +142,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		qG6Gx4qlBAf6Ii0vf9Z7WUmBOPw=
+		Di5QR4IMmcJiH5BckSzgZ6jV534=
 		</data>
-		<key>LICENSE.txt</key>
+		<key>LICENSE.TXT</key>
 		<data>
-		n7rSP+Ex/MKT2ZssUXuZDaovCm4=
+		SuYitqYPMq09CjLis663lpu2TN4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -404,11 +412,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Wkv9dTa5lfH7WIO3qyIHsQVvEEA=
+			BMRmctEHLntD+a6FOLupdV7n2SY=
 			</data>
 			<key>hash2</key>
 			<data>
-			iFxoyjcEU2c19M8VU4OMa05jxl1cY8SQMwndPOQoYoo=
+			/nTvLvj9gDS1CdHqeOgOFmXzgnue6fleJ4JssTeBTNo=
 			</data>
 		</dict>
 		<key>Headers/KSCrashInstallation+Alert.h</key>
@@ -464,6 +472,17 @@
 			<key>hash2</key>
 			<data>
 			ID3z3OpvTJxSkUuvghJBd2F2pPPBX9P+bW/lZ+TG4m0=
+			</data>
+		</dict>
+		<key>Headers/KSCrashInstallationQuincyHockey.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			JU1+m3cQTMX65QbaboB9G1x4igg=
+			</data>
+			<key>hash2</key>
+			<data>
+			dzGz9xue3H3JJUc4bkRJJw9wYZPwZkyUuFot2QYglGE=
 			</data>
 		</dict>
 		<key>Headers/KSCrashInstallationStandard.h</key>
@@ -642,6 +661,17 @@
 			9T0Lk9uas9BnFHwobfhcRwouZYRUCAuQFc/8fJ28wP0=
 			</data>
 		</dict>
+		<key>Headers/KSCrashReportSinkQuincyHockey.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HqYSgMvrqI/mR+aMytHk5tu/tG0=
+			</data>
+			<key>hash2</key>
+			<data>
+			g7iws+1KG820sTZ/z0QB8RkRh3597TgvzCpMnp39VU4=
+			</data>
+		</dict>
 		<key>Headers/KSCrashReportSinkStandard.h</key>
 		<dict>
 			<key>hash</key>
@@ -719,15 +749,15 @@
 			SU2ltYkydeGwkzDRzOh3a3Mx9vX7p+V6UdcnEapCLbk=
 			</data>
 		</dict>
-		<key>LICENSE.txt</key>
+		<key>LICENSE.TXT</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			n7rSP+Ex/MKT2ZssUXuZDaovCm4=
+			SuYitqYPMq09CjLis663lpu2TN4=
 			</data>
 			<key>hash2</key>
 			<data>
-			GGxfAZKnVHFKflQiM92qrSh0VibgrTLjWNP1rwCvuEo=
+			chyxHeYY/Pm7t9JaOJIHvyInNX5mlLwyarMqZpn5uVE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
