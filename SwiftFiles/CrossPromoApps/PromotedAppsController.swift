@@ -197,7 +197,7 @@ struct promotedDatasource {
             }
             
         
-        if let separatorColor = crossPromoTheme.tableViewSeparatorColor {
+        if let separatorColor = crossPromoTheme.ap_tableViewSeparatorColor {
             tblView.separatorColor = separatorColor
         }
         

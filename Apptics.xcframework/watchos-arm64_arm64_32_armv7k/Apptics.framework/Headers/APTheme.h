@@ -55,7 +55,7 @@ typedef enum : NSInteger {
 -(UIColor *_Nullable)switchThumbTintColor;
 -(UIColor *_Nullable)switchTintColor;
 -(CGFloat) switchScale;
--(UIColor *_Nullable)tableViewSeparatorColor;
+-(UIColor *_Nullable)ap_tableViewSeparatorColor;
 
 -(UIFont *_Nullable)cellTextFont;
 -(UIFont *_Nullable)footerTextFont;
