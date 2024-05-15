@@ -53,8 +53,11 @@ extension FeedbackKit{
     
     @objc public func swift_load(){
         if #available(iOS 11.0, *) {
+            
             loadFontForCPResourceBundle()
+                    
             refreshTheme()
+            
             FeedbackTheme.sharedInstance.setTransparencySettingsEnabled = FeedbackKit.listener().setTransparencyStatus
             FeedbackTheme.sharedInstance.setMaskTextDefault = FeedbackKit.listener().maskText
             FeedbackTheme.sharedInstance.isfromClass = "FloatScreenshotEditor"
@@ -64,7 +67,9 @@ extension FeedbackKit{
     
     @objc public func getGalleryImages_swift(){
         loadFontForCPResourceBundle()
+        
         refreshTheme()
+        
         if let imageData = UserDefaults.standard.object(forKey: "apptics_imageGallery_swift") as? Data,
          let image = UIImage(data: imageData) {
             FeedbackTheme.sharedInstance.gotImageFromgallery = image
@@ -79,3 +84,10 @@ extension FeedbackKit{
         
 }
 
+
+//ipad             let imageURL = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first!.appendingPathComponent("Apptics01-December-2022-12-19-20.png")
+
+//            let imageURL = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first!.appendingPathComponent("Apptics01-December-2022-12-42-00.png")
+//            print(imageURL)
+//            FeedbackTheme.sharedInstance.imageLocation = imageURL
+//            screenshoteditor = FloatScreenshotEditor()
