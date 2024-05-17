@@ -217,8 +217,10 @@ public class FloatScrollview:UIViewController{
     
 //MARK: hide view for next dismiss 1action
     @objc func viewHideandDismiss(){
-        self.ScreenshotsView.isHidden = true
-    }
+            DispatchQueue.main.async {
+                self.ScreenshotsView.isHidden = true
+            }
+        }
 }
 
 
