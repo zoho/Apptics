@@ -36,6 +36,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface FKCustomHandlerManager : NSObject
 @property (nonatomic) id <FKCustomHandler> sharedCustomHandler;
+@property (nonatomic, strong) UIWindow *alertWindow;
 +(FKCustomHandlerManager*) sharedHandlerManager;
 +(void) setCustomHandler:(id <FKCustomHandler>) handler;
 

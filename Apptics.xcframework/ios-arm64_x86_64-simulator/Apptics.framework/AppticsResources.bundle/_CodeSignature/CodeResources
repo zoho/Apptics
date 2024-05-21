@@ -395,6 +395,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>or-IN.lproj/ZAnalyticsLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			IQOJtcWTy0PdxA/wkmds2YhCCyA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>pa.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1295,6 +1304,19 @@
 			<key>hash2</key>
 			<data>
 			rICeF2tXW3lje7H4wXpEyGMluNXh0wgxzDQLXbbWQ4c=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>or-IN.lproj/ZAnalyticsLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			IQOJtcWTy0PdxA/wkmds2YhCCyA=
+			</data>
+			<key>hash2</key>
+			<data>
+			78HWjFMlP3n4SAIKKKtB+zYOOByetjDI3TmMG+SFegA=
 			</data>
 			<key>optional</key>
 			<true/>

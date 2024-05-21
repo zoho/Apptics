@@ -159,7 +159,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ONFMzxka2i9E+OG8/N7zbsnHR5I=
+			RoPAfPyMJqhPHg2PDONfchvSj28=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -357,7 +357,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XLUUIys7Q7YB3IRQEv+wgEMVST8=
+			oiN43UYyKwu392XwUWmPLt2KvSs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -790,6 +790,24 @@
 			<key>hash</key>
 			<data>
 			1PePPly/fXmj90gE8FcHy1wsofs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>or-IN.lproj/NewBugViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HlSBuLjqTx7qhlEXM1/dsjBDLXw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>or-IN.lproj/ZBugSquashKitLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			i7wGXigELQsoP4l4BbugjbutQfw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1559,11 +1577,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ONFMzxka2i9E+OG8/N7zbsnHR5I=
+			RoPAfPyMJqhPHg2PDONfchvSj28=
 			</data>
 			<key>hash2</key>
 			<data>
-			amtdEEN0hW2tjKm9/cuUxik2Ymx6AnxKsCSuihyS+b0=
+			RNzPqQcfcyEuO2R9HOvOMHvG7XSF4ch6H0Wi2f/0XD4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1892,11 +1910,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XLUUIys7Q7YB3IRQEv+wgEMVST8=
+			oiN43UYyKwu392XwUWmPLt2KvSs=
 			</data>
 			<key>hash2</key>
 			<data>
-			s+uzyPPqGoE/WkhirYPvn/kc8GcU+2zWyrmcxWzRHAQ=
+			pkPU0isUyvP+Bjf+pV6Qc+3QKWd8p0SlMO8cqVb8Z5E=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -2521,6 +2539,32 @@
 			<key>hash2</key>
 			<data>
 			qKG0MNK2tENOJdvN6xHkKPIhBJjxGY8xc8hn4Hb42ig=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>or-IN.lproj/NewBugViewController.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HlSBuLjqTx7qhlEXM1/dsjBDLXw=
+			</data>
+			<key>hash2</key>
+			<data>
+			BwTUubp5+7sUi7mxszr/aOTpIv9Ksb32d6C+HgL4zm8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>or-IN.lproj/ZBugSquashKitLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			i7wGXigELQsoP4l4BbugjbutQfw=
+			</data>
+			<key>hash2</key>
+			<data>
+			obns+HPZ+LYVIu6BgEqxlbo0HuxdWMAv1Je1guitZNA=
 			</data>
 			<key>optional</key>
 			<true/>
