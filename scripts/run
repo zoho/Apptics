@@ -14,6 +14,7 @@ UUIDGEN="$(uuidgen)"
 ZA_VERSION_META_FILE_NAME="$UUIDGEN-apptics-version-meta.json"
 ZA_META_FILE_NAME="$UUIDGEN-apptics-meta"
 SYNC_TYPE="plist"
+PRESERVE_METADATA_IN_APPTICS_CONFIG=0
 HELP=0
 
 AP_INFO_FILE_NAME="$PRODUCT_SETTINGS_PATH" #INFOPLIST_FILE
@@ -48,6 +49,9 @@ LOG_FILE_PATH="${1#*=}"
 ;;
 --sync-type=*)
 SYNC_TYPE="${1#*=}"
+;;
+--preserve-app-metadata-in-config=*)
+PRESERVE_METADATA_IN_APPTICS_CONFIG=${1#*=}
 ;;
 *)
 printf "**********************************\n"
@@ -445,9 +449,9 @@ if [[ " ${SKIP_PROMPT_CONFIGURATIONS[@]} " =~ " ${CONFIGURATION} " ]]; then
   printf "*********************************************************************************************\n"
   printf "* Uploading dSYM for '${CONFIGURATION}' configuration, check $LOGNAME for more details *\n"
   printf "*********************************************************************************************\n"
-  sh "${COMMAND_PATH}" --skip-prompt --upload-dsym --upload-symbols-for-frameworks="$UPLOAD_SYMBOLS_FOR" --process-in-background >> $LOGNAME 2>&1 &
+  sh "${COMMAND_PATH}" --skip-prompt --upload-dsym --upload-symbols-for-frameworks="$UPLOAD_SYMBOLS_FOR" --process-in-background --preserve-app-metadata-in-config="$PRESERVE_METADATA_IN_APPTICS_CONFIG" >> $LOGNAME 2>&1 &
 else
-  sh "${COMMAND_PATH}" --skip-prompt --process-in-background >> $LOGNAME 2>&1 &
+  sh "${COMMAND_PATH}" --skip-prompt --process-in-background --preserve-app-metadata-in-config="$PRESERVE_METADATA_IN_APPTICS_CONFIG" >> $LOGNAME 2>&1 &
   printf "****************************************************\n"
   printf "* Skipped dSYMs upload for '${CONFIGURATION}' configuration, check $LOGNAME for more details *\n"
   printf "****************************************************\n"

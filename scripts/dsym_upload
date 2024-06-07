@@ -108,6 +108,9 @@ FAIL_ON_ERROR=1
 --upload-symbols-for-frameworks=*)
 UPLOAD_SYMBOLS_FOR="${1#*=}"
 ;;
+--preserve-app-metadata-in-config=*)
+PRESERVE_METADATA_IN_APPTICS_CONFIG=${1#*=}
+;;
 *)
 printf "**********************************\n"
 printf "* Error: Invalid argument passed.*\n"
@@ -136,11 +139,14 @@ do
 echo "Waiting for the info file to be copied at line number 132 ${TMP_AP_INFOPLIST_FILE}"
 sleep 1;
 done
+echo "PRESERVE_METADATA_IN_APPTICS_CONFIG :: ${PRESERVE_METADATA_IN_APPTICS_CONFIG}"
 
-echo $(/usr/libexec/PlistBuddy -c "Delete :APP_VERSION_META" "${ZA_INFOPLIST_FILE}")
-echo $(/usr/libexec/PlistBuddy -c "Delete :EVENTS_INFO" "${ZA_INFOPLIST_FILE}")
-echo $(/usr/libexec/PlistBuddy -c "Delete :API_INFO" "${ZA_INFOPLIST_FILE}")
-echo $(/usr/libexec/PlistBuddy -c "Delete :LAST_MODIFIED" "${ZA_INFOPLIST_FILE}")
+if [ $PRESERVE_METADATA_IN_APPTICS_CONFIG -eq 0 ];then
+    echo $(/usr/libexec/PlistBuddy -c "Delete :APP_VERSION_META" "${ZA_INFOPLIST_FILE}")
+    echo $(/usr/libexec/PlistBuddy -c "Delete :EVENTS_INFO" "${ZA_INFOPLIST_FILE}")
+    echo $(/usr/libexec/PlistBuddy -c "Delete :API_INFO" "${ZA_INFOPLIST_FILE}")
+    echo $(/usr/libexec/PlistBuddy -c "Delete :LAST_MODIFIED" "${ZA_INFOPLIST_FILE}")
+fi
     
 #echo $(/usr/libexec/PlistBuddy -c "Delete :AP_INFOPLIST_FILE" "${AP_INFO_FILE_NAME}")
 #echo $(/usr/libexec/PlistBuddy -c "Delete :AP_APP_GROUP_IDENTIFIER" "${AP_INFO_FILE_NAME}")
@@ -349,11 +355,12 @@ else
     done
 
     echo "Data from target to source - skip upload dsym : ${CM_ZA_INFOPLIST_FILE}"
-    echo $(/usr/libexec/PlistBuddy -c "Delete :APP_VERSION_META" "${ZA_INFOPLIST_FILE}")
-    echo $(/usr/libexec/PlistBuddy -c "Delete :EVENTS_INFO" "${ZA_INFOPLIST_FILE}")
-    echo $(/usr/libexec/PlistBuddy -c "Delete :API_INFO" "${ZA_INFOPLIST_FILE}")
-    echo $(/usr/libexec/PlistBuddy -c "Delete :LAST_MODIFIED" "${ZA_INFOPLIST_FILE}")
-
+    if [ $PRESERVE_METADATA_IN_APPTICS_CONFIG -eq 0 ];then
+        echo $(/usr/libexec/PlistBuddy -c "Delete :APP_VERSION_META" "${ZA_INFOPLIST_FILE}")
+        echo $(/usr/libexec/PlistBuddy -c "Delete :EVENTS_INFO" "${ZA_INFOPLIST_FILE}")
+        echo $(/usr/libexec/PlistBuddy -c "Delete :API_INFO" "${ZA_INFOPLIST_FILE}")
+        echo $(/usr/libexec/PlistBuddy -c "Delete :LAST_MODIFIED" "${ZA_INFOPLIST_FILE}")
+    fi
 #    echo $(/usr/libexec/PlistBuddy -c "Delete :AP_INFOPLIST_FILE" "${AP_INFO_FILE_NAME}")
 #    echo $(/usr/libexec/PlistBuddy -c "Delete :AP_APP_GROUP_IDENTIFIER" "${AP_INFO_FILE_NAME}")
     
