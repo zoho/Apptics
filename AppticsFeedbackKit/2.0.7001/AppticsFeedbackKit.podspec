@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
-spec.name             = "AppticsAnalytics"
+spec.name             = "AppticsFeedbackKit"
 spec.version          = "2.0.7000"
-spec.summary          = "Apptics iOS SDK"
+spec.summary          = "Apptics FeedbackKit for iOS"
 spec.license          = { :type => "MIT", :text=> <<-LICENSE
 MIT License
 Copyright (c) 2020 Zoho Corporation
@@ -27,69 +27,23 @@ spec.description = <<-DESC
 
 Apptics is a library that enables your app to send in-app usage reports and data securly to our servers. You can track Sessions, Screens, and we also offer Crash Reporting. With minimal initialization of the framework, you get these features without doing any other configuration.
 
-DESC
+  DESC
   
 spec.homepage         = "https://github.com/zoho/Apptics"
 spec.author           = { "Saravanan Selvam" => "ssaravanan@zohocorp.com", "Prakash Redrouthu" => "prakash.redrouthu@zohocorp.com","Jaikarthick" => "jaikarthick.jk@zohocorp.com" }
-spec.source = { :http => "https://github.com/zoho/Apptics/releases/download/#{spec.version}/Apptics.zip"}
+spec.source = { :http => "https://github.com/zoho/Apptics/releases/download/#{spec.version}/AppticsFeedbackKit.zip" }
 # spec.source = { :git => "https://github.com/zoho/Apptics.git", :tag=>"#{spec.version}"}
 
-spec.social_media_url = "http://zoho.com"
-spec.documentation_url = "https://prezoho.zohocorp.com/apptics/resources/SDK/iOS/integration.html"
-
 spec.ios.deployment_target = '9.1'
-spec.tvos.deployment_target = '9.0'
-spec.osx.deployment_target =  '10.10'
-spec.watchos.deployment_target = '2.0'
-spec.default_subspecs = 'CoreWithMXCrash'
+
+spec.default_subspecs = 'FeedbackKit'
 
 spec.requires_arc = true
 
-spec.subspec 'CoreWithMXCrash' do |an|
-an.dependency 'AppticsAnalytics/Apptics'
-an.dependency 'AppticsAnalytics/EventTracker'
-an.dependency 'AppticsAnalytics/ScreenTracker'
-an.ios.dependency 'AppticsAnalytics/MXCrashKit'
-an.osx.dependency 'AppticsAnalytics/CrashKit'
-an.tvos.dependency 'AppticsAnalytics/CrashKit'
-an.watchos.dependency 'AppticsAnalytics/CrashKit'
-end
-
-spec.subspec 'CoreWithKSCrash' do |ak|
-ak.dependency 'AppticsAnalytics/Apptics'
-ak.dependency 'AppticsAnalytics/EventTracker'
-ak.dependency 'AppticsAnalytics/ScreenTracker'
-ak.dependency 'AppticsAnalytics/CrashKit'
-end
-
-spec.subspec 'JWT' do |jwt|
-jwt.vendored_frameworks = 'Apptics/JWT.xcframework'
-end
-
-spec.subspec 'Apptics' do |ap|
-ap.vendored_frameworks = 'Apptics/Apptics.xcframework'
-ap.dependency 'AppticsAnalytics/JWT'
-end
-
-spec.subspec 'EventTracker' do |et|
-et.vendored_frameworks = 'Apptics/AppticsEventTracker.xcframework'
-end
-
-spec.subspec 'ScreenTracker' do |st|
-st.vendored_frameworks = 'Apptics/AppticsScreenTracker.xcframework'
-end
-
-spec.subspec 'KSCrash' do |ks|
-ks.vendored_frameworks = 'Apptics/KSCrash.xcframework'
-end
-
-spec.subspec 'CrashKit' do |ck|
-ck.vendored_frameworks = 'Apptics/AppticsCrashKit.xcframework'
-ck.dependency 'AppticsAnalytics/KSCrash'
-end
-
-spec.subspec 'MXCrashKit' do |mx|
-mx.vendored_frameworks = 'Apptics/AppticsMXCrashKit.xcframework'
+spec.subspec 'FeedbackKit' do |fk|
+fk.platform     = :ios, '9.1'
+fk.vendored_frameworks = 'AppticsFeedbackKit.xcframework'
+fk.ios.dependency 'AppticsAnalytics/Apptics', "#{spec.version}"
 end
 
 end

@@ -9,10 +9,10 @@
 
 Pod::Spec.new do |spec|
 
-  spec.name             = "Apptics-Swift"
-  spec.module_name      = "Apptics_Swift"
+  spec.name             = "AppticsExtension"
+  spec.module_name      = "AppticsExtension"
   spec.version          = "2.0.7000"
-  spec.summary          = "An in-app usage tracking and analytics library for iOS"
+  spec.summary          = "An in-app usage tracking and analytics library for iOS app extensions"
   spec.license          = { :type => "MIT", :text=> <<-LICENSE
   MIT License
   Copyright (c) 2018 Zoho Corporation Pvt. Ltd
@@ -47,28 +47,18 @@ DESC
     spec.requires_arc = true
   spec.swift_version = '5.0'
   
-  spec.ios.frameworks = 'UIKit','StoreKit'
 
     spec.ios.deployment_target = '9.1'
     spec.tvos.deployment_target = '9.0'
     spec.osx.deployment_target =  '10.10'
     spec.watchos.deployment_target = '2.0'
 
-    spec.default_subspecs = 'Analytics'
+    spec.default_subspecs = 'Extension'
 
-	#spec.dependency 'Apptics-SDK', "#{spec.version}"
-
-	spec.subspec 'Analytics' do |co|
-	co.source_files        = 'SwiftFiles/Analytics/*.swift'
-    co.resources  = 'SwiftFiles/AppticsSwift/*.{xcprivacy}'
-    co.dependency 'AppticsAnalytics', "#{spec.version}"
-	end
- 
-    spec.subspec 'AnalyticsWithKSCrash' do |ak|
-    ak.source_files        = 'SwiftFiles/Analytics/*.swift'
-    ak.resources  = 'SwiftFiles/AppticsSwift/*.{xcprivacy}'
-    ak.dependency 'AppticsAnalytics/CoreWithKSCrash', "#{spec.version}"
-    end
-  	
+  spec.subspec 'Extension' do |ex|
+      ex.source_files        = 'SwiftFiles/AppExtension/*.swift'
+      ex.ios.deployment_target = '9.1'
+      ex.resources  = 'SwiftFiles/AppExtension/*.{xcprivacy}'
+  end
 end
 
