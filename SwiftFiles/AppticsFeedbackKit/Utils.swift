@@ -153,15 +153,9 @@ public struct FontIconText {
 }
 
 
-#if SWIFT_PACKAGE
-public let bundles = Bundle.module
-#else
-public let bundles = Bundle(for: GradientButton.self)
-#endif
-
-
 public var appticsFontName = "AppticsSdkIcons"
 public var appFontsize:CGFloat = 30.0
+public let bundles = Bundle(for: GradientButton.self)
 public let notificationLoadAnonymChatConversation = "com.apticssdk.AnonymChatConversation"
 public let notificationbadgereloadKey = "com.apticssdk.badgereload"
 public let notificationScreenreloadKey = "com.appticssdk.Screenshots.reload"

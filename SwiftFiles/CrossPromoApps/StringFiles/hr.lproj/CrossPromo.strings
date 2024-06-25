@@ -1,0 +1,22 @@
+/*
+ Localizable.strings
+ Apptics
+ 
+ Created by Prakash Red.
+ Copyright © 2021 zoho. All rights reserved.
+ */
+
+"zanalytics.crosspromotion.navbar.button.title.back" = "Natrag";
+"zanalytics.crosspromotion.title" = "Više aplikacija";
+"zanalytics.crosspromotion.otherapps" = "Ostale aplikacije";
+"zanalytics.crosspromotion.relevantapps" = "Odgovarajuće aplikacije";
+"zanalytics.crosspromotion.noappstodisplay" = "Nema aplikacija za prikaz";
+"zanalytics.crosspromotion.nodatafound" = "Nisu pronađeni podaci";
+"zanalytics.crosspromotion.somethingwrong" = "Dogodio se problem";
+"zanalytics.crosspromotion.nointernet" = "Nema internetske veze";
+"zanalytics.crosspromotion.open" = "OTVORI";
+"zanalytics.crosspromotion.install" = "Instaliraj";
+"zanalytics.crosspromotion.get" = "OSTVARI POPUST OD";
+"zanalytics.crosspromotion.appsyoumaylike" = "Aplikacije koje bi vam se mogle svidjeti";
+"zanalytics.crosspromotion.moreappsfromus" = "Više naših aplikacija";
+"zanalytics.crosspromotion.viewallapps" = "Prikaži sve aplikacije";
