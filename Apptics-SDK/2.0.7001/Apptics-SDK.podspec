@@ -46,7 +46,7 @@ spec.requires_arc = true
 
 spec.subspec 'Analytics' do |an|
 an.dependency 'Apptics-SDK/Scripts'
-an.dependency 'AppticsAnalytics', "#{spec.version}"
+an.dependency 'AppticsAnalytics/CoreWithMXCrash', "#{spec.version}"
 end
 
 spec.subspec 'AnalyticsWithKScrash' do |an|

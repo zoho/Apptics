@@ -61,7 +61,7 @@ DESC
 	spec.subspec 'Analytics' do |co|
 	co.source_files        = 'SwiftFiles/Analytics/*.swift'
     co.resources  = 'SwiftFiles/AppticsSwift/*.{xcprivacy}'
-    co.dependency 'AppticsAnalytics', "#{spec.version}"
+    co.dependency 'AppticsAnalytics/CoreWithMXCrash', "#{spec.version}"
 	end
  
     spec.subspec 'AnalyticsWithKSCrash' do |ak|
