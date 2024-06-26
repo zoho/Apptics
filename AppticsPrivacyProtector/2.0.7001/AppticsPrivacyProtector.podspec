@@ -34,14 +34,14 @@ spec.author           = { "Saravanan Selvam" => "ssaravanan@zohocorp.com", "Prak
 spec.source = { :http => "https://github.com/zoho/Apptics/releases/download/#{spec.version}/AppticsPrivacyProtector.zip" }
 # spec.source = { :git => "https://github.com/zoho/Apptics.git", :tag=>"#{spec.version}"}
 
-spec.ios.deployment_target = '9.1'
+spec.ios.deployment_target = '12.0'
 
 spec.default_subspecs = 'AppticsPrivacyKit'
 
 spec.requires_arc = true
 
 spec.subspec 'AppticsPrivacyKit' do |fk|
-fk.platform     = :ios, '9.1'
+fk.platform     = :ios, '12.0'
 fk.vendored_frameworks = 'AppticsPrivacyProtector.xcframework'
 end
 

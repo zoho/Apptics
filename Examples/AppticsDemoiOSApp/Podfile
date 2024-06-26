@@ -21,18 +21,18 @@ target 'AppticsDemo' do
 ## Apptics for Objc
 #pod 'AppticsExtension', apptics_version , :source => source_url
 # Apptics-SDK for Objc
-pod 'Apptics-SDK/AnalyticsWithKScrash', apptics_version , :source => source_url
+pod 'Apptics-SDK', apptics_version , :source => source_url
 ## Apptics for Swift
 #pod 'Apptics-Swift', apptics_version , :source => source_url
 ## Apptics Feedback Kit
 pod 'AppticsFeedbackKitSwift', apptics_version , :source => source_url
-### Apptics In-App Update
+#### Apptics In-App Update
 pod 'AppticsInAppUpdate', apptics_version , :source => source_url
-### Apptics Rate us
+#### Apptics Rate us
 pod 'AppticsRateUs', apptics_version , :source => source_url
-### Apptics RemoteConfig
+#### Apptics RemoteConfig
 pod 'AppticsRemoteConfig', apptics_version , :source => source_url
-### Apptics Api Tracker
+#### Apptics Api Tracker
 pod 'AppticsApiTracker', apptics_version , :source => source_url
 ### Apptics Cross Promotion
 pod 'AppticsCrossPromotion', apptics_version , :source => source_url
