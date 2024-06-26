@@ -1,5 +1,15 @@
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Apptics_Swift.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppticsCrossPromotion.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppticsFeedbackKitSwift.framework
 ${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Apptics.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppticsCrashKit.framework
 ${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppticsEventTracker.framework
 ${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JWT.framework
-${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppticsMXCrashKit.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KSCrash.framework
 ${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppticsScreenTracker.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppticsApiTracker.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppticsFeedbackKit.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppticsInAppUpdate.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppticsPrivacyProtector.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppticsRateUs.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppticsRemoteConfig.framework

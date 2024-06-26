@@ -15,29 +15,30 @@ target 'AppticsDemo' do
 
 # Pods for Apptics, either one is required based on your requirement.
 
-pod 'AppticsAnalytics/CoreWithMXCrash', apptics_version , :source => source_url
+#pod 'AppticsAnalytics', apptics_version , :source => source_url
 #pod 'AppticsAnalytics/KSCrash', apptics_version , :source => source_url
 
 ## Apptics for Objc
 #pod 'AppticsExtension', apptics_version , :source => source_url
 # Apptics-SDK for Objc
 #pod 'Apptics-SDK', apptics_version , :source => source_url
-### Apptics for Swift
-##pod 'Apptics-Swift', apptics_version , :source => source_url
-### Apptics Feedback Kit
-#pod 'AppticsFeedbackKitSwift', apptics_version , :source => source_url
-##### Apptics In-App Update
-#pod 'AppticsInAppUpdate', apptics_version , :source => source_url
-##### Apptics Rate us
-#pod 'AppticsRateUs', apptics_version , :source => source_url
-##### Apptics RemoteConfig
-#pod 'AppticsRemoteConfig', apptics_version , :source => source_url
-##### Apptics Api Tracker
-#pod 'AppticsApiTracker', apptics_version , :source => source_url
-#### Apptics Cross Promotion
-#pod 'AppticsCrossPromotion', apptics_version , :source => source_url
-##
-#pod 'AppticsPrivacyProtector', apptics_version , :source => source_url
+pod 'Apptics-Swift/AnalyticsWithKSCrash', apptics_version , :source => source_url
+## Apptics for Swift
+#pod 'Apptics-Swift', apptics_version , :source => source_url
+## Apptics Feedback Kit
+pod 'AppticsFeedbackKitSwift', apptics_version , :source => source_url
+#### Apptics In-App Update
+pod 'AppticsInAppUpdate', apptics_version , :source => source_url
+#### Apptics Rate us
+pod 'AppticsRateUs', apptics_version , :source => source_url
+#### Apptics RemoteConfig
+pod 'AppticsRemoteConfig', apptics_version , :source => source_url
+#### Apptics Api Tracker
+pod 'AppticsApiTracker', apptics_version , :source => source_url
+### Apptics Cross Promotion
+pod 'AppticsCrossPromotion', apptics_version , :source => source_url
+#
+pod 'AppticsPrivacyProtector', apptics_version , :source => source_url
 
   script_phase :name => 'Apptics pre build', :script => 'sh "./Pods/Apptics-SDK/scripts/run" --upload-symbols-for-configurations="Release, AppStore"', :execution_position => :before_compile
 #script_phase :name => 'Apptics pre build', :script => 'sh "${BUILD_DIR%Build/*}SourcePackages/checkouts/Apptics-SP/scripts/run" --upload-symbols-for-configurations="Release, Appstore" "', :execution_position => :before_compile

@@ -49,7 +49,7 @@ an.dependency 'Apptics-SDK/Scripts'
 an.dependency 'AppticsAnalytics/CoreWithMXCrash', "#{spec.version}"
 end
 
-spec.subspec 'AnalyticsWithKScrash' do |an|
+spec.subspec 'AnalyticsWithKSCrash' do |an|
 an.dependency 'Apptics-SDK/Scripts'
 an.dependency 'AppticsAnalytics/CoreWithKSCrash', "#{spec.version}"
 end

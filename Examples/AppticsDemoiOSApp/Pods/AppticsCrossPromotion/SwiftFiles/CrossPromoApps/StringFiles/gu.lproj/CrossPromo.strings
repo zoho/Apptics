@@ -1,0 +1,22 @@
+/*
+ Localizable.strings
+ Apptics
+ 
+ Created by Prakash Red.
+ Copyright © 2021 zoho. All rights reserved.
+ */
+
+"zanalytics.crosspromotion.navbar.button.title.back" = "પાછળ";
+"zanalytics.crosspromotion.title" = "વધુ ઍપ્સ";
+"zanalytics.crosspromotion.otherapps" = "અન્ય ઍપ્સ";
+"zanalytics.crosspromotion.relevantapps" = "સંબંધિત ઍપ્સ";
+"zanalytics.crosspromotion.noappstodisplay" = "પ્રદર્શિત કરવા માટે કોઈ ઍપ્સ નથી";
+"zanalytics.crosspromotion.nodatafound" = "કોઇ ડેટા મળ્યા નહીં";
+"zanalytics.crosspromotion.somethingwrong" = "કંઇક ખોટું થયું";
+"zanalytics.crosspromotion.nointernet" = "કોઇ ઇન્ટરનેટ જોડાણ નથી";
+"zanalytics.crosspromotion.open" = "ખુલ્લું";
+"zanalytics.crosspromotion.install" = "સ્થાપિત કરો";
+"zanalytics.crosspromotion.get" = "મેળવો";
+"zanalytics.crosspromotion.appsyoumaylike" = "તમને ગમતી ઍપ્સ";
+"zanalytics.crosspromotion.moreappsfromus" = "અમારી તરફથી વધુ ઍપ";
+"zanalytics.crosspromotion.viewallapps" = "બધી ઍપ્સ જુઓ";

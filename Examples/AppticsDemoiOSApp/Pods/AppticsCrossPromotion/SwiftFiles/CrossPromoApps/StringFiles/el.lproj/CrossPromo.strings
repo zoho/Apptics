@@ -1,0 +1,23 @@
+/*
+ Localizable.strings
+ Apptics
+ 
+ Created by Prakash Red.
+ Copyright © 2021 zoho. All rights reserved.
+ */
+
+"zanalytics.crosspromotion.navbar.button.title.back" = "Πίσω";
+"zanalytics.crosspromotion.title" = "Περισσότερες εφαρμογές";
+"zanalytics.crosspromotion.otherapps" = "Άλλες εφαρμογές";
+"zanalytics.crosspromotion.relevantapps" = "Σχετικές εφαρμογές";
+"zanalytics.crosspromotion.noappstodisplay" = "Δεν υπάρχουν εφαρμογές προς προβολή";
+"zanalytics.crosspromotion.nodatafound" = "Δεν βρέθηκαν δεδομένα";
+"zanalytics.crosspromotion.somethingwrong" = "Κάτι πήγε λάθος";
+"zanalytics.crosspromotion.nointernet" = "Δεν υπάρχει σύνδεση στο διαδίκτυο";
+"zanalytics.crosspromotion.open" = "ΑΝΟΙΓΜΑ";
+"zanalytics.crosspromotion.install" = "Εγκατάσταση";
+"zanalytics.crosspromotion.get" = "ΛΗΨΗ";
+"zanalytics.crosspromotion.appsyoumaylike" = "Εφαρμογές που ίσως σας αρέσουν";
+"zanalytics.crosspromotion.moreappsfromus" = "Περισσότερες εφαρμογές από εμάς";
+"zanalytics.crosspromotion.viewallapps" = "Προβολή όλων των εφαρμογών";
+

@@ -176,25 +176,55 @@ code_sign_if_enabled() {
 }
 
 if [[ "$CONFIGURATION" == "AppStore" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/Apptics-Swift/Apptics_Swift.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/AppticsCrossPromotion/AppticsCrossPromotion.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/AppticsFeedbackKitSwift/AppticsFeedbackKitSwift.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/Apptics/Apptics.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/CrashKit/AppticsCrashKit.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/EventTracker/AppticsEventTracker.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/JWT/JWT.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/MXCrashKit/AppticsMXCrashKit.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/KSCrash/KSCrash.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/ScreenTracker/AppticsScreenTracker.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsApiTracker/ApiTracker/AppticsApiTracker.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsFeedbackKit/FeedbackKit/AppticsFeedbackKit.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsInAppUpdate/AppUpdate/AppticsInAppUpdate.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsPrivacyProtector/AppticsPrivacyKit/AppticsPrivacyProtector.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsRateUs/RateUs/AppticsRateUs.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsRemoteConfig/RemoteConfig/AppticsRemoteConfig.framework"
 fi
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/Apptics-Swift/Apptics_Swift.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/AppticsCrossPromotion/AppticsCrossPromotion.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/AppticsFeedbackKitSwift/AppticsFeedbackKitSwift.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/Apptics/Apptics.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/CrashKit/AppticsCrashKit.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/EventTracker/AppticsEventTracker.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/JWT/JWT.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/MXCrashKit/AppticsMXCrashKit.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/KSCrash/KSCrash.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/ScreenTracker/AppticsScreenTracker.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsApiTracker/ApiTracker/AppticsApiTracker.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsFeedbackKit/FeedbackKit/AppticsFeedbackKit.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsInAppUpdate/AppUpdate/AppticsInAppUpdate.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsPrivacyProtector/AppticsPrivacyKit/AppticsPrivacyProtector.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsRateUs/RateUs/AppticsRateUs.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsRemoteConfig/RemoteConfig/AppticsRemoteConfig.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/Apptics-Swift/Apptics_Swift.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/AppticsCrossPromotion/AppticsCrossPromotion.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/AppticsFeedbackKitSwift/AppticsFeedbackKitSwift.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/Apptics/Apptics.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/CrashKit/AppticsCrashKit.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/EventTracker/AppticsEventTracker.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/JWT/JWT.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/MXCrashKit/AppticsMXCrashKit.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/KSCrash/KSCrash.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/ScreenTracker/AppticsScreenTracker.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsApiTracker/ApiTracker/AppticsApiTracker.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsFeedbackKit/FeedbackKit/AppticsFeedbackKit.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsInAppUpdate/AppUpdate/AppticsInAppUpdate.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsPrivacyProtector/AppticsPrivacyKit/AppticsPrivacyProtector.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsRateUs/RateUs/AppticsRateUs.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsRemoteConfig/RemoteConfig/AppticsRemoteConfig.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait
