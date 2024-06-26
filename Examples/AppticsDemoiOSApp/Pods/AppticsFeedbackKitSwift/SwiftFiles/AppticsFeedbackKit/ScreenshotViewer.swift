@@ -129,6 +129,7 @@ public class FloatScrollview:UIViewController{
 //MARK: floating view setup
     public func addFloatingView() {
         ScreenshotsView = ScreenShotView(frame: CGRect(x: 0, y: 0, width:view.frame.size.width , height: view.frame.size.height))
+       
         changeScreenshotViewColor(color: FeedbackTheme.sharedInstance.ViewColor)
         ScreenshotsView.doneBttn.addTarget(self, action:#selector(self.donebuttonClicked), for: .touchUpInside)
         ScreenshotsView.hideBttn.addTarget(self, action:#selector(self.cancellbuttonClicked), for: .touchUpInside)
@@ -177,7 +178,7 @@ public class FloatScrollview:UIViewController{
         FeedbackKit.listener().feedback_KitType = "ZAScreenShot"
         FeedbackKit.listener().feedback_KitScreenCancel = "ZAScreenShotTriggered"
         DispatchQueue.main.async {
-            FeedbackKit.setMessageBody("")
+//            FeedbackKit.setMessageBody("")
             FeedbackKit.showFeedback()
         }
     }
@@ -217,7 +218,9 @@ public class FloatScrollview:UIViewController{
     
 //MARK: hide view for next dismiss 1action
     @objc func viewHideandDismiss(){
-        self.ScreenshotsView.isHidden = true
+        DispatchQueue.main.async {
+            self.ScreenshotsView.isHidden = true
+        }
     }
 }
 

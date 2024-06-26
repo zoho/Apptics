@@ -18,7 +18,7 @@ echo "mkdir -p ${CONFIGURATION_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}"
 mkdir -p "${CONFIGURATION_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}"
 
 COCOAPODS_PARALLEL_CODE_SIGN="${COCOAPODS_PARALLEL_CODE_SIGN:-false}"
-SWIFT_STDLIB_PATH="${DT_TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}"
+SWIFT_STDLIB_PATH="${TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}"
 BCSYMBOLMAP_DIR="BCSymbolMaps"
 
 
@@ -41,7 +41,7 @@ install_framework()
 
   if [ -L "${source}" ]; then
     echo "Symlinked..."
-    source="$(readlink "${source}")"
+    source="$(readlink -f "${source}")"
   fi
 
   if [ -d "${source}/${BCSYMBOLMAP_DIR}" ]; then
@@ -176,53 +176,50 @@ code_sign_if_enabled() {
 }
 
 if [[ "$CONFIGURATION" == "AppStore" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/Apptics-SDK/Apptics_SDK.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Apptics-Swift/Apptics_Swift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/AppticsCrossPromotion/AppticsCrossPromotion.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/AppticsFeedbackKitSwift/AppticsFeedbackKitSwift.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/Apptics/Apptics.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/CrashKit/AppticsCrashKit.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/EventTracker/AppticsEventTracker.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/JWT/JWT.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/KSCrash/KSCrash.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/MXCrashKit/AppticsMXCrashKit.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/ScreenTracker/AppticsScreenTracker.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsApiTracker/ApiTracker/AppticsApiTracker.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsFeedbackKit/FeedbackKit/AppticsFeedbackKit.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsInAppUpdate/AppUpdate/AppticsInAppUpdate.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsPrivacyProtector/AppticsPrivacyKit/AppticsPrivacyProtector.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsRateUs/RateUs/AppticsRateUs.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsRemoteConfig/RemoteConfig/AppticsRemoteConfig.framework"
 fi
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/Apptics-SDK/Apptics_SDK.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Apptics-Swift/Apptics_Swift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/AppticsCrossPromotion/AppticsCrossPromotion.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/AppticsFeedbackKitSwift/AppticsFeedbackKitSwift.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/Apptics/Apptics.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/CrashKit/AppticsCrashKit.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/EventTracker/AppticsEventTracker.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/JWT/JWT.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/KSCrash/KSCrash.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/MXCrashKit/AppticsMXCrashKit.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/ScreenTracker/AppticsScreenTracker.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsApiTracker/ApiTracker/AppticsApiTracker.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsFeedbackKit/FeedbackKit/AppticsFeedbackKit.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsInAppUpdate/AppUpdate/AppticsInAppUpdate.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsPrivacyProtector/AppticsPrivacyKit/AppticsPrivacyProtector.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsRateUs/RateUs/AppticsRateUs.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsRemoteConfig/RemoteConfig/AppticsRemoteConfig.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/Apptics-SDK/Apptics_SDK.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Apptics-Swift/Apptics_Swift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/AppticsCrossPromotion/AppticsCrossPromotion.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/AppticsFeedbackKitSwift/AppticsFeedbackKitSwift.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/Apptics/Apptics.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/CrashKit/AppticsCrashKit.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/EventTracker/AppticsEventTracker.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/JWT/JWT.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/KSCrash/KSCrash.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/MXCrashKit/AppticsMXCrashKit.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/ScreenTracker/AppticsScreenTracker.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsApiTracker/ApiTracker/AppticsApiTracker.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsFeedbackKit/FeedbackKit/AppticsFeedbackKit.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsInAppUpdate/AppUpdate/AppticsInAppUpdate.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsPrivacyProtector/AppticsPrivacyKit/AppticsPrivacyProtector.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsRateUs/RateUs/AppticsRateUs.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsRemoteConfig/RemoteConfig/AppticsRemoteConfig.framework"
 fi

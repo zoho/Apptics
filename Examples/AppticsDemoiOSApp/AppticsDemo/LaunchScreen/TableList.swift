@@ -6,6 +6,7 @@ enum TableListType {
     case Crash
     case Nonfatal
     case Feedback
+    case securecontainer
     case Appupdate
     case Apitracking
     case Login
@@ -25,6 +26,7 @@ extension TableList {
         TableList(title: "Crash", type: .Crash),
         TableList(title: "Add Non-fatal", type: .Nonfatal),
         TableList(title: "Feedback", type: .Feedback),
+        TableList(title: "Secure Container", type: .securecontainer),
         TableList(title: "Check for update", type: .Appupdate),
         TableList(title: "APIs tracking", type: .Apitracking),
         TableList(title: "Login", type: .Login),
@@ -34,3 +36,21 @@ extension TableList {
     ]
 }
 
+enum SecureTableListType {
+    case secureElements
+    case secureViews
+    case secureWindow
+}
+
+struct SecureTableList {
+    var title: String
+    var type: SecureTableListType
+}
+
+extension SecureTableList {
+    static var data = [
+        SecureTableList(title: "Secure UI Elements", type: .secureElements),
+        SecureTableList(title: "Secure Views", type: .secureViews),
+        SecureTableList(title: "Monitor Screen Recording", type: .secureWindow),
+    ]
+}

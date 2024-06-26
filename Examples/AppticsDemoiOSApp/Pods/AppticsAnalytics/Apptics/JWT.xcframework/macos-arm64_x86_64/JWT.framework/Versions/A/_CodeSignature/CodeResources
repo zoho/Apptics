@@ -6,7 +6,7 @@
 	<dict>
 		<key>Resources/Info.plist</key>
 		<data>
-		B61m6y+D2TJk2C9v+dQt5szxRGo=
+		vq7O5dD5mzCQAqx43TGVBoT0iRo=
 		</data>
 		<key>Resources/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -17,10 +17,6 @@
 	<dict>
 		<key>Headers/JWT.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			EmhVWsTnL0VP7DwluCsaezTWLks=
-			</data>
 			<key>hash2</key>
 			<data>
 			p2W9HkbliWav5wc433nq0IaPdXAialxFB/801hUHfmc=
@@ -28,10 +24,6 @@
 		</dict>
 		<key>Headers/JWTAlgorithm.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ZYVxN7EDIxInT6ie/U82XufJMNc=
-			</data>
 			<key>hash2</key>
 			<data>
 			W0UCSrg5HRpukh0zMha1y2/M67cgegnHN/VEf2EI5Yw=
@@ -39,10 +31,6 @@
 		</dict>
 		<key>Headers/JWTAlgorithmAsymmetricBase.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			5tol+qnjbQEugBQXhM3tq8q55xE=
-			</data>
 			<key>hash2</key>
 			<data>
 			59br39uxAxoRGdsjMQd8GYKIhM9nUUAdv2gA/ymvCHk=
@@ -50,10 +38,6 @@
 		</dict>
 		<key>Headers/JWTAlgorithmDataHolder+FluentStyle.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			q+Pv2aMuS8ZbWNnMKmK2I8sClnM=
-			</data>
 			<key>hash2</key>
 			<data>
 			CRniUWfgmk0FBMh4Xvp3AHOQmRuC0n1/S54uHhoe2eE=
@@ -61,10 +45,6 @@
 		</dict>
 		<key>Headers/JWTAlgorithmDataHolder.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			sryT+mwB9ec+ro0/qh7Af8K27t4=
-			</data>
 			<key>hash2</key>
 			<data>
 			iHkt/cJPpDx45nxWLn+UtN+eMEGNzdTVzwtnw9oHkGg=
@@ -72,10 +52,6 @@
 		</dict>
 		<key>Headers/JWTAlgorithmDataHolderChain.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			8n1KGCBJqzqkdF2BxrJ+yU6Q6A0=
-			</data>
 			<key>hash2</key>
 			<data>
 			bd/NiWcLhh4Nivgcbw3Axp2so67oTvKQz1Iu/e4ehq4=
@@ -83,10 +59,6 @@
 		</dict>
 		<key>Headers/JWTAlgorithmESBase.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			HEADkyZ2v3RW5WXXmpnO/YDFQOo=
-			</data>
 			<key>hash2</key>
 			<data>
 			0+oGxL2bOLICzPt9rMKS1uU6VQKi1Bk4PcqUEUccwig=
@@ -94,10 +66,6 @@
 		</dict>
 		<key>Headers/JWTAlgorithmErrorDescription.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			QF5rA7Z54ug6IN0rF8cOrC+mwD8=
-			</data>
 			<key>hash2</key>
 			<data>
 			ttgIPK3fCHfmXdLFdSC5e1gimiMZgUlR4EV0bVbXKmI=
@@ -105,10 +73,6 @@
 		</dict>
 		<key>Headers/JWTAlgorithmFactory.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			BEeh7VhkEO7TBjN5bXjIFRCRK9s=
-			</data>
 			<key>hash2</key>
 			<data>
 			UoyQvGRh6ZCAENe9lgOMTWi/Em1SePPyoRqkrDQ9lPc=
@@ -116,10 +80,6 @@
 		</dict>
 		<key>Headers/JWTAlgorithmHSBase.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			gXtGV1boJTENkr15c3BcMN7p/3k=
-			</data>
 			<key>hash2</key>
 			<data>
 			6nAi8U2Sfcx6Dz/zT+eBRv8yOGKjiscuRGMCzY7H9nw=
@@ -127,10 +87,6 @@
 		</dict>
 		<key>Headers/JWTAlgorithmNone.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			miBV3uR9amrkJWEEJEkW+z8SeaE=
-			</data>
 			<key>hash2</key>
 			<data>
 			sPmm5mqtCTIySR+RcTZtmC1h+uKFQk5cVpRmWMlhge8=
@@ -138,10 +94,6 @@
 		</dict>
 		<key>Headers/JWTAlgorithmRSBase.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			bXdJKHZuB0E2z0GbsQQS2TWA97I=
-			</data>
 			<key>hash2</key>
 			<data>
 			wWcZYBlK1GT1KtB5UB3EqMi7yD/Afo3WWqS5ue6mS0M=
@@ -149,10 +101,6 @@
 		</dict>
 		<key>Headers/JWTBase64Coder.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			5o9rKMKP6mL7WxquwtA/ATjhxH8=
-			</data>
 			<key>hash2</key>
 			<data>
 			p8irqAJCOFBy2dCauOaVIUNDD6FqWGWEShCoj2uu+PI=
@@ -160,10 +108,6 @@
 		</dict>
 		<key>Headers/JWTBuilder+FluentStyle.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			RdjBY79rXJLj4rpKh6aYWHa1dUc=
-			</data>
 			<key>hash2</key>
 			<data>
 			a7/ispbtnZf7rFxgRs2XFyL9IOx4zEeW7uwmri/zW4g=
@@ -171,10 +115,6 @@
 		</dict>
 		<key>Headers/JWTClaim.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			cI+cybTLNE9ITJIgtuwPHKGrnIc=
-			</data>
 			<key>hash2</key>
 			<data>
 			hYr3UCJGWJomUJH8RiaiMN8MzZ6v8wNWW/qlAI3dF4g=
@@ -182,10 +122,6 @@
 		</dict>
 		<key>Headers/JWTClaimsSet.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			+Db2JL+4KD5uH4EreBuMdiXL5Os=
-			</data>
 			<key>hash2</key>
 			<data>
 			91Y8d1MGyvUPLxxXcVeAPu7eFsUDqWWBlAziZnxSy7Y=
@@ -193,10 +129,6 @@
 		</dict>
 		<key>Headers/JWTClaimsSetSerializer.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			yDJlGCrTVjAFb6mHzpbYF2tHjuA=
-			</data>
 			<key>hash2</key>
 			<data>
 			xnAN7vKG7ENhm5m8HfgTgJsxa1TWkv20TUQXMpI6St8=
@@ -204,10 +136,6 @@
 		</dict>
 		<key>Headers/JWTClaimsSetVerifier.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			1NVpE7P5EAMD/JaGHbk3Tndea/I=
-			</data>
 			<key>hash2</key>
 			<data>
 			zt59FumsG/A4J8Bv5rpN1CT6Z+VrCdtU2cKdVOrtWdI=
@@ -215,10 +143,6 @@
 		</dict>
 		<key>Headers/JWTCoding+ResultTypes.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ekZGsZqA39a/6YGK+2GnWx4Vn7M=
-			</data>
 			<key>hash2</key>
 			<data>
 			6+krW7mVDUOrGFtPzpbQogtaE0QEXYLO5MobCHwXIE0=
@@ -226,10 +150,6 @@
 		</dict>
 		<key>Headers/JWTCoding+VersionOne.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			bZjA0efoU0Yqvpm4Xssq4r3xJFU=
-			</data>
 			<key>hash2</key>
 			<data>
 			en7O60xcH54g7hDf2i8tWIkI5/lIVHJSgja7uyet638=
@@ -237,10 +157,6 @@
 		</dict>
 		<key>Headers/JWTCoding+VersionThree.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Kr/kwDxmzMHr1Ljl8+1CXX0k96A=
-			</data>
 			<key>hash2</key>
 			<data>
 			S6N790H2j2D/xQQL9mw9NepMzZM1Rl6VJtP2sesfRIQ=
@@ -248,10 +164,6 @@
 		</dict>
 		<key>Headers/JWTCoding+VersionTwo.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			w+Y9huad1+dOh8WUKOWAEqcUDmA=
-			</data>
 			<key>hash2</key>
 			<data>
 			+JlO7F4NuINg0nZAXvwtPTf0xe2JpUdGknd9vAWAPS4=
@@ -259,10 +171,6 @@
 		</dict>
 		<key>Headers/JWTCoding.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			WwWGF8W4xUh9yyXim3w8YBaTmvE=
-			</data>
 			<key>hash2</key>
 			<data>
 			PMOJ/UAgyk+DL7uvyzc7BDc1BsOwxpz0myZMC0gj2iA=
@@ -270,10 +178,6 @@
 		</dict>
 		<key>Headers/JWTCodingBuilder+FluentStyle.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			W7QqDXW6wl63tH5idoCV3zMCsLk=
-			</data>
 			<key>hash2</key>
 			<data>
 			F1c8S6DQCIbzYDXkDepc5sumfv/Qwsnsk4AR3iSxDcg=
@@ -281,10 +185,6 @@
 		</dict>
 		<key>Headers/JWTCryptoKey.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			KNN9L+OWgFh7fqchXrS+L3AIQ9c=
-			</data>
 			<key>hash2</key>
 			<data>
 			qPSb4ZnpQEHGHAuhtQmv6vUxEJi+baSPVr2/CgS7SCA=
@@ -292,10 +192,6 @@
 		</dict>
 		<key>Headers/JWTCryptoKeyExtractor+FluentStyle.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Jm3M91wH3Mi4SgdWNhb2t7CvCcQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			WkdSf3ecMUL3/+G+e/d84px46fuc8at6mU/xijQlWXY=
@@ -303,10 +199,6 @@
 		</dict>
 		<key>Headers/JWTCryptoKeyExtractor.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			O189kx0oZDXhK/yKoBsBH0TQsRc=
-			</data>
 			<key>hash2</key>
 			<data>
 			hRkt3F+PyCRmXqe8aow8LyXY2tqXI7/JraiWAAWFpRE=
@@ -314,10 +206,6 @@
 		</dict>
 		<key>Headers/JWTCryptoSecurity+ErrorHandling.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			hnw7r4zxnoGjubbNKCU/94un1YM=
-			</data>
 			<key>hash2</key>
 			<data>
 			+n7ENUJsWETGlnyW2M351+fK3el+8j/DFNScVyrykIU=
@@ -325,10 +213,6 @@
 		</dict>
 		<key>Headers/JWTCryptoSecurity+ExternalRepresentation.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			GmekAE/Z3FemuV7VLJ9zpNcZ3ik=
-			</data>
 			<key>hash2</key>
 			<data>
 			xvyZOw+Tu6o+6IDis1ud/sn0X7wSWtq2RqoOL0wg0go=
@@ -336,10 +220,6 @@
 		</dict>
 		<key>Headers/JWTCryptoSecurity+Extraction.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			AhE7M/txpl4MgHQh9dNRZCuVJsY=
-			</data>
 			<key>hash2</key>
 			<data>
 			CYpAAzIc6Rl3pG2zlGwvTZJ68dnhC/59cw3F0LzCUaE=
@@ -347,10 +227,6 @@
 		</dict>
 		<key>Headers/JWTCryptoSecurity.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			lpcPYtMl58C4n143ND87MU7M6sI=
-			</data>
 			<key>hash2</key>
 			<data>
 			gLbLN1EUrsGvqheaekTC7SMbczyFRxKQqjHcrvOBqNc=
@@ -358,10 +234,6 @@
 		</dict>
 		<key>Headers/JWTDeprecations.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			xMXWhUo3MPJyaqbRW0Q6lhA7ZQQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			41NlP9JJlt8BOjC2prolnRCJG9YppqBwcxevmIvYdx8=
@@ -369,10 +241,6 @@
 		</dict>
 		<key>Headers/JWTErrorDescription.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Re+JsXGLUsiSqd+xXJ/Z6XHlGC0=
-			</data>
 			<key>hash2</key>
 			<data>
 			MZB8E/BD6ZQ/uCzCo1xwbk+z+zLvwW1DOM7cEsMgqb0=
@@ -380,10 +248,6 @@
 		</dict>
 		<key>Headers/JWTRSAlgorithm.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Zwt9uItufmICNkXaVHc1OG3n8WI=
-			</data>
 			<key>hash2</key>
 			<data>
 			X9yUIxlu8osxZPzK+Dro0bCHPLLnj3uffPiAzjnbb24=
@@ -391,32 +255,20 @@
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			jkgwk/HpZAQr4IYwJ+7ItKUm3fM=
-			</data>
 			<key>hash2</key>
 			<data>
-			9UamlJ1RwrZCSnCF64hOfXGgdFcaf7q1C2XxLAacOqU=
+			r5nCakWKCO8BNTRLPaZV/zCdJ2Y6I4ilf2OmtI+87qg=
 			</data>
 		</dict>
 		<key>Resources/Info.plist</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			B61m6y+D2TJk2C9v+dQt5szxRGo=
-			</data>
 			<key>hash2</key>
 			<data>
-			kozVIJK/qaesnLlgfibP0V7QXQkXLBap2M79okgypMw=
+			Zs766qcTjLdDQepo5Dm4ziglpUT9uQP3TBlapcglRN0=
 			</data>
 		</dict>
 		<key>Resources/PrivacyInfo.xcprivacy</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			wz7yuBQx3/aRnSjJBZaGSgXxq4s=
-			</data>
 			<key>hash2</key>
 			<data>
 			etzM7lO1B+v9Fm4+NTNQBdJ3tcYSKYNEJPUY1ygoEQk=

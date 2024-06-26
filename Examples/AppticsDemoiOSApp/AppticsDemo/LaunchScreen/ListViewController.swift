@@ -46,6 +46,16 @@ extension ListViewController {
             FeedbackKit.setFromEmailAddress("ssaravanan@zohocorp.com")
             FeedbackKit.showFeedback()
             break
+        case .securecontainer:
+            
+            guard let navController = self.navigationController else {
+                print("Navigation controller is nil")
+                return
+            }
+            print(navController)
+            let crashListController = storyboard.instantiateViewController(withIdentifier: "secureListViewController")
+            self.navigationController?.pushViewController(crashListController, animated: true)
+            break
         case .Appupdate:
             APAppUpdateManager.check { info in
                  print("update info \(info)")

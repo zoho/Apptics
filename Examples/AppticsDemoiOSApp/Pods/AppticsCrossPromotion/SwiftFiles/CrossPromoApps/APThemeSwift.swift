@@ -166,7 +166,7 @@ protocol APThemeSwiftDelegate : NSObject {
     
     open var switchScale : CGFloat = 1
    
-    open var tableViewSeparatorColor : UIColor?
+    open var ap_tableViewSeparatorColor : UIColor?
     
     open var preferredContentSize : CGSize = CGSize(width: 414, height: 740)
 

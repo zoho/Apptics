@@ -1,0 +1,6 @@
+framework module AppticsPrivacyProtector {
+  umbrella header "AppticsPrivacyProtector.h"
+  export *
+
+  module * { export * }
+}

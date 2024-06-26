@@ -31,6 +31,7 @@ typedef enum : NSInteger {
 -(UIColor *_Nullable)tintColor;
 -(UIColor *_Nullable)barTintColor;
 -(UINavigationBarAppearance *)standardAppearance API_AVAILABLE(ios(13.0), tvos(13.0));
+//-(UINavigationBarAppearance *)scrollEdgeAppearance API_AVAILABLE(ios(13.0), tvos(13.0));
 -(BOOL) translucent;
 -(NSDictionary *_Nullable)titleTextAttributes;
 -(NSDictionary *_Nullable)barButtontitleTextAttributes;
@@ -55,7 +56,7 @@ typedef enum : NSInteger {
 -(UIColor *_Nullable)switchThumbTintColor;
 -(UIColor *_Nullable)switchTintColor;
 -(CGFloat) switchScale;
--(UIColor *_Nullable)tableViewSeparatorColor;
+-(UIColor *_Nullable)ap_tableViewSeparatorColor;
 
 -(UIFont *_Nullable)cellTextFont;
 -(UIFont *_Nullable)footerTextFont;

@@ -33,6 +33,7 @@ class FloatingView: UIView {
     }
     
     func commoninit(){
+        
         let bundles = bundles
         let view = bundles.loadNibNamed("FloatingView", owner: self, options: nil)! [0] as! UIView
         view.frame = self.bounds

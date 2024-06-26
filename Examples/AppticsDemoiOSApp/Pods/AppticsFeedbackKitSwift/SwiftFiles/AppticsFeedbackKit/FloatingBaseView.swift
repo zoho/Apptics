@@ -299,12 +299,6 @@ import AppticsFeedbackKit
             }
         }
         
-        
-        
-        
-        
-        
-        
 //        UIView.animate(withDuration: 2.0, delay: 0.0, usingSpringWithDamping: 1.0, initialSpringVelocity: 1.0, options: [.curveEaseOut],animations: {
 //        })
     }

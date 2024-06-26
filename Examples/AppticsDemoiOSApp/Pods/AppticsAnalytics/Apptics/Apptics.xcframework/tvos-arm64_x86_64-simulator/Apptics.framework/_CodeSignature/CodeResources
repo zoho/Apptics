@@ -10,11 +10,11 @@
 		</data>
 		<key>AppticsResources_tvOS.bundle/Info.plist</key>
 		<data>
-		s7Smd6bStWYFPviYYa3rc4jCQdI=
+		kl/WDU1JBe+v3E9o9rWv/DDAxdQ=
 		</data>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		T1XLb18hIihBL4EWptf7l9ePEaQ=
+		Y1G/tL8WyLLctlFvyfkhLcuZnvY=
 		</data>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		GV7gus4UIYt1VFlW7RsutHuXQj0=
+		o/NMFraFxpc0N02RfHcYo5h4038=
 		</data>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeResources</key>
 		<data>
@@ -300,7 +300,7 @@
 		</data>
 		<key>Headers/APTheme.h</key>
 		<data>
-		WBg1eEaXKgqddIDFqNmVYMuNkAU=
+		UIIOtjz/gtjBi9to4eDgojuD3J8=
 		</data>
 		<key>Headers/Analytics.h</key>
 		<data>
@@ -312,7 +312,7 @@
 		</data>
 		<key>Headers/AppticsConfig.h</key>
 		<data>
-		4nqjwBwfLnvWz6R2lrG7iw1Z9P8=
+		tSaO9KR12ys2rFbuAeGjMJCKsaI=
 		</data>
 		<key>Headers/NSData+APGunZip.h</key>
 		<data>
@@ -432,11 +432,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		NxqGT74sIxMDwxLrSvVyHFETdfI=
+		ZT/Udii7/2Vn62ZROpYfIxf/5CQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		vyvGDgYG+rYeSf9KICtJ0eqvvlA=
+		da29uuOSZmULm+PrJ2HbSN3PsTY=
 		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
@@ -460,22 +460,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			s7Smd6bStWYFPviYYa3rc4jCQdI=
+			kl/WDU1JBe+v3E9o9rWv/DDAxdQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			vwnvoK/YqZztJvt4BtBlNPxu2p19yxf9ro82Dtpzc68=
+			IG536JUyOZNMaQQYcTj3oafWL1ztqc0C+I2Fdj2W2Gw=
 			</data>
 		</dict>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeDirectory</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			T1XLb18hIihBL4EWptf7l9ePEaQ=
+			Y1G/tL8WyLLctlFvyfkhLcuZnvY=
 			</data>
 			<key>hash2</key>
 			<data>
-			81pcy/ECR2W+7YoJ1FcDohBuaL+hpY+9yC9TRwwiKWw=
+			11/EBJyv79XTnIkZiuQLIb+wQOqbMY0Jju9vQaU1QbQ=
 			</data>
 		</dict>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeRequirements</key>
@@ -493,11 +493,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GV7gus4UIYt1VFlW7RsutHuXQj0=
+			o/NMFraFxpc0N02RfHcYo5h4038=
 			</data>
 			<key>hash2</key>
 			<data>
-			FePksIEG3UE+6QMEH0AsaWJKcN/ASn5K77UDelgYWko=
+			xxGFkfBkukgRGOHAMEfb5MFWtbYR0+YAATYg7jOXrpo=
 			</data>
 		</dict>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeResources</key>
@@ -952,11 +952,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WBg1eEaXKgqddIDFqNmVYMuNkAU=
+			UIIOtjz/gtjBi9to4eDgojuD3J8=
 			</data>
 			<key>hash2</key>
 			<data>
-			A/Fl9XtBWYe7XNTF0ATnGLBd7ls36jCNOo385Sel1Wo=
+			piV+DxWvhiRPTMw4cBDIkVtg38XTBtDwpiioSemiY00=
 			</data>
 		</dict>
 		<key>Headers/Analytics.h</key>
@@ -985,11 +985,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4nqjwBwfLnvWz6R2lrG7iw1Z9P8=
+			tSaO9KR12ys2rFbuAeGjMJCKsaI=
 			</data>
 			<key>hash2</key>
 			<data>
-			Aaa7mYkKKMTzSnbFyMWoZiO7uN831quR4cxLP5MecFU=
+			X2cJ+CPD5tmwDRkKPLHN+CYrEdamTt4qdqNxHP1ruzY=
 			</data>
 		</dict>
 		<key>Headers/NSData+APGunZip.h</key>
@@ -1315,11 +1315,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vyvGDgYG+rYeSf9KICtJ0eqvvlA=
+			da29uuOSZmULm+PrJ2HbSN3PsTY=
 			</data>
 			<key>hash2</key>
 			<data>
-			cIcDfbPqw84yrN2vO8sC6BSuTXHJnziyce9aVs2113g=
+			kamQl75vu/2TVYZvrmLu2qjZDUkzRpgeh7xx6gwyPCM=
 			</data>
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>
