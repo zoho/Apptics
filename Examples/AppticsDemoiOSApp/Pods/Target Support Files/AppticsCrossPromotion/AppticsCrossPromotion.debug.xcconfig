@@ -1,9 +1,9 @@
 CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
 CONFIGURATION_BUILD_DIR = ${PODS_CONFIGURATION_BUILD_DIR}/AppticsCrossPromotion
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/AppticsAnalytics/Apptics" "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/Apptics" "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/CrashKit" "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/EventTracker" "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/JWT" "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/KSCrash" "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/ScreenTracker"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Apptics-SDK" "${PODS_CONFIGURATION_BUILD_DIR}/Apptics-Swift" "${PODS_ROOT}/AppticsAnalytics/Apptics" "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/Apptics" "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/CrashKit" "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/EventTracker" "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/JWT" "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/KSCrash" "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/ScreenTracker"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 LIBRARY_SEARCH_PATHS = $(inherited) "${TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}" /usr/lib/swift
-OTHER_LDFLAGS = $(inherited) -framework "Apptics" -framework "AppticsCrashKit" -framework "AppticsEventTracker" -framework "AppticsScreenTracker" -framework "JWT" -framework "KSCrash"
+OTHER_LDFLAGS = $(inherited) -framework "Apptics_Swift" -framework "StoreKit" -framework "UIKit"
 OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)

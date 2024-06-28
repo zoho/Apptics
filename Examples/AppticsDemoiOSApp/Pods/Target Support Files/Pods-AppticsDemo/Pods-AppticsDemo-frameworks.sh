@@ -176,6 +176,7 @@ code_sign_if_enabled() {
 }
 
 if [[ "$CONFIGURATION" == "AppStore" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/Apptics-SDK/Apptics_SDK.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Apptics-Swift/Apptics_Swift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/AppticsCrossPromotion/AppticsCrossPromotion.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/AppticsFeedbackKitSwift/AppticsFeedbackKitSwift.framework"
@@ -188,11 +189,11 @@ if [[ "$CONFIGURATION" == "AppStore" ]]; then
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsApiTracker/ApiTracker/AppticsApiTracker.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsFeedbackKit/FeedbackKit/AppticsFeedbackKit.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsInAppUpdate/AppUpdate/AppticsInAppUpdate.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsPrivacyProtector/AppticsPrivacyKit/AppticsPrivacyProtector.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsRateUs/RateUs/AppticsRateUs.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsRemoteConfig/RemoteConfig/AppticsRemoteConfig.framework"
 fi
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/Apptics-SDK/Apptics_SDK.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Apptics-Swift/Apptics_Swift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/AppticsCrossPromotion/AppticsCrossPromotion.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/AppticsFeedbackKitSwift/AppticsFeedbackKitSwift.framework"
@@ -205,11 +206,11 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsApiTracker/ApiTracker/AppticsApiTracker.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsFeedbackKit/FeedbackKit/AppticsFeedbackKit.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsInAppUpdate/AppUpdate/AppticsInAppUpdate.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsPrivacyProtector/AppticsPrivacyKit/AppticsPrivacyProtector.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsRateUs/RateUs/AppticsRateUs.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsRemoteConfig/RemoteConfig/AppticsRemoteConfig.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/Apptics-SDK/Apptics_SDK.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Apptics-Swift/Apptics_Swift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/AppticsCrossPromotion/AppticsCrossPromotion.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/AppticsFeedbackKitSwift/AppticsFeedbackKitSwift.framework"
@@ -222,7 +223,6 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsApiTracker/ApiTracker/AppticsApiTracker.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsFeedbackKit/FeedbackKit/AppticsFeedbackKit.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsInAppUpdate/AppUpdate/AppticsInAppUpdate.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsPrivacyProtector/AppticsPrivacyKit/AppticsPrivacyProtector.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsRateUs/RateUs/AppticsRateUs.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsRemoteConfig/RemoteConfig/AppticsRemoteConfig.framework"
 fi

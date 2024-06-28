@@ -1,0 +1,459 @@
+#!/bin/sh
+
+#  regappversion
+#  Apptics
+#
+#  Created by Saravanan S on 04/06/19.
+#  Copyright © 2019 zoho. All rights reserved.
+
+DIR="$(command dirname -- "${0}")"
+source "${DIR}/sdk_info"
+
+ZA_INFOPLIST_FILE="apptics-config.plist"
+UUIDGEN="$(uuidgen)"
+ZA_VERSION_META_FILE_NAME="$UUIDGEN-apptics-version-meta.json"
+ZA_META_FILE_NAME="$UUIDGEN-apptics-meta"
+SYNC_TYPE="plist"
+HELP=0
+
+AP_INFO_FILE_NAME="$PRODUCT_SETTINGS_PATH" #INFOPLIST_FILE
+CM_AP_INFO_FILE_NAME="$TARGET_BUILD_DIR/$INFOPLIST_PATH"
+
+#Apple script alert before dSYM upload
+function error_prompt() {
+echo "$1: $2"
+}
+
+eval "${GCC_PREPROCESSOR_DEFINITIONS}"
+
+while [ $# -gt 0 ]; do
+case "$1" in
+--help)
+HELP=1
+;;
+--upload-symbols-for-configurations=*)
+SKIP_PROMPT_FOR="${1#*=}"
+;;
+--upload-symbols-for-frameworks=*)
+UPLOAD_SYMBOLS_FOR="${1#*=}"
+;;
+--config-file-path=*)
+ZA_INFOPLIST_FILE="${1#*=}"
+;;
+--app-group-identifier=*)
+AP_APP_GROUP_IDENTIFIER="${1#*=}"
+;;
+--log-file-path=*)
+LOG_FILE_PATH="${1#*=}"
+;;
+--sync-type=*)
+SYNC_TYPE="${1#*=}"
+;;
+*)
+printf "**********************************\n"
+printf "* Error: Invalid argument passed.*\n"
+printf "**********************************\n"
+printf "'$1'\n"
+exit 1
+esac
+shift
+done
+
+ZA_INFO_FILE_NAME=$(basename "/$ZA_INFOPLIST_FILE")
+
+export ZA_INFO_FILE_NAME=$ZA_INFO_FILE_NAME
+
+if [ $HELP -eq 1 ];then
+echo "Options:\n"
+echo "    --upload-symbols-for-configurations   Configurations as comma separated string for which the dSYM to be uploaded"
+echo "    --config-file-path                    Provide the path of apptics config file"
+echo "    --app-group-identifier                Provide the path of apptics config file"
+echo "    --help                                Show help banner of specified command"
+exit 1
+fi
+
+function update_main_info_plist() {
+VALUE=$2
+KEY=$1
+
+if [ "${VALUE}" ]; then
+
+ZA_VALUE=$(/usr/libexec/PlistBuddy -c "Print ${KEY}" "${AP_INFO_FILE_NAME}" 2>/dev/null || printf "nil")
+
+if [ "${VALUE}" != "${ZA_VALUE}" ]; then
+if [ "${ZA_VALUE}" == "nil" ]; then
+/usr/libexec/PlistBuddy -c "Add :${KEY} string '${VALUE}'" "${AP_INFO_FILE_NAME}"
+else
+/usr/libexec/PlistBuddy -c "Set :${KEY} '${VALUE}'" "${AP_INFO_FILE_NAME}"
+fi
+fi
+
+CM_ZA_VALUE=$(/usr/libexec/PlistBuddy -c "Print ${KEY}" "${CM_AP_INFO_FILE_NAME}" 2>/dev/null || printf "nil")
+if [ "${VALUE}" != "${CM_ZA_VALUE}" ]; then
+if [ "${CM_ZA_VALUE}" == "nil" ]; then
+/usr/libexec/PlistBuddy -c "Add :${KEY} string '${VALUE}'" "${CM_AP_INFO_FILE_NAME}"
+else
+/usr/libexec/PlistBuddy -c "Set :${KEY} '${VALUE}'" "${CM_AP_INFO_FILE_NAME}"
+fi
+fi
+
+fi
+}
+
+function deleteItemFromPlist() {
+KEY=$1
+
+if [ "${KEY}" ]; then
+
+ZA_VALUE=$(/usr/libexec/PlistBuddy -c "Print ${KEY}" "${AP_INFO_FILE_NAME}" 2>/dev/null || printf "nil")
+
+if [ "${ZA_VALUE}" != "nil" ]; then
+/usr/libexec/PlistBuddy -c "Delete :${KEY}" "${AP_INFO_FILE_NAME}"
+fi
+
+CM_ZA_VALUE=$(/usr/libexec/PlistBuddy -c "Print ${KEY}" "${CM_AP_INFO_FILE_NAME}" 2>/dev/null || printf "nil")
+
+if [ "${CM_ZA_VALUE}" != "nil" ]; then
+/usr/libexec/PlistBuddy -c "Delete :${KEY}" "${CM_AP_INFO_FILE_NAME}"
+fi
+
+fi
+}
+
+if [ "${ZA_INFOPLIST_FILE}" ]; then
+update_main_info_plist "AP_INFOPLIST_FILE" "${ZA_INFOPLIST_FILE}"
+else
+deleteItemFromPlist "AP_INFOPLIST_FILE"
+fi
+
+if [ "${AP_APP_GROUP_IDENTIFIER}" ]; then
+update_main_info_plist "AP_APP_GROUP_IDENTIFIER" "${AP_APP_GROUP_IDENTIFIER}"
+else
+deleteItemFromPlist "AP_APP_GROUP_IDENTIFIER"
+fi
+
+ZA_DEPLOYMENT_TARGET=""
+
+if [ "${IPHONEOS_DEPLOYMENT_TARGET}" ]; then
+ZA_DEPLOYMENT_TARGET=${IPHONEOS_DEPLOYMENT_TARGET}
+PLATFORM="iOS"
+APPTICS_SDK_ID=$IOS_SDK_ID
+fi
+if [ "${MACOSX_DEPLOYMENT_TARGET}" ]; then
+ZA_DEPLOYMENT_TARGET=${MACOSX_DEPLOYMENT_TARGET}
+PLATFORM="macOS"
+APPTICS_SDK_ID=$MACOS_SDK_ID
+fi
+if [ "${TVOS_DEPLOYMENT_TARGET}" ]; then
+ZA_DEPLOYMENT_TARGET=${TVOS_DEPLOYMENT_TARGET}
+PLATFORM="tvOS"
+APPTICS_SDK_ID=$TVOS_SDK_ID
+fi
+if [ "${WATCHOS_DEPLOYMENT_TARGET}" ]; then
+ZA_DEPLOYMENT_TARGET=${WATCHOS_DEPLOYMENT_TARGET}
+PLATFORM="watchOS"
+APPTICS_SDK_ID=$WATCHOS_SDK_ID
+fi
+
+ZA_INFOPLIST_FILE="$(find "${SRCROOT}" -name "${ZA_INFO_FILE_NAME}" | head -1)"
+#${SRCROOT}/${ZA_INFOPLIST_FILE}
+echo "${ZA_INFOPLIST_FILE}"
+
+if [ ! -f "${ZA_INFOPLIST_FILE}" ]; then
+echo "regappversion : Please check if the ${ZA_INFO_FILE_NAME} is in your projects' root dir, or else provide the proper path by passing value to the param '--config-file-path'"
+exit 1
+fi
+
+if [ ! "${AP_BUNDLE_ID}" ]; then
+AP_BUNDLE_ID=$(/usr/libexec/PlistBuddy -c 'Print BUNDLE_ID' "${ZA_INFOPLIST_FILE}")
+fi
+
+export AP_BUNDLE_ID=$AP_BUNDLE_ID
+
+if [ ! "${API_KEY}" ]; then
+API_KEY=$(/usr/libexec/PlistBuddy -c 'Print API_KEY' "${ZA_INFOPLIST_FILE}")
+fi
+
+if [ ! "${API_KEY}" ]; then
+value=$(error_prompt "Error" "Missing API_KEY, please check if the ${ZA_INFO_FILE_NAME} file is up to date?")
+exit 1
+fi
+
+if [ -z "${APPTICS_SDK_ID}" ]; then
+value=$(error_prompt "Error" "Missing APPTICS_SDK_ID, check the sdk_info file")
+exit 1
+fi
+
+OS="iOS"
+if [ "${PLATFORM}" ]; then
+OS=${PLATFORM}
+fi
+
+BUNDLE_VERSION=${CURRENT_PROJECT_VERSION}
+if [ "$BUNDLE_VERSION" == "" ]; then
+BUNDLE_VERSION=$(/usr/libexec/PlistBuddy -c 'Print CFBundleVersion' "${AP_INFO_FILE_NAME}")
+if [[ $BUNDLE_VERSION == \$\(* ]]; then
+BUNDLE_VERSION=$(echo $BUNDLE_VERSION | awk -F '\\$\\(|\\)' '{print $2}')
+eval BUNDLE_VERSION="$(echo "\${$BUNDLE_VERSION}")"
+elif [[ $BUNDLE_VERSION == \$\{* ]]; then
+BUNDLE_VERSION=$(echo $BUNDLE_VERSION | awk -F '\\$\\{|\\}' '{print $2}')
+eval BUNDLE_VERSION="$(echo "\${$BUNDLE_VERSION}")"
+elif [[ $BUNDLE_VERSION == \$* ]]; then
+eval BUNDLE_VERSION="$(echo "$BUNDLE_VERSION")"
+fi
+fi
+
+BUNDLE_SHORT_VERSION=${MARKETING_VERSION}
+if [ "$BUNDLE_SHORT_VERSION" == "" ]; then
+BUNDLE_SHORT_VERSION=$(/usr/libexec/PlistBuddy -c 'Print CFBundleShortVersionString' "${AP_INFO_FILE_NAME}")
+if [[ $BUNDLE_SHORT_VERSION == \$\(* ]]; then
+BUNDLE_SHORT_VERSION=$(echo $BUNDLE_SHORT_VERSION | awk -F '\\$\\(|\\)' '{print $2}')
+eval BUNDLE_SHORT_VERSION="$(echo "\${$BUNDLE_SHORT_VERSION}")"
+elif [[ $BUNDLE_SHORT_VERSION == \$\{* ]]; then
+BUNDLE_SHORT_VERSION=$(echo $BUNDLE_SHORT_VERSION | awk -F '\\$\\{|\\}' '{print $2}')
+eval BUNDLE_SHORT_VERSION="$(echo "\${$BUNDLE_SHORT_VERSION}")"
+elif [[ $BUNDLE_SHORT_VERSION == \$* ]]; then
+eval BUNDLE_SHORT_VERSION="$(echo "$BUNDLE_SHORT_VERSION")"
+fi
+fi
+
+CM_ZA_INFOPLIST_FILE="$(find "${TARGET_BUILD_DIR}" -name "${ZA_INFO_FILE_NAME}" -not -path '*/.*' | head -1)"
+
+if [ -f "${CM_ZA_INFOPLIST_FILE}" ]; then
+echo "Merging metadata from target to source"
+/usr/libexec/PlistBuddy -c "Merge ${CM_ZA_INFOPLIST_FILE}" "${ZA_INFOPLIST_FILE}"
+rm "${CM_ZA_INFOPLIST_FILE}"
+fi
+
+mkdir "/tmp/${AP_BUNDLE_ID}"
+  
+echo "adding app_version_meta to main file for upload api\n$ZA_INFOPLIST_FILE \n $CM_ZA_INFOPLIST_FILE"
+
+APP_VERSION_ID=$(/usr/libexec/PlistBuddy -c 'Print APP_VERSION_META:APP_VERSION_ID' "${ZA_INFOPLIST_FILE}" 2>/dev/null || printf "")
+  
+AAID=$(/usr/libexec/PlistBuddy -c 'Print APP_VERSION_META:AAID' "${ZA_INFOPLIST_FILE}" 2>/dev/null || printf "")
+
+APID=$(/usr/libexec/PlistBuddy -c 'Print APP_VERSION_META:APID' "${ZA_INFOPLIST_FILE}" 2>/dev/null || printf "")
+
+RSAKEY=$(/usr/libexec/PlistBuddy -c 'Print APP_VERSION_META:RSAKEY' "${ZA_INFOPLIST_FILE}" 2>/dev/null || printf "")
+
+PLATFORM_ID=$(/usr/libexec/PlistBuddy -c 'Print APP_VERSION_META:PLATFORM_ID' "${ZA_INFOPLIST_FILE}" 2>/dev/null || printf "")
+
+ZA_BUNDLE_VERSION=$(/usr/libexec/PlistBuddy -c 'Print APP_VERSION_META:BUNDLE_VERSION' "${ZA_INFOPLIST_FILE}" 2>/dev/null || printf "")
+
+ZA_BUNDLE_SHORT_VERSION=$(/usr/libexec/PlistBuddy -c 'Print APP_VERSION_META:BUNDLE_SHORT_VERSION' "${ZA_INFOPLIST_FILE}" 2>/dev/null || printf "")
+
+ZA_APPTICS_SDK_ID=$(/usr/libexec/PlistBuddy -c 'Print APP_VERSION_META:APPTICS_SDK_ID' "${ZA_INFOPLIST_FILE}" 2>/dev/null || printf "")
+
+SERVER_URL=$(/usr/libexec/PlistBuddy -c 'Print SERVER_URL' "${ZA_INFOPLIST_FILE}")
+  
+EVENTS_INFO=$(/usr/libexec/PlistBuddy -c 'Print EVENTS_INFO' "${ZA_INFOPLIST_FILE}" 2>/dev/null || printf "")
+
+API_INFO=$(/usr/libexec/PlistBuddy -c 'Print API_INFO' "${ZA_INFOPLIST_FILE}" 2>/dev/null || printf "")
+
+
+if [ "${SERVER_URL}" ]; then
+URL_ENDPOINT="${SERVER_URL}/sdk/api/apptics/v1/app/addversion"
+else
+value=$(error_prompt "Error" "Missing SERVER_URL, please check if the ${ZA_INFO_FILE_NAME} file is up to date?")
+exit 1
+fi
+
+value_for_key(){
+
+key=$1
+
+echo "$key : $(/usr/libexec/PlistBuddy -c "Print APP_VERSION_META:$key" "${ZA_INFOPLIST_FILE}")"
+
+}
+
+check_and_update(){
+
+key=$1
+value=$2
+
+echo "$key : $value"
+
+ID=$(/usr/libexec/PlistBuddy -c "Print APP_VERSION_META:$key" "${ZA_INFOPLIST_FILE}" 2>/dev/null || printf "null")
+echo "check and update : ${key}, ${ID}"
+if [ "${ID}" == "null" ]; then
+$(/usr/libexec/PlistBuddy -c "Add :APP_VERSION_META:$key string $value" "${ZA_INFOPLIST_FILE}")
+else
+$(/usr/libexec/PlistBuddy -c "Set :APP_VERSION_META:$key $value" "${ZA_INFOPLIST_FILE}")
+fi
+}
+
+prepare_build_apptics() {
+if [ "${PRODUCT_BUNDLE_IDENTIFIER}" != "${AP_BUNDLE_ID}" ]; then
+    echo "warning: Product bundle identifier '${PRODUCT_BUNDLE_IDENTIFIER}' doesn't match with the bundle identifier in '${ZA_INFO_FILE_NAME}' '${AP_BUNDLE_ID}'"
+fi
+
+if [ "${APPTICS_SDK_ID}" != "${ZA_APPTICS_SDK_ID}" ] || [ "${BUNDLE_VERSION}" != "${ZA_BUNDLE_VERSION}" ] || [ "${BUNDLE_SHORT_VERSION}" != "${ZA_BUNDLE_SHORT_VERSION}" ] || [ "${APP_VERSION_ID}" == "" ] || [ "${AAID}" == "" ] || [ "${APID}" == "" ] || [ "${PLATFORM_ID}" == "" ] || [ "${APPTICS_SDK_ID}" == "" ] || [ "${RSAKEY}" == "" ]; then
+  
+  reg_app_out_file="/tmp/${AP_BUNDLE_ID}/${ZA_VERSION_META_FILE_NAME}"
+  REG_APP_VERSION_PARAMS="platform=${OS}&identifier=${AP_BUNDLE_ID}&version=${BUNDLE_SHORT_VERSION}&appreleaseversion=${BUNDLE_VERSION}&frameworkid=${APPTICS_SDK_ID}&minosversion=${ZA_DEPLOYMENT_TARGET}"
+  STATUS=$(curl "${URL_ENDPOINT}?${REG_APP_VERSION_PARAMS}" -v --write-out %{http_code} --silent -o "${reg_app_out_file}" -H "zak: ${API_KEY}" -X POST --connect-timeout 60 --max-time 900 --retry 2 --retry-delay 5)
+  
+  echo "${URL_ENDPOINT}?${REG_APP_VERSION_PARAMS} --write-out %{http_code} --silent -o "${reg_app_out_file}" -H "zak: ${API_KEY}" -X POST"
+  
+  if [ $STATUS -eq 200 ]; then
+  echo "info: Data downloaded"
+  
+  echo "$(command dirname -- "${0}")/apptics_utils.rb" -e "AppticsBot.main '${reg_app_out_file}'"
+  value=$(ruby -r "$(command dirname -- "${0}")/apptics_utils.rb" -e "AppticsBot.main '${reg_app_out_file}'")
+    
+    if [[ "$value" =~ ^error:* ]]; then
+        echo $value
+        exit 1
+    fi
+    
+    $value
+      
+  response=$(ruby -rjson -e 'j = JSON.parse(File.read("'${reg_app_out_file}'")); puts j["result"]')
+  if [ "$response" != "success" ]; then
+    echo "error: Problem while regestering app version : $(cat "${reg_app_out_file}")"
+    rm "${reg_app_out_file}"
+    exit 1
+  else
+    rm "${reg_app_out_file}"
+  fi
+            
+  if [ "$appversionid" == "" ] || [ "$appreleaseversionid" == "" ] || [ "$aaid" == "" ] || [ "$apid" == "" ] || [ "$mapid" == "" ] || [ "$rsakey" == "" ] || [ "$platformid" == "" ] || [ "$APPTICS_SDK_ID" == "" ]; then
+      echo "APP_VERSION_ID" "$appversionid"
+      echo "APP_RELEASE_VERSION_ID" "$appreleaseversionid"
+      echo "AAID" "$aaid"
+      echo "APID" "$apid"
+      echo "MAPID" "$mapid"
+      echo "RSAKEY" "$rsakey"
+      echo "PLATFORM_ID" "$platformid"
+      echo "BUNDLE_VERSION" "$BUNDLE_VERSION"
+      echo "BUNDLE_SHORT_VERSION" "$BUNDLE_SHORT_VERSION"
+      echo "APPTICS_SDK_ID" "${APPTICS_SDK_ID}"
+  exit 1;
+  fi
+  check_and_update "APP_VERSION_ID" "$appversionid"
+  check_and_update "APP_RELEASE_VERSION_ID" "$appreleaseversionid"
+  check_and_update "AAID" "$aaid"
+  check_and_update "APID" "$apid"
+  check_and_update "MAPID" "$mapid"
+  check_and_update "RSAKEY" "$rsakey"
+  check_and_update "PLATFORM_ID" "$platformid"
+  check_and_update "BUNDLE_VERSION" "$BUNDLE_VERSION"
+  check_and_update "BUNDLE_SHORT_VERSION" "$BUNDLE_SHORT_VERSION"
+  check_and_update "APPTICS_SDK_ID" "${APPTICS_SDK_ID}"
+  echo "Data updated"
+  
+  else
+  echo "$STATUS Error occured ($?)"
+  exit 1
+  fi
+else
+  echo "App version is already registered"
+  value_for_key "APP_VERSION_ID"
+  value_for_key "APP_RELEASE_VERSION_ID"
+  value_for_key "AAID"
+  value_for_key "APID"
+  value_for_key "MAPID"
+  value_for_key "RSAKEY"
+  value_for_key "PLATFORM_ID"
+  value_for_key "BUNDLE_VERSION"
+  value_for_key "BUNDLE_SHORT_VERSION"
+  value_for_key "APPTICS_SDK_ID"
+  echo "App version : ${BUNDLE_VERSION}"
+  echo "App short version : ${BUNDLE_SHORT_VERSION}"
+fi
+
+######################
+#
+#echo "EVENTS_TRACKING_ID : ${EVENTS_TRACKING_ID}"
+#echo "API_TRACKING_ID : ${API_TRACKING_ID}"
+#
+#if [ "${EVENTS_INFO}" == "" ] || [ "${API_INFO}" == "" ];then
+#params="moduleids"
+#
+#if [ "${EVENTS_TRACKING_ID}" ]; then
+#params="${params}=5,"
+#fi
+#
+#if [ "${API_TRACKING_ID}" ]; then
+#params="${params}6,"
+#fi
+#
+#URL_ENDPOINT="${SERVER_URL}/sdk/api/apptics/v1/engagement/getinfo?${params}"
+#
+#if [ "${SYNC_TYPE}" == "plist" ]; then
+#URL_ENDPOINT="${SERVER_URL}/sdk/api/apptics/v1/engagement/getplist?${params}"
+#fi
+#
+##echo $(rm -v /tmp/"${AP_BUNDLE_ID}/${ZA_META_FILE_NAME}.json")
+#
+#STATUS=$(curl "${URL_ENDPOINT}" -v --write-out %{http_code} --silent -o "/tmp/${AP_BUNDLE_ID}/${ZA_META_FILE_NAME}.json" -H "zak: ${API_KEY}" -X POST --connect-timeout 60 --max-time 900 --retry 2 --retry-delay 5)
+#echo "${URL_ENDPOINT}" --write-out %{http_code} --silent -o "/tmp/${AP_BUNDLE_ID}/${ZA_META_FILE_NAME}.json" -H "zak: ${API_KEY}"
+#
+#echo "ENGAGEMENT RESULT STATUS ${STATUS}"
+#
+#if [ $STATUS -eq 200 ]; then
+#echo "Downloaded the data from Apptics"
+#
+#value=$(ruby -r "$(command dirname -- "${0}")/apptics_helper.rb" -e "AppticsEventsParser.main '${AP_BUNDLE_ID}/${ZA_META_FILE_NAME}'")
+#    
+#    if [[ "$value" =~ ^error:* ]]; then
+#        exit 1
+#    fi
+#    
+#    echo $value
+#        
+#echo "AppticsEventsParser.main '${AP_BUNDLE_ID}/${ZA_META_FILE_NAME}'"
+#
+#else
+#echo "error: response status : $STATUS, ($?)"
+#exit 1
+#fi
+#
+#/usr/libexec/PlistBuddy -c "Merge /tmp/${AP_BUNDLE_ID}/${ZA_META_FILE_NAME}.plist" "${ZA_INFOPLIST_FILE}"
+#echo $(rm -v /tmp/"${AP_BUNDLE_ID}/${ZA_META_FILE_NAME}.json")
+#echo $(rm -v /tmp/"${AP_BUNDLE_ID}/${ZA_META_FILE_NAME}.plist")
+#fi
+
+#####################
+
+DIR="$(command dirname -- "${0}")"
+
+COMMAND_PATH="$DIR/dsym_upload"
+
+IFS=', ' read -r -a SKIP_PROMPT_CONFIGURATIONS <<< "${SKIP_PROMPT_FOR}"
+
+LOGNAME="/tmp/${AP_BUNDLE_ID}/${UUIDGEN}-apptics-output.txt"
+if [ "${LOG_FILE_PATH}" ];then
+LOGNAME="${LOG_FILE_PATH}"
+fi
+    #MAXSIZE=100000
+    #
+    #  if [ -f "${LOGNAME}" ]; then
+    #    LOGNAME_SIZE=$(ls -l $LOGNAME | awk '{print $5}')
+    #    if [ $LOGNAME_SIZE -ge $MAXSIZE ];
+    #    then
+    #        echo "$LOGNAME exceeds max threshold"
+    #        rm $LOGNAME
+    #    fi
+    #  fi
+  
+if [[ " ${SKIP_PROMPT_CONFIGURATIONS[@]} " =~ " ${CONFIGURATION} " ]]; then
+ 
+# rm -rvf "${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}"
+  
+  printf "*********************************************************************************************\n"
+  printf "* Uploading dSYM for '${CONFIGURATION}' configuration, check $LOGNAME for more details *\n"
+  printf "*********************************************************************************************\n"
+  sh "${COMMAND_PATH}" --skip-prompt --upload-dsym --upload-symbols-for-frameworks="$UPLOAD_SYMBOLS_FOR" --process-in-background >> $LOGNAME 2>&1 &
+else
+  sh "${COMMAND_PATH}" --skip-prompt --process-in-background >> $LOGNAME 2>&1 &
+  printf "****************************************************\n"
+  printf "* Skipped dSYMs upload for '${CONFIGURATION}' configuration, check $LOGNAME for more details *\n"
+  printf "****************************************************\n"
+fi
+
+}
+
+prepare_build_apptics $1
+

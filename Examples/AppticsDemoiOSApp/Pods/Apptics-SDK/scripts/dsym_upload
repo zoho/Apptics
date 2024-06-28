@@ -1,0 +1,360 @@
+#!/bin/bash
+# Copyright 2018 Zoho Corp, Inc. All rights reserved.
+#
+################################################################################
+# Warning : donot edit anything
+
+eval "${GCC_PREPROCESSOR_DEFINITIONS}"
+
+SKIP_PROMPT=0
+UPLOAD_DSYM=0
+PROCESS_TYPE=0
+FAIL_ON_ERROR=0
+#Apple script alert before dSYM upload
+function error_prompt() {
+echo "$1: $2"
+}
+
+function prompt() {
+osascript <<EOT
+tell app "System Events"
+
+button returned of (display alert "$1" message "$2" buttons {"Upload", "Cancel"} default button 1 cancel button 2 as critical giving up after 10)
+
+end tell
+EOT
+}
+
+exitOperation() {
+value=$(error_prompt "Error" "$1")
+if [ $FAIL_ON_ERROR -eq 1 ]; then
+exit ${2}
+fi
+}
+
+AP_INFO_FILE_NAME="$PRODUCT_SETTINGS_PATH" #INFOPLIST_FILE
+
+#if [[ "$INFOPLIST_FILE" == *"$TARGET_BUILD_DIR"* ]]; then
+#AP_INFO_FILE_NAME="$INFOPLIST_FILE"
+#else
+#AP_INFO_FILE_NAME="$TARGET_BUILD_DIR/$INFOPLIST_PATH"
+#fi
+
+#ZA_INFO_FILE_NAME="apptics-config.plist"
+
+ZA_DEPLOYMENT_TARGET=""
+
+ZA_RESOURCE_DIR=${TARGET_BUILD_DIR}/$(command dirname -- "${FRAMEWORKS_FOLDER_PATH}")
+
+ZA_INFO_PLIST_FILE="${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Apptics.framework/AppticsResources.bundle/Info.plist"
+
+if [ ! -e "${ZA_INFO_PLIST_FILE}" ]
+then
+ZA_INFO_PLIST_FILE="${ZA_RESOURCE_DIR}/AppticsResources.bundle/Info.plist"
+fi
+
+if [ "${IPHONEOS_DEPLOYMENT_TARGET}" ]; then
+ZA_DEPLOYMENT_TARGET=${IPHONEOS_DEPLOYMENT_TARGET}
+PLATFORM="iOS"
+fi
+if [ "${MACOSX_DEPLOYMENT_TARGET}" ]; then
+ZA_DEPLOYMENT_TARGET=${MACOSX_DEPLOYMENT_TARGET}
+PLATFORM="macOS"
+ZA_RESOURCE_DIR=${TARGET_BUILD_DIR}/$(command dirname -- "${FRAMEWORKS_FOLDER_PATH}")/Resources
+ZA_INFO_PLIST_FILE="${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Apptics.framework/Resources/AppticsResources.bundle/Contents/Info.plist"
+if [ ! -e "${ZA_INFO_PLIST_FILE}" ]
+then
+ZA_INFO_PLIST_FILE="${ZA_RESOURCE_DIR}/AppticsResources.bundle/Contents/Info.plist"
+fi
+fi
+if [ "${TVOS_DEPLOYMENT_TARGET}" ]; then
+ZA_DEPLOYMENT_TARGET=${TVOS_DEPLOYMENT_TARGET}
+PLATFORM="tvOS"
+fi
+if [ "${WATCHOS_DEPLOYMENT_TARGET}" ]; then
+ZA_DEPLOYMENT_TARGET=${WATCHOS_DEPLOYMENT_TARGET}
+PLATFORM="watchOS"
+fi
+
+CM_AP_INFO_FILE_NAME="$TARGET_BUILD_DIR/$INFOPLIST_PATH"
+
+if [ ! "${ZA_INFO_FILE_NAME}" ]; then
+# check the file name in target build dir info.plist 
+ZA_INFO_FILE_NAME=$(/usr/libexec/PlistBuddy -c 'Print AP_INFOPLIST_FILE' "${CM_AP_INFO_FILE_NAME}")
+fi
+
+UPLOAD_SIMULATOR_SYMBOLS="1"
+
+echo "ZA_INFO_FILE_NAME --- ${ZA_INFO_FILE_NAME}"
+
+ZA_INFOPLIST_FILE="$(find "${SRCROOT}" -name "${ZA_INFO_FILE_NAME}" | head -1)"
+
+echo "ZA_INFOPLIST_FILE --- ${ZA_INFOPLIST_FILE}"
+
+while [ $# -gt 0 ]; do
+case "$1" in
+--skip-prompt)
+SKIP_PROMPT=1
+;;
+--process-in-background)
+PROCESS_TYPE=1
+;;
+--upload-dsym)
+UPLOAD_DSYM=1
+;;
+--fail-on-error)
+FAIL_ON_ERROR=1
+;;
+--upload-symbols-for-frameworks=*)
+UPLOAD_SYMBOLS_FOR="${1#*=}"
+;;
+*)
+printf "**********************************\n"
+printf "* Error: Invalid argument passed.*\n"
+printf "**********************************\n"
+printf "'$1'\n"
+exit 1
+esac
+shift
+done
+
+if [ $UPLOAD_DSYM -eq 1 ]; then
+# We are searcing for the file excluding hidden dirs "-not -path '*/.*'"
+CM_ZA_INFOPLIST_FILE="$(find "${TARGET_BUILD_DIR}" -name "${ZA_INFO_FILE_NAME}" -not -path '*/.*' | head -1)"
+while ([ ! -f "${CM_ZA_INFOPLIST_FILE}" ])
+do
+  CM_ZA_INFOPLIST_FILE="$(find "${TARGET_BUILD_DIR}" -name "${ZA_INFO_FILE_NAME}" -not -path '*/.*' | head -1)"
+echo "Waiting for the file ${ZA_INFO_FILE_NAME} to be copied at line number 123 ${CM_ZA_INFOPLIST_FILE}"
+sleep 1;
+done
+  
+TMP_AP_INFOPLIST_FILE=$(/usr/libexec/PlistBuddy -c "Print AP_INFOPLIST_FILE" "${CM_AP_INFO_FILE_NAME}" 2>/dev/null || printf "nil")
+
+while ([ "${TMP_AP_INFOPLIST_FILE}" == "nil" ])
+do
+  TMP_AP_INFOPLIST_FILE=$(/usr/libexec/PlistBuddy -c "Print AP_INFOPLIST_FILE" "${CM_AP_INFO_FILE_NAME}" 2>/dev/null || printf "nil")
+echo "Waiting for the info file to be copied at line number 132 ${TMP_AP_INFOPLIST_FILE}"
+sleep 1;
+done
+
+echo $(/usr/libexec/PlistBuddy -c "Delete :APP_VERSION_META" "${ZA_INFOPLIST_FILE}")
+echo $(/usr/libexec/PlistBuddy -c "Delete :EVENTS_INFO" "${ZA_INFOPLIST_FILE}")
+echo $(/usr/libexec/PlistBuddy -c "Delete :API_INFO" "${ZA_INFOPLIST_FILE}")
+echo $(/usr/libexec/PlistBuddy -c "Delete :LAST_MODIFIED" "${ZA_INFOPLIST_FILE}")
+    
+#echo $(/usr/libexec/PlistBuddy -c "Delete :AP_INFOPLIST_FILE" "${AP_INFO_FILE_NAME}")
+#echo $(/usr/libexec/PlistBuddy -c "Delete :AP_APP_GROUP_IDENTIFIER" "${AP_INFO_FILE_NAME}")
+
+if [ ! -f "${ZA_INFOPLIST_FILE}" ]; then
+echo "dsym upload : Please check if the ${ZA_INFO_FILE_NAME} is in your projects' root dir, or else provide the proper path by passing value to the param '--config-file-path'"
+exit 1
+fi
+
+if [ ! "${API_KEY}" ]; then
+API_KEY=$(/usr/libexec/PlistBuddy -c 'Print API_KEY' "${ZA_INFOPLIST_FILE}")
+fi
+
+if [ ! "${API_KEY}" ]; then
+value=$(error_prompt "Error" "Missing API_KEY, please check if the ${ZA_INFO_FILE_NAME} file is up to date?")
+exit 1
+fi
+
+#DSYM_UPLOAD_ENDPOINT="https://apptics.zoho.com/api/janalytic/v3/addDsymfile"
+
+SERVER_URL=$(/usr/libexec/PlistBuddy -c 'Print SERVER_URL' "${ZA_INFOPLIST_FILE}")
+
+if [ "${SERVER_URL}" ]; then
+DSYM_UPLOAD_ENDPOINT="${SERVER_URL}/sdk/api/apptics/v1/adddsymfile"
+echo "SERVER_URL : ${SERVER_URL}"
+else
+value=$(error_prompt "Error" "Missing SERVER_URL in your ${ZA_INFO_FILE_NAME}, please if the file is up to date?" )
+exit 1
+fi
+
+echo "Uploading dSYM to Apptics server..."
+
+#IPADDRESS=$(curl ifconfig.me)
+#if [ ! "${IPADDRESS}" ]; then
+#IPADDRESS=$(ipconfig getifaddr en0)
+#fi
+
+WHOAMI=$(whoami)
+# Display build info
+BUNDLE_VERSION=${CURRENT_PROJECT_VERSION}
+
+if [ "$BUNDLE_VERSION" == "" ]; then
+BUNDLE_VERSION=$(/usr/libexec/PlistBuddy -c 'Print CFBundleVersion' "${AP_INFO_FILE_NAME}")
+fi
+BUNDLE_SHORT_VERSION=${MARKETING_VERSION}
+if [ "$BUNDLE_SHORT_VERSION" == "" ]; then
+BUNDLE_SHORT_VERSION=$(/usr/libexec/PlistBuddy -c 'Print CFBundleShortVersionString' "${AP_INFO_FILE_NAME}")
+fi
+
+echo ZA_INFO_PLIST_FILE : "${ZA_INFO_PLIST_FILE}"
+
+if [ -e "${ZA_INFO_PLIST_FILE}" ]
+then
+ZA_BUNDLE_SHORT_VERSION=$(/usr/libexec/PlistBuddy -c 'Print CFBundleShortVersionString' "$ZA_INFO_PLIST_FILE" 2>/dev/null || printf )
+fi
+
+if [ ! "${ZA_BUNDLE_SHORT_VERSION}" ]; then
+ZA_BUNDLE_SHORT_VERSION=""
+else
+ZA_BUNDLE_SHORT_VERSION="&frameworkversion=${ZA_BUNDLE_SHORT_VERSION}"
+fi
+
+OS="iOS"
+if [ "${PLATFORM}" ]; then
+OS=${PLATFORM}
+fi
+
+APP_VERSION_ID=$(/usr/libexec/PlistBuddy -c 'Print APP_VERSION_META:APP_VERSION_ID' "${CM_ZA_INFOPLIST_FILE}")
+APP_RELEASE_VERSION_ID=$(/usr/libexec/PlistBuddy -c 'Print APP_VERSION_META:APP_RELEASE_VERSION_ID' "${CM_ZA_INFOPLIST_FILE}")
+PLATFORM_ID=$(/usr/libexec/PlistBuddy -c 'Print APP_VERSION_META:PLATFORM_ID' "${CM_ZA_INFOPLIST_FILE}")
+APID=$(/usr/libexec/PlistBuddy -c 'Print APP_VERSION_META:APID' "${CM_ZA_INFOPLIST_FILE}")
+
+
+echo "Plist Path : ${CM_ZA_INFOPLIST_FILE}"
+echo "Deployment target: ${ZA_DEPLOYMENT_TARGET}"
+echo "Product Name: ${PRODUCT_NAME}"
+echo "Version: ${BUNDLE_SHORT_VERSION}"
+echo "Build: ${BUNDLE_VERSION}"
+echo "Bundle Identifier: ${AP_BUNDLE_ID}"
+echo "App ID: ${APP_ID}"
+echo "OS : ${OS}"
+echo "API key: ${API_KEY}"
+
+echo "Host : ${WHOAMI}"
+echo "ZA_BUNDLE_SHORT_VERSION : ${ZA_BUNDLE_SHORT_VERSION}"
+echo "IPADDRESS : ${IPADDRESS}"
+
+echo "APP_VERSION_ID : ${APP_VERSION_ID}"
+echo "APP_RELEASE_VERSION_ID : ${APP_RELEASE_VERSION_ID}"
+echo "PLATFORM_ID : ${PLATFORM_ID}"
+echo "APID : ${APID}"
+
+AP_ENABLE_BITCODE="false"
+
+if [ "$ENABLE_BITCODE" == "YES" ]; then
+AP_ENABLE_BITCODE="true"
+fi
+
+DSYM_UPLOAD_PARAMS="appversionid=${APP_VERSION_ID}&appreleaseversionid=${APP_RELEASE_VERSION_ID}&pid=${PLATFORM_ID}&apid=${APID}&isBitcodeenabled=${AP_ENABLE_BITCODE}&host=${WHOAMI}&remoteaddress=${IPADDRESS}"
+
+if [ "$EFFECTIVE_PLATFORM_NAME" == "-iphonesimulator" ]; then
+if [ "$UPLOAD_SIMULATOR_SYMBOLS" == "0" ]; then
+exitOperation "skipping simulator build" 0
+fi
+fi
+
+DSYM_SRC=${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}
+AP_DWARF_DSYM_FILE_NAME="$(echo $DWARF_DSYM_FILE_NAME | sed -e "s/\./\_/g")"
+DSYM_ZIP_FPATH="/tmp/$AP_DWARF_DSYM_FILE_NAME"
+
+if [ $SKIP_PROMPT -eq 0 ]; then
+  value=$(prompt "Should upload dSYMs?" "App name:$PRODUCT_NAME\nBundle id: $AP_BUNDLE_ID\nVersion:$BUNDLE_SHORT_VERSION($BUNDLE_VERSION)")
+
+  if [ "$?" -ne 0 ]; then
+    exit
+  fi
+else
+  echo "Skipping prompt for dsyms upload."
+fi
+
+# create dSYM .zip file
+echo "BACKGROUND_PROCESS :: $PROCESS_TYPE dSYM location: ${DSYM_SRC} "
+DWARF_DATA="${DSYM_SRC}/Contents/Resources/DWARF"
+if [ ${DEBUG_INFORMATION_FORMAT} == "dwarf-with-dsym" ]; then
+     
+ if [ $PROCESS_TYPE -eq 1 ]; then
+    while ( [ ! -d $DWARF_DATA ] || ! dwarfdump -u "${DSYM_SRC}" 2> /dev/null)
+    do
+    echo "Waiting to finish dSYM file creation..."
+    sleep 1;
+    done
+    
+ fi
+
+    cd "${DWARF_DSYM_FOLDER_PATH}"
+    mkdir -p "${DSYM_ZIP_FPATH}"
+
+    cp -Rvf "${DSYM_SRC}" "${DSYM_ZIP_FPATH}"
+    
+    IFS=', ' read -r -a UPLOAD_SYMBOLS_FOR_FRAMEWORKS <<< "${UPLOAD_SYMBOLS_FOR}"
+    
+    for FRAMEWORK in "${UPLOAD_SYMBOLS_FOR_FRAMEWORKS[@]}"
+    do
+        cp -Rvf "${FRAMEWORK}.framework.dSYM" "${DSYM_ZIP_FPATH}"
+    done
+
+#    cp -Rvf *.dSYM "${DSYM_ZIP_FPATH}"
+#    cp -Rvf **/*.dSYM "${DSYM_ZIP_FPATH}" 2>/dev/null
+
+    echo "Compressing dSYM to: ${DSYM_ZIP_FPATH} ..."
+         
+    #come to the native dir.
+    cd -
+    #move to tmp dir to make zip.
+    cd /tmp/
+
+    (/usr/bin/zip -rv --quiet "${DSYM_ZIP_FPATH}.zip" "$AP_DWARF_DSYM_FILE_NAME") || exitOperation "Error: failed creating zip" 1
+
+    echo "${DSYM_ZIP_FPATH}.zip"
+    echo "Archive created."
+
+    # Upload dSYM to Apptics server
+    URL=${DSYM_UPLOAD_ENDPOINT}${APP_ID}
+    echo "Uploading dSYM to Apptics server: ${URL}?${DSYM_UPLOAD_PARAMS}"
+    #come to the native dir.
+    cd -
+    #upload dsym through ruby script.
+    value=$(ruby -r "$(command dirname -- "${0}")/apptics_utils.rb" -e "AppticsUploader.main '${DSYM_ZIP_FPATH}.zip','${URL}?${DSYM_UPLOAD_PARAMS}','${API_KEY}'")
+    # Remove dSYM archive from tmp dir
+    echo "$value"
+    
+    if [[ "$value" =~ ^Error:* ]]; then
+    if [ $FAIL_ON_ERROR -eq 1 ]; then
+        exit 1
+    fi
+    fi
+        
+    echo "Cleaning up dSYM archive from temp dir..."
+    /bin/rm -rv "${DSYM_ZIP_FPATH}.zip"
+    /bin/rm -rv "${DSYM_ZIP_FPATH}"
+
+    if [ "$?" -ne 0 ]; then
+    exitOperation "an error was encountered while uploading dSYM to the server" 1
+    fi
+else
+    exitOperation "Please select 'Debug information format' to 'DWARF with DSYM File' under Target Build Settings" 1
+fi
+
+else
+    
+    CM_ZA_INFOPLIST_FILE="$(find "${TARGET_BUILD_DIR}" -name "${ZA_INFO_FILE_NAME}" -not -path '*/.*' | head -1)"
+    while ([ ! -f "${CM_ZA_INFOPLIST_FILE}" ])
+    do
+      CM_ZA_INFOPLIST_FILE="$(find "${TARGET_BUILD_DIR}" -name "${ZA_INFO_FILE_NAME}" -not -path '*/.*' | head -1)"
+    echo "Waiting for the file to be copied at line number 322 ${CM_ZA_INFOPLIST_FILE}"
+    sleep 1;
+    done
+
+    TMP_AP_INFOPLIST_FILE=$(/usr/libexec/PlistBuddy -c "Print AP_INFOPLIST_FILE" "${CM_AP_INFO_FILE_NAME}" 2>/dev/null || printf "nil")
+
+    while ([ "${TMP_AP_INFOPLIST_FILE}" == "nil" ])
+    do
+      TMP_AP_INFOPLIST_FILE=$(/usr/libexec/PlistBuddy -c "Print AP_INFOPLIST_FILE" "${CM_AP_INFO_FILE_NAME}" 2>/dev/null || printf "nil")
+    echo "Waiting for the info file to be copied at line number 331 ${TMP_AP_INFOPLIST_FILE}"
+    sleep 1;
+    done
+
+    echo "Data from target to source - skip upload dsym : ${CM_ZA_INFOPLIST_FILE}"
+    echo $(/usr/libexec/PlistBuddy -c "Delete :APP_VERSION_META" "${ZA_INFOPLIST_FILE}")
+    echo $(/usr/libexec/PlistBuddy -c "Delete :EVENTS_INFO" "${ZA_INFOPLIST_FILE}")
+    echo $(/usr/libexec/PlistBuddy -c "Delete :API_INFO" "${ZA_INFOPLIST_FILE}")
+    echo $(/usr/libexec/PlistBuddy -c "Delete :LAST_MODIFIED" "${ZA_INFOPLIST_FILE}")
+
+#    echo $(/usr/libexec/PlistBuddy -c "Delete :AP_INFOPLIST_FILE" "${AP_INFO_FILE_NAME}")
+#    echo $(/usr/libexec/PlistBuddy -c "Delete :AP_APP_GROUP_IDENTIFIER" "${AP_INFO_FILE_NAME}")
+    
+fi
