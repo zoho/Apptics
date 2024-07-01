@@ -55,6 +55,9 @@ public class ScreenShotView: UIView,UICollectionViewDelegate,UICollectionViewDat
         else{
             appFontsize = 40.0
         }
+#if SWIFT_PACKAGE
+        cardView.layer.borderColor = UIColor.clear.cgColor
+#endif
         collectionViewSetup()
         getallImages()
         fileindexpath = [0,0]

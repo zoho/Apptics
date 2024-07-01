@@ -153,9 +153,15 @@ public struct FontIconText {
 }
 
 
+#if SWIFT_PACKAGE
+public let bundles = Bundle.module
+#else
+public let bundles = Bundle(for: GradientButton.self)
+#endif
+
+
 public var appticsFontName = "AppticsSdkIcons"
 public var appFontsize:CGFloat = 30.0
-public let bundles = Bundle(for: GradientButton.self)
 public let notificationLoadAnonymChatConversation = "com.apticssdk.AnonymChatConversation"
 public let notificationbadgereloadKey = "com.apticssdk.badgereload"
 public let notificationScreenreloadKey = "com.appticssdk.Screenshots.reload"
@@ -346,82 +352,11 @@ public extension UIButton {
 }
 
 
-enum TrailingContent {
-    case readmore
-    case readless
-
-    var text: String {
-        switch self {
-        case .readmore: return " ...More"
-        case .readless: return "  Less"
-        }
-    }
-}
-
-extension UILabel {
-
-    private var minimumLines: Int { return 4 }
-    private var highlightedColor: UIColor { return .blue }
-
-    private var attributes: [NSAttributedString.Key: Any] {
-        return [.font: self.font ?? .systemFont(ofSize: 16)]
-    }
-    
-    public func requiredHeight(for text: String) -> CGFloat {
-        let label = UILabel(frame: CGRect(x: 0, y: 0, width: frame.width, height: CGFloat.greatestFiniteMagnitude))
-        label.numberOfLines = minimumLines
-        label.lineBreakMode = NSLineBreakMode.byTruncatingTail
-        label.font = font
-        label.text = text
-        label.sizeToFit()
-        return label.frame.height
-      }
-
-    func highlight(_ text: String, color: UIColor) {
-        guard let labelText = self.text else { return }
-        let range = (labelText as NSString).range(of: text)
-
-        let mutableAttributedString = NSMutableAttributedString.init(string: labelText)
-        mutableAttributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: color, range: range)
-        self.attributedText = mutableAttributedString
-    }
-
-    func appendReadmore(after text: String, trailingContent: TrailingContent,highledcolor:UIColor) {
-        self.numberOfLines = minimumLines
-        let fourLineText = "\n\n\n"
-        let fourlineHeight = requiredHeight(for: fourLineText)
-        let sentenceText = NSString(string: text)
-        let sentenceRange = NSRange(location: 0, length: sentenceText.length)
-        var truncatedSentence: NSString = sentenceText
-        var endIndex: Int = sentenceRange.upperBound
-        let size: CGSize = CGSize(width: self.bounds.width, height: CGFloat.greatestFiniteMagnitude)
-        while truncatedSentence.boundingRect(with: size, options: .usesLineFragmentOrigin, attributes: attributes, context: nil).size.height >= fourlineHeight {
-            if endIndex == 0 {
-                break
-            }
-            endIndex -= 1
-
-            truncatedSentence = NSString(string: sentenceText.substring(with: NSRange(location: 0, length: endIndex)))
-            truncatedSentence = (String(truncatedSentence) + trailingContent.text) as NSString
-
-        }
-        self.text = truncatedSentence as String
-        self.highlight(trailingContent.text, color: highledcolor)
-    }
-
-    func appendReadLess(after text: String, trailingContent: TrailingContent,highledcolor:UIColor) {
-        self.numberOfLines = 0
-        self.text = text + trailingContent.text
-        self.highlight(trailingContent.text, color: highledcolor)
-    }
-
-}
 
 extension UITextView {
     func leftSpace() {
         self.textContainerInset = UIEdgeInsets(top: 10, left: 7, bottom: 4, right: 55)
     }
-    
 }
 
 

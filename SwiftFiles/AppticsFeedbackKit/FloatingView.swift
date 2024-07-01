@@ -51,7 +51,6 @@ class FloatingView: UIView {
         setFontForButton(button: cancelImage, fontName: appticsFontName, title: FontIconText.cancelIcon, size: appFontsize)
         setFontForButton(button: snapImage, fontName: appticsFontName, title: FontIconText.snapIcon, size: appFontsize)
         setFontForButton(button: screenshotsImage, fontName: appticsFontName, title: FontIconText.screenshotsIcon, size: appFontsize)
-
     }
 }
 

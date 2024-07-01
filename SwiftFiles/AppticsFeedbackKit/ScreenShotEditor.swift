@@ -210,7 +210,43 @@ public class FloatScreenshotEditor:UIViewController,UIGestureRecognizerDelegate{
         btnClear.setAttributedText(attributes: textAttributes as! [NSAttributedString.Key : Any])
         btnfullBlur.setAttributedText(attributes: textAttributes as! [NSAttributedString.Key : Any])
         floatview.doneBttn.setAttributedText(attributes: textAttributes as! [NSAttributedString.Key : Any])
-        floatview.closeBttn.setAttributedText(attributes: textAttributes as! [NSAttributedString.Key : Any])    }
+        floatview.closeBttn.setAttributedText(attributes: textAttributes as! [NSAttributedString.Key : Any])
+        
+        setFontforbttnIcons()
+        let attributes = textAttributes as? [NSAttributedString.Key: Any]
+        if let attributess = attributes,
+           let textColor = attributess[.foregroundColor] as? UIColor {
+            setcolorforbttnIcons(colors: textColor)
+        } else {
+            setcolorforbttnIcons(colors: .systemBlue)
+            
+        }
+        
+        
+        
+    }
+    
+    
+    func setcolorforbttnIcons(colors:UIColor){
+        btnArrow.setTitleColor(colors, for: .normal)
+        btncolorpen.setTitleColor(colors, for: .normal)
+        bttnBlur.setTitleColor(colors, for: .normal)
+        btnClear.setTitleColor(colors, for: .normal)
+        btnfullBlur.setTitleColor(colors, for: .normal)
+    }
+    
+    
+    
+    func setFontforbttnIcons(){
+        btnArrow.setTitle(FontIconText.arrowIcon, for: .normal)
+        btncolorpen.setTitle(FontIconText.pencilDraw, for: .normal)
+        bttnBlur.setTitle(FontIconText.blurIcon, for: .normal)
+        btnClear.setTitle(FontIconText.clearIcon, for: .normal)
+        btnfullBlur.setTitle(FontIconText.imageMask, for: .normal)
+        btnColorPalette.setTitle(FontIconText.colorPalette, for: .normal)
+    }
+    
+    
     
     //MARK: Done Button Click Action
     @objc func donebuttonClicked() {
@@ -1198,15 +1234,7 @@ public class FloatScreenshotEditor:UIViewController,UIGestureRecognizerDelegate{
     @objc func imageViewhandleTap(_ sender: UITapGestureRecognizer? = nil) {
         if viewPopUpStatus == true{
             UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 1.0, initialSpringVelocity: 1.0, options: .curveEaseInOut, animations: {
-//                if TargetDevice.currentDevice == .iPhone {
-//                    self.drawColorView.center.y += self.drawColorView.frame.height + self.sizeforColorPalette
-//                }
-//                else if FeedbackTheme.sharedInstance.isfromClass == "apptics_ScreenshotImageEditorView"{
-//                    self.drawColorView.center.y += self.drawColorView.frame.height + self.floatview.frame.height/1.80
-//                    self.drawColorView.isHidden = true
-//                }
                 self.drawColorView.center.y += self.drawColorView.frame.height + self.sizeforColorPalette
-                
             }, completion: nil)
             viewPopUpStatus = false
         }

@@ -106,10 +106,37 @@ import AppticsFeedbackKit
         floatview.cancelBttn.setAttributedText(attributes: textAttributes as! [NSAttributedString.Key : Any])
         floatview.snapBttn.setAttributedText(attributes: textAttributes as! [NSAttributedString.Key : Any])
         floatview.screenshotBttn.setAttributedText(attributes: textAttributes as! [NSAttributedString.Key : Any])
-        floatview.cancelImage.setAttributedText(attributes: textAttributes as! [NSAttributedString.Key : Any])
-        floatview.snapImage.setAttributedText(attributes: textAttributes as! [NSAttributedString.Key : Any])
-        floatview.screenshotsImage.setAttributedText(attributes: textAttributes as! [NSAttributedString.Key : Any])
+        let attributes = textAttributes as? [NSAttributedString.Key: Any]
+        if let attributess = attributes,
+           let textColor = attributess[.foregroundColor] as? UIColor {
+            setcolorforbttnIcons(colors: textColor)
+
+        } else {
+            setcolorforbttnIcons(colors: .systemBlue)
+        }
+        setFontforbttnIcons()
+
     }
+
+    
+    func setFontforbttnIcons(){
+        floatview.cancelImage.setTitle(FontIconText.cancelIcon, for: .normal)
+        floatview.snapImage.setTitle(FontIconText.snapIcon, for: .normal)
+        floatview.screenshotsImage.setTitle(FontIconText.screenshotsIcon, for: .normal)
+    }
+    func setcolorforbttnIcons(colors:UIColor){
+        floatview.cancelImage.setTitleColor(colors, for: .normal)
+        floatview.snapImage.setTitleColor(colors, for: .normal)
+        floatview.screenshotsImage.setTitleColor(colors, for: .normal)
+    }
+    
+    
+    
+    
+    
+    
+    
+    
     
     //MARK: change theme accouding to traits
     

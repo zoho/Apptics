@@ -116,9 +116,27 @@ public class FloatScrollview:UIViewController{
     func setTitleTextAttributesInButtons(textAttributes:NSDictionary){
         ScreenshotsView.hideBttn.setAttributedText(attributes: textAttributes as! [NSAttributedString.Key : Any])
         ScreenshotsView.doneBttn.setAttributedText(attributes: textAttributes as! [NSAttributedString.Key : Any])
-        ScreenshotsView.deleteBttn.setAttributedText(attributes: textAttributes as! [NSAttributedString.Key : Any])
         ScreenshotsView.noDataBttn.setAttributedText(attributes: textAttributes as! [NSAttributedString.Key : Any])
+        ScreenshotsView.deleteBttn.setTitle(FontIconText.deleteIcon, for: .normal)
+        let attributes = textAttributes as? [NSAttributedString.Key: Any]
+        if let attributess = attributes,
+           let textColor = attributess[.foregroundColor] as? UIColor {
+            ScreenshotsView.deleteBttn.setTitleColor(textColor, for: .normal)
+
+        } else {
+            ScreenshotsView.deleteBttn.setTitleColor(UIColor.systemBlue, for: .normal)
+        }
+        
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
 //MARK: strings for localization
     func setLocalizableString(){
         ScreenshotsView.doneBttn.setTitle(FeedbackKit.getLocalizableString(forKey: "zanalytics.feedback.navbar.title.compose"), for: .normal)
