@@ -50,7 +50,8 @@ NS_ASSUME_NONNULL_BEGIN
  *  Time to push all collected data to the servers
  */
 @property (nonatomic) NSInteger flushInterval;
-@property (nonatomic, retain) APTimerManager *timerManager;
+@property (nonatomic, retain) APTimerManager *manageFlushInterval;
+@property (nonatomic, retain) APTimerManager *manageMaxSessionTimeout;
 
 @property long zuid;//Zoho User Id
 @property (strong,nonatomic) NSString *apiToken;
@@ -79,6 +80,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property BOOL enableBackgroundTask;
 
 @property BOOL isApplicationInBg;
+
+@property (nonatomic) BOOL isInitialized;
+
 @property (nonatomic,strong) NSString *consentWindowStatus;//from which window it came
 
 @property UserConsentPresentCompletionBlock _Nullable userConsentPresentCompletionBlock;
@@ -95,6 +99,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 #if !TARGET_OS_OSX && !TARGET_OS_WATCH
 @property (nonatomic) UIBackgroundTaskIdentifier backgroundUpdateTask;
+@property (nonatomic) bool isBackgroundTaskScheduled;
 #endif
 
 typedef void (^bgEngagementRequestSuccessBlock)(void);
@@ -358,7 +363,7 @@ typedef void (^internbgConsoleLogsRequestSuccessBlock)(void);
 @property (nonatomic, strong) dispatch_source_t _Nullable timer;
 @property (nonatomic, assign) BOOL shouldExecuteBlock;
 
-- (void)startTimerWithInterval:(NSTimeInterval)interval;
+- (void)startTimerWithInterval:(NSTimeInterval)interval executeBlock:(dispatch_block_t)completionHandler;
 - (void)stopTimer;
 
 @end

@@ -1,15 +1,17 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
-// swift-module-flags: -target x86_64-apple-ios13.1-macabi -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Apptics
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target x86_64-apple-ios13.1-macabi -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name Apptics
 @_exported import Apptics
 import Foundation
 import Swift
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 @_inheritsConvenienceInitializers @objcMembers @objc public class AppticsExtensionManager : ObjectiveC.NSObject {
   @objc public class func trackEvent(groupname: Swift.String, eventName: Swift.String, property: [Swift.String : Any], appGroup: Swift.String)
   @objc public class func trackEventWithProperty(groupname: Swift.String, eventName: Swift.String, appGroup: Swift.String)
+  @objc public class func startTimedEvent(groupname: Swift.String, eventName: Swift.String, property: [Swift.String : Any], appGroup: Swift.String) -> Foundation.NSNumber
+  @objc public class func endTimedEvent(startTime: Foundation.NSNumber, groupname: Swift.String, eventName: Swift.String, appGroup: Swift.String)
   @objc override dynamic public init()
   @objc deinit
 }

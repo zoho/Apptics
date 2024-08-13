@@ -23,7 +23,7 @@
 @property(retain) NSArray *reportIds;
 @property (nonatomic,retain) NSURL *url;
 @property (nonatomic,retain) NSString *params;
-@property (nonatomic, strong) APAAAUtil *aaaUtil;
+@property (nonatomic, weak) APAAAUtil *aaaUtil;
 
 #if !TARGET_OS_OSX && !TARGET_OS_WATCH
 @property (nonatomic) UIBackgroundTaskIdentifier backgroundUpdateTask;

@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) UITextField *textField;
 @property (nonatomic, strong) UIView *bodyView;
+@property (nonatomic, assign) BOOL preventScreenCapture;
 
 @end
 

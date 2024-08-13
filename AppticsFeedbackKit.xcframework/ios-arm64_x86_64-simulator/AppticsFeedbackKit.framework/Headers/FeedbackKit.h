@@ -12,15 +12,18 @@
 
 
 #import <Foundation/Foundation.h>
+#if !TARGET_OS_OSX
 #import <UIKit/UIKit.h>
 #import <AppticsFeedbackKit/ZAPresenter.h>
-#import <Apptics/APTheme.h>
 #import <AppticsFeedbackKit/FKCustomHandler.h>
 #import <MessageUI/MessageUI.h>
 #import "ZAArrowCanvasView.h"
 #import "ZADragBlurView.h"
+#else
+#import <Cocoa/Cocoa.h>
+#endif
+#import <Apptics/APTheme.h>
 #import "FeedbackDiagosticInfo.h"
-
 @class ZAIncludeLogConsent;
 /**
  * The FeedbackKit class allows you to use the features of the Feedback module. Check out the properties and methods for more documentation.
@@ -29,10 +32,14 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+#if !TARGET_OS_OSX
 @interface FeedbackKit : NSObject<MFMailComposeViewControllerDelegate>
+#else
+@interface FeedbackKit : NSObject
+#endif
+
 
 #pragma mark - Public apis
-
 /**
  *  :nodoc: Initializes an instance of the FeedbackKit
  */
@@ -142,7 +149,7 @@ NS_ASSUME_NONNULL_BEGIN
  Set diagnostic information in the format of dictionary @[@"key":@"<value>"] of array.
  */
 
-+(void) setDiagnosticInfo : (NSArray<NSArray<NSDictionary*>*>* _Nonnull) info __deprecated_msg("use setDiagnosticInfoDict method instead.");;
++(void) setDiagnosticInfo : (NSArray<NSArray<NSDictionary*>*>* _Nonnull) info __deprecated_msg("use setDiagnosticInfoObject method instead.");
 
 /**
  Set diagnostic information in the format of dictionary [@"key":@"value"]
@@ -179,7 +186,6 @@ Set sender email address to which the support emails will be sent from feedback 
 + (void) enableAnonymousUserAlert:(BOOL)status;
 + (void) reducedTransparencyStatus:(BOOL) status;
 + (void) enableAnonymousSender:(BOOL)status;
-
     
 + (void) openNativeMailAppWithLogs : (BOOL) includeLogs diagnosticInfo : (BOOL) includeDiagnosticInfo viewController : (ZAIncludeLogConsent*) viewController;
 
@@ -224,18 +230,16 @@ Set this true to mask the text detected in a screenshot by default. Setting to F
 /**
  :nodoc: Get all types of completion handler in single place by extending our protocol.
  */
-
+#if !TARGET_OS_OSX
 -(void) setCustomHandler:(id <FKCustomHandler> _Nonnull) handler;
-
+#endif
 #pragma mark - Other Important Properties
 /**
  :nodoc:
  */
 @property (nonatomic, assign) BOOL anonymStatus;
 @property (nonatomic, assign) BOOL setTransparencyStatus;
-
 @property (nonatomic, assign) BOOL enableAnonymousSender;
-
 @property (nonatomic) BOOL maskText;
 @property (nonatomic,strong) NSMutableArray*arrayOfimages;
 @property NSString* feedback_KitType;
@@ -309,8 +313,9 @@ extern NSString *bLogUploadFailureNotification;
 /**
  :nodoc:
  */
+#if !TARGET_OS_OSX
 + (ZAArrowCanvasView*) createArrowCanvasView : (CGRect)frame;
-
+#endif
 @end
 
 NS_ASSUME_NONNULL_END

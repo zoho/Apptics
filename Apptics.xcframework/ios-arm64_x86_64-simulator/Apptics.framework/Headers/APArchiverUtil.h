@@ -13,13 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 + (NSData *)archieveKeyedObject:(id)object error:(NSError **)error;
-
 + (NSSet *)setObjectClassesForKeyedUnArchiver;
-
-+ (nullable id)unarchiveKeyedObject:(NSString *)filePath error:(NSError **)error;
-
-
-+ (nullable id)unarchiveDictionaryFromData:(NSData *)data;
++ (nullable id)unarchiveObject:(id)input error:(NSError **)error;
 
 @end
 

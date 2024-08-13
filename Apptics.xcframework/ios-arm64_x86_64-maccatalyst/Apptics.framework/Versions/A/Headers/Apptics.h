@@ -164,7 +164,7 @@ Enable or disable automatic session tracking using this method. This feature is 
  @param status  BOOL
  */
 
-+ (void) setEnableBackgroundTask:(BOOL) status API_AVAILABLE(ios(13.0), tvos(13.0)) API_UNAVAILABLE(macos, watchos);
++ (void) setEnableBackgroundTask:(BOOL) status API_AVAILABLE(ios(13.0), tvos(13.0), watchos(3.0)) API_UNAVAILABLE(macos);
 
 
 /**
