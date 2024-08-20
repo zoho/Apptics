@@ -22,11 +22,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		r9/anEFd5DdxKrlPUFLUPJj8AIY=
+		ZneL3a2BgCHO6t2miPypXAJSEmM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		MrUMLjm+SoAuBsdzG5eiK/DVQHs=
+		Zx2ehU0aoJNiNNzEysGK5vR2618=
 		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
@@ -37,6 +37,10 @@
 	<dict>
 		<key>Headers/APRateUs.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			RoWTke0k6qHJ9RcSG4r6aSHIwdA=
+			</data>
 			<key>hash2</key>
 			<data>
 			5LEQOHUkbtyb5nqLq62tkq5GXu/qHVKRVglMBeEhH8g=
@@ -44,6 +48,10 @@
 		</dict>
 		<key>Headers/APStoreReviewManager.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			8ibH5XKixSyw1ceHpwBrTVQEuaQ=
+			</data>
 			<key>hash2</key>
 			<data>
 			vJTs13i9br0AlKyT2B6UDeZgAHFCcWqOsJGy/bNR9xI=
@@ -51,6 +59,10 @@
 		</dict>
 		<key>Headers/ARCustomHandler.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			93kPa3iZbTZvCVULNyHmVV3i+jk=
+			</data>
 			<key>hash2</key>
 			<data>
 			G8+UaL9CIxH7kkCJEjK3Fju4MAKykXcrhQm0mAhxefY=
@@ -58,6 +70,10 @@
 		</dict>
 		<key>Headers/AppticsRateUs.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			w8UD5TdTjOGpDaUFLKghS9kdQ88=
+			</data>
 			<key>hash2</key>
 			<data>
 			UYCyd8Ue9StO1xKuxO31i1fWH0ZPxYhmYrDJGPTJp/s=
@@ -65,13 +81,21 @@
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			Zx2ehU0aoJNiNNzEysGK5vR2618=
+			</data>
 			<key>hash2</key>
 			<data>
-			pmOPmkcG5VuWsFESfX4wntjw4Ey50u4oD9kEq5sHGDA=
+			BEsXhH5+CBzIHHRvocFiwpDijzgylitdQjpwN1wZHYM=
 			</data>
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			cl5C9XI0dGK5oiqjbyJFIC3sCV4=
+			</data>
 			<key>hash2</key>
 			<data>
 			7Abj29BKhiz8bFZbe/Iw3CNg7SORJLWdcXrFRbYKRZw=

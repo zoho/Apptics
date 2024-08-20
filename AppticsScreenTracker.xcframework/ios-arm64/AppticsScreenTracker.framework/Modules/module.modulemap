@@ -1,6 +1,6 @@
 framework module AppticsScreenTracker {
   umbrella header "AppticsScreenTracker.h"
-  export *
 
+  export *
   module * { export * }
 }

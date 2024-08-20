@@ -1,6 +1,6 @@
 framework module AppticsPrivacyShield {
   umbrella header "AppticsPrivacyShield.h"
-  export *
 
+  export *
   module * { export * }
 }

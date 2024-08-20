@@ -42,6 +42,7 @@ typedef void (^updateResponseBlock)(NSDictionary *_Nullable updateInfo);
 -(void) updateTheUI:(void(^ _Nullable)(NSDictionary * updateInfo))completionHandler with : (UIViewController* _Nullable) viewController;
 
 - (void) setAppUpdateAction : (ZAUpdateAction) type updateInfo : (NSDictionary *) updateInfo;
+- (void) sendStats: (NSDictionary*) updateInfo event: (AppticsInAppUpdateStats) type;
 
 /**
  
@@ -52,7 +53,7 @@ typedef void (^updateResponseBlock)(NSDictionary *_Nullable updateInfo);
 
  */
 
-+ (void) checkForAppUpdate:(void (^_Nullable)(NSDictionary *_Nullable updateInfo))completionHandler; __deprecated_msg("use checkForUpdateAvailability method instead.");
++ (NSDictionary *_Nullable) checkForAppUpdates;
 
 /**
  
@@ -65,15 +66,18 @@ typedef void (^updateResponseBlock)(NSDictionary *_Nullable updateInfo);
 
  */
 
-+ (void) checkForUpdateAvailability:(void (^_Nullable)(NSDictionary *_Nullable updateInfo))completionHandler with : (UIViewController*_Nullable) viewController;
++ (void) checkForUpdateAvailability:(void (^_Nullable)(NSDictionary *_Nullable updateInfo))completionHandler with : (UIViewController*_Nullable) viewController;  __deprecated_msg("use checkAndShowVersionAlert method instead.");
+
++ (void) checkAndShowVersionAlert:(UIViewController*_Nullable) viewController;
 
 /**
  Set back the actions for custom app update.
  @param type ZAUpdateAction
  */
 
-+ (void) setAppUpdateAction : (ZAUpdateAction) type updateInfo : (NSDictionary *_Nullable) updateInfo;
++ (void) setAppUpdateAction : (ZAUpdateAction) type updateInfo : (NSDictionary *_Nullable) updateInfo; __deprecated_msg("use sendStatsForUpdate method instead.");
 
++ (void) sendStatsForUpdate: (NSDictionary*) updateInfo event: (AppticsInAppUpdateStats) event;
 
 @end
 
