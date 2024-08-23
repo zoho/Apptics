@@ -40,7 +40,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (strong,nonatomic) ZAScreenObject *currentScreen;
 
-@property (strong,nonatomic) ZAAppupdatePopupInfo * _Nullable currentAppupdatePopup;
+//@property (strong,nonatomic) ZAAppupdatePopupInfo * _Nullable currentAppupdatePopup;
 
 @property (nonatomic, strong) NSOperationQueue *operationQueue;
 @property (nonatomic, strong) NSOperationQueue *bgOperationQueue;

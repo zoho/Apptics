@@ -10,11 +10,11 @@
 		</data>
 		<key>AppticsResources_tvOS.bundle/Info.plist</key>
 		<data>
-		WRDHO3O36kkkLETM8PRlACEiEbU=
+		oJIQh8GVQYuqwLJIfsTxJf1U4Q8=
 		</data>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		ueuRRXf3kdcZ3JkSy8dFHfFLNjA=
+		c+QR6ES3mdLO2Vp5J+Q3s/8aZbE=
 		</data>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		za6nWHh72hE6VPlDOucA7fNlPTA=
+		fSoEQU0EiO1vq3ZPIBpjttOpXgU=
 		</data>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeResources</key>
 		<data>
@@ -372,7 +372,7 @@
 		</data>
 		<key>Headers/ZAGlobalQueue.h</key>
 		<data>
-		lyxU86NlHaVaQQBqBSxj2eQ6hUQ=
+		nOwbPfghN/082Jjx0On+l14s8yE=
 		</data>
 		<key>Headers/ZAJSONString.h</key>
 		<data>
@@ -436,7 +436,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		iVFH/R5fdhxam1I41D9aLvVa1GY=
+		9cEMiEKG/lYIqNnA5TOrUH+3W24=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -464,22 +464,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WRDHO3O36kkkLETM8PRlACEiEbU=
+			oJIQh8GVQYuqwLJIfsTxJf1U4Q8=
 			</data>
 			<key>hash2</key>
 			<data>
-			XAETezq/LvD43iFR0/Xotgq6VlSerdwuknNBJlab1Hg=
+			uiSffA5YUVwPwWfjcOGsJCJXHxcZbnq8NqWyYZqvAxM=
 			</data>
 		</dict>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeDirectory</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ueuRRXf3kdcZ3JkSy8dFHfFLNjA=
+			c+QR6ES3mdLO2Vp5J+Q3s/8aZbE=
 			</data>
 			<key>hash2</key>
 			<data>
-			kkDd1Mp+uoqsnJWHARAQjB0PDkB4VIKJfLedxU0wLy0=
+			HCZCikhecEiErvQzkhmCAuVm45FXrbnglfH7J/bW5a4=
 			</data>
 		</dict>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeRequirements</key>
@@ -497,11 +497,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			za6nWHh72hE6VPlDOucA7fNlPTA=
+			fSoEQU0EiO1vq3ZPIBpjttOpXgU=
 			</data>
 			<key>hash2</key>
 			<data>
-			eyH+upF0OsEwq+NeoORDafvhlqL2PCv6X5inQcRT6vI=
+			/MJG49FqtkCTuuxrcHue+uxF1syv0T1o9rxY5VAYfVk=
 			</data>
 		</dict>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeResources</key>
@@ -1154,11 +1154,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lyxU86NlHaVaQQBqBSxj2eQ6hUQ=
+			nOwbPfghN/082Jjx0On+l14s8yE=
 			</data>
 			<key>hash2</key>
 			<data>
-			dv4XDCfJPqR4SLXHp3x/3Cut3A/w0CusUaGJBmwTXC4=
+			BGHqLj7gTqWsevwkrrhoLhgRyS6tpExD3YjTJQ3PGBI=
 			</data>
 		</dict>
 		<key>Headers/ZAJSONString.h</key>
