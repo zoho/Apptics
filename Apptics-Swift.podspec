@@ -61,14 +61,14 @@ DESC
 	spec.subspec 'Analytics' do |co|
 	co.source_files        = 'SwiftFiles/Analytics/*.swift'
     #co.resources  = 'SwiftFiles/AppticsSwift/*.{xcprivacy}'
-    co.resource_bundles = {‘Analytics’ => [‘SwiftFiles/AppticsSwift/*.{xcprivacy}']}
+    co.resource_bundles = {'Analytics' => ['SwiftFiles/AppticsSwift/*.{xcprivacy}']}
     co.dependency 'Apptics-SDK/Analytics', "#{spec.version}"
 	end
  
     spec.subspec 'AnalyticsWithKSCrash' do |ak|
     ak.source_files        = 'SwiftFiles/Analytics/*.swift'
     #ak.resources  = 'SwiftFiles/AppticsSwift/*.{xcprivacy}'
-    ak.resource_bundles = {‘AnalyticsWithKSCrash’ => [‘SwiftFiles/AppticsSwift/*.{xcprivacy}']}
+    ak.resource_bundles = {'AnalyticsWithKSCrash' => ['SwiftFiles/AppticsSwift/*.{xcprivacy}']}
     ak.dependency 'Apptics-SDK/AnalyticsWithKSCrash', "#{spec.version}"
     end
   	

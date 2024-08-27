@@ -46,7 +46,7 @@ spec.subspec 'CrossPromotion' do |cp|
     cp.resource_bundles = {'Apptics_SwiftResources' => ["SwiftFiles/CrossPromoApps/Fonts/*.{ttf}", "SwiftFiles/CrossPromoApps/ios-xibs/*.{xib}", "SwiftFiles/CrossPromoApps/StringFiles/*.{lproj}"]}
     cp.platform     = :ios, 9.1
     #cp.resources = 'SwiftFiles/CrossPromoApps/*.{xcprivacy}'
-    cp.resource_bundles = {‘CrossPromotion’ => [‘SwiftFiles/CrossPromoApps/*.{xcprivacy}']}
+    cp.resource_bundles = {'CrossPromotion' => ['SwiftFiles/CrossPromoApps/*.{xcprivacy}']}
 
   end
 
