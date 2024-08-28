@@ -43,10 +43,8 @@ spec.requires_arc = true
 spec.subspec 'CrossPromotion' do |cp|
       cp.source_files        = 'SwiftFiles/CrossPromoApps/*.swift'
     cp.dependency 'AppticsAnalytics/Apptics', "#{spec.version}"
-    cp.resource_bundles = {'Apptics_SwiftResources' => ["SwiftFiles/CrossPromoApps/Fonts/*.{ttf}", "SwiftFiles/CrossPromoApps/ios-xibs/*.{xib}", "SwiftFiles/CrossPromoApps/StringFiles/*.{lproj}"]}
+    cp.resource_bundles = {'Apptics_SwiftResources' => ["SwiftFiles/CrossPromoApps/Fonts/*.{ttf}", "SwiftFiles/CrossPromoApps/ios-xibs/*.{xib}", "SwiftFiles/CrossPromoApps/StringFiles/*.{lproj}","SwiftFiles/CrossPromoApps/*.{xcprivacy}"]}
     cp.platform     = :ios, 9.1
-    #cp.resources = 'SwiftFiles/CrossPromoApps/*.{xcprivacy}'
-    cp.resource_bundles = {'CrossPromotion' => ['SwiftFiles/CrossPromoApps/*.{xcprivacy}']}
 
   end
 
