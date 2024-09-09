@@ -126,10 +126,9 @@ var ExtensionEventKeyTimed = "TimedEventApp"
     }
     
     
-    @objc public class func trackEventWithProperty(groupname:String,eventName:String,appGroup:String){
+    @objc public class func trackEvent(groupname:String,eventName:String,appGroup:String){
         
         let E = APExtensionEventList(groupName: groupname, start_time:(Int64(NSDate().timeIntervalSince1970 * 1000)) as NSNumber, event_Name: eventName)
-        print(appGroup)
         AppticsExtensionManager.saveEvent(E,appGroup: appGroup)
     }
     
