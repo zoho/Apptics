@@ -54,6 +54,7 @@ import Apptics
 //        vc.delegate = self.delegate
         vc.hasInternet = self.hasInternet
         vc.isRefresh = false
+//       let preresponse = ZAKeyChainWrapper.dictionary(forKey: kJA_promoted_apps)
         let response = Analytics.getInstance().getPromotionalAppsData { appsData in
             self.refreshPromotedAppsList(data: appsData as! NSObject)
         }

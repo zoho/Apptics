@@ -81,8 +81,8 @@
           },
           {
             "kind": "Function",
-            "name": "trackEventWithProperty",
-            "printedName": "trackEventWithProperty(groupname:eventName:appGroup:)",
+            "name": "trackEvent",
+            "printedName": "trackEvent(groupname:eventName:appGroup:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -109,11 +109,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@Apptics@objc(cs)AppticsExtensionManager(cm)trackEventWithPropertyWithGroupname:eventName:appGroup:",
-            "mangledName": "$s7Apptics0A16ExtensionManagerC22trackEventWithProperty9groupname9eventName8appGroupySS_S2StFZ",
+            "usr": "c:@M@Apptics@objc(cs)AppticsExtensionManager(cm)trackEventWithGroupname:eventName:appGroup:",
+            "mangledName": "$s7Apptics0A16ExtensionManagerC10trackEvent9groupname9eventName8appGroupySS_S2StFZ",
             "moduleName": "Apptics",
             "static": true,
-            "objc_name": "trackEventWithPropertyWithGroupname:eventName:appGroup:",
+            "objc_name": "trackEventWithGroupname:eventName:appGroup:",
             "declAttributes": [
               "AccessControl",
               "ObjC"

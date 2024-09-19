@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		rMOcxAp9X2jJvbAsw4KE7hY2hH0=
+		4ys42ogx3LRqQUxUNSHmiSkA+8U=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -29,6 +29,10 @@
 	<dict>
 		<key>Headers/APEvent.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			PLD8pmgp4oO/3DrDawZKI7t73jc=
+			</data>
 			<key>hash2</key>
 			<data>
 			Z1s1Nj3fImfIb06mUwRVLMgNI+AuH+XibrdPCUv3XSE=
@@ -36,6 +40,10 @@
 		</dict>
 		<key>Headers/AppticsEventTracker.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			Diyc6osAyN+1C2eKxmyK1WHypPc=
+			</data>
 			<key>hash2</key>
 			<data>
 			/JjRWPSUhb78T3eccHcE2heatvFfcJSjNI4k43LBIGc=
@@ -43,6 +51,10 @@
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			qtQpHRxpbJqccF3j7NDfVHz2v0E=
+			</data>
 			<key>hash2</key>
 			<data>
 			pm5NUIF711wT0O0tX8+c/9lSbILmI8BFJtfUd2UfNq8=
@@ -50,6 +62,10 @@
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			cl5C9XI0dGK5oiqjbyJFIC3sCV4=
+			</data>
 			<key>hash2</key>
 			<data>
 			7Abj29BKhiz8bFZbe/Iw3CNg7SORJLWdcXrFRbYKRZw=

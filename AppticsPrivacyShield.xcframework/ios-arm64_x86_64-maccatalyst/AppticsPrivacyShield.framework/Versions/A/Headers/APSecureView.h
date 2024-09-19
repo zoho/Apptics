@@ -7,7 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import <AppticsPrivacyShield/APSecureContainer.h>
+#import <AppticsPrivacyShield/AppticsPrivacyShield.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -36,9 +36,19 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) UILabel *label;
 @property (nonatomic, strong) UIImageView *imageView;
 
+
 + (instancetype)shared;
+
+/**
+ Call this method to start monitoring for Screen recording.
+ */
 - (void) enableScreenRecordingMonitoring;
+
+/**
+ Call this method to stop monitoring for Screen recording.
+ */
 - (void) disableScreenRecordingMonitoring;
+
 
 @end
 NS_ASSUME_NONNULL_END

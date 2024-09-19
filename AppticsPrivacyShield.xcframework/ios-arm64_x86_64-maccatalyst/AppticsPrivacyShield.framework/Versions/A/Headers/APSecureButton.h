@@ -7,6 +7,7 @@
 
 #import <UIKit/UIKit.h>
 #import <AppticsPrivacyShield/APSecureContainer.h>
+#import <AppticsPrivacyShield/AppticsPrivacyShield.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
