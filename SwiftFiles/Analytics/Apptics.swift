@@ -49,7 +49,7 @@ public func APLogWarn(_ message: @autoclosure () -> String, file: StaticString =
 public func APLogError(_ message: @autoclosure () -> String, file: StaticString = #file, line: UInt = #line, function: StaticString = #function){
   APLog.getInstance().zlsExtension(String(describing: file), lineNumber: Int32(line), functionName: String(describing: function), symbol: "🔴", type: "error", format: message())
 }
-
+#if TARGET_OS_IOS
 @available(iOS 13.0, *)
 struct ScreenTrackingModifier: ViewModifier {
     let screenName: String
@@ -75,3 +75,4 @@ extension View {
         self.modifier(ScreenTrackingModifier(screenName: screenName))
     }
 }
+#endif
