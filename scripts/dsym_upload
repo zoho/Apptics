@@ -286,15 +286,15 @@ if [ ${DEBUG_INFORMATION_FORMAT} == "dwarf-with-dsym" ]; then
 
     cp -Rvf "${DSYM_SRC}" "${DSYM_ZIP_FPATH}"
     
-    IFS=', ' read -r -a UPLOAD_SYMBOLS_FOR_FRAMEWORKS <<< "${UPLOAD_SYMBOLS_FOR}"
-    
-    for FRAMEWORK in "${UPLOAD_SYMBOLS_FOR_FRAMEWORKS[@]}"
-    do
-        cp -Rvf "${FRAMEWORK}.framework.dSYM" "${DSYM_ZIP_FPATH}"
-    done
+#    IFS=', ' read -r -a UPLOAD_SYMBOLS_FOR_FRAMEWORKS <<< "${UPLOAD_SYMBOLS_FOR}"
+#    
+#    for FRAMEWORK in "${UPLOAD_SYMBOLS_FOR_FRAMEWORKS[@]}"
+#    do
+#        cp -Rvf "${FRAMEWORK}.framework.dSYM" "${DSYM_ZIP_FPATH}"
+#    done
 
 #    cp -Rvf *.dSYM "${DSYM_ZIP_FPATH}"
-#    cp -Rvf **/*.dSYM "${DSYM_ZIP_FPATH}" 2>/dev/null
+    cp -Rvf **/*.dSYM "${DSYM_ZIP_FPATH}" 2>/dev/null
 
     echo "Compressing dSYM to: ${DSYM_ZIP_FPATH} ..."
          
@@ -308,6 +308,13 @@ if [ ${DEBUG_INFORMATION_FORMAT} == "dwarf-with-dsym" ]; then
     echo "${DSYM_ZIP_FPATH}.zip"
     echo "Archive created."
 
+    # Ignore if zip is more than 512MB and print a statement that If dsym is more than 512MB, should be uploaded manually.
+
+    file_size=$(stat -f%z "${DSYM_ZIP_FPATH}.zip")
+    max_size=$((512 * 1024 * 1024))
+    if [ "$file_size" -gt "$max_size" ]; then
+        echo "Warning: The DSYM.zip file size is $file_size. exceeds 512MB, Upload the dsym zip manually in apptics.zoho.com"
+    else
     # Upload dSYM to Apptics server
     URL=${DSYM_UPLOAD_ENDPOINT}${APP_ID}
     echo "Uploading dSYM to Apptics server: ${URL}?${DSYM_UPLOAD_PARAMS}"
@@ -323,7 +330,8 @@ if [ ${DEBUG_INFORMATION_FORMAT} == "dwarf-with-dsym" ]; then
         exit 1
     fi
     fi
-        
+     
+    fi
     echo "Cleaning up dSYM archive from temp dir..."
     /bin/rm -rv "${DSYM_ZIP_FPATH}.zip"
     /bin/rm -rv "${DSYM_ZIP_FPATH}"

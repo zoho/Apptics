@@ -88,7 +88,7 @@ var ExtensionEventKeyTimed = "TimedEventApp"
         
         var tasks = retrievedata(appGroup: appGroup)
         tasks.append(task.jsonify())
-        if #available(iOS 11.0, *) {
+        if #available(iOS 11.0,watchOS 6.0, *) {
             if let savedData = try? NSKeyedArchiver.archivedData(withRootObject: tasks, requiringSecureCoding: false) {
                 print(savedData)
                 UserDefaults(suiteName: appGroup)?.set(savedData, forKey: ExtensionEventKey)
@@ -191,7 +191,7 @@ var ExtensionEventKeyTimed = "TimedEventApp"
     class func removeTimestamp(_ timestamp: NSNumber, appGroup: String) {
         var tasks = retrieveTimeddata(appGroup: appGroup)
         tasks.removeValue(forKey: timestamp)
-        if #available(iOS 11.0, *) {
+        if #available(iOS 11.0,watchOS 6.0, *) {
             if let savedData = try? NSKeyedArchiver.archivedData(withRootObject: tasks, requiringSecureCoding: false) {
                 UserDefaults(suiteName: appGroup)?.set(savedData, forKey: ExtensionEventKeyTimed)
             }
@@ -207,7 +207,7 @@ var ExtensionEventKeyTimed = "TimedEventApp"
         for (key, value) in task.jsonify() {
             tasks[key] = value
         }
-        if #available(iOS 11.0, *) {
+        if #available(iOS 11.0,watchOS 6.0, *) {
             if let savedData = try? NSKeyedArchiver.archivedData(withRootObject: tasks, requiringSecureCoding: false) {
                 print(savedData)
                 UserDefaults(suiteName: appGroup)?.set(savedData, forKey: ExtensionEventKeyTimed)
