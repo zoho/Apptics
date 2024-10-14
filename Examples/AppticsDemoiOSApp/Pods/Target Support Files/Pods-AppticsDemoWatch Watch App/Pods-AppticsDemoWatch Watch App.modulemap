@@ -1,0 +1,6 @@
+module Pods_AppticsDemoWatch_Watch_App {
+  umbrella header "Pods-AppticsDemoWatch Watch App-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,22 @@
+/*
+ Localizable.strings
+ Apptics
+ 
+ Created by Prakash Red.
+ Copyright © 2021 zoho. All rights reserved.
+ */
+
+"zanalytics.crosspromotion.navbar.button.title.back" = "ফেরত যান";
+"zanalytics.crosspromotion.title" = "আরও অ্যাপগুলি";
+"zanalytics.crosspromotion.otherapps" = "অন্যান্য অ্যাপগুলি";
+"zanalytics.crosspromotion.relevantapps" = "প্রাসঙ্গিক অ্যাপগুলি";
+"zanalytics.crosspromotion.noappstodisplay" = "প্রদর্শনের জন্য কোনো অ্যাপ নেই";
+"zanalytics.crosspromotion.nodatafound" = "মিলে যায় এমন কোন ডেটা খুঁজে পাওয়া যায়নি";
+"zanalytics.crosspromotion.somethingwrong" = "কিছু একটা ভুল হয়েছে";
+"zanalytics.crosspromotion.nointernet" = "কোনো ইন্টারনেট সংযোগ নেই";
+"zanalytics.crosspromotion.open" = "খুলুন";
+"zanalytics.crosspromotion.install" = "ইনস্টল করুন";
+"zanalytics.crosspromotion.get" = "পান";
+"zanalytics.crosspromotion.appsyoumaylike" = "আপনার যে অ্যাপগুলি পছন্দ হতে পারে";
+"zanalytics.crosspromotion.moreappsfromus" = "আমাদের থেকে আরও অ্যাপ";
+"zanalytics.crosspromotion.viewallapps" = "সব অ্যাপগুলি দেখুন";

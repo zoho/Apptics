@@ -1,0 +1,6 @@
+module AppticsExtension {
+  umbrella header "AppticsExtension-umbrella.h"
+
+  export *
+  module * { export * }
+}

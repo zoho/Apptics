@@ -1,0 +1,22 @@
+/*
+ Localizable.strings
+ Apptics
+ 
+ Created by Prakash Red.
+ Copyright © 2021 zoho. All rights reserved.
+ */
+
+"zanalytics.crosspromotion.navbar.button.title.back" = "חזרה";
+"zanalytics.crosspromotion.title" = "אפליקציות נוספות";
+"zanalytics.crosspromotion.otherapps" = "אפליקציות אחרות";
+"zanalytics.crosspromotion.relevantapps" = "אפליקציות רלוונטיות";
+"zanalytics.crosspromotion.noappstodisplay" = "אין אפליקציות להציג";
+"zanalytics.crosspromotion.nodatafound" = "לא נמצאו נתונים";
+"zanalytics.crosspromotion.somethingwrong" = "משהו השתבש";
+"zanalytics.crosspromotion.nointernet" = "אין חיבור לאינטרנט";
+"zanalytics.crosspromotion.open" = "פתח";
+"zanalytics.crosspromotion.install" = "התקן";
+"zanalytics.crosspromotion.get" = "השג";
+"zanalytics.crosspromotion.appsyoumaylike" = "אפליקציות שאתה עשוי לאהוב";
+"zanalytics.crosspromotion.moreappsfromus" = "אפליקציות נוספות מאיתנו";
+"zanalytics.crosspromotion.viewallapps" = "הצג את כל האפליקציות";

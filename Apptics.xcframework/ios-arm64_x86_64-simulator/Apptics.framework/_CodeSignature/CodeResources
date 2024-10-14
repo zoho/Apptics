@@ -23,7 +23,7 @@
 		</data>
 		<key>AppticsResources.bundle/Info.plist</key>
 		<data>
-		D4TjezCsFHCt3/OXT1GCXsg1HhM=
+		2Se8Zj+qcBJzkC6yu0ZSbTB2/vg=
 		</data>
 		<key>AppticsResources.bundle/ZAAppUpdateAlert.nib</key>
 		<data>
@@ -67,7 +67,7 @@
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		Pil79b4G3NDxpwCSey3kwdFevw4=
+		2farjL2P/BDGCQU1qh2hk+x6agM=
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -75,7 +75,7 @@
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		DJFiIQvYyAO4ZgVKZlIPSaRe9WU=
+		kv1fDFNr9sXvrnCh7QRw8insf50=
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeResources</key>
 		<data>
@@ -872,7 +872,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		eNW8kamst/NO7OlYrBv5Utj7tu0=
+		gplcDBGeDebQWQ34Z5+b2Jz33WU=
 		</data>
 		<key>Modules/Apptics.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -964,11 +964,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			D4TjezCsFHCt3/OXT1GCXsg1HhM=
+			2Se8Zj+qcBJzkC6yu0ZSbTB2/vg=
 			</data>
 			<key>hash2</key>
 			<data>
-			ukALwqqCDVQEhPSiyLGzqV4ntFvmLrTxaBwW8xdWAMk=
+			5ESsEazMfO8110hU+i5MMaa25M6/mLtKRDfPKd7WlVc=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/ZAAppUpdateAlert.nib</key>
@@ -1085,11 +1085,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Pil79b4G3NDxpwCSey3kwdFevw4=
+			2farjL2P/BDGCQU1qh2hk+x6agM=
 			</data>
 			<key>hash2</key>
 			<data>
-			hO6TUWovp95R2uMLastoJHli0SjLFnxEsi76QfC1fx4=
+			IcyuIQkpWhzYCEiiEyKWJbOV9XS6ynK7VVm9znYsIjQ=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/_CodeSignature/CodeRequirements</key>
@@ -1107,11 +1107,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DJFiIQvYyAO4ZgVKZlIPSaRe9WU=
+			kv1fDFNr9sXvrnCh7QRw8insf50=
 			</data>
 			<key>hash2</key>
 			<data>
-			UU2x7K4xLM02ajjOHNVfIiCD4e8g/QyeC8cAkzqTBKQ=
+			4vPxTByQebQtDUcSSSmM/AHDP/Wxy8cIv1fTUd62dYg=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/_CodeSignature/CodeResources</key>
