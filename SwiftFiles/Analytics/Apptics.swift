@@ -50,8 +50,9 @@ public func APLogError(_ message: @autoclosure () -> String, file: StaticString 
   APLog.getInstance().zlsExtension(String(describing: file), lineNumber: Int32(line), functionName: String(describing: function), symbol: "🔴", type: "error", format: message())
 }
 
+
 #if TARGET_OS_IOS
-@available(iOS 13.0, macOS 10.15, tvOS 13.0, visionOS 1.0, watchOS 6.0, iPadOS 13.0,*)
+@available(iOS 13.0, macOS 10.15, tvOS 13.0, visionOS 1.0, watchOS 6.0,*)
 struct ScreenTrackingModifier: ViewModifier {
     let screenName: String
 
@@ -70,11 +71,10 @@ struct ScreenTrackingModifier: ViewModifier {
     }
 }
 
-@available(iOS 13.0, macOS 10.15, tvOS 13.0, visionOS 1.0, watchOS 6.0, iPadOS 13.0,*)
+@available(iOS 13.0, macOS 10.15, tvOS 13.0, visionOS 1.0, watchOS 6.0,*)
 extension View {
     public func trackScreen(_ screenName: String) -> some View {
         self.modifier(ScreenTrackingModifier(screenName: screenName))
     }
 }
 #endif
-

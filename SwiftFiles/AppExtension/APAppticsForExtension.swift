@@ -88,7 +88,7 @@ var ExtensionEventKeyTimed = "TimedEventApp"
         
         var tasks = retrievedata(appGroup: appGroup)
         tasks.append(task.jsonify())
-        if #available(iOS 11.0,watchOS 6.0, *) {
+        if #available(iOS 11.0, *) {
             if let savedData = try? NSKeyedArchiver.archivedData(withRootObject: tasks, requiringSecureCoding: false) {
                 print(savedData)
                 UserDefaults(suiteName: appGroup)?.set(savedData, forKey: ExtensionEventKey)
@@ -140,7 +140,7 @@ var ExtensionEventKeyTimed = "TimedEventApp"
         var groupname = groupname
         groupname = groupname.trimmingCharacters(in: .whitespaces)
         if groupname.isEmpty {
-            groupname = "default"
+            groupname = "uncategorized"
         }
         let keyStartTime = NSNumber(value:NSDate().timeIntervalSince1970 * 1000)
         let jsonData = try! JSONSerialization.data(withJSONObject: property, options: [])
@@ -183,15 +183,16 @@ var ExtensionEventKeyTimed = "TimedEventApp"
                 let event = APExtensionEventList(groupName: groupName, start_time: startTime, end_time: endTime, event_Name: eventName, isTimed: true, properties: properties as? String)
                 AppticsExtensionManager.saveEvent(event, appGroup: appGroup)
             }
+             removeTimestamp(startTime, appGroup: appGroup)
+
         }
-        removeTimestamp(startTime, appGroup: appGroup)
         
     }
     
     class func removeTimestamp(_ timestamp: NSNumber, appGroup: String) {
         var tasks = retrieveTimeddata(appGroup: appGroup)
         tasks.removeValue(forKey: timestamp)
-        if #available(iOS 11.0,watchOS 6.0, *) {
+        if #available(iOS 11.0, *) {
             if let savedData = try? NSKeyedArchiver.archivedData(withRootObject: tasks, requiringSecureCoding: false) {
                 UserDefaults(suiteName: appGroup)?.set(savedData, forKey: ExtensionEventKeyTimed)
             }
@@ -207,7 +208,7 @@ var ExtensionEventKeyTimed = "TimedEventApp"
         for (key, value) in task.jsonify() {
             tasks[key] = value
         }
-        if #available(iOS 11.0,watchOS 6.0, *) {
+        if #available(iOS 11.0, *) {
             if let savedData = try? NSKeyedArchiver.archivedData(withRootObject: tasks, requiringSecureCoding: false) {
                 print(savedData)
                 UserDefaults(suiteName: appGroup)?.set(savedData, forKey: ExtensionEventKeyTimed)
