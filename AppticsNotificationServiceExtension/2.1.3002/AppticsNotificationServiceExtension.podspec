@@ -43,7 +43,6 @@ spec.requires_arc = true
 spec.subspec 'AppticsNotificationServiceExtension' do |aps|
 aps.platform     = :ios, '14.5'
 aps.vendored_frameworks = 'AppticsNotificationServiceExtension.xcframework'
-aps.ios.dependency 'AppticsAnalytics/Apptics', "#{spec.version}"
 end
 
 end
