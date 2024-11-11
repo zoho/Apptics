@@ -80,10 +80,6 @@ import Apptics
         Analytics.getInstance().ap_openURL(with: url)
     }
     
-    
-    
-    
-    
     func getcurrentBundle() -> Bundle {
         var bundleName = "Apptics_SwiftResources"
 #if SWIFT_PACKAGE
@@ -153,7 +149,6 @@ extension PromotedAppsKit{
         return vc
     }
 }
-
 
 
 @objcMembers

@@ -5,11 +5,13 @@
 @_exported import Apptics
 import Foundation
 import Swift
+import WatchConnectivity
 import _Concurrency
 import _StringProcessing
 @_inheritsConvenienceInitializers @objcMembers @objc public class AppticsExtensionManager : ObjectiveC.NSObject {
   @objc public class func trackEvent(groupname: Swift.String, eventName: Swift.String, property: [Swift.String : Any], appGroup: Swift.String)
   @objc public class func trackEvent(groupname: Swift.String, eventName: Swift.String, appGroup: Swift.String)
+  @objc public class func trackWatchEvent(groupname: Swift.String, eventName: Swift.String, property: [Swift.String : Any])
   @objc public class func startTimedEvent(groupname: Swift.String, eventName: Swift.String, property: [Swift.String : Any], appGroup: Swift.String) -> Foundation.NSNumber
   @objc public class func endTimedEvent(startTime: Foundation.NSNumber, groupname: Swift.String, eventName: Swift.String, appGroup: Swift.String)
   @objc override dynamic public init()

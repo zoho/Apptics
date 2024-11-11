@@ -259,6 +259,7 @@ SWIFT_CLASS("_TtC7Apptics23AppticsExtensionManager")
 @interface AppticsExtensionManager : NSObject
 + (void)trackEventWithGroupname:(NSString * _Nonnull)groupname eventName:(NSString * _Nonnull)eventName property:(NSDictionary<NSString *, id> * _Nonnull)property appGroup:(NSString * _Nonnull)appGroup;
 + (void)trackEventWithGroupname:(NSString * _Nonnull)groupname eventName:(NSString * _Nonnull)eventName appGroup:(NSString * _Nonnull)appGroup;
++ (void)trackWatchEventWithGroupname:(NSString * _Nonnull)groupname eventName:(NSString * _Nonnull)eventName property:(NSDictionary<NSString *, id> * _Nonnull)property;
 + (NSNumber * _Nonnull)startTimedEventWithGroupname:(NSString * _Nonnull)groupname eventName:(NSString * _Nonnull)eventName property:(NSDictionary<NSString *, id> * _Nonnull)property appGroup:(NSString * _Nonnull)appGroup SWIFT_WARN_UNUSED_RESULT;
 + (void)endTimedEventWithStartTime:(NSNumber * _Nonnull)startTime groupname:(NSString * _Nonnull)groupname eventName:(NSString * _Nonnull)eventName appGroup:(NSString * _Nonnull)appGroup;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;

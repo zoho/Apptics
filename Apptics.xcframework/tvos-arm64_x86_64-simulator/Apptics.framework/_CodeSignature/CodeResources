@@ -10,11 +10,11 @@
 		</data>
 		<key>AppticsResources_tvOS.bundle/Info.plist</key>
 		<data>
-		T9mdcLWiKQ18cUYzV4lzuqUdyhI=
+		EaGLz6K6F5CQtOkyqGupIewAmSU=
 		</data>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		+Taa84skfaUWyHRnytEJKeyHhyo=
+		HjVNPvhM0N71wMIIiRqE00kyIvE=
 		</data>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		ClGSokaHNQLtgSHX9eMnu1eokv4=
+		BRGRANu9NFbANzFExhPXUYIhRjA=
 		</data>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeResources</key>
 		<data>
@@ -268,7 +268,7 @@
 		</dict>
 		<key>Headers/APAAAUtil.h</key>
 		<data>
-		WlXlw+Z3RwXsICG+EUIEOOZ5QHM=
+		yzfuLx3XxCGiCWBI0CxeAmNAfT8=
 		</data>
 		<key>Headers/APArchiverUtil.h</key>
 		<data>
@@ -436,7 +436,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		iP8HXpM8PufPbfzs2axCouOJZ8k=
+		gUd0rj8zzFem+vpmmBwJR0vzmyQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -464,22 +464,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			T9mdcLWiKQ18cUYzV4lzuqUdyhI=
+			EaGLz6K6F5CQtOkyqGupIewAmSU=
 			</data>
 			<key>hash2</key>
 			<data>
-			lXPrUT34esarxX2rLJQTO7++hvtELGC/b/BFTm7D2js=
+			Evp3FMDeCq0ZxyaQ2IAAstetclau2nNo3jcZaTofU9Q=
 			</data>
 		</dict>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeDirectory</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+Taa84skfaUWyHRnytEJKeyHhyo=
+			HjVNPvhM0N71wMIIiRqE00kyIvE=
 			</data>
 			<key>hash2</key>
 			<data>
-			+c+z3KJToMgyXsRaLmFIeZ3YRPbqAxzIvC/4HtO6OWA=
+			EIPkaMRxdPpnOzVU2iYqE6XV9h2OCmQCMzauZ3NY0n0=
 			</data>
 		</dict>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeRequirements</key>
@@ -497,11 +497,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ClGSokaHNQLtgSHX9eMnu1eokv4=
+			BRGRANu9NFbANzFExhPXUYIhRjA=
 			</data>
 			<key>hash2</key>
 			<data>
-			WG4y+/LQGtiC3unSHjPFD9cZC15mERBEkEYKVMDjuGY=
+			Ftu7okXpKeOtSgRNnUUOiXvMx92jgp/FuwipPkjSE60=
 			</data>
 		</dict>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeResources</key>
@@ -868,11 +868,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WlXlw+Z3RwXsICG+EUIEOOZ5QHM=
+			yzfuLx3XxCGiCWBI0CxeAmNAfT8=
 			</data>
 			<key>hash2</key>
 			<data>
-			54ExDT75wBN8ve0Oryt9SdKb1lhJEiq3le91lgSZCMk=
+			ZczKJkV2stHDMGcYcfmfJAoqL3s/ZRvfYtJxgeyeJKY=
 			</data>
 		</dict>
 		<key>Headers/APArchiverUtil.h</key>

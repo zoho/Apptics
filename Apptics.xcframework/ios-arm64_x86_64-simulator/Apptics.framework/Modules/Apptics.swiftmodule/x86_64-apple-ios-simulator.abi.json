@@ -15,6 +15,13 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "WatchConnectivity",
+        "printedName": "WatchConnectivity",
+        "declKind": "Import",
+        "moduleName": "Apptics"
+      },
+      {
         "kind": "TypeDecl",
         "name": "AppticsExtensionManager",
         "printedName": "AppticsExtensionManager",
@@ -114,6 +121,60 @@
             "moduleName": "Apptics",
             "static": true,
             "objc_name": "trackEventWithGroupname:eventName:appGroup:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "trackWatchEvent",
+            "printedName": "trackWatchEvent(groupname:eventName:property:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Apptics@objc(cs)AppticsExtensionManager(cm)trackWatchEventWithGroupname:eventName:property:",
+            "mangledName": "$s7Apptics0A16ExtensionManagerC15trackWatchEvent9groupname9eventName8propertyySS_SSSDySSypGtFZ",
+            "moduleName": "Apptics",
+            "static": true,
+            "objc_name": "trackWatchEventWithGroupname:eventName:property:",
             "declAttributes": [
               "AccessControl",
               "ObjC"
@@ -328,21 +389,21 @@
     {
       "filePath": "\/Users\/admin\/Documents\/GitLabs\/opensource\/apptics\/native\/source\/SwiftFiles\/AppExtension\/APAppticsForExtension.swift",
       "kind": "StringLiteral",
-      "offset": 130,
+      "offset": 2292,
       "length": 20,
       "value": "\"Apptics.APExtensionEventList\""
     },
     {
       "filePath": "\/Users\/admin\/Documents\/GitLabs\/opensource\/apptics\/native\/source\/SwiftFiles\/AppExtension\/APAppticsForExtension.swift",
       "kind": "StringLiteral",
-      "offset": 2610,
+      "offset": 4772,
       "length": 12,
       "value": "\"WidgetData\""
     },
     {
       "filePath": "\/Users\/admin\/Documents\/GitLabs\/opensource\/apptics\/native\/source\/SwiftFiles\/AppExtension\/APAppticsForExtension.swift",
       "kind": "StringLiteral",
-      "offset": 2653,
+      "offset": 4815,
       "length": 15,
       "value": "\"TimedEventApp\""
     }

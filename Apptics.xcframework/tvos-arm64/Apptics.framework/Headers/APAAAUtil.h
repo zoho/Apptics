@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSMutableArray *failureblocks;
 @property int retryCount;
 
-typedef void (^requestSuccessBlock)(NSString *token);
+typedef void (^requestSuccessBlock)( NSString * _Nullable token);
 typedef void (^requestFailureBlock)(NSError *error);
 
 typedef void (^ apiRequestSuccessBlock)(NSURLResponse *response, id responseObject);

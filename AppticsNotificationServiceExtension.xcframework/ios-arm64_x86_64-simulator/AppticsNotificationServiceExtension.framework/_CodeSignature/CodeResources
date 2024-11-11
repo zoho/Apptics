@@ -25,10 +25,6 @@
 	<dict>
 		<key>Headers/APPushNotificationExtension.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			66lyztnD7Hg4xx4cKD6excB+0zM=
-			</data>
 			<key>hash2</key>
 			<data>
 			a6yZjaJqXEK2+fdyGHR22Qxz+IrxRpAQOs1t6y/yKNU=
@@ -36,10 +32,6 @@
 		</dict>
 		<key>Headers/AppticsNotificationServiceExtension.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			hh+/3uU92R6OREZ3P03hGHXPPzo=
-			</data>
 			<key>hash2</key>
 			<data>
 			tbIAytrVvEmki3bTKNP3wcHmY5PQvjpAgRsXauAy+QE=
@@ -47,10 +39,6 @@
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Sk/hRBGc9a6wFE5cW43qflst0HM=
-			</data>
 			<key>hash2</key>
 			<data>
 			tZ5iZeDZlkiiPRocVNgMpkIK04mth+70HrG2PCwdrq8=
