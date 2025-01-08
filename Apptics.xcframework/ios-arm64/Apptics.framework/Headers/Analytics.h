@@ -60,6 +60,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property BOOL enableAutomaticScreenTracking;
 @property BOOL enableAutomaticCrashTracking;
 
+@property (nonatomic, assign) BOOL isaddVersionInitialized;
+
+
 //@property BOOL enableAutoCheckForAppUpdate;
 @property (nonatomic, strong) dispatch_block_t scheduledBlock;
 

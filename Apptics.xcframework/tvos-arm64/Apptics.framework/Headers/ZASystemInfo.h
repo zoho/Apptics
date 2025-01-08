@@ -28,6 +28,8 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSString*) getAppName;
 + (NSString*) getBuildNumber;
 + (NSString*) getAppVersion;
++ (NSString*) getMinDeploymentTarget;
+
 + (NSNumber*) getBatteryLevel;
 + (NSNumber*) updateBatteryLevelAndState;
 + (CGFloat) getScreenWidth;

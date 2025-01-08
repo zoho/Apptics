@@ -66,7 +66,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) NSMutableArray *regSuccessblocks;
 
+@property (nonatomic, strong) NSMutableArray *regAppVersionSuccessblocks;
+
+
 @property BOOL regDeviceInprogress;
+
+@property BOOL regAppVersionInProgress;
+
 
 @property BOOL shouldSendPersonalizedData;
 
@@ -134,6 +140,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (BOOL) errortracking;
 
+- (BOOL) customergrouptracking;
+
 - (BOOL) isUserLoggedIn;
 
 - (BOOL) isAnonymousUser;
@@ -167,6 +175,8 @@ NS_ASSUME_NONNULL_BEGIN
 -(void) registerIfCurrentUserIsNotRegisteredWithDeviceId : (NSString*) deviceId;
 
 -(void) migrateUserPreferenceToDevice;
+
+
 
 @end
 

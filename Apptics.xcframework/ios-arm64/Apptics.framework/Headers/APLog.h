@@ -160,7 +160,7 @@ void ZLogExtensionInternal(const char *file, int lineNumber, const char *functio
 //      "networkbandwidth"
 //      "serviceprovider"
 //      "orientation"
-//      "batteryin"
+//      "batterystatus"
 //      "edgetype"
 //      "starttime" logtime = starttime
 //      "endtime"

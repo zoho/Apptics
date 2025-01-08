@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AppVersion</key>
+	<string>2.1.4</string>
+	<key>IOS_SDK_ID</key>
+	<string>90</string>
+	<key>MACOS_SDK_ID</key>
+	<string>5726</string>
+	<key>TVOS_SDK_ID</key>
+	<string>5727</string>
+	<key>WATCHOS_SDK_ID</key>
+	<string>5728</string>
+</dict>
+</plist>

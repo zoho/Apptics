@@ -389,21 +389,21 @@
     {
       "filePath": "\/Users\/admin\/Documents\/GitLabs\/opensource\/apptics\/native\/source\/SwiftFiles\/AppExtension\/APAppticsForExtension.swift",
       "kind": "StringLiteral",
-      "offset": 2292,
+      "offset": 2008,
       "length": 20,
       "value": "\"Apptics.APExtensionEventList\""
     },
     {
       "filePath": "\/Users\/admin\/Documents\/GitLabs\/opensource\/apptics\/native\/source\/SwiftFiles\/AppExtension\/APAppticsForExtension.swift",
       "kind": "StringLiteral",
-      "offset": 4772,
+      "offset": 4488,
       "length": 12,
       "value": "\"WidgetData\""
     },
     {
       "filePath": "\/Users\/admin\/Documents\/GitLabs\/opensource\/apptics\/native\/source\/SwiftFiles\/AppExtension\/APAppticsForExtension.swift",
       "kind": "StringLiteral",
-      "offset": 4815,
+      "offset": 4531,
       "length": 15,
       "value": "\"TimedEventApp\""
     }

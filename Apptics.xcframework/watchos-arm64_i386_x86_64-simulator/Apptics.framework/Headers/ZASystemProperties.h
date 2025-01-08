@@ -36,6 +36,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (strong,nonatomic) NSString *totalrom;
 @property (strong,nonatomic) NSNumber *screenWidth;
 @property (strong,nonatomic) NSNumber *screenHeight;
+@property BOOL regappAddVersionInprogress;
+@property (nonatomic, strong) NSMutableArray *app_AddVersionSuccessblocks;
 
 @property (strong,nonatomic) NSString *appversionid;
 @property (strong,nonatomic) NSString *appreleaseversionid;
@@ -45,6 +47,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (strong,nonatomic) NSString *mapid;
 @property (strong,nonatomic) NSString *rsakey;
 @property (strong,nonatomic) NSString *frameworkid;
+@property (strong,nonatomic)NSString *portalid;
+@property (strong,nonatomic)NSString *projectid;
+
+
+
 
 #if TARGET_OS_IOS
 @property (strong,nonatomic) CTTelephonyNetworkInfo *telephonyNetworkInfo;
@@ -65,6 +72,12 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSStringEncoding) getLogEncoding;
 + (NSString*) za_minimumOSVersion;
 + (NSArray *) allLogFiles;
+
++ (void)getAppVersionIDWithSuccess:(void (^)(NSString *appVersionID))success
+                           failure:(void (^)(NSError *error))failure;
+
+-(void) executeRequestSuccessCallbacksWithResponseForAppVersion:(NSDictionary*) userInfo;
+@property (nonatomic, strong) NSMutableArray *regUserSuccessblocks;
 
 @end
 NS_ASSUME_NONNULL_END

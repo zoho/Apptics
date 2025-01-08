@@ -179,6 +179,9 @@ Enable or disable automatic session tracking using this method. This feature is 
  */
 
 + (void) setCompleteOff:(BOOL) status;
+
+
+
    
 #pragma mark - Device consent
 
@@ -363,6 +366,9 @@ void AP_TrackException(const char *file, int lineNumber, const char *functionNam
  
  @param status boolean
  */
+
+
+
 
 + (void) setTrackingStatus : (BOOL) status;
 
@@ -562,6 +568,9 @@ After initializing Apptics, call this method to enable auto check for updates.
  Returns the reachability status of a the network connection.
  */
 +(BOOL)isReachable;
+
++ (BOOL) customerGroupTrackingStatus;
+
 
 @end
 NS_ASSUME_NONNULL_END

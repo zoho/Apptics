@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 //      "networkbandwidth"
 //      "serviceprovider"
 //      "orientation"
-//      "batteryin"
+//      "batterystatus"
 //      "edgetype"
 //      "starttime"
 //      "endtime"

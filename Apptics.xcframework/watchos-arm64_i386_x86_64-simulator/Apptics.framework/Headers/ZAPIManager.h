@@ -14,6 +14,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) NSMutableArray *regUserSuccessblocks;
 @property BOOL regUserInprogress;
+@property BOOL regappAddVersionInprogress;
+@property BOOL newregisterDeviceInprogress;
+
+@property (nonatomic, strong) NSMutableArray *app_AddVersionSuccessblocks;
+@property (nonatomic,strong) NSMutableArray *newregisterDeviceSuccessblocks;
 
 +(ZAPIManager*)sharedManager;
 
@@ -27,6 +32,16 @@ NS_ASSUME_NONNULL_BEGIN
 - (void) registerDeviceSuccess:(void (^)(NSString* deviceid))success;
 
 - (void) newRegisterDeviceSuccess : (NSString* _Nullable) deviceid completion:(void (^)(NSDictionary  * _Nullable deviceInfo))success;
+
+
+- (void)addAppVersionWithSuccess:(void (^)(NSDictionary *responseObject))success
+                              failure:(void (^)(NSError *error))failure;
+
+
+
+
+
+
 
 - (void) anonymousRegisterDeviceSuccess : (NSString* _Nullable) anonid completion:(void (^)(NSDictionary  * _Nullable deviceInfo))success;
 
@@ -49,6 +64,9 @@ NS_ASSUME_NONNULL_BEGIN
 - (void) getPromotionalAppsList: (void (^)(id info))success;
 
 - (void) promoAppSelectedCallback : (NSString *) crossPromoId;
+
+
+
 
 @end
 NS_ASSUME_NONNULL_END
