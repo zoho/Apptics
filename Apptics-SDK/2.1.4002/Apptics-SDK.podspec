@@ -54,9 +54,15 @@ an.dependency 'Apptics-SDK/Scripts'
 an.dependency 'AppticsAnalytics/CoreWithKSCrash', "#{spec.version}"
 end
 
+#spec.subspec 'Scripts' do |sc|
+#sc.source_files = 'scripts/*'
+#sc.preserve_paths = 'scripts/*'
+#end
+
 spec.subspec 'Scripts' do |sc|
-sc.source_files = 'scripts/*'
+sc.source_files = 'scripts/*.{rb,sh}'
 sc.preserve_paths = 'scripts/*'
+sc.resources = 'scripts/*.plist'
 end
 
 end
