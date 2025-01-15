@@ -260,7 +260,7 @@ API_INFO=$(/usr/libexec/PlistBuddy -c 'Print API_INFO' "${ZA_INFOPLIST_FILE}" 2>
 
 
 if [ "${SERVER_URL}" ]; then
-URL_ENDPOINT="${SERVER_URL}/sdk/api/apptics/v1/app/addversion"
+URL_ENDPOINT="${SERVER_URL}/sdk/v1/app/addversion"
 else
 value=$(error_prompt "Error" "Missing SERVER_URL, please check if the ${ZA_INFO_FILE_NAME} file is up to date?")
 exit 1

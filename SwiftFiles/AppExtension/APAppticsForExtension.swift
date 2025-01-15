@@ -32,15 +32,6 @@ class WatchWCSessionManager: NSObject, WCSessionDelegate {
             session.delegate = self
             session.activate()
         }
-        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(1000)) {
-            if WCSession.default.isReachable {
-                print("iPhone and Watch are paired")
-            } else {
-                print("WCSession is not paired")
-            }
-
-        }
-        
     }
 
     @available(iOS 9.3, *)
@@ -363,6 +354,5 @@ class APExtensionTimedEventList: NSObject, NSCoding {
         return events
     }
 }
-
 
 
