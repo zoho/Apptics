@@ -33,7 +33,7 @@ What's new:
 DESC
   
 spec.homepage         = "https://github.com/zoho/Apptics"
-spec.author           = { "Saravanan Selvam" => "ssaravanan@zohocorp.com", "Prakash Redrouthu" => "prakash.redrouthu@zohocorp.com" }
+spec.author = { 'Apptics' => 'apptics-support@zohocorp.com' }
 spec.source = { :http => "https://github.com/zoho/Apptics/releases/download/#{spec.version}/Apptics.zip" }
 
 spec.social_media_url = "http://zoho.com"
