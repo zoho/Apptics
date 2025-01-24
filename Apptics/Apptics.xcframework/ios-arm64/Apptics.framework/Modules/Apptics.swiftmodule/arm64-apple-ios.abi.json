@@ -1,0 +1,411 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Apptics",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WatchConnectivity",
+        "printedName": "WatchConnectivity",
+        "declKind": "Import",
+        "moduleName": "Apptics"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AppticsExtensionManager",
+        "printedName": "AppticsExtensionManager",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "trackEvent",
+            "printedName": "trackEvent(groupname:eventName:property:appGroup:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Apptics@objc(cs)AppticsExtensionManager(cm)trackEventWithGroupname:eventName:property:appGroup:",
+            "mangledName": "$s7Apptics0A16ExtensionManagerC10trackEvent9groupname9eventName8property8appGroupySS_SSSDySSypGSStFZ",
+            "moduleName": "Apptics",
+            "static": true,
+            "objc_name": "trackEventWithGroupname:eventName:property:appGroup:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "trackEvent",
+            "printedName": "trackEvent(groupname:eventName:appGroup:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Apptics@objc(cs)AppticsExtensionManager(cm)trackEventWithGroupname:eventName:appGroup:",
+            "mangledName": "$s7Apptics0A16ExtensionManagerC10trackEvent9groupname9eventName8appGroupySS_S2StFZ",
+            "moduleName": "Apptics",
+            "static": true,
+            "objc_name": "trackEventWithGroupname:eventName:appGroup:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "trackWatchEvent",
+            "printedName": "trackWatchEvent(groupname:eventName:property:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Apptics@objc(cs)AppticsExtensionManager(cm)trackWatchEventWithGroupname:eventName:property:",
+            "mangledName": "$s7Apptics0A16ExtensionManagerC15trackWatchEvent9groupname9eventName8propertyySS_SSSDySSypGtFZ",
+            "moduleName": "Apptics",
+            "static": true,
+            "objc_name": "trackWatchEventWithGroupname:eventName:property:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startTimedEvent",
+            "printedName": "startTimedEvent(groupname:eventName:property:appGroup:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NSNumber",
+                "printedName": "Foundation.NSNumber",
+                "usr": "c:objc(cs)NSNumber"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Apptics@objc(cs)AppticsExtensionManager(cm)startTimedEventWithGroupname:eventName:property:appGroup:",
+            "mangledName": "$s7Apptics0A16ExtensionManagerC15startTimedEvent9groupname9eventName8property8appGroupSo8NSNumberCSS_SSSDySSypGSStFZ",
+            "moduleName": "Apptics",
+            "static": true,
+            "objc_name": "startTimedEventWithGroupname:eventName:property:appGroup:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "endTimedEvent",
+            "printedName": "endTimedEvent(startTime:groupname:eventName:appGroup:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSNumber",
+                "printedName": "Foundation.NSNumber",
+                "usr": "c:objc(cs)NSNumber"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Apptics@objc(cs)AppticsExtensionManager(cm)endTimedEventWithStartTime:groupname:eventName:appGroup:",
+            "mangledName": "$s7Apptics0A16ExtensionManagerC13endTimedEvent9startTime9groupname9eventName8appGroupySo8NSNumberC_S3StFZ",
+            "moduleName": "Apptics",
+            "static": true,
+            "objc_name": "endTimedEventWithStartTime:groupname:eventName:appGroup:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AppticsExtensionManager",
+                "printedName": "Apptics.AppticsExtensionManager",
+                "usr": "c:@M@Apptics@objc(cs)AppticsExtensionManager"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Apptics@objc(cs)AppticsExtensionManager(im)init",
+            "mangledName": "$s7Apptics0A16ExtensionManagerCACycfc",
+            "moduleName": "Apptics",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Apptics@objc(cs)AppticsExtensionManager",
+        "mangledName": "$s7Apptics0A16ExtensionManagerC",
+        "moduleName": "Apptics",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "ObjCMembers"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/admin\/Documents\/GitLabs\/opensource\/apptics\/native\/source\/SwiftFiles\/AppExtension\/APAppticsForExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 2008,
+      "length": 20,
+      "value": "\"Apptics.APExtensionEventList\""
+    },
+    {
+      "filePath": "\/Users\/admin\/Documents\/GitLabs\/opensource\/apptics\/native\/source\/SwiftFiles\/AppExtension\/APAppticsForExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 4488,
+      "length": 12,
+      "value": "\"WidgetData\""
+    },
+    {
+      "filePath": "\/Users\/admin\/Documents\/GitLabs\/opensource\/apptics\/native\/source\/SwiftFiles\/AppExtension\/APAppticsForExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 4531,
+      "length": 15,
+      "value": "\"TimedEventApp\""
+    }
+  ]
+}

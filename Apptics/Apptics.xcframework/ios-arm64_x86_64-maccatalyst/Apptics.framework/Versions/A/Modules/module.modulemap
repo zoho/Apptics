@@ -1,0 +1,11 @@
+framework module Apptics {
+  umbrella header "Apptics.h"
+
+  export *
+  module * { export * }
+}
+
+module Apptics.Swift {
+  header "Apptics-Swift.h"
+  requires objc
+}
