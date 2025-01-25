@@ -10,11 +10,11 @@
 		</data>
 		<key>AppticsResources_tvOS.bundle/Info.plist</key>
 		<data>
-		kMsZ9vmSTWLXTc/qv7l8fmiBb+Y=
+		gKYJSs0/Go2U/pZQp8g6Gitpx74=
 		</data>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		/lo8+t80hFxcUnKzW9C0+fZnMcE=
+		3KY80YUwzrwxFx1B/RKCdZyAnlA=
 		</data>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		CL1diakc5hXX3h2ds/b5GFCI+SI=
+		ZRABBBammWHiwbOmr8RiXVw2yx4=
 		</data>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeResources</key>
 		<data>
@@ -272,7 +272,7 @@
 		</dict>
 		<key>Headers/APAAAUtil.h</key>
 		<data>
-		yzfuLx3XxCGiCWBI0CxeAmNAfT8=
+		0jE86bDOckzlZY17xyg4m28eyE0=
 		</data>
 		<key>Headers/APArchiverUtil.h</key>
 		<data>
@@ -396,7 +396,7 @@
 		</data>
 		<key>Headers/ZANetworking.h</key>
 		<data>
-		mmLb/P5Nbm0eQtgWY4k/Oj8unKA=
+		1/f3+K9gybxGOe0jPIxgum03Dpo=
 		</data>
 		<key>Headers/ZANonFatalsUploadOperation.h</key>
 		<data>
@@ -440,7 +440,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		DtPCVk4+MCAFcP/J9dR5MdfxFEA=
+		SlOznrWGDSb86trTN6P8aXfYBSQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -472,22 +472,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kMsZ9vmSTWLXTc/qv7l8fmiBb+Y=
+			gKYJSs0/Go2U/pZQp8g6Gitpx74=
 			</data>
 			<key>hash2</key>
 			<data>
-			2uj3BEnJZOds/9RSd8GiX3+qcCxo0BP8LRwY5gPRq8s=
+			BDVS+EVa0FK9sQxt6yswjGfkebdSY42mFNUkqRQn1m4=
 			</data>
 		</dict>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeDirectory</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/lo8+t80hFxcUnKzW9C0+fZnMcE=
+			3KY80YUwzrwxFx1B/RKCdZyAnlA=
 			</data>
 			<key>hash2</key>
 			<data>
-			8dx7zjq05dHBzSlQv38jQsdEvS1CcOYypNds/P8WlRI=
+			Bmx9meCdqMQuRJ9EoAsTjSD9vWV+y4NFxPByB1U22MI=
 			</data>
 		</dict>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeRequirements</key>
@@ -505,11 +505,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CL1diakc5hXX3h2ds/b5GFCI+SI=
+			ZRABBBammWHiwbOmr8RiXVw2yx4=
 			</data>
 			<key>hash2</key>
 			<data>
-			KhkPyDqFIgcpCLnubh5FUoA8jX1Dwq1Lt79jAKlx8Z4=
+			dHMg7edhr+ZlD78ZmVBQYZh4dNG8WkrqyMX90b8yRnk=
 			</data>
 		</dict>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeResources</key>
@@ -887,11 +887,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yzfuLx3XxCGiCWBI0CxeAmNAfT8=
+			0jE86bDOckzlZY17xyg4m28eyE0=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZczKJkV2stHDMGcYcfmfJAoqL3s/ZRvfYtJxgeyeJKY=
+			1HtiZObUVMRyIHEQAUKncyVbTyY4xVunfM8Snlys+bU=
 			</data>
 		</dict>
 		<key>Headers/APArchiverUtil.h</key>
@@ -1228,11 +1228,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mmLb/P5Nbm0eQtgWY4k/Oj8unKA=
+			1/f3+K9gybxGOe0jPIxgum03Dpo=
 			</data>
 			<key>hash2</key>
 			<data>
-			8kd7FcoK6AOl/YwtfG3QGR8inY7I8XF+LscWLm/RGD8=
+			y+DxyhA4Tr/nhTW7wmooPrMtsXwNHeF+/bbmX9XSafc=
 			</data>
 		</dict>
 		<key>Headers/ZANonFatalsUploadOperation.h</key>

@@ -281,7 +281,7 @@
 		</dict>
 		<key>Headers/APAAAUtil.h</key>
 		<data>
-		yzfuLx3XxCGiCWBI0CxeAmNAfT8=
+		0jE86bDOckzlZY17xyg4m28eyE0=
 		</data>
 		<key>Headers/APArchiverUtil.h</key>
 		<data>
@@ -405,7 +405,7 @@
 		</data>
 		<key>Headers/ZANetworking.h</key>
 		<data>
-		mmLb/P5Nbm0eQtgWY4k/Oj8unKA=
+		1/f3+K9gybxGOe0jPIxgum03Dpo=
 		</data>
 		<key>Headers/ZANonFatalsUploadOperation.h</key>
 		<data>
@@ -445,7 +445,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		jq7SCMZZNtjMw9kTsDYSFXHKbt8=
+		i43xVhfB4lziRwTrQ/7KPBHrbKM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -905,11 +905,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yzfuLx3XxCGiCWBI0CxeAmNAfT8=
+			0jE86bDOckzlZY17xyg4m28eyE0=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZczKJkV2stHDMGcYcfmfJAoqL3s/ZRvfYtJxgeyeJKY=
+			1HtiZObUVMRyIHEQAUKncyVbTyY4xVunfM8Snlys+bU=
 			</data>
 		</dict>
 		<key>Headers/APArchiverUtil.h</key>
@@ -1246,11 +1246,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mmLb/P5Nbm0eQtgWY4k/Oj8unKA=
+			1/f3+K9gybxGOe0jPIxgum03Dpo=
 			</data>
 			<key>hash2</key>
 			<data>
-			8kd7FcoK6AOl/YwtfG3QGR8inY7I8XF+LscWLm/RGD8=
+			y+DxyhA4Tr/nhTW7wmooPrMtsXwNHeF+/bbmX9XSafc=
 			</data>
 		</dict>
 		<key>Headers/ZANonFatalsUploadOperation.h</key>

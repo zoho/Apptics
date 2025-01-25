@@ -67,7 +67,7 @@ NS_ASSUME_NONNULL_BEGIN
 -(NSString*) getBaseUrlForKey : (NSString*) key;
 -(NSString*) getBaseUrlForUserID : (NSString*) userID;
 - (void)setHTTPHeaderField : (NSMutableURLRequest*) request forPath : (JURLPath) path;
-
+- (void)setHTTPHeaderField : (NSMutableURLRequest*) request forPath : (JURLPath) path aaautils : (APAAAUtil*  _Nullable) aaautils;
 +(void) processError : (NSDictionary*) response aaaUtil : (APAAAUtil*) aaautil;
 
 @end
