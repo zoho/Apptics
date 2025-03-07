@@ -10,7 +10,7 @@
 		</data>
 		<key>Base.lproj/ZAnalyticsLocalizable.strings</key>
 		<data>
-		Ur6xUzHiq8vBiCcORBzFOrE0SXw=
+		/69QrakwQmfVBgvHsqkrtS6N3ZA=
 		</data>
 		<key>GDPR.ttf</key>
 		<data>
@@ -485,6 +485,10 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>sdkProp_info.plist</key>
+		<data>
+		ffMVI7wm0xQG9v0UAFNkG6aDw8Q=
+		</data>
 		<key>sl.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
 			<key>hash</key>
@@ -659,11 +663,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Ur6xUzHiq8vBiCcORBzFOrE0SXw=
+			/69QrakwQmfVBgvHsqkrtS6N3ZA=
 			</data>
 			<key>hash2</key>
 			<data>
-			RKh48qH7PgT8UubyKsJ+DVhXnLJRBVrJ7RrYgZIipPg=
+			m0+pYbXPeDyHstwVO2st9n8RMrf8T1BYI6b7e0Jg7II=
 			</data>
 		</dict>
 		<key>GDPR.ttf</key>
@@ -1437,6 +1441,17 @@
 			</data>
 			<key>optional</key>
 			<true/>
+		</dict>
+		<key>sdkProp_info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ffMVI7wm0xQG9v0UAFNkG6aDw8Q=
+			</data>
+			<key>hash2</key>
+			<data>
+			spNNFXacq61rdyrzw9+rCWfTs+u2TUdyAtpaK7GCWd4=
+			</data>
 		</dict>
 		<key>sl.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>

@@ -12,7 +12,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Ur6xUzHiq8vBiCcORBzFOrE0SXw=
+			/69QrakwQmfVBgvHsqkrtS6N3ZA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -23,7 +23,7 @@
 		</data>
 		<key>AppticsResources.bundle/Info.plist</key>
 		<data>
-		uPPQIdff/wnftNPaoOCojGqk/Ig=
+		LF8Nckk3RPSm+L36EsT1b+a8AME=
 		</data>
 		<key>AppticsResources.bundle/ZAAppUpdateAlert.nib</key>
 		<data>
@@ -67,7 +67,7 @@
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		4aRYyq1pVZTDMOIRLvIz0j5I6TA=
+		6p7UsIjc7pSmGn+mtwIooA6hwx4=
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -75,11 +75,11 @@
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		Sn1B6oi6X0rt2HVbxllOoripjik=
+		Eu6oL67KtQU1OR1R+bHoL7oe1x4=
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeResources</key>
 		<data>
-		cNQe8qvMTLD99MW7KKBHR6iVNmg=
+		e0RGMccP83SCh6YLrECNWPqP4pM=
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeSignature</key>
 		<data>
@@ -514,6 +514,10 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>AppticsResources.bundle/sdkProp_info.plist</key>
+		<data>
+		ffMVI7wm0xQG9v0UAFNkG6aDw8Q=
+		</data>
 		<key>AppticsResources.bundle/sl.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
 			<key>hash</key>
@@ -872,7 +876,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		JG0Qer2Ae6AmRuXgsFJ25BVSpHI=
+		WO03et7O+t4SiIlW0xsMJskd/nE=
 		</data>
 		<key>Modules/Apptics.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -924,7 +928,7 @@
 		</data>
 		<key>sdkProp_info.plist</key>
 		<data>
-		iUjDxunmqrE/l5qt63jRUgLCzrM=
+		ffMVI7wm0xQG9v0UAFNkG6aDw8Q=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -944,11 +948,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Ur6xUzHiq8vBiCcORBzFOrE0SXw=
+			/69QrakwQmfVBgvHsqkrtS6N3ZA=
 			</data>
 			<key>hash2</key>
 			<data>
-			RKh48qH7PgT8UubyKsJ+DVhXnLJRBVrJ7RrYgZIipPg=
+			m0+pYbXPeDyHstwVO2st9n8RMrf8T1BYI6b7e0Jg7II=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -968,11 +972,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uPPQIdff/wnftNPaoOCojGqk/Ig=
+			LF8Nckk3RPSm+L36EsT1b+a8AME=
 			</data>
 			<key>hash2</key>
 			<data>
-			6kWudCmSwnTwXuTht3jLnYwdLjsZmx2Ne8ODjLZo+H8=
+			4eSUqwTKbH1tUo0D8SQEccHp0NtI5TUXi7O7aPC9Qnc=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/ZAAppUpdateAlert.nib</key>
@@ -1089,11 +1093,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4aRYyq1pVZTDMOIRLvIz0j5I6TA=
+			6p7UsIjc7pSmGn+mtwIooA6hwx4=
 			</data>
 			<key>hash2</key>
 			<data>
-			Ee8T45pPb/w4RaTDceEhBtHkaRYce3A+q3FIn77qGRY=
+			jvh5MUwHKMVLaYz/fWfadgagaQ3+G2AGbJ5iWi7UaKY=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/_CodeSignature/CodeRequirements</key>
@@ -1111,22 +1115,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Sn1B6oi6X0rt2HVbxllOoripjik=
+			Eu6oL67KtQU1OR1R+bHoL7oe1x4=
 			</data>
 			<key>hash2</key>
 			<data>
-			LByuQMBdt5cWz7Vsm/6mitKWEb2W8ImFGRxQB/qWxpk=
+			OTdGQIVjU9etQwmLfGHADsnPV6RImau15T1gwqdThZE=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			cNQe8qvMTLD99MW7KKBHR6iVNmg=
+			e0RGMccP83SCh6YLrECNWPqP4pM=
 			</data>
 			<key>hash2</key>
 			<data>
-			m9XOkuyzok9FWFIMNfdy8oEflQ+/zRdOEMl9oXTzWo0=
+			0/rBhhw4Rti/ccvFZQqu/wz7C6MLmWH3J4F/5vfxwh0=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/_CodeSignature/CodeSignature</key>
@@ -1790,6 +1794,17 @@
 			</data>
 			<key>optional</key>
 			<true/>
+		</dict>
+		<key>AppticsResources.bundle/sdkProp_info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ffMVI7wm0xQG9v0UAFNkG6aDw8Q=
+			</data>
+			<key>hash2</key>
+			<data>
+			spNNFXacq61rdyrzw9+rCWfTs+u2TUdyAtpaK7GCWd4=
+			</data>
 		</dict>
 		<key>AppticsResources.bundle/sl.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
@@ -2765,11 +2780,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			iUjDxunmqrE/l5qt63jRUgLCzrM=
+			ffMVI7wm0xQG9v0UAFNkG6aDw8Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			SYte8io4X5ragaQT5eavlTDKZnvMJJhwzunV2anaO8w=
+			spNNFXacq61rdyrzw9+rCWfTs+u2TUdyAtpaK7GCWd4=
 			</data>
 		</dict>
 	</dict>
