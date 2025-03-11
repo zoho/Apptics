@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		mHiJMbsNVQmCxSyFPOC6BuV/ZNI=
+		rcSpRptfYBP16pSaf84f1d1cYmk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -26,15 +26,15 @@
 		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
-		OGM3tREQlcorH4OxNQYw4AArkFc=
+		cl5C9XI0dGK5oiqjbyJFIC3sCV4=
 		</data>
 		<key>Version.debug.xcconfig</key>
 		<data>
-		SmMXlT7DN3BH4V5G/lapmv3ho0s=
+		NA5YTxqSwT5U0ixSmTt+0Re/lM4=
 		</data>
 		<key>Version.release.xcconfig</key>
 		<data>
-		SmMXlT7DN3BH4V5G/lapmv3ho0s=
+		NA5YTxqSwT5U0ixSmTt+0Re/lM4=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -87,33 +87,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			OGM3tREQlcorH4OxNQYw4AArkFc=
+			cl5C9XI0dGK5oiqjbyJFIC3sCV4=
 			</data>
 			<key>hash2</key>
 			<data>
-			E7YicSayrjudfdYceeZx2lsWApCJglFv4WDgMb3JJWw=
+			7Abj29BKhiz8bFZbe/Iw3CNg7SORJLWdcXrFRbYKRZw=
 			</data>
 		</dict>
 		<key>Version.debug.xcconfig</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			SmMXlT7DN3BH4V5G/lapmv3ho0s=
+			NA5YTxqSwT5U0ixSmTt+0Re/lM4=
 			</data>
 			<key>hash2</key>
 			<data>
-			d5tquILweJLhHG/DorlYk+TASuh9Bi7u2JjXwhzJ4/o=
+			66AyiGM8yhSv3cvya57/aS8i5BMggCDh2Ba5D94W+fE=
 			</data>
 		</dict>
 		<key>Version.release.xcconfig</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			SmMXlT7DN3BH4V5G/lapmv3ho0s=
+			NA5YTxqSwT5U0ixSmTt+0Re/lM4=
 			</data>
 			<key>hash2</key>
 			<data>
-			d5tquILweJLhHG/DorlYk+TASuh9Bi7u2JjXwhzJ4/o=
+			66AyiGM8yhSv3cvya57/aS8i5BMggCDh2Ba5D94W+fE=
 			</data>
 		</dict>
 	</dict>
