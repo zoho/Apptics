@@ -10,11 +10,11 @@
 		</data>
 		<key>AppticsResources_tvOS.bundle/Info.plist</key>
 		<data>
-		QCA1SU+WnCHFxYnDkwuIzcpyaR4=
+		7m1+79DX4W9RVLuZ84e5ZVnAx50=
 		</data>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		IetC05cmBGd/rEqVymNwCXPZWbw=
+		FI90AA1aAth/PpAj0vx0tpPMl8s=
 		</data>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		zLPb152k8RNIbDqYz7WRqWpfeeI=
+		x0IO+dquy+1KCDEFmMg8fWCX+B8=
 		</data>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeResources</key>
 		<data>
@@ -308,7 +308,7 @@
 		</data>
 		<key>Headers/Analytics.h</key>
 		<data>
-		SBn8EM+j2lKZ3/w1bUK9PQhBSPE=
+		dSddjczTrxKTRbyMLweX3Z/OMlw=
 		</data>
 		<key>Headers/Apptics.h</key>
 		<data>
@@ -348,7 +348,7 @@
 		</data>
 		<key>Headers/ZACustomNavigationController.h</key>
 		<data>
-		OJQFwF6Aue9gmxHdwfUm+P8124s=
+		eYiwYMOvxdGmIDfb4a3hHSsY4m8=
 		</data>
 		<key>Headers/ZAEngagementsUploadOperation.h</key>
 		<data>
@@ -436,7 +436,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		lmjX6atc7V74hfxgdndiZMmNzlI=
+		pCqVM86MyyZQq0G9oRMWhkJiZIQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -448,7 +448,7 @@
 		</data>
 		<key>sdkProp_info.plist</key>
 		<data>
-		/MD0PU6+WLso/LodRqRbPtMv9fY=
+		5fZ++858TQfufb2zDdHL9cxn/6M=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -468,22 +468,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QCA1SU+WnCHFxYnDkwuIzcpyaR4=
+			7m1+79DX4W9RVLuZ84e5ZVnAx50=
 			</data>
 			<key>hash2</key>
 			<data>
-			wKuUOWW8rMGWAMXIIl67A9f/R9bJZWM+2FM/4tk9dKc=
+			Qio4YPG4pMk5RG5PfmVX9ceuI7VpSdF8pE/Kkbr/GzI=
 			</data>
 		</dict>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeDirectory</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			IetC05cmBGd/rEqVymNwCXPZWbw=
+			FI90AA1aAth/PpAj0vx0tpPMl8s=
 			</data>
 			<key>hash2</key>
 			<data>
-			HGGjRHfa8eKpE14FAGnc5OGrpOI9mh2SthBBTjHxLGA=
+			EEcHvGOHx+VXch7maYpHqE3wvAczmFKQAAWPeFi+q4Q=
 			</data>
 		</dict>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeRequirements</key>
@@ -501,11 +501,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zLPb152k8RNIbDqYz7WRqWpfeeI=
+			x0IO+dquy+1KCDEFmMg8fWCX+B8=
 			</data>
 			<key>hash2</key>
 			<data>
-			vgHiPoWY3wHhmzF/rmjjwvoX/l0UA2Ok2koKa0UoiAM=
+			0FBrHK6yIC19u6naA27hks1FOWuBaNH3Wxe6f+0t60c=
 			</data>
 		</dict>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeResources</key>
@@ -982,11 +982,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SBn8EM+j2lKZ3/w1bUK9PQhBSPE=
+			dSddjczTrxKTRbyMLweX3Z/OMlw=
 			</data>
 			<key>hash2</key>
 			<data>
-			FhzLefQJYt7wwvZ8whQi6VD5R0J83kgjq/DiYGMeUOs=
+			/BbLnsnv1hqKW7/j2d9Sr190Ouss3aUO4UNatVawfXU=
 			</data>
 		</dict>
 		<key>Headers/Apptics.h</key>
@@ -1092,11 +1092,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			OJQFwF6Aue9gmxHdwfUm+P8124s=
+			eYiwYMOvxdGmIDfb4a3hHSsY4m8=
 			</data>
 			<key>hash2</key>
 			<data>
-			rJjEAwajW8bdEQtnpSp3RuonRlAv7PK8xj7HWYZfJGM=
+			Jf2uWjZz6eAaxrRAYw8X2z323WJTdObv35CeAYX8pSo=
 			</data>
 		</dict>
 		<key>Headers/ZAEngagementsUploadOperation.h</key>
@@ -1356,11 +1356,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/MD0PU6+WLso/LodRqRbPtMv9fY=
+			5fZ++858TQfufb2zDdHL9cxn/6M=
 			</data>
 			<key>hash2</key>
 			<data>
-			Y+kHwv3reBJbKRdvnFJ6PMXy/dqgRif7cn+Db2Vkd5I=
+			u9EhqIFxHAsOI87WI8faYQhHI3qC+QdBKZq4pjiyYvs=
 			</data>
 		</dict>
 	</dict>

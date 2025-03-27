@@ -8,9 +8,13 @@
 		<data>
 		lvJcscPwNKVBiKtKk/BYj+XA0S8=
 		</data>
+		<key>Headers/KMPCrash.h</key>
+		<data>
+		NkhuDVYeNbPy3MhWUFer2dPzzOI=
+		</data>
 		<key>Headers/ZACrash.h</key>
 		<data>
-		Achgpc2QPq2h53Tqlfp75hiQkPs=
+		J1Qxp8GSfYZ/TfMvT4uypKySo2E=
 		</data>
 		<key>Headers/ZACrashReportUploadOperation.h</key>
 		<data>
@@ -18,7 +22,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		kYGOoXJQBh58LYoHT2qFQF4PAL4=
+		LfXKH8NTicBVl0ZXq+/HkDBjXlg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -42,15 +46,26 @@
 			jsBGAXx4tZbuibDAXOLQ/A0gU4NgUn1kvSUgoaBhGDM=
 			</data>
 		</dict>
+		<key>Headers/KMPCrash.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			NkhuDVYeNbPy3MhWUFer2dPzzOI=
+			</data>
+			<key>hash2</key>
+			<data>
+			aB87LLciXWJaftOHRX2JKntqMhw1J8U3SuFLPjBuNQg=
+			</data>
+		</dict>
 		<key>Headers/ZACrash.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Achgpc2QPq2h53Tqlfp75hiQkPs=
+			J1Qxp8GSfYZ/TfMvT4uypKySo2E=
 			</data>
 			<key>hash2</key>
 			<data>
-			foygKB+D2Y6ouEjD3D6cJifewkYkLyendAIvtAyyH4I=
+			PLe9sRUkZryZ0Baxfkguei//YDT/0KRJl+OpwDZslvM=
 			</data>
 		</dict>
 		<key>Headers/ZACrashReportUploadOperation.h</key>

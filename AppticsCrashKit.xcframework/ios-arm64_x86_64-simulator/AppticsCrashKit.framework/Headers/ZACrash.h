@@ -67,6 +67,8 @@
 
 + (void) deleteAllReports;
 
+-(void) receiveAndSaveKMMCrash : (NSNotification *) notification;
+
 #if PLCR_PRIVATE
 + (void) disableMachExceptionHandler;
 #endif
