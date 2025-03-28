@@ -45,10 +45,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Apptics.setTheme(AppTheme())
 
         FeedbackKit.startMonitoring(withShake: true, maxToleranceLimit: 3)
-                FeedbackKit.setSenderEmailAddress("ssaravanan@zohocorp.com")
                 FeedbackKit.setMaskTextByDefault(true)
-
-                FeedbackKit.setSupportEmailAddress("ssaravanan@zoho.com")
 
                 FeedbackKit.showInfoBeforeSendingFeedback(toUser: false)
                 let dignoInfo = [[["key": "", "value": "ZUID - 869382"], ["key": "Conversation View", "value": "All Folders"], ["key": "Conversation Action", "value": "Folders based"], ["key": "Mark entire conversation as read", "value": "off"], ["key": "Notification status", "value": "on"], ["key": "User timezone", "value": "Asia/Calcutta"], ["key": "Sender based notification", "value": "off"], ["key": "Folder based notification", "value": "off"], ["key": "Badge Notification", "value": "Inbox"], ["key": "Streams enabled", "value": "on"], ["key": "Streams notification enabled", "value": "on"]], [["key": "", "value": "DEVICE DETAILS"], ["key": "Device cache count", "value": "231 200 325"], ["key": "Device timezone", "value": "Asia/Kolkata"], ["key": "Device Notification status", "value": "Authorized"]]]
