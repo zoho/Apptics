@@ -17,7 +17,7 @@ typedef NS_ENUM(NSInteger, APRemoteConfigFetchStatus)  {
   APRemoteConfigFetchStatusSuccess,
   APRemoteConfigFetchStatusFailure,
   APRemoteConfigFetchStatusUpToDate,
-  APRemoteConfigFetchStatuThrottled
+  APRemoteConfigFetchStatusThrottled
 };
 
 static NSString* APRemoteConfigUpdateNotification = @"APRemoteConfigUpdateNotification";

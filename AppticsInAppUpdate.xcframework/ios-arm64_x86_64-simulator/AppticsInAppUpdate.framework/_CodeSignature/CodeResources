@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/APAppUpdateManager.h</key>
 		<data>
-		6DAqdR8gluBz7Myc3ctaOhNaJLI=
+		DEIkzdKrY6LW/KkHmm1y8epJNmE=
 		</data>
 		<key>Headers/AppticsInAppUpdate.h</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		jlHEgPIrLsOQUmh1FgjBgLX1gfQ=
+		9ujlvQGWtf1hFnWYTkM+J3JAnwY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -29,21 +29,13 @@
 	<dict>
 		<key>Headers/APAppUpdateManager.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			6DAqdR8gluBz7Myc3ctaOhNaJLI=
-			</data>
 			<key>hash2</key>
 			<data>
-			39lYMyJKyL1t6dL3Q9aqom+M8iurSvS/vl3NMEfAWhw=
+			eijvQaSGNEHLbBxnnEfzruuGd4ufsnKooqM2F1E5aiY=
 			</data>
 		</dict>
 		<key>Headers/AppticsInAppUpdate.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			fpTbQOyN2LfhgCaDwaPtkI5Fr0U=
-			</data>
 			<key>hash2</key>
 			<data>
 			ma2DzgT9SJQLjGK9+ciK96ssj860D85IFXA/nmpjtY8=
@@ -51,10 +43,6 @@
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			PMPDOROTGPYjBmx7qwbrrtXX/vo=
-			</data>
 			<key>hash2</key>
 			<data>
 			A0RAdiC5ciIS+/QtPfUBeRWRVYx/ZwOR70HDQ/r7ZHs=
@@ -62,10 +50,6 @@
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			cl5C9XI0dGK5oiqjbyJFIC3sCV4=
-			</data>
 			<key>hash2</key>
 			<data>
 			7Abj29BKhiz8bFZbe/Iw3CNg7SORJLWdcXrFRbYKRZw=

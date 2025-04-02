@@ -20,7 +20,6 @@ NS_ASSUME_NONNULL_BEGIN
 @optional
 
 -(void) willDisplayReviewPrompt;
--(void) rateUsActionCompletionHandler:(JRateUsAction) action;
 
 @end
 
@@ -30,7 +29,6 @@ NS_ASSUME_NONNULL_BEGIN
 +(void) setCustomHandler:(id <ARCustomHandler>) handler;
 
 +(void) willDisplayReviewPrompt:(void (^)(void))dispatchBlock;
-+(void) rateUsActionCompletionHandler:(JRateUsAction) action;
 
 @end
 

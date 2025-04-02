@@ -6,15 +6,15 @@
 	<dict>
 		<key>Headers/APRateUs.h</key>
 		<data>
-		RoWTke0k6qHJ9RcSG4r6aSHIwdA=
+		I8Inl3JvGILHdB9b4GMbCpmGQSk=
 		</data>
 		<key>Headers/APStoreReviewManager.h</key>
 		<data>
-		8ibH5XKixSyw1ceHpwBrTVQEuaQ=
+		RjaEfFLRdvdF1EuycL1cMB8VTHY=
 		</data>
 		<key>Headers/ARCustomHandler.h</key>
 		<data>
-		93kPa3iZbTZvCVULNyHmVV3i+jk=
+		okQNktkslmM0URwFcR1TjPCig/0=
 		</data>
 		<key>Headers/AppticsRateUs.h</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Or0pRnLtznYN0He8WriBnBcUVG8=
+		Z5PF89zvlNiHdC68yPP0Opdu5Y8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -37,43 +37,27 @@
 	<dict>
 		<key>Headers/APRateUs.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			RoWTke0k6qHJ9RcSG4r6aSHIwdA=
-			</data>
 			<key>hash2</key>
 			<data>
-			5LEQOHUkbtyb5nqLq62tkq5GXu/qHVKRVglMBeEhH8g=
+			012aA765XZGueOb0gP5OJjjUE3VYVxxuleAtMwvnF/0=
 			</data>
 		</dict>
 		<key>Headers/APStoreReviewManager.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			8ibH5XKixSyw1ceHpwBrTVQEuaQ=
-			</data>
 			<key>hash2</key>
 			<data>
-			vJTs13i9br0AlKyT2B6UDeZgAHFCcWqOsJGy/bNR9xI=
+			fjTWO/LCvJp4Lqtz2n76JXoocCeTrMsZIyaIc6mqx8k=
 			</data>
 		</dict>
 		<key>Headers/ARCustomHandler.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			93kPa3iZbTZvCVULNyHmVV3i+jk=
-			</data>
 			<key>hash2</key>
 			<data>
-			G8+UaL9CIxH7kkCJEjK3Fju4MAKykXcrhQm0mAhxefY=
+			ny9UjIK3wXb1r2CSMDMQj13dmBs+fTqZ8MrEZtcmnK4=
 			</data>
 		</dict>
 		<key>Headers/AppticsRateUs.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			w8UD5TdTjOGpDaUFLKghS9kdQ88=
-			</data>
 			<key>hash2</key>
 			<data>
 			UYCyd8Ue9StO1xKuxO31i1fWH0ZPxYhmYrDJGPTJp/s=
@@ -81,10 +65,6 @@
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Zx2ehU0aoJNiNNzEysGK5vR2618=
-			</data>
 			<key>hash2</key>
 			<data>
 			BEsXhH5+CBzIHHRvocFiwpDijzgylitdQjpwN1wZHYM=
@@ -92,10 +72,6 @@
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			cl5C9XI0dGK5oiqjbyJFIC3sCV4=
-			</data>
 			<key>hash2</key>
 			<data>
 			7Abj29BKhiz8bFZbe/Iw3CNg7SORJLWdcXrFRbYKRZw=

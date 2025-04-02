@@ -291,6 +291,10 @@
 		<data>
 		JQ9xRzqOdRlZVesHYxOqs21IKGg=
 		</data>
+		<key>Headers/APDBManager.h</key>
+		<data>
+		OabNC3VV3T8kSlf1XKezxx4stKE=
+		</data>
 		<key>Headers/APEventsEnum.h</key>
 		<data>
 		8vWu/Vmb/R2Cf+SMeRJ61UzYJWY=
@@ -305,7 +309,7 @@
 		</data>
 		<key>Headers/APRateusObject.h</key>
 		<data>
-		254l96OZHadJA6xURKh9dSU8fK8=
+		k6lciIKzwc3v8v5DPVguCVh1LWs=
 		</data>
 		<key>Headers/APRemoteConfigObject.h</key>
 		<data>
@@ -317,7 +321,7 @@
 		</data>
 		<key>Headers/Analytics.h</key>
 		<data>
-		dSddjczTrxKTRbyMLweX3Z/OMlw=
+		SBn8EM+j2lKZ3/w1bUK9PQhBSPE=
 		</data>
 		<key>Headers/Apptics.h</key>
 		<data>
@@ -373,7 +377,7 @@
 		</data>
 		<key>Headers/ZAFileManager.h</key>
 		<data>
-		4qRdj1FPeJ3iT7Q7yEFDW+NLAoo=
+		LT3zgZOyLDN7wTRzGkHGIAkPGuY=
 		</data>
 		<key>Headers/ZAFilters.h</key>
 		<data>
@@ -441,7 +445,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		tVueR6uf/iL/L+gOC8KQs6Oq38M=
+		clfqoG4wgFi/umVSRvcpjYj7LG0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -930,6 +934,17 @@
 			h2OnQAcvect2jwxSfPZu8ywkOesQPggv//F68WEoafY=
 			</data>
 		</dict>
+		<key>Headers/APDBManager.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OabNC3VV3T8kSlf1XKezxx4stKE=
+			</data>
+			<key>hash2</key>
+			<data>
+			nJwcIbd6IoBF3F+NXpjw/z5wHaQRjsPBl9GaK1Nb2bg=
+			</data>
+		</dict>
 		<key>Headers/APEventsEnum.h</key>
 		<dict>
 			<key>hash</key>
@@ -967,11 +982,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			254l96OZHadJA6xURKh9dSU8fK8=
+			k6lciIKzwc3v8v5DPVguCVh1LWs=
 			</data>
 			<key>hash2</key>
 			<data>
-			uiUl4T5XMkovWz2UoIAyxAmiBGN4ONAZlKaHEF5aljs=
+			+Q17+mYF/TdMwuSeR0UhRaTcUA/Ytn+PewHu7S3EipA=
 			</data>
 		</dict>
 		<key>Headers/APRemoteConfigObject.h</key>
@@ -1000,11 +1015,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dSddjczTrxKTRbyMLweX3Z/OMlw=
+			SBn8EM+j2lKZ3/w1bUK9PQhBSPE=
 			</data>
 			<key>hash2</key>
 			<data>
-			/BbLnsnv1hqKW7/j2d9Sr190Ouss3aUO4UNatVawfXU=
+			FhzLefQJYt7wwvZ8whQi6VD5R0J83kgjq/DiYGMeUOs=
 			</data>
 		</dict>
 		<key>Headers/Apptics.h</key>
@@ -1154,11 +1169,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4qRdj1FPeJ3iT7Q7yEFDW+NLAoo=
+			LT3zgZOyLDN7wTRzGkHGIAkPGuY=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZqUq/LVNOQGCMbGkcymIN7iNTM8WZa95U3YBFEJYMnQ=
+			gQ/1dgVI+L/161DvCWVej3XatY9eNkzQzfX9JyxSKyU=
 			</data>
 		</dict>
 		<key>Headers/ZAFilters.h</key>

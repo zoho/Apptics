@@ -12,13 +12,6 @@
 @property (nonatomic, retain) NSMutableDictionary *crashMetaInfo;
 
 + (KMPCrash*)sharedManager;
-
-
-- (NSString*) binaryImagesStringForReport:(NSDictionary*) report arch:(NSString*) arch;
-- (NSString *)getPlatformArchitecture;
-
-NSDictionary* getInfoForBinaryName(NSString *binaryName);
 - (void)receiveKMMcrashAndSave:(NSException *)crashReport;
-
 
 @end

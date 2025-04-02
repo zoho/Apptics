@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		5NoOyG/sUrh2k3y9TM/daUElYig=
+		GbQsSZyk1CxO1c/0yhcwD/1CurY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -26,17 +26,13 @@
 		</data>
 		<key>Version.release.xcconfig</key>
 		<data>
-		sR8cGpFXJWuetcb8WxxcCMxKNYg=
+		ZYocMfDG9UPS63/UDwv1vVUh+nQ=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
 		<key>Headers/APAPIManager.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			nKEJ3pUM+25e6bgLhpIO/0Firzs=
-			</data>
 			<key>hash2</key>
 			<data>
 			P2cqVwDquhhTScZlYaiSEFtcwhvKVWIAWTQPvAtAolI=
@@ -44,10 +40,6 @@
 		</dict>
 		<key>Headers/AppticsApiTracker.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			xfmx13enO7VnlOhjsgpBLBohm20=
-			</data>
 			<key>hash2</key>
 			<data>
 			hH8coMxFIXWu91bJIhT5nBQ9BwRN19GsrJ/YmKttUBw=
@@ -55,10 +47,6 @@
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			4tlhWEcngeCQalcdQAdqPYAaR9s=
-			</data>
 			<key>hash2</key>
 			<data>
 			JhWGOid4nyPz0xlAn5mNuFz8ssjRAra9YR4CxtNiKT4=
@@ -66,10 +54,6 @@
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			cl5C9XI0dGK5oiqjbyJFIC3sCV4=
-			</data>
 			<key>hash2</key>
 			<data>
 			7Abj29BKhiz8bFZbe/Iw3CNg7SORJLWdcXrFRbYKRZw=
@@ -77,13 +61,9 @@
 		</dict>
 		<key>Version.release.xcconfig</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			sR8cGpFXJWuetcb8WxxcCMxKNYg=
-			</data>
 			<key>hash2</key>
 			<data>
-			ddwKz+Z+ZGwOy/frmHpTpr7JIeF22f6F5BcpOYp4NDQ=
+			72rEG/LhjhDbzneIuQ7FiLmjZXiOdWh1epOJzMq5NhE=
 			</data>
 		</dict>
 	</dict>

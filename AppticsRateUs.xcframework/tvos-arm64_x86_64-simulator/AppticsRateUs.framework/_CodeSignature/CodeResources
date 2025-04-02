@@ -6,11 +6,11 @@
 	<dict>
 		<key>Headers/APRateUs.h</key>
 		<data>
-		RoWTke0k6qHJ9RcSG4r6aSHIwdA=
+		I8Inl3JvGILHdB9b4GMbCpmGQSk=
 		</data>
 		<key>Headers/ARCustomHandler.h</key>
 		<data>
-		93kPa3iZbTZvCVULNyHmVV3i+jk=
+		okQNktkslmM0URwFcR1TjPCig/0=
 		</data>
 		<key>Headers/AppticsRateUs.h</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		hVlrTMprY5mDPe0KfzSvQANlI88=
+		d6bxH+0srCIaNHSmb2GV1va4Tvs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Version.debug.xcconfig</key>
 		<data>
-		sR8cGpFXJWuetcb8WxxcCMxKNYg=
+		ZYocMfDG9UPS63/UDwv1vVUh+nQ=
 		</data>
 		<key>Version.release.xcconfig</key>
 		<data>
-		sR8cGpFXJWuetcb8WxxcCMxKNYg=
+		ZYocMfDG9UPS63/UDwv1vVUh+nQ=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -43,22 +43,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RoWTke0k6qHJ9RcSG4r6aSHIwdA=
+			I8Inl3JvGILHdB9b4GMbCpmGQSk=
 			</data>
 			<key>hash2</key>
 			<data>
-			5LEQOHUkbtyb5nqLq62tkq5GXu/qHVKRVglMBeEhH8g=
+			012aA765XZGueOb0gP5OJjjUE3VYVxxuleAtMwvnF/0=
 			</data>
 		</dict>
 		<key>Headers/ARCustomHandler.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			93kPa3iZbTZvCVULNyHmVV3i+jk=
+			okQNktkslmM0URwFcR1TjPCig/0=
 			</data>
 			<key>hash2</key>
 			<data>
-			G8+UaL9CIxH7kkCJEjK3Fju4MAKykXcrhQm0mAhxefY=
+			ny9UjIK3wXb1r2CSMDMQj13dmBs+fTqZ8MrEZtcmnK4=
 			</data>
 		</dict>
 		<key>Headers/AppticsRateUs.h</key>
@@ -98,22 +98,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sR8cGpFXJWuetcb8WxxcCMxKNYg=
+			ZYocMfDG9UPS63/UDwv1vVUh+nQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			ddwKz+Z+ZGwOy/frmHpTpr7JIeF22f6F5BcpOYp4NDQ=
+			72rEG/LhjhDbzneIuQ7FiLmjZXiOdWh1epOJzMq5NhE=
 			</data>
 		</dict>
 		<key>Version.release.xcconfig</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			sR8cGpFXJWuetcb8WxxcCMxKNYg=
+			ZYocMfDG9UPS63/UDwv1vVUh+nQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			ddwKz+Z+ZGwOy/frmHpTpr7JIeF22f6F5BcpOYp4NDQ=
+			72rEG/LhjhDbzneIuQ7FiLmjZXiOdWh1epOJzMq5NhE=
 			</data>
 		</dict>
 	</dict>

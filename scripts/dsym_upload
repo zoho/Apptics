@@ -79,7 +79,7 @@ fi
 CM_AP_INFO_FILE_NAME="$TARGET_BUILD_DIR/$INFOPLIST_PATH"
 
 if [ ! "${ZA_INFO_FILE_NAME}" ]; then
-# check the file name in target build dir info.plist
+# check the file name in target build dir info.plist 
 ZA_INFO_FILE_NAME=$(/usr/libexec/PlistBuddy -c 'Print AP_INFOPLIST_FILE' "${CM_AP_INFO_FILE_NAME}")
 fi
 
@@ -273,24 +273,12 @@ DWARF_DATA="${DSYM_SRC}/Contents/Resources/DWARF"
 if [ ${DEBUG_INFORMATION_FORMAT} == "dwarf-with-dsym" ]; then
      
  if [ $PROCESS_TYPE -eq 1 ]; then
-    found_incomplete=1
-    while [ $found_incomplete -eq 1 ]; do
-        found_incomplete=0
-        echo "Checking all dSYM files in ${DWARF_DSYM_FOLDER_PATH}..."
-        for dsym_file in "${DWARF_DSYM_FOLDER_PATH}"/**/*.dSYM; do
-            if [ -d "$dsym_file" ]; then
-                if [ ! -d "${dsym_file}/Contents/Resources/DWARF" ] || ! dwarfdump -u "${dsym_file}" 2>/dev/null; then
-                    echo "Waiting for dSYM to finish: ${dsym_file}"
-                    found_incomplete=1
-                    break
-                fi
-            fi
-        done
-        if [ $found_incomplete -eq 1 ]; then
-            sleep 1
-        fi
+    while ( [ ! -d $DWARF_DATA ] || ! dwarfdump -u "${DSYM_SRC}" 2> /dev/null)
+    do
+    echo "Waiting to finish dSYM file creation..."
+    sleep 1;
     done
-    echo "All dSYM files are ready"
+    
  fi
 
     cd "${DWARF_DSYM_FOLDER_PATH}"

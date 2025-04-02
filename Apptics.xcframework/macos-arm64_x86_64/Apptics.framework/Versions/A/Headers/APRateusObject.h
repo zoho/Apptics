@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface APRateusObject : ZAObject<NSCoding,JSONAble>
 
-@property (strong,nonatomic) NSNumber *criteriaid, *popupsource, *popupaction, *popupnumber, *sessionstarttime;
+@property (strong,nonatomic) NSNumber *criteriaid, *sessionstarttime;
 @property NSString *screen, *ram;
 
 +(void) addObjectToQueueForDictionary:(NSDictionary*)dict;

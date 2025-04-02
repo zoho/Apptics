@@ -53,7 +53,7 @@ typedef void (^updateResponseBlock)(NSDictionary *_Nullable updateInfo);
 
  */
 
-+ (NSDictionary *_Nullable) checkForAppUpdates;
++ (void) checkForAppUpdatesWithCompletion:(void (^)(NSMutableDictionary *results))completion;
 
 /**
  

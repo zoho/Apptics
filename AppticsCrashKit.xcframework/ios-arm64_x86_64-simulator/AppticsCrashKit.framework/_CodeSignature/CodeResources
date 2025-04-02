@@ -10,11 +10,11 @@
 		</data>
 		<key>Headers/KMPCrash.h</key>
 		<data>
-		NkhuDVYeNbPy3MhWUFer2dPzzOI=
+		CIo0tifm2xUMXYbMrHqbQP9MyJA=
 		</data>
 		<key>Headers/ZACrash.h</key>
 		<data>
-		J1Qxp8GSfYZ/TfMvT4uypKySo2E=
+		nVclRA+sM9UhXqwmN6cESvOqNI4=
 		</data>
 		<key>Headers/ZACrashReportUploadOperation.h</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		LfXKH8NTicBVl0ZXq+/HkDBjXlg=
+		N0hBFBF/20RSY1mub8HnUOd2lzI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -37,10 +37,6 @@
 	<dict>
 		<key>Headers/AppticsCrashKit.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			lvJcscPwNKVBiKtKk/BYj+XA0S8=
-			</data>
 			<key>hash2</key>
 			<data>
 			jsBGAXx4tZbuibDAXOLQ/A0gU4NgUn1kvSUgoaBhGDM=
@@ -48,32 +44,20 @@
 		</dict>
 		<key>Headers/KMPCrash.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			NkhuDVYeNbPy3MhWUFer2dPzzOI=
-			</data>
 			<key>hash2</key>
 			<data>
-			aB87LLciXWJaftOHRX2JKntqMhw1J8U3SuFLPjBuNQg=
+			yQzYKTp58+pD6aSRFzpwJ7OPq4ZVaXsqdjDE4Tqnb3M=
 			</data>
 		</dict>
 		<key>Headers/ZACrash.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			J1Qxp8GSfYZ/TfMvT4uypKySo2E=
-			</data>
 			<key>hash2</key>
 			<data>
-			PLe9sRUkZryZ0Baxfkguei//YDT/0KRJl+OpwDZslvM=
+			wEpOvH2XFmyxFoh4aAEbbYYHXrG3mJwj8t8dreZEXOg=
 			</data>
 		</dict>
 		<key>Headers/ZACrashReportUploadOperation.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			S+Jd0qe4gPC+D1XuWoHF3C1DEG0=
-			</data>
 			<key>hash2</key>
 			<data>
 			dsXVrGRW5loEc178CQR+TuYWbRjbq7TqPc/yC+dDdF8=
@@ -81,10 +65,6 @@
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			NwNb1Em4E4odKrlSu/EOYkZQ2KE=
-			</data>
 			<key>hash2</key>
 			<data>
 			pUCnySNZ168/4hh1ZwVh9P0nI+L3sb0TB/92Jt+jThk=
@@ -92,10 +72,6 @@
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			cl5C9XI0dGK5oiqjbyJFIC3sCV4=
-			</data>
 			<key>hash2</key>
 			<data>
 			7Abj29BKhiz8bFZbe/Iw3CNg7SORJLWdcXrFRbYKRZw=

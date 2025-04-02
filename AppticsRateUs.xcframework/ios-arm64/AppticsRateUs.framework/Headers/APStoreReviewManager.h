@@ -29,7 +29,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 +(APStoreReviewManager*_Nonnull) getInstance;
 
--(void) saveAggrigatedEngagementsData;
+//-(void) saveAggrigatedEngagementsData;
     
 -(void) loadRuleBook;
 
@@ -44,26 +44,6 @@ NS_ASSUME_NONNULL_BEGIN
 -(void) storeReviewMasterReset;
 
 -(void) enableRateUsAndReview:(BOOL)status;
-
--(void) setAppRatingShown;
-
-//-(void) staticStoreReviewPrompt;
-
--(void) showCustomReviewPrompt;
-
--(void) takeToAppStoreReviewScreen;
-
--(void) updateActionForAppStoreReview;
-
--(void) takeToFeedbackScreen;
-
--(void) updateActionForFeedback;
-
--(void) getAppStoreReviewUrl:(void (^_Nonnull)(NSURL * _Nullable storeReviewUrl))completionHandler;
-
--(void) showPromptOnFulfillingCriteria;
-
--(void) disableAutoPromptOnFulfillingCriteria : (bool) status;
 
 @end
 

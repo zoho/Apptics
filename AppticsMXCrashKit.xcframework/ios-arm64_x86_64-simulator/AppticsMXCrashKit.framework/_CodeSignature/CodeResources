@@ -4,6 +4,14 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/APCrash.h</key>
+		<data>
+		IXgyBakUjdInW7zJrCBv8ZQPbfY=
+		</data>
+		<key>Headers/APCrashReporter.h</key>
+		<data>
+		svbkDVVKQn6BZdvuJW5Kfm2W54M=
+		</data>
 		<key>Headers/AppticsCrashKit.h</key>
 		<data>
 		7boiAFR7QDHUyoKO4mD8p32GbIA=
@@ -19,6 +27,20 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Headers/APCrash.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			MZSEzMCaGqHa/FH4jQG9yfG8xLroaDx4mxAeV5SNDmA=
+			</data>
+		</dict>
+		<key>Headers/APCrashReporter.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			XQ6LoZXdEll/Wu+94SpUeQ+owBYPdBjUvJczlTOYNnQ=
+			</data>
+		</dict>
 		<key>Headers/AppticsCrashKit.h</key>
 		<dict>
 			<key>hash2</key>

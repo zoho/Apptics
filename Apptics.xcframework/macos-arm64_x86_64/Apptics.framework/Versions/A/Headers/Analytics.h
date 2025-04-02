@@ -331,8 +331,6 @@ typedef void (^internbgConsoleLogsRequestSuccessBlock)(void);
 - (void) willRegisterDeviceWithDeviceId:(NSNotification*) notification;
 - (void) willSendTheFeedbackToTheServer:(NSNotification*) notification;
 
-- (void)receiveKMMcrashAndSave:(NSException *)crashReport;
-
 #pragma mark - Cross Promotion Apps
 
 - (void) enableCrossPromotionAppsList : (bool) status;
