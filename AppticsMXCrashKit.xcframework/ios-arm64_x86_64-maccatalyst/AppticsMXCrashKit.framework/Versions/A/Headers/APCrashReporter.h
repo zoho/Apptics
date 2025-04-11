@@ -27,6 +27,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSDictionary *crashMetaInfo;
 @property (nonatomic, strong) NSDate *backgroundEntryTime;
 @property (nonatomic) BOOL crashedLastLaunch;
+@property (nonatomic) BOOL isAppLaunched;
 @property (nonatomic, strong) NSArray *previousCrash;
 
 +(NSTimeInterval) activeDurationSinceLastCrash;
