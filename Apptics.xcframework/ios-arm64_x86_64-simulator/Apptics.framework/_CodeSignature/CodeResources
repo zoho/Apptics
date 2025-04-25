@@ -23,7 +23,7 @@
 		</data>
 		<key>AppticsResources.bundle/Info.plist</key>
 		<data>
-		fEPfa62SJC5pchlQdS+6iykkhhQ=
+		6tFhKYjZcHZ8rN/+9ZEsGyvNTL8=
 		</data>
 		<key>AppticsResources.bundle/ZAAppUpdateAlert.nib</key>
 		<data>
@@ -67,7 +67,7 @@
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		Vq9phlXjjIA+h4kwvGl0HNqsuj8=
+		mIV8jBGAPeNJWZ+1pwQaf4VLeF4=
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -75,11 +75,11 @@
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		eIJZ/6AB/q6Tc/cvo0ZbPiCM1pU=
+		Qs2YbDxD4Rd7/oAgMgMGf7uCo9U=
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeResources</key>
 		<data>
-		/Vgx9NlaCF0Vo5AVA5zH9RghTiM=
+		QseNc2lAriURiPHvDGgKtjEyOcA=
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeSignature</key>
 		<data>
@@ -516,7 +516,7 @@
 		</dict>
 		<key>AppticsResources.bundle/sdkProp_info.plist</key>
 		<data>
-		sTFG9jsAgDlsuQ2XQquOybVXwfg=
+		5fZ++858TQfufb2zDdHL9cxn/6M=
 		</data>
 		<key>AppticsResources.bundle/sl.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
@@ -692,7 +692,7 @@
 		</data>
 		<key>Headers/APDBManager.h</key>
 		<data>
-		OabNC3VV3T8kSlf1XKezxx4stKE=
+		w8NrtcFLPjknrT2F6X8ydHaWqfY=
 		</data>
 		<key>Headers/APEventsEnum.h</key>
 		<data>
@@ -880,7 +880,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		97SmYwXNI8ol3ZcGK1oOKt+v2kw=
+		5xoSBX2Cx0g6ttEoxEDaTJ1LEm8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -892,7 +892,7 @@
 		</data>
 		<key>sdkProp_info.plist</key>
 		<data>
-		sTFG9jsAgDlsuQ2XQquOybVXwfg=
+		5fZ++858TQfufb2zDdHL9cxn/6M=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -924,7 +924,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			K5mXj0Lc81+w9Tj45R2JjcKv+TwmfHE9nSVBLwbzsLU=
+			G559JwbPvcgcsAeE+9vc5M7U+cJX/+T12gBsv7Gzack=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/ZAAppUpdateAlert.nib</key>
@@ -1001,7 +1001,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FTczxTiXXAcL1skVclREp6Qk6DpGI5u21LGviuDteIU=
+			lwNhMXVpcMMlDrGdTiN3xkjb74f5+2G4lDq4P1lZoa0=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/_CodeSignature/CodeRequirements</key>
@@ -1015,14 +1015,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8EtzeOr2Xs/3u1I0bRxJ9zPB7XlUpy1pgzzL5/us6RM=
+			ZNmgUg04IB/783rytjXc+w/5kExdkk4AE3mnRkEtYBY=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+PEtAzBZ6vm9nUIk7aa8QgnfqWFWF1nX0y51va+6c1s=
+			UGpYvyOOGIOpelS9NVsYVsGr9pQiiYey6iB6HgsAjXE=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/_CodeSignature/CodeSignature</key>
@@ -1483,7 +1483,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tSE+wB2vfAzdVr8zlZXhF+oFHES087CQO605ug9Tzgw=
+			u9EhqIFxHAsOI87WI8faYQhHI3qC+QdBKZq4pjiyYvs=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/sl.lproj/ZAnalyticsLocalizable.strings</key>
@@ -1710,7 +1710,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nJwcIbd6IoBF3F+NXpjw/z5wHaQRjsPBl9GaK1Nb2bg=
+			l04yN9fzed4HW+tJhU0vSNghUBqwzynBfNEmumt2Sfg=
 			</data>
 		</dict>
 		<key>Headers/APEventsEnum.h</key>
@@ -2053,7 +2053,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tSE+wB2vfAzdVr8zlZXhF+oFHES087CQO605ug9Tzgw=
+			u9EhqIFxHAsOI87WI8faYQhHI3qC+QdBKZq4pjiyYvs=
 			</data>
 		</dict>
 	</dict>
