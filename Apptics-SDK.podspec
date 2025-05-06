@@ -35,12 +35,12 @@ spec.source = { :http => "https://github.com/zoho/Apptics/releases/download/#{sp
 # spec.source = { :git => "https://github.com/zoho/Apptics.git", :tag=>"#{spec.version}"}
 spec.social_media_url = "http://zoho.com"
 
-spec.ios.deployment_target = '9.1'
+spec.ios.deployment_target = '13.0'
 spec.tvos.deployment_target = '9.0'
-spec.osx.deployment_target =  '10.10'
+spec.osx.deployment_target =  '12.0'
 spec.watchos.deployment_target = '2.0'
 
-spec.default_subspecs = 'AnalyticsWithKSCrash'
+spec.default_subspecs = 'AnalyticsWithMXCrash'
 
 spec.requires_arc = true
 
@@ -53,6 +53,13 @@ spec.subspec 'AnalyticsWithKSCrash' do |an|
 an.dependency 'Apptics-SDK/Scripts'
 an.dependency 'AppticsAnalytics/CoreWithKSCrash', "#{spec.version}"
 end
+
+spec.subspec 'AnalyticsWithMXCrash' do |an|
+an.dependency 'Apptics-SDK/Scripts'
+an.dependency 'AppticsAnalytics/CoreWithMXCrash', "#{spec.version}"
+end
+
+
 
 #spec.subspec 'Scripts' do |sc|
 #sc.source_files = 'scripts/*'
