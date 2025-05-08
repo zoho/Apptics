@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
-spec.name             = "AppticsPrivacyShield"
-spec.version          = "3.0.0"
-spec.summary          = "Apptics Privacy Protector for iOS"
+spec.name             = "Apptics-SDK"
+spec.version          = "3.1.0"
+spec.summary          = "An in-app usage tracking and analytics library for iOS"
 spec.license          = { :type => "MIT", :text=> <<-LICENSE
 MIT License
 Copyright (c) 2020 Zoho Corporation
@@ -27,23 +27,49 @@ spec.description = <<-DESC
 
 Apptics is a library that enables your app to send in-app usage reports and data securly to our servers. You can track Sessions, Screens, and we also offer Crash Reporting. With minimal initialization of the framework, you get these features without doing any other configuration.
 
-  DESC
+DESC
   
 spec.homepage         = "https://github.com/zoho/Apptics"
 spec.author = { 'Apptics' => 'apptics-support@zohocorp.com' }
-spec.source = { :http => "https://github.com/zoho/Apptics/releases/download/#{spec.version}/AppticsPrivacyShield.zip" }
+spec.source = { :http => "https://github.com/zoho/Apptics/releases/download/#{spec.version}/HelperScripts.zip" }
 # spec.source = { :git => "https://github.com/zoho/Apptics.git", :tag=>"#{spec.version}"}
+spec.social_media_url = "http://zoho.com"
 
-spec.ios.deployment_target = '12.0'
+spec.ios.deployment_target = '13.0'
+spec.tvos.deployment_target = '9.0'
+spec.osx.deployment_target =  '12.0'
+spec.watchos.deployment_target = '2.0'
 
-spec.default_subspecs = 'AppticsPrivacyKit'
+spec.default_subspecs = 'AnalyticsWithMXCrash'
 
 spec.requires_arc = true
 
-spec.subspec 'AppticsPrivacyKit' do |aps|
-aps.platform     = :ios, '12.0'
-aps.vendored_frameworks = 'AppticsPrivacyShield.xcframework'
-aps.ios.dependency 'AppticsAnalytics/Apptics', "#{spec.version}"
+spec.subspec 'Analytics' do |an|
+an.dependency 'Apptics-SDK/Scripts'
+an.dependency 'AppticsAnalytics/CoreWithMXCrash', "#{spec.version}"
+end
+
+spec.subspec 'AnalyticsWithKSCrash' do |an|
+an.dependency 'Apptics-SDK/Scripts'
+an.dependency 'AppticsAnalytics/CoreWithKSCrash', "#{spec.version}"
+end
+
+spec.subspec 'AnalyticsWithMXCrash' do |an|
+an.dependency 'Apptics-SDK/Scripts'
+an.dependency 'AppticsAnalytics/CoreWithMXCrash', "#{spec.version}"
+end
+
+
+
+#spec.subspec 'Scripts' do |sc|
+#sc.source_files = 'scripts/*'
+#sc.preserve_paths = 'scripts/*'
+#end
+
+spec.subspec 'Scripts' do |sc|
+sc.source_files = 'scripts/*.{rb,sh}'
+sc.preserve_paths = 'scripts/*'
+#sc.resources = 'scripts/*.plist'
 end
 
 end

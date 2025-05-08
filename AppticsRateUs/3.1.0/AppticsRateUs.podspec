@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
-spec.name             = "AppticsPrivacyShield"
-spec.version          = "3.0.0"
-spec.summary          = "Apptics Privacy Protector for iOS"
+spec.name             = "AppticsRateUs"
+spec.version          = "3.1.0"
+spec.summary          = "Apptics RateUs module for iOS"
 spec.license          = { :type => "MIT", :text=> <<-LICENSE
 MIT License
 Copyright (c) 2020 Zoho Corporation
@@ -31,19 +31,24 @@ Apptics is a library that enables your app to send in-app usage reports and data
   
 spec.homepage         = "https://github.com/zoho/Apptics"
 spec.author = { 'Apptics' => 'apptics-support@zohocorp.com' }
-spec.source = { :http => "https://github.com/zoho/Apptics/releases/download/#{spec.version}/AppticsPrivacyShield.zip" }
+spec.source = { :http => "https://github.com/zoho/Apptics/releases/download/#{spec.version}/AppticsRateUs.zip" }
 # spec.source = { :git => "https://github.com/zoho/Apptics.git", :tag=>"#{spec.version}"}
 
-spec.ios.deployment_target = '12.0'
+spec.ios.deployment_target = '9.1'
+spec.tvos.deployment_target = '9.0'
 
-spec.default_subspecs = 'AppticsPrivacyKit'
+spec.default_subspecs = 'RateUs'
 
 spec.requires_arc = true
 
-spec.subspec 'AppticsPrivacyKit' do |aps|
-aps.platform     = :ios, '12.0'
-aps.vendored_frameworks = 'AppticsPrivacyShield.xcframework'
-aps.ios.dependency 'AppticsAnalytics/Apptics', "#{spec.version}"
+spec.subspec 'RateUs' do |ru|
+ru.platforms = {:ios => '9.1', :tvos => '9.0'}
+ru.vendored_frameworks = 'AppticsRateUs.xcframework'
+
+ru.ios.dependency 'AppticsAnalytics/Apptics', "#{spec.version}"
+ru.tvos.dependency 'AppticsAnalytics/Apptics', "#{spec.version}"
 end
 
 end
+
+

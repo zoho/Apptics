@@ -9,10 +9,10 @@
 
 Pod::Spec.new do |spec|
 
-  spec.name             = "AppticsExtension"
-  spec.module_name      = "AppticsExtension"
-  spec.version          = "3.0.0"
-  spec.summary          = "An in-app usage tracking and analytics library for iOS app extensions"
+  spec.name             = "Apptics-Swift"
+  spec.module_name      = "Apptics_Swift"
+  spec.version          = "3.1.0"
+  spec.summary          = "An in-app usage tracking and analytics library for iOS"
   spec.license          = { :type => "MIT", :text=> <<-LICENSE
   MIT License
   Copyright (c) 2018 Zoho Corporation Pvt. Ltd
@@ -47,21 +47,36 @@ DESC
     spec.requires_arc = true
   spec.swift_version = '5.0'
   
+  spec.ios.frameworks = 'UIKit','StoreKit'
 
-    spec.ios.deployment_target = '9.1'
+    spec.ios.deployment_target = '13.0'
     spec.tvos.deployment_target = '9.0'
-    spec.osx.deployment_target =  '10.10'
-    spec.watchos.deployment_target = '4.0'
+    spec.osx.deployment_target =  '12.0'
+    spec.watchos.deployment_target = '2.0'
 
-    spec.default_subspecs = 'Extension'
+    spec.default_subspecs = 'AnalyticsWithMXCrash'
 
-  spec.subspec 'Extension' do |ex|
-      ex.source_files        = 'SwiftFiles/AppExtension/*.swift'
-      ex.ios.deployment_target = '9.1'
-      ex.watchos.deployment_target = '4.0'
-      #ex.resources  = 'SwiftFiles/AppExtension/*.{xcprivacy}'
-      ex.resource_bundles = {'AppExtension' => ['SwiftFiles/AppExtension/*.{xcprivacy}'] }
+#spec.dependency 'Apptics-SDK', "#{spec.version}"
 
-  end
+	spec.subspec 'Analytics' do |co|
+    co.source_files        = 'SwiftFiles/Analytics/*.swift'
+    #co.resources  = 'SwiftFiles/AppticsSwift/*.{xcprivacy}'
+    co.resource_bundles = {'Analytics' => ['SwiftFiles/AppticsSwift/*.{xcprivacy}']}
+    co.dependency 'Apptics-SDK/Analytics', "#{spec.version}"
+	end
+ 
+    spec.subspec 'AnalyticsWithKSCrash' do |ak|
+    ak.source_files        = 'SwiftFiles/Analytics/*.swift'
+    #ak.resources  = 'SwiftFiles/AppticsSwift/*.{xcprivacy}'
+    ak.resource_bundles = {'AnalyticsWithKSCrash' => ['SwiftFiles/AppticsSwift/*.{xcprivacy}']}
+    ak.dependency 'Apptics-SDK/AnalyticsWithKSCrash', "#{spec.version}"
+    end
+
+    spec.subspec 'AnalyticsWithMXCrash' do |am|
+    am.source_files        = 'SwiftFiles/Analytics/*.swift'
+    #am.resources  = 'SwiftFiles/AppticsSwift/*.{xcprivacy}'
+    am.resource_bundles = {'AnalyticsWithMXCrash' => ['SwiftFiles/AppticsSwift/*.{xcprivacy}']}
+    am.dependency 'Apptics-SDK/AnalyticsWithMXCrash', "#{spec.version}"
+    end
+  	
 end
-

@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
-spec.name             = "AppticsPrivacyShield"
-spec.version          = "3.0.0"
-spec.summary          = "Apptics Privacy Protector for iOS"
+spec.name             = "AppticsCrossPromotion"
+spec.version          = "3.1.0"
+spec.summary          = "Apptics Remote Config for iOS"
 spec.license          = { :type => "MIT", :text=> <<-LICENSE
 MIT License
 Copyright (c) 2020 Zoho Corporation
@@ -31,19 +31,21 @@ Apptics is a library that enables your app to send in-app usage reports and data
   
 spec.homepage         = "https://github.com/zoho/Apptics"
 spec.author = { 'Apptics' => 'apptics-support@zohocorp.com' }
-spec.source = { :http => "https://github.com/zoho/Apptics/releases/download/#{spec.version}/AppticsPrivacyShield.zip" }
+spec.source = { :http => "https://github.com/zoho/Apptics/releases/download/#{spec.version}/AppticsSwiftFiles.zip" }
 # spec.source = { :git => "https://github.com/zoho/Apptics.git", :tag=>"#{spec.version}"}
+spec.swift_version = '5.0'
+spec.ios.deployment_target = '9.1'
 
-spec.ios.deployment_target = '12.0'
-
-spec.default_subspecs = 'AppticsPrivacyKit'
+spec.default_subspecs = 'CrossPromotion'
 
 spec.requires_arc = true
 
-spec.subspec 'AppticsPrivacyKit' do |aps|
-aps.platform     = :ios, '12.0'
-aps.vendored_frameworks = 'AppticsPrivacyShield.xcframework'
-aps.ios.dependency 'AppticsAnalytics/Apptics', "#{spec.version}"
-end
+spec.subspec 'CrossPromotion' do |cp|
+      cp.source_files        = 'SwiftFiles/CrossPromoApps/*.swift'
+    cp.dependency 'AppticsAnalytics/Apptics', "#{spec.version}"
+    cp.resource_bundles = {'Apptics_SwiftResources' => ["SwiftFiles/CrossPromoApps/Fonts/*.{ttf}", "SwiftFiles/CrossPromoApps/ios-xibs/*.{xib}", "SwiftFiles/CrossPromoApps/StringFiles/*.{lproj}","SwiftFiles/CrossPromoApps/*.{xcprivacy}"]}
+    cp.platform     = :ios, 9.1
+
+  end
 
 end

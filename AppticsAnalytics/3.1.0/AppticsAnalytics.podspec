@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
-spec.name             = "Apptics-SDK"
-spec.version          = "3.0.0"
-spec.summary          = "An in-app usage tracking and analytics library for iOS"
+spec.name             = "AppticsAnalytics"
+spec.version          = "3.1.0"
+spec.summary          = "Apptics iOS SDK"
 spec.license          = { :type => "MIT", :text=> <<-LICENSE
 MIT License
 Copyright (c) 2020 Zoho Corporation
@@ -31,45 +31,68 @@ DESC
   
 spec.homepage         = "https://github.com/zoho/Apptics"
 spec.author = { 'Apptics' => 'apptics-support@zohocorp.com' }
-spec.source = { :http => "https://github.com/zoho/Apptics/releases/download/#{spec.version}/HelperScripts.zip" }
+spec.source = { :http => "https://github.com/zoho/Apptics/releases/download/#{spec.version}/Apptics.zip"}
 # spec.source = { :git => "https://github.com/zoho/Apptics.git", :tag=>"#{spec.version}"}
+
 spec.social_media_url = "http://zoho.com"
+spec.documentation_url = "https://prezoho.zohocorp.com/apptics/resources/SDK/iOS/integration.html"
 
 spec.ios.deployment_target = '13.0'
 spec.tvos.deployment_target = '9.0'
 spec.osx.deployment_target =  '12.0'
 spec.watchos.deployment_target = '2.0'
 
-spec.default_subspecs = 'AnalyticsWithMXCrash'
+spec.default_subspecs = 'CoreWithMXCrash'
 
 spec.requires_arc = true
 
-spec.subspec 'Analytics' do |an|
-an.dependency 'Apptics-SDK/Scripts'
-an.dependency 'AppticsAnalytics/CoreWithMXCrash', "#{spec.version}"
+spec.subspec 'CoreWithMXCrash' do |an|
+an.dependency 'AppticsAnalytics/Apptics'
+an.dependency 'AppticsAnalytics/EventTracker'
+an.dependency 'AppticsAnalytics/ScreenTracker'
+an.ios.dependency 'AppticsAnalytics/MXCrashKit'
+an.osx.dependency 'AppticsAnalytics/CrashKit'
+an.tvos.dependency 'AppticsAnalytics/CrashKit'
+an.watchos.dependency 'AppticsAnalytics/CrashKit'
+
 end
 
-spec.subspec 'AnalyticsWithKSCrash' do |an|
-an.dependency 'Apptics-SDK/Scripts'
-an.dependency 'AppticsAnalytics/CoreWithKSCrash', "#{spec.version}"
+spec.subspec 'CoreWithKSCrash' do |ak|
+ak.dependency 'AppticsAnalytics/Apptics'
+ak.dependency 'AppticsAnalytics/EventTracker'
+ak.dependency 'AppticsAnalytics/ScreenTracker'
+ak.dependency 'AppticsAnalytics/CrashKit'
 end
 
-spec.subspec 'AnalyticsWithMXCrash' do |an|
-an.dependency 'Apptics-SDK/Scripts'
-an.dependency 'AppticsAnalytics/CoreWithMXCrash', "#{spec.version}"
+spec.subspec 'JWT' do |jwt|
+jwt.vendored_frameworks = 'Apptics/JWT.xcframework'
 end
 
+spec.subspec 'Apptics' do |ap|
+ap.vendored_frameworks = 'Apptics/Apptics.xcframework'
+ap.dependency 'AppticsAnalytics/JWT'
+end
 
+spec.subspec 'EventTracker' do |et|
+et.vendored_frameworks = 'Apptics/AppticsEventTracker.xcframework'
+end
 
-#spec.subspec 'Scripts' do |sc|
-#sc.source_files = 'scripts/*'
-#sc.preserve_paths = 'scripts/*'
-#end
+spec.subspec 'ScreenTracker' do |st|
+st.vendored_frameworks = 'Apptics/AppticsScreenTracker.xcframework'
+end
 
-spec.subspec 'Scripts' do |sc|
-sc.source_files = 'scripts/*.{rb,sh}'
-sc.preserve_paths = 'scripts/*'
-#sc.resources = 'scripts/*.plist'
+spec.subspec 'KSCrash' do |ks|
+ks.vendored_frameworks = 'Apptics/KSCrash.xcframework'
+end
+
+spec.subspec 'CrashKit' do |ck|
+ck.vendored_frameworks = 'Apptics/AppticsCrashKit.xcframework'
+ck.dependency 'AppticsAnalytics/KSCrash'
+end
+
+spec.subspec 'MXCrashKit' do |mx|
+mx.platform     = :ios
+mx.vendored_frameworks = 'Apptics/AppticsMXCrashKit.xcframework'
 end
 
 end
