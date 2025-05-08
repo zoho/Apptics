@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
 spec.name             = "AppticsMessaging"
-spec.version          = "3.0.0"
+spec.version          = "3.1.0"
 spec.summary          = "Apptics messaging dependency for Apptics Push notification service"
 spec.license          = { :type => "MIT", :text=> <<-LICENSE
 MIT License
