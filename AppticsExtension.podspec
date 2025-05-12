@@ -48,9 +48,9 @@ DESC
   spec.swift_version = '5.0'
   
 
-    spec.ios.deployment_target = '9.1'
+    spec.ios.deployment_target = '13.0'
     spec.tvos.deployment_target = '9.0'
-    spec.osx.deployment_target =  '10.10'
+    spec.osx.deployment_target =  '12.0'
     spec.watchos.deployment_target = '4.0'
 
     spec.default_subspecs = 'Extension'

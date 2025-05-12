@@ -34,14 +34,14 @@ spec.author = { 'Apptics' => 'apptics-support@zohocorp.com' }
 spec.source = { :http => "https://github.com/zoho/Apptics/releases/download/#{spec.version}/AppticsFeedbackKit.zip" }
 # spec.source = { :git => "https://github.com/zoho/Apptics.git", :tag=>"#{spec.version}"}
 
-spec.ios.deployment_target = '9.1'
+spec.ios.deployment_target = '13.0'
 
 spec.default_subspecs = 'FeedbackKit'
 
 spec.requires_arc = true
 
 spec.subspec 'FeedbackKit' do |fk|
-fk.platform     = :ios, '9.1'
+fk.platform     = :ios, '13.0'
 fk.vendored_frameworks = 'AppticsFeedbackKit.xcframework'
 fk.ios.dependency 'AppticsAnalytics/Apptics', "#{spec.version}"
 end

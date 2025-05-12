@@ -34,7 +34,7 @@ spec.author = { 'Apptics' => 'apptics-support@zohocorp.com' }
 spec.source = { :http => "https://github.com/zoho/Apptics/releases/download/#{spec.version}/AppticsSwiftFiles.zip" }
 # spec.source = { :git => "https://github.com/zoho/Apptics.git", :tag=>"#{spec.version}"}
 spec.swift_version = '5.0'
-spec.ios.deployment_target = '9.1'
+spec.ios.deployment_target = '13.0'
 
 spec.default_subspecs = 'AppticsFeedbackKitSwift'
 
@@ -45,7 +45,7 @@ spec.subspec 'AppticsFeedbackKitSwift' do |cp|
       cp.resources           = 'SwiftFiles/AppticsFeedbackKit/*.{ttf,xib}'
       cp.resource_bundles = {'APFeedbackSwift' => ['SwiftFiles/AppticsFeedbackKit/*.{xcprivacy}'] }
       cp.dependency 'AppticsFeedbackKit', "#{spec.version}"    
-      cp.platform     = :ios, 9.1
+      cp.platform     = :ios, 13.0
   end
 
 end

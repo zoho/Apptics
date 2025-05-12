@@ -178,7 +178,7 @@ On the "Manage dSYM page" (Left menu -> Quality -> dSYM), upload the dSYMs.zip t
 
 ## Theme
 
-You can use our protocols to customize the Analytics Settings, App updates and Feedback screens. Just create a swift/Obj class in the name of ThemeManager and extend those protocols to implement the required methods [link](https://prezoho.zohocorp.com/apptics/resources/SDK/iOS/customtheme.html).
+You can use our protocols to customize the Analytics Settings, App updates and Feedback screens. Just create a swift/Obj class in the name of ThemeManager and extend those protocols to implement the required methods [link](https://zoho.zohocorp.com/apptics/resources/SDK/iOS/customtheme.html).
 
 ## Callbacks
 
@@ -186,26 +186,26 @@ Get callbacks for all the events at a single point by extending `APCustomHandler
 
 ## Feedback and BugReporting
 
-A separate module that does "Shake to Feedback", Please check if it suits your needs [here](https://prezoho.zohocorp.com/apptics/resources/SDK/iOS/in_app_feedback.html).
+A separate module that does "Shake to Feedback", Please check if it suits your needs [here](https://zoho.zohocorp.com/apptics/resources/SDK/iOS/in_app_feedback.html).
 
 ## App Updates
 
 Now you can prompt users to update to the latest version of your app from the App Store.
 
-Please check our guide before you start [here](https://prezoho.zohocorp.com/apptics/resources/SDK/iOS/in_app_updates.html).
+Please check our guide before you start [here](https://zoho.zohocorp.com/apptics/resources/SDK/iOS/in_app_updates.html).
 
 ## Ratings and Reviews
 
 Engage with your users and learn about their experience. Promote them to rate your app after they have fulfilled the configured criteria.
 
-Check how to configure automatic ratings [here](https://prezoho.zohocorp.com/apptics/resources/SDK/iOS/in_app_ratings.html).
+Check how to configure automatic ratings [here](https://zoho.zohocorp.com/apptics/resources/SDK/iOS/in_app_ratings.html).
 
 ## To know more!
 
 For more information about how Apptics works, check out the below links.
 
-* [Getting Started](https://prezoho.zohocorp.com/apptics/resources/user-guide/getting-started.html)
-* [iOS user guide](https://prezoho.zohocorp.com/apptics/resources/SDK/iOS/integration.html)
+* [Getting Started](https://zoho.zohocorp.com/apptics/resources/user-guide/getting-started.html)
+* [iOS user guide](https://zoho.zohocorp.com/apptics/resources/SDK/iOS/integration.html)
 * [Sample app](https://github.com/zoho/Apptics/tree/master/Examples)
 
 For any assistance, contact Apptics at [support@zohoapptics.com](support@zohoapptics.com)

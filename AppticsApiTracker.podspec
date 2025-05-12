@@ -34,9 +34,9 @@ spec.author = { 'Apptics' => 'apptics-support@zohocorp.com' }
 spec.source = { :http => "https://github.com/zoho/Apptics/releases/download/#{spec.version}/AppticsApiTracker.zip" }
 # spec.source = { :git => "https://github.com/zoho/Apptics.git", :tag=>"#{spec.version}"}
 
-spec.ios.deployment_target = '9.1'
+spec.ios.deployment_target = '13.0'
 spec.tvos.deployment_target = '9.0'
-spec.osx.deployment_target =  '10.10'
+spec.osx.deployment_target =  '12.0'
 
 spec.default_subspecs = 'ApiTracker'
 

@@ -34,7 +34,7 @@ spec.author = { 'Apptics' => 'apptics-support@zohocorp.com' }
 spec.source = { :http => "https://github.com/zoho/Apptics/releases/download/#{spec.version}/AppticsRateUs.zip" }
 # spec.source = { :git => "https://github.com/zoho/Apptics.git", :tag=>"#{spec.version}"}
 
-spec.ios.deployment_target = '9.1'
+spec.ios.deployment_target = '13.0'
 spec.tvos.deployment_target = '9.0'
 
 spec.default_subspecs = 'RateUs'
@@ -42,7 +42,7 @@ spec.default_subspecs = 'RateUs'
 spec.requires_arc = true
 
 spec.subspec 'RateUs' do |ru|
-ru.platforms = {:ios => '9.1', :tvos => '9.0'}
+ru.platforms = {:ios => '13.0', :tvos => '9.0'}
 ru.vendored_frameworks = 'AppticsRateUs.xcframework'
 
 ru.ios.dependency 'AppticsAnalytics/Apptics', "#{spec.version}"

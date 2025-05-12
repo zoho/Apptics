@@ -34,14 +34,14 @@ spec.author = { 'Apptics' => 'apptics-support@zohocorp.com' }
 spec.source = { :http => "https://github.com/zoho/Apptics/releases/download/#{spec.version}/AppticsInAppUpdate.zip" }
 # spec.source = { :git => "https://github.com/zoho/Apptics.git", :tag=>"#{spec.version}"}
 
-spec.ios.deployment_target = '9.1'
+spec.ios.deployment_target = '13.0'
 
 spec.default_subspecs = 'AppUpdate'
 
 spec.requires_arc = true
 
 spec.subspec 'AppUpdate' do |au|
-au.platform     = :ios, '9.1'
+au.platform     = :ios, '13.0'
 au.vendored_frameworks = 'AppticsInAppUpdate.xcframework'
 au.ios.dependency 'AppticsAnalytics/Apptics', "#{spec.version}"
 end

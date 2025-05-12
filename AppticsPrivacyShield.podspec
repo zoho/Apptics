@@ -34,14 +34,14 @@ spec.author = { 'Apptics' => 'apptics-support@zohocorp.com' }
 spec.source = { :http => "https://github.com/zoho/Apptics/releases/download/#{spec.version}/AppticsPrivacyShield.zip" }
 # spec.source = { :git => "https://github.com/zoho/Apptics.git", :tag=>"#{spec.version}"}
 
-spec.ios.deployment_target = '12.0'
+spec.ios.deployment_target = '13.0'
 
 spec.default_subspecs = 'AppticsPrivacyKit'
 
 spec.requires_arc = true
 
 spec.subspec 'AppticsPrivacyKit' do |aps|
-aps.platform     = :ios, '12.0'
+aps.platform     = :ios, '13.0'
 aps.vendored_frameworks = 'AppticsPrivacyShield.xcframework'
 aps.ios.dependency 'AppticsAnalytics/Apptics', "#{spec.version}"
 end
