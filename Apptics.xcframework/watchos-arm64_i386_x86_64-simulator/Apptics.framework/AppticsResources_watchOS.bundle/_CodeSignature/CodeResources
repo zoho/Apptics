@@ -201,6 +201,10 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>sdkProp_info.plist</key>
+		<data>
+		E+6RlIA8tctG7zFgardR/ZKU8Y0=
+		</data>
 		<key>sv.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
 			<key>hash</key>
@@ -543,6 +547,17 @@
 			</data>
 			<key>optional</key>
 			<true/>
+		</dict>
+		<key>sdkProp_info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			E+6RlIA8tctG7zFgardR/ZKU8Y0=
+			</data>
+			<key>hash2</key>
+			<data>
+			1ugHK4P+Eo0hCwJlsssdKhU2lxlrd8nwmC7HeNimGUQ=
+			</data>
 		</dict>
 		<key>sv.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
