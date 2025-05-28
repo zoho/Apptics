@@ -10,6 +10,7 @@
 #import <Apptics/APLog.h>
 #import <Apptics/ZAEnums.h>
 #import <Apptics/APEventsEnum.h>
+#import <Apptics/APUser.h>
 
 #if !TARGET_OS_OSX
 #import <UIKit/UIKit.h>
@@ -225,6 +226,8 @@ typedef void (^internbgConsoleLogsRequestSuccessBlock)(void);
 //- (void) notifyForVersionUpdate:(BOOL)status; //FIXME: Change name
 
 - (void) setCrashCustomProperty:(NSDictionary* _Nonnull) object;
+
+- (void) setUser:(APUser* _Nullable)user;
 
 - (void) setCurrentUser:(NSString* _Nullable)userID groupId : (NSString*_Nullable)groupid;
 

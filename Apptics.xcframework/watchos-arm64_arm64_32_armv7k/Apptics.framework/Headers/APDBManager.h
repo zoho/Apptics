@@ -37,6 +37,11 @@ NS_ASSUME_NONNULL_BEGIN
 + (instancetype)shared;
 - (void)setDBDirectory:(NSString*) aDirectory;
 
+- (bool)openTestDatabase;
+- (bool)createTestTable;
+- (NSMutableSet*)getAllExpectedTables;
+- (void)clearTables : (NSArray*) tableList;
+    
 - (void)archiveEngagements:(id)queue sessionId : (NSNumber*) sessionId mamId:(NSString * _Nullable)mam anonId : (NSString*) anonid;
 - (void)getAllHistoricEngagementDataToBeSyncedWithCompletion:(void (^)(NSMutableArray *results))completion;
 - (void)getListOfHistoricEngagementDataToBeSyncedWithCompletion:(void (^)(NSMutableArray *results))completion;
@@ -91,6 +96,9 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSDictionary*)getMetaForVersion:(NSString *)version;// withCompletion:(void (^)(NSDictionary *results))completion;
 - (void)fetchAppRegVersionDetailsFor:(NSString *)version withCompletion:(void (^)(NSDictionary *results))completion;
 - (void)deleteDetailsByVersion:(NSString *)version;
+
+- (void)saveUserInfo : (NSDictionary*) userInfo;
+- (NSDictionary *)getUserJSONByUser:(NSString *)user withGroup:(NSString * _Nullable)group status : (Boolean) status;
 
 @end
 

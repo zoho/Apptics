@@ -503,6 +503,8 @@ import AppticsFeedbackKit
         NotificationCenter.default.removeObserver(self, name: Notification.Name(notificationbadgereloadKey), object: nil)
         NotificationCenter.default.removeObserver(self, name: Notification.Name("com.appticssdkWindowClose"), object: nil)
         NotificationCenter.default.removeObserver(self, name: Notification.Name(notificationviewHideandDismiss), object: nil)
+        NotificationCenter.default.removeObserver(self)
+
 
     }
 }

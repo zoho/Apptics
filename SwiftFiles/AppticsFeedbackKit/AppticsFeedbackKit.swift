@@ -11,6 +11,31 @@ import Apptics
 
 
 extension FeedbackKit{
+    
+    
+//MARK: start screen recording action from newbugviewcontroller
+    @objc public func start_ScreenRecord(){
+        guard let topVC = UIApplication.shared.topMostViewController(),
+              let navigationController = topVC.navigationController else {
+            print("Navigation controller not found.")
+            return
+        }
+        QuartzKit.configure(delegate: QuartzDataProvider())
+        let newVC = IssueRecordingViewController()
+        newVC.delegate = self
+        navigationController.pushViewController(newVC, animated: true)
+        
+    }
+
+//MARK: stop screen recording
+
+    @objc public func stop_ScreenRecord(){
+        _ = ScreenRecordEditViewController()
+        
+    }
+    
+//MARK: Theme Refresh
+
     @objc public func refreshTheme(){
         if let tintColor = APThemeManager.sharedFeedbackThemeManager().tintColor?(){
             FeedbackTheme.sharedInstance.tintColor = tintColor
@@ -50,7 +75,9 @@ extension FeedbackKit{
         }
         
     }
-    
+
+//MARK: open multiple screen shot floating window
+
     @objc public func swift_load(){
         if #available(iOS 11.0, *) {
             loadFontForCPResourceBundle()
@@ -62,6 +89,8 @@ extension FeedbackKit{
         }
     }
     
+//MARK: load editor window from newbugviewcontroller for text feedback attachment edit.
+
     @objc public func getGalleryImages_swift(){
         loadFontForCPResourceBundle()
         refreshTheme()
@@ -77,5 +106,74 @@ extension FeedbackKit{
         } 
     }
         
+    
+
 }
 
+
+
+//MARK: Pre setting  data for quartz from getupdates API
+
+struct QuartzDataProvider: QuartzKitDelegate{
+    
+    
+    
+    var workspace: String { "\(FeedbackKit.listener().quartzworkspace)" }
+    
+    var department: String { "\(FeedbackKit.listener().quartzdepartment)" }
+    
+    var subDomain: String { "\(FeedbackKit.listener().quartzdomain)" }
+    
+    var shouldRecordNetworkLogs: Bool { true }
+ 
+    
+    var theme: QuartzTheme? {
+        
+        var primaryColorLight: UIColor?
+        var colorOnPrimaryLight: UIColor?
+        var primaryColorDark: UIColor?
+        var colorOnPrimaryDark: UIColor?
+        
+        if let tintColorprimaryColorDark = APThemeManager.sharedFeedbackThemeManager().recordingprimaryColorDark?(){
+            primaryColorDark = tintColorprimaryColorDark
+        }else if let tintColorprimaryColorDark = APThemeManager.defaultFeedbackThemeManager().recordingprimaryColorDark?(){
+            primaryColorDark = tintColorprimaryColorDark
+        }
+        
+        if let tintColorprimaryColorLight = APThemeManager.sharedFeedbackThemeManager().recordingprimaryColorLight?(){
+            primaryColorLight = tintColorprimaryColorLight
+        }else if let tintColorprimaryColorLight = APThemeManager.defaultFeedbackThemeManager().recordingprimaryColorLight?(){
+            primaryColorLight = tintColorprimaryColorLight
+        }
+        
+        
+        if let tintColorOnPrimaryDark = APThemeManager.sharedFeedbackThemeManager().recordingcolorOnPrimaryDark?(){
+            colorOnPrimaryDark = tintColorOnPrimaryDark
+        }else if let tintColorOnPrimaryDark = APThemeManager.defaultFeedbackThemeManager().recordingcolorOnPrimaryDark?(){
+            colorOnPrimaryDark = tintColorOnPrimaryDark
+        }
+        
+        if let tintColorOnPrimaryLight = APThemeManager.sharedFeedbackThemeManager().recordingcolorOnPrimaryLight?(){
+            colorOnPrimaryLight = tintColorOnPrimaryLight
+        }else if let tintColorOnPrimaryLight = APThemeManager.defaultFeedbackThemeManager().recordingcolorOnPrimaryLight?(){
+            colorOnPrimaryLight = tintColorOnPrimaryLight
+        }
+        
+        
+        let colorSchemeLight = QuartzColorScheme(primaryColor: primaryColorLight!, colorOnPrimary: colorOnPrimaryLight!)
+        let colorSchemeDark = QuartzColorScheme(primaryColor: primaryColorDark!, colorOnPrimary: colorOnPrimaryDark!)
+
+        return QuartzTheme(colorScheme: colorSchemeLight, darkColorScheme: colorSchemeDark, uiMode: .systemDefault)
+
+
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}

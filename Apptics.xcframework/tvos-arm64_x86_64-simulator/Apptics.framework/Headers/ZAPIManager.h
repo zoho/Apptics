@@ -47,9 +47,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void) updateTrackingStatus;
     
-- (void) registerUserWithDeviceId : (NSString*) deviceId andOrgID : (NSString* _Nullable) groupID success:(void (^)(NSDictionary * _Nullable deviceInfo))success;
+- (void) registerUserWithDeviceId : (NSString*) deviceId andOrgID : (NSString* _Nullable) groupID userProps : (NSDictionary*) userprops success:(void (^)(NSDictionary * _Nullable deviceInfo))success;
 
-- (void) newRegisterUserWithOrgID : (NSString* _Nullable) groupID success: (void (^)(NSDictionary * _Nullable deviceInfo))success;
+- (void) newRegisterUserWithOrgID : (NSString* _Nullable) groupID userProps : (NSDictionary*) userprops success: (void (^)(NSDictionary * _Nullable deviceInfo))success;
 
 - (void) unregisterUserWithZauid : (NSString* ) zauid userID : (NSString* _Nullable) userID groupID : (NSString* _Nullable) groupID success:(void (^ _Nullable)(bool result))success;
 

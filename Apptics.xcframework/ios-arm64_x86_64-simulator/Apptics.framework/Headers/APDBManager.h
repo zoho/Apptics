@@ -97,6 +97,9 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)fetchAppRegVersionDetailsFor:(NSString *)version withCompletion:(void (^)(NSDictionary *results))completion;
 - (void)deleteDetailsByVersion:(NSString *)version;
 
+- (void)saveUserInfo : (NSDictionary*) userInfo;
+- (NSDictionary *)getUserJSONByUser:(NSString *)user withGroup:(NSString * _Nullable)group status : (Boolean) status;
+
 @end
 
 NS_ASSUME_NONNULL_END

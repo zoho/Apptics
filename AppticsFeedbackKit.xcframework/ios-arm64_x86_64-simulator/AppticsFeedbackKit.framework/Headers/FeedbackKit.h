@@ -245,6 +245,23 @@ Set this true to mask the text detected in a screenshot by default. Setting to F
 @property NSString* feedback_KitType;
 @property NSString* feedback_KitScreenCancel; //property used only to check floating bottom view closed or not
 
+@property NSString* closeQuartz_Window;
+@property NSString* freezeQuartz_recordOption;
+
+
+@property NSString* flagForRecordSent;
+
+@property NSString* quartzIDStr;
+
+@property NSNumber* quartzdepartment;
+@property NSString* quartzdomain;
+@property NSNumber* quartzworkspace;
+
+
+
+
+
+
 /**
  :nodoc:
  */

@@ -96,7 +96,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void) updateShouldCollectDataForCurrentUser;
 
-- (void) setCurrentUser:(NSString * _Nullable)email groupId:(NSString * _Nullable)groupID;
+- (void) setUser:(NSDictionary *) userInfo;
+
+- (void) setCurrentUser:(NSString * _Nullable)email groupId:(NSString * _Nullable)groupID userProperities : (NSDictionary * _Nullable) userProps;
 
 - (void) newRegisterDevice:(void (^_Nullable)(NSString* deviceId))success;
 
@@ -141,6 +143,9 @@ NS_ASSUME_NONNULL_BEGIN
 - (BOOL) errortracking;
 
 - (BOOL) customergrouptracking;
+
+- (BOOL) quartzenabled;
+
 
 - (BOOL) isUserLoggedIn;
 

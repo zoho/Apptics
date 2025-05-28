@@ -30,6 +30,7 @@ typedef enum : NSInteger {
 @optional
 -(UIColor *_Nullable)tintColor;
 -(UIColor *_Nullable)barTintColor;
+
 -(UINavigationBarAppearance *)standardAppearance API_AVAILABLE(ios(13.0), tvos(13.0));
 //-(UINavigationBarAppearance *)scrollEdgeAppearance API_AVAILABLE(ios(13.0), tvos(13.0));
 -(BOOL) translucent;
@@ -77,6 +78,11 @@ typedef enum : NSInteger {
 #if !TARGET_OS_OSX && !TARGET_OS_WATCH
 @optional
 
+-(UIColor *_Nullable)recordingprimaryColorLight;
+-(UIColor *_Nullable)recordingcolorOnPrimaryLight;
+-(UIColor *_Nullable)recordingprimaryColorDark;
+-(UIColor *_Nullable)recordingcolorOnPrimaryDark;
+
 -(UIColor *_Nullable)viewBGColor;
 -(UIColor *_Nullable)contentBGColor;
 -(UIColor *_Nullable)switchOnTintColor;
@@ -95,6 +101,7 @@ typedef enum : NSInteger {
 -(UIColor *_Nullable)accessorySubHeaderTextColor;
 
 -(UIColor *_Nullable)collectionViewCellBorderColor;
+
 
 -(UIColor *_Nullable)separatorColor;
 
