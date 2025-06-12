@@ -1,0 +1,111 @@
+// Issue Recording VC
+"issuerecordscreen.label.recordissue" = "Запишете вашия проблем";
+"issuerecordscreen.label.close" = "Затваряне";
+"issuerecordscreen.label.failedtoinitiate" = "Неуспешно иницииране на записа на екран";
+"issuerecordscreen.label.failuremultiwindow" = "Съдържанието, което се опитвате да запишете, е в режим на няколко прозореца, който не се поддържа за запис. Моля, превключете на режим на цял екран";
+"issuerecordscreen.label.nointerneterror" = "Необходима е интернет връзка за запис на екрана. Моля, свържете се, за да продължите.";
+"issuerecordscreen.label.ok" = "ОК";
+"issuerecordscreen.label.recordinginfo" = "Бързо запишете проблемите, с които се сблъсквате, и ги изпратете на нашия екип за поддръжка за лесно разбиране и бърза помощ.";
+"issuerecordscreen.label.iagreetext" = "Съгласен съм и давам разрешение за събирането на необходимите данни. Преглед на данните";
+"issuerecordscreen.label.optiontotrim" = "Имате възможност да изрязвате, редактирате и анотирате записаното видео.";
+"issuerecordscreen.label.startrecording" = "Начало на запис";
+"issuerecordscreen.label.endrecording" = "Край на запис";
+"issuerecordscreen.label.recordinginprogress" = "Извършва се запис!";
+"issuerecordscreen.label.quicktipstext" = "Бързи съвети";
+"issuerecordscreen.label.quicktips1" = "Можете да записвате екрана си за максимум 5 минути.";
+"issuerecordscreen.label.quicktips2" = "Можете да изрязвате, редактирате и анотирате записаното видео.";
+"issuerecordscreen.label.quicktips3" = "Не затваряйте приложението, докато екранът се записва.";
+"issuerecordscreen.label.quicktips4" = "За да научите повече, моля, посетете нашата помощна документация";
+
+// Data Consent Screen
+"dataconsentscreen.label.consenttitle" = "Следните данни ще бъдат събирани с вашето съгласие:";
+"dataconsentscreen.label.consent1" = "Вашият IP адрес и регистрационни файлове на конзолата, генерирани по време на записа";
+"dataconsentscreen.label.consent2" = "Подробности за вашата среда, като име на устройството, версия на операционната система и др.";
+"dataconsentscreen.label.consent3" = "Показатели за производителност на устройството (като памет, време на връзка на мрежата и др.)";
+"dataconsentscreen.label.consent4" = "Запис на екрана на прозореца на устройството";
+"dataconsentscreen.label.consent5" = "По подразбиране звукът ще бъде записан по време на записа на екрана. Но можете да изключите звука или да запишете отново аудио записа, преди да го изпратите.";
+
+// Permission
+"videoannotationscreen.alert.microphonedisabledipad" = "Достъпът до микрофона е дезактивиран";
+"videoannotationscreen.alert.gotosettingtoturnonmicrophoneipad" = "Моля, отидете на Настройки и включете микрофона, за да записвате аудио.";
+"videoannotationscreen.alert.microphonedisablediphone" = "Достъпът до микрофона е дезактивиран. Моля, отидете на Настройки и включете микрофона, за да записвате аудио.";
+
+// General
+"general.label.recordingintiationfailed" = "Инициирането на запис на микрофона е неуспешно. Моля, опитайте отново";
+"general.label.ok" = "ОК";
+"general.label.submit" = "Изпращане";
+"general.label.done" = "Готово";
+"general.label.cancel" = "Отмяна";
+"general.label.settings" = "Настройки";
+"general.label.erroroccured" = "Възникна грешка";
+
+// Issue Submission Screen
+"issuesubmissionscreen.alert.filesizeexceeded" = "Размерът на файла е превишен. Размерът на файла не трябва да надвишава повече от 3 MB";
+"issuesubmissionscreen.label.attachfiles" = "Прикачване на файлове";
+"issuesubmissionscreen.label.newrecording" = "Нов запис";
+"issuesubmissionscreen.label.editrecording" = "Редактиране на запис";
+
+
+// Video Annotation Screen
+"videoannotationscreen.label.noaudiotrack" = "Няма аудио запис";
+"videoannotationscreen.label.shapeborderwidth" = "Ширина на граница";
+"videoannotationscreen.label.shapelineopacity" = "Непрозрачност";
+"videoannotationscreen.label.shapetextsize" = "Размер на текст";
+"videoannotationscreen.alert.elementdurationbeyondvideolength" = "Продължителността на елемента е по-голяма от продължителността на видеото";
+"videoannotationscreen.alert.notallowed" = "Не е разрешено";
+"videoannotationscreen.alert.deleteexisitingaudio" = "Моля, изтрийте съществуващото аудио, преди за запишете ново.";
+"videoannotationscreen.alert.textlimitreached" = "Достигнато ограничение";
+"videoannotationscreen.alert.textdeleteexisting" = "Моля, изтрийте част от съществуващия текст.";
+"videoannotationscreen.alert.pausevideobeforerecordingaudio" = "Моля, поставете на пауза вашето видео, преди да записвате аудио";
+"videoannotationscreen.alert.changesnotsaved" = "Вашите промени не са запазени. Сигурни ли сте, че искате да продължите?";
+"videoannotationscreen.alert.proceed" = "Продължаване";
+"videoannotationscreen.alert.stroketypesolid" = "Плътен";
+"videoannotationscreen.alert.stroketypedashed" = "Прекъснат";
+"videoannotationscreen.alert.entertext" = "Въведете текста";
+
+"videoannotationscreen.label.trim" = "Изрязване";
+"videoannotationscreen.label.mask" = "Маска";
+"videoannotationscreen.label.shapes" = "Форми";
+"videoannotationscreen.label.text" = "Текст";
+"videoannotationscreen.label.audio" = "Аудио";
+"videoannotationscreen.label.block" = "Блок";
+"videoannotationscreen.label.blur" = "Замъгляване";
+"videoannotationscreen.label.rectangle" = "Правоъгълник";
+"videoannotationscreen.label.oval" = "Овал";
+"videoannotationscreen.label.arrow" = "Стрелка";
+"videoannotationscreen.label.color" = "Цвят";
+"videoannotationscreen.label.width" = "Ширина";
+"videoannotationscreen.label.style" = "Стил";
+"videoannotationscreen.label.edit" = "Редактиране";
+"videoannotationscreen.label.size" = "Размер";
+"videoannotationscreen.label.background" = "Фон";
+"videoannotationscreen.label.textregular" = "Обикновен";
+"videoannotationscreen.label.textbold" = "Получер";
+"videoannotationscreen.label.textitalics" = "Курсив";
+"videoannotationscreen.label.textbolditalics" = "Получер, курсив";
+
+// Issue Submission Form
+"issuesubmissionform.label.emaildisplay" = "Имейл адрес";
+"issuesubmissionform.label.emailplaceholder" = "zylker@zohomail.com";
+"issuesubmissionform.label.screenrecordingsummary" = "Резюме на записа на екрана";
+"issuesubmissionform.label.subjectdisplayname" = "Тема";
+"issuesubmissionform.label.subjectplaceholder" = "Въведете темата";
+"issuesubmissionform.label.addtoexistingticket" = "Добавяне към съществуващ билет";
+"issuesubmissionform.label.existingticketid" = "ИД на съществуващ билет";
+"issuesubmissionform.label.enterticketidtolink" = "Въведете ИД на билета, който ще бъде свързан";
+"issuesubmissionform.label.issuedescription" = "Описание на проблема";
+"issuesubmissionform.label.issuemoredetails" = "Предоставете повече подробности за проблема";
+"issuesubmissionform.label.submityourissue" = "Изпрати проблема си";
+"issuesubmissionform.alert.videouploadfailed" = "Неуспешно качване на видео. Моля, опитайте отново.";
+"issuesubmissionform.alert.thanksmessagetitle" = "Благодарим ви, че се свързахте с нас!";
+"issuesubmissionform.alert.thanksmessagebody" = "Вашите притеснения са наш приоритет, така че нашият екип за поддръжка ще се свърже с вас скоро. Приятен ден!";
+"issuesubmissionform.alert.videoeditdetailuploadfailure" = "Качването на данни за редактиране на видео е неуспешно. Моля, опитайте отново.";
+"issuesubmissionform.label.entersubject" = "Моля, въведете темата на проблема";
+"issuesubmissionform.label.enteremail" = "Моля, въведете имейл адрес";
+"issuesubmissionform.label.enterexistingticketid" = "Моля, въведете съществуващ ИД на билет";
+"issuesubmissionform.label.choosephoto" = "Избор на снимка";
+"issuesubmissionform.label.browse" = "Преглед";
+"issuesubmissionform.alert.accestophotodisabledgotosetting" = "Достъпът до библиотеката със снимки е дезактивиран. Моля, отидете на Настройки и включете библиотеката със снимки, за да получите достъп до снимките.";
+"issuesubmissionform.alert.accestophotodisabledipad" = "Достъпът до библиотеката със снимки е дезактивиран";
+"issuesubmissionform.alert.accestophotodisabledmessageipad" = "Моля, отидете на Настройки и включете библиотеката със снимки, за да получите достъп до снимките.";
+"issuesubmissionform.alert.submitting" ="Изпращане";

@@ -11,8 +11,8 @@ import Foundation
 
 public class ScreenRecorder: NSObject, RPPreviewViewControllerDelegate{
     
-    static private let screenRecInitiationFailureMessage = "Screen recording initiation failed. Please try again"
-    static private let okMessage = "Ok"
+    static private let screenRecInitiationFailureMessage = QuartzKitStrings.localized("general.label.recordingintiationfailed")
+    static private let okMessage = QuartzKitStrings.localized("general.label.ok")
     
     private static var sharedInstance: ScreenRecorder = {
         return ScreenRecorder()

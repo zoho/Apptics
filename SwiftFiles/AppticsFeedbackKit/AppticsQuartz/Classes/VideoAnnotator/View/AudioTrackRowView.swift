@@ -101,7 +101,7 @@ class AudioTrackRowView: UIView {
     private lazy var noAudioAvailableLabel: UILabel = {
         let noAudioAvailableLabel = UILabel()
         noAudioAvailableLabel.translatesAutoresizingMaskIntoConstraints = false
-        noAudioAvailableLabel.text = "No Audio Track"
+        noAudioAvailableLabel.text = QuartzKitStrings.localized("videoannotationscreen.label.noaudiotrack")
         noAudioAvailableLabel.font = UIFont.systemFont(ofSize: 8)
         return noAudioAvailableLabel
     }()

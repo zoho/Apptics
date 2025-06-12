@@ -1,0 +1,111 @@
+// Issue Recording VC
+"issuerecordscreen.label.recordissue" = "ನಿಮ್ಮ ಸಮಸ್ಯೆಯನ್ನು ರೆಕಾರ್ಡ್ ಮಾಡಿ";
+"issuerecordscreen.label.close" = "ಮುಚ್ಚಿ";
+"issuerecordscreen.label.failedtoinitiate" = "ಸ್ಕ್ರೀನ್ ರೆಕಾರ್ಡಿಂಗ್ ಆರಂಭಿಸಲು ವಿಫಲವಾಗಿದೆ";
+"issuerecordscreen.label.failuremultiwindow" = "ನೀವು ರೆಕಾರ್ಡ್ ಮಾಡಲು ಪ್ರಯತ್ನಿಸುತ್ತಿರುವ ಕಂಟೆಂಟ್ ಮಲ್ಟಿ-ವಿಂಡೋ ಮೋಡ್‌ನಲ್ಲಿದ್ದು, ಇದು ರೆಕಾರ್ಡಿಂಗ್‌ಗೆ ಬೆಂಬಲಿತವಾಗಿಲ್ಲ. ದಯವಿಟ್ಟು ಪೂರ್ಣ ಸ್ಕ್ರೀನ್ ಮೋಡ್‌ಗೆ ಬದಲಿಸಿ";
+"issuerecordscreen.label.nointerneterror" = "ಸ್ಕ್ರೀನ್ ರೆಕಾರ್ಡಿಂಗ್‌ಗೆ ಇಂಟರ್‌ನೆಟ್ ಸಂಪರ್ಕ ಅಗತ್ಯವಿದೆ. ಮುಂದುವರಿಯಲು ದಯವಿಟ್ಟು ಕನೆಕ್ಟ್ ಮಾಡಿ.";
+"issuerecordscreen.label.ok" = "ಸರಿ";
+"issuerecordscreen.label.recordinginfo" = "ನೀವು ಎದುರಿಸುವ ಸಮಸ್ಯೆಗಳನ್ನು ತ್ವರಿತವಾಗಿ ರೆಕಾರ್ಡ್ ಮಾಡಿ ಮತ್ತು ಸುಲಭವಾಗಿ ಅರ್ಥಮಾಡಿಕೊಳ್ಳುವುದಕ್ಕಾಗಿ ಮತ್ತು ತ್ವರಿತ ಸಹಾಯಕ್ಕಾಗಿ ಅವುಗಳನ್ನು ನಮ್ಮ ಬೆಂಬಲ ತಂಡಕ್ಕೆ ಕಳುಹಿಸಿ.";
+"issuerecordscreen.label.iagreetext" = "ಅಗತ್ಯವಿರುವ ಡೇಟಾ ಸಂಗ್ರಹಣೆಗೆ ನಾನು ಒಪ್ಪುತ್ತೇನೆ ಮತ್ತು ಸಮ್ಮತಿ ನೀಡುತ್ತೇನೆ. ವಿವರಗಳನ್ನು ನೋಡಿ";
+"issuerecordscreen.label.optiontotrim" = "ರೆಕಾರ್ಡ್ ಮಾಡಿದ ವೀಡಿಯೊವನ್ನು ಟ್ರಿಮ್ ಮಾಡಲು, ಎಡಿಟ್ ಮಾಡಲು ಮತ್ತು ಟಿಪ್ಪಣಿ ಲಗತ್ತಿಸಲು ನೀವು ಆಯ್ಕೆಯನ್ನು ಹೊಂದಿದ್ದೀರಿ.";
+"issuerecordscreen.label.startrecording" = "ರೆಕಾರ್ಡಿಂಗ್ ಪ್ರಾರಂಭಿಸಿ";
+"issuerecordscreen.label.endrecording" = "ರೆಕಾರ್ಡಿಂಗ್ ಕೊನೆಗೊಳಿಸಿ";
+"issuerecordscreen.label.recordinginprogress" = "ರೆಕಾರ್ಡಿಂಗ್ ಪ್ರಗತಿಯಲ್ಲಿದೆ!";
+"issuerecordscreen.label.quicktipstext" = "ತ್ವರಿತ ಸಲಹೆಗಳು";
+"issuerecordscreen.label.quicktips1" = "ನೀವು ಗರಿಷ್ಠ 5 ನಿಮಿಷಗಳ ಕಾಲ ನಿಮ್ಮ ಸ್ಕ್ರೀನ್ ರೆಕಾರ್ಡ್ ಮಾಡಬಹುದು.";
+"issuerecordscreen.label.quicktips2" = "ರೆಕಾರ್ಡ್ ಮಾಡಿದ ವೀಡಿಯೊವನ್ನು ನೀವು  ಟ್ರಿಮ್,, ಎಡಿಟ್ ಮಾಡಬಹುದು ಮತ್ತು ಟಿಪ್ಪಣಿ ಲಗತ್ತಿಸಬಹುದು";
+"issuerecordscreen.label.quicktips3" = "ಸ್ಕ್ರೀನ್ ರೆಕಾರ್ಡ್ ಮಾಡುತ್ತಿರುವ ಸಂದರ್ಭ ಆ್ಯಪ್ ಮುಚ್ಚಬೇಡಿ.";
+"issuerecordscreen.label.quicktips4" = "ಇನ್ನಷ್ಟು ತಿಳಿದುಕೊಳ್ಳಲು, ದಯವಿಟ್ಟು ನಮ್ಮ ಸಹಾಯ ಡಾಕ್ಯುಮೆಂಟೇಶನ್‌ಗೆ ಭೇಟಿ ನೀಡಿ";
+
+// Data Consent Screen
+"dataconsentscreen.label.consenttitle" = "ನಿಮ್ಮ ಸಮ್ಮತಿಯ ಮೇರೆಗೆ ಈ ಕೆಳಗಿನ ಡೇಟಾವನ್ನು ಸಂಗ್ರಹಿಸಲಾಗುತ್ತದೆ:";
+"dataconsentscreen.label.consent1" = "ನಿಮ್ಮ IP ವಿಳಾಸ ಮತ್ತು ರೆಕಾರ್ಡಿಂಗ್ ಸಂದರ್ಭ ಜನರೇಟ್ ಮಾಡಲಾದ ಕನ್ಸೋಲ್ ಲಾಗ್‌ಗಳು";
+"dataconsentscreen.label.consent2" = "ಸಾಧನದ ಹೆಸರು, OS ಆವೃತ್ತಿ ಮುಂತಾದ ನಿಮ್ಮ ಪರಿಸರದ ವಿವರಗಳು.";
+"dataconsentscreen.label.consent3" = "ಸಾಧನದ ಕಾರ್ಯಕ್ಷಮತೆಯ ಮಾಪನಗಳು (ಉದಾಹರಣೆಗೆ ಮೆಮೊರಿ, ನೆಟ್‌ವರ್ಕ್ ಸಂಪರ್ಕ ಸಮಯ, ಇತ್ಯಾದಿ)";
+"dataconsentscreen.label.consent4" = "ಸಾಧನದ ವಿಂಡೋವಿನ ಸ್ಕ್ರೀನ್ ರೆಕಾರ್ಡಿಂಗ್";
+"dataconsentscreen.label.consent5" = "ಡಿಫಾಲ್ಟ್ ಆಗಿ, ಸ್ಕ್ರೀನ್ ರೆಕಾರ್ಡಿಂಗ್ ಸಂದರ್ಭ ಆಡಿಯೊವನ್ನು ರೆಕಾರ್ಡ್ ಮಾಡಲಾಗುತ್ತದೆ. ಆದರೆ ಅದನ್ನು ಸಲ್ಲಿಸುವ ಮೊದಲು ನೀವು ಆಡಿಯೊವನ್ನು ಮ್ಯೂಟ್ ಮಾಡಬಹುದು ಅಥವಾ ಮರು-ರೆಕಾರ್ಡ್ ಮಾಡಬಹುದು.";
+
+// Permission
+"videoannotationscreen.alert.microphonedisabledipad" = "ಮೈಕ್ರೋಫೋನ್‌ಗೆ ಆ್ಯಕ್ಸೆಸ್ ಅನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ";
+"videoannotationscreen.alert.gotosettingtoturnonmicrophoneipad" = "ಆಡಿಯೊ ರೆಕಾರ್ಡ್ ಮಾಡಲು ದಯವಿಟ್ಟು ಸೆಟ್ಟಿಂಗ್‌ಗಳಿಗೆ ಹೋಗಿ ಮತ್ತ ಮೈಕ್ರೋಫೋನ್ ಆನ್ ಮಾಡಿ.";
+"videoannotationscreen.alert.microphonedisablediphone" = "ಮೈಕ್ರೋಫೋನ್‌ಗೆ ಆ್ಯಕ್ಸೆಸ್ ಅನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ. ಆಡಿಯೊ ರೆಕಾರ್ಡ್ ಮಾಡಲು ದಯವಿಟ್ಟು ಸೆಟ್ಟಿಂಗ್‌ಗಳಿಗೆ ಹೋಗಿ ಮತ್ತ ಮೈಕ್ರೋಫೋನ್ ಆನ್ ಮಾಡಿ.";
+
+// General
+"general.label.recordingintiationfailed" = "ಸ್ಕ್ರೀನ್ ರೆಕಾರ್ಡಿಂಗ್ ಆರಂಭಿಸಲು ವಿಫಲವಾಗಿದೆ. ದಯವಿಟ್ಟು ಪುನಃ ಪ್ರಯತ್ನಿಸಿ";
+"general.label.ok" = "ಸರಿ";
+"general.label.submit" = "ಸಲ್ಲಿಸಿ";
+"general.label.done" = "ಮುಗಿದಿದೆ";
+"general.label.cancel" = "ರದ್ದುಮಾಡಿ";
+"general.label.settings" = "ಸೆಟ್ಟಿಂಗ್‌ಗಳು";
+"general.label.erroroccured" = "ದೋಷ ಸಂಭವಿಸಿದೆ";
+
+// Issue Submission Screen
+"issuesubmissionscreen.alert.filesizeexceeded" = "ಫೈಲ್ ಗಾತ್ರ ಮೀರಿದೆ. ಫೈಲ್ ಗಾತ್ರವು 3 MB ಅನ್ನು ಮೀರಬಾರದು";
+"issuesubmissionscreen.label.attachfiles" = "ಫೈಲ್‌ಗಳನ್ನು ಲಗತ್ತಿಸಿ";
+"issuesubmissionscreen.label.newrecording" = "ಹೊಸ ರೆಕಾರ್ಡಿಂಗ್";
+"issuesubmissionscreen.label.editrecording" = "ರೆಕಾರ್ಡಿಂಗ್ ಎಡಿಟ್ ಮಾಡಿ";
+
+
+// Video Annotation Screen
+"videoannotationscreen.label.noaudiotrack" = "ಆಡಿಯೊ ಟ್ರ್ಯಾಕ್ ಇಲ್ಲ";
+"videoannotationscreen.label.shapeborderwidth" = "ಅಂಚಿನ ಅಗಲ";
+"videoannotationscreen.label.shapelineopacity" = "ಅಪಾರದರ್ಶಕತೆ";
+"videoannotationscreen.label.shapetextsize" = "ಪಠ್ಯ ಗಾತ್ರ";
+"videoannotationscreen.alert.elementdurationbeyondvideolength" = "ಎಲಿಮೆಂಟ್ ಅವಧಿಯು ವೀಡಿಯೊ ಉದ್ದಕ್ಕಿಂತ ಆಚೆಗಿದೆ";
+"videoannotationscreen.alert.notallowed" = "ಅವಕಾಶವಿಲ್ಲ";
+"videoannotationscreen.alert.deleteexisitingaudio" = "ಹೊಸದನ್ನು ರೆಕಾರ್ಡ್ ಮಾಡುವುದಕ್ಕೆ ಮೊದಲು ದಯವಿಟ್ಟು ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ ಆಡಿಯೊವನ್ನು ಅಳಿಸಿ.";
+"videoannotationscreen.alert.textlimitreached" = "ಮಿತಿ ತಲುಪಿದೆ";
+"videoannotationscreen.alert.textdeleteexisting" = "ದಯವಿಟ್ಟು ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ ಒಂದಿಷ್ಟು ಪಠ್ಯವನ್ನು ಅಳಿಸಿ.";
+"videoannotationscreen.alert.pausevideobeforerecordingaudio" = "ದಯವಿಟ್ಟು ಆಡಿಯೊ ರೆಕಾರ್ಡ್ ಮಾಡುವುದಕ್ಕೆ ಮೊದಲು ನಿಮ್ಮ ವೀಡಿಯೊವನ್ನು ವಿರಾಮಗೊಳಿಸಿ";
+"videoannotationscreen.alert.changesnotsaved" = "ನಿಮ್ಮ ಬದಲಾವಣೆಗಳನ್ನು ಉಳಿಸಲಾಗಿಲ್ಲ. ಮುಂದುವರಿಯಲು ಬಯಸುವುದನ್ನು ನೀವು ಖಚಿತಪಡಿಸುತ್ತೀರಾ?";
+"videoannotationscreen.alert.proceed" = "ಮುಂದುವರಿಯಿರಿ";
+"videoannotationscreen.alert.stroketypesolid" = "ಸಾಲಿಡ್";
+"videoannotationscreen.alert.stroketypedashed" = "ಡ್ಯಾಶ್‌ ಇರುವ";
+"videoannotationscreen.alert.entertext" = "ಪಠ್ಯವನ್ನು ನಮೂದಿಸಿ";
+
+"videoannotationscreen.label.trim" = "ಟ್ರಿಮ್ ಮಾಡಿ";
+"videoannotationscreen.label.mask" = "ಮಾಸ್ಕ್";
+"videoannotationscreen.label.shapes" = "ಆಕೃತಿಗಳು";
+"videoannotationscreen.label.text" = "ಪಠ್ಯ";
+"videoannotationscreen.label.audio" = "ಆಡಿಯೊ";
+"videoannotationscreen.label.block" = "ಬ್ಲಾಕ್ ಮಾಡಿ";
+"videoannotationscreen.label.blur" = "ಮಬ್ಬು";
+"videoannotationscreen.label.rectangle" = "ಆಯತಾಕಾರ";
+"videoannotationscreen.label.oval" = "ಅಂಡಾಕಾರ";
+"videoannotationscreen.label.arrow" = "ಬಾಣದ ಗುರುತು";
+"videoannotationscreen.label.color" = "ಬಣ್ಣ";
+"videoannotationscreen.label.width" = "ಅಗಲ";
+"videoannotationscreen.label.style" = "ಶೈಲಿ";
+"videoannotationscreen.label.edit" = "ತಿದ್ದಿ";
+"videoannotationscreen.label.size" = "ಗಾತ್ರ";
+"videoannotationscreen.label.background" = "ಹಿನ್ನಲೆ";
+"videoannotationscreen.label.textregular" = "ರೆಗ್ಯುಲರ್";
+"videoannotationscreen.label.textbold" = "ಬೋಲ್ಡ್";
+"videoannotationscreen.label.textitalics" = "ಇಟಾಲಿಕ್ಸ್";
+"videoannotationscreen.label.textbolditalics" = "ಬೋಲ್ಡ್-ಇಟಾಲಿಕ್ಸ್";
+
+// Issue Submission Form
+"issuesubmissionform.label.emaildisplay" = "ಇಮೇಲ್ ವಿಳಾಸ";
+"issuesubmissionform.label.emailplaceholder" = "zylker@zohomail.com";
+"issuesubmissionform.label.screenrecordingsummary" = "ಸ್ಕ್ರೀನ್ ರೆಕಾರ್ಡ್ ಸಾರಾಂಶ";
+"issuesubmissionform.label.subjectdisplayname" = "ವಿಷಯ";
+"issuesubmissionform.label.subjectplaceholder" = "ವಿಷಯವನ್ನು ನಮೂದಿಸಿ";
+"issuesubmissionform.label.addtoexistingticket" = "ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ ಟಿಕೆಟ್‌ಗೆ ಸೇರಿಸಿ";
+"issuesubmissionform.label.existingticketid" = "ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ ಟಿಕೆಟ್ ID";
+"issuesubmissionform.label.enterticketidtolink" = "ಲಿಂಕ್ ಮಾಡಬೇಕಾದ ಟಿಕೆಟ್ ID ಅನ್ನು ನಮೂದಿಸಿ";
+"issuesubmissionform.label.issuedescription" = "ಸಮಸ್ಯೆಯ ವಿವರಣೆ";
+"issuesubmissionform.label.issuemoredetails" = "ಸಮಸ್ಯೆ ಕುರಿತು ಇನ್ನಷ್ಟು ವಿವರಗಳನ್ನು ಒದಗಿಸಿ";
+"issuesubmissionform.label.submityourissue" = "ನಿಮ್ಮ ಸಮಸ್ಯೆಯನ್ನು ಸಲ್ಲಿಸಿ";
+"issuesubmissionform.alert.videouploadfailed" = "ವೀಡಿಯೊ ಅಪ್‌ಲೋಡ್ ಮಾಡಲು ವಿಫಲವಾಗಿದೆ ದಯವಿಟ್ಟು ಮತ್ತೊಮ್ಮೆ ಪ್ರಯತ್ನಿಸಿ.";
+"issuesubmissionform.alert.thanksmessagetitle" = "ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿದ್ದಕ್ಕಾಗಿ ಧನ್ಯವಾದಗಳು!";
+"issuesubmissionform.alert.thanksmessagebody" = "ನಿಮ್ಮ ಕಳವಳಗಳು ನಮ್ಮ ಆದ್ಯತೆಯಾಗಿವೆ, ಹಾಗಾಗಿ ನಮ್ಮ ಬೆಂಬಲ ತಂಡವು ಶೀಘ್ರದಲ್ಲಿ ನಿಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸುತ್ತದೆ. ನಿಮ್ಮ ದಿನ ಉತ್ತಮವಾಗಿರಲಿ!";
+"issuesubmissionform.alert.videoeditdetailuploadfailure" = "ವೀಡಿಯೊ ಎಡಿಟ್ ವಿವರಗಳನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಲು ವಿಫಲವಾಗಿದೆ. ದಯವಿಟ್ಟು ಮತ್ತೊಮ್ಮೆ ಪ್ರಯತ್ನಿಸಿ.";
+"issuesubmissionform.label.entersubject" = "ದಯವಿಟ್ಟು ಸಮಸ್ಯೆಯ ವಿಷಯವನ್ನು ನಮೂದಿಸಿ";
+"issuesubmissionform.label.enteremail" = "ಇಮೇಲ್ ವಿಳಾಸವನ್ನು ನಮೂದಿಸಿ";
+"issuesubmissionform.label.enterexistingticketid" = "ದಯವಿಟ್ಟು ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ ಟಿಕೆಟ್ ಐಡಿಯನ್ನು ನಮೂದಿಸಿ";
+"issuesubmissionform.label.choosephoto" = "ಫೊಟೋ ಆಯ್ಕೆ ಮಾಡಿ";
+"issuesubmissionform.label.browse" = "ಬ್ರೌಸ್ ಮಾಡಿ";
+"issuesubmissionform.alert.accestophotodisabledgotosetting" = "ಫೋಟೋ ಲೈಬ್ರರಿಗೆ ಆ್ಯಕ್ಸೆಸ್ ಅನ್ನು ನಿರಾಕರಿಸಲಾಗಿದೆ. ಫೋಟೋಗಳನ್ನು ಆ್ಯಕ್ಸೆಸ್ ಮಾಡಲು ದಯವಿಟ್ಟು ಸೆಟ್ಟಿಂಗ್‌ಗಳಿಗೆ ಹೋಗಿ ಮತ್ತು ಫೋಟೋ ಲೈಬ್ರರಿಯನ್ನು ಆನ್ ಮಾಡಿ.";
+"issuesubmissionform.alert.accestophotodisabledipad" = "ಫೋಟೋ ಲೈಬ್ರರಿಗೆ ಆ್ಯಕ್ಸೆಸ್ ಅನ್ನು ನಿರಾಕರಿಸಲಾಗಿದೆ";
+"issuesubmissionform.alert.accestophotodisabledmessageipad" = "ಫೋಟೋಗಳನ್ನು ಆ್ಯಕ್ಸೆಸ್ ಮಾಡಲು ದಯವಿಟ್ಟು ಸೆಟ್ಟಿಂಗ್‌ಗಳಿಗೆ ಹೋಗಿ ಮತ್ತು ಫೋಟೋ ಲೈಬ್ರರಿಯನ್ನು ಆನ್ ಮಾಡಿ.";
+"issuesubmissionform.alert.submitting" = "ಸಲ್ಲಿಸಲಾಗುತ್ತಿದೆ";

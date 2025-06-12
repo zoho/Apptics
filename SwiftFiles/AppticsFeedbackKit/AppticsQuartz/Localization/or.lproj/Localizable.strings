@@ -1,0 +1,111 @@
+// Issue Recording VC
+"issuerecordscreen.label.recordissue" = "ଆପଣଙ୍କ ସମସ୍ୟା ରେକର୍ଡ କରନ୍ତୁ";
+"issuerecordscreen.label.close" = "ବନ୍ଦ";
+"issuerecordscreen.label.failedtoinitiate" = "ସ୍କ୍ରିନ୍‌ ରେକର୍ଡିଂ ଆରମ୍ଭ କରିବାକୁ ବିଫଳ ହୋଇଛି";
+"issuerecordscreen.label.failuremultiwindow" = "ଆପଣ ରେକର୍ଡ୍ କରିବାକୁ ଚେଷ୍ଟା କରୁଥିବା ବିଷୟବସ୍ତୁ ମଲ୍ଟି-ୱିଣ୍ଡୋ ମୋଡରେ ଅଛି, ଯାହା ରେକର୍ଡିଂ ପାଇଁ ସମର୍ଥିତ ନୁହେଁ। ଦୟାକରି ପୂର୍ଣ୍ଣ-ସ୍କ୍ରିନ୍ ମୋଡକୁ ସ୍ୱିଚ୍ କରନ୍ତୁ";
+"issuerecordscreen.label.nointerneterror" = "ସ୍କ୍ରିନ୍ ରେକର୍ଡିଂ ପାଇଁ ଇଣ୍ଟର୍ନେଟ୍ ସଂଯୋଗ ଆବଶ୍ୟକ। ଆଗକୁ ବଢିବାକୁ ଦୟାକରି ସଂଯୋଗ କରନ୍ତୁ।";
+"issuerecordscreen.label.ok" = "ଠିକ୍‌ ଅଛି";
+"issuerecordscreen.label.recordinginfo" = "ଆପଣ ସମ୍ମୁଖୀନ ହେଉଥିବା ସମସ୍ୟାଗୁଡିକୁ ଶୀଘ୍ର ରେକର୍ଡ କରନ୍ତୁ ଏବଂ ସହଜରେ ବୁଝିବା ଏବଂ ଶୀଘ୍ର ସହାୟତା ପାଇଁ ସେଗୁଡିକୁ ଆମର ସହାୟତା ଦଳକୁ ପଠାନ୍ତୁ।";
+"issuerecordscreen.label.iagreetext" = "ମୁଁ ଆବଶ୍ୟକୀୟ ତଥ୍ୟ ସଂଗ୍ରହ ପାଇଁ ରାଜି ଏବଂ ସମ୍ମତି ଦେଉଛି। ବିବରଣୀ ଦେଖନ୍ତୁ";
+"issuerecordscreen.label.optiontotrim" = "ରେକର୍ଡ ହୋଇଥିବା ଭିଡିଓକୁ ଟ୍ରିମ୍, ଏଡିଟ୍ ଏବଂ ଆନୋଟେଟ୍ କରିବାର ବିକଳ୍ପ ଆପଣଙ୍କ ପାଖରେ ଅଛି।";
+"issuerecordscreen.label.startrecording" = "ରେକର୍ଡିଂ ପ୍ରାରମ୍ଭ କରନ୍ତୁ";
+"issuerecordscreen.label.endrecording" = "ରେକର୍ଡିଂ ସମାପ୍ତ କରନ୍ତୁ";
+"issuerecordscreen.label.recordinginprogress" = "ରେକଡିଂ ଚାଲୁ ରହିଛି!";
+"issuerecordscreen.label.quicktipstext" = "ଶୀଘ୍ର ଟିପ୍ସ";
+"issuerecordscreen.label.quicktips1" = "ଆପଣ ସର୍ବାଧିକ 5 ମିନିଟ୍ ପାଇଁ ଆପଣଙ୍କର ସ୍କ୍ରିନ୍ ରେକର୍ଡ କରିପାରିବେ।";
+"issuerecordscreen.label.quicktips2" = "ଆପଣ ରେକର୍ଡ ହୋଇଥିବା ଭିଡିଓକୁ ଟ୍ରିମ୍, ଏଡିଟ୍ ଏବଂ ଆନୋଟେଟ୍ କରିପାରିବେ।";
+"issuerecordscreen.label.quicktips3" = "ସ୍କ୍ରିନ୍ ରେକର୍ଡ ହେଉଥିବା ସମୟରେ ଆପ୍ ବନ୍ଦ କରନ୍ତୁ ନାହିଁ।";
+"issuerecordscreen.label.quicktips4" = "ଅଧିକ ଜାଣିବା ପାଇଁ, ଦୟାକରି ଆମର ସହାୟତା ଡକ୍ୟୁମେଣ୍ଟେସନ୍ ପରିଦର୍ଶନ କରନ୍ତୁ";
+
+// Data Consent Screen
+"dataconsentscreen.label.consenttitle" = "ଆପଣଙ୍କ ସମ୍ମତି ପରେ ନିମ୍ନଲିଖିତ ତଥ୍ୟ ସଂଗ୍ରହ କରାଯିବ:";
+"dataconsentscreen.label.consent1" = "ରେକର୍ଡିଂ ସମୟରେ ସୃଷ୍ଟି ହୋଇଥିବା ଆପଣଙ୍କର IP ଠିକଣା ଏବଂ କନସୋଲ୍ ଲଗଗୁଡିକ";
+"dataconsentscreen.label.consent2" = "ଆପଣଙ୍କର ପରିବେଶ ବିବରଣୀ ଯେପରିକି ଡିଭାଇସର ନାମ, OS ସଂସ୍କରଣ, ଇତ୍ୟାଦି।";
+"dataconsentscreen.label.consent3" = "ଡିଭାଇସ୍ କାର୍ଯ୍ୟଦକ୍ଷତା ମେଟ୍ରିକ୍ସ (ଯେପରିକି ମେମୋରୀ, ନେଟୱାର୍କ୍‌ ସଂଯୋଜନା ସମୟ, ଇତ୍ୟାଦି)";
+"dataconsentscreen.label.consent4" = "ଡିଭାଇସ୍ ୱିଣ୍ଡୋର ସ୍କ୍ରିନ୍ ରେକର୍ଡିଂ";
+"dataconsentscreen.label.consent5" = "ଡିଫଲ୍ଟ ଭାବରେ, ସ୍କ୍ରିନ୍ ରେକର୍ଡିଂ ସମୟରେ ଅଡିଓ ରେକର୍ଡ ହେବ। କିନ୍ତୁ ଆପଣ ଅଡିଓ ଟ୍ରାକକୁ ଦାଖଲ କରିବା ପୂର୍ବରୁ ମ୍ୟୁଟ୍ କିମ୍ବା ପୁନଃ ରେକର୍ଡ କରିପାରିବେ।";
+
+// Permission
+"videoannotationscreen.alert.microphonedisabledipad" = "ମାଇକ୍ରୋଫୋନ୍ ଆକସେସ୍ ଅକ୍ଷମ କରାଯାଇଛି";
+"videoannotationscreen.alert.gotosettingtoturnonmicrophoneipad" = "ଦୟାକରି ସେଟିଂସକୁ ଯାଆନ୍ତୁ ଏବଂ ଅଡିଓ ରେକର୍ଡ୍ କରିବା ପାଇଁ ମାଇକ୍ରୋଫୋନ୍‌ ଚାଲୁ କରନ୍ତୁ।";
+"videoannotationscreen.alert.microphonedisablediphone" = "ମାଇକ୍ରୋଫୋନ୍ ଆକସେସ୍ ଅକ୍ଷମ କରାଯାଇଛି। ଦୟାକରି ସେଟିଂସକୁ ଯାଆନ୍ତୁ ଏବଂ ଅଡିଓ ରେକର୍ଡ୍ କରିବା ପାଇଁ ମାଇକ୍ରୋଫୋନ୍‌ ଚାଲୁ କରନ୍ତୁ।";
+
+// General
+"general.label.recordingintiationfailed" = "ସ୍କ୍ରିନ୍ ରେକର୍ଡିଂ ଆରମ୍ଭ ବିଫଳ ହୋଇଛି। ଦୟାକରି ପୁନଃଚେଷ୍ଟା କରନ୍ତୁ";
+"general.label.ok" = "ଠିକ୍‌ ଅଛି";
+"general.label.submit" = "ଜମା କରନ୍ତୁ";
+"general.label.done" = "ସମାପ୍ତ ହୋଇଛି";
+"general.label.cancel" = "ବାତିଲ୍‌ କରନ୍ତୁ";
+"general.label.settings" = "ସେଟିଂସ୍";
+"general.label.erroroccured" = "ତ୍ରୁଟି ଘଟିଛି";
+
+// Issue Submission Screen
+"issuesubmissionscreen.alert.filesizeexceeded" = "ଫାଇଲ୍ ଆକାର ଅତିକ୍ରମ କରାଯାଇଛି। ଫାଇଲ୍ ଆକାର 3 MB ରୁ ଅଧିକ ହେବା ଉଚିତ୍ ନୁହେଁ";
+"issuesubmissionscreen.label.attachfiles" = "ଫାଇଲଗୁଡିକ ସଂଲଗ୍ନ କରନ୍ତୁ";
+"issuesubmissionscreen.label.newrecording" = "ନୂଆ ରେକର୍ଡିଂ";
+"issuesubmissionscreen.label.editrecording" = "ରେକର୍ଡିଂ ସମ୍ପାଦନ କରନ୍ତୁ";
+
+
+// Video Annotation Screen
+"videoannotationscreen.label.noaudiotrack" = "କୌଣସି ଅଡିଓ ଟ୍ରାକ୍ ନାହିଁ";
+"videoannotationscreen.label.shapeborderwidth" = "ସୀମା ପ୍ରସ୍ଥ";
+"videoannotationscreen.label.shapelineopacity" = "ସ୍ୱଚ୍ଛତା";
+"videoannotationscreen.label.shapetextsize" = "ଟେକ୍ସଟ୍ ଆକାର";
+"videoannotationscreen.alert.elementdurationbeyondvideolength" = "ଉପାଦାନ ଅବଧି ଭିଡିଓର ଅବଧି ବାହାରେ ଅଟେ";
+"videoannotationscreen.alert.notallowed" = "ଅନୁମତି ନାହିଁ";
+"videoannotationscreen.alert.deleteexisitingaudio" = "ନୂତନ ଅଡିଓ ରେକର୍ଡ୍ କରିବା ପୂର୍ବରୁ ଦୟାକରି ବିଦ୍ୟମାନ ଅଡିଓକୁ ଡିଲିଟ୍ କରନ୍ତୁ।";
+"videoannotationscreen.alert.textlimitreached" = "ସୀମା ପହଞ୍ଚି ଯାଇଛି";
+"videoannotationscreen.alert.textdeleteexisting" = "ଦୟାକରି ବିଦ୍ୟମାନ କିଛି ଟେକ୍ସଟକୁ ଡିଲିଟ୍ କରନ୍ତୁ।";
+"videoannotationscreen.alert.pausevideobeforerecordingaudio" = "ଅଡିଓ ରେକର୍ଡ୍ କରିବା ପୂର୍ବରୁ ଦୟାକରି ଆପଣଙ୍କ ଭିଡିଓକୁ ବିରତ କରନ୍ତୁ";
+"videoannotationscreen.alert.changesnotsaved" = "ଆପଣ କରିଥିବା ପରିବର୍ତ୍ତନଗୁଡିକ ସଞ୍ଚୟ ହୋଇନାହିଁ। ଆପଣ ନିଶ୍ଚିତ କି ଆପଣ ଆଗକୁ ବଢିବାକୁ ଚାହୁଁଛନ୍ତି?";
+"videoannotationscreen.alert.proceed" = "ଆଗକୁ ବଢ";
+"videoannotationscreen.alert.stroketypesolid" = "କଠିନ";
+"videoannotationscreen.alert.stroketypedashed" = "ଦାଶେଡ୍";
+"videoannotationscreen.alert.entertext" = "ଟେକ୍ସଟ୍ ଏଣ୍ଟର କରନ୍ତୁ";
+
+"videoannotationscreen.label.trim" = "ଟ୍ରିମ୍‌";
+"videoannotationscreen.label.mask" = "ମାସ୍କ";
+"videoannotationscreen.label.shapes" = "ଆକୃତି";
+"videoannotationscreen.label.text" = "ଟେକ୍ସଟ୍";
+"videoannotationscreen.label.audio" = "ଅଡିଓ";
+"videoannotationscreen.label.block" = "ଅବରୋଧ କରନ୍ତୁ";
+"videoannotationscreen.label.blur" = "ଧୂଳିଆ";
+"videoannotationscreen.label.rectangle" = "ଆୟତକ୍ଷେତ୍ର";
+"videoannotationscreen.label.oval" = "ଓଭାଲ୍";
+"videoannotationscreen.label.arrow" = "ତୀର";
+"videoannotationscreen.label.color" = "ରଙ୍ଗ";
+"videoannotationscreen.label.width" = "ପ୍ରସ୍ଥ";
+"videoannotationscreen.label.style" = "ଷ୍ଟାଇଲ୍";
+"videoannotationscreen.label.edit" = "ସମ୍ପାଦନ କରନ୍ତୁ";
+"videoannotationscreen.label.size" = "ଆକାର";
+"videoannotationscreen.label.background" = "ପୃଷ୍ଠଭୂମି";
+"videoannotationscreen.label.textregular" = "ନିୟମିତ";
+"videoannotationscreen.label.textbold" = "ବୋଲ୍ଡ";
+"videoannotationscreen.label.textitalics" = "ଇଟାଲିକ୍ସ";
+"videoannotationscreen.label.textbolditalics" = "ବୋଲ୍ଡ-ଇଟାଲିକ୍";
+
+// Issue Submission Form
+"issuesubmissionform.label.emaildisplay" = "ଇମେଲ୍ ଠିକଣା";
+"issuesubmissionform.label.emailplaceholder" = "zylker@zohomail.com";
+"issuesubmissionform.label.screenrecordingsummary" = "ସ୍କ୍ରିନ୍‌ ରେକର୍ଡ୍ ସାରାଂଶ";
+"issuesubmissionform.label.subjectdisplayname" = "ବିଷୟ";
+"issuesubmissionform.label.subjectplaceholder" = "ବିଷୟ ପ୍ରବେଶ କରନ୍ତୁ";
+"issuesubmissionform.label.addtoexistingticket" = "ବିଦ୍ୟମାନ ଟିକେଟ୍‌ କୁ ଯୋଡନ୍ତୁ";
+"issuesubmissionform.label.existingticketid" = "ବିଦ୍ୟମାନ ଟିକେଟ୍ ID";
+"issuesubmissionform.label.enterticketidtolink" = "ଲିଙ୍କ୍ ହେବା ପାଇଁ ଟିକେଟ୍ ID ପ୍ରବେଶ କରନ୍ତୁ";
+"issuesubmissionform.label.issuedescription" = "ଇସ୍ୟୁ ବିବରଣୀ";
+"issuesubmissionform.label.issuemoredetails" = "ସମସ୍ୟା ବିଷୟରେ ଅଧିକ ବିବରଣୀ ପ୍ରଦାନ କରନ୍ତୁ";
+"issuesubmissionform.label.submityourissue" = "ଆପଣଙ୍କର ସମସ୍ୟା ଦାଖଲ କରନ୍ତୁ";
+"issuesubmissionform.alert.videouploadfailed" = "ଭିଡିଓ ଅପଲୋଡ୍ କରିବା ବିଫଳ ହୋଇଛି। ଦୟାକରି ପୁନଃଚେଷ୍ଟା କରନ୍ତୁ।";
+"issuesubmissionform.alert.thanksmessagetitle" = "ଆମ ସହିତ ଯୋଗାଯୋଗ କରିବା ପାଇଁ ଆପଣଙ୍କୁ ଧନ୍ୟବାଦ!";
+"issuesubmissionform.alert.thanksmessagebody" = "ଆପଣଙ୍କ ଚିନ୍ତା ଆମର ପ୍ରାଥମିକତା, ତେଣୁ ଆମର ସହାୟତା ଦଳ ଶୀଘ୍ର ଆପଣଙ୍କ ସହିତ ଯୋଗାଯୋଗ କରିବେ। ଏକ ମହାନ ଦିନ ଟିଏ!";
+"issuesubmissionform.alert.videoeditdetailuploadfailure" = "ଭିଡିଓ ସମ୍ପାଦନ ବିବରଣୀ ଅପଲୋଡ୍ କରିବାରେ ବିଫଳ ହୋଇଛି। ଦୟାକରି ପୁନଃଚେଷ୍ଟା କରନ୍ତୁ।";
+"issuesubmissionform.label.entersubject" = "ଦୟାକରି ସମସ୍ୟାର ବିଷୟ ପ୍ରବେଶ କରନ୍ତୁ";
+"issuesubmissionform.label.enteremail" = "ଦୟାକରି ଇମେଲ୍ ଠିକଣା ପ୍ରବେଶ କରନ୍ତୁ";
+"issuesubmissionform.label.enterexistingticketid" = "ଦୟାକରି ବିଦ୍ୟମାନ ଟିକେଟ୍ ID ପ୍ରବେଶ କରନ୍ତୁ";
+"issuesubmissionform.label.choosephoto" = "ଫଟୋ ଚୟନ କରନ୍ତୁ";
+"issuesubmissionform.label.browse" = "ବ୍ରାଉଜ୍ କରନ୍ତୁ";
+"issuesubmissionform.alert.accestophotodisabledgotosetting" = "ଫଟୋ ଲାଇବ୍ରେରୀକୁ ପ୍ରବେଶ ଅକ୍ଷମ କରାଯାଇଛି। ଫଟୋ ଆକସେସ୍ କରିବା ପାଇଁ ଦୟାକରି ସେଟିଂସକୁ ଯାଆନ୍ତୁ ଏବଂ ଫଟୋ ଲାଇବ୍ରେରୀ ଚାଲୁ କରନ୍ତୁ।";
+"issuesubmissionform.alert.accestophotodisabledipad" = "ଫଟୋ ଲାଇବ୍ରେରୀକୁ ପ୍ରବେଶ ଅକ୍ଷମ କରାଯାଇଛି";
+"issuesubmissionform.alert.accestophotodisabledmessageipad" = "ଫଟୋ ଆକସେସ୍ କରିବା ପାଇଁ ଦୟାକରି ସେଟିଂସକୁ ଯାଆନ୍ତୁ ଏବଂ ଫଟୋ ଲାଇବ୍ରେରୀ ଚାଲୁ କରନ୍ତୁ।";
+"issuesubmissionform.alert.submitting" = "ଜମା କରାଯାଉଛି";

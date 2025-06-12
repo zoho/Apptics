@@ -16,13 +16,14 @@ protocol IssueRecordingViewDelegate: AnyObject{
 }
 
 struct IssueRecordingViewDataSource{
-    let screenRecordingInfoText = "Quickly record the issues you face and send them to our support team for easy understanding and quick assistance."
-    let iAgreeText = "I agree and consent to the collection of the required data. View Details"
-    let optionToTrimText =  "You have an option to trim, edit and annotate the recorded video."
-    let startRecordingButtonText = "Start Recording"
-    let endRecordingButtonText = "End Recording"
-    let recordingInProgressText = "Recording In Progress!"
+    let screenRecordingInfoText = QuartzKitStrings.localized("issuerecordscreen.label.recordinginfo")
+    let iAgreeText = QuartzKitStrings.localized("issuerecordscreen.label.iagreetext")
+    let optionToTrimText = QuartzKitStrings.localized("issuerecordscreen.label.optiontotrim")
+    let startRecordingButtonText = QuartzKitStrings.localized("issuerecordscreen.label.startrecording")
+    let endRecordingButtonText = QuartzKitStrings.localized("issuerecordscreen.label.endrecording")
+    let recordingInProgressText = QuartzKitStrings.localized("issuerecordscreen.label.recordinginprogress")
 }
+
 
 class IssueRecordingView: UIView, UITextViewDelegate{
     let txtDataSource: IssueRecordingViewDataSource = IssueRecordingViewDataSource()
@@ -88,7 +89,7 @@ class IssueRecordingView: UIView, UITextViewDelegate{
         let iAgreeSwitch = UISwitch()
         iAgreeSwitch.translatesAutoresizingMaskIntoConstraints = false
         iAgreeSwitch.addTarget(self, action: #selector(switchChanged), for: .valueChanged)
-        iAgreeSwitch.onTintColor = QuartzKit.shared.primaryColor ?? IssueRecordingViewColors.viewDetailsLabelColor
+        iAgreeSwitch.onTintColor = QuartzKit.shared.switchOnTintColor ?? IssueRecordingViewColors.viewDetailsLabelColor
         return iAgreeSwitch
     }()
     
@@ -162,7 +163,7 @@ class IssueRecordingView: UIView, UITextViewDelegate{
         iAgreeTxtView.isScrollEnabled = false
         iAgreeTxtView.isUserInteractionEnabled = true
         iAgreeTxtView.isEditable = false
-        iAgreeTxtView.textContainer.maximumNumberOfLines = 2
+        iAgreeTxtView.textContainer.maximumNumberOfLines = 3
         iAgreeTxtView.textContainer.lineBreakMode = .byTruncatingTail
         iAgreeTxtView.textColor = IssueRecordingViewColors.iAgreeLabelColor
         return iAgreeTxtView
@@ -204,30 +205,39 @@ class IssueRecordingView: UIView, UITextViewDelegate{
         screenRecordingInfoLabel.text = txtDataSource.screenRecordingInfoText
         iAgreeTxtView.text = txtDataSource.iAgreeText
         startRecordingButton.setTitle(txtDataSource.startRecordingButtonText, for: .normal)
-        
-        if let learnMoreText = txtDataSource.iAgreeText.components(separatedBy: ".").last{
+        var learnMoreText: String? = nil
+        if txtDataSource.iAgreeText.components(separatedBy: ".").count > 1{
+            learnMoreText = txtDataSource.iAgreeText.components(separatedBy: ".").last
+        }else{
+            let compSeperatedBySpace =  txtDataSource.iAgreeText.components(separatedBy: " ")
+            if compSeperatedBySpace.count > 2{
+                learnMoreText = "\(compSeperatedBySpace[compSeperatedBySpace.count-2]) \(compSeperatedBySpace[compSeperatedBySpace.count-1])"
+            }
+        }
+        if let learnMoreText = learnMoreText{
             
             let attributedString = NSMutableAttributedString(string: txtDataSource.iAgreeText)
             let linkRange = (txtDataSource.iAgreeText as NSString).range(of: learnMoreText)
             attributedString.addAttribute(.link, value: viewDetailsText, range: linkRange)
             
             if let primaryColor = QuartzKit.shared.primaryColor{
-                 iAgreeTxtView.linkTextAttributes = [
-                     .foregroundColor: primaryColor,
-                 ]
+                iAgreeTxtView.linkTextAttributes = [
+                    .foregroundColor: primaryColor,
+                ]
             }else{
                 attributedString.addAttribute(.strokeWidth, value: -3 , range: linkRange)
                 attributedString.addAttribute(.strokeColor, value: IssueRecordingViewColors.viewDetailsLabelColor , range: linkRange)
             }
             
             let range = NSMakeRange(0, txtDataSource.iAgreeText.count - linkRange.length)
-            
-            let txtColor = IssueRecordingViewColors.iAgreeLabelColor
-            attributedString.addAttribute(.foregroundColor,
-                                          value: txtColor ,
-                                          range: range)
-            
-            attributedString.addAttribute(.font, value: UIFont.systemFont(ofSize: 14), range: NSRange(location: 0, length: txtDataSource.iAgreeText.count))
+            if (range.location != NSNotFound && range.location + range.length <= attributedString.length && range.length > 0 ) {
+                let txtColor = IssueRecordingViewColors.iAgreeLabelColor
+                attributedString.addAttribute(.foregroundColor,
+                                              value: txtColor ,
+                                              range: range)
+                
+                attributedString.addAttribute(.font, value: UIFont.systemFont(ofSize: 14), range: NSRange(location: 0, length: txtDataSource.iAgreeText.count))
+            }
             
             let paragraphStyle = NSMutableParagraphStyle()
             paragraphStyle.lineSpacing = 3

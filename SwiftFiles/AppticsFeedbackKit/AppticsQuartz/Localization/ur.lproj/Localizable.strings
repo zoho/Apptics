@@ -1,0 +1,111 @@
+// Issue Recording VC
+"issuerecordscreen.label.recordissue" = "اپنا مسئلہ ریکارڈ کریں";
+"issuerecordscreen.label.close" = "بند کریں";
+"issuerecordscreen.label.failedtoinitiate" = "اسکرین ریکارڈنگ شروع کرنے میں ناکام";
+"issuerecordscreen.label.failuremultiwindow" = "آپ جس مواد کو ریکارڈ کرنے کی کوشش کر رہے ہیں وہ ملٹی ونڈو موڈ میں ہے، جو ریکارڈنگ کے لیے اعانت یافتہ نہیں ہے۔ براہ کرم فُل اسکرین موڈ میں منتقل ہوں";
+"issuerecordscreen.label.nointerneterror" = "اسکرین ریکارڈنگ کے لیے انٹرنیٹ کنکشن مطلوب ہے۔ براہ کرم آگے بڑھنے کے لیے کنکٹ کریں۔";
+"issuerecordscreen.label.ok" = "ٹھیک ہے";
+"issuerecordscreen.label.recordinginfo" = "بآسانی سمجھنے اور فوری مدد کے لیے آپ کو پیش آنے والے مسائل کو فوری طور پر ریکارڈ کریں اور انہیں ہماری سپورٹ ٹیم کو بھیجیں۔";
+"issuerecordscreen.label.iagreetext" = "مطلوبہ ڈیٹا کے جمع کرنے سے میں متفق ہوں اور رضامندی دیتا ہوں۔ تفصیلات دیکھیں";
+"issuerecordscreen.label.optiontotrim" = "آپ کے پاس ریکارڈ شدہ ویڈیو کو ٹرم کرنے، اس میں ترمیم کرنے اور تشریح کرنے کا اختیار ہے۔";
+"issuerecordscreen.label.startrecording" = "ریکارڈنگ شروع کریں";
+"issuerecordscreen.label.endrecording" = "ریکارڈنگ ختم کریں";
+"issuerecordscreen.label.recordinginprogress" = "ریکارڈنگ جاری ہے!";
+"issuerecordscreen.label.quicktipstext" = "فوری مشورے";
+"issuerecordscreen.label.quicktips1" = "آپ زیادہ سے زیادہ 5 منٹ تک اپنا اسکرین ریکارڈ کر سکتے ہیں۔";
+"issuerecordscreen.label.quicktips2" = "آپ ریکارڈ کردہ ویڈیو کو ٹرم، اس میں ترمیم اور اس کی تشریح کر سکتے ہیں۔";
+"issuerecordscreen.label.quicktips3" = "جب اسکرین ریکارڈ کی جا رہی ہو تو ایپ بند نہ کریں۔";
+"issuerecordscreen.label.quicktips4" = "مزید جاننے کے لیے، براہ کرم ہماری مدد کی دستاویزات دیکھیں";
+
+// Data Consent Screen
+"dataconsentscreen.label.consenttitle" = "مندرجہ ذیل ڈیٹا آپ کی رضامندی سے جمع کیا جائے گا:";
+"dataconsentscreen.label.consent1" = "آپ کا IP ایڈریس اور کنسول لاگ جو ریکارڈنگ کے دوران تیار کیے گئے ہیں";
+"dataconsentscreen.label.consent2" = "ماحول کی آپ کی تفصیلات جیسے ڈیوائس کا نام، OS ورژن وغیرہ۔";
+"dataconsentscreen.label.consent3" = "ڈیوائس کی کارکردگی کے میٹرکس (جیسے میموری، نیٹ ورک کنکشن کا وقت، وغیرہ)";
+"dataconsentscreen.label.consent4" = "ڈیوائس کے ونڈو کی اسکرین ریکارڈنگ";
+"dataconsentscreen.label.consent5" = "بطور ڈیفالٹ، اسکرین ریکارڈنگ کے دوران آڈیو ریکارڈ کیا جائے گا۔ لیکن آپ اسے جمع کرنے سے پہلے آڈیو ٹریک کو خاموش یا دوبارہ ریکارڈ کر سکتے ہیں۔";
+
+// Permission
+"videoannotationscreen.alert.microphonedisabledipad" = "مائیکروفون تک رسائی غیر فعال ہے";
+"videoannotationscreen.alert.gotosettingtoturnonmicrophoneipad" = "براہ کرم سیٹنگ میں جائیں اور آڈیو ریکارڈ کرنے کے لیے مائیکروفون چالو کریں۔";
+"videoannotationscreen.alert.microphonedisablediphone" = "مائیکروفون تک رسائی غیر فعال ہے۔ براہ کرم سیٹنگ میں جائیں اور آڈیو ریکارڈ کرنے کے لیے مائیکروفون چالو کریں۔";
+
+// General
+"general.label.recordingintiationfailed" = "اسکرین ریکارڈنگ کی شروعات ناکام۔ براہ کرم دوبارہ کوشش کریں";
+"general.label.ok" = "ٹھیک ہے";
+"general.label.submit" = "جمع کرائیں";
+"general.label.done" = "ہوگیا";
+"general.label.cancel" = "منسوخ کریں";
+"general.label.settings" = "ترتیبات";
+"general.label.erroroccured" = "خرابی پیش آ گئی";
+
+// Issue Submission Screen
+"issuesubmissionscreen.alert.filesizeexceeded" = "فائل کا سائز تجاوز کر گیا۔ فائل کا سائز 3 MB سے زیادہ نہیں ہونا چاہیے";
+"issuesubmissionscreen.label.attachfiles" = "فائلز منسلک کریں";
+"issuesubmissionscreen.label.newrecording" = "نئی ریکارڈنگ";
+"issuesubmissionscreen.label.editrecording" = "ریکارڈنگ میں ترمیم کریں";
+
+
+// Video Annotation Screen
+"videoannotationscreen.label.noaudiotrack" = "کوئی آڈیو ٹریک نہیں";
+"videoannotationscreen.label.shapeborderwidth" = "بارڈر کی چوڑائی";
+"videoannotationscreen.label.shapelineopacity" = "باریکی";
+"videoannotationscreen.label.shapetextsize" = "متن کا سائز";
+"videoannotationscreen.alert.elementdurationbeyondvideolength" = "عنصر کی مدت ویڈیو کی لمبائی کے آگے ہے";
+"videoannotationscreen.alert.notallowed" = "اجازت نہیں";
+"videoannotationscreen.alert.deleteexisitingaudio" = "براہ کرم نیا آڈیو ریکارڈ کرنے سے پہلے موجودہ آڈیو حذف کریں۔";
+"videoannotationscreen.alert.textlimitreached" = "حد پوری ہو گئی";
+"videoannotationscreen.alert.textdeleteexisting" = "براہ کرم موجودہ متن میں سے کچھ کو حذف کریں۔";
+"videoannotationscreen.alert.pausevideobeforerecordingaudio" = "براہ کرم آڈیو ریکارڈ کرنے سے پہلے اپنا ویڈیو پاز کریں";
+"videoannotationscreen.alert.changesnotsaved" = "آپ کی تبدیلیاں محفوظ نہیں کی گئی ہیں۔ کیا آپ واقعی پیشرفت کرنا چاہتے ہیں؟";
+"videoannotationscreen.alert.proceed" = "آگے بڑھیں";
+"videoannotationscreen.alert.stroketypesolid" = "ٹھوس";
+"videoannotationscreen.alert.stroketypedashed" = "ڈیش والی";
+"videoannotationscreen.alert.entertext" = "متن درج کریں";
+
+"videoannotationscreen.label.trim" = "ٹرِم کریں";
+"videoannotationscreen.label.mask" = "ماسک";
+"videoannotationscreen.label.shapes" = "اشکال";
+"videoannotationscreen.label.text" = "متن";
+"videoannotationscreen.label.audio" = "آڈیو";
+"videoannotationscreen.label.block" = "مسدود کریں";
+"videoannotationscreen.label.blur" = "دھندلا";
+"videoannotationscreen.label.rectangle" = "مستطیل";
+"videoannotationscreen.label.oval" = "بیضوی";
+"videoannotationscreen.label.arrow" = "تیر";
+"videoannotationscreen.label.color" = "رنگ";
+"videoannotationscreen.label.width" = "چوڑائی";
+"videoannotationscreen.label.style" = "اسٹائل";
+"videoannotationscreen.label.edit" = "تدوین کریں";
+"videoannotationscreen.label.size" = "سائز";
+"videoannotationscreen.label.background" = "پس منظر";
+"videoannotationscreen.label.textregular" = "روزمرہ";
+"videoannotationscreen.label.textbold" = "بولڈ کریں";
+"videoannotationscreen.label.textitalics" = "ترچھا";
+"videoannotationscreen.label.textbolditalics" = "بولڈ-اٹیلک";
+
+// Issue Submission Form
+"issuesubmissionform.label.emaildisplay" = "ای میل اڈریس";
+"issuesubmissionform.label.emailplaceholder" = "zylker@zohomail.com";
+"issuesubmissionform.label.screenrecordingsummary" = "اسکرین ریکارڈ کا خلاصہ";
+"issuesubmissionform.label.subjectdisplayname" = "موضوع";
+"issuesubmissionform.label.subjectplaceholder" = "موضوع درج کریں";
+"issuesubmissionform.label.addtoexistingticket" = "موجودہ ٹکٹ میں شامل کریں";
+"issuesubmissionform.label.existingticketid" = "موجودہ ٹکٹ ID";
+"issuesubmissionform.label.enterticketidtolink" = "لنک کیے جانے کے لیے ٹکٹ ID درج کریں";
+"issuesubmissionform.label.issuedescription" = "مسئلے کی وضاحت";
+"issuesubmissionform.label.issuemoredetails" = "مسئلے کے بارے میں مزید تفصیلات فراہم کریں";
+"issuesubmissionform.label.submityourissue" = "اپنا مسئلہ جمع کریں";
+"issuesubmissionform.alert.videouploadfailed" = "ویڈیو اپلوڈ کرنا ناکام۔ برائے مہربانی دوبارہ کوشش کریں۔";
+"issuesubmissionform.alert.thanksmessagetitle" = "ہمارے ساتھ رابطہ رکھنے کے لیے شکریہ!";
+"issuesubmissionform.alert.thanksmessagebody" = "آپ کی تشویش ہماری ترجیح ہیں، اس لیے ہماری سپورٹ ٹیم جلد ہی آپ سے رابطہ کرے گی۔ ایک عمدہ دن گزاریں!";
+"issuesubmissionform.alert.videoeditdetailuploadfailure" = "ویڈیو میں ترمیم کی تفصیلات اپلوڈ کرنا ناکام ہو گیا ہے۔ برائے مہربانی دوبارہ کوشش کریں۔";
+"issuesubmissionform.label.entersubject" = "براہ کرم مسئلہ کا موضوع درج کریں";
+"issuesubmissionform.label.enteremail" = "براہ کرم ای میل ایڈریس درج کریں";
+"issuesubmissionform.label.enterexistingticketid" = "براہ کرم موجودہ ٹکٹ id درج کریں";
+"issuesubmissionform.label.choosephoto" = "تصویر کا انتخاب کریں";
+"issuesubmissionform.label.browse" = "براؤز کریں";
+"issuesubmissionform.alert.accestophotodisabledgotosetting" = "فوٹو لائبریری تک رسائی غیر فعال ہے۔ تصاویر تک رسائی کے لیے براہ کرم سیٹنگ میں جائیں اور فوٹو لائبریری چالو کریں۔";
+"issuesubmissionform.alert.accestophotodisabledipad" = "فوٹو لائبریری تک رسائی غیر فعال ہے";
+"issuesubmissionform.alert.accestophotodisabledmessageipad" = "تصاویر تک رسائی کے لیے براہ کرم سیٹنگ میں جائیں اور فوٹو لائبریری چالو کریں۔";
+"issuesubmissionform.alert.submitting" = "جمع کیا جا رہا ہے";

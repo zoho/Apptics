@@ -1,0 +1,111 @@
+// Issue Recording VC
+"issuerecordscreen.label.recordissue" = "Zabilježite svoj problem";
+"issuerecordscreen.label.close" = "Zatvori";
+"issuerecordscreen.label.failedtoinitiate" = "Pokretanje snimanja zaslona nije uspjelo";
+"issuerecordscreen.label.failuremultiwindow" = "Sadržaj koji pokušavate snimiti je u načinu rada s više prozora, što ne podržava snimanje. Prebacite se na način cijelog zaslona";
+"issuerecordscreen.label.nointerneterror" = "Za snimanje zaslona, potrebna je internetska veza. Povežite kako biste nastavili.";
+"issuerecordscreen.label.ok" = "U redu";
+"issuerecordscreen.label.recordinginfo" = "Brzo zabilježite probleme s kojima se suočavate i pošaljite ih našem timu za podršku radi lakšeg razumijevanja i brze pomoći.";
+"issuerecordscreen.label.iagreetext" = "Slažem se i pristajem na prikupljanje potrebnih podataka. Prikaži pojedinosti";
+"issuerecordscreen.label.optiontotrim" = "Imate mogućnost oblikovanja, uređivanja i dodavanja bilješki snimljenom videozapisu.";
+"issuerecordscreen.label.startrecording" = "Pokreni bilježenje";
+"issuerecordscreen.label.endrecording" = "Kraj snimanja";
+"issuerecordscreen.label.recordinginprogress" = "Snimanje u tijeku!";
+"issuerecordscreen.label.quicktipstext" = "Kratki savjeti";
+"issuerecordscreen.label.quicktips1" = "Snimku zaslona možete snimati maksimalno 5 minuta.";
+"issuerecordscreen.label.quicktips2" = "Snimljeni videozapis možete oblikovati, urediti i dodati mu bilješke.";
+"issuerecordscreen.label.quicktips3" = "Ne zatvarajte aplikaciju dok se snima zaslon.";
+"issuerecordscreen.label.quicktips4" = "Za više informacija, posjetite našu dokumentaciju za pomoć";
+
+// Data Consent Screen
+"dataconsentscreen.label.consenttitle" = "Sljedeći podaci prikupljaju se uz vaš pristanak:";
+"dataconsentscreen.label.consent1" = "Vaša IP adresa i zapisnici konzole koji se generiraju tijekom snimanja";
+"dataconsentscreen.label.consent2" = "Detalji vašeg okruženja, kao što su naziv uređaja, verzija operativnog sustava, itd.";
+"dataconsentscreen.label.consent3" = "Mjerni podaci o performansama uređaja (kao što su memorija, vrijeme mrežne veze, itd.)";
+"dataconsentscreen.label.consent4" = "Snimka zaslona prozora uređaja";
+"dataconsentscreen.label.consent5" = "Prema zadanim postavkama, zvuk će se snimati tijekom snimanja zaslona. No, možete isključiti zvuk ili ponovno snimiti audiozapis prije njegova slanja.";
+
+// Permission
+"videoannotationscreen.alert.microphonedisabledipad" = "Pristup mikrofonu je onemogućen";
+"videoannotationscreen.alert.gotosettingtoturnonmicrophoneipad" = "Idite na Postavke i uključite mikrofon za snimanje zvuka.";
+"videoannotationscreen.alert.microphonedisablediphone" = "Pristup mikrofonu je onemogućen. Idite na Postavke i uključite mikrofon za snimanje zvuka.";
+
+// General
+"general.label.recordingintiationfailed" = "Pokretanje snimanja zaslona nije uspjelo. Pokušajte ponovno";
+"general.label.ok" = "U redu";
+"general.label.submit" = "Predaj";
+"general.label.done" = "Gotovo";
+"general.label.cancel" = "Poništi";
+"general.label.settings" = "Postavke";
+"general.label.erroroccured" = "Pojavila se greška";
+
+// Issue Submission Screen
+"issuesubmissionscreen.alert.filesizeexceeded" = "Veličina datoteke je prekoračena. Veličina datoteke ne smije prelaziti 3 MB";
+"issuesubmissionscreen.label.attachfiles" = "Priloži datoteke";
+"issuesubmissionscreen.label.newrecording" = "Novi zapis";
+"issuesubmissionscreen.label.editrecording" = "Uredi zapis";
+
+
+// Video Annotation Screen
+"videoannotationscreen.label.noaudiotrack" = "Nema audiozapisa";
+"videoannotationscreen.label.shapeborderwidth" = "Širina obruba";
+"videoannotationscreen.label.shapelineopacity" = "Prozirnost";
+"videoannotationscreen.label.shapetextsize" = "Veličina teksta";
+"videoannotationscreen.alert.elementdurationbeyondvideolength" = "Element traje dulje od videozapisa";
+"videoannotationscreen.alert.notallowed" = "Nije dozvoljeno";
+"videoannotationscreen.alert.deleteexisitingaudio" = "Izbrišite postojeći audiozapis prije snimanja novog.";
+"videoannotationscreen.alert.textlimitreached" = "Dostignuto ograničenje";
+"videoannotationscreen.alert.textdeleteexisting" = "Izbrišite dio postojećeg teksta.";
+"videoannotationscreen.alert.pausevideobeforerecordingaudio" = "Pauzirajte videozapis prije snimanja zvuka";
+"videoannotationscreen.alert.changesnotsaved" = "Vaše promjene nisu spremljene. Sigurno želite nastaviti?";
+"videoannotationscreen.alert.proceed" = "Nastavi";
+"videoannotationscreen.alert.stroketypesolid" = "Puno";
+"videoannotationscreen.alert.stroketypedashed" = "Crtkano";
+"videoannotationscreen.alert.entertext" = "Unesite tekst";
+
+"videoannotationscreen.label.trim" = "Oblikuj";
+"videoannotationscreen.label.mask" = "Maska";
+"videoannotationscreen.label.shapes" = "Oblici";
+"videoannotationscreen.label.text" = "Tekst";
+"videoannotationscreen.label.audio" = "Zvuk";
+"videoannotationscreen.label.block" = "Blokiraj";
+"videoannotationscreen.label.blur" = "Zamagljeno";
+"videoannotationscreen.label.rectangle" = "Pravokutnik";
+"videoannotationscreen.label.oval" = "Ovalni";
+"videoannotationscreen.label.arrow" = "Strelica";
+"videoannotationscreen.label.color" = "Boja";
+"videoannotationscreen.label.width" = "Širina";
+"videoannotationscreen.label.style" = "Stil";
+"videoannotationscreen.label.edit" = "Uredi";
+"videoannotationscreen.label.size" = "Veličina";
+"videoannotationscreen.label.background" = "Pozadina";
+"videoannotationscreen.label.textregular" = "Standardno";
+"videoannotationscreen.label.textbold" = "Podebljano";
+"videoannotationscreen.label.textitalics" = "Kurziv";
+"videoannotationscreen.label.textbolditalics" = "Podebljano-kurziv";
+
+// Issue Submission Form
+"issuesubmissionform.label.emaildisplay" = "Adresa e-pošte";
+"issuesubmissionform.label.emailplaceholder" = "zylker@zohomail.com";
+"issuesubmissionform.label.screenrecordingsummary" = "Sažetak snimke zaslona";
+"issuesubmissionform.label.subjectdisplayname" = "Predmet";
+"issuesubmissionform.label.subjectplaceholder" = "Unesite predmet";
+"issuesubmissionform.label.addtoexistingticket" = "Dodaj postojećem upitu";
+"issuesubmissionform.label.existingticketid" = "ID postojećeg upita";
+"issuesubmissionform.label.enterticketidtolink" = "Unesite ID upita koji želite povezati";
+"issuesubmissionform.label.issuedescription" = "Opis problema";
+"issuesubmissionform.label.issuemoredetails" = "Navedite više pojedinosti o problemu";
+"issuesubmissionform.label.submityourissue" = "Pošaljite svoj problem";
+"issuesubmissionform.alert.videouploadfailed" = "Prijenos videozapisa nije uspio. Pokušajte ponovno.";
+"issuesubmissionform.alert.thanksmessagetitle" = "Hvala što ste nas kontaktirali!";
+"issuesubmissionform.alert.thanksmessagebody" = "Vaše brige su nam prioritet, i stoga će vas naš tim za podršku uskoro kontaktirati. Ugodan dan!";
+"issuesubmissionform.alert.videoeditdetailuploadfailure" = "Nije uspio prijenos pojedinosti o uređivanju videozapisa. Pokušajte ponovno.";
+"issuesubmissionform.label.entersubject" = "Unesite predmet problema";
+"issuesubmissionform.label.enteremail" = "Unesite adresu e-pošte";
+"issuesubmissionform.label.enterexistingticketid" = "Unesite ID postojećeg upita";
+"issuesubmissionform.label.choosephoto" = "Izaberi fotografiju";
+"issuesubmissionform.label.browse" = "Pregledaj";
+"issuesubmissionform.alert.accestophotodisabledgotosetting" = "Pristup biblioteci fotografija je onemogućen. Idite na Postavke i uključite Knjižnicu fotografija za pristup fotografijama.";
+"issuesubmissionform.alert.accestophotodisabledipad" = "Pristup Biblioteci fotografija je onemogućen";
+"issuesubmissionform.alert.accestophotodisabledmessageipad" = "Idite na Postavke i uključite Biblioteku fotografija za pristup fotografijama.";
+"issuesubmissionform.alert.submitting" ="Slanje";

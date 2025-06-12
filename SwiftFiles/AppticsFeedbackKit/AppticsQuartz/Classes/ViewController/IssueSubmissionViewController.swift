@@ -13,53 +13,53 @@ import ReplayKit
 import Photos
 
 struct IssueSubmissionViewStringsProvider{
-    static let emailDisplayName = "Email Address"
-    static let emailPlaceHolder = "zylker@zohomail.com"
+    static let emailDisplayName = QuartzKitStrings.localized("issuesubmissionform.label.emaildisplay")
+    static let emailPlaceHolder = QuartzKitStrings.localized("issuesubmissionform.label.emailplaceholder")
     
-    static let videoDisplayName = "Screen Record Summary"
+    static let videoDisplayName = QuartzKitStrings.localized("issuesubmissionform.label.screenrecordingsummary")
     
-    static let subjectDisplayName = "Subject"
-    static let subjectPlaceHolder = "Enter the subject"
+    static let subjectDisplayName = QuartzKitStrings.localized("issuesubmissionform.label.subjectdisplayname")
+    static let subjectPlaceHolder = QuartzKitStrings.localized("issuesubmissionform.label.subjectplaceholder")
     
-    static let addToExisingTicket = "Add to existing ticket"
+    static let addToExisingTicket = QuartzKitStrings.localized("issuesubmissionform.label.addtoexistingticket")
     
-    static let ticketIDDisplayName = "Existing Ticket ID"
-    static let ticketIDPlaceHolder = "Enter Ticket ID to be Linked"
+    static let ticketIDDisplayName = QuartzKitStrings.localized("issuesubmissionform.label.existingticketid")
+    static let ticketIDPlaceHolder = QuartzKitStrings.localized("issuesubmissionform.label.enterticketidtolink")
     
-    static let descriptionDisplayName = "Issue Description"
-    static let descriptionPlaceHolder = "Provide more details about the issue"
+    static let descriptionDisplayName = QuartzKitStrings.localized("issuesubmissionform.label.issuedescription")
+    static let descriptionPlaceHolder = QuartzKitStrings.localized("issuesubmissionform.label.issuemoredetails")
     
-    static let fileAttachment = "Attach Files"
+    static let fileAttachment = QuartzKitStrings.localized("issuesubmissionscreen.label.attachfiles")
     
-    static let issueSubmissionVCNavTitle = "Submit Your Issue"
-    static let navBarLeftCancelButtonTitle = "Cancel"
+    static let issueSubmissionVCNavTitle = QuartzKitStrings.localized("issuesubmissionform.label.submityourissue")
+    static let navBarLeftCancelButtonTitle = QuartzKitStrings.localized("general.label.cancel")
     
-    static let errorOccurred = "Error Occured"
-    static let done = "Done"
-    static let ok = "Ok"
+    static let errorOccurred = QuartzKitStrings.localized("general.label.erroroccured")
+    static let done = QuartzKitStrings.localized("general.label.done")
+    static let ok = QuartzKitStrings.localized("general.label.ok")
     
-    static let videoUploadFailed = "Video uploading is failed. Please try again."
+    static let videoUploadFailed = QuartzKitStrings.localized("issuesubmissionform.alert.videouploadfailed")
     
-    static let successMessageTitle = "Thank you for getting in touch with us!"
-    static let successMessageBody = "Your concerns are our priority, so our support team will get in touch with you soon. Have a great day!"
+    static let successMessageTitle = QuartzKitStrings.localized("issuesubmissionform.alert.thanksmessagetitle")
+    static let successMessageBody = QuartzKitStrings.localized("issuesubmissionform.alert.thanksmessagebody")
     
-    static let editDetailsUploadFailed = "Uploading video edit details is failed. Please try again."
+    static let editDetailsUploadFailed = QuartzKitStrings.localized("issuesubmissionform.alert.videoeditdetailuploadfailure")
     
-    static let emptySubjectErrorMsg = "Please enter subject of the issue"
-    static let emptyEmailErrorMsg = "Please enter email address"
-    static let emptyTicketErrorMsg = "Please enter existing ticket id"
+    static let emptySubjectErrorMsg = QuartzKitStrings.localized("issuesubmissionform.label.entersubject")
+    static let emptyEmailErrorMsg = QuartzKitStrings.localized("issuesubmissionform.label.enteremail")
+    static let emptyTicketErrorMsg = QuartzKitStrings.localized("issuesubmissionform.label.enterexistingticketid")
     
-    static let choosePhotos = "Choose Photo"
-    static let chooseFiles = "Browse"
-    static let cancel = "Cancel"
+    static let choosePhotos = QuartzKitStrings.localized("issuesubmissionform.label.choosephoto")
+    static let chooseFiles = QuartzKitStrings.localized("issuesubmissionform.label.browse")
+    static let cancel = QuartzKitStrings.localized("general.label.cancel")
     
-    static let iPhonePhotoPermissionDeniedMessage = "Access to Photo Library is disabled. Please go to Settings and turn on Photo Library to access photos."
-    static let iPadPhotoPermissionDeniedTitle = "Access to Photo Library is disabled"
-    static let iPadPhotoPermissionDeniedMessage = "Please go to Settings and turn on Photo Library to access photos."
-    static let settingActionTitle = "Settings"
-    static let cancelActionTitle = "Cancel"
+    static let iPhonePhotoPermissionDeniedMessage = QuartzKitStrings.localized("issuesubmissionform.alert.accestophotodisabledgotosetting")
+    static let iPadPhotoPermissionDeniedTitle = QuartzKitStrings.localized("issuesubmissionform.alert.accestophotodisabledipad")
+    static let iPadPhotoPermissionDeniedMessage = QuartzKitStrings.localized("issuesubmissionform.alert.accestophotodisabledmessageipad")
+    static let settingActionTitle = QuartzKitStrings.localized("general.label.settings")
+    static let cancelActionTitle = QuartzKitStrings.localized("general.label.cancel")
     
-    static let submittingText = "Submitting"
+    static let submittingText = QuartzKitStrings.localized("issuesubmissionform.alert.submitting")
 }
 
 enum IssueSumissionCellValue{

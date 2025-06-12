@@ -17,7 +17,7 @@ class CustomInputAccessoryView: UIView {
     
     private let doneButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setTitle("Done", for: .normal)
+        button.setTitle(QuartzKitStrings.localized("general.label.done"), for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.addTarget(self, action: #selector(doneButtonTapped), for: .touchUpInside)
         return button
@@ -28,7 +28,7 @@ class CustomInputAccessoryView: UIView {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.systemFont(ofSize: 16)
-        label.text = "Enter the text"
+        label.text = QuartzKitStrings.localized("videoannotationscreen.alert.entertext")
         return label
     }()
     

@@ -86,13 +86,13 @@ enum TextStyle: Equatable, CaseIterable{
     var displayValue: String{
         switch self {
         case .regular:
-            return "Regular"
+            return QuartzKitStrings.localized("videoannotationscreen.label.textregular")
         case .bold:
-            return "Bold"
+            return QuartzKitStrings.localized("videoannotationscreen.label.textbold")
         case .italic:
-            return "Italics"
+            return QuartzKitStrings.localized("videoannotationscreen.label.textitalics")
         case .boldItalic:
-            return "Bold-Italics"
+            return QuartzKitStrings.localized("videoannotationscreen.label.textbolditalics")
         }
     }
 }

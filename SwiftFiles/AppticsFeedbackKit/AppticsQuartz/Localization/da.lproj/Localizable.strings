@@ -1,0 +1,111 @@
+// Issue Recording VC
+"issuerecordscreen.label.recordissue" = "Optag dit problem";
+"issuerecordscreen.label.close" = "Luk";
+"issuerecordscreen.label.failedtoinitiate" = "Kunne ikke starte skærmoptagelsen";
+"issuerecordscreen.label.failuremultiwindow" = "Det indhold, du forsøger at optage, er i multivinduestilstand, hvilket ikke understøttes til optagelse. Skift til fuldskærm-tilstand";
+"issuerecordscreen.label.nointerneterror" = "Internetforbindelse er påkrævet til skærmopdagelse. Opret forbindelse for at fortsætte.";
+"issuerecordscreen.label.ok" = "OK";
+"issuerecordscreen.label.recordinginfo" = "Optag hurtigt de problemer, du støder på, og send dem til vores supportteam for nem forståelse og hurtig hjælp.";
+"issuerecordscreen.label.iagreetext" = "Jeg accepterer og giver samtykke til indsamlingen af de nødvendige data. Vis oplysninger";
+"issuerecordscreen.label.optiontotrim" = "Du har mulighed for at beskære, redigere og annotere den optagede video.";
+"issuerecordscreen.label.startrecording" = "Start optagelse";
+"issuerecordscreen.label.endrecording" = "Afslut optagelse";
+"issuerecordscreen.label.recordinginprogress" = "Optagelse er i gang!";
+"issuerecordscreen.label.quicktipstext" = "Hurtige tip";
+"issuerecordscreen.label.quicktips1" = "Du kan optage din skærm i maksimalt 5 minutter.";
+"issuerecordscreen.label.quicktips2" = "Du kan beskære, redigere og annotere den optagede video.";
+"issuerecordscreen.label.quicktips3" = "Luk ikke appen, mens skærmen optages.";
+"issuerecordscreen.label.quicktips4" = "Du kan få mere at vide i vores hjælpedokumenter";
+
+// Data Consent Screen
+"dataconsentscreen.label.consenttitle" = "Følgende data indsamles efter dit samtykke:";
+"dataconsentscreen.label.consent1" = "Din IP-adresse og konsollogfiler, der genereres under optagelsen";
+"dataconsentscreen.label.consent2" = "Dine miljøoplysninger, såsom enhedsnavn, OS-version osv.";
+"dataconsentscreen.label.consent3" = "Enhedens ydeevnemålinger (såsom hukommelse, netværkshastighed osv.)";
+"dataconsentscreen.label.consent4" = "Skærmoptagelse af enhedens vindue";
+"dataconsentscreen.label.consent5" = "Som standard optages der lyden under skærmoptagelsen. Du kan dog slå lyden fra eller genindspille lydsporet, før du sender det.";
+
+// Permission
+"videoannotationscreen.alert.microphonedisabledipad" = "Adgang til mikrofon er deaktiveret";
+"videoannotationscreen.alert.gotosettingtoturnonmicrophoneipad" = "Gå til Indstillinger og tænd for mikrofon for at optage lyden.";
+"videoannotationscreen.alert.microphonedisablediphone" = "Adgang til mikrofon er deaktiveret. Gå til Indstillinger og tænd for mikrofon for at optage lyden.";
+
+// General
+"general.label.recordingintiationfailed" = "Start af skærmopdagelse mislykkedes. Prøv igen";
+"general.label.ok" = "OK";
+"general.label.submit" = "Indsend";
+"general.label.done" = "Færdig";
+"general.label.cancel" = "Annuller";
+"general.label.settings" = "Indstillinger";
+"general.label.erroroccured" = "Der opstod en fejl";
+
+// Issue Submission Screen
+"issuesubmissionscreen.alert.filesizeexceeded" = "Filstørrelsen er overskredet. Filstørrelsen bør ikke overskride 3 MB";
+"issuesubmissionscreen.label.attachfiles" = "Vedhæft filer";
+"issuesubmissionscreen.label.newrecording" = "Ny optagelse";
+"issuesubmissionscreen.label.editrecording" = "Rediger optagelse";
+
+
+// Video Annotation Screen
+"videoannotationscreen.label.noaudiotrack" = "Ingen lydspor";
+"videoannotationscreen.label.shapeborderwidth" = "Kantbredde";
+"videoannotationscreen.label.shapelineopacity" = "Uigennemsigtighed";
+"videoannotationscreen.label.shapetextsize" = "Tekststørrelse";
+"videoannotationscreen.alert.elementdurationbeyondvideolength" = "Varighed af element er ud over videolængden";
+"videoannotationscreen.alert.notallowed" = "Ikke tilladt";
+"videoannotationscreen.alert.deleteexisitingaudio" = "Slet den eksisterende lyd, før du optager en ny.";
+"videoannotationscreen.alert.textlimitreached" = "Grænse nået";
+"videoannotationscreen.alert.textdeleteexisting" = "Slet noget af den eksisterende tekst.";
+"videoannotationscreen.alert.pausevideobeforerecordingaudio" = "Sæt din video på pause, før du optager lyd";
+"videoannotationscreen.alert.changesnotsaved" = "Dine ændringer er ikke gemt. Er du sikker på, at du vil fortsætte?";
+"videoannotationscreen.alert.proceed" = "Fortsæt";
+"videoannotationscreen.alert.stroketypesolid" = "Fast";
+"videoannotationscreen.alert.stroketypedashed" = "Stiplet";
+"videoannotationscreen.alert.entertext" = "Indtast teksten";
+
+"videoannotationscreen.label.trim" = "Trim";
+"videoannotationscreen.label.mask" = "Masker";
+"videoannotationscreen.label.shapes" = "Former";
+"videoannotationscreen.label.text" = "Tekst";
+"videoannotationscreen.label.audio" = "Lyd";
+"videoannotationscreen.label.block" = "Blokér";
+"videoannotationscreen.label.blur" = "Slør";
+"videoannotationscreen.label.rectangle" = "Rektangel";
+"videoannotationscreen.label.oval" = "Oval";
+"videoannotationscreen.label.arrow" = "Pil";
+"videoannotationscreen.label.color" = "Farve";
+"videoannotationscreen.label.width" = "Bredde";
+"videoannotationscreen.label.style" = "Typografi";
+"videoannotationscreen.label.edit" = "Rediger";
+"videoannotationscreen.label.size" = "Størrelse";
+"videoannotationscreen.label.background" = "Baggrund";
+"videoannotationscreen.label.textregular" = "Almindelig";
+"videoannotationscreen.label.textbold" = "Fed";
+"videoannotationscreen.label.textitalics" = "Kursiv";
+"videoannotationscreen.label.textbolditalics" = "Fed kursiv";
+
+// Issue Submission Form
+"issuesubmissionform.label.emaildisplay" = "E-mailadresse";
+"issuesubmissionform.label.emailplaceholder" = "zylker@zohomail.com";
+"issuesubmissionform.label.screenrecordingsummary" = "Oversigt over skærmoptagelse";
+"issuesubmissionform.label.subjectdisplayname" = "Emne";
+"issuesubmissionform.label.subjectplaceholder" = "Angiv emne";
+"issuesubmissionform.label.addtoexistingticket" = "Føj til eksisterende anmodning";
+"issuesubmissionform.label.existingticketid" = "Eksisterende anmodnings-id";
+"issuesubmissionform.label.enterticketidtolink" = "Indtast anmodnings-id, der skal linkes";
+"issuesubmissionform.label.issuedescription" = "Beskrivelse af problem";
+"issuesubmissionform.label.issuemoredetails" = "Angiv flere detaljer om problemet";
+"issuesubmissionform.label.submityourissue" = "Indsend dit problem";
+"issuesubmissionform.alert.videouploadfailed" = "Videooverførsel mislykkedes. Prøv igen.";
+"issuesubmissionform.alert.thanksmessagetitle" = "Tak for at komme i kontakt med os.";
+"issuesubmissionform.alert.thanksmessagebody" = "Dine bekymringer er vores prioritet, så vores supportteam vil kontakte dig snarest. Hav en god dag!";
+"issuesubmissionform.alert.videoeditdetailuploadfailure" = "Overførsel af videooplysninger mislykkedes. Prøv igen.";
+"issuesubmissionform.label.entersubject" = "Indtast emnet for problemet";
+"issuesubmissionform.label.enteremail" = "Angiv venligst e-mailadresse";
+"issuesubmissionform.label.enterexistingticketid" = "Indtast eksisterende anmodnings-id";
+"issuesubmissionform.label.choosephoto" = "Vælg billede";
+"issuesubmissionform.label.browse" = "Gennemse";
+"issuesubmissionform.alert.accestophotodisabledgotosetting" = "Adgang til fotobibliotek er deaktiveret. Gå til Indstillinger, og aktivér Fotobibliotek for at få adgang til billeder.";
+"issuesubmissionform.alert.accestophotodisabledipad" = "Adgang til fotobibliotek er deaktiveret";
+"issuesubmissionform.alert.accestophotodisabledmessageipad" = "Gå til Indstillinger, og aktivér Fotobibliotek for at få adgang til billeder.";
+"issuesubmissionform.alert.submitting" ="Sender";

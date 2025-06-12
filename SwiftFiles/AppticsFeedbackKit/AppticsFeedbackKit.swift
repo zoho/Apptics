@@ -127,49 +127,110 @@ struct QuartzDataProvider: QuartzKitDelegate{
     var shouldRecordNetworkLogs: Bool { true }
  
     
+//    var theme: QuartzTheme? {
+//        
+//        var primaryColorLight: UIColor?
+//        var colorOnPrimaryLight: UIColor?
+//        var primaryColorDark: UIColor?
+//        var colorOnPrimaryDark: UIColor?
+//        var switchtintcolor: UIColor?
+//        
+//        
+//        
+//        
+//        
+//        if let switchtint_Color = APThemeManager.sharedFeedbackThemeManager().switchTintColor?(){
+//            switchtintcolor = switchtint_Color
+//        }else if let switchtint_Color = APThemeManager.defaultFeedbackThemeManager().switchTintColor?(){
+//            switchtintcolor = switchtint_Color
+//        }
+//        
+//        if let tintColorprimaryColorDark = APThemeManager.sharedFeedbackThemeManager().recordingprimaryColorDark?(){
+//            primaryColorDark = tintColorprimaryColorDark
+//        }else if let tintColorprimaryColorDark = APThemeManager.defaultFeedbackThemeManager().recordingprimaryColorDark?(){
+//            primaryColorDark = tintColorprimaryColorDark
+//        }
+//        
+//        if let tintColorprimaryColorLight = APThemeManager.sharedFeedbackThemeManager().recordingprimaryColorLight?(){
+//            primaryColorLight = tintColorprimaryColorLight
+//        }else if let tintColorprimaryColorLight = APThemeManager.defaultFeedbackThemeManager().recordingprimaryColorLight?(){
+//            primaryColorLight = tintColorprimaryColorLight
+//        }
+//        
+//        
+//        if let tintColorOnPrimaryDark = APThemeManager.sharedFeedbackThemeManager().recordingcolorOnPrimaryDark?(){
+//            colorOnPrimaryDark = tintColorOnPrimaryDark
+//        }else if let tintColorOnPrimaryDark = APThemeManager.defaultFeedbackThemeManager().recordingcolorOnPrimaryDark?(){
+//            colorOnPrimaryDark = tintColorOnPrimaryDark
+//        }
+//        
+//        if let tintColorOnPrimaryLight = APThemeManager.sharedFeedbackThemeManager().recordingcolorOnPrimaryLight?(){
+//            colorOnPrimaryLight = tintColorOnPrimaryLight
+//        }else if let tintColorOnPrimaryLight = APThemeManager.defaultFeedbackThemeManager().recordingcolorOnPrimaryLight?(){
+//            colorOnPrimaryLight = tintColorOnPrimaryLight
+//        }
+//        
+//        let colorSchemeLight = QuartzColorScheme(primaryThemeColor: primaryColorLight!, switchOnTintColor: switchtintcolor!, txtColorOnPrimaryColorBG: colorOnPrimaryLight!)
+//        
+//        let colorSchemeDark = QuartzColorScheme(primaryThemeColor: primaryColorDark!, switchOnTintColor: switchtintcolor!, txtColorOnPrimaryColorBG: colorOnPrimaryDark!)
+//
+//
+//        return QuartzTheme(colorScheme: colorSchemeLight, darkColorScheme: colorSchemeDark, uiMode: .systemDefault)
+//        
+//
+//
+//    }
+    
+    
     var theme: QuartzTheme? {
-        
         var primaryColorLight: UIColor?
         var colorOnPrimaryLight: UIColor?
         var primaryColorDark: UIColor?
         var colorOnPrimaryDark: UIColor?
-        
-        if let tintColorprimaryColorDark = APThemeManager.sharedFeedbackThemeManager().recordingprimaryColorDark?(){
+        var switchtintcolor: UIColor?
+
+        if let switchtint_Color = APThemeManager.sharedFeedbackThemeManager().switchTintColor?() {
+            switchtintcolor = switchtint_Color
+        } else if let switchtint_Color = APThemeManager.defaultFeedbackThemeManager().switchTintColor?() {
+            switchtintcolor = switchtint_Color
+        }
+
+        if let tintColorprimaryColorDark = APThemeManager.sharedFeedbackThemeManager().recordingprimaryColorDark?() {
             primaryColorDark = tintColorprimaryColorDark
-        }else if let tintColorprimaryColorDark = APThemeManager.defaultFeedbackThemeManager().recordingprimaryColorDark?(){
+        } else if let tintColorprimaryColorDark = APThemeManager.defaultFeedbackThemeManager().recordingprimaryColorDark?() {
             primaryColorDark = tintColorprimaryColorDark
         }
-        
-        if let tintColorprimaryColorLight = APThemeManager.sharedFeedbackThemeManager().recordingprimaryColorLight?(){
+
+        if let tintColorprimaryColorLight = APThemeManager.sharedFeedbackThemeManager().recordingprimaryColorLight?() {
             primaryColorLight = tintColorprimaryColorLight
-        }else if let tintColorprimaryColorLight = APThemeManager.defaultFeedbackThemeManager().recordingprimaryColorLight?(){
+        } else if let tintColorprimaryColorLight = APThemeManager.defaultFeedbackThemeManager().recordingprimaryColorLight?() {
             primaryColorLight = tintColorprimaryColorLight
         }
-        
-        
-        if let tintColorOnPrimaryDark = APThemeManager.sharedFeedbackThemeManager().recordingcolorOnPrimaryDark?(){
+
+        if let tintColorOnPrimaryDark = APThemeManager.sharedFeedbackThemeManager().recordingprimaryColorDarkStartLabelcolor?() {
             colorOnPrimaryDark = tintColorOnPrimaryDark
-        }else if let tintColorOnPrimaryDark = APThemeManager.defaultFeedbackThemeManager().recordingcolorOnPrimaryDark?(){
+        } else if let tintColorOnPrimaryDark = APThemeManager.defaultFeedbackThemeManager().recordingprimaryColorDarkStartLabelcolor?() {
             colorOnPrimaryDark = tintColorOnPrimaryDark
         }
-        
-        if let tintColorOnPrimaryLight = APThemeManager.sharedFeedbackThemeManager().recordingcolorOnPrimaryLight?(){
+
+        if let tintColorOnPrimaryLight = APThemeManager.sharedFeedbackThemeManager().recordingprimaryColorLightStartLabelcolor?() {
             colorOnPrimaryLight = tintColorOnPrimaryLight
-        }else if let tintColorOnPrimaryLight = APThemeManager.defaultFeedbackThemeManager().recordingcolorOnPrimaryLight?(){
+        } else if let tintColorOnPrimaryLight = APThemeManager.defaultFeedbackThemeManager().recordingprimaryColorLightStartLabelcolor?() {
             colorOnPrimaryLight = tintColorOnPrimaryLight
         }
-        
-        
-        let colorSchemeLight = QuartzColorScheme(primaryColor: primaryColorLight!, colorOnPrimary: colorOnPrimaryLight!)
-        let colorSchemeDark = QuartzColorScheme(primaryColor: primaryColorDark!, colorOnPrimary: colorOnPrimaryDark!)
+
+        let lightPrimary = primaryColorLight ?? UIColor.white
+        let darkPrimary = primaryColorDark ?? UIColor.black
+        let lightOnPrimary = colorOnPrimaryLight ?? UIColor.white
+        let darkOnPrimary = colorOnPrimaryDark ?? UIColor.black
+        let switchTintColor = switchtintcolor ?? UIColor.red
+
+        let colorSchemeLight = QuartzColorScheme(primaryThemeColor: lightPrimary, switchOnTintColor: switchTintColor, txtColorOnPrimaryColorBG: lightOnPrimary)
+        let colorSchemeDark = QuartzColorScheme(primaryThemeColor: darkPrimary, switchOnTintColor: switchTintColor, txtColorOnPrimaryColorBG: darkOnPrimary)
 
         return QuartzTheme(colorScheme: colorSchemeLight, darkColorScheme: colorSchemeDark, uiMode: .systemDefault)
-
-
     }
-    
-    
-    
+
     
     
     

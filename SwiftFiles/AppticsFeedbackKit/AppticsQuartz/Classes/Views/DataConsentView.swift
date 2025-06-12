@@ -9,14 +9,14 @@
 import UIKit
 
 struct DataConsentDataSource{
-    let titleText = "The following data will be collected upon your consent:"
+    let titleText = QuartzKitStrings.localized("dataconsentscreen.label.consenttitle")
     
     let consentTexts = [
-        "Your IP address and console logs that are generated during the recording",
-        "Your environment details suсh as device name, OS version, etc.",
-        "Device performance metrics (such as memory, network connection time, etc.)",
-        "The screen recording of the device window",
-        "By default, the audio will be recorded during the screen recording. But you can mute or re-record the audio track before submitting it."
+        QuartzKitStrings.localized("dataconsentscreen.label.consent1"),
+        QuartzKitStrings.localized("dataconsentscreen.label.consent2"),
+        QuartzKitStrings.localized("dataconsentscreen.label.consent3"),
+        QuartzKitStrings.localized("dataconsentscreen.label.consent4"),
+        QuartzKitStrings.localized("dataconsentscreen.label.consent5")
     ]
 }
 

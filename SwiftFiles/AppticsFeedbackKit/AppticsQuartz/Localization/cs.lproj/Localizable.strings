@@ -1,0 +1,111 @@
+// Issue Recording VC
+"issuerecordscreen.label.recordissue" = "Zaznamenejte svůj problém";
+"issuerecordscreen.label.close" = "Zavřít";
+"issuerecordscreen.label.failedtoinitiate" = "Nepodařilo se spustit nahrávání obrazovky";
+"issuerecordscreen.label.failuremultiwindow" = "Obsah, který se snažíte nahrát, je v režimu více oken. Tento režim není pro funkci nahrávání podporován. Přepněte na režim zobrazení na celou obrazovku";
+"issuerecordscreen.label.nointerneterror" = "Pro nahrávání obrazovky je nutné připojení k internetu. Pro pokračování se připojte.";
+"issuerecordscreen.label.ok" = "OK";
+"issuerecordscreen.label.recordinginfo" = "Rychle zaznamenejte problémy, se kterými se potýkáte, a odešlete je našemu týmu podpory, který je snadno a rychle vyřeší.";
+"issuerecordscreen.label.iagreetext" = "Souhlasím se shromažďováním požadovaných údajů. Zobrazit podrobnosti";
+"issuerecordscreen.label.optiontotrim" = "Máte možnost nahrané video stříhat, upravovat a opatřovat poznámkami.";
+"issuerecordscreen.label.startrecording" = "Spustit nahrávání";
+"issuerecordscreen.label.endrecording" = "Ukončit nahrávání";
+"issuerecordscreen.label.recordinginprogress" = "Probíhá nahrávání!";
+"issuerecordscreen.label.quicktipstext" = "Rychlé rady";
+"issuerecordscreen.label.quicktips1" = "Obrazovku můžete nahrávat maximálně 5 minut.";
+"issuerecordscreen.label.quicktips2" = "Nahrané video můžete stříhat, upravovat a opatřovat poznámkami.";
+"issuerecordscreen.label.quicktips3" = "Během nahrávání obrazovky aplikaci nezavírejte.";
+"issuerecordscreen.label.quicktips4" = "Pro další informace navštivte naši dokumentaci nápovědy";
+
+// Data Consent Screen
+"dataconsentscreen.label.consenttitle" = "Na základě vašeho souhlasu budou shromažďovány následující údaje:";
+"dataconsentscreen.label.consent1" = "Vaše IP adresa a protokoly konzoly, které se generují během nahrávání";
+"dataconsentscreen.label.consent2" = "Údaje o vašem prostředí, jako je název zařízení, verze operačního systému atd.";
+"dataconsentscreen.label.consent3" = "Metriky výkonu zařízení (například paměť, doba připojení k síti atd.)";
+"dataconsentscreen.label.consent4" = "Nahrávání obrazovky okna zařízení";
+"dataconsentscreen.label.consent5" = "Ve výchozím nastavení se během nahrávání obrazovky nahrává zvuk. Ale před odesláním můžete zvukovou stopu ztlumit nebo znovu nahrát.";
+
+// Permission
+"videoannotationscreen.alert.microphonedisabledipad" = "Přístup k mikrofonu je zakázán";
+"videoannotationscreen.alert.gotosettingtoturnonmicrophoneipad" = "Pro nahrávání zvuku přejděte do Nastavení a zapněte mikrofon.";
+"videoannotationscreen.alert.microphonedisablediphone" = "Přístup k mikrofonu je zakázán. Pro nahrávání zvuku přejděte do Nastavení a zapněte mikrofon.";
+
+// General
+"general.label.recordingintiationfailed" = "Iniciace nahrávání obrazovky se nezdařila. Zkuste to prosím znovu";
+"general.label.ok" = "OK";
+"general.label.submit" = "Odeslat";
+"general.label.done" = "Hotovo";
+"general.label.cancel" = "Zrušit";
+"general.label.settings" = "Nastavení";
+"general.label.erroroccured" = "Došlo k chybě";
+
+// Issue Submission Screen
+"issuesubmissionscreen.alert.filesizeexceeded" = "Velikost souboru byla překročena. Soubor nesmí přesáhnout velikost 3 MB";
+"issuesubmissionscreen.label.attachfiles" = "Připojit soubory";
+"issuesubmissionscreen.label.newrecording" = "Nový záznam";
+"issuesubmissionscreen.label.editrecording" = "Upravit záznam";
+
+
+// Video Annotation Screen
+"videoannotationscreen.label.noaudiotrack" = "Žádná zvuková stopa";
+"videoannotationscreen.label.shapeborderwidth" = "Šířka ohraničení";
+"videoannotationscreen.label.shapelineopacity" = "Neprůhlednost";
+"videoannotationscreen.label.shapetextsize" = "Velikost textu";
+"videoannotationscreen.alert.elementdurationbeyondvideolength" = "Délka prvku přesahuje délku videa";
+"videoannotationscreen.alert.notallowed" = "Nepovoleno";
+"videoannotationscreen.alert.deleteexisitingaudio" = "Chcete-li provést nový záznam zvuku, odstraňte existující záznam.";
+"videoannotationscreen.alert.textlimitreached" = "Byl dosažen limit";
+"videoannotationscreen.alert.textdeleteexisting" = "Vymažte prosím část stávajícího textu.";
+"videoannotationscreen.alert.pausevideobeforerecordingaudio" = "Před nahráváním zvuku pozastavte video";
+"videoannotationscreen.alert.changesnotsaved" = "Vaše změny nebyly uloženy. Opravdu chcete pokračovat?";
+"videoannotationscreen.alert.proceed" = "Pokračovat";
+"videoannotationscreen.alert.stroketypesolid" = "Plná";
+"videoannotationscreen.alert.stroketypedashed" = "Přerušovaná";
+"videoannotationscreen.alert.entertext" = "Zadejte text";
+
+"videoannotationscreen.label.trim" = "Oříznout";
+"videoannotationscreen.label.mask" = "Maskovat";
+"videoannotationscreen.label.shapes" = "Tvary";
+"videoannotationscreen.label.text" = "Text";
+"videoannotationscreen.label.audio" = "Zvuk";
+"videoannotationscreen.label.block" = "Blokovat";
+"videoannotationscreen.label.blur" = "Rozmazání";
+"videoannotationscreen.label.rectangle" = "Obdélník";
+"videoannotationscreen.label.oval" = "Ovál";
+"videoannotationscreen.label.arrow" = "Šipka";
+"videoannotationscreen.label.color" = "Barva";
+"videoannotationscreen.label.width" = "Šířka";
+"videoannotationscreen.label.style" = "Styl";
+"videoannotationscreen.label.edit" = "Upravit";
+"videoannotationscreen.label.size" = "Velikost";
+"videoannotationscreen.label.background" = "Pozadí";
+"videoannotationscreen.label.textregular" = "Běžné";
+"videoannotationscreen.label.textbold" = "Tučné písmo";
+"videoannotationscreen.label.textitalics" = "Kurzíva";
+"videoannotationscreen.label.textbolditalics" = "Tučná kurzíva";
+
+// Issue Submission Form
+"issuesubmissionform.label.emaildisplay" = "E-mailová adresa";
+"issuesubmissionform.label.emailplaceholder" = "zylker@zohomail.com";
+"issuesubmissionform.label.screenrecordingsummary" = "Přehled nahrávání obrazovky";
+"issuesubmissionform.label.subjectdisplayname" = "Předmět";
+"issuesubmissionform.label.subjectplaceholder" = "Zadejte předmět";
+"issuesubmissionform.label.addtoexistingticket" = "Přidat k existujícím lístkům";
+"issuesubmissionform.label.existingticketid" = "Existující ID lístku";
+"issuesubmissionform.label.enterticketidtolink" = "Zadejte ID lístku, který má být propojen";
+"issuesubmissionform.label.issuedescription" = "Popis problému";
+"issuesubmissionform.label.issuemoredetails" = "Uveďte více podrobností o problému";
+"issuesubmissionform.label.submityourissue" = "Odešlete svůj problém";
+"issuesubmissionform.alert.videouploadfailed" = "Nahrávání videa se nezdařilo. Zkuste to později znovu.";
+"issuesubmissionform.alert.thanksmessagetitle" = "Děkujeme, že jste nás kontaktovali!";
+"issuesubmissionform.alert.thanksmessagebody" = "Vaše obavy bereme vážně, proto se s vámi v nejbližší době spojí náš tým podpory. Přejeme vám krásný den!";
+"issuesubmissionform.alert.videoeditdetailuploadfailure" = "Nahrávání detailů střihu videa se nezdařilo. Zkuste to později znovu.";
+"issuesubmissionform.label.entersubject" = "Zadejte prosím předmět problému";
+"issuesubmissionform.label.enteremail" = "Zadejte prosím e-mailovou adresu";
+"issuesubmissionform.label.enterexistingticketid" = "Prosím, zadejte existující ID lístku";
+"issuesubmissionform.label.choosephoto" = "Vybrat fotografii";
+"issuesubmissionform.label.browse" = "Procházet";
+"issuesubmissionform.alert.accestophotodisabledgotosetting" = "Přístup ke knihovně fotografií byl zakázán. Pro přístup k fotografiím přejděte do Nastavení a zapněte knihovnu fotografií.";
+"issuesubmissionform.alert.accestophotodisabledipad" = "Přístup ke knihovně fotografií byl zakázán";
+"issuesubmissionform.alert.accestophotodisabledmessageipad" = "Pro přístup k fotografiím přejděte do Nastavení a zapněte knihovnu fotografií.";
+"issuesubmissionform.alert.submitting" ="Probíhá odeslání";

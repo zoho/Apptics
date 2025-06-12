@@ -18,32 +18,32 @@ struct NameAndImageNameModel{
 }
 
 struct ShapeAddViewDefaultsProvider{
-    private let cutModel = NameAndImageNameModel(name: "Trim", imgName: "cut", type: .cut)
-    private let maskModel = NameAndImageNameModel(name: "Mask", imgName: "blur", type: .mask)
-    private let shapesModel = NameAndImageNameModel(name: "Shapes", imgName: "circlerect", type: .shapes)
-    private let textModel = NameAndImageNameModel(name: "Text", imgName: "text", type: .text)
-    private let audioModel = NameAndImageNameModel(name: "Audio", imgName: "mic", type: .audio)
+    private let cutModel = NameAndImageNameModel(name: QuartzKitStrings.localized("videoannotationscreen.label.trim"), imgName: "cut", type: .cut)
+    private let maskModel = NameAndImageNameModel(name: QuartzKitStrings.localized("videoannotationscreen.label.mask"), imgName: "blur", type: .mask)
+    private let shapesModel = NameAndImageNameModel(name: QuartzKitStrings.localized("videoannotationscreen.label.shapes"), imgName: "circlerect", type: .shapes)
+    private let textModel = NameAndImageNameModel(name: QuartzKitStrings.localized("videoannotationscreen.label.text"), imgName: "text", type: .text)
+    private let audioModel = NameAndImageNameModel(name: QuartzKitStrings.localized("videoannotationscreen.label.audio"), imgName: "mic", type: .audio)
 
-    private let blockModel = NameAndImageNameModel(name: "Block", imgName: "block", type: .block)
-    private let blurModel = NameAndImageNameModel(name: "Blur", imgName: "blur", type: .blur)
+    private let blockModel = NameAndImageNameModel(name: QuartzKitStrings.localized("videoannotationscreen.label.block"), imgName: "block", type: .block)
+    private let blurModel = NameAndImageNameModel(name: QuartzKitStrings.localized("videoannotationscreen.label.blur"), imgName: "blur", type: .blur)
     
-    private let rectangleModel = NameAndImageNameModel(name: "Rectangle", imgName: "rectangle", type: .rectangle)
-    private let ovalModel = NameAndImageNameModel(name: "Oval", imgName: "ellipse", type: .oval)
-    private let arrowModel = NameAndImageNameModel(name: "Arrow", imgName: "line", type: .arrow)
+    private let rectangleModel = NameAndImageNameModel(name: QuartzKitStrings.localized("videoannotationscreen.label.rectangle"), imgName: "rectangle", type: .rectangle)
+    private let ovalModel = NameAndImageNameModel(name: QuartzKitStrings.localized("videoannotationscreen.label.oval"), imgName: "ellipse", type: .oval)
+    private let arrowModel = NameAndImageNameModel(name: QuartzKitStrings.localized("videoannotationscreen.label.arrow"), imgName: "line", type: .arrow)
     
-    private let shapeColorModel = NameAndImageNameModel(name: "Color", imgName: "", type: .shapeColor)
-    private let blockColorModel = NameAndImageNameModel(name: "Color", imgName: "", type: .blockColor)
+    private let shapeColorModel = NameAndImageNameModel(name: QuartzKitStrings.localized("videoannotationscreen.label.color"), imgName: "", type: .shapeColor)
+    private let blockColorModel = NameAndImageNameModel(name: QuartzKitStrings.localized("videoannotationscreen.label.color"), imgName: "", type: .blockColor)
     
-    private let arrowColorModel = NameAndImageNameModel(name: "Color", imgName: "", type: .arrowColor)
-    private let arrowWidthModel = NameAndImageNameModel(name: "Width", imgName: "borderwidth", type: .arrowWidth)
+    private let arrowColorModel = NameAndImageNameModel(name: QuartzKitStrings.localized("videoannotationscreen.label.color"), imgName: "", type: .arrowColor)
+    private let arrowWidthModel = NameAndImageNameModel(name: QuartzKitStrings.localized("videoannotationscreen.label.width"), imgName: "borderwidth", type: .arrowWidth)
     
-    private let borderStyleModel = NameAndImageNameModel(name: "Style", imgName: "borderstyle", type: .borderStyle)
-    private let borderWidthModel = NameAndImageNameModel(name: "Width", imgName: "borderwidth", type: .borderWidth)
+    private let borderStyleModel = NameAndImageNameModel(name: QuartzKitStrings.localized("videoannotationscreen.label.style"), imgName: "borderstyle", type: .borderStyle)
+    private let borderWidthModel = NameAndImageNameModel(name: QuartzKitStrings.localized("videoannotationscreen.label.width"), imgName: "borderwidth", type: .borderWidth)
     
-    private let editTextModel = NameAndImageNameModel(name: "Edit", imgName: "pencil", type: .textEdit)
-    private let textSizeModel = NameAndImageNameModel(name: "Size", imgName: "textsize", type: .textSize)
-    private let textStyleModel = NameAndImageNameModel(name: "Style", imgName: "textstyle", type: .textStyle)
-    private let textBackgroundModel = NameAndImageNameModel(name: "Background", imgName: "text_background", type: .textBG)
+    private let editTextModel = NameAndImageNameModel(name: QuartzKitStrings.localized("videoannotationscreen.label.edit"), imgName: "pencil", type: .textEdit)
+    private let textSizeModel = NameAndImageNameModel(name: QuartzKitStrings.localized("videoannotationscreen.label.size"), imgName: "textsize", type: .textSize)
+    private let textStyleModel = NameAndImageNameModel(name: QuartzKitStrings.localized("videoannotationscreen.label.style"), imgName: "textstyle", type: .textStyle)
+    private let textBackgroundModel = NameAndImageNameModel(name: QuartzKitStrings.localized("videoannotationscreen.label.background"), imgName: "text_background", type: .textBG)
     
     func getListOfModelsToDisplayInShapeAdditionView() -> [NameAndImageNameModel]{
         return [cutModel,maskModel,shapesModel,textModel,audioModel]

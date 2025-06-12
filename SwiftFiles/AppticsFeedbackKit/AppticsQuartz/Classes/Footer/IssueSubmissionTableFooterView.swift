@@ -26,7 +26,7 @@ class IssueSubmissionTableFooterView: UITableViewHeaderFooterView{
         let submitButton = UIButton()
         submitButton.translatesAutoresizingMaskIntoConstraints = false
         submitButton.addTarget(self, action: #selector(submitTapped), for: .touchUpInside)
-        submitButton.setTitle("Submit", for: .normal)
+        submitButton.setTitle(QuartzKitStrings.localized("general.label.submit"), for: .normal)
         submitButton.backgroundColor = QuartzKit.shared.primaryColor ?? .systemBlue
         submitButton.setTitleColor(QuartzKit.shared.colorOnPrimaryColor ?? UIColor.label, for: .normal)
         submitButton.layer.cornerRadius = 5

@@ -1,0 +1,111 @@
+// Issue Recording VC
+"issuerecordscreen.label.recordissue" = "നിങ്ങളുടെ പ്രശ്‌നം റെക്കോർഡ് ചെയ്യുക";
+"issuerecordscreen.label.close" = "അടയ്ക്കുക";
+"issuerecordscreen.label.failedtoinitiate" = "സ്ക്രീൻ റെക്കോർഡിംഗ് ആരംഭിക്കുന്നതിൽ പരാജയപ്പെട്ടു";
+"issuerecordscreen.label.failuremultiwindow" = "നിങ്ങൾ റെക്കോർഡ് ചെയ്യാൻ ശ്രമിക്കുന്ന ഉള്ളടക്കം മൾട്ടി-വിൻഡോ മോഡിലാണ്, ഇത് റെക്കോർഡിംഗിനെ പിന്തുണയ്ക്കുന്നില്ല. പൂർണ്ണ സ്‌ക്രീൻ മോഡിലേക്ക് മാറുക";
+"issuerecordscreen.label.nointerneterror" = "സ്ക്രീൻ റെക്കോർഡിംഗിന് ഇന്റർനെറ്റ് കണക്ഷൻ ആവശ്യമാണ്. തുടരാൻ കണക്റ്റ് ചെയ്യുക.";
+"issuerecordscreen.label.ok" = "ശരി";
+"issuerecordscreen.label.recordinginfo" = "നിങ്ങൾ നേരിടുന്ന പ്രശ്നങ്ങൾ വേഗത്തിൽ രേഖപ്പെടുത്തിയ ശേഷം എളുപ്പത്തിൽ മനസ്സിലാക്കുന്നതിനും വേഗത്തിലുള്ള സഹായത്തിനുമായി ഞങ്ങളുടെ പിന്തുണാ ടീമിന് അയയ്ക്കുക.";
+"issuerecordscreen.label.iagreetext" = "ആവശ്യമായ ഡാറ്റ ശേഖരിക്കുന്നതിന് ഞാൻ അംഗീകരിക്കുകയും സമ്മതിക്കുകയും ചെയ്യുന്നു. വിശദാംശങ്ങൾ കാണുക";
+"issuerecordscreen.label.optiontotrim" = "റെക്കോർഡ് ചെയ്ത വീഡിയോ ട്രിം ചെയ്യാനും എഡിറ്റ് ചെയ്യാനും വ്യാഖ്യാനിക്കാനും നിങ്ങൾക്ക് ഒരു ഓപ്ഷൻ ഉണ്ട്.";
+"issuerecordscreen.label.startrecording" = "റെക്കോർഡിംഗ് ആരംഭിക്കുക";
+"issuerecordscreen.label.endrecording" = "റെക്കോർഡിംഗ് അവസാനിപ്പിക്കുക";
+"issuerecordscreen.label.recordinginprogress" = "റെക്കോർഡിംഗ് പുരോഗമിക്കുന്നു!";
+"issuerecordscreen.label.quicktipstext" = "ദ്രുത നുറുങ്ങുകൾ";
+"issuerecordscreen.label.quicktips1" = "നിങ്ങളുടെ സ്ക്രീൻ പരമാവധി 5 മിനിറ്റ് വരെ റെക്കോർഡ് ചെയ്യാം.";
+"issuerecordscreen.label.quicktips2" = "റെക്കോർഡ് ചെയ്ത വീഡിയോ ട്രിം ചെയ്യാനും എഡിറ്റ് ചെയ്യാനും വ്യാഖ്യാനിക്കാനും നിങ്ങൾക്ക് കഴിയും.";
+"issuerecordscreen.label.quicktips3" = "സ്ക്രീൻ റെക്കോർഡ് ചെയ്യുമ്പോൾ ആപ്പ് അടയ്ക്കരുത്.";
+"issuerecordscreen.label.quicktips4" = "കൂടുതലറിയാൻ, ഞങ്ങളുടെ സഹായ ഡോക്യുമെന്റേഷൻ സന്ദർശിക്കുക.";
+
+// Data Consent Screen
+"dataconsentscreen.label.consenttitle" = "നിങ്ങളുടെ സമ്മതപ്രകാരം ഇനിപ്പറയുന്ന ഡാറ്റ ശേഖരിക്കും:";
+"dataconsentscreen.label.consent1" = "റെക്കോർഡിംഗ് സമയത്ത് സൃഷ്ടിക്കപ്പെടുന്ന നിങ്ങളുടെ IP വിലാസവും കൺസോൾ ലോഗുകളും";
+"dataconsentscreen.label.consent2" = "ഉപകരണ നാമം, OS പതിപ്പ് തുടങ്ങിയ നിങ്ങളുടെ പരിസ്ഥിതി വിശദാംശങ്ങൾ";
+"dataconsentscreen.label.consent3" = "ഉപകരണ പ്രകടന മെട്രിക്കുകൾ (മെമ്മറി, നെറ്റ്‌വർക്ക് കണക്ഷൻ സമയം മുതലായവ)";
+"dataconsentscreen.label.consent4" = "ഉപകരണ വിൻഡോയുടെ സ്‌ക്രീൻ റെക്കോർഡിംഗ്";
+"dataconsentscreen.label.consent5" = "ഡിഫോൾട്ടായി, സ്‌ക്രീൻ റെക്കോർഡിംഗ് സമയത്ത് ഓഡിയോ റെക്കോർഡ് ചെയ്യപ്പെടും. എന്നാൽ സമർപ്പിക്കുന്നതിന് മുമ്പ് നിങ്ങൾക്ക് ഓഡിയോ ട്രാക്ക് നിശബ്ദമാക്കാനോ വീണ്ടും റെക്കോർഡ് ചെയ്യാനോ കഴിയും.";
+
+// Permission
+"videoannotationscreen.alert.microphonedisabledipad" = "മൈക്രോഫോണിലേക്കുള്ള ആക്‌സസ് പ്രവർത്തനരഹിതമാക്കി.";
+"videoannotationscreen.alert.gotosettingtoturnonmicrophoneipad" = "ഓഡിയോ റെക്കോർഡ് ചെയ്യാൻ ക്രമീകരണത്തിലേക്ക് പോയി മൈക്രോഫോൺ ഓണാക്കുക.";
+"videoannotationscreen.alert.microphonedisablediphone" = "മൈക്രോഫോണിലേക്കുള്ള ആക്‌സസ് പ്രവർത്തനരഹിതമാക്കി. ഓഡിയോ റെക്കോർഡ് ചെയ്യാൻ ക്രമീകരണത്തിലേക്ക് പോയി മൈക്രോഫോൺ ഓണാക്കുക.";
+
+// General
+"general.label.recordingintiationfailed" = "സ്ക്രീൻ റെക്കോർഡിംഗ് ആരംഭിക്കുന്നതിൽ പരാജയപ്പെട്ടു. വീണ്ടും ശ്രമിക്കുക";
+"general.label.ok" = "ശരി";
+"general.label.submit" = "സമർപ്പിക്കുക";
+"general.label.done" = "ചെയ്തു";
+"general.label.cancel" = "റദ്ദാക്കുക";
+"general.label.settings" = "ക്രമീകരണം";
+"general.label.erroroccured" = "പിശക് സംഭവിച്ചു";
+
+// Issue Submission Screen
+"issuesubmissionscreen.alert.filesizeexceeded" = "ഫയൽ വലുപ്പം കവിഞ്ഞു. ഫയൽ വലുപ്പം 3 MB-യിൽ കൂടരുത്";
+"issuesubmissionscreen.label.attachfiles" = "ഫയലുകൾ അറ്റാച്ച് ചെയ്യുക";
+"issuesubmissionscreen.label.newrecording" = "പുതിയ റെക്കോർഡിംഗ്";
+"issuesubmissionscreen.label.editrecording" = "റെക്കോർഡിംഗ് എഡിറ്റ് ചെയ്യുക";
+
+
+// Video Annotation Screen
+"videoannotationscreen.label.noaudiotrack" = "ഓഡിയോ ട്രാക്ക് ഇല്ല";
+"videoannotationscreen.label.shapeborderwidth" = "ബോർഡർ വീതി";
+"videoannotationscreen.label.shapelineopacity" = "അതാര്യത";
+"videoannotationscreen.label.shapetextsize" = "ടെക്സ്റ്റ് വലുപ്പം";
+"videoannotationscreen.alert.elementdurationbeyondvideolength" = "എലമെന്റ് ദൈർഘ്യം വീഡിയോ ദൈർഘ്യത്തിനപ്പുറമാണ്";
+"videoannotationscreen.alert.notallowed" = "അനുവദനീയമല്ല";
+"videoannotationscreen.alert.deleteexisitingaudio" = "പുതിയത് റെക്കോർഡ് ചെയ്യുന്നതിന് മുമ്പ് നിലവിലുള്ള ഓഡിയോ ഇല്ലാതാക്കുക.";
+"videoannotationscreen.alert.textlimitreached" = "പരിധി എത്തി";
+"videoannotationscreen.alert.textdeleteexisting" = "നിലവിലുള്ള ചില വാചകങ്ങൾ ഇല്ലാതാക്കുക.";
+"videoannotationscreen.alert.pausevideobeforerecordingaudio" = "ഓഡിയോ റെക്കോർഡ് ചെയ്യുന്നതിന് മുമ്പ് നിങ്ങളുടെ വീഡിയോ താൽക്കാലികമായി നിർത്തുക.";
+"videoannotationscreen.alert.changesnotsaved" = "നിങ്ങളുടെ മാറ്റങ്ങൾ സംരക്ഷിച്ചിട്ടില്ല. നിങ്ങൾക്ക് തുടരണമെന്ന് തീർച്ചയാണോ?";
+"videoannotationscreen.alert.proceed" = "തുടരുക";
+"videoannotationscreen.alert.stroketypesolid" = "സോളിഡ്";
+"videoannotationscreen.alert.stroketypedashed" = "വരയിട്ടത്";
+"videoannotationscreen.alert.entertext" = "വാചകം എന്റർ ചെയ്യുക";
+
+"videoannotationscreen.label.trim" = "ട്രിം ചെയ്യുക";
+"videoannotationscreen.label.mask" = "മാസ്ക്";
+"videoannotationscreen.label.shapes" = "ആകൃതികൾ";
+"videoannotationscreen.label.text" = "വാചകം";
+"videoannotationscreen.label.audio" = "ഓഡിയോ";
+"videoannotationscreen.label.block" = "തടയുക";
+"videoannotationscreen.label.blur" = "ബ്ലർ";
+"videoannotationscreen.label.rectangle" = "ദീർഘചതുരം";
+"videoannotationscreen.label.oval" = "ഗോളം";
+"videoannotationscreen.label.arrow" = "അമ്പ്";
+"videoannotationscreen.label.color" = "നിറം";
+"videoannotationscreen.label.width" = "വീതി";
+"videoannotationscreen.label.style" = "ശൈലി";
+"videoannotationscreen.label.edit" = "എഡിറ്റ് ചെയ്യുക";
+"videoannotationscreen.label.size" = "വലുപ്പം";
+"videoannotationscreen.label.background" = "പശ്ചാത്തലം";
+"videoannotationscreen.label.textregular" = "പതിവ്";
+"videoannotationscreen.label.textbold" = "കട്ടിയുള്ളത്";
+"videoannotationscreen.label.textitalics" = "ചെരിച്ചെഴുത്ത്";
+"videoannotationscreen.label.textbolditalics" = "കട്ടിയുള്ള-ചെരിച്ചെഴുത്ത്";
+
+// Issue Submission Form
+"issuesubmissionform.label.emaildisplay" = "ഇമെയിൽ വിലാസം";
+"issuesubmissionform.label.emailplaceholder" = "zylker@zohomail.com";
+"issuesubmissionform.label.screenrecordingsummary" = "സ്‌ക്രീൻ റെക്കോർഡ് സംഗ്രഹം";
+"issuesubmissionform.label.subjectdisplayname" = "വിഷയം";
+"issuesubmissionform.label.subjectplaceholder" = "വിഷയം നൽകുക";
+"issuesubmissionform.label.addtoexistingticket" = "നിലവിലുള്ള ടിക്കറ്റിലേക്ക് ചേർക്കുക";
+"issuesubmissionform.label.existingticketid" = "നിലവിലുള്ള ടിക്കറ്റ് ഐഡി";
+"issuesubmissionform.label.enterticketidtolink" = "ലിങ്ക് ചെയ്യാൻ ടിക്കറ്റ് ഐഡി നൽകുക.";
+"issuesubmissionform.label.issuedescription" = "പ്രശ്ന വിവരണം";
+"issuesubmissionform.label.issuemoredetails" = "പ്രശ്നത്തെക്കുറിച്ച് കൂടുതൽ വിശദാംശങ്ങൾ നൽകുക";
+"issuesubmissionform.label.submityourissue" = "നിങ്ങളുടെ പ്രശ്നം സമർപ്പിക്കുക";
+"issuesubmissionform.alert.videouploadfailed" = "വീഡിയോ അപ്‌ലോഡ് ചെയ്യുന്നതിൽ പരാജയപ്പെട്ടു. വീണ്ടും ശ്രമിക്കുക.";
+"issuesubmissionform.alert.thanksmessagetitle" = "ഞങ്ങളുമായി ബന്ധപ്പെട്ടതിന് നന്ദി!";
+"issuesubmissionform.alert.thanksmessagebody" = "നിങ്ങളുടെ ആശങ്കകളാണ് ഞങ്ങളുടെ മുൻഗണന, അതിനാൽ ഞങ്ങളുടെ പിന്തുണാ ടീം ഉടൻ തന്നെ നിങ്ങളെ ബന്ധപ്പെടും. നല്ലൊരു ദിവസം ആശംസിക്കുന്നു!";
+"issuesubmissionform.alert.videoeditdetailuploadfailure" = "വീഡിയോ എഡിറ്റ് വിശദാംശങ്ങൾ അപ്‌ലോഡ് ചെയ്യുന്നതിൽ പരാജയപ്പെട്ടു. വീണ്ടും ശ്രമിക്കുക.";
+"issuesubmissionform.label.entersubject" = "പ്രശ്നത്തിന്റെ വിഷയം നൽകുക.";
+"issuesubmissionform.label.enteremail" = "ഇമെയിൽ വിലാസം നൽകുക";
+"issuesubmissionform.label.enterexistingticketid" = "നിലവിലുള്ള ടിക്കറ്റ് ഐഡി നൽകുക.";
+"issuesubmissionform.label.choosephoto" = "ഫോട്ടോ തിരഞ്ഞെടുക്കുക";
+"issuesubmissionform.label.browse" = "ബ്രൗസ് ചെയ്യുക";
+"issuesubmissionform.alert.accestophotodisabledgotosetting" = "ഫോട്ടോ ലൈബ്രറിയിലേക്കുള്ള ആക്‌സസ് പ്രവർത്തനരഹിതമാക്കിയിരിക്കുന്നു. ഫോട്ടോകൾ ആക്‌സസ് ചെയ്യാൻ ക്രമീകരണത്തിലേക്ക് പോയി ഫോട്ടോ ലൈബ്രറി ഓണാക്കുക.";
+"issuesubmissionform.alert.accestophotodisabledipad" = "ഫോട്ടോ ലൈബ്രറിയിലേക്കുള്ള ആക്‌സസ് പ്രവർത്തനരഹിതമാക്കി.";
+"issuesubmissionform.alert.accestophotodisabledmessageipad" = "ഫോട്ടോകൾ ആക്‌സസ് ചെയ്യാൻ ക്രമീകരണത്തിലേക്ക് പോയി ഫോട്ടോ ലൈബ്രറി ഓണാക്കുക.";
+"issuesubmissionform.alert.submitting" = "സമർപ്പിക്കുന്നു";

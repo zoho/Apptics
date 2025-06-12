@@ -1,0 +1,111 @@
+// Issue Recording VC
+"issuerecordscreen.label.recordissue" = "Запишіть свою проблему";
+"issuerecordscreen.label.close" = "Закрити";
+"issuerecordscreen.label.failedtoinitiate" = "Не вдалося почати запис екрана";
+"issuerecordscreen.label.failuremultiwindow" = "Вміст, який ви намагаєтеся записати, перебуває в багатовіконному режимі, який не підтримується для запису. Перейдіть у повноекранний режим";
+"issuerecordscreen.label.nointerneterror" = "Для запису екрана необхідне підключення до Інтернету. Підключіться, щоб продовжити.";
+"issuerecordscreen.label.ok" = "OK";
+"issuerecordscreen.label.recordinginfo" = "Швидко записуйте проблеми, що виникають, і надсилайте їх у нашу службу підтримки для полегшення розуміння та швидкої допомоги.";
+"issuerecordscreen.label.iagreetext" = "Я погоджуюся і даю згоду на збір необхідних даних. Докладніше";
+"issuerecordscreen.label.optiontotrim" = "У вас є можливість обрізати, редагувати та анотувати записане відео.";
+"issuerecordscreen.label.startrecording" = "Почати запис";
+"issuerecordscreen.label.endrecording" = "Завершити запис";
+"issuerecordscreen.label.recordinginprogress" = "Виконується запис!";
+"issuerecordscreen.label.quicktipstext" = "Швидкі поради";
+"issuerecordscreen.label.quicktips1" = "Ви можете здійснювати запис екрана тривалістю не більше 5 хвилин.";
+"issuerecordscreen.label.quicktips2" = "Ви можете обрізати, редагувати та анотувати записане відео.";
+"issuerecordscreen.label.quicktips3" = "Не закривайте додаток під час запису екрана.";
+"issuerecordscreen.label.quicktips4" = "Щоб дізнатися більше, ознайомтеся з нашою довідковою документацією";
+
+// Data Consent Screen
+"dataconsentscreen.label.consenttitle" = "Наведені далі дані збиратимуться за вашою згодою:";
+"dataconsentscreen.label.consent1" = "Ваша IP-адреса та журнали консолі, які генеруються під час запису";
+"dataconsentscreen.label.consent2" = "Дані про ваше середовище, як-от ім’я пристрою, версія ОС тощо.";
+"dataconsentscreen.label.consent3" = "Показники продуктивності пристрою (наприклад, пам’ять, час підключення до мережі тощо)";
+"dataconsentscreen.label.consent4" = "Запис екрана вікна пристрою";
+"dataconsentscreen.label.consent5" = "За замовчуванням під час запису екрана записуватиметься звук. Але перед надсиланням можна вимкнути звук або перезаписати звукову доріжку.";
+
+// Permission
+"videoannotationscreen.alert.microphonedisabledipad" = "Доступ до мікрофона вимкнено";
+"videoannotationscreen.alert.gotosettingtoturnonmicrophoneipad" = "Для запису звуку зайдіть у “Налаштування” і ввімкніть мікрофон.";
+"videoannotationscreen.alert.microphonedisablediphone" = "Доступ до мікрофона вимкнено. Для запису звуку зайдіть у “Налаштування” і ввімкніть мікрофон.";
+
+// General
+"general.label.recordingintiationfailed" = "Не вдалося почати запис екрана. Спробуйте ще раз";
+"general.label.ok" = "OK";
+"general.label.submit" = "Надіслати";
+"general.label.done" = "Готово";
+"general.label.cancel" = "Скасувати";
+"general.label.settings" = "Налаштування";
+"general.label.erroroccured" = "Сталася помилка";
+
+// Issue Submission Screen
+"issuesubmissionscreen.alert.filesizeexceeded" = "Перевищено розмір файлу. Розмір файлу не має перевищувати 3 МБ";
+"issuesubmissionscreen.label.attachfiles" = "Вкласти файли";
+"issuesubmissionscreen.label.newrecording" = "Новий запис";
+"issuesubmissionscreen.label.editrecording" = "Редагувати запис";
+
+
+// Video Annotation Screen
+"videoannotationscreen.label.noaudiotrack" = "Звукова доріжка відсутня";
+"videoannotationscreen.label.shapeborderwidth" = "Ширина рамки";
+"videoannotationscreen.label.shapelineopacity" = "Прозорість";
+"videoannotationscreen.label.shapetextsize" = "Розмір тексту";
+"videoannotationscreen.alert.elementdurationbeyondvideolength" = "Тривалість елемента перевищує довжину відео";
+"videoannotationscreen.alert.notallowed" = "Не дозволено";
+"videoannotationscreen.alert.deleteexisitingaudio" = "Видаліть поточний аудіозапис перед записом нового.";
+"videoannotationscreen.alert.textlimitreached" = "Досягнуто обмеження";
+"videoannotationscreen.alert.textdeleteexisting" = "Видаліть частину наявного тексту.";
+"videoannotationscreen.alert.pausevideobeforerecordingaudio" = "Зупиніть відеозапис перед записом звуку";
+"videoannotationscreen.alert.changesnotsaved" = "Зміни не збережено. Продовжити?";
+"videoannotationscreen.alert.proceed" = "Продовжити";
+"videoannotationscreen.alert.stroketypesolid" = "Суцільна";
+"videoannotationscreen.alert.stroketypedashed" = "Пунктирна";
+"videoannotationscreen.alert.entertext" = "Введіть текст";
+
+"videoannotationscreen.label.trim" = "Обрізати";
+"videoannotationscreen.label.mask" = "Маска";
+"videoannotationscreen.label.shapes" = "Фігури";
+"videoannotationscreen.label.text" = "Текст";
+"videoannotationscreen.label.audio" = "Аудіо";
+"videoannotationscreen.label.block" = "Заблокувати";
+"videoannotationscreen.label.blur" = "Розмитий";
+"videoannotationscreen.label.rectangle" = "Прямокутник";
+"videoannotationscreen.label.oval" = "Овал";
+"videoannotationscreen.label.arrow" = "Стрілка";
+"videoannotationscreen.label.color" = "Колір";
+"videoannotationscreen.label.width" = "Ширина";
+"videoannotationscreen.label.style" = "Стиль";
+"videoannotationscreen.label.edit" = "Редагувати";
+"videoannotationscreen.label.size" = "Розмір";
+"videoannotationscreen.label.background" = "Фон";
+"videoannotationscreen.label.textregular" = "Стандартний";
+"videoannotationscreen.label.textbold" = "Жирний";
+"videoannotationscreen.label.textitalics" = "Курсив";
+"videoannotationscreen.label.textbolditalics" = "Жирний курсив";
+
+// Issue Submission Form
+"issuesubmissionform.label.emaildisplay" = "Адреса електронної пошти";
+"issuesubmissionform.label.emailplaceholder" = "zylker@zohomail.com";
+"issuesubmissionform.label.screenrecordingsummary" = "Зведення запису екрана";
+"issuesubmissionform.label.subjectdisplayname" = "Тема";
+"issuesubmissionform.label.subjectplaceholder" = "Введіть тему";
+"issuesubmissionform.label.addtoexistingticket" = "Додати до наявної заявки";
+"issuesubmissionform.label.existingticketid" = "Наявний ідентифікатор заявки";
+"issuesubmissionform.label.enterticketidtolink" = "Введіть ідентифікатор заявки для прив’язки";
+"issuesubmissionform.label.issuedescription" = "Опис проблеми";
+"issuesubmissionform.label.issuemoredetails" = "Вкажіть детальнішу інформацію про проблему";
+"issuesubmissionform.label.submityourissue" = "Надішліть свою проблему";
+"issuesubmissionform.alert.videouploadfailed" = "Не вдалося завантажити відеофайл. Спробуйте ще раз.";
+"issuesubmissionform.alert.thanksmessagetitle" = "Дякуємо, що зв’язалися з нами!";
+"issuesubmissionform.alert.thanksmessagebody" = "Ваші проблеми – наш пріоритет, тому наша служба підтримки незабаром зв’яжеться з вами. Гарного дня!";
+"issuesubmissionform.alert.videoeditdetailuploadfailure" = "Не вдалося завантажити відомості про редагування відеофайлу. Спробуйте ще раз.";
+"issuesubmissionform.label.entersubject" = "Введіть тему проблеми";
+"issuesubmissionform.label.enteremail" = "Введіть адресу електронної пошти";
+"issuesubmissionform.label.enterexistingticketid" = "Введіть наявний ідентифікатор заявки";
+"issuesubmissionform.label.choosephoto" = "Вибрати знімок";
+"issuesubmissionform.label.browse" = "Переглянути";
+"issuesubmissionform.alert.accestophotodisabledgotosetting" = "Доступ до Бібліотеки знімків вимкнено. Для доступу до знімків зайдіть у “Налаштування” і ввімкніть Бібліотеку знімків.";
+"issuesubmissionform.alert.accestophotodisabledipad" = "Доступ до Бібліотеки знімків вимкнено";
+"issuesubmissionform.alert.accestophotodisabledmessageipad" = "Для доступу до знімків зайдіть у “Налаштування” і ввімкніть Бібліотеку знімків.";
+"issuesubmissionform.alert.submitting" ="Надсилання";

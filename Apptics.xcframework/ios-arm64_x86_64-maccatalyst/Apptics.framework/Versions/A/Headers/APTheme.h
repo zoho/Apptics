@@ -79,9 +79,9 @@ typedef enum : NSInteger {
 @optional
 
 -(UIColor *_Nullable)recordingprimaryColorLight;
--(UIColor *_Nullable)recordingcolorOnPrimaryLight;
+-(UIColor *_Nullable)recordingprimaryColorLightStartLabelcolor;
 -(UIColor *_Nullable)recordingprimaryColorDark;
--(UIColor *_Nullable)recordingcolorOnPrimaryDark;
+-(UIColor *_Nullable)recordingprimaryColorDarkStartLabelcolor;
 
 -(UIColor *_Nullable)viewBGColor;
 -(UIColor *_Nullable)contentBGColor;

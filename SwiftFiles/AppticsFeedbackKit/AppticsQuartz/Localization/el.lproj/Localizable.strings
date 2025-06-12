@@ -1,0 +1,111 @@
+// Issue Recording VC
+"issuerecordscreen.label.recordissue" = "Καταγράψτε το πρόβλημά σας";
+"issuerecordscreen.label.close" = "Κλείσιμο";
+"issuerecordscreen.label.failedtoinitiate" = "Αποτυχία έναρξης της εγγραφής οθόνης";
+"issuerecordscreen.label.failuremultiwindow" = "Το περιεχόμενο που προσπαθείτε να εγγράψετε βρίσκεται σε λειτουργία πολλαπλών παραθύρων, η οποία δεν υποστηρίζεται για εγγραφή. Αλλάξτε σε λειτουργία πλήρους οθόνης";
+"issuerecordscreen.label.nointerneterror" = "Απαιτείται σύνδεση στο διαδίκτυο για εγγραφή οθόνης. Συνδεθείτε για να συνεχίσετε.";
+"issuerecordscreen.label.ok" = "ΟΚ";
+"issuerecordscreen.label.recordinginfo" = "Καταγράψτε γρήγορα τα προβλήματα που αντιμετωπίζετε και στείλτε τα στην ομάδα υποστήριξής μας για εύκολη κατανόηση και γρήγορη βοήθεια.";
+"issuerecordscreen.label.iagreetext" = "Συμφωνώ και συναινώ στη συλλογή των απαιτούμενων δεδομένων. Προβολή λεπτομερειών";
+"issuerecordscreen.label.optiontotrim" = "Έχετε την επιλογή να κάνετε περικοπή, επεξεργασία και σχολιασμό στο εγγεγραμμένο βίντεο.";
+"issuerecordscreen.label.startrecording" = "Έναρξη εγγραφής";
+"issuerecordscreen.label.endrecording" = "Τερματισμός εγγραφής";
+"issuerecordscreen.label.recordinginprogress" = "Εγγραφή σε εξέλιξη!";
+"issuerecordscreen.label.quicktipstext" = "Γρήγορες συμβουλές";
+"issuerecordscreen.label.quicktips1" = "Μπορείτε να κάνετε εγγραφή της οθόνης σας για μέγιστο χρονικό διάστημα 5 λεπτών.";
+"issuerecordscreen.label.quicktips2" = "Μπορείτε να κάνετε περικοπή, επεξεργασία και σχολιασμό στο εγγεγραμμένο βίντεο.";
+"issuerecordscreen.label.quicktips3" = "Μην κλείνετε την εφαρμογή κατά την εγγραφή της οθόνης.";
+"issuerecordscreen.label.quicktips4" = "Για να μάθετε περισσότερα, επισκεφθείτε την τεκμηρίωση βοήθειας";
+
+// Data Consent Screen
+"dataconsentscreen.label.consenttitle" = "Τα ακόλουθα δεδομένα θα συλλεχθούν με τη συναίνεσή σας:";
+"dataconsentscreen.label.consent1" = "Η διεύθυνση IP σας και τα αρχεία καταγραφής κονσόλας που δημιουργούνται κατά την εγγραφή";
+"dataconsentscreen.label.consent2" = "Λεπτομέρειες περιβάλλοντος, όπως όνομα συσκευής, έκδοση λειτουργικού συστήματος κ.λπ.";
+"dataconsentscreen.label.consent3" = "Μετρήσεις απόδοσης συσκευής (όπως μνήμη, χρόνος ταχύτητας δικτύου, κ.λπ.)";
+"dataconsentscreen.label.consent4" = "Η εγγραφή οθόνης του παραθύρου της συσκευής";
+"dataconsentscreen.label.consent5" = "Βάσει προεπιλογής, ο ήχος θα εγγραφεί κατά την εγγραφή οθόνης. Ωστόσο, μπορείτε να κάνετε σίγαση ή επανεγγραφή του ηχητικού κομματιού προτού την υποβάλετε.";
+
+// Permission
+"videoannotationscreen.alert.microphonedisabledipad" = "Η πρόσβαση στο μικρόφωνο είναι απενεργοποιημένη";
+"videoannotationscreen.alert.gotosettingtoturnonmicrophoneipad" = "Μεταβείτε στις Ρυθμίσεις και ενεργοποιήσετε το Μικρόφωνο για εγγραφή ήχου.";
+"videoannotationscreen.alert.microphonedisablediphone" = "Η πρόσβαση στο μικρόφωνο είναι απενεργοποιημένη. Μεταβείτε στις Ρυθμίσεις και ενεργοποιήσετε το Μικρόφωνο για εγγραφή ήχου.";
+
+// General
+"general.label.recordingintiationfailed" = "Η έναρξη της εγγραφής οθόνης απέτυχε. Προσπαθήστε ξανά";
+"general.label.ok" = "ΟΚ";
+"general.label.submit" = "Υποβολή";
+"general.label.done" = "Ολοκληρώθηκε";
+"general.label.cancel" = "Άκυρο";
+"general.label.settings" = "Ρυθμίσεις";
+"general.label.erroroccured" = "Προέκυψε σφάλμα";
+
+// Issue Submission Screen
+"issuesubmissionscreen.alert.filesizeexceeded" = "Έγινε γίνει υπέρβαση του μεγέθους του αρχείου. Το μέγεθος του αρχείου δεν πρέπει να υπερβαίνει τα 3 MB";
+"issuesubmissionscreen.label.attachfiles" = "Επισύναψη αρχείων";
+"issuesubmissionscreen.label.newrecording" = "Νέα εγγραφή";
+"issuesubmissionscreen.label.editrecording" = "Επεξεργασία εγγραφής";
+
+
+// Video Annotation Screen
+"videoannotationscreen.label.noaudiotrack" = "Δεν υπάρχουν κομμάτια ήχου";
+"videoannotationscreen.label.shapeborderwidth" = "Πλάτος περιγράμματος";
+"videoannotationscreen.label.shapelineopacity" = "Αδιαφάνεια";
+"videoannotationscreen.label.shapetextsize" = "Μέγεθος κειμένου";
+"videoannotationscreen.alert.elementdurationbeyondvideolength" = "Η διάρκεια του στοιχείου υπερβαίνει τη διάρκεια του βίντεο";
+"videoannotationscreen.alert.notallowed" = "Δεν επιτρέπεται";
+"videoannotationscreen.alert.deleteexisitingaudio" = "Διαγράψτε τον υφιστάμενο ήχο προτού εγγράψετε τον νέο.";
+"videoannotationscreen.alert.textlimitreached" = "Το όριο επιτεύχθηκε";
+"videoannotationscreen.alert.textdeleteexisting" = "Διαγράψτε κάποιο από το υφιστάμενο κείμενο.";
+"videoannotationscreen.alert.pausevideobeforerecordingaudio" = "Πραγματοποιήστε παύση του βίντεό σας προτού πραγματοποιήσετε εγγραφή ήχου";
+"videoannotationscreen.alert.changesnotsaved" = "Οι αλλαγές σας δεν έχουν αποθηκευτεί. Θέλετε σίγουρα να συνεχίσετε;";
+"videoannotationscreen.alert.proceed" = "Συνεχίστε";
+"videoannotationscreen.alert.stroketypesolid" = "Συμπαγές";
+"videoannotationscreen.alert.stroketypedashed" = "Με παύλα";
+"videoannotationscreen.alert.entertext" = "Εισαγωγή του κειμένου";
+
+"videoannotationscreen.label.trim" = "Περικοπή";
+"videoannotationscreen.label.mask" = "Μάσκα";
+"videoannotationscreen.label.shapes" = "Σχήματα";
+"videoannotationscreen.label.text" = "Κείμενο";
+"videoannotationscreen.label.audio" = "Ήχος";
+"videoannotationscreen.label.block" = "Μπλοκ";
+"videoannotationscreen.label.blur" = "Θάμπωμα";
+"videoannotationscreen.label.rectangle" = "Ορθογώνιο";
+"videoannotationscreen.label.oval" = "Οβάλ";
+"videoannotationscreen.label.arrow" = "Βέλος";
+"videoannotationscreen.label.color" = "Χρώμα";
+"videoannotationscreen.label.width" = "Πλάτος";
+"videoannotationscreen.label.style" = "Στυλ";
+"videoannotationscreen.label.edit" = "Επεξεργασία";
+"videoannotationscreen.label.size" = "Μέγεθος";
+"videoannotationscreen.label.background" = "Παρασκήνιο";
+"videoannotationscreen.label.textregular" = "Κανονικό";
+"videoannotationscreen.label.textbold" = "Έντονη γραφή";
+"videoannotationscreen.label.textitalics" = "Πλάγια γραφή";
+"videoannotationscreen.label.textbolditalics" = "Έντονη-πλάγια γραφή";
+
+// Issue Submission Form
+"issuesubmissionform.label.emaildisplay" = "Διεύθυνση email";
+"issuesubmissionform.label.emailplaceholder" = "zylker@zohomail.com";
+"issuesubmissionform.label.screenrecordingsummary" = "Σύνοψη εγγραφής οθόνης";
+"issuesubmissionform.label.subjectdisplayname" = "Θέμα";
+"issuesubmissionform.label.subjectplaceholder" = "Εισαγάγετε το θέμα";
+"issuesubmissionform.label.addtoexistingticket" = "Προσθήκη σε υπάρχον δελτίο υποστήριξης";
+"issuesubmissionform.label.existingticketid" = "Υπάρχον αναγνωριστικό δελτίου υποστήριξης";
+"issuesubmissionform.label.enterticketidtolink" = "Εισαγάγετε το αναγνωριστικό δελτίου υποστήριξης που θα συνδεθεί";
+"issuesubmissionform.label.issuedescription" = "Περιγραφή προβλήματος";
+"issuesubmissionform.label.issuemoredetails" = "Παρέχετε περισσότερες λεπτομέρειες σχετικά με το πρόβλημα";
+"issuesubmissionform.label.submityourissue" = "Κάντε υποβολή του προβλήματός σας";
+"issuesubmissionform.alert.videouploadfailed" = "Η μεταφόρτωση βίντεο απέτυχε. Προσπαθήστε ξανά.";
+"issuesubmissionform.alert.thanksmessagetitle" = "Σας ευχαριστούμε που επικοινωνήσατε μαζί μας!";
+"issuesubmissionform.alert.thanksmessagebody" = "Οι ανησυχίες σας αποτελούν προτεραιότητά μας, επομένως η ομάδα υποστήριξής μας θα επικοινωνήσει σύντομα μαζί σας. Να έχετε μία υπέροχη μέρα!";
+"issuesubmissionform.alert.videoeditdetailuploadfailure" = "Η μεταφόρτωση των λεπτομερειών επεξεργασίας βίντεο απέτυχε. Προσπαθήστε ξανά.";
+"issuesubmissionform.label.entersubject" = "Εισαγάγετε το θέμα του προβλήματος";
+"issuesubmissionform.label.enteremail" = "Εισαγάγετε τη διεύθυνση email";
+"issuesubmissionform.label.enterexistingticketid" = "Εισαγάγετε το αναγνωριστικό του υπάρχοντος δελτίου υποστήριξης";
+"issuesubmissionform.label.choosephoto" = "Επιλογή φωτογραφίας";
+"issuesubmissionform.label.browse" = "Περιήγηση";
+"issuesubmissionform.alert.accestophotodisabledgotosetting" = "Η πρόσβαση στη Βιβλιοθήκη φωτογραφιών είναι απενεργοποιημένη. Μεταβείτε στις Ρυθμίσεις και ενεργοποιήσετε τη Βιβλιοθήκη φωτογραφιών για πρόσβαση στις φωτογραφίες.";
+"issuesubmissionform.alert.accestophotodisabledipad" = "Η πρόσβαση στη Βιβλιοθήκη φωτογραφιών είναι απενεργοποιημένη";
+"issuesubmissionform.alert.accestophotodisabledmessageipad" = "Μεταβείτε στις Ρυθμίσεις και ενεργοποιήσετε τη Βιβλιοθήκη φωτογραφιών για πρόσβαση στις φωτογραφίες.";
+"issuesubmissionform.alert.submitting" ="Γίνεται υποβολή";

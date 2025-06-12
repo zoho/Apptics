@@ -75,7 +75,7 @@ class IssueSubmissionVideoFileTableViewCell: UITableViewCell, IssueSubmissionTab
     private lazy var newRecordingButton: UIButton = {
         let newRecordingButton = UIButton()
         newRecordingButton.translatesAutoresizingMaskIntoConstraints = false
-        newRecordingButton.setTitle("New Recording", for: .normal)
+        newRecordingButton.setTitle(QuartzKitStrings.localized("issuesubmissionscreen.label.newrecording"), for: .normal)
         newRecordingButton.setTitleColor(QuartzKit.shared.primaryColor ?? .systemBlue, for: .normal)
         newRecordingButton.titleLabel?.textAlignment = .center
         newRecordingButton.addTarget(self, action: #selector(newRecordingAction), for: .touchUpInside)
@@ -96,7 +96,7 @@ class IssueSubmissionVideoFileTableViewCell: UITableViewCell, IssueSubmissionTab
     private lazy var editRecordingButton: UIButton = {
         let editRecordingButton = UIButton()
         editRecordingButton.translatesAutoresizingMaskIntoConstraints = false
-        editRecordingButton.setTitle("Edit Recording", for: .normal)
+        editRecordingButton.setTitle(QuartzKitStrings.localized("issuesubmissionscreen.label.editrecording"), for: .normal)
         editRecordingButton.setTitleColor(QuartzKit.shared.primaryColor ?? .systemBlue, for: .normal)
         editRecordingButton.titleLabel?.textAlignment = .center
         editRecordingButton.addTarget(self, action: #selector(editRecordingAction), for: .touchUpInside)

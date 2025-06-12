@@ -10,9 +10,9 @@ import UIKit
 class IssueSubmissionFileAttachementTableViewCell: UITableViewCell, IssueSubmissionTableViewCell{
     static let resuseID = "IssueSubmissionFileAttachementTableViewCell"
     
-    private let fileSizeExceededLabelString = "File size has exceeded. The file size should not exceed more than 3 MB"
-    private let attachFilesString = "Attach Files"
-    
+    private let fileSizeExceededLabelString = QuartzKitStrings.localized("issuesubmissionscreen.alert.filesizeexceeded")
+    private let attachFilesString = QuartzKitStrings.localized("issuesubmissionscreen.label.attachfiles")
+
     private let fileSizeExceededLabelHeight: CGFloat = 30
     private let attachFileContainerHeight: CGFloat = 40
     

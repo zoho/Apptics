@@ -26,8 +26,11 @@ public extension QuartzKitDelegate {
         let primaryColorDark = UIColor(red: 70.0/255.0, green: 103.0/255.0, blue: 241.0/255.0, alpha: 1)
         let colorOnPrimaryDark = UIColor.black
         
-        let colorSchemeLight = QuartzColorScheme(primaryColor: primaryColorLight, colorOnPrimary: colorOnPrimaryLight)
-        let colorSchemeDark = QuartzColorScheme(primaryColor: primaryColorDark, colorOnPrimary: colorOnPrimaryDark)
+        let switchOnTintColorLight = UIColor.blue
+        let switchOnTintColorDark = UIColor.red
+        
+        let colorSchemeLight = QuartzColorScheme(primaryColor: primaryColorLight, switchOnTintColor: switchOnTintColorLight, colorOnPrimary: colorOnPrimaryLight)
+        let colorSchemeDark = QuartzColorScheme(primaryColor: primaryColorDark, switchOnTintColor: switchOnTintColorDark, colorOnPrimary: colorOnPrimaryDark)
         
         return QuartzTheme(colorScheme: colorSchemeLight, darkColorScheme: colorSchemeDark, uiMode: .systemDefault)
          */
@@ -59,12 +62,17 @@ public class QuartzKit{
     
     public var primaryColor : UIColor? {
         guard let theme = delegate.theme else {return nil}
-        return UIColor.dynamicColor(light: theme.colorScheme.primaryColor, dark: theme.darkColorScheme.primaryColor)
+        return UIColor.dynamicColor(light: theme.colorScheme.primaryThemeColor, dark: theme.darkColorScheme.primaryThemeColor)
+    }
+    
+    public var switchOnTintColor : UIColor? {
+        guard let theme = delegate.theme else {return nil}
+        return UIColor.dynamicColor(light: theme.colorScheme.switchOnTintColor, dark: theme.darkColorScheme.switchOnTintColor)
     }
     
     public var colorOnPrimaryColor : UIColor? {
         guard let theme = delegate.theme else {return nil}
-        return UIColor.dynamicColor(light: theme.colorScheme.colorOnPrimary, dark: theme.darkColorScheme.colorOnPrimary)
+        return UIColor.dynamicColor(light: theme.colorScheme.txtColorOnPrimaryColorBG, dark: theme.darkColorScheme.txtColorOnPrimaryColorBG)
     }
     
     public var primaryLightColor : UIColor? {
@@ -185,10 +193,11 @@ public struct QuartzTheme{
 }
 
 public struct QuartzColorScheme{
-    let primaryColor: UIColor
-    let colorOnPrimary: UIColor
+    let primaryThemeColor: UIColor
+    let switchOnTintColor: UIColor
+    let txtColorOnPrimaryColorBG: UIColor
     var primaryLightColor: UIColor{
-        primaryColor.withAlphaComponent(0.2)
+        primaryThemeColor.withAlphaComponent(0.2)
     }
 }
 

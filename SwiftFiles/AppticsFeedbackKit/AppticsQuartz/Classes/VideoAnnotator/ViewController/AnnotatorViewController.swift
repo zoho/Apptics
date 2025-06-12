@@ -229,8 +229,8 @@ extension AnnotatorViewController: FullScreenExecutingProtocol{
 extension AnnotatorViewController: DataLossProtocol{
     
     func showElementDurationAlert() {
-        let elementDurationAlert = UIAlertController(title: nil, message: "Element duration is beyond the video length", preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "Ok", style: .default, handler: { (action) in
+        let elementDurationAlert = UIAlertController(title: nil, message: QuartzKitStrings.localized("videoannotationscreen.alert.elementdurationbeyondvideolength"), preferredStyle: .alert)
+        let okAction = UIAlertAction(title: QuartzKitStrings.localized("general.label.ok"), style: .default, handler: { (action) in
         })
         elementDurationAlert.addAction(okAction)
         
@@ -240,8 +240,8 @@ extension AnnotatorViewController: DataLossProtocol{
     }
     
     func showRemoveAudioAlert(){
-        let dataLossAlert = UIAlertController(title: "Not Allowed", message: "Please delete the existing audio before recording the new one.", preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "Ok", style: .default, handler: { (action) in
+        let dataLossAlert = UIAlertController(title: QuartzKitStrings.localized("videoannotationscreen.alert.notallowed"), message: QuartzKitStrings.localized("videoannotationscreen.alert.deleteexisitingaudio"), preferredStyle: .alert)
+        let okAction = UIAlertAction(title: QuartzKitStrings.localized("general.label.ok"), style: .default, handler: { (action) in
 //            self.viewModel.dimissAnnotationVC()
         })
         dataLossAlert.addAction(okAction)
@@ -252,8 +252,8 @@ extension AnnotatorViewController: DataLossProtocol{
     }
     
     func showTxtLimitReachedAlert(){
-        let txtLimitReachedAlert = UIAlertController(title: "Limit Reached", message: "Please delete some of the existing text.", preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "Ok", style: .default, handler: { _ in})
+        let txtLimitReachedAlert = UIAlertController(title: QuartzKitStrings.localized("videoannotationscreen.alert.textlimitreached"), message: QuartzKitStrings.localized("videoannotationscreen.alert.textdeleteexisting") , preferredStyle: .alert)
+        let okAction = UIAlertAction(title: QuartzKitStrings.localized("general.label.ok"), style: .default, handler: { _ in})
         txtLimitReachedAlert.addAction(okAction)
         
         DispatchQueue.main.async {
@@ -262,8 +262,8 @@ extension AnnotatorViewController: DataLossProtocol{
     }
 
     func showPauseVideoBeforeRecordingAudioAlert(){
-        let dataLossAlert = UIAlertController(title: "Not Allowed", message: "Please pause your video before recording audio", preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "Ok", style: .default, handler: { (action) in
+        let dataLossAlert = UIAlertController(title: QuartzKitStrings.localized("videoannotationscreen.alert.notallowed"), message: QuartzKitStrings.localized("videoannotationscreen.alert.pausevideobeforerecordingaudio"), preferredStyle: .alert)
+        let okAction = UIAlertAction(title: QuartzKitStrings.localized("general.label.ok"), style: .default, handler: { (action) in
 //            self.viewModel.dimissAnnotationVC()
         })
         dataLossAlert.addAction(okAction)
@@ -274,11 +274,11 @@ extension AnnotatorViewController: DataLossProtocol{
     }
     
     func showDataLossAlert() {
-        let dataLossAlert = UIAlertController(title: nil, message: "Your changes are not saved. Are you sure you want to proceed?", preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "Proceed", style: .destructive, handler: { (action) in
+        let dataLossAlert = UIAlertController(title: nil, message: QuartzKitStrings.localized("videoannotationscreen.alert.changesnotsaved"), preferredStyle: .alert)
+        let okAction = UIAlertAction(title: QuartzKitStrings.localized("videoannotationscreen.alert.proceed"), style: .destructive, handler: { (action) in
             self.viewModel.dimissAnnotationVC()
         })
-        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        let cancelAction = UIAlertAction(title: QuartzKitStrings.localized("general.label.cancel"), style: .cancel, handler: nil)
         dataLossAlert.addAction(okAction)
         dataLossAlert.addAction(cancelAction)
         
@@ -289,9 +289,9 @@ extension AnnotatorViewController: DataLossProtocol{
     
     func showAudioPersmissionNotGrantedAlert() {
         let isIpad = iPad
-        let iPadTitle = "Access to Microphone is disabled"
-        let iPadMsg = "Please go to Settings and turn on Microphone to record audio."
-        let iPhoneMsg = "Access to Microphone is disabled. Please go to Settings and turn on Microphone to record audio."
+        let iPadTitle = QuartzKitStrings.localized("videoannotationscreen.alert.microphonedisabled")
+        let iPadMsg = QuartzKitStrings.localized("videoannotationscreen.alert.gotosettingtoturnonmicrophone")
+        let iPhoneMsg = QuartzKitStrings.localized("videoannotationscreen.alert.microphonedisablediphone")
         
         let alertTitle = isIpad ? iPadTitle : nil
         let alertMessage = isIpad ? iPadMsg: iPhoneMsg
@@ -301,10 +301,10 @@ extension AnnotatorViewController: DataLossProtocol{
                                                      message: alertMessage,
                                                      preferredStyle: alertStyle)
         
-        let settingsAction = UIAlertAction(title: "Settings", style: .default){_ in
+        let settingsAction = UIAlertAction(title: QuartzKitStrings.localized("general.label.settings"), style: .default){_ in
             self.openSettings()
         }
-        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        let cancelAction = UIAlertAction(title: QuartzKitStrings.localized("general.label.cancel"), style: .cancel, handler: nil)
         audioPermissionAlert.addAction(settingsAction)
         audioPermissionAlert.addAction(cancelAction)
         

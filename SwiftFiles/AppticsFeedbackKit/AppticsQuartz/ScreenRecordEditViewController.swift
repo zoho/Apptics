@@ -159,7 +159,8 @@ extension ScreenRecordEditViewController: AnnotationUploadCompletionDelegate{
     
     
     
-    
+    let emailRegex = "^[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$"
+
     public lazy var window = quartzFloatingBottomWindow()
     
     public var sceneAlertWindow: UIWindow!
@@ -219,14 +220,14 @@ extension ScreenRecordEditViewController: AnnotationUploadCompletionDelegate{
     @objc func methodOfReceivedNotification(notification: Notification) {
         flushRecordings()
         FeedbackKit.listener().flagForRecordSent = ""
-        NotificationCenter.default.removeObserver(self)
+//        NotificationCenter.default.removeObserver(self)
         ScreenRecordEditViewController.didAddObservers = false
     }
     
     @objc func methodSendDataToQuartz(notification: Notification) {
         print("send pressed in quartz--methodSendDataToQuartz")
-        NotificationCenter.default.removeObserver(self)
         self.submitFormWithAnnotatedVideo()
+        NotificationCenter.default.removeObserver(self)
     }
 
     
@@ -246,9 +247,22 @@ extension ScreenRecordEditViewController: AnnotationUploadCompletionDelegate{
             return
         }
 
+        
 
+        guard let regex = try? NSRegularExpression(pattern: emailRegex, options: .caseInsensitive) else {
+            fatalError("Invalid regex pattern")
+        }
         let email = FeedbackKit.listener().emailAddress
-        let strmail = email.isEmpty ? "user@example.com" : email
+        var strmail = email.isEmpty ? "user@example.com" : email
+
+        let isValidEmail = regex.firstMatch(in: email, options: [], range: NSRange(location: 0, length: email.utf16.count)) != nil
+        if isValidEmail {
+            print("Email is valid!")
+        } else {
+            print("Email is not valid!")
+            strmail = "user@example.com"
+        }
+
 
         
         vm.update(userMailAddress: "\(strmail)",
@@ -329,6 +343,12 @@ public class AnnotationEditViewControllerStore: NSObject {
         print("editVC is reset to nil")
     }
 }
+
+
+
+
+
+
 
 
 

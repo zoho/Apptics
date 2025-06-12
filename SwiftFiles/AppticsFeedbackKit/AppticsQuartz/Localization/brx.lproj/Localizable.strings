@@ -1,0 +1,111 @@
+// Issue Recording VC
+"issuerecordscreen.label.recordissue" = "नोंनि जेंनाखौ रेकर्द खालाम";
+"issuerecordscreen.label.close" = "जोख्लोब/बन्द' खालाम";
+"issuerecordscreen.label.failedtoinitiate" = "स्क्रिन रेकर्द खालामनाय जागायजेननायाव फेलें जाबाय";
+"issuerecordscreen.label.failuremultiwindow" = "नों रेकर्द खालामनो नाजानाय कन्टेन्टआ गोबां-विन्द' मदआव दङ जाय रेकर्द खालामनायनि थाखाय खामानि होआखै/मदद खालामाखै। अननानै आबुं-स्क्रिन मदआव सोलाय";
+"issuerecordscreen.label.nointerneterror" = "स्क्रिन रेकर्द खालामनायनि थाखाय इन्टारनेट फोनांजाबनायनि गोनांथि दं। अननानै दावगालांनो थाखाय फोनांजाब।";
+"issuerecordscreen.label.ok" = "जागोन";
+"issuerecordscreen.label.recordinginfo" = "नों मोगामोगि जानांनाय जेंनाफोरखौ गोख्रैयै रेकर्द खालाम आरो बेफोरखौ गोरलैयै बुजिनानै गोख्रै मदद होनायनि थाखाय जोंनि मदद होग्रा दोलोनो दैथायहर।";
+"issuerecordscreen.label.iagreetext" = "आं गोनांथि जानाय खारिनि बुथुमनायनि थाखाय राजि जायो आरो गनायो। गुदिखिथाफोर नाय";
+"issuerecordscreen.label.optiontotrim" = "नोंहा रेकर्द खालामनाय भिदिअखौ नांगौबादि खालामनो/हास'नो, सुजुदेरनो आरो ओंथि बेखेवनो थाखाय मोनसे सायख'राहा दङ।";
+"issuerecordscreen.label.startrecording" = "रेकर्द खालामनाय जागाय";
+"issuerecordscreen.label.endrecording" = "रेकर्द खालामनाय फोजोब";
+"issuerecordscreen.label.recordinginprogress" = "रेकर्द खालामनाया दावगानायाव दं!";
+"issuerecordscreen.label.quicktipstext" = "गोख्रै सोलोफोर";
+"issuerecordscreen.label.quicktips1" = "नों नोंनि स्क्रिनखौ बांसिनाव 5 मिनिटनि थाखाय रेकर्द खालामनो हायो।";
+"issuerecordscreen.label.quicktips2" = "नों रेकर्द खालामनाय भिदिअखौ नांगौबादि खालामनो/हास'नो, सुजुदेरनो आरो ओंथि बेखेवनो हायो।";
+"issuerecordscreen.label.quicktips3" = "जेब्ला स्क्रिनआ रेकर्द खालामजागासिनो थायो अब्ला एफखौ बन्द' खालामनाङा।";
+"issuerecordscreen.label.quicktips4" = "बांसिन सोलोंनो/मिथिनो थाखाय, अननानै जोंनि मदद दकुमेन्ट-खालामनायाव थां/गिदिं";
+
+// Data Consent Screen
+"dataconsentscreen.label.consenttitle" = "गाहायाव होनाय खारिया नोंनि गनायनायाव बुथुमजागोन:";
+"dataconsentscreen.label.consent1" = "रेकर्द खालामनाय समाव सोरजिजानाय नोंनि IP थं आरो सामलायनाय लगफोर";
+"dataconsentscreen.label.consent2" = "नोंनि आबहावा गुदिखिथाफोर जेरै दिभाइसनि मुं, OS रोखोम बायदि बायदि।";
+"dataconsentscreen.label.consent3" = "दिभाइसनि मावफुंनाय सानगुदि(जेरै मेम'रि, नेटवार्क फोनांजाबनाय सम बायदि बायदि)";
+"dataconsentscreen.label.consent4" = "दिभाइस विन्द'नि स्क्रिन रेकर्द खालामनाय";
+"dataconsentscreen.label.consent5" = "थि-खालामखानायजों अदिअआ स्क्रिन रेकर्द खालामनाय समाव रेकर्द खालामजागोन। नाथाय नों बेखौ जमा होनायनि सिगाङाव अदिअ ट्रेकखौ रावबन्द' खालामनो एबा रेकर्द-खालामफिननो हायो।";
+
+// Permission
+"videoannotationscreen.alert.microphonedisabledipad" = "माइक्र'फनआव हाबनो हानाया हायै-गोहो खालामजाबाय";
+"videoannotationscreen.alert.gotosettingtoturnonmicrophoneipad" = "अननानै सेटिंग्सआव थां आरो अदिअ रेकर्द खालामनो थाखाय माइक्र'फन अन खालाम।";
+"videoannotationscreen.alert.microphonedisablediphone" = "माइक्र'फनआव हाबनो हानाया हायै-गोहो खालामजाबाय। अननानै सेटिंग्सआव थां आरो अदिअ रेकर्द खालामनो थाखाय माइक्र'फन अन खालाम।";
+
+// General
+"general.label.recordingintiationfailed" = "स्क्रिन रेकर्द खालामनाय जागायजेननाय फेलें जाबाय। अननानै नाजाफिन";
+"general.label.ok" = "जागोन";
+"general.label.submit" = "जमा हो";
+"general.label.done" = "मावजाबाय";
+"general.label.cancel" = "दानगार";
+"general.label.settings" = "सेटिंग्स";
+"general.label.erroroccured" = "गोरोन्थि जादोंमोन";
+
+// Issue Submission Screen
+"issuesubmissionscreen.alert.filesizeexceeded" = "फाइलनि महरआ बारा जाबाय। फाइलनि महरआ 3 MB निख्रुइ बांसिन जानाङा";
+"issuesubmissionscreen.label.attachfiles" = "फाइलफोर सरजाबदेर";
+"issuesubmissionscreen.label.newrecording" = "गोदान रेकर्द खालामनाय";
+"issuesubmissionscreen.label.editrecording" = "रेकर्द खालामनाय सुजुदेर";
+
+
+// Video Annotation Screen
+"videoannotationscreen.label.noaudiotrack" = "अदिअ ट्रेक गैया";
+"videoannotationscreen.label.shapeborderwidth" = "सिमानि गुवार";
+"videoannotationscreen.label.shapelineopacity" = "स्रां-स्रां नङै";
+"videoannotationscreen.label.shapetextsize" = "लिरनाय महर";
+"videoannotationscreen.alert.elementdurationbeyondvideolength" = "गुदिमुवानि समखोन्दोआ भिदिअ लावथाइनि बायह्रायाव दं";
+"videoannotationscreen.alert.notallowed" = "गनायथि होजायाखै";
+"videoannotationscreen.alert.deleteexisitingaudio" = "अननानै मोनसे गोदान रेकर्द खालामनायनि सिगाङाव जोरनानै थानाय अदिअखौ दान।";
+"videoannotationscreen.alert.textlimitreached" = "सिमा मोनहैबाय";
+"videoannotationscreen.alert.textdeleteexisting" = "अननानै माखासे जोरनानै थानाय लिरनायखौ दान।";
+"videoannotationscreen.alert.pausevideobeforerecordingaudio" = "अननानै अदिअ  रेकर्द खालामनायनि सिगाङाव नोंनि भिदिअखौ थाथ'हो";
+"videoannotationscreen.alert.changesnotsaved" = "नोंनि सोलायनायफोरा सेभ जायाखै। थारैनो नों दावगालांनो लुबैमारो नामा?";
+"videoannotationscreen.alert.proceed" = "आवगाय/दावगालां";
+"videoannotationscreen.alert.stroketypesolid" = "गथा";
+"videoannotationscreen.alert.stroketypedashed" = "देस सिन होनाय";
+"videoannotationscreen.alert.entertext" = "लिरनायखौ हो";
+
+"videoannotationscreen.label.trim" = "नांगौबादि खालाम/हास'";
+"videoannotationscreen.label.mask" = "मुखा";
+"videoannotationscreen.label.shapes" = "महरफोर";
+"videoannotationscreen.label.text" = "लिरनाय";
+"videoannotationscreen.label.audio" = "अदिअ";
+"videoannotationscreen.label.block" = "होथे";
+"videoannotationscreen.label.blur" = "नुसारै";
+"videoannotationscreen.label.rectangle" = "आयट दब्लाय";
+"videoannotationscreen.label.oval" = "दावदै महरनि";
+"videoannotationscreen.label.arrow" = "थिर";
+"videoannotationscreen.label.color" = "गाब";
+"videoannotationscreen.label.width" = "गुवार";
+"videoannotationscreen.label.style" = "आदब";
+"videoannotationscreen.label.edit" = "सुजुदेर";
+"videoannotationscreen.label.size" = "महर";
+"videoannotationscreen.label.background" = "फारिबिथिं";
+"videoannotationscreen.label.textregular" = "सरासनस्रा/नेमगोनां";
+"videoannotationscreen.label.textbold" = "बल्द";
+"videoannotationscreen.label.textitalics" = "इटालिक्स";
+"videoannotationscreen.label.textbolditalics" = "बल्द-इटालिक्स";
+
+// Issue Submission Form
+"issuesubmissionform.label.emaildisplay" = "इमैल थं";
+"issuesubmissionform.label.emailplaceholder" = "zylker@zohomail.com";
+"issuesubmissionform.label.screenrecordingsummary" = "स्क्रिन रेकर्द खालामनाय गुबैबाथ्रा";
+"issuesubmissionform.label.subjectdisplayname" = "आयदा";
+"issuesubmissionform.label.subjectplaceholder" = "आयदाखौ हो";
+"issuesubmissionform.label.addtoexistingticket" = "जोरनानै थानाय टिकेटआव सरजाब";
+"issuesubmissionform.label.existingticketid" = "जोरनानै थानाय टिकेट ID";
+"issuesubmissionform.label.enterticketidtolink" = "लिंक-खालामजानाय/सरजाबजानायनि थाखाय टिकेट ID हो";
+"issuesubmissionform.label.issuedescription" = "जेंनानि बेखेवनाय";
+"issuesubmissionform.label.issuemoredetails" = "जेंनानि सोमोन्दै बांसिन गुदिखिथाफोर जगाय";
+"issuesubmissionform.label.submityourissue" = "नोंनि जेंनाखौ जमा हो";
+"issuesubmissionform.alert.videouploadfailed" = "भिदिअ आफलद खालामनाया फेलें जाबाय। अननानै नाजाफिन।";
+"issuesubmissionform.alert.thanksmessagetitle" = "जोंजों लोब्बायाव थाबायथानायनि थाखाय नोंनिसिम गोजोन्थों।";
+"issuesubmissionform.alert.thanksmessagebody" = "नोंनि दुखु खालामनायफोर/फोरमायथिनायफोरानो जोंनि आगुथि/सिगांथि, बेनिखायनो जोंनि मदद होग्रा दोलोआ थाबैनो नोंजों लोब्बा लाखिगोन। मोनसे जोबोर मोजां सान जाथों।";
+"issuesubmissionform.alert.videoeditdetailuploadfailure" = "भिदिअ सुजुदेरनाय गुदिखिथाफोर आफलद खालामनाया फेलें जाबाय। अननानै नाजाफिन।";
+"issuesubmissionform.label.entersubject" = "अननानै जेंनानि आयदाखौ हो";
+"issuesubmissionform.label.enteremail" = "अननानै इमैल थं हो";
+"issuesubmissionform.label.enterexistingticketid" = "अननानै जोरनानै थानाय टिकेट id खौ हो";
+"issuesubmissionform.label.choosephoto" = "सावगारि सायख'";
+"issuesubmissionform.label.browse" = "ब्राउज खालाम";
+"issuesubmissionform.alert.accestophotodisabledgotosetting" = "सावगारि लाइब्रेरीयाव हाबनो हानाया हायै-गोहो खालामजाबाय। अननानै सेटिंग्सआव थां आरो सावगारिफोराव हाबनो/सावगारिफोरखौ मोननो थाखाय सावगारि लाइब्रेरीखौ अन खालाम";
+"issuesubmissionform.alert.accestophotodisabledipad" = "सावगारि लाइब्रेरीयाव हाबनो हानाया हायै-गोहो खालामजाबाय";
+"issuesubmissionform.alert.accestophotodisabledmessageipad" = "अननानै सेटिंग्सआव थां आरो सावगारिफोराव हाबनो/सावगारिफोरखौ मोननो थाखाय सावगारि लाइब्रेरीखौ अन खालाम";
+"issuesubmissionform.alert.submitting" = "जमा होगासिनो";

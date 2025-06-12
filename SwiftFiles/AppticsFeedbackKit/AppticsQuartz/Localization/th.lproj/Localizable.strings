@@ -1,0 +1,111 @@
+// Issue Recording VC
+"issuerecordscreen.label.recordissue" = "บันทึกปัญหาของคุณ";
+"issuerecordscreen.label.close" = "ปิด";
+"issuerecordscreen.label.failedtoinitiate" = "ไม่สามารถเริ่มการบันทึกหน้าจอ";
+"issuerecordscreen.label.failuremultiwindow" = "เนื้อหาที่คุณพยายามบันทึกอยู่ในโหมดหลายหน้าต่าง ซึ่งไม่รองรับการบันทึก โปรดสลับเป็นโหมดเต็มหน้าจอ";
+"issuerecordscreen.label.nointerneterror" = "จำเป็นต้องมีการเชื่อมต่ออินเทอร์เน็ตเพื่อบันทึกหน้าจอ โปรดเชื่อมต่อเพื่อดำเนินการต่อ";
+"issuerecordscreen.label.ok" = "ตกลง";
+"issuerecordscreen.label.recordinginfo" = "บันทึกปัญหาที่คุณพบได้อย่างรวดเร็วและส่งไปยังทีมสนับสนุนของเราเพื่อความเข้าใจที่ง่ายดายและความช่วยเหลือที่รวดเร็ว";
+"issuerecordscreen.label.iagreetext" = "ฉันยอมรับและยินยอมในการรวบรวมข้อมูลที่จำเป็น ดูรายละเอียด";
+"issuerecordscreen.label.optiontotrim" = "คุณมีตัวเลือกในการตัดแต่ง แก้ไข และใส่คำอธิบายประกอบวิดีโอที่บันทึก";
+"issuerecordscreen.label.startrecording" = "เริ่มการบันทึก";
+"issuerecordscreen.label.endrecording" = "สิ้นสุดการบันทึก";
+"issuerecordscreen.label.recordinginprogress" = "กำลังบันทึก!";
+"issuerecordscreen.label.quicktipstext" = "เคล็ดลับด่วน";
+"issuerecordscreen.label.quicktips1" = "คุณสามารถบันทึกหน้าจอได้สูงสุด 5 นาที";
+"issuerecordscreen.label.quicktips2" = "คุณสามารถตัดแต่ง แก้ไข และใส่คำอธิบายประกอบวิดีโอที่บันทึกได้";
+"issuerecordscreen.label.quicktips3" = "อย่าปิดแอปขณะที่กำลังบันทึก";
+"issuerecordscreen.label.quicktips4" = "หากต้องการเรียนรู้เพิ่มเติม โปรดไปที่เอกสารวิธีใช้ของเรา";
+
+// Data Consent Screen
+"dataconsentscreen.label.consenttitle" = "ข้อมูลต่อไปนี้จะถูกรวบรวมตามความยินยอมของคุณ:";
+"dataconsentscreen.label.consent1" = "ที่อยู่ IP ของคุณและบันทึกคอนโซลที่สร้างขึ้นระหว่างการบันทึก";
+"dataconsentscreen.label.consent2" = "รายละเอียดสภาพแวดล้อมของคุณ เช่น ชื่ออุปกรณ์ เวอร์ชันระบบปฏิบัติการ ฯลฯ";
+"dataconsentscreen.label.consent3" = "เมตริกประสิทธิภาพของอุปกรณ์ (เช่นหน่วยความจำ เวลาการเชื่อมต่อเครือข่าย ฯลฯ)";
+"dataconsentscreen.label.consent4" = "การบันทึกหน้าจอของหน้าต่างอุปกรณ์";
+"dataconsentscreen.label.consent5" = "โดยค่าเริ่มต้น เสียงจะถูกบันทึกระหว่างการบันทึกหน้าจอ แต่คุณสามารถปิดเสียงหรือบันทึกเสียงซ้ำก่อนส่งได้";
+
+// Permission
+"videoannotationscreen.alert.microphonedisabledipad" = "การเข้าถึงไมโครโฟนถูกปิดใช้งาน";
+"videoannotationscreen.alert.gotosettingtoturnonmicrophoneipad" = "โปรดไปที่การตั้งค่าและเปิดไมโครโฟนเพื่อบันทึกเสียง";
+"videoannotationscreen.alert.microphonedisablediphone" = "การเข้าถึงไมโครโฟนถูกปิดใช้งาน โปรดไปที่การตั้งค่าและเปิดไมโครโฟนเพื่อบันทึกเสียง";
+
+// General
+"general.label.recordingintiationfailed" = "การเริ่มบันทึกหน้าจอล้มเหลว โปรดลองอีกครั้ง";
+"general.label.ok" = "ตกลง";
+"general.label.submit" = "ส่ง";
+"general.label.done" = "เสร็จสิ้น";
+"general.label.cancel" = "ยกเลิก";
+"general.label.settings" = "การตั้งค่า";
+"general.label.erroroccured" = "มีข้อผิดพลาดเกิดขึ้น";
+
+// Issue Submission Screen
+"issuesubmissionscreen.alert.filesizeexceeded" = "เกินขีดจำกัดของขนาดไฟล์แล้ว ขนาดไฟล์จะต้องไม่เกิน 3 MB";
+"issuesubmissionscreen.label.attachfiles" = "แนบไฟล์";
+"issuesubmissionscreen.label.newrecording" = "การบันทึกใหม่";
+"issuesubmissionscreen.label.editrecording" = "แก้ไขการบันทึก";
+
+
+// Video Annotation Screen
+"videoannotationscreen.label.noaudiotrack" = "ไม่มีแทร็กเสียง";
+"videoannotationscreen.label.shapeborderwidth" = "ความกว้างเส้นขอบ";
+"videoannotationscreen.label.shapelineopacity" = "ความทึบแสง";
+"videoannotationscreen.label.shapetextsize" = "ขนาดข้อความ";
+"videoannotationscreen.alert.elementdurationbeyondvideolength" = "ระยะเวลาขององค์ประกอบเกินความยาวของวิดีโอ";
+"videoannotationscreen.alert.notallowed" = "ไม่ได้รับอนุญาต";
+"videoannotationscreen.alert.deleteexisitingaudio" = "โปรดลบเสียงที่มีอยู่เพื่อทำการบันทึกใหม่";
+"videoannotationscreen.alert.textlimitreached" = "ถึงขีดจำกัดแล้ว";
+"videoannotationscreen.alert.textdeleteexisting" = "โปรดลบข้อความที่มีอยู่บางรายการ";
+"videoannotationscreen.alert.pausevideobeforerecordingaudio" = "โปรดหยุดวิดีโอชั่วคราวก่อนบันทึกเสียง";
+"videoannotationscreen.alert.changesnotsaved" = "การเปลี่ยนแปลงของคุณยังไม่ถูกบันทึก คุณแน่ใจใช่หรือไม่ว่าต้องการดำเนินการต่อ";
+"videoannotationscreen.alert.proceed" = "ดำเนินการต่อ";
+"videoannotationscreen.alert.stroketypesolid" = "ทึบ";
+"videoannotationscreen.alert.stroketypedashed" = "เส้นประ";
+"videoannotationscreen.alert.entertext" = "ป้อนข้อความ";
+
+"videoannotationscreen.label.trim" = "ตัดแต่ง";
+"videoannotationscreen.label.mask" = "ปิดทับ";
+"videoannotationscreen.label.shapes" = "รูปร่าง";
+"videoannotationscreen.label.text" = "ข้อความ";
+"videoannotationscreen.label.audio" = "เสียง";
+"videoannotationscreen.label.block" = "บล็อก";
+"videoannotationscreen.label.blur" = "เบลอ";
+"videoannotationscreen.label.rectangle" = "สี่เหลี่ยมผืนผ้า";
+"videoannotationscreen.label.oval" = "วงรี";
+"videoannotationscreen.label.arrow" = "ลูกศร";
+"videoannotationscreen.label.color" = "สี";
+"videoannotationscreen.label.width" = "ความกว้าง";
+"videoannotationscreen.label.style" = "สไตล์";
+"videoannotationscreen.label.edit" = "แก้ไข";
+"videoannotationscreen.label.size" = "ขนาด";
+"videoannotationscreen.label.background" = "พื้นหลัง";
+"videoannotationscreen.label.textregular" = "ปกติ";
+"videoannotationscreen.label.textbold" = "ตัวหนา";
+"videoannotationscreen.label.textitalics" = "ตัวเอียง";
+"videoannotationscreen.label.textbolditalics" = "ตัวเอียงหนา";
+
+// Issue Submission Form
+"issuesubmissionform.label.emaildisplay" = "ที่อยู่อีเมล";
+"issuesubmissionform.label.emailplaceholder" = "zylker@zohomail.com";
+"issuesubmissionform.label.screenrecordingsummary" = "สรุปการบันทึกหน้าจอ";
+"issuesubmissionform.label.subjectdisplayname" = "หัวเรื่อง";
+"issuesubmissionform.label.subjectplaceholder" = "ป้อนหัวเรื่อง";
+"issuesubmissionform.label.addtoexistingticket" = "เพิ่มไปยังตั๋วที่มีอยู่";
+"issuesubmissionform.label.existingticketid" = "ID ตั๋วที่มีอยู่";
+"issuesubmissionform.label.enterticketidtolink" = "ป้อน ID ตั๋วที่จะเชื่อมโยง";
+"issuesubmissionform.label.issuedescription" = "คำอธิบายของปัญหา";
+"issuesubmissionform.label.issuemoredetails" = "ป้อนรายละเอีอดเกี่ยวกับปัญหา";
+"issuesubmissionform.label.submityourissue" = "ส่งปัญหาของคุณ";
+"issuesubmissionform.alert.videouploadfailed" = "การอัปโหลดวิดีโอล้มเหลว โปรดลองอีกครั้ง";
+"issuesubmissionform.alert.thanksmessagetitle" = "ขอบคุณที่ติดต่อเรา!";
+"issuesubmissionform.alert.thanksmessagebody" = "ความกังวลของคุณคือสิ่งสำคัญที่สุดสำหรับเรา ทีมฝ่ายสนับสนุนของเราจะติดต่อหาคุณโดยเร็ว ขอให้มีวันที่ดี!";
+"issuesubmissionform.alert.videoeditdetailuploadfailure" = "การอัปโหลดรายละเอียดการตัดต่อวิดีโอล้มเหลว โปรดลองอีกครั้ง";
+"issuesubmissionform.label.entersubject" = "โปรดป้อนหัวเรื่องของปัญหา";
+"issuesubmissionform.label.enteremail" = "โปรดป้อนที่อยู่อีเมล";
+"issuesubmissionform.label.enterexistingticketid" = "โปรดป้อน ID ตั๋วที่มีอยู่";
+"issuesubmissionform.label.choosephoto" = "เลือกรูปถ่าย";
+"issuesubmissionform.label.browse" = "เรียกดู";
+"issuesubmissionform.alert.accestophotodisabledgotosetting" = "การเข้าถึงไลบรารีรูปภาพถูกปิดใช้งาน โปรดไปที่การตั้งค่าและเปิดไลบรารีรูปภาพเพื่อเข้าถึงรูปภาพ";
+"issuesubmissionform.alert.accestophotodisabledipad" = "การเข้าถึงไลบรารีรูปภาพถูกปิดใช้งาน";
+"issuesubmissionform.alert.accestophotodisabledmessageipad" = "โปรดไปที่การตั้งค่าและเปิดไลบรารีรูปภาพเพื่อเข้าถึงรูปภาพ";
+"issuesubmissionform.alert.submitting" ="กำลังส่ง";

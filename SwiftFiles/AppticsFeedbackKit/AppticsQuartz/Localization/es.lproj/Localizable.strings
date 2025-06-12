@@ -1,0 +1,111 @@
+// Issue Recording VC
+"issuerecordscreen.label.recordissue" = "Grabe su problema";
+"issuerecordscreen.label.close" = "Cerrar";
+"issuerecordscreen.label.failedtoinitiate" = "No se pudo iniciar la grabación de pantalla";
+"issuerecordscreen.label.failuremultiwindow" = "El contenido que intenta grabar está en modo multiventana, que no es compatible con la grabación. Cambie al modo de pantalla completa";
+"issuerecordscreen.label.nointerneterror" = "Se requiere conexión a Internet para grabar la pantalla. Conéctese para continuar.";
+"issuerecordscreen.label.ok" = "Aceptar";
+"issuerecordscreen.label.recordinginfo" = "Registre rápidamente los problemas que encuentra y envíelos a nuestro equipo de soporte para una fácil comprensión y asistencia rápida.";
+"issuerecordscreen.label.iagreetext" = "Acepto y consiento la recopilación de los datos necesarios. Ver detalles";
+"issuerecordscreen.label.optiontotrim" = "Tiene la opción de recortar, editar y anotar el vídeo grabado.";
+"issuerecordscreen.label.startrecording" = "Iniciar grabación";
+"issuerecordscreen.label.endrecording" = "Fin del registro";
+"issuerecordscreen.label.recordinginprogress" = "¡Grabación en curso!";
+"issuerecordscreen.label.quicktipstext" = "Sugerencias rápidas";
+"issuerecordscreen.label.quicktips1" = "Puede presentar su solicitud para un máximo de 5 minutos.";
+"issuerecordscreen.label.quicktips2" = "Puede recortar, editar y anotar el vídeo grabado.";
+"issuerecordscreen.label.quicktips3" = "No cierre la aplicación mientras se está grabando la pantalla.";
+"issuerecordscreen.label.quicktips4" = "Para obtener más información, visite nuestra documentación de ayuda";
+
+// Data Consent Screen
+"dataconsentscreen.label.consenttitle" = "Los siguientes datos se recopilarán con su consentimiento:";
+"dataconsentscreen.label.consent1" = "Su dirección IP y los registros de la consola que se generan durante la grabación";
+"dataconsentscreen.label.consent2" = "Detalles de su entorno, como el nombre del dispositivo, la versión del sistema operativo, etc.";
+"dataconsentscreen.label.consent3" = "Métricas de rendimiento del dispositivo (como memoria, tiempo de conexión de la red, etc.)";
+"dataconsentscreen.label.consent4" = "La grabación de pantalla de la ventana del dispositivo";
+"dataconsentscreen.label.consent5" = "De forma predeterminada, el audio se grabará durante la grabación de la pantalla. Puede silenciar o volver a grabar la pista de audio antes de enviarla.";
+
+// Permission
+"videoannotationscreen.alert.microphonedisabledipad" = "El acceso al Micrófono está deshabilitado";
+"videoannotationscreen.alert.gotosettingtoturnonmicrophoneipad" = "Vaya a Configuración y active el Micrófono para grabar audio.";
+"videoannotationscreen.alert.microphonedisablediphone" = "El acceso al micrófono está deshabilitado. Vaya a Configuración y active el Micrófono para grabar audio.";
+
+// General
+"general.label.recordingintiationfailed" = "El inicio de la grabación de pantalla ha fallado. Pruebe de nuevo";
+"general.label.ok" = "Aceptar";
+"general.label.submit" = "Enviar";
+"general.label.done" = "Listo";
+"general.label.cancel" = "Cancelar";
+"general.label.settings" = "Configuración";
+"general.label.erroroccured" = "Se ha producido un error";
+
+// Issue Submission Screen
+"issuesubmissionscreen.alert.filesizeexceeded" = "Se ha excedido el tamaño de archivo. El tamaño del archivo no debe superar los 3 MB";
+"issuesubmissionscreen.label.attachfiles" = "Adjuntar archivos";
+"issuesubmissionscreen.label.newrecording" = "Grabación nueva";
+"issuesubmissionscreen.label.editrecording" = "Editar registro";
+
+
+// Video Annotation Screen
+"videoannotationscreen.label.noaudiotrack" = "No hay pistas de audio";
+"videoannotationscreen.label.shapeborderwidth" = "Ancho del borde";
+"videoannotationscreen.label.shapelineopacity" = "Opacidad";
+"videoannotationscreen.label.shapetextsize" = "Tamaño del texto";
+"videoannotationscreen.alert.elementdurationbeyondvideolength" = "La duración del elemento supera la duración del vídeo";
+"videoannotationscreen.alert.notallowed" = "No permitido";
+"videoannotationscreen.alert.deleteexisitingaudio" = "Elimine el audio existente antes de grabar el nuevo.";
+"videoannotationscreen.alert.textlimitreached" = "Se ha alcanzado el límite";
+"videoannotationscreen.alert.textdeleteexisting" = "Elimine parte del texto existente.";
+"videoannotationscreen.alert.pausevideobeforerecordingaudio" = "Pause su vídeo antes de grabar audio";
+"videoannotationscreen.alert.changesnotsaved" = "Los cambios no se han guardado. ¿Está seguro de que desea continuar?";
+"videoannotationscreen.alert.proceed" = "Continuar";
+"videoannotationscreen.alert.stroketypesolid" = "Línea continua";
+"videoannotationscreen.alert.stroketypedashed" = "Línea discontinua";
+"videoannotationscreen.alert.entertext" = "Escriba el texto";
+
+"videoannotationscreen.label.trim" = "Recortar";
+"videoannotationscreen.label.mask" = "Enmascarar";
+"videoannotationscreen.label.shapes" = "Formas";
+"videoannotationscreen.label.text" = "Texto";
+"videoannotationscreen.label.audio" = "Audio";
+"videoannotationscreen.label.block" = "Bloquear";
+"videoannotationscreen.label.blur" = "Desenfocar";
+"videoannotationscreen.label.rectangle" = "Rectángulo";
+"videoannotationscreen.label.oval" = "Ovalado";
+"videoannotationscreen.label.arrow" = "Flecha";
+"videoannotationscreen.label.color" = "Color";
+"videoannotationscreen.label.width" = "Anchura";
+"videoannotationscreen.label.style" = "Estilo";
+"videoannotationscreen.label.edit" = "Editar";
+"videoannotationscreen.label.size" = "Tamaño";
+"videoannotationscreen.label.background" = "Fondo";
+"videoannotationscreen.label.textregular" = "Normal";
+"videoannotationscreen.label.textbold" = "Negrita";
+"videoannotationscreen.label.textitalics" = "Cursiva";
+"videoannotationscreen.label.textbolditalics" = "Cursiva negrita";
+
+// Issue Submission Form
+"issuesubmissionform.label.emaildisplay" = "Dirección de correo electrónico";
+"issuesubmissionform.label.emailplaceholder" = "zylker@zohomail.com";
+"issuesubmissionform.label.screenrecordingsummary" = "Resumen de la grabación de la pantalla";
+"issuesubmissionform.label.subjectdisplayname" = "Materia";
+"issuesubmissionform.label.subjectplaceholder" = "Introduzca el asunto";
+"issuesubmissionform.label.addtoexistingticket" = "Agregar al ticket existente";
+"issuesubmissionform.label.existingticketid" = "ID de ticket existente";
+"issuesubmissionform.label.enterticketidtolink" = "Escriba el ID del ticket que desea vincular";
+"issuesubmissionform.label.issuedescription" = "Descripción del problema";
+"issuesubmissionform.label.issuemoredetails" = "Proporcionar más detalles sobre el problema";
+"issuesubmissionform.label.submityourissue" = "Envíe su problema";
+"issuesubmissionform.alert.videouploadfailed" = "Error en carga de vídeo. Inténtelo de nuevo.";
+"issuesubmissionform.alert.thanksmessagetitle" = "¡Gracias por ponerse en contacto con nosotros!";
+"issuesubmissionform.alert.thanksmessagebody" = "Sus preocupaciones son nuestra prioridad, por lo que nuestro equipo de soporte se pondrá en contacto con usted pronto. ¡Que tenga un buen día!";
+"issuesubmissionform.alert.videoeditdetailuploadfailure" = "Error al cargar los detalles de edición del vídeo. Inténtelo de nuevo.";
+"issuesubmissionform.label.entersubject" = "Escriba el asunto del problema";
+"issuesubmissionform.label.enteremail" = "Especifique la dirección de correo electrónico";
+"issuesubmissionform.label.enterexistingticketid" = "Introduzca un ID de ticket existente";
+"issuesubmissionform.label.choosephoto" = "Elegir foto";
+"issuesubmissionform.label.browse" = "Examinar";
+"issuesubmissionform.alert.accestophotodisabledgotosetting" = "El acceso a la Biblioteca de fotografías está deshabilitado. Vaya a Configuración y active la Biblioteca de fotografías para acceder a las fotos.";
+"issuesubmissionform.alert.accestophotodisabledipad" = "El acceso a la Biblioteca de fotografías está deshabilitado";
+"issuesubmissionform.alert.accestophotodisabledmessageipad" = "Vaya a Configuración y active la Biblioteca de fotografías para acceder a las fotos.";
+"issuesubmissionform.alert.submitting" ="Enviando";

@@ -1,0 +1,112 @@
+// Issue Recording VC
+"issuerecordscreen.label.recordissue" = "আপোনাৰ সমস্যা ৰেকৰ্ড কৰক";
+"issuerecordscreen.label.close" = "বন্ধ কৰক";
+"issuerecordscreen.label.failedtoinitiate" = "স্ক্ৰীণ ৰেকৰ্ডিং আৰম্ভ কৰাত বিফল হ’ল";
+"issuerecordscreen.label.failuremultiwindow" = "আপুনি ৰেকৰ্ড কৰিবলৈ চেষ্টা কৰি থকা সমলটো একাধিক-উইণ্ডো মোডত আছে, যিটো ৰেকৰ্ডিঙৰ বাবে সমৰ্থিত নহয়। অনুগ্ৰহ কৰি ফুল-স্ক্ৰীণ মোডলৈ নিয়ক";
+"issuerecordscreen.label.nointerneterror" = "স্ক্ৰীণ ৰেকৰ্ডিঙৰ বাবে ইণ্টাৰনেট সংযোগৰ প্ৰয়োজন। আগবাঢ়িবলৈ অনুগ্ৰহ কৰি সংযোগ কৰক।";
+"issuerecordscreen.label.ok" = "ঠিক";
+"issuerecordscreen.label.recordinginfo" = "আপুনি সন্মুখীন হোৱা সমস্যাবোৰ ক্ষিপ্ৰতাৰে ৰেকৰ্ড কৰক আৰু সহজে বুজি পাবলৈ তথা খৰতকীয়া সহায়ৰ বাবে সেইবোৰ আমাৰ সমৰ্থন টীমলৈ প্ৰেৰণ কৰক।";
+"issuerecordscreen.label.iagreetext" = "মই মানি লৈছোঁ আৰু প্ৰয়োজনীয় তথ্য সংগ্ৰহৰ বাবে সন্মতি দিছো। বিৱৰণ চাওঁক";
+"issuerecordscreen.label.optiontotrim" = "ৰেকৰ্ড কৰা ভিডিঅ’টো ট্ৰিম, সম্পাদনা আৰু মন্তব্যযুক্ত কৰিবলৈ আপোনাৰ এটা সুবিধা আছে।";
+"issuerecordscreen.label.startrecording" = "ৰেকৰ্ডিং আৰম্ভ কৰক";
+"issuerecordscreen.label.endrecording" = "ৰেকৰ্ডিং শেষ কৰক";
+"issuerecordscreen.label.recordinginprogress" = "ৰেকৰ্ডিং চলি আছে!";
+"issuerecordscreen.label.quicktipstext" = "সংক্ষিপ্ত পৰামৰ্শসমূহ";
+"issuerecordscreen.label.quicktips1" = "আপোনাৰ স্ক্ৰীণ আপুনি সৰ্বাধিক 5 মিনিটৰ বাবে ৰেকৰ্ড কৰিব পাৰে।";
+"issuerecordscreen.label.quicktips2" = "আপুনি ৰেকৰ্ড কৰা ভিডিঅ'টো ট্ৰিম, সম্পাদনা আৰু মন্তব্যযুক্ত কৰিব পাৰে।";
+"issuerecordscreen.label.quicktips3" = "স্ক্ৰীণ ৰেকৰ্ড কৰি থাকোঁতে এপ্পটো বন্ধ নকৰিব।";
+"issuerecordscreen.label.quicktips4" = "অধিক জানিবলৈ, অনুগ্ৰহ কৰি আমাৰ সহায় নথিপত্ৰবোৰ চাওক";
+
+// Data Consent Screen
+"dataconsentscreen.label.consenttitle" = "আপোনাৰ সন্মতিৰ আধাৰত উল্লেখিত তথ্য সংগ্ৰহ কৰা হ’ব:";
+"dataconsentscreen.label.consent1" = "আপোনাৰ IP ঠিকনা আৰু ৰেকৰ্ডিং হৈ থকাৰ সময়ত সৃষ্টি কৰা  কনছোল লগবোৰ";
+"dataconsentscreen.label.consent2" = "ডিভাইচ নাম, OS সংস্কৰণ আদিৰ দৰে আপোনাৰ পৰিৱেশ বিৱৰণবোৰ।";
+"dataconsentscreen.label.consent3" = "ডিভাইচ কৰ্মক্ষমতা মেট্ৰিক্স (মেমৰী, নেটৱৰ্ক সংযোগ সময় আদি)";
+"dataconsentscreen.label.consent4" = "ডিভাইচ উইণ্ডোখনৰ স্ক্ৰীণ ৰেকৰ্ডিং";
+"dataconsentscreen.label.consent5" = "গতানুগতিকভাৱে, স্ক্ৰীণ ৰেকৰ্ডিং কৰাৰ সময়ত অডিঅ’টো ৰেকৰ্ড কৰা হ’ব। কিন্তু ইয়াক দাখিল কৰাৰ পূৰ্বে আপুনি অডিঅ’ ট্ৰেকটো নীৰৱ বা পুনৰ-ৰেকৰ্ড কৰিব পাৰে।";
+
+// Permission
+"videoannotationscreen.alert.microphonedisabledipad" = "মাইক্ৰফোনৰ একচেছ অক্ষমিত কৰা আছে";
+"videoannotationscreen.alert.gotosettingtoturnonmicrophoneipad" = "অডিঅ’ ৰেকৰ্ড কৰিবলৈ অনুগ্ৰহ কৰি ছেটিংছলৈ গৈ মাইক্ৰফোন অইন কৰক।";
+"videoannotationscreen.alert.microphonedisablediphone" = "মাইক্ৰফোনৰ একচেছ অক্ষমিত কৰা আছে। অডিঅ’ ৰেকৰ্ড কৰিবলৈ অনুগ্ৰহ কৰি ছেটিংছলৈ গৈ মাইক্ৰফোন অইন কৰক।";
+
+// General
+"general.label.recordingintiationfailed" = "স্ক্ৰীণ ৰেকৰ্ডিঙৰ আৰম্ভণি বিফল হ’ল। অনুগ্ৰহ কৰি পুনৰ চেষ্টা কৰক";
+"general.label.ok" = "ঠিক আছে";
+"general.label.submit" = "দাখিল";
+"general.label.done" = "সম্পূৰ্ণ কৰা হ’ল";
+"general.label.cancel" = "বাতিল কৰক";
+"general.label.settings" = "ছেটিংছ";
+"general.label.erroroccured" = "ত্ৰুটি দেখা দিছিল";
+
+// Issue Submission Screen
+"issuesubmissionscreen.alert.filesizeexceeded" = "ফাইল ছাইজ অতিৰিক্ত হৈছে। ফাইল ছাইজটো 3 MB তকৈ অধিক হ’ব নালাগিব";
+"issuesubmissionscreen.label.attachfiles" = "ফাইল সংলগ্ন কৰক";
+"issuesubmissionscreen.label.newrecording" = "নতুন ৰেকৰ্ডিং";
+"issuesubmissionscreen.label.editrecording" = "ৰেকৰ্ডিং সম্পাদনা কৰক";
+
+
+// Video Annotation Screen
+"videoannotationscreen.label.noaudiotrack" = "কোনো অডিঅ’ ট্ৰেক নাই";
+"videoannotationscreen.label.shapeborderwidth" = "সীমানাৰ প্রশস্থতা";
+"videoannotationscreen.label.shapelineopacity" = "অস্বচ্ছতা";
+"videoannotationscreen.label.shapetextsize" = "লেখাৰ একাৰ";
+"videoannotationscreen.alert.elementdurationbeyondvideolength" = "এলিমেণ্ট কালদৈৰ্ঘই ভিডিঅ’ দৈৰ্ঘ অতিক্ৰম কৰিছে";
+"videoannotationscreen.alert.notallowed" = "অনুমোদিত নহয়";
+"videoannotationscreen.alert.deleteexisitingaudio" = "নতুন এটা ৰেকৰ্ড কৰাৰ পূৰ্বে অনুগ্ৰহ কৰি চলিত অডিঅ’টো বিলোপ কৰক";
+"videoannotationscreen.alert.textlimitreached" = "সীমাত উপনীত হৈছে";
+"videoannotationscreen.alert.textdeleteexisting" = "অনুগ্ৰহ কৰি কিছুমান চলিত লেখা বিলোপ কৰক।";
+"videoannotationscreen.alert.pausevideobeforerecordingaudio" = "অডিঅ’ ৰেকৰ্ড কৰাৰ পূৰ্বে অনুগ্ৰহ কৰি আপোনাৰ ভিডিঅ’ বিৰত কৰক";
+"videoannotationscreen.alert.changesnotsaved" = "আপোনাৰ পৰিৱৰ্তনবোৰ ছেভ কৰা নাই। আপুনি আগবাঢ়িবলৈ নিশ্চিতনে?";
+"videoannotationscreen.alert.proceed" = "আগবাঢ়ক";
+"videoannotationscreen.alert.stroketypesolid" = "চলিড";
+"videoannotationscreen.alert.stroketypedashed" = "ডেচড";
+"videoannotationscreen.alert.entertext" = "পাঠটো প্ৰবিষ্ট কৰক";
+
+"videoannotationscreen.label.trim" = "ট্ৰিম কৰক";
+"videoannotationscreen.label.mask" = "মাস্ক";
+"videoannotationscreen.label.shapes" = "আকৃতিসমূহ";
+"videoannotationscreen.label.text" = "পাঠ";
+"videoannotationscreen.label.audio" = "অডিঅ’";
+"videoannotationscreen.label.block" = "ব্লক";
+"videoannotationscreen.label.blur" = "অস্পষ্ট";
+"videoannotationscreen.label.rectangle" = "আয়তক্ষেত্ৰ";
+"videoannotationscreen.label.oval" = "ডিম্বাকাৰ";
+"videoannotationscreen.label.arrow" = "এৰ’";
+"videoannotationscreen.label.color" = "ৰং";
+"videoannotationscreen.label.width" = "প্ৰস্থ";
+"videoannotationscreen.label.style" = "শৈলী";
+"videoannotationscreen.label.edit" = "সম্পাদনা কৰক";
+"videoannotationscreen.label.size" = "আকাৰ";
+"videoannotationscreen.label.background" = "পটভূমি";
+"videoannotationscreen.label.textregular" = "নিয়মীয়া";
+"videoannotationscreen.label.textbold" = "মোটা";
+"videoannotationscreen.label.textitalics" = "ইটালিক";
+"videoannotationscreen.label.textbolditalics" = "ব’ল্ড-ইটালিক";
+
+// Issue Submission Form
+"issuesubmissionform.label.emaildisplay" = "ইমেইল ঠিকনা";
+"issuesubmissionform.label.emailplaceholder" = "zylker@zohomail.com";
+"issuesubmissionform.label.screenrecordingsummary" = "স্ক্ৰীণ ৰেকৰ্ড সাৰাংশ";
+"issuesubmissionform.label.subjectdisplayname" = "বিষয়";
+"issuesubmissionform.label.subjectplaceholder" = "বিষয়টো প্ৰবিষ্ট কৰক";
+"issuesubmissionform.label.addtoexistingticket" = "চলিত টিকতত অন্তৰ্ভুক্ত কৰক";
+"issuesubmissionform.label.existingticketid" = "চলিত টিকত ID";
+"issuesubmissionform.label.enterticketidtolink" = "লিংক কৰিবলগীয়া টিকত ID প্ৰবিষ্ট কৰক";
+"issuesubmissionform.label.issuedescription" = "সমস্যাৰ বিৱৰণ";
+"issuesubmissionform.label.issuemoredetails" = "সমস্যাটোৰ বিষয়ে অধিক বিৱৰণ প্ৰদান কৰক";
+"issuesubmissionform.label.submityourissue" = "আপোনাৰ সমস্যা দাখিল কৰক";
+"issuesubmissionform.alert.videouploadfailed" = "ভিডিঅ’ আপলোড কৰাটো বিফল হৈছে। অনুগ্ৰহ কৰি পুনৰ চেষ্টা কৰক।";
+"issuesubmissionform.alert.thanksmessagetitle" = "আমাৰ লগত যোগাযোগ কৰি থকাৰ বাবে ধন্যবাদ!";
+"issuesubmissionform.alert.thanksmessagebody" = "আপোনাৰ উদ্বিগ্নতাখিনিয়েই হৈছে আমাৰ প্ৰাথমিকতা, সেয়ে আমাৰ সমৰ্থন টীমে আপোনাৰ লগত সোনকালে যোগাযোগ কৰিব। দিনটো শুভ হওক!";
+"issuesubmissionform.alert.videoeditdetailuploadfailure" = "ভিডিঅ’ সম্পাদনাৰ বিৱৰণ আপলোড কৰাত বিফল হৈছে। অনুগ্ৰহ কৰি পুনৰ চেষ্টা কৰক।";
+"issuesubmissionform.label.entersubject" = "অনুগ্ৰহ কৰি সমস্যাটোৰ বিষয় প্ৰবিষ্ট কৰক";
+"issuesubmissionform.label.enteremail" = "অনুগ্ৰহ কৰি ই-মেইল এড্ৰেচ প্ৰৱিষ্ট কৰক";
+"issuesubmissionform.label.enterexistingticketid" = "অনুগ্ৰহ কৰি চলিত টিকত id প্ৰবিষ্ট কৰক";
+"issuesubmissionform.label.choosephoto" = "ফটো পছন্দ কৰক";
+"issuesubmissionform.label.browse" = "ব্ৰাউজ কৰক";
+"issuesubmissionform.alert.accestophotodisabledgotosetting" = "ফটো লাইব্ৰেৰীৰ একচেছ অক্ষমিত কৰা আছে। ফটোবোৰ একচেছ কৰিবলৈ অনুগ্ৰহ কৰি ছেটিংছলৈ গৈ ফটো লাইব্ৰেৰী অন কৰক।";
+"issuesubmissionform.alert.accestophotodisabledipad" = "ফটো লাইব্ৰেৰীৰ একচেছ অক্ষমিত কৰা আছে";
+"issuesubmissionform.alert.accestophotodisabledmessageipad" = "ফটোবোৰ একচেছ কৰিবলৈ অনুগ্ৰহ কৰি ছেটিংছলৈ গৈ ফটো লাইব্ৰেৰী অন কৰক।";
+"issuesubmissionform.alert.submitting" = "দাখিল কৰি আছোঁ";
+

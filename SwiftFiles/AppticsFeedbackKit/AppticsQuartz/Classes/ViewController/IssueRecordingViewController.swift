@@ -10,13 +10,14 @@ import UIKit
 import ReplayKit
 
 fileprivate struct IssueRecordingVCStringProvider{
-    static let navTitle = "Record Your Issue"
-    static let closeButtonTitle = "Close"
-    static let recordingFailureGenericAlertText = "Failed to intiate the screen recording"
-    static let recordingFailureDueToMultiwindowAlertText = "The content you are trying to record is in multi-window mode, which is not supported for recording. Please switch to full-screen mode"
-    static let recordingFailureDueToNoInternetAlertText = "Internet connection required for screen recording. Please connect to proceed."
-    static let recordingFailureAlertOKText = "OK"
+    static let navTitle = QuartzKitStrings.localized("issuerecordscreen.label.recordissue")
+    static let closeButtonTitle = QuartzKitStrings.localized("issuerecordscreen.label.close")
+    static let recordingFailureGenericAlertText = QuartzKitStrings.localized("issuerecordscreen.label.failedtoinitiate")
+    static let recordingFailureDueToMultiwindowAlertText = QuartzKitStrings.localized("issuerecordscreen.label.failuremultiwindow")
+    static let recordingFailureDueToNoInternetAlertText = QuartzKitStrings.localized("issuerecordscreen.label.nointerneterror")
+    static let recordingFailureAlertOKText = QuartzKitStrings.localized("issuerecordscreen.label.ok")
 }
+
 
 public class IssueRecordingViewController: UIViewController{
     public var shouldShowCloseInNavBar: Bool = false

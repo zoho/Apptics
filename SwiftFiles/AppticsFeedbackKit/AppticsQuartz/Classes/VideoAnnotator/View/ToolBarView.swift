@@ -335,7 +335,7 @@ class ToolBarView: UIScrollView {
         strokeWidthLabel.translatesAutoresizingMaskIntoConstraints = false
         strokeWidthLabel.font = UIFont.systemFont(ofSize: 12)
         strokeWidthLabel.textColor = AnnotationEditorViewColors.strokeWidthLabelTxtColor
-        strokeWidthLabel.text = "Border Width"
+        strokeWidthLabel.text = QuartzKitStrings.localized("videoannotationscreen.label.shapeborderwidth")
         return strokeWidthLabel
     }()
     
@@ -344,7 +344,7 @@ class ToolBarView: UIScrollView {
         txtOpacityLabel.translatesAutoresizingMaskIntoConstraints = false
         txtOpacityLabel.font = UIFont.systemFont(ofSize: 12)
         txtOpacityLabel.textColor = AnnotationEditorViewColors.strokeWidthLabelTxtColor
-        txtOpacityLabel.text = "Opacity"
+        txtOpacityLabel.text = QuartzKitStrings.localized("videoannotationscreen.label.shapelineopacity")
         return txtOpacityLabel
     }()
     
@@ -379,7 +379,7 @@ class ToolBarView: UIScrollView {
         txtSizeLabel.translatesAutoresizingMaskIntoConstraints = false
         txtSizeLabel.font = UIFont.systemFont(ofSize: 12)
         txtSizeLabel.textColor = AnnotationEditorViewColors.strokeWidthLabelTxtColor
-        txtSizeLabel.text = "Text Size"
+        txtSizeLabel.text = QuartzKitStrings.localized("videoannotationscreen.label.shapetextsize")
         return txtSizeLabel
     }()
     

@@ -159,8 +159,8 @@ class ToolBarViewModel: ToolBarViewModelProtocol{
     private var tableModels: [TableModel] = []
     
     lazy var borderStyleModel: [BorderStyleModel] = {
-        let solid = BorderStyleModel(text: "Solid", type: .solid)
-        let dashed = BorderStyleModel(text: "Dashed", type: .dashed)
+        let solid = BorderStyleModel(text: QuartzKitStrings.localized("videoannotationscreen.alert.stroketypesolid"), type: .solid)
+        let dashed = BorderStyleModel(text: QuartzKitStrings.localized("videoannotationscreen.alert.stroketypedashed"), type: .dashed)
         return [solid,dashed]
     }()
     

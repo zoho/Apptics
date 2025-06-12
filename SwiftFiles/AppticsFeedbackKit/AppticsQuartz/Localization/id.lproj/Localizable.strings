@@ -1,0 +1,111 @@
+// Issue Recording VC
+"issuerecordscreen.label.recordissue" = "Catat Masalah Anda";
+"issuerecordscreen.label.close" = "Tutup";
+"issuerecordscreen.label.failedtoinitiate" = "Gagal memulai perekaman layar";
+"issuerecordscreen.label.failuremultiwindow" = "Konten yang Anda coba rekam berada dalam mode multi-jendela, yang tidak mendukung perekaman. Harap beralih ke mode layar penuh";
+"issuerecordscreen.label.nointerneterror" = "Koneksi internet diperlukan untuk perekaman layar. Harap hubungkan untuk melanjutkan.";
+"issuerecordscreen.label.ok" = "OKE";
+"issuerecordscreen.label.recordinginfo" = "Rekam segera masalah yang Anda hadapi lalu kirimkan ke tim dukungan kami agar masalah tersebut mudah dipahami dan bantuan dapat diberikan dengan cepat.";
+"issuerecordscreen.label.iagreetext" = "Saya menyepakati dan menyetujui pengumpulan data yang diperlukan. Lihat Detail";
+"issuerecordscreen.label.optiontotrim" = "Anda memiliki opsi untuk memotong, mengedit, dan memberi anotasi pada video rekaman.";
+"issuerecordscreen.label.startrecording" = "Mulai Merekam";
+"issuerecordscreen.label.endrecording" = "Akhiri Rekaman";
+"issuerecordscreen.label.recordinginprogress" = "Perekaman sedang Berlangsung!";
+"issuerecordscreen.label.quicktipstext" = "Kiat Singkat";
+"issuerecordscreen.label.quicktips1" = "Anda dapat merekam layar Anda selama maksimal 5 menit.";
+"issuerecordscreen.label.quicktips2" = "Anda dapat memotong, mengedit, dan memberi anotasi pada video rekaman.";
+"issuerecordscreen.label.quicktips3" = "Jangan tutup aplikasi saat layar sedang direkam.";
+"issuerecordscreen.label.quicktips4" = "Untuk mempelajari lebih lanjut, harap kunjungi dokumentasi bantuan kami";
+
+// Data Consent Screen
+"dataconsentscreen.label.consenttitle" = "Data berikut akan dikumpulkan atas persetujuan Anda:";
+"dataconsentscreen.label.consent1" = "Alamat IP dan log konsol IP Anda yang dihasilkan selama perekaman";
+"dataconsentscreen.label.consent2" = "Detail lingkungan Anda, seperti nama perangkat, versi OS, dll.";
+"dataconsentscreen.label.consent3" = "Metrik kinerja perangkat (seperti memori, waktu koneksi jaringan, dll.)";
+"dataconsentscreen.label.consent4" = "Perekaman layar jendela perangkat";
+"dataconsentscreen.label.consent5" = "Secara default, audio akan direkam selama perekaman layar. Namun, Anda dapat membisukan atau merekam ulang trek audio sebelum mengirimkannya.";
+
+// Permission
+"videoannotationscreen.alert.microphonedisabledipad" = "Akses ke Mikrofon dinonaktifkan";
+"videoannotationscreen.alert.gotosettingtoturnonmicrophoneipad" = "Harap buka Pengaturan, lalu aktifkan Mikrofon untuk merekam audio.";
+"videoannotationscreen.alert.microphonedisablediphone" = "Akses ke Mikrofon dinonaktifkan. Harap buka Pengaturan, lalu aktifkan Mikrofon untuk merekam audio.";
+
+// General
+"general.label.recordingintiationfailed" = "Inisiasi perekaman layar gagal. Harap coba kembali";
+"general.label.ok" = "Oke";
+"general.label.submit" = "Kirimkan";
+"general.label.done" = "Selesai";
+"general.label.cancel" = "Batalkan";
+"general.label.settings" = "Pengaturan";
+"general.label.erroroccured" = "Telah Terjadi Kesalahan";
+
+// Issue Submission Screen
+"issuesubmissionscreen.alert.filesizeexceeded" = "Ukuran file telah terlampaui. Ukuran file tidak boleh lebih dari 3 MB";
+"issuesubmissionscreen.label.attachfiles" = "Lampirkan File";
+"issuesubmissionscreen.label.newrecording" = "Rekaman Baru";
+"issuesubmissionscreen.label.editrecording" = "Edit Rekaman";
+
+
+// Video Annotation Screen
+"videoannotationscreen.label.noaudiotrack" = "Tidak Ada Trek Audio";
+"videoannotationscreen.label.shapeborderwidth" = "Lebar Batas";
+"videoannotationscreen.label.shapelineopacity" = "Keburaman";
+"videoannotationscreen.label.shapetextsize" = "Ukuran Teks";
+"videoannotationscreen.alert.elementdurationbeyondvideolength" = "Durasi elemen melebihi panjang video";
+"videoannotationscreen.alert.notallowed" = "Tidak Diizinkan";
+"videoannotationscreen.alert.deleteexisitingaudio" = "Harap hapus audio yang ada sebelum merekam yang baru.";
+"videoannotationscreen.alert.textlimitreached" = "Batas Tercapai";
+"videoannotationscreen.alert.textdeleteexisting" = "Harap hapus sebagian teks yang ada.";
+"videoannotationscreen.alert.pausevideobeforerecordingaudio" = "Harap jeda video Anda sebelum merekam audio";
+"videoannotationscreen.alert.changesnotsaved" = "Perubahan Anda tidak disimpan. Anda yakin ingin melanjutkan?";
+"videoannotationscreen.alert.proceed" = "Lanjutkan";
+"videoannotationscreen.alert.stroketypesolid" = "Solid";
+"videoannotationscreen.alert.stroketypedashed" = "Putus-putus";
+"videoannotationscreen.alert.entertext" = "Masukkan teks";
+
+"videoannotationscreen.label.trim" = "Pangkas";
+"videoannotationscreen.label.mask" = "Masker";
+"videoannotationscreen.label.shapes" = "Bentuk";
+"videoannotationscreen.label.text" = "Teks";
+"videoannotationscreen.label.audio" = "Audio";
+"videoannotationscreen.label.block" = "Blokir";
+"videoannotationscreen.label.blur" = "Kabur";
+"videoannotationscreen.label.rectangle" = "Persegi panjang";
+"videoannotationscreen.label.oval" = "Oval";
+"videoannotationscreen.label.arrow" = "Panah";
+"videoannotationscreen.label.color" = "Warna";
+"videoannotationscreen.label.width" = "Lebar";
+"videoannotationscreen.label.style" = "Gaya";
+"videoannotationscreen.label.edit" = "Edit";
+"videoannotationscreen.label.size" = "Ukuran";
+"videoannotationscreen.label.background" = "Latar belakang";
+"videoannotationscreen.label.textregular" = "Reguler";
+"videoannotationscreen.label.textbold" = "Tebal";
+"videoannotationscreen.label.textitalics" = "Miring";
+"videoannotationscreen.label.textbolditalics" = "Tebal-Miring";
+
+// Issue Submission Form
+"issuesubmissionform.label.emaildisplay" = "Alamat Email";
+"issuesubmissionform.label.emailplaceholder" = "zylker@zohomail.com";
+"issuesubmissionform.label.screenrecordingsummary" = "Ringkasan Rekaman Layar";
+"issuesubmissionform.label.subjectdisplayname" = "Subjek";
+"issuesubmissionform.label.subjectplaceholder" = "Masukkan subjek";
+"issuesubmissionform.label.addtoexistingticket" = "Tambahkan ke tiket yang ada";
+"issuesubmissionform.label.existingticketid" = "ID Tiket yang Ada";
+"issuesubmissionform.label.enterticketidtolink" = "Masukkan ID Tiket yang akan Ditautkan";
+"issuesubmissionform.label.issuedescription" = "Deskripsi Masalah";
+"issuesubmissionform.label.issuemoredetails" = "Berikan detail lebih lanjut tentang masalahnya";
+"issuesubmissionform.label.submityourissue" = "Kirimkan Masalah Anda";
+"issuesubmissionform.alert.videouploadfailed" = "Pengunggahan Video gagal. Harap coba kembali.";
+"issuesubmissionform.alert.thanksmessagetitle" = "Terima kasih telah menghubungi kami!";
+"issuesubmissionform.alert.thanksmessagebody" = "Masalah Anda adalah prioritas kami, jadi tim dukungan kami akan segera menghubungi Anda. Semoga hari Anda menyenangkan!";
+"issuesubmissionform.alert.videoeditdetailuploadfailure" = "Pengunggahan detail editan video gagal. Harap coba kembali.";
+"issuesubmissionform.label.entersubject" = "Harap masukkan subjek masalah";
+"issuesubmissionform.label.enteremail" = "Harap masukkan alamat email";
+"issuesubmissionform.label.enterexistingticketid" = "Harap masukkan ID tiket yang ada";
+"issuesubmissionform.label.choosephoto" = "Pilih Foto";
+"issuesubmissionform.label.browse" = "Telusuri";
+"issuesubmissionform.alert.accestophotodisabledgotosetting" = "Akses ke Pustaka Foto dinonaktifkan. Harap buka Pengaturan, lalu aktifkan Pustaka foto untuk mengakses foto.";
+"issuesubmissionform.alert.accestophotodisabledipad" = "Akses ke Pustaka Foto dinonaktifkan";
+"issuesubmissionform.alert.accestophotodisabledmessageipad" = "Harap buka Pengaturan, lalu aktifkan Pustaka foto untuk mengakses foto.";
+"issuesubmissionform.alert.submitting" ="Mengirimkan";

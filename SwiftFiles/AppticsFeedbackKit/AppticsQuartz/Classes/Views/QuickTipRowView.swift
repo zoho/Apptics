@@ -94,9 +94,11 @@ class QuickTipRowView: UIView{
         }
 
         let range = NSMakeRange(0, tipText.count - linkRange.length)
-        attributedString.addAttribute(.foregroundColor,
-                                      value: tipTextColor ,
-                                      range: range)
+        if (range.location != NSNotFound && range.location + range.length <= attributedString.length && range.length > 0 ) {
+            attributedString.addAttribute(.foregroundColor,
+                                          value: tipTextColor ,
+                                          range: range)
+        }
         
         attributedString.addAttribute(.font, value: tipTextFont, range: NSRange(location: 0, length: tipText.count))
         

@@ -9,12 +9,12 @@
 import UIKit
 
 class QuickTipsDataSource{
-    let tipTitle = "Quick Tips"
+    let tipTitle = QuartzKitStrings.localized("issuerecordscreen.label.quicktipstext")
     let tips: [String] = [
-        "You can record your screen for a maximum of 5 minutes.",
-        "You can trim, edit and annotate the recorded video.",
-        "Do not close the app when the screen is being recorded.",
-        "To learn more, please visit our help documentation"
+        QuartzKitStrings.localized("issuerecordscreen.label.quicktips1"),
+        QuartzKitStrings.localized("issuerecordscreen.label.quicktips2"),
+        QuartzKitStrings.localized("issuerecordscreen.label.quicktips3"),
+        QuartzKitStrings.localized("issuerecordscreen.label.quicktips4")
     ]
 }
 
