@@ -20,6 +20,7 @@ extension FeedbackKit{
             print("Navigation controller not found.")
             return
         }
+        AnnotationEditViewControllerStore.shared.resetAnnotationEditViewControllerStore()
         QuartzKit.configure(delegate: QuartzDataProvider())
         let newVC = IssueRecordingViewController()
         newVC.delegate = self

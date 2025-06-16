@@ -246,9 +246,6 @@ extension ScreenRecordEditViewController: AnnotationUploadCompletionDelegate{
             completion(nil)
             return
         }
-
-        
-
         guard let regex = try? NSRegularExpression(pattern: emailRegex, options: .caseInsensitive) else {
             fatalError("Invalid regex pattern")
         }
@@ -262,9 +259,6 @@ extension ScreenRecordEditViewController: AnnotationUploadCompletionDelegate{
             print("Email is not valid!")
             strmail = "user@example.com"
         }
-
-
-        
         vm.update(userMailAddress: "\(strmail)",
                   subject: "",
                   description: "")
