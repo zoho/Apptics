@@ -23,7 +23,7 @@
 		</data>
 		<key>AppticsResources_watchOS.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		rLqC+Y6U2IbN3RRMHaUkdUFQ/UM=
+		+giOl00kFEtIHz5pgZLxdHjtwF8=
 		</data>
 		<key>AppticsResources_watchOS.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -31,11 +31,11 @@
 		</data>
 		<key>AppticsResources_watchOS.bundle/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		qzY6KNQHOQ2zxC2q3YMcuAJyefs=
+		Gvjv1HFqSVoi/Ya/+EwE6RFdn64=
 		</data>
 		<key>AppticsResources_watchOS.bundle/_CodeSignature/CodeResources</key>
 		<data>
-		MHZYRK2Ecvi4SsBcJRuO0FwzCXo=
+		FY618D6zoywXb7Aekx/Jxkvh/lA=
 		</data>
 		<key>AppticsResources_watchOS.bundle/_CodeSignature/CodeSignature</key>
 		<data>
@@ -232,7 +232,7 @@
 		</dict>
 		<key>AppticsResources_watchOS.bundle/sdkProp_info.plist</key>
 		<data>
-		KGcTzhSJgSVVfvFIZpBg/yWn+zU=
+		gguTXZ6AOU3+uebSJN8NWVBUjBo=
 		</data>
 		<key>AppticsResources_watchOS.bundle/sv.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
@@ -453,7 +453,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		6JiHN8AqYpQ/Xk0pUAKChvAPE6g=
+		N8dH6itu7UGtzxnOwQlI33NYXx4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -505,11 +505,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rLqC+Y6U2IbN3RRMHaUkdUFQ/UM=
+			+giOl00kFEtIHz5pgZLxdHjtwF8=
 			</data>
 			<key>hash2</key>
 			<data>
-			BSnJGuYetp1nBYqCfaCJxQIKVFeCb/5S/xN1PDZsYXM=
+			9o6V1pN+g5zQEdtHhhB9LOodOvotUa9KFc4+dtrx0FU=
 			</data>
 		</dict>
 		<key>AppticsResources_watchOS.bundle/_CodeSignature/CodeRequirements</key>
@@ -527,22 +527,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qzY6KNQHOQ2zxC2q3YMcuAJyefs=
+			Gvjv1HFqSVoi/Ya/+EwE6RFdn64=
 			</data>
 			<key>hash2</key>
 			<data>
-			Pb6GFCKumXec6W4zmEu9QYfW4OeftdR8L1GIoXWwqSk=
+			NcWzUrbL/yw8RtBG5dAzf1Bowbf6/61uKGaFax+pPKc=
 			</data>
 		</dict>
 		<key>AppticsResources_watchOS.bundle/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			MHZYRK2Ecvi4SsBcJRuO0FwzCXo=
+			FY618D6zoywXb7Aekx/Jxkvh/lA=
 			</data>
 			<key>hash2</key>
 			<data>
-			ahtt9Vw6Zv81brjLK4GCt48c9PRFO9dbnWuGb8XW5bQ=
+			OLh3EHxSTAwDMzErSdkNUV3HAK041Canxf7grPlkUQ8=
 			</data>
 		</dict>
 		<key>AppticsResources_watchOS.bundle/_CodeSignature/CodeSignature</key>
@@ -833,11 +833,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KGcTzhSJgSVVfvFIZpBg/yWn+zU=
+			gguTXZ6AOU3+uebSJN8NWVBUjBo=
 			</data>
 			<key>hash2</key>
 			<data>
-			//uc4DnJW2Y2NOt8nQBKjk5gmGnlWL9+aXCzdNZBcAI=
+			dz+YPLijdstpc5eKEuitRYHzN1ZlZL0gemOuitnYx2o=
 			</data>
 		</dict>
 		<key>AppticsResources_watchOS.bundle/sv.lproj/ZAnalyticsLocalizable.strings</key>

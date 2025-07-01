@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/FeedbackKit.h</key>
 		<data>
-		r7Q6MHiSyDEpSM8syZGd8C/A2yY=
+		iSbQeSLLcwdhbd4Y4B4U69Tm6vI=
 		</data>
 		<key>Headers/ZAArrowCanvasView.h</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		7dOezlIwUubVpPJtFDH+/R+082A=
+		Zs2n6jkg3nOSGbo68mnku4NiUoE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -108,7 +108,7 @@
 		</data>
 		<key>ZBugSquashResources.bundle/Info.plist</key>
 		<data>
-		uFSrFPoa+09mQl/53J6SeXK2Hxk=
+		e91Lae0hV/P3UTUBKx5EalFHo7M=
 		</data>
 		<key>ZBugSquashResources.bundle/NewBugViewController.nib/objects-11.0+.nib</key>
 		<data>
@@ -196,7 +196,7 @@
 		</data>
 		<key>ZBugSquashResources.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		mDDFCThYtzGS2Wnj1nasX4LMZNA=
+		9Z+ZD1Mr3KatZqrPc+VjeXYhQjI=
 		</data>
 		<key>ZBugSquashResources.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -204,7 +204,7 @@
 		</data>
 		<key>ZBugSquashResources.bundle/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		1mYCOSNYrt3LA3egRlC6UsSMot4=
+		Dfs8+Op/HurHZUKElQXTAOm6D4E=
 		</data>
 		<key>ZBugSquashResources.bundle/_CodeSignature/CodeResources</key>
 		<data>
@@ -1308,7 +1308,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7/SZ+PhLzA65EBJ9on4HeEoM5wmuhg9Ns8wPtHIs0G0=
+			LOgywIG3ll23deMpq/inHWxUginGwq0Btsv5kgsRPv0=
 			</data>
 		</dict>
 		<key>Headers/ZAArrowCanvasView.h</key>
@@ -1445,7 +1445,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			uA6IdDlzghNwyc/AnvhCaDqFtKFf2akFO9wqG5B6st8=
+			sPeBt2y38cAM6WCMGtE9Wy59X0eN06PFgEcdZmmcADg=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/NewBugViewController.nib/objects-11.0+.nib</key>
@@ -1599,7 +1599,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9wxQ5naFIrX2mQsIBhyY1RxtDDFG3dlXTraXTn+vnI8=
+			nEUG7MbF3bbWCe8iMSPLxnA4kUqwPKY7ko3zkAHspf0=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/_CodeSignature/CodeRequirements</key>
@@ -1613,7 +1613,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GXNwlZn35hkRejOEDeyLOXVITiKrA2eSlG03grzKD+Y=
+			5WuM+NVTrNdn4fu5F29L/bFzRJspAk1KwAHAVC3ajNk=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/_CodeSignature/CodeResources</key>

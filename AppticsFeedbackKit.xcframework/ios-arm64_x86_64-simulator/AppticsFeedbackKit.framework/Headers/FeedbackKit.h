@@ -230,6 +230,14 @@ Set this true to mask the text detected in a screenshot by default. Setting to F
 /**
  :nodoc: Get all types of completion handler in single place by extending our protocol.
  */
+
+
++(void)startScreenRecord;
+
++(void)activateReportBug;
+
+
+
 #if !TARGET_OS_OSX
 -(void) setCustomHandler:(id <FKCustomHandler> _Nonnull) handler;
 #endif
