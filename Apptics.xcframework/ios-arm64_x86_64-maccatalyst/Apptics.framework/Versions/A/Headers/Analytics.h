@@ -371,6 +371,7 @@ typedef void (^internbgConsoleLogsRequestSuccessBlock)(void);
 
 - (void)startTimerWithInterval:(NSTimeInterval)interval executeBlock:(dispatch_block_t)completionHandler;
 - (void)stopTimer;
+- (void)receiveKMMcrashAndSave:(NSException *)crashReport;
 
 @end
 
