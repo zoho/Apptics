@@ -42,8 +42,8 @@ spec.requires_arc = true
 
 spec.subspec 'AppticsFeedbackKitSwift' do |cp|
       cp.source_files        = 'SwiftFiles/AppticsFeedbackKit/**/*.swift'
-      cp.resources           = 'SwiftFiles/AppticsFeedbackKit/**/*.{ttf,xib,xcprivacy,xcassets}'
-      #cp.resource_bundles = {'APFeedbackSwift' => ['SwiftFiles/AppticsFeedbackKit/*.{ttf,xib,xcprivacy}'] }
+      #cp.resources           = 'SwiftFiles/AppticsFeedbackKit/**/*.{ttf,xib,xcprivacy,xcassets}'
+      cp.resource_bundles = {'APFeedbackSwift' => ['SwiftFiles/AppticsFeedbackKit/*.{ttf,xib,xcprivacy}'] }
       cp.dependency 'AppticsFeedbackKit', "#{spec.version}"
       cp.platform     = :ios, 13.0
   end
