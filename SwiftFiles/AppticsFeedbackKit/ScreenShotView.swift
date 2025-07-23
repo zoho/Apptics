@@ -19,8 +19,7 @@ public class ScreenShotView: UIView,UICollectionViewDelegate,UICollectionViewDat
     @IBOutlet weak var cardView:CardViews!
     var floatingscrollController: FloatScreenshotEditor?
     @IBOutlet weak var clobttnTopConst:NSLayoutConstraint!
-    @IBOutlet weak var doneBttnTopConst:NSLayoutConstraint!
-    let DEVICE_SIZE = UIApplication.shared.keyWindow?.rootViewController?.view.convert(UIScreen.main.bounds, from: nil).size
+    @IBOutlet weak var doneBttnTopConst:NSLayoutConstraint!    
     @IBOutlet weak var noDataBttn:UIButton!
     var fileArray = [URL]()
     var filesCount = 0
@@ -55,9 +54,7 @@ public class ScreenShotView: UIView,UICollectionViewDelegate,UICollectionViewDat
         else{
             appFontsize = 40.0
         }
-#if SWIFT_PACKAGE
         cardView.layer.borderColor = UIColor.clear.cgColor
-#endif
         collectionViewSetup()
         getallImages()
         fileindexpath = [0,0]
@@ -67,10 +64,20 @@ public class ScreenShotView: UIView,UICollectionViewDelegate,UICollectionViewDat
         NotificationCenter.default.addObserver(self, selector: #selector(self.screenshotsLoad), name:Notification.Name(notificationScreenreloadKey) , object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(self.imageReloadreportBug), name:Notification.Name(notificationImageReloadfromReportBug) , object: nil)
         self.pageNumberLabel.text = "\(1)/\(self.fileArray.count)"
-        if DEVICE_SIZE!.height < 670{
-            clobttnTopConst.constant = 20
-            doneBttnTopConst.constant = 20
+        
+        if let windowScene = UIApplication.shared.connectedScenes
+            .first(where: { $0.activationState == .foregroundActive }) as? UIWindowScene,
+           let window = windowScene.windows.first(where: { $0.isKeyWindow }),
+           let rootView = window.rootViewController?.view {
+           let deviceSize = rootView.convert(UIScreen.main.bounds, from: nil).size
+            print("Device size: \(deviceSize)")
+            if deviceSize.height < 670{
+                clobttnTopConst.constant = 20
+                doneBttnTopConst.constant = 20
+            }
         }
+        
+        
                 
     }
     

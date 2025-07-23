@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -75,7 +75,7 @@
                             </connections>
                         </collectionView>
                         <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="7TB-XY-n94">
-                            <rect key="frame" x="129.5" y="520" width="116" height="25"/>
+                            <rect key="frame" x="150.5" y="520" width="74" height="25"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="25" id="LQf-gV-4d4"/>
                             </constraints>
@@ -116,12 +116,12 @@
                             </variation>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Powered by Zoho Apptics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H39-tp-vlr">
-                            <rect key="frame" x="115" y="608" width="145" height="12"/>
+                            <rect key="frame" x="115" y="610" width="145" height="12"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="12" id="scL-ee-j5V"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                            <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="0.20338369205298013" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="textColor" red="0.72324812592882104" green="0.72324812592882104" blue="0.72324812592882104" alpha="0.5047340645695364" colorSpace="custom" customColorSpace="displayP3"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
@@ -144,7 +144,7 @@
                         <constraint firstItem="7TB-XY-n94" firstAttribute="centerX" secondItem="egv-ZV-I3C" secondAttribute="centerX" id="d1K-Lu-RTO"/>
                         <constraint firstItem="soc-N5-NLn" firstAttribute="centerY" secondItem="egv-ZV-I3C" secondAttribute="centerY" id="leX-Iy-dcW"/>
                         <constraint firstItem="jGP-hJ-MXU" firstAttribute="leading" secondItem="egv-ZV-I3C" secondAttribute="leading" id="qgc-zh-kJI"/>
-                        <constraint firstAttribute="bottom" secondItem="H39-tp-vlr" secondAttribute="bottom" id="utQ-Om-uxJ"/>
+                        <constraint firstAttribute="bottom" secondItem="H39-tp-vlr" secondAttribute="bottom" constant="-2" id="utQ-Om-uxJ"/>
                     </constraints>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">

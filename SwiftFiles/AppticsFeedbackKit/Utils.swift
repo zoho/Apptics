@@ -163,7 +163,7 @@ public struct FontIconText {
 #if SWIFT_PACKAGE
 public let bundles = Bundle.module
 #else
-//public let bundles = Bundle(for: GradientButton.self)
+public let bundles1 = Bundle(for: GradientButton.self)
 public let bundles = Bundle(url: Bundle(for: GradientButton.self).url(forResource: "APFeedbackSwift", withExtension: "bundle") ?? Bundle(for: GradientButton.self).bundleURL) ?? Bundle(for: GradientButton.self)
 
 #endif
