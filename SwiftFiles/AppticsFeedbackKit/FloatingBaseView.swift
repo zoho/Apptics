@@ -184,7 +184,7 @@ import AppticsFeedbackKit
     public override func viewDidLoad() {
         super.viewDidLoad()
         FeedbackKit.stopMonitoring()
-        loadFontForCPResourceBundle()
+//        loadFontForCPResourceBundle()
         addFloatingView()
     }
   
@@ -368,6 +368,7 @@ import AppticsFeedbackKit
                         self.window.removeFromSuperview()
                         self.sceneAlertWindow.isHidden = true
                         self.sceneAlertWindow.removeFromSuperview()
+                        self.sceneAlertWindow = nil
                     }
                 }))
                 alertController.addAction(UIAlertAction(title: FeedbackKit.getLocalizableString(forKey: "zanalytics.feedback.privacy.consent.cancel")!, style: UIAlertAction.Style.default, handler: { _ in

@@ -87,7 +87,9 @@ extension ScreenRecordEditViewController: AnnotationUploadCompletionDelegate{
 
     private static var didAddObservers = false // flag to listen addObserver call to function only once
 
-    
+    private var hasBeenCalled = false
+    private var hasSendDataToQuartzBeenCalled = false
+
     public func closeFloatingWindow() {
         if #available(iOS 13.0, *) {
             if let currentWindowScene = UIApplication.shared.connectedScenes.first as?  UIWindowScene {
@@ -100,6 +102,7 @@ extension ScreenRecordEditViewController: AnnotationUploadCompletionDelegate{
                         self.window.removeFromSuperview()
                         self.sceneAlertWindow.isHidden = true
                         self.sceneAlertWindow.removeFromSuperview()
+                        self.sceneAlertWindow = nil
                     }
             }
         }
@@ -216,19 +219,28 @@ extension ScreenRecordEditViewController: AnnotationUploadCompletionDelegate{
     
     
     @objc func methodOfReceivedNotification(notification: Notification) {
+        guard !hasBeenCalled else { return }
+        hasBeenCalled = true
+        NotificationCenter.default.removeObserver(self, name: Notification.Name("apptics_ScreenRecord_DataErase"), object: nil)
         flushRecordings()
         FeedbackKit.listener().flagForRecordSent = ""
         ScreenRecordEditViewController.didAddObservers = false
         print("Cleared all recordings in quartz")
 
     }
-    
-    @objc func methodSendDataToQuartz(notification: Notification) {
-        print("send pressed in quartz--methodSendDataToQuartz")
-        self.submitFormWithAnnotatedVideo()
-        NotificationCenter.default.removeObserver(self)
-    }
 
+
+    
+  
+//MARK: Quartz data send method
+    @objc func methodSendDataToQuartz(notification: Notification) {
+        guard !hasSendDataToQuartzBeenCalled else { return }
+        hasSendDataToQuartzBeenCalled = true
+        print("send pressed in quartz--methodSendDataToQuartz")
+        NotificationCenter.default.removeObserver(self, name: Notification.Name("apptics_ScreenRecord_SendData"), object: nil)
+        self.submitFormWithAnnotatedVideo()
+        //        NotificationCenter.default.removeObserver(self)
+    }
     
     
    
@@ -311,8 +323,13 @@ extension ScreenRecordEditViewController: AnnotationUploadCompletionDelegate{
             navigationController.pushViewController(editVC, animated: isAnimated)
         }
     }
-
     
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
+    
+ 
   
 }
 
@@ -332,8 +349,18 @@ public class AnnotationEditViewControllerStore: NSObject {
     }
     
     public func resetAnnotationEditViewControllerStore() {
-        editVC = nil
         print("editVC is reset to nil")
+        if let navVC = editVC as? UINavigationController {
+               navVC.viewControllers.removeAll()
+           }
+           editVC?.view.removeFromSuperview()
+           editVC?.removeFromParent()
+
+           editVC = nil
+           print("AnnotationEditViewControllerStore: editVC deallocated and store cleared")
+        
+        
+        
     }
 }
 

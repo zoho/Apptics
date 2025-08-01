@@ -18,7 +18,7 @@ extension FeedbackKit: ScreenRecordingStoppingDelegate{
     public func stopScreenRecording(isRecordingFailed: Bool){
         
     stopRecording(isRecordingFailed: isRecordingFailed) {
-        print("stopRecording__isRecordingFailed")
+        print("stopRecording__Called")
         _ = ScreenRecordEditViewController()
     }
         FeedbackKit.listener().closeQuartz_Window = "stopped"

@@ -14,7 +14,6 @@ class QuickTipsDataSource{
         QuartzKitStrings.localized("issuerecordscreen.label.quicktips1"),
         QuartzKitStrings.localized("issuerecordscreen.label.quicktips2"),
         QuartzKitStrings.localized("issuerecordscreen.label.quicktips3"),
-        QuartzKitStrings.localized("issuerecordscreen.label.quicktips4")
     ]
 }
 
@@ -88,6 +87,8 @@ class QuickTipsView: UIView{
         var prevView: QuickTipRowView? = nil
         let topPadding: CGFloat = 16
         
+        var lastRowViewBottomConstraint: NSLayoutConstraint? = nil
+        
         for index in 0..<dataSource.tips.count{
             let tipText = dataSource.tips[index]
             let rowView = QuickTipRowView(text: tipText, helpDocUrlRefStr: helpDocUrlStr)
@@ -96,11 +97,12 @@ class QuickTipsView: UIView{
             containerView.addSubview(rowView)
             
             if let prevView = prevView{
+                lastRowViewBottomConstraint = rowView.bottomAnchor.constraint(lessThanOrEqualTo: containerView.bottomAnchor)
                 NSLayoutConstraint.activate([
                     rowView.topAnchor.constraint(equalTo: prevView.bottomAnchor, constant: topPadding),
                     rowView.leadingAnchor.constraint(equalTo: containerView.leadingAnchor),
                     rowView.trailingAnchor.constraint(equalTo: containerView.trailingAnchor),
-                    rowView.bottomAnchor.constraint(lessThanOrEqualTo: containerView.bottomAnchor),
+                    lastRowViewBottomConstraint!
                 ])
             }else{
                 NSLayoutConstraint.activate([
@@ -111,11 +113,18 @@ class QuickTipsView: UIView{
                 ])
             }
             prevView = rowView
-            if index == dataSource.tips.count-1{
-                let comp = tipText.components(separatedBy: " ")
-                let helpDocumentationTxt = comp.suffix(2).joined(separator: " ")
-                rowView.makeTappableLink(content: helpDocumentationTxt)
-            }
+//            if index == dataSource.tips.count-1{
+//                let comp = tipText.components(separatedBy: " ")
+//                let helpDocumentationTxt = comp.suffix(2).joined(separator: " ")
+//                rowView.makeTappableLink(content: helpDocumentationTxt)
+//            }
+        }
+        
+        if let prevView = prevView, let lastViewBottomConstrain = lastRowViewBottomConstraint{
+            NSLayoutConstraint.deactivate([lastViewBottomConstrain])
+            NSLayoutConstraint.activate([
+                prevView.bottomAnchor.constraint(equalTo: containerView.bottomAnchor)
+            ])
         }
         
     }

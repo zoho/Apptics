@@ -14,7 +14,6 @@ struct DataConsentDataSource{
     let consentTexts = [
         QuartzKitStrings.localized("dataconsentscreen.label.consent1"),
         QuartzKitStrings.localized("dataconsentscreen.label.consent2"),
-        QuartzKitStrings.localized("dataconsentscreen.label.consent3"),
         QuartzKitStrings.localized("dataconsentscreen.label.consent4"),
         QuartzKitStrings.localized("dataconsentscreen.label.consent5")
     ]

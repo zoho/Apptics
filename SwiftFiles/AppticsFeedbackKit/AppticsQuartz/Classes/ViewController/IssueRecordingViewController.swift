@@ -8,7 +8,6 @@
 
 import UIKit
 import ReplayKit
-import AppticsFeedbackKit
 
 fileprivate struct IssueRecordingVCStringProvider{
     static let navTitle = QuartzKitStrings.localized("issuerecordscreen.label.recordissue")
@@ -144,7 +143,6 @@ public class IssueRecordingViewController: UIViewController{
     }
     
     @objc private func backPressed(){
-        FeedbackKit.startMonitoring()
         if isModal{
             dismiss(animated: true)
         }else{

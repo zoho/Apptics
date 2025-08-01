@@ -14,10 +14,9 @@
 + (KMPCrash*)sharedManager;
 
 
-- (NSString*) binaryImagesStringForReport:(NSDictionary*) report arch:(NSString*) arch;
 - (NSString *)getPlatformArchitecture;
 
-NSDictionary* getInfoForBinaryName(NSString *binaryName);
+- (NSDictionary *)getInfoForBinaryName:(NSString *)binaryName;
 
 
 @end

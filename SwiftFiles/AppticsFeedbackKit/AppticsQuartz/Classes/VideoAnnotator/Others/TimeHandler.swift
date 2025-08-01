@@ -80,7 +80,7 @@ extension UIFont {
         return withTraits(traits: .traitItalic)
     }
 }
-
+//SDK input
 //extension UIImage {
 //    static func named(_ name: String, bundle: Bundle? = nil) -> UIImage? {
 //        guard !name.isEmpty else {
@@ -107,15 +107,15 @@ extension UIFont {
 //    }
 //}
 
-
+//pods input
 extension UIImage {
     static func named(_ name: String, bundle: Bundle? = nil) -> UIImage? {
         guard !name.isEmpty else {
             return nil
         }
-        
+
         #if SWIFT_PACKAGE
-                
+
         if let bundleURL = Bundle.module.url(forResource: "QuartzResources", withExtension: "bundle"),
            let bundle = Bundle(url: bundleURL) {
             let scale = Int(UIScreen.main.scale)
@@ -136,7 +136,7 @@ extension UIImage {
            let bundle = Bundle(url: bundleURL) {
             let scale = Int(UIScreen.main.scale)
             let scaledName = "\(name)@\(scale)x"
-            
+
             if let path = bundle.path(forResource: scaledName, ofType: "png") {
                 return UIImage(contentsOfFile: path)
             } else if let path = bundle.path(forResource: name, ofType: "png") {

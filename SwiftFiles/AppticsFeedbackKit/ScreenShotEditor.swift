@@ -572,6 +572,7 @@ public class FloatScreenshotEditor:UIViewController,UIGestureRecognizerDelegate{
                 alertController.addAction(UIAlertAction(title: "Okay", style: UIAlertAction.Style.cancel, handler: { _ in
                     self.sceneAlertWindow.isHidden = true
                     self.sceneAlertWindow.removeFromSuperview()
+                    self.sceneAlertWindow = nil
                 }))
                 sceneAlertWindow.rootViewController?.present(alertController, animated: true, completion: nil)
                 
