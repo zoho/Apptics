@@ -94,32 +94,11 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)saveDeviceDetails:(NSDictionary*) details;
 - (void)saveAppRegVersionDetails:(NSDictionary*) details;
 - (NSDictionary*)getMetaForVersion:(NSString *)version;// withCompletion:(void (^)(NSDictionary *results))completion;
-- (NSDictionary*) fetchAppRegVersionDetailsFor:(NSString *)version;
+- (void)fetchAppRegVersionDetailsFor:(NSString *)version withCompletion:(void (^)(NSDictionary *results))completion;
 - (void)deleteDetailsByVersion:(NSString *)version;
-
-- (void)saveSessionInfo:(NSDictionary *)sessionInfo;
-- (NSDictionary *)getSessionInfo : (NSNumber*) sessionID;
-- (NSMutableArray<NSNumber *> *)getAllSessionStartTimes;
-- (void)deleteRowsFromSessionInfoTableWithSessionIDs:(NSArray<NSNumber *> *)sessionIDs;
 
 - (void)saveUserInfo : (NSDictionary*) userInfo;
 - (NSDictionary *)getUserJSONByUser:(NSString *)user withGroup:(NSString * _Nullable)group status : (Boolean) status;
-
-- (void)insertTempEngagementWithSessionID:(NSNumber *)sessionID
-                                  data:(NSData *)data
-                                  type:(NSString *)type;
--(NSMutableDictionary *) getTempEngagementDataToBeSavedForSessionID : (NSNumber*) sessionID shouldDiscard : (bool) shouldDiscard;
-
-- (void)insertTempNonFatalDataWithSessionID:(NSNumber *)sessionID
-                                       data:(NSData *)data;
--(NSMutableArray *) getTempNonFatalDataToBeSavedForSessionID : (NSNumber*) sessionID shouldDiscard : (bool) shouldDiscard;
-
-- (void)insertTempConsoleLogDataWithSessionID:(NSNumber *)sessionID
-                                       data:(NSData *)data;
--(NSMutableArray *) getTempConsoleLogDataToBeSavedForSessionID : (NSNumber*) sessionID shouldDiscard : (bool) shouldDiscard;
-
-- (void)deleteTempDataWithoutSessionDetails:(NSArray *) sessionIds;
-
 
 @end
 

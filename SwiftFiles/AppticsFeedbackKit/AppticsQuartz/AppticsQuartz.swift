@@ -64,25 +64,58 @@ extension FeedbackKit: ScreenRecordingStoppingDelegate{
 
 
 
+//extension UIApplication {
+//    func topMostViewController(base: UIViewController? = {
+//        if #available(iOS 15.0, *) {
+//        return UIApplication.shared.connectedScenes
+//            .compactMap { $0 as? UIWindowScene }
+//            .flatMap { $0.windows }
+//            .first(where: { $0.isKeyWindow })?.rootViewController
+//    } else {
+//        return UIApplication.shared.windows
+//            .first(where: { $0.isKeyWindow })?.rootViewController
+//    }
+//    }()) -> UIViewController? {
+//        
+//        if let nav = base as? UINavigationController {
+//            return topMostViewController(base: nav.visibleViewController)
+//        }
+//        
+//        if let tab = base as? UITabBarController,
+//           let selected = tab.selectedViewController {
+//            return topMostViewController(base: selected)
+//        }
+//        
+//        if let presented = base?.presentedViewController {
+//            return topMostViewController(base: presented)
+//        }
+//        
+//        return base
+//    }
+//}
+
+
+
+
+
 extension UIApplication {
     func topMostViewController(base: UIViewController? = {
         if #available(iOS 15.0, *) {
-        return UIApplication.shared.connectedScenes
-            .compactMap { $0 as? UIWindowScene }
-            .flatMap { $0.windows }
-            .first(where: { $0.isKeyWindow })?.rootViewController
-    } else {
-        return UIApplication.shared.windows
-            .first(where: { $0.isKeyWindow })?.rootViewController
-    }
+            return UIApplication.shared.connectedScenes
+                .compactMap { $0 as? UIWindowScene }
+                .flatMap { $0.windows }
+                .first(where: { $0.isKeyWindow })?.rootViewController
+        } else {
+            return UIApplication.shared.windows
+                .first(where: { $0.isKeyWindow })?.rootViewController
+        }
     }()) -> UIViewController? {
         
         if let nav = base as? UINavigationController {
             return topMostViewController(base: nav.visibleViewController)
         }
-        
         if let tab = base as? UITabBarController,
-           let selected = tab.selectedViewController {
+            let selected = tab.selectedViewController {
             return topMostViewController(base: selected)
         }
         
@@ -90,13 +123,11 @@ extension UIApplication {
             return topMostViewController(base: presented)
         }
         
+        if let topController = base, topController.children.count > 0 {
+            return topMostViewController(base: topController.children.last)
+        }
+        
         return base
     }
 }
-
-
-
-
-
-
 

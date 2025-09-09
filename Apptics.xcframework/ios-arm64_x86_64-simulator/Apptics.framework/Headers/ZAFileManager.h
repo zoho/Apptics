@@ -44,6 +44,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSString *) dirPathForEngagements;
 + (NSString *) dirPathForNonFatals;
 + (NSString *) dirPathForConsoleLogs;
++(NSString *)rootDir;
 
 + (void) archiveFeedback: (NSDictionary*) feedbackInfo;
 + (id) unarchiveFeedback : (NSString*) feedbackId;

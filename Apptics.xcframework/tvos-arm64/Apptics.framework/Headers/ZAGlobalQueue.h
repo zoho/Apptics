@@ -31,8 +31,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ZAGlobalQueue : NSObject
 
-//@property (strong,nonatomic) NSMutableArray *screensQueue, *sessionsQueue, *eventsQueue, *nonfatalQueue, *apisQueue, *remoteconfigQueue, *rateusQueue, *appupdatePopupQueue, *appupdateDetailQueue, *crosspromoQueue, *consoleLogsQueue;
-@property (strong,nonatomic) NSMutableArray *eventsQueue;
+@property (strong,nonatomic) NSMutableArray *screensQueue, *sessionsQueue, *eventsQueue, *nonfatalQueue, *apisQueue, *remoteconfigQueue, *rateusQueue, *appupdatePopupQueue, *appupdateDetailQueue, *crosspromoQueue, *consoleLogsQueue;
 
 @property (nonatomic) long long dataSize;
 @property (nonatomic) long long nonfatalDataSize;
@@ -100,7 +99,6 @@ typedef void (^bgConsoleLogsRequestSuccessBlock)(void);
 - (void) startWithTime:(NSNumber*) startTime;
 - (void) endWithTime:(NSNumber*)endTime;
 - (void) saveData;
-- (void) saveDataFromTempQueue;
 - (void) saveSessionData:(NSNumber*) sessionId completionHandler:(void (^)(bool status))completionBlock;
 - (void) saveNonFatalData:(NSNumber*) sessionId completionHandler:(void (^)(bool status))completionBlock;
 //- (void) saveBgSessionData:(NSNumber*) sessionId;

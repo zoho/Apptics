@@ -69,6 +69,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property BOOL enableAnonymousTracking;
 
+@property BOOL resetOnDCSwitch;
+
+
 @property (nonatomic) APAnonymousType anonymousType;
 
 //@property BOOL enableRateUs;
@@ -361,9 +364,6 @@ typedef void (^internbgConsoleLogsRequestSuccessBlock)(void);
 -(BOOL) isMacCatalystOrDesignedForiPad;
 -(void) saveDataAndSendToTheServer;
 
-//KMP Handler
-- (void)receiveKMMcrashAndSave:(NSException *)crashReport;
-
 @end
 
 @interface APTimerManager : NSObject
@@ -374,6 +374,7 @@ typedef void (^internbgConsoleLogsRequestSuccessBlock)(void);
 
 - (void)startTimerWithInterval:(NSTimeInterval)interval executeBlock:(dispatch_block_t)completionHandler;
 - (void)stopTimer;
+- (void)receiveKMMcrashAndSave:(NSException *)crashReport;
 
 @end
 

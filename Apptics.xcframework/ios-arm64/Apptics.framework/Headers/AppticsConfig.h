@@ -77,6 +77,8 @@ typedef NS_ENUM(NSInteger, APFlushInterval) {
 @property (nonatomic) bool enableAutomaticScreenTracking;
 @property (nonatomic) bool enableAutomaticCrashTracking;
 @property (nonatomic) bool trackAllScreens;
+@property (nonatomic) bool resetOnDCSwitch;
+
 
 @property (nonatomic) APAnonymousType anonymousType;
 //@property (nonatomic) APDeviceIdentifierType deviceIdentifierType API_UNAVAILABLE(macos, watchos);

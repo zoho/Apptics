@@ -339,8 +339,8 @@ import AppticsFeedbackKit
         alertController.addAction(UIAlertAction(title: FeedbackKit.getLocalizableString(forKey: "zanalytics.bug.alert.detectscreen.yes"), style: UIAlertAction.Style.cancel, handler: { _ in
             
             self.floatviewHide()
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                self.window.isHidden = true
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { [weak self] in
+                self?.window.isHidden = true
             }
         }))
         alertController.addAction(UIAlertAction(title: FeedbackKit.getLocalizableString(forKey: "zanalytics.feedback.privacy.consent.cancel")!, style: UIAlertAction.Style.default, handler: { _ in
