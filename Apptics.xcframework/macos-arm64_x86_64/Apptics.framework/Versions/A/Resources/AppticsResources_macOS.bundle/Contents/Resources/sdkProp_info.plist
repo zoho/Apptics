@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>AppVersion</key>
-	<string>3.3.2</string>
+	<string>3.3.4</string>
 	<key>IOS_SDK_ID</key>
-	<string>608</string>
+	<string>115</string>
 	<key>MACOS_SDK_ID</key>
-	<string>5851</string>
+	<string>5854</string>
 	<key>TVOS_SDK_ID</key>
-	<string>5852</string>
+	<string>5855</string>
 	<key>WATCHOS_SDK_ID</key>
-	<string>5853</string>
+	<string>5856</string>
 </dict>
 </plist>
