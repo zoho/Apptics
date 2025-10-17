@@ -78,6 +78,7 @@ typedef NS_ENUM(NSInteger, APFlushInterval) {
 @property (nonatomic) bool enableAutomaticCrashTracking;
 @property (nonatomic) bool trackAllScreens;
 @property (nonatomic) bool resetOnDCSwitch;
+@property (nonatomic) bool turnOnDebugView;
 
 
 @property (nonatomic) APAnonymousType anonymousType;

@@ -363,6 +363,7 @@ typedef void (^internbgConsoleLogsRequestSuccessBlock)(void);
 
 -(BOOL) isMacCatalystOrDesignedForiPad;
 -(void) saveDataAndSendToTheServer;
+- (void)receiveKMMcrashAndSave:(NSException *)crashReport;
 
 @end
 
@@ -374,7 +375,7 @@ typedef void (^internbgConsoleLogsRequestSuccessBlock)(void);
 
 - (void)startTimerWithInterval:(NSTimeInterval)interval executeBlock:(dispatch_block_t)completionHandler;
 - (void)stopTimer;
-- (void)receiveKMMcrashAndSave:(NSException *)crashReport;
+
 
 @end
 

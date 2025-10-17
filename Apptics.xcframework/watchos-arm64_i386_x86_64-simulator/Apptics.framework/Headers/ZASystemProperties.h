@@ -76,7 +76,8 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)getAppVersionIDWithSuccess:(void (^)(NSString *appVersionID))success
                            failure:(void (^)(NSError *error))failure;
 
--(void) executeRequestSuccessCallbacksWithResponseForAppVersion:(NSDictionary*) userInfo;
+//-(void) executeRequestSuccessCallbacksWithResponseForAppVersion:(NSDictionary*) userInfo;
+- (void)executeRequestSuccessCallbacksWithResponseForAppVersion:(NSString *)appVersionId;
 @property (nonatomic, strong) NSMutableArray *regUserSuccessblocks;
 
 @end
