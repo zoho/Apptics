@@ -23,7 +23,7 @@
 		</data>
 		<key>AppticsResources.bundle/Info.plist</key>
 		<data>
-		2hltF+wMf+N6z8xuPVoFzA5AemQ=
+		NcrcVuGXTzldrkLdhLg5lQVPupg=
 		</data>
 		<key>AppticsResources.bundle/ZAAppUpdateAlert.nib</key>
 		<data>
@@ -67,7 +67,7 @@
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		+HAV92k1VmcTdxcCfB1NR/z6q7U=
+		aSLLsR7E8hQjhSggpkaZJ/ZIwrY=
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -75,11 +75,11 @@
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		CdL6FDwz1pLdBpAdW25JcoNbWXY=
+		haU8prAvrRB5U4N1yJyTAx6fk+I=
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeResources</key>
 		<data>
-		CmPDN+RVCDhgbZU8Twz0wQS9S7c=
+		Xs64r2Zy7uKn9O1gMzLtxZ5AClY=
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeSignature</key>
 		<data>
@@ -516,7 +516,7 @@
 		</dict>
 		<key>AppticsResources.bundle/sdkProp_info.plist</key>
 		<data>
-		RoPU/8Kp93g4pI98dhf9Up7C4RM=
+		fDihT4tY3RrqfeEJSB/Bn+6Ps2c=
 		</data>
 		<key>AppticsResources.bundle/sl.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
@@ -884,7 +884,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		E8MmVX3dFrdTGYzu78H18IT7bVY=
+		heg4MfjdBbU9VtVbsoD9MrMWtOQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -924,7 +924,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PKGYHmbb9pGz/jQ/o+SjK9Hxmt22zQPZvVXUSIxTGkQ=
+			v8gA67Vgl++wPMfy/D8vvdPi76DC9aEcYvse2GoUyGo=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/ZAAppUpdateAlert.nib</key>
@@ -1001,7 +1001,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bqz4djyUwL7g5op/RCHsNhxtDNtriGjAHD4JqDteFWc=
+			cfV8dc9Ju1l5ZdgwAeWuChVyrEXkvUcodisyYAEdlWE=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/_CodeSignature/CodeRequirements</key>
@@ -1015,14 +1015,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			TkZWOTYyPSX40Xr6qryGtMzqTHiInWlOQRem1tg2TUM=
+			xRAmTJZokNy5sH5agUgPIJCj1zLXFQF3SvaC7HgfKYw=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ujQKvipS84pjU4v0QrtrdwnpjuVHDFXYcjyCsNZU8sE=
+			tqE1pU5Tb59cilUIaO1cqOq1OHUOOY08Gw/b/CK/KU0=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/_CodeSignature/CodeSignature</key>
@@ -1483,7 +1483,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nMp706eFGCBjHfIGNVZjLByllk+Kca4/22xYmeBLG4I=
+			m+LbbNX8AaJNd0p2EU1uprrNRKuVGnbvr3yGJZzl0EI=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/sl.lproj/ZAnalyticsLocalizable.strings</key>

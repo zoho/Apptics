@@ -17,6 +17,6 @@
 - (NSString *)getPlatformArchitecture;
 
 - (NSDictionary *)getInfoForBinaryName:(NSString *)binaryName;
-
+- (NSDictionary *)readCrashData;
 
 @end
