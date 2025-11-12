@@ -62,13 +62,13 @@ typedef enum : NSInteger {
 -(UIFont *_Nullable)cellTextFont;
 -(UIFont *_Nullable)footerTextFont;
 #if !TARGET_OS_WATCH
--(UIButton *_Nullable)backButton;
+- (UIButton *_Nullable)backButton;
+- (void)za_traitCollectionDidChange:(UITraitCollection *)previousTraitCollection;
 #endif
 -(CGFloat) lineSpacing;
 -(CGFloat) cellVerticalPadding;
 -(CGSize) preferredContentSize;
 
-- (void)za_traitCollectionDidChange:(UITraitCollection *)previousTraitCollection;
 #endif
 -(NSString *_Nullable)fontName;
 
@@ -164,7 +164,7 @@ typedef enum : NSInteger {
 @end
 
 @protocol APCustomAlertTheme <NSObject>
-#if !TARGET_OS_OSX
+#if !TARGET_OS_OSX && !TARGET_OS_WATCH
 @optional
 -(UIColor *_Nullable)viewBGColor;
 -(UIColor *_Nullable)primaryColor;

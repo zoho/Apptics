@@ -48,6 +48,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic,strong) NSMutableDictionary *_Nullable mamInfo;//Encrypted email id (Mail id)
 
+@property (nonatomic,strong) NSMutableDictionary *_Nullable mamProps;//Encrypted email id (Mail id)
+
 @property (nonatomic,strong) NSMutableDictionary *_Nullable userids;//users associated with this device
 
 @property (nonatomic,strong) NSMutableDictionary *_Nullable groupids;//user groups associated with the respective users

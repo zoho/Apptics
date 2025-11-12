@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		FCxlgL9T6XqzBBlXvOSamCD7I7Q=
+		EtIt5CBeQfvqri2w9ErrhBlrg7o=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Version.debug.xcconfig</key>
 		<data>
-		iEiMwJAHOtQFueke5RnmLxOC7bA=
+		DEPbG3bQI160+350QUBtI1pi/Yg=
 		</data>
 		<key>Version.release.xcconfig</key>
 		<data>
-		iEiMwJAHOtQFueke5RnmLxOC7bA=
+		DEPbG3bQI160+350QUBtI1pi/Yg=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -98,22 +98,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			iEiMwJAHOtQFueke5RnmLxOC7bA=
+			DEPbG3bQI160+350QUBtI1pi/Yg=
 			</data>
 			<key>hash2</key>
 			<data>
-			wdS/gylh/AOaUqzb/lE+zy/bfUyzVIL2ZDNl5l4rT+M=
+			Z4KFkg3jvMBVpTLuU0qKBGjUAUezrI1ktq/NrfQxoFk=
 			</data>
 		</dict>
 		<key>Version.release.xcconfig</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			iEiMwJAHOtQFueke5RnmLxOC7bA=
+			DEPbG3bQI160+350QUBtI1pi/Yg=
 			</data>
 			<key>hash2</key>
 			<data>
-			wdS/gylh/AOaUqzb/lE+zy/bfUyzVIL2ZDNl5l4rT+M=
+			Z4KFkg3jvMBVpTLuU0qKBGjUAUezrI1ktq/NrfQxoFk=
 			</data>
 		</dict>
 	</dict>

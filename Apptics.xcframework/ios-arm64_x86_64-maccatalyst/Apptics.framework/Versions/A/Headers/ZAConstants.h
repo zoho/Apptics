@@ -64,6 +64,7 @@ static NSString * kJA_MamDc = @"kJA_MamDc";
 static NSString * kJA_Mam = @"kJA_Mam";
 static NSString * kJA_OrgID = @"kJA_OrgID";
 static NSString * kJA_MamKey = @"kJA_MamKey";
+static NSString * kJA_MamProps = @"kJA_MamProps";
 static NSString * kJA_MamInfo = @"kJA_MamInfo";
 static NSString * kJA_UserIds = @"kJA_UserIds";
 static NSString * kJA_UserGroupIds = @"kJA_UserGroupIds";

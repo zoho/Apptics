@@ -6,7 +6,7 @@
 	<dict>
 		<key>Resources/AppticsResources_macOS.bundle/Contents/Info.plist</key>
 		<data>
-		Uyv4HWYs0kd3z8n0MwaX6s/Z/c4=
+		E6YL+5zd4nJpKitwDbKmOJD08B0=
 		</data>
 		<key>Resources/AppticsResources_macOS.bundle/Contents/Resources/Base.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
@@ -212,7 +212,7 @@
 		</dict>
 		<key>Resources/AppticsResources_macOS.bundle/Contents/Resources/sdkProp_info.plist</key>
 		<data>
-		Bu75+sjvK26hZzDc72LZCWAjRAI=
+		kMDMUyQlH08OKE3kdPGMSfmE7wQ=
 		</data>
 		<key>Resources/AppticsResources_macOS.bundle/Contents/Resources/sv.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
@@ -261,7 +261,7 @@
 		</dict>
 		<key>Resources/Info.plist</key>
 		<data>
-		ocEWYfLop9DbiMShnH6fGrf3nvE=
+		uRRvRRw9n2QI+NEXo+jJElMmlaI=
 		</data>
 		<key>Resources/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -344,7 +344,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ikT/xgKY/23xQRgnNhb8bU4spwUQJv9ok+K9xIEs3Aw=
+			7qiINwSrtnoKOym2m6hHPLAvH0ZhdT4kcR5jdna5ON0=
 			</data>
 		</dict>
 		<key>Headers/APUser.h</key>
@@ -421,7 +421,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+3bRGhUzpUi6nWAgzijXs+UpiI16s5//loLQSZavibE=
+			AgQE9mcnfibIDsZkP5Z8jeFvbl74OlgPqfJ9zxrbzf8=
 			</data>
 		</dict>
 		<key>Headers/ZAEngagementsUploadOperation.h</key>
@@ -519,7 +519,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			YIbU3ghflxbHPDAqI6eMrlYt+cOrTAYKnR3hwBLlO/0=
+			sexCX9gjsliB1mb1M/olVqLvdbRQIQdO/5n3qWHU1TM=
 			</data>
 		</dict>
 		<key>Headers/ZAPIManager.h</key>
@@ -582,7 +582,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8j2ZUWhfmFRu5tpZERfhXemZOTIQwQxppy++uKjFqRs=
+			Y9GdR5XuFRLQ+Nwrjw/VwpxrGKm4bugvX8PSJtI4Knc=
 			</data>
 		</dict>
 		<key>Resources/AppticsResources_macOS.bundle/Contents/Resources/Base.lproj/ZAnalyticsLocalizable.strings</key>
@@ -794,7 +794,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2a8aty2tQUOVVZwUsvM8gLW9i/OOjxITqekh8GDbCpc=
+			0oZW+vrPdrZY4Bws/v4HgBbdnqSMbiYXnio615aoiMo=
 			</data>
 		</dict>
 		<key>Resources/AppticsResources_macOS.bundle/Contents/Resources/sv.lproj/ZAnalyticsLocalizable.strings</key>
@@ -846,7 +846,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MbAQFvoG5DSdddDA9wcFtpJx2Dk0D8zzyGDT1jF+DpE=
+			4N8tzucHeNYOpkD/fVgEm9dVxNNcOC0ZUEm0cQUD0do=
 			</data>
 		</dict>
 		<key>Resources/PrivacyInfo.xcprivacy</key>
