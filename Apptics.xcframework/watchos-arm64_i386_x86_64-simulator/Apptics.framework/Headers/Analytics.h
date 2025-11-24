@@ -53,6 +53,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) NSInteger flushInterval;
 @property (nonatomic, retain) APTimerManager *manageFlushInterval;
 @property (nonatomic, retain) APTimerManager *manageMaxSessionTimeout;
+@property (nonatomic, strong) NSNumber *lastActivityTime;
 
 @property long zuid;//Zoho User Id
 @property (strong,nonatomic) NSString *apiToken;
@@ -320,11 +321,11 @@ typedef void (^internbgConsoleLogsRequestSuccessBlock)(void);
 
 - (void) applicationDidEnterBackground:(NSNotification*) notification;
 
-- (void) applicationWillEnterForeground:(NSNotification*) notification;
+- (void) applicationWillTerminate:(NSNotification*) notification;
 
-- (void) applicationWillResignActive : (NSNotification*) notice;
+//- (void) applicationWillResignActive : (NSNotification*) notice;
 
-- (void) applicationDidBecomeActive : (NSNotification*) notice;
+- (void) applicationWillEnterForeground : (NSNotification*) notice;
 
 - (void) didRecieveMemoryWarning: (NSNotification*)notification;
 
@@ -333,6 +334,10 @@ typedef void (^internbgConsoleLogsRequestSuccessBlock)(void);
 - (void) sceneWillEnterForeground:(NSNotification *)notice;
 
 - (void) sceneDidEnterBackground:(NSNotification *)notice;
+
+- (void) workspaceWillSleep:(NSNotification *)notice;
+
+- (void) workspaceDidWake:(NSNotification *)notice;
 
 - (void) willRegisterDeviceWithDeviceId:(NSNotification*) notification;
 - (void) willSendTheFeedbackToTheServer:(NSNotification*) notification;
@@ -372,6 +377,7 @@ typedef void (^internbgConsoleLogsRequestSuccessBlock)(void);
 @property (nonatomic, strong) dispatch_queue_t _Nullable timerQueue;
 @property (nonatomic, strong) dispatch_source_t _Nullable timer;
 @property (nonatomic, assign) BOOL shouldExecuteBlock;
+@property (nonatomic, copy) NSString *name;
 
 - (void)startTimerWithInterval:(NSTimeInterval)interval executeBlock:(dispatch_block_t)completionHandler;
 - (void)stopTimer;

@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (strong,nonatomic) NSString *ram, *rom;
 @property (strong,nonatomic) NSNumber *batteryout;
+@property (nonatomic) bool hasData;
+@property (nonatomic) bool isBgSession;
 
 // The below properities will be available in ZAObject
 //      "networkstatus"

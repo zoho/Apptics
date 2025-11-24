@@ -39,7 +39,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) long long logsDataSize;
 @property (strong,nonatomic) ZASession *currentSession;
 
-@property (strong,nonatomic) ZAScreenObject *currentScreen;
+@property (strong,nonatomic) ZAScreenObject * _Nullable currentScreen;
 
 //@property (strong,nonatomic) ZAAppupdatePopupInfo * _Nullable currentAppupdatePopup;
 

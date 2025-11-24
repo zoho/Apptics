@@ -6,7 +6,7 @@
 	<dict>
 		<key>Resources/AppticsResources_macOS.bundle/Contents/Info.plist</key>
 		<data>
-		E6YL+5zd4nJpKitwDbKmOJD08B0=
+		ehWziUPDOoyniciH5HXBN8SxTNg=
 		</data>
 		<key>Resources/AppticsResources_macOS.bundle/Contents/Resources/Base.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
@@ -212,7 +212,7 @@
 		</dict>
 		<key>Resources/AppticsResources_macOS.bundle/Contents/Resources/sdkProp_info.plist</key>
 		<data>
-		kMDMUyQlH08OKE3kdPGMSfmE7wQ=
+		/FRFKPk7Pd37mtFHrU2DTk5c41w=
 		</data>
 		<key>Resources/AppticsResources_macOS.bundle/Contents/Resources/sv.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
@@ -261,7 +261,7 @@
 		</dict>
 		<key>Resources/Info.plist</key>
 		<data>
-		uRRvRRw9n2QI+NEXo+jJElMmlaI=
+		SdO8vk7kxJ+d4jgYLLHMX4+CdQ4=
 		</data>
 		<key>Resources/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -302,7 +302,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zqkQAlRweUEl12Z7U+WXNSLrepXHL5ug1rgQiZcA9Gs=
+			+Xru9mAhCOPObyRU4kgVu0J9yoZkSAF7Pp+9/+G4PEs=
 			</data>
 		</dict>
 		<key>Headers/APEventsEnum.h</key>
@@ -344,7 +344,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7qiINwSrtnoKOym2m6hHPLAvH0ZhdT4kcR5jdna5ON0=
+			rTJhU21ZCVfUa+JDAD09M8BrkBWbnq/3ZITAz8d9CRw=
 			</data>
 		</dict>
 		<key>Headers/APUser.h</key>
@@ -358,7 +358,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Tc2KTmr9rLoVp4IBFX34EKptDhLfHgxt1x5zxIH1Pvo=
+			mZSjm+hf/dKz9aj6U4hvOyNnZKv6KZmQEU3uMQACDOo=
 			</data>
 		</dict>
 		<key>Headers/Apptics.h</key>
@@ -463,7 +463,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			uiTjFCHwDHBPvb5c/C72zrtYYYIwcGZ5bfQ0vlQtDss=
+			FF3I6Y0hsxwS0rufEMgBW7XjKZrBOhN/JGm/dKKBluc=
 			</data>
 		</dict>
 		<key>Headers/ZAJSONString.h</key>
@@ -547,7 +547,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tvMYEkHV/3TiSw9h7VMtp2NyDn6Gg15uHbP9KeLQaFE=
+			KIOwd+oozrljwbBzuR+M3yye3Z+tFkbAfok3rVpRuNs=
 			</data>
 		</dict>
 		<key>Headers/ZASystemInfo.h</key>
@@ -582,7 +582,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Y9GdR5XuFRLQ+Nwrjw/VwpxrGKm4bugvX8PSJtI4Knc=
+			Tbg2Xcm9hwvmDDOiBnnJafOANDZMhKuK2HRT3Wf/dxQ=
 			</data>
 		</dict>
 		<key>Resources/AppticsResources_macOS.bundle/Contents/Resources/Base.lproj/ZAnalyticsLocalizable.strings</key>
@@ -794,7 +794,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0oZW+vrPdrZY4Bws/v4HgBbdnqSMbiYXnio615aoiMo=
+			XbVrRe2jdpeKUviLYd91o/gVA+/29EpM09mRnkUsW94=
 			</data>
 		</dict>
 		<key>Resources/AppticsResources_macOS.bundle/Contents/Resources/sv.lproj/ZAnalyticsLocalizable.strings</key>
@@ -846,7 +846,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4N8tzucHeNYOpkD/fVgEm9dVxNNcOC0ZUEm0cQUD0do=
+			mQ4DNV91s6Yh/XR44sDRei4CmC9jCDosIrJfkoo/3/o=
 			</data>
 		</dict>
 		<key>Resources/PrivacyInfo.xcprivacy</key>

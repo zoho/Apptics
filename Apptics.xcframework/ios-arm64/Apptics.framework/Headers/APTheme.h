@@ -62,7 +62,7 @@ typedef enum : NSInteger {
 -(UIFont *_Nullable)cellTextFont;
 -(UIFont *_Nullable)footerTextFont;
 #if !TARGET_OS_WATCH
-- (UIButton *_Nullable)backButton;
+-(UIButton *_Nullable)backButton;
 - (void)za_traitCollectionDidChange:(UITraitCollection *)previousTraitCollection;
 #endif
 -(CGFloat) lineSpacing;
