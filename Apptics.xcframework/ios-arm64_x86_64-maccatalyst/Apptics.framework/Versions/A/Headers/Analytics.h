@@ -319,13 +319,15 @@ typedef void (^internbgConsoleLogsRequestSuccessBlock)(void);
 
 - (void) applicationDidFinishLaunching : (NSNotification*) notice;
 
-- (void) applicationDidEnterBackground:(NSNotification*) notification;
+- (void) applicationWillResignActive:(NSNotification*) notification;
 
 - (void) applicationWillTerminate:(NSNotification*) notification;
 
 //- (void) applicationWillResignActive : (NSNotification*) notice;
 
-- (void) applicationWillEnterForeground : (NSNotification*) notice;
+//- (void) applicationWillEnterForeground : (NSNotification*) notice;
+
+- (void) applicationDidBecomeActive : (NSNotification*) notice;
 
 - (void) didRecieveMemoryWarning: (NSNotification*)notification;
 
