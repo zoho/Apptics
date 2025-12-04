@@ -15,6 +15,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+API_AVAILABLE(ios(14.0))
 @interface APCrashReporter : NSObject <MXMetricManagerSubscriber, UIApplicationDelegate>
 
 + (instancetype)sharedInstance;
@@ -29,6 +30,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) BOOL crashedLastLaunch;
 @property (nonatomic) BOOL isAppLaunched;
 @property (nonatomic, strong) NSArray *previousCrash;
+@property (nonatomic, strong) NSArray<MXDiagnosticPayload *> *payloads;
 
 +(NSTimeInterval) activeDurationSinceLastCrash;
 

@@ -103,8 +103,8 @@ typedef void (^bgConsoleLogsRequestSuccessBlock)(void);
 - (void) endWithTime:(NSNumber*)endTime;
 - (void) saveData;
 - (void) saveDataFromTempQueue;
-- (void) saveSessionData:(NSNumber*) sessionId completionHandler:(void (^)(bool status))completionBlock;
-- (void) saveNonFatalData:(NSNumber*) sessionId completionHandler:(void (^)(bool status))completionBlock;
+- (void) saveSessionData:(ZASession*) session completionHandler:(void (^)(bool status))completionBlock;
+- (void) saveNonFatalData:(ZASession*) session completionHandler:(void (^)(bool status))completionBlock;
 //- (void) saveBgSessionData:(NSNumber*) sessionId;
 @end
 
