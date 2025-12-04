@@ -2,7 +2,7 @@ Pod::Spec.new do |spec|
 spec.name             = "AppticsApiTracker"
 spec.version          = "3.3.8"
 spec.summary          = "Apptics Remote Config for iOS"
-spec.license          = {
+spec.license          = { :type => "Proprietary", :text => <<-LICENSE
 Copyright (c) 2025 Zoho Corporation Private Limited
 Zoho grants you a limited, revocable, non-exclusive, non-sublicensable license to copy, install and use the Zoho Apptics SDK solely in connection with your use of Zoho Apptics.
 You will not:
@@ -11,7 +11,8 @@ You will not:
 (iii) rent, sell, assign or otherwise transfer rights in the SDK;
 (iv) remove any proprietory notices or licenses from the SDK; or
 (v) use, post, publish, transmit or introduce any device, software or routine that interferes or attempts to interfere with the operations SDK.
-}
+LICENSE
+  }
 
 spec.description = <<-DESC
 
