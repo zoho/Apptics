@@ -42,7 +42,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		My+OlTA3Y0y8mCYuR7kbnL9nohY=
+		QnFbhgMlyD2zJLe/ZJbnysaRIhk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -108,7 +108,7 @@
 		</data>
 		<key>ZBugSquashResources.bundle/Info.plist</key>
 		<data>
-		bu0QdTxSi2/ftQD6AEPLP6OzIvQ=
+		FETMjlokHdyyZY12iK4vgXxAZiI=
 		</data>
 		<key>ZBugSquashResources.bundle/NewBugViewController.nib/objects-11.0+.nib</key>
 		<data>
@@ -196,7 +196,7 @@
 		</data>
 		<key>ZBugSquashResources.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		2a5gEdU9ZoQ+p7Y1UMjzT8IT/VE=
+		OAj2xnUbwhHNoWh/HfOJhiJ2EtA=
 		</data>
 		<key>ZBugSquashResources.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -204,7 +204,7 @@
 		</data>
 		<key>ZBugSquashResources.bundle/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		/18mwreCihbUabFUPUDgvye5TpU=
+		iSzZMNGS0Tl8yDhh+KM6Es11nSQ=
 		</data>
 		<key>ZBugSquashResources.bundle/_CodeSignature/CodeResources</key>
 		<data>
@@ -1445,7 +1445,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ONRBbrRcssSY5KfUU2D0ZyNC0Yboq9G65lGu2zbfdy0=
+			pa/Vx3//o1ppZV+7zgBGvwwlgA3181xnW0m51gohY9s=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/NewBugViewController.nib/objects-11.0+.nib</key>
@@ -1599,7 +1599,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EfevrkITBybJRaZwCqLGs10ku0wRfxlwviduj5k4KTk=
+			7FFCMij0zIF5a/4toM4OLkkqgG20vA+8FlbyrXZA5gs=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/_CodeSignature/CodeRequirements</key>
@@ -1613,7 +1613,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3CWmC9/u5EsMvFGvJkCohDaFDW5/ns3d5CAX9wR8zrQ=
+			um2ecw1nby2izGuGB1ld026cjDdY3iLcax7mF7lGNdU=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/_CodeSignature/CodeResources</key>

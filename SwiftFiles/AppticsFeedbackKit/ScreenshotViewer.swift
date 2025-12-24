@@ -188,18 +188,24 @@ public class FloatScrollview:UIViewController{
 //MARK: Compose Button Click Action
     @objc func donebuttonClicked() {
         FeedbackKit.listener().arrayOfimages.removeAllObjects()
-        for imgpath in ScreenshotsView.fileArray{
-            let image = UIImage(contentsOfFile: imgpath.path) //get image from path
-            arrayofGalleryImages.add(image!)
+        arrayofGalleryImages.removeAllObjects()
+        for imgpath in ScreenshotsView.fileArray {
+            if let image = UIImage(contentsOfFile: imgpath.path) {
+                arrayofGalleryImages.add(image)
+            }
         }
+//        guard arrayofGalleryImages.count > 0 else {
+//            print("⚠️ No images found. Feedback UI not shown.")
+//            return
+//        }
         FeedbackKit.listener().arrayOfimages = arrayofGalleryImages
         FeedbackKit.listener().feedback_KitType = "ZAScreenShot"
         FeedbackKit.listener().feedback_KitScreenCancel = "ZAScreenShotTriggered"
         DispatchQueue.main.async {
-//            FeedbackKit.setMessageBody("")
             FeedbackKit.showFeedback()
         }
     }
+
 //MARK: Hide Button Click Action
     @objc func cancellbuttonClicked() {
         UIView.animate(withDuration: 0.3, delay: 0.0, usingSpringWithDamping: 1.0, initialSpringVelocity: 1.0, options: [.curveEaseInOut],animations: {

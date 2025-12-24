@@ -79,7 +79,7 @@ fi
 CM_AP_INFO_FILE_NAME="$TARGET_BUILD_DIR/$INFOPLIST_PATH"
 
 if [ ! "${ZA_INFO_FILE_NAME}" ]; then
-# check the file name in target build dir info.plist 
+# check the file name in target build dir info.plist
 ZA_INFO_FILE_NAME=$(/usr/libexec/PlistBuddy -c 'Print AP_INFOPLIST_FILE' "${CM_AP_INFO_FILE_NAME}")
 fi
 
@@ -110,6 +110,24 @@ UPLOAD_SYMBOLS_FOR="${1#*=}"
 ;;
 --preserve-app-metadata-in-config=*)
 PRESERVE_METADATA_IN_APPTICS_CONFIG=${1#*=}
+;;
+--custom-ruby-path=*)
+CUSTOM_RUBY_PATH="${1#*=}"
+# Validate that the custom Ruby path exists and is executable
+if [ ! -f "$CUSTOM_RUBY_PATH" ]; then
+  printf "**********************************\n"
+  printf "* Error: Custom Ruby path not found.*\n"
+  printf "**********************************\n"
+  printf "Path: '$CUSTOM_RUBY_PATH'\n"
+  exit 1
+fi
+if [ ! -x "$CUSTOM_RUBY_PATH" ]; then
+  printf "**********************************\n"
+  printf "* Error: Custom Ruby path is not executable.*\n"
+  printf "**********************************\n"
+  printf "Path: '$CUSTOM_RUBY_PATH'\n"
+  exit 1
+fi
 ;;
 *)
 printf "**********************************\n"
@@ -287,7 +305,7 @@ if [ ${DEBUG_INFORMATION_FORMAT} == "dwarf-with-dsym" ]; then
     cp -Rvf "${DSYM_SRC}" "${DSYM_ZIP_FPATH}"
     
 #    IFS=', ' read -r -a UPLOAD_SYMBOLS_FOR_FRAMEWORKS <<< "${UPLOAD_SYMBOLS_FOR}"
-#    
+#
 #    for FRAMEWORK in "${UPLOAD_SYMBOLS_FOR_FRAMEWORKS[@]}"
 #    do
 #        cp -Rvf "${FRAMEWORK}.framework.dSYM" "${DSYM_ZIP_FPATH}"
@@ -321,7 +339,13 @@ if [ ${DEBUG_INFORMATION_FORMAT} == "dwarf-with-dsym" ]; then
     #come to the native dir.
     cd -
     #upload dsym through ruby script.
-    value=$(ruby -r "$(command dirname -- "${0}")/apptics_utils.rb" -e "AppticsUploader.main '${DSYM_ZIP_FPATH}.zip','${URL}?${DSYM_UPLOAD_PARAMS}','${API_KEY}'")
+    # If CUSTOM_RUBY_PATH is set, use it; otherwise use default ruby
+    if [ -n "$CUSTOM_RUBY_PATH" ]; then
+      RUBY_CMD="$CUSTOM_RUBY_PATH"
+    else
+      RUBY_CMD="ruby"
+    fi
+    value=$($RUBY_CMD -r "$(command dirname -- "${0}")/apptics_utils.rb" -e "AppticsUploader.main '${DSYM_ZIP_FPATH}.zip','${URL}?${DSYM_UPLOAD_PARAMS}','${API_KEY}'")
     # Remove dSYM archive from tmp dir
     echo "$value"
     

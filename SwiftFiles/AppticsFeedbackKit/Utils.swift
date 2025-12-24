@@ -415,7 +415,24 @@ extension UITextView {
 
 
 
-
+func setFontForButtonedit(
+    button: UIButton,
+    fontName: String,
+    title: String,
+    size: CGFloat
+) {
+    if button.buttonType != .custom {
+        button.setTitle(nil, for: .normal)
+    }
+    guard let font = UIFont(name: fontName, size: size) else {
+        return
+    }
+    button.setImage(nil, for: .normal)
+    button.setTitle(title, for: .normal)
+    button.titleLabel?.font = font
+    button.titleLabel?.textAlignment = .center
+    button.titleLabel?.lineBreakMode = .byClipping
+}
 
 
 

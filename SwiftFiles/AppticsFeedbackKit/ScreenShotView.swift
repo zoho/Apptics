@@ -181,6 +181,11 @@ public class ScreenShotView: UIView,UICollectionViewDelegate,UICollectionViewDat
         
     }
     
+    
+   
+    
+    
+    
 //MARK: Delete Button action
     @objc func deletebuttonClicked(_ sender: UIButton) {
             // Prevent rapid repeated taps
@@ -211,7 +216,6 @@ public class ScreenShotView: UIView,UICollectionViewDelegate,UICollectionViewDat
             let cell = screenshotCollectionView.cellForItem(at: visibleIndexPath)
 
             fileArray.remove(at: visibleIndexPath.row)
-
             pageView.numberOfPages = fileArray.count
             let newPageIndex: Int
             if filesIndexvalue == 1 {

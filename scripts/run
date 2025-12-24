@@ -53,6 +53,10 @@ LOG_FILE_PATH="${1#*=}"
 --sync-type=*)
 SYNC_TYPE="${1#*=}"
 ;;
+
+--custom-ruby-path=*)
+CUSTOM_RUBY_PATH="${1#*=}"
+;;
 --preserve-app-metadata-in-config=*)
 PRESERVE_METADATA_IN_APPTICS_CONFIG=${1#*=}
 ;;
@@ -290,6 +294,12 @@ $(/usr/libexec/PlistBuddy -c "Set :APP_VERSION_META:$key $value" "${ZA_INFOPLIST
 fi
 }
 
+if [ -n "$CUSTOM_RUBY_PATH" ]; then
+    RUBY_CMD="$CUSTOM_RUBY_PATH"
+else
+    RUBY_CMD="ruby"
+fi
+
 prepare_build_apptics() {
 if [ "${PRODUCT_BUNDLE_IDENTIFIER}" != "${AP_BUNDLE_ID}" ]; then
     echo "warning: Product bundle identifier '${PRODUCT_BUNDLE_IDENTIFIER}' doesn't match with the bundle identifier in '${ZA_INFO_FILE_NAME}' '${AP_BUNDLE_ID}'"
@@ -307,7 +317,7 @@ if [ "${APPTICS_SDK_ID}" != "${ZA_APPTICS_SDK_ID}" ] || [ "${BUNDLE_VERSION}" !=
   echo "info: Data downloaded"
   
   echo "$(command dirname -- "${0}")/apptics_utils.rb" -e "AppticsBot.main '${reg_app_out_file}'"
-  value=$(ruby -r "$(command dirname -- "${0}")/apptics_utils.rb" -e "AppticsBot.main '${reg_app_out_file}'")
+  value=$($RUBY_CMD -r "$(command dirname -- "${0}")/apptics_utils.rb" -e "AppticsBot.main '${reg_app_out_file}'")
     
     if [[ "$value" =~ ^error:* ]]; then
         echo $value
@@ -316,7 +326,7 @@ if [ "${APPTICS_SDK_ID}" != "${ZA_APPTICS_SDK_ID}" ] || [ "${BUNDLE_VERSION}" !=
     
     $value
       
-  response=$(ruby -rjson -e 'j = JSON.parse(File.read("'${reg_app_out_file}'")); puts j["result"]')
+  response=$($RUBY_CMD -rjson -e 'j = JSON.parse(File.read("'${reg_app_out_file}'")); puts j["result"]')
   if [ "$response" != "success" ]; then
     echo "error: Problem while regestering app version : $(cat "${reg_app_out_file}")"
     rm "${reg_app_out_file}"
@@ -403,13 +413,13 @@ fi
 #echo "Downloaded the data from Apptics"
 #
 #value=$(ruby -r "$(command dirname -- "${0}")/apptics_helper.rb" -e "AppticsEventsParser.main '${AP_BUNDLE_ID}/${ZA_META_FILE_NAME}'")
-#    
+#
 #    if [[ "$value" =~ ^error:* ]]; then
 #        exit 1
 #    fi
-#    
+#
 #    echo $value
-#        
+#
 #echo "AppticsEventsParser.main '${AP_BUNDLE_ID}/${ZA_META_FILE_NAME}'"
 #
 #else
@@ -452,9 +462,9 @@ if [[ " ${SKIP_PROMPT_CONFIGURATIONS[@]} " =~ " ${CONFIGURATION} " ]]; then
   printf "*********************************************************************************************\n"
   printf "* Uploading dSYM for '${CONFIGURATION}' configuration, check $LOGNAME for more details *\n"
   printf "*********************************************************************************************\n"
-  sh "${COMMAND_PATH}" --skip-prompt --upload-dsym --upload-symbols-for-frameworks="$UPLOAD_SYMBOLS_FOR" --process-in-background --preserve-app-metadata-in-config="$PRESERVE_METADATA_IN_APPTICS_CONFIG" >> $LOGNAME 2>&1 &
+  sh "${COMMAND_PATH}" --skip-prompt --upload-dsym --upload-symbols-for-frameworks="$UPLOAD_SYMBOLS_FOR" --process-in-background --preserve-app-metadata-in-config="$PRESERVE_METADATA_IN_APPTICS_CONFIG" --custom-ruby-path="$CUSTOM_RUBY_PATH" >> $LOGNAME 2>&1 &
 else
-  sh "${COMMAND_PATH}" --skip-prompt --process-in-background --preserve-app-metadata-in-config="$PRESERVE_METADATA_IN_APPTICS_CONFIG" >> $LOGNAME 2>&1 &
+  sh "${COMMAND_PATH}" --skip-prompt --process-in-background --preserve-app-metadata-in-config="$PRESERVE_METADATA_IN_APPTICS_CONFIG" --custom-ruby-path="$CUSTOM_RUBY_PATH" >> $LOGNAME 2>&1 &
   printf "****************************************************\n"
   printf "* Skipped dSYMs upload for '${CONFIGURATION}' configuration, check $LOGNAME for more details *\n"
   printf "****************************************************\n"
