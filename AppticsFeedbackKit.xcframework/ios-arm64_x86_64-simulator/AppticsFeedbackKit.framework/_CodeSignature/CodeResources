@@ -112,15 +112,15 @@
 		</data>
 		<key>ZBugSquashResources.bundle/NewBugViewController.nib/objects-11.0+.nib</key>
 		<data>
-		zfYYO6kn2VIM4R+eFRMXb2y96d8=
+		HExS0JYLlyS9rqIIOAh65DoC1QQ=
 		</data>
 		<key>ZBugSquashResources.bundle/NewBugViewController.nib/objects-14.0+.nib</key>
 		<data>
-		EDNUiFND5szYerr5/hPivVDOxGE=
+		wCYmTQCmprQGC2aSaiHCEKhWkZM=
 		</data>
 		<key>ZBugSquashResources.bundle/NewBugViewController.nib/runtime.nib</key>
 		<data>
-		WOSlBO7OeAsbBiEZHzTaENgA8aw=
+		Y7QmnkwjcT3WONRGSefnyi2TNsA=
 		</data>
 		<key>ZBugSquashResources.bundle/Screenshot-app.ttf</key>
 		<data>
@@ -196,7 +196,7 @@
 		</data>
 		<key>ZBugSquashResources.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		OAj2xnUbwhHNoWh/HfOJhiJ2EtA=
+		3tT/09xSnjUKz12zabsKGXGdPJ0=
 		</data>
 		<key>ZBugSquashResources.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -204,11 +204,11 @@
 		</data>
 		<key>ZBugSquashResources.bundle/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		iSzZMNGS0Tl8yDhh+KM6Es11nSQ=
+		kAtKUa5NNuljKqoAhjPx8zs79JU=
 		</data>
 		<key>ZBugSquashResources.bundle/_CodeSignature/CodeResources</key>
 		<data>
-		qKThu1ob4Pd+kMpl3XIqjW2EkrI=
+		DZ42LS9Z+gpPw3WxiHk+KhJSU/A=
 		</data>
 		<key>ZBugSquashResources.bundle/_CodeSignature/CodeSignature</key>
 		<data>
@@ -1452,21 +1452,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9yvaN3Fbo9+OB5OgM1hE9iH8wR5GYiTHWgsB+hsKJoQ=
+			KjNH5hFfNCh3RlPTFqiIVpy60OUV2divipNuEoNKFC0=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/NewBugViewController.nib/objects-14.0+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5rGBgX4fBUKqfzIJlOIrTd/jDgVXoa/HPQffymQZd0M=
+			aQQjm3CyURWXZkQVH2zZ/c3UP9rf5C3MnKSFQa7GZzE=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/NewBugViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iD68rieizRWkk4VkqXPWAnmYTRrHdTEfw49Elo7oanE=
+			ARGBpt67YUyMpTTFfRPwbTb8692qdZY4/Lv7cGGOWoM=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/Screenshot-app.ttf</key>
@@ -1599,7 +1599,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7FFCMij0zIF5a/4toM4OLkkqgG20vA+8FlbyrXZA5gs=
+			mMju/U0bf6woq3EGLnijm5KHdzJHdwzd4d5O1eabukA=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/_CodeSignature/CodeRequirements</key>
@@ -1613,14 +1613,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			um2ecw1nby2izGuGB1ld026cjDdY3iLcax7mF7lGNdU=
+			0iO63l/jZnuT3Tch6b9k+As3uNOHL3c+Fd2WVNA/gD4=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7lzV4U/gk962U0+9k1LWre7fiAjvm4Z9MtrxVKes55c=
+			fEeWCIvsF/ig+qWT9PHR7fY1nCOr3CdKA//M1Dc7Fug=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/_CodeSignature/CodeSignature</key>
