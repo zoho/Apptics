@@ -6,7 +6,7 @@
 	<dict>
 		<key>Resources/AppticsResources_macOS.bundle/Contents/Info.plist</key>
 		<data>
-		+9tY3p22cNbLizF413ENuRUZatc=
+		/I5lnSjWbu1WC1OzmEAjAeXfVkM=
 		</data>
 		<key>Resources/AppticsResources_macOS.bundle/Contents/Resources/Base.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
@@ -212,7 +212,7 @@
 		</dict>
 		<key>Resources/AppticsResources_macOS.bundle/Contents/Resources/sdkProp_info.plist</key>
 		<data>
-		1p0hRb2xeIaOkkdJn75JGahJhjM=
+		iWFq98OFeivbhpkXfkHrKz2ba/4=
 		</data>
 		<key>Resources/AppticsResources_macOS.bundle/Contents/Resources/sv.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
@@ -261,7 +261,7 @@
 		</dict>
 		<key>Resources/Info.plist</key>
 		<data>
-		h810MvNgbiRZt4kq3iH6cweRH1k=
+		eziwpicNJOebXXTvjc0MQki6FCA=
 		</data>
 		<key>Resources/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -519,7 +519,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			sexCX9gjsliB1mb1M/olVqLvdbRQIQdO/5n3qWHU1TM=
+			gPDyjo6PJI3LGEqUruofq4fKPuObwdj2WR6+9axhMi8=
 			</data>
 		</dict>
 		<key>Headers/ZAPIManager.h</key>
@@ -575,14 +575,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cIcDfbPqw84yrN2vO8sC6BSuTXHJnziyce9aVs2113g=
+			kamQl75vu/2TVYZvrmLu2qjZDUkzRpgeh7xx6gwyPCM=
 			</data>
 		</dict>
 		<key>Resources/AppticsResources_macOS.bundle/Contents/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5NRsXvk8A0h6denRelTdgLvnMRJD0dZkN5wW8i0etF8=
+			aG/zRzQ+LjqVkY7rUCockHDWswbimC/JfcT60lGs4Sw=
 			</data>
 		</dict>
 		<key>Resources/AppticsResources_macOS.bundle/Contents/Resources/Base.lproj/ZAnalyticsLocalizable.strings</key>
@@ -794,7 +794,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			sgfPiSRsF8oUtXJ9lttlImM2wW6jAwLsif8YzaFZJxQ=
+			GQSf/JFT8VKOKt3Wxb9kxQa6M1zeMrT561P4YxmlnBY=
 			</data>
 		</dict>
 		<key>Resources/AppticsResources_macOS.bundle/Contents/Resources/sv.lproj/ZAnalyticsLocalizable.strings</key>
@@ -846,7 +846,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BbmbkKcdYV3Gtn67I25nz1cZF3m1uqsTEZzOyyZfAtE=
+			/tb79X5aEoecfCzla+inDTyoK9cQI+QzgVJG3iNZLh8=
 			</data>
 		</dict>
 		<key>Resources/PrivacyInfo.xcprivacy</key>

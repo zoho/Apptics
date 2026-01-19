@@ -1,6 +1,6 @@
 framework module AppticsMessaging {
   umbrella header "AppticsMessaging.h"
-
   export *
+
   module * { export * }
 }
