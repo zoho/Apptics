@@ -8,18 +8,15 @@
 			<key>BinaryPath</key>
 			<string>AppticsEventTracker.framework/AppticsEventTracker</string>
 			<key>LibraryIdentifier</key>
-			<string>tvos-arm64_x86_64-simulator</string>
+			<string>ios-arm64</string>
 			<key>LibraryPath</key>
 			<string>AppticsEventTracker.framework</string>
 			<key>SupportedArchitectures</key>
 			<array>
 				<string>arm64</string>
-				<string>x86_64</string>
 			</array>
 			<key>SupportedPlatform</key>
-			<string>tvos</string>
-			<key>SupportedPlatformVariant</key>
-			<string>simulator</string>
+			<string>ios</string>
 		</dict>
 		<dict>
 			<key>BinaryPath</key>
@@ -41,9 +38,9 @@
 		</dict>
 		<dict>
 			<key>BinaryPath</key>
-			<string>AppticsEventTracker.framework/Versions/A/AppticsEventTracker</string>
+			<string>AppticsEventTracker.framework/AppticsEventTracker</string>
 			<key>LibraryIdentifier</key>
-			<string>ios-arm64_x86_64-maccatalyst</string>
+			<string>ios-arm64_x86_64-simulator</string>
 			<key>LibraryPath</key>
 			<string>AppticsEventTracker.framework</string>
 			<key>SupportedArchitectures</key>
@@ -54,7 +51,7 @@
 			<key>SupportedPlatform</key>
 			<string>ios</string>
 			<key>SupportedPlatformVariant</key>
-			<string>maccatalyst</string>
+			<string>simulator</string>
 		</dict>
 		<dict>
 			<key>BinaryPath</key>
@@ -69,20 +66,6 @@
 			</array>
 			<key>SupportedPlatform</key>
 			<string>tvos</string>
-		</dict>
-		<dict>
-			<key>BinaryPath</key>
-			<string>AppticsEventTracker.framework/AppticsEventTracker</string>
-			<key>LibraryIdentifier</key>
-			<string>ios-arm64</string>
-			<key>LibraryPath</key>
-			<string>AppticsEventTracker.framework</string>
-			<key>SupportedArchitectures</key>
-			<array>
-				<string>arm64</string>
-			</array>
-			<key>SupportedPlatform</key>
-			<string>ios</string>
 		</dict>
 		<dict>
 			<key>BinaryPath</key>
@@ -104,6 +87,23 @@
 			<key>BinaryPath</key>
 			<string>AppticsEventTracker.framework/Versions/A/AppticsEventTracker</string>
 			<key>LibraryIdentifier</key>
+			<string>ios-arm64_x86_64-maccatalyst</string>
+			<key>LibraryPath</key>
+			<string>AppticsEventTracker.framework</string>
+			<key>SupportedArchitectures</key>
+			<array>
+				<string>arm64</string>
+				<string>x86_64</string>
+			</array>
+			<key>SupportedPlatform</key>
+			<string>ios</string>
+			<key>SupportedPlatformVariant</key>
+			<string>maccatalyst</string>
+		</dict>
+		<dict>
+			<key>BinaryPath</key>
+			<string>AppticsEventTracker.framework/Versions/A/AppticsEventTracker</string>
+			<key>LibraryIdentifier</key>
 			<string>macos-arm64_x86_64</string>
 			<key>LibraryPath</key>
 			<string>AppticsEventTracker.framework</string>
@@ -119,7 +119,7 @@
 			<key>BinaryPath</key>
 			<string>AppticsEventTracker.framework/AppticsEventTracker</string>
 			<key>LibraryIdentifier</key>
-			<string>ios-arm64_x86_64-simulator</string>
+			<string>tvos-arm64_x86_64-simulator</string>
 			<key>LibraryPath</key>
 			<string>AppticsEventTracker.framework</string>
 			<key>SupportedArchitectures</key>
@@ -128,7 +128,7 @@
 				<string>x86_64</string>
 			</array>
 			<key>SupportedPlatform</key>
-			<string>ios</string>
+			<string>tvos</string>
 			<key>SupportedPlatformVariant</key>
 			<string>simulator</string>
 		</dict>

@@ -6,51 +6,6 @@
 	<array>
 		<dict>
 			<key>BinaryPath</key>
-			<string>Apptics.framework/Apptics</string>
-			<key>LibraryIdentifier</key>
-			<string>tvos-arm64</string>
-			<key>LibraryPath</key>
-			<string>Apptics.framework</string>
-			<key>SupportedArchitectures</key>
-			<array>
-				<string>arm64</string>
-			</array>
-			<key>SupportedPlatform</key>
-			<string>tvos</string>
-		</dict>
-		<dict>
-			<key>BinaryPath</key>
-			<string>Apptics.framework/Apptics</string>
-			<key>LibraryIdentifier</key>
-			<string>ios-arm64</string>
-			<key>LibraryPath</key>
-			<string>Apptics.framework</string>
-			<key>SupportedArchitectures</key>
-			<array>
-				<string>arm64</string>
-			</array>
-			<key>SupportedPlatform</key>
-			<string>ios</string>
-		</dict>
-		<dict>
-			<key>BinaryPath</key>
-			<string>Apptics.framework/Apptics</string>
-			<key>LibraryIdentifier</key>
-			<string>ios-arm64_x86_64-simulator</string>
-			<key>LibraryPath</key>
-			<string>Apptics.framework</string>
-			<key>SupportedArchitectures</key>
-			<array>
-				<string>arm64</string>
-				<string>x86_64</string>
-			</array>
-			<key>SupportedPlatform</key>
-			<string>ios</string>
-			<key>SupportedPlatformVariant</key>
-			<string>simulator</string>
-		</dict>
-		<dict>
-			<key>BinaryPath</key>
 			<string>Apptics.framework/Versions/A/Apptics</string>
 			<key>LibraryIdentifier</key>
 			<string>ios-arm64_x86_64-maccatalyst</string>
@@ -65,22 +20,6 @@
 			<string>ios</string>
 			<key>SupportedPlatformVariant</key>
 			<string>maccatalyst</string>
-		</dict>
-		<dict>
-			<key>BinaryPath</key>
-			<string>Apptics.framework/Apptics</string>
-			<key>LibraryIdentifier</key>
-			<string>watchos-arm64_arm64_32_armv7k</string>
-			<key>LibraryPath</key>
-			<string>Apptics.framework</string>
-			<key>SupportedArchitectures</key>
-			<array>
-				<string>arm64</string>
-				<string>arm64_32</string>
-				<string>armv7k</string>
-			</array>
-			<key>SupportedPlatform</key>
-			<string>watchos</string>
 		</dict>
 		<dict>
 			<key>BinaryPath</key>
@@ -101,6 +40,40 @@
 		</dict>
 		<dict>
 			<key>BinaryPath</key>
+			<string>Apptics.framework/Apptics</string>
+			<key>LibraryIdentifier</key>
+			<string>watchos-arm64_i386_x86_64-simulator</string>
+			<key>LibraryPath</key>
+			<string>Apptics.framework</string>
+			<key>SupportedArchitectures</key>
+			<array>
+				<string>arm64</string>
+				<string>i386</string>
+				<string>x86_64</string>
+			</array>
+			<key>SupportedPlatform</key>
+			<string>watchos</string>
+			<key>SupportedPlatformVariant</key>
+			<string>simulator</string>
+		</dict>
+		<dict>
+			<key>BinaryPath</key>
+			<string>Apptics.framework/Apptics</string>
+			<key>LibraryIdentifier</key>
+			<string>watchos-arm64_arm64_32_armv7k</string>
+			<key>LibraryPath</key>
+			<string>Apptics.framework</string>
+			<key>SupportedArchitectures</key>
+			<array>
+				<string>arm64</string>
+				<string>arm64_32</string>
+				<string>armv7k</string>
+			</array>
+			<key>SupportedPlatform</key>
+			<string>watchos</string>
+		</dict>
+		<dict>
+			<key>BinaryPath</key>
 			<string>Apptics.framework/Versions/A/Apptics</string>
 			<key>LibraryIdentifier</key>
 			<string>macos-arm64_x86_64</string>
@@ -118,19 +91,46 @@
 			<key>BinaryPath</key>
 			<string>Apptics.framework/Apptics</string>
 			<key>LibraryIdentifier</key>
-			<string>watchos-arm64_i386_x86_64-simulator</string>
+			<string>ios-arm64_x86_64-simulator</string>
 			<key>LibraryPath</key>
 			<string>Apptics.framework</string>
 			<key>SupportedArchitectures</key>
 			<array>
 				<string>arm64</string>
-				<string>i386</string>
 				<string>x86_64</string>
 			</array>
 			<key>SupportedPlatform</key>
-			<string>watchos</string>
+			<string>ios</string>
 			<key>SupportedPlatformVariant</key>
 			<string>simulator</string>
+		</dict>
+		<dict>
+			<key>BinaryPath</key>
+			<string>Apptics.framework/Apptics</string>
+			<key>LibraryIdentifier</key>
+			<string>ios-arm64</string>
+			<key>LibraryPath</key>
+			<string>Apptics.framework</string>
+			<key>SupportedArchitectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>SupportedPlatform</key>
+			<string>ios</string>
+		</dict>
+		<dict>
+			<key>BinaryPath</key>
+			<string>Apptics.framework/Apptics</string>
+			<key>LibraryIdentifier</key>
+			<string>tvos-arm64</string>
+			<key>LibraryPath</key>
+			<string>Apptics.framework</string>
+			<key>SupportedArchitectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>SupportedPlatform</key>
+			<string>tvos</string>
 		</dict>
 	</array>
 	<key>CFBundlePackageType</key>

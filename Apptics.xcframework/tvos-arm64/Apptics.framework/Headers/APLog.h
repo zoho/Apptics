@@ -49,7 +49,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property BOOL shouldPrint;
 
-@property (nonatomic, retain) NSDateFormatter *dateFormatter;
+//@property (nonatomic, retain) NSDateFormatter *dateFormatter;
 
 @property (nonatomic, retain) NSString *dirLogsPath;
 
