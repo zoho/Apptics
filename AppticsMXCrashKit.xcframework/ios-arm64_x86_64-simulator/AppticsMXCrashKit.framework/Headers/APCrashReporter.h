@@ -7,8 +7,14 @@
 
 #import <Foundation/Foundation.h>
 
-#import <APCrash.h>
-#import <ZACrashReportUploadOperation.h>
+
+#if !TARGET_OS_OSX
+#import <UIKit/UIKit.h>
+#else
+#import <Cocoa/Cocoa.h>
+#endif
+
+#import "APCrash.h"
 #import "APAppState.h"
 
 #import <MetricKit/MetricKit.h>

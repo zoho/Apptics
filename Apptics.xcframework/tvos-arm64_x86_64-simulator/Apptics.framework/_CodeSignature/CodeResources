@@ -14,7 +14,7 @@
 		</data>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		28ffDsS39jRTz/5zFQ5/Aj0fkv4=
+		EjjN8Ej5nZLyGmOV0YzVkvHP7Uo=
 		</data>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -22,11 +22,11 @@
 		</data>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		WaHpdAbKOZeeqEDpT9suZWcsyO0=
+		kREo4HAum9/1IvCnVZ+dkhPdtT0=
 		</data>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeResources</key>
 		<data>
-		hpNg1BV/s3nmHJjmqC4+WlKtyyM=
+		qhFHr/+rYbaiuFdUdTRyvutHytI=
 		</data>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeSignature</key>
 		<data>
@@ -223,7 +223,7 @@
 		</dict>
 		<key>AppticsResources_tvOS.bundle/sdkProp_info.plist</key>
 		<data>
-		DSZflWUOv1sUeolcetM9kQrA9pU=
+		IfFZA9/xdAxOBeLZDG4GI439994=
 		</data>
 		<key>AppticsResources_tvOS.bundle/sv.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
@@ -487,11 +487,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			28ffDsS39jRTz/5zFQ5/Aj0fkv4=
+			EjjN8Ej5nZLyGmOV0YzVkvHP7Uo=
 			</data>
 			<key>hash2</key>
 			<data>
-			RNyBS8hecyeuoD3I/SSaJHL2/0mZfp9JOfojd2PYgTw=
+			7MW+UhUrv8/xpV00ekFAg2EQaWfLTyoM4DFjIasXl2k=
 			</data>
 		</dict>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeRequirements</key>
@@ -509,22 +509,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WaHpdAbKOZeeqEDpT9suZWcsyO0=
+			kREo4HAum9/1IvCnVZ+dkhPdtT0=
 			</data>
 			<key>hash2</key>
 			<data>
-			V5h65sxUwCcI/p5TSosvU5knQhxUI3Q0QowqLvFZ/bw=
+			idAp/aFlJXWx/LPIRGhwcrokrkuJHcwh2GdLbOvVNQw=
 			</data>
 		</dict>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hpNg1BV/s3nmHJjmqC4+WlKtyyM=
+			qhFHr/+rYbaiuFdUdTRyvutHytI=
 			</data>
 			<key>hash2</key>
 			<data>
-			IzCuFwY8uZi3qIYW+9X58lQVkEABIaIVfvVaYfB4Y9Q=
+			yObzNdGZKb7PreaRsBMWCafzM2hCMINp+8OHsTBLryg=
 			</data>
 		</dict>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeSignature</key>
@@ -815,11 +815,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DSZflWUOv1sUeolcetM9kQrA9pU=
+			IfFZA9/xdAxOBeLZDG4GI439994=
 			</data>
 			<key>hash2</key>
 			<data>
-			j0m/SAm3qU1/u3AKWJEE3tVFRgMlwtvrrXNZQxHaZ6w=
+			a74Ah1PabsWQ+TcOplGfuCLX1BLDq6shiAX09L/BbLA=
 			</data>
 		</dict>
 		<key>AppticsResources_tvOS.bundle/sv.lproj/ZAnalyticsLocalizable.strings</key>

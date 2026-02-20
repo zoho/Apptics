@@ -114,19 +114,21 @@ PRESERVE_METADATA_IN_APPTICS_CONFIG=${1#*=}
 --custom-ruby-path=*)
 CUSTOM_RUBY_PATH="${1#*=}"
 # Validate that the custom Ruby path exists and is executable
+if [ -n "$CUSTOM_RUBY_PATH" ]; then
 if [ ! -f "$CUSTOM_RUBY_PATH" ]; then
-  printf "**********************************\n"
-  printf "* Error: Custom Ruby path not found.*\n"
-  printf "**********************************\n"
-  printf "Path: '$CUSTOM_RUBY_PATH'\n"
-  exit 1
+printf "**********************************\n"
+printf "* Error: Custom Ruby path not found.*\n"
+printf "**********************************\n"
+printf "Path: '$CUSTOM_RUBY_PATH'\n"
+exit 1
 fi
 if [ ! -x "$CUSTOM_RUBY_PATH" ]; then
-  printf "**********************************\n"
-  printf "* Error: Custom Ruby path is not executable.*\n"
-  printf "**********************************\n"
-  printf "Path: '$CUSTOM_RUBY_PATH'\n"
-  exit 1
+printf "**********************************\n"
+printf "* Error: Custom Ruby path is not executable.*\n"
+printf "**********************************\n"
+printf "Path: '$CUSTOM_RUBY_PATH'\n"
+exit 1
+fi
 fi
 ;;
 *)
@@ -164,6 +166,8 @@ if [ $PRESERVE_METADATA_IN_APPTICS_CONFIG -eq 0 ];then
     echo $(/usr/libexec/PlistBuddy -c "Delete :EVENTS_INFO" "${ZA_INFOPLIST_FILE}")
     echo $(/usr/libexec/PlistBuddy -c "Delete :API_INFO" "${ZA_INFOPLIST_FILE}")
     echo $(/usr/libexec/PlistBuddy -c "Delete :LAST_MODIFIED" "${ZA_INFOPLIST_FILE}")
+    #delete the portal and project id here.
+    
 fi
     
 #echo $(/usr/libexec/PlistBuddy -c "Delete :AP_INFOPLIST_FILE" "${AP_INFO_FILE_NAME}")
@@ -187,13 +191,15 @@ fi
 
 SERVER_URL=$(/usr/libexec/PlistBuddy -c 'Print SERVER_URL' "${ZA_INFOPLIST_FILE}")
 
-if [ "${SERVER_URL}" ]; then
-DSYM_UPLOAD_ENDPOINT="${SERVER_URL}/sdk/api/apptics/v1/adddsymfile"
-echo "SERVER_URL : ${SERVER_URL}"
-else
-value=$(error_prompt "Error" "Missing SERVER_URL in your ${ZA_INFO_FILE_NAME}, please if the file is up to date?" )
-exit 1
-fi
+#if [ "${SERVER_URL}" ]; then
+##DSYM_UPLOAD_ENDPOINT="${SERVER_URL}/sdk/api/apptics/v1/adddsymfile"
+#DSYM_UPLOAD_ENDPOINT="${SERVER_URL}/hsdk/v1/Z${PORTAL_ID}/${PROJECT_ID}/buildfile/add"
+#echo "SERVER_URL : ${SERVER_URL}"
+#else
+#value=$(error_prompt "Error" "Missing SERVER_URL in your ${ZA_INFO_FILE_NAME}, please if the file is up to date?" )
+#exit 1
+#fi
+
 
 echo "Uploading dSYM to Apptics server..."
 
@@ -236,7 +242,12 @@ APP_VERSION_ID=$(/usr/libexec/PlistBuddy -c 'Print APP_VERSION_META:APP_VERSION_
 APP_RELEASE_VERSION_ID=$(/usr/libexec/PlistBuddy -c 'Print APP_VERSION_META:APP_RELEASE_VERSION_ID' "${CM_ZA_INFOPLIST_FILE}")
 PLATFORM_ID=$(/usr/libexec/PlistBuddy -c 'Print APP_VERSION_META:PLATFORM_ID' "${CM_ZA_INFOPLIST_FILE}")
 APID=$(/usr/libexec/PlistBuddy -c 'Print APP_VERSION_META:APID' "${CM_ZA_INFOPLIST_FILE}")
-
+PROJECT_ID=$(/usr/libexec/PlistBuddy -c 'Print APP_VERSION_META:PROJECT_ID' "${CM_ZA_INFOPLIST_FILE}")
+PORTAL_ID=$(/usr/libexec/PlistBuddy -c 'Print APP_VERSION_META:PORTAL_ID' "${CM_ZA_INFOPLIST_FILE}")
+FRAMEWORK_ID=$(/usr/libexec/PlistBuddy -c 'Print APP_VERSION_META:APPTICS_SDK_ID' "${CM_ZA_INFOPLIST_FILE}")
+MAPID=$(/usr/libexec/PlistBuddy -c 'Print APP_VERSION_META:MAPID' "${CM_ZA_INFOPLIST_FILE}")
+ERROR_TYPE="native"
+#get project and aportal id here
 
 echo "Plist Path : ${CM_ZA_INFOPLIST_FILE}"
 echo "Deployment target: ${ZA_DEPLOYMENT_TARGET}"
@@ -256,6 +267,20 @@ echo "APP_VERSION_ID : ${APP_VERSION_ID}"
 echo "APP_RELEASE_VERSION_ID : ${APP_RELEASE_VERSION_ID}"
 echo "PLATFORM_ID : ${PLATFORM_ID}"
 echo "APID : ${APID}"
+echo "PORTAL_ID : ${PORTAL_ID}"
+echo "PROJECT_ID : ${PROJECT_ID}"
+#add portal and project id here to print
+
+SERVER_URL=$(/usr/libexec/PlistBuddy -c 'Print SERVER_URL' "${ZA_INFOPLIST_FILE}")
+
+if [ "${SERVER_URL}" ]; then
+#DSYM_UPLOAD_ENDPOINT="${SERVER_URL}/sdk/api/apptics/v1/adddsymfile"
+DSYM_UPLOAD_ENDPOINT="${SERVER_URL}/hsdk/v1/${PORTAL_ID}/${PROJECT_ID}/buildfile/add"
+echo "SERVER_URL : ${SERVER_URL}"
+else
+value=$(error_prompt "Error" "Missing SERVER_URL in your ${ZA_INFO_FILE_NAME}, please if the file is up to date?" )
+exit 1
+fi
 
 AP_ENABLE_BITCODE="false"
 
@@ -263,7 +288,9 @@ if [ "$ENABLE_BITCODE" == "YES" ]; then
 AP_ENABLE_BITCODE="true"
 fi
 
-DSYM_UPLOAD_PARAMS="appversionid=${APP_VERSION_ID}&appreleaseversionid=${APP_RELEASE_VERSION_ID}&pid=${PLATFORM_ID}&apid=${APID}&isBitcodeenabled=${AP_ENABLE_BITCODE}&host=${WHOAMI}&remoteaddress=${IPADDRESS}"
+
+#Need to add mapid and apid in header params. Also frameworkId, buildfile,identifier and errortype in params. appversionid;appreleaserversionid;frameworkid;buildfile;identifier;errortype
+DSYM_UPLOAD_PARAMS="appversionid=${APP_VERSION_ID}&appreleaseversionid=${APP_RELEASE_VERSION_ID}&frameworkid=${FRAMEWORK_ID}&identifier=${AP_BUNDLE_ID}&errortype=${ERROR_TYPE}"
 
 if [ "$EFFECTIVE_PLATFORM_NAME" == "-iphonesimulator" ]; then
 if [ "$UPLOAD_SIMULATOR_SYMBOLS" == "0" ]; then
@@ -311,7 +338,7 @@ if [ ${DEBUG_INFORMATION_FORMAT} == "dwarf-with-dsym" ]; then
 #        cp -Rvf "${FRAMEWORK}.framework.dSYM" "${DSYM_ZIP_FPATH}"
 #    done
 
-#    cp -Rvf *.dSYM "${DSYM_ZIP_FPATH}"
+    cp -Rvf *.dSYM "${DSYM_ZIP_FPATH}"
     cp -Rvf **/*.dSYM "${DSYM_ZIP_FPATH}" 2>/dev/null
 
     echo "Compressing dSYM to: ${DSYM_ZIP_FPATH} ..."
@@ -341,11 +368,35 @@ if [ ${DEBUG_INFORMATION_FORMAT} == "dwarf-with-dsym" ]; then
     #upload dsym through ruby script.
     # If CUSTOM_RUBY_PATH is set, use it; otherwise use default ruby
     if [ -n "$CUSTOM_RUBY_PATH" ]; then
-      RUBY_CMD="$CUSTOM_RUBY_PATH"
-    else
-      RUBY_CMD="ruby"
-    fi
-    value=$($RUBY_CMD -r "$(command dirname -- "${0}")/apptics_utils.rb" -e "AppticsUploader.main '${DSYM_ZIP_FPATH}.zip','${URL}?${DSYM_UPLOAD_PARAMS}','${API_KEY}'")
+  RUBY_CMD="$CUSTOM_RUBY_PATH"
+else
+  RUBY_CMD="$(command -v ruby)"
+fi
+
+# Execute Ruby in a clean environment so SSL uses THIS Ruby's OpenSSL
+value=$(
+  env -i \
+    PATH="$(dirname "$RUBY_CMD"):/usr/bin:/bin" \
+    HOME="$HOME" \
+    "$RUBY_CMD" \
+      -r "$(command dirname -- "${0}")/apptics_utils.rb" \
+      -e "
+        AppticsUploader.main(
+          '${DSYM_ZIP_FPATH}.zip',
+          '${DSYM_UPLOAD_ENDPOINT}',
+          '${API_KEY}',
+          {
+            appversionid: '${APP_VERSION_ID}',
+            appreleaseversionid: '${APP_RELEASE_VERSION_ID}',
+            frameworkid: '${FRAMEWORK_ID}',
+            identifier: '${AP_BUNDLE_ID}',
+            errortype: '${ERROR_TYPE}',
+            apid: '${APID}',
+            mapid: '${MAPID}'
+          }
+        )
+      "
+)
     # Remove dSYM archive from tmp dir
     echo "$value"
     

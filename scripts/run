@@ -301,6 +301,7 @@ else
 fi
 
 prepare_build_apptics() {
+
 if [ "${PRODUCT_BUNDLE_IDENTIFIER}" != "${AP_BUNDLE_ID}" ]; then
     echo "warning: Product bundle identifier '${PRODUCT_BUNDLE_IDENTIFIER}' doesn't match with the bundle identifier in '${ZA_INFO_FILE_NAME}' '${AP_BUNDLE_ID}'"
 fi
@@ -309,61 +310,103 @@ if [ "${APPTICS_SDK_ID}" != "${ZA_APPTICS_SDK_ID}" ] || [ "${BUNDLE_VERSION}" !=
   
   reg_app_out_file="/tmp/${AP_BUNDLE_ID}/${ZA_VERSION_META_FILE_NAME}"
   REG_APP_VERSION_PARAMS="platform=${OS}&identifier=${AP_BUNDLE_ID}&version=${BUNDLE_SHORT_VERSION}&appreleaseversion=${BUNDLE_VERSION}&frameworkid=${APPTICS_SDK_ID}&minosversion=${ZA_DEPLOYMENT_TARGET}"
+  
   STATUS=$(curl "${URL_ENDPOINT}?${REG_APP_VERSION_PARAMS}" -v --write-out %{http_code} --silent -o "${reg_app_out_file}" -H "zak: ${API_KEY}" -X POST --connect-timeout 60 --max-time 900 --retry 2 --retry-delay 5)
   
   echo "${URL_ENDPOINT}?${REG_APP_VERSION_PARAMS} --write-out %{http_code} --silent -o "${reg_app_out_file}" -H "zak: ${API_KEY}" -X POST"
   
   if [ $STATUS -eq 200 ]; then
-  echo "info: Data downloaded"
-  
-  echo "$(command dirname -- "${0}")/apptics_utils.rb" -e "AppticsBot.main '${reg_app_out_file}'"
-  value=$($RUBY_CMD -r "$(command dirname -- "${0}")/apptics_utils.rb" -e "AppticsBot.main '${reg_app_out_file}'")
+    echo "info: Data downloaded"
+
+    echo "================ RAW API RESPONSE ================"
+    cat "${reg_app_out_file}"
+    echo "=================================================="
+
+    value=$($RUBY_CMD -r "$(command dirname -- "${0}")/apptics_utils.rb" -e "AppticsBot.main '${reg_app_out_file}'")
     
     if [[ "$value" =~ ^error:* ]]; then
         echo $value
         exit 1
     fi
     
+    
     $value
       
-  response=$($RUBY_CMD -rjson -e 'j = JSON.parse(File.read("'${reg_app_out_file}'")); puts j["result"]')
-  if [ "$response" != "success" ]; then
-    echo "error: Problem while regestering app version : $(cat "${reg_app_out_file}")"
+    response=$($RUBY_CMD -rjson -e 'j = JSON.parse(File.read("'${reg_app_out_file}'")); puts j["result"]')
+    if [ "$response" != "success" ]; then
+      echo "error: Problem while registering app version : $(cat "${reg_app_out_file}")"
+      rm "${reg_app_out_file}"
+      exit 1
+    fi
+
+    # ---- Extract all required values from API response ----
+
+appversionid=$($RUBY_CMD -rjson -e 'j=JSON.parse(File.read("'${reg_app_out_file}'")); puts j["data"]["appversionid"]')
+appreleaseversionid=$($RUBY_CMD -rjson -e 'j=JSON.parse(File.read("'${reg_app_out_file}'")); puts j["data"]["appreleaseversionid"]')
+aaid=$($RUBY_CMD -rjson -e 'j=JSON.parse(File.read("'${reg_app_out_file}'")); puts j["data"]["aaid"]')
+apid=$($RUBY_CMD -rjson -e 'j=JSON.parse(File.read("'${reg_app_out_file}'")); puts j["data"]["apid"]')
+mapid=$($RUBY_CMD -rjson -e 'j=JSON.parse(File.read("'${reg_app_out_file}'")); puts j["data"]["mapid"]')
+rsakey=$($RUBY_CMD -rjson -e 'j=JSON.parse(File.read("'${reg_app_out_file}'")); puts j["data"]["rsakey"]')
+platformid=$($RUBY_CMD -rjson -e 'j=JSON.parse(File.read("'${reg_app_out_file}'")); puts j["data"]["platformid"]')
+portalId=$($RUBY_CMD -rjson -e 'j=JSON.parse(File.read("'${reg_app_out_file}'")); puts j["data"]["portalid"]')
+projectId=$($RUBY_CMD -rjson -e 'j=JSON.parse(File.read("'${reg_app_out_file}'")); puts j["data"]["projectid"]')
+
+echo "================ EXTRACTED VALUES ================"
+echo "APP_VERSION_ID $appversionid"
+echo "APP_RELEASE_VERSION_ID $appreleaseversionid"
+echo "AAID $aaid"
+echo "APID $apid"
+echo "MAPID $mapid"
+echo "RSAKEY $rsakey"
+echo "PLATFORM_ID $platformid"
+echo "PORTAL_ID $portalId"
+echo "PROJECT_ID $projectId"
+echo "BUNDLE_VERSION $BUNDLE_VERSION"
+echo "BUNDLE_SHORT_VERSION $BUNDLE_SHORT_VERSION"
+echo "APPTICS_SDK_ID ${APPTICS_SDK_ID}"
+echo "=================================================="
+
     rm "${reg_app_out_file}"
-    exit 1
-  else
-    rm "${reg_app_out_file}"
-  fi
             
-  if [ "$appversionid" == "" ] || [ "$appreleaseversionid" == "" ] || [ "$aaid" == "" ] || [ "$apid" == "" ] || [ "$mapid" == "" ] || [ "$rsakey" == "" ] || [ "$platformid" == "" ] || [ "$APPTICS_SDK_ID" == "" ]; then
-      echo "APP_VERSION_ID" "$appversionid"
-      echo "APP_RELEASE_VERSION_ID" "$appreleaseversionid"
-      echo "AAID" "$aaid"
-      echo "APID" "$apid"
-      echo "MAPID" "$mapid"
-      echo "RSAKEY" "$rsakey"
-      echo "PLATFORM_ID" "$platformid"
-      echo "BUNDLE_VERSION" "$BUNDLE_VERSION"
-      echo "BUNDLE_SHORT_VERSION" "$BUNDLE_SHORT_VERSION"
-      echo "APPTICS_SDK_ID" "${APPTICS_SDK_ID}"
-  exit 1;
-  fi
-  check_and_update "APP_VERSION_ID" "$appversionid"
-  check_and_update "APP_RELEASE_VERSION_ID" "$appreleaseversionid"
-  check_and_update "AAID" "$aaid"
-  check_and_update "APID" "$apid"
-  check_and_update "MAPID" "$mapid"
-  check_and_update "RSAKEY" "$rsakey"
-  check_and_update "PLATFORM_ID" "$platformid"
-  check_and_update "BUNDLE_VERSION" "$BUNDLE_VERSION"
-  check_and_update "BUNDLE_SHORT_VERSION" "$BUNDLE_SHORT_VERSION"
-  check_and_update "APPTICS_SDK_ID" "${APPTICS_SDK_ID}"
-  echo "Data updated"
+    if [ "$appversionid" == "" ] || \
+       [ "$appreleaseversionid" == "" ] || \
+       [ "$aaid" == "" ] || \
+       [ "$apid" == "" ] || \
+       [ "$mapid" == "" ] || \
+       [ "$rsakey" == "" ] || \
+       [ "$platformid" == "" ] || \
+       [ "$portalId" == "" ] || \
+       [ "$projectId" == "" ] || \
+       [ "$APPTICS_SDK_ID" == "" ] \
+       [ "$portalId" == "" ] || \
+        [ "$projectId" == "" ]; then
+        echo "error: Required values missing"
+        exit 1
+    fi
+
+    # ---- Save using existing check_and_update ----
+    check_and_update "APP_VERSION_ID" "$appversionid"
+    check_and_update "APP_RELEASE_VERSION_ID" "$appreleaseversionid"
+    check_and_update "AAID" "$aaid"
+    check_and_update "APID" "$apid"
+    check_and_update "MAPID" "$mapid"
+    check_and_update "RSAKEY" "$rsakey"
+    check_and_update "PLATFORM_ID" "$platformid"
+    check_and_update "PORTAL_ID" "$portalId"
+    check_and_update "PROJECT_ID" "$projectId"
+    check_and_update "BUNDLE_VERSION" "$BUNDLE_VERSION"
+    check_and_update "BUNDLE_SHORT_VERSION" "$BUNDLE_SHORT_VERSION"
+    check_and_update "APPTICS_SDK_ID" "${APPTICS_SDK_ID}"
+    check_and_update "PORTAL_ID" "$portalId"
+    check_and_update "PROJECT_ID" "$projectId"
+
+    echo "Data updated"
   
   else
-  echo "$STATUS Error occured ($?)"
-  exit 1
+    echo "$STATUS Error occured ($?)"
+    exit 1
   fi
+
 else
   echo "App version is already registered"
   value_for_key "APP_VERSION_ID"
@@ -373,6 +416,8 @@ else
   value_for_key "MAPID"
   value_for_key "RSAKEY"
   value_for_key "PLATFORM_ID"
+  value_for_key "PORTAL_ID"
+  value_for_key "PROJECT_ID"
   value_for_key "BUNDLE_VERSION"
   value_for_key "BUNDLE_SHORT_VERSION"
   value_for_key "APPTICS_SDK_ID"
@@ -380,62 +425,9 @@ else
   echo "App short version : ${BUNDLE_SHORT_VERSION}"
 fi
 
-######################
-#
-#echo "EVENTS_TRACKING_ID : ${EVENTS_TRACKING_ID}"
-#echo "API_TRACKING_ID : ${API_TRACKING_ID}"
-#
-#if [ "${EVENTS_INFO}" == "" ] || [ "${API_INFO}" == "" ];then
-#params="moduleids"
-#
-#if [ "${EVENTS_TRACKING_ID}" ]; then
-#params="${params}=5,"
-#fi
-#
-#if [ "${API_TRACKING_ID}" ]; then
-#params="${params}6,"
-#fi
-#
-#URL_ENDPOINT="${SERVER_URL}/sdk/api/apptics/v1/engagement/getinfo?${params}"
-#
-#if [ "${SYNC_TYPE}" == "plist" ]; then
-#URL_ENDPOINT="${SERVER_URL}/sdk/api/apptics/v1/engagement/getplist?${params}"
-#fi
-#
-##echo $(rm -v /tmp/"${AP_BUNDLE_ID}/${ZA_META_FILE_NAME}.json")
-#
-#STATUS=$(curl "${URL_ENDPOINT}" -v --write-out %{http_code} --silent -o "/tmp/${AP_BUNDLE_ID}/${ZA_META_FILE_NAME}.json" -H "zak: ${API_KEY}" -X POST --connect-timeout 60 --max-time 900 --retry 2 --retry-delay 5)
-#echo "${URL_ENDPOINT}" --write-out %{http_code} --silent -o "/tmp/${AP_BUNDLE_ID}/${ZA_META_FILE_NAME}.json" -H "zak: ${API_KEY}"
-#
-#echo "ENGAGEMENT RESULT STATUS ${STATUS}"
-#
-#if [ $STATUS -eq 200 ]; then
-#echo "Downloaded the data from Apptics"
-#
-#value=$(ruby -r "$(command dirname -- "${0}")/apptics_helper.rb" -e "AppticsEventsParser.main '${AP_BUNDLE_ID}/${ZA_META_FILE_NAME}'")
-#
-#    if [[ "$value" =~ ^error:* ]]; then
-#        exit 1
-#    fi
-#
-#    echo $value
-#
-#echo "AppticsEventsParser.main '${AP_BUNDLE_ID}/${ZA_META_FILE_NAME}'"
-#
-#else
-#echo "error: response status : $STATUS, ($?)"
-#exit 1
-#fi
-#
-#/usr/libexec/PlistBuddy -c "Merge /tmp/${AP_BUNDLE_ID}/${ZA_META_FILE_NAME}.plist" "${ZA_INFOPLIST_FILE}"
-#echo $(rm -v /tmp/"${AP_BUNDLE_ID}/${ZA_META_FILE_NAME}.json")
-#echo $(rm -v /tmp/"${AP_BUNDLE_ID}/${ZA_META_FILE_NAME}.plist")
-#fi
-
-#####################
+# ---- dSYM section unchanged ----
 
 DIR="$(command dirname -- "${0}")"
-
 COMMAND_PATH="$DIR/dsym_upload"
 
 IFS=', ' read -r -a SKIP_PROMPT_CONFIGURATIONS <<< "${SKIP_PROMPT_FOR}"
@@ -444,21 +436,9 @@ LOGNAME="/tmp/${AP_BUNDLE_ID}/${UUIDGEN}-apptics-output.txt"
 if [ "${LOG_FILE_PATH}" ];then
 LOGNAME="${LOG_FILE_PATH}"
 fi
-    #MAXSIZE=100000
-    #
-    #  if [ -f "${LOGNAME}" ]; then
-    #    LOGNAME_SIZE=$(ls -l $LOGNAME | awk '{print $5}')
-    #    if [ $LOGNAME_SIZE -ge $MAXSIZE ];
-    #    then
-    #        echo "$LOGNAME exceeds max threshold"
-    #        rm $LOGNAME
-    #    fi
-    #  fi
-  
+
 if [[ " ${SKIP_PROMPT_CONFIGURATIONS[@]} " =~ " ${CONFIGURATION} " ]]; then
  
-# rm -rvf "${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}"
-  
   printf "*********************************************************************************************\n"
   printf "* Uploading dSYM for '${CONFIGURATION}' configuration, check $LOGNAME for more details *\n"
   printf "*********************************************************************************************\n"

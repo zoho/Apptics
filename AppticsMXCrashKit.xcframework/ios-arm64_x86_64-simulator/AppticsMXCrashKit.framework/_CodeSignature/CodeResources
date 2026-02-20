@@ -4,21 +4,37 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/APAppState.h</key>
+		<data>
+		hFgsfuXEhC0XDPiHgTYbcRSPzD4=
+		</data>
 		<key>Headers/APCrash.h</key>
 		<data>
 		IXgyBakUjdInW7zJrCBv8ZQPbfY=
 		</data>
 		<key>Headers/APCrashReporter.h</key>
 		<data>
-		7NvhzPKAnI1c/to5D/bcCJjhI0s=
+		sd1Wqo/Aallq/yzJifDh/nyG8lk=
 		</data>
 		<key>Headers/AppticsCrashKit.h</key>
 		<data>
-		7boiAFR7QDHUyoKO4mD8p32GbIA=
+		cL82x1nyBkaoXolOywvGeVHmrBU=
+		</data>
+		<key>Headers/AppticsMXCrashKit.h</key>
+		<data>
+		mfbAxKRCP4b8TrC4XJwZjJBbJfY=
+		</data>
+		<key>Headers/KMPCrash.h</key>
+		<data>
+		MXJmfZu7pLU/BnRHdgnjcevX/Rw=
 		</data>
 		<key>Info.plist</key>
 		<data>
 		AZ88Uu2Ljsx9tmiAEmsEy29OmW0=
+		</data>
+		<key>Modules/module.modulemap</key>
+		<data>
+		gLP2lRhoUX1+tsxo6KPhg+kCduw=
 		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
@@ -27,6 +43,13 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Headers/APAppState.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			KEeLl+Bi9iYVBE71RENosRppyvRWgcOy5B9t0Hk13dY=
+			</data>
+		</dict>
 		<key>Headers/APCrash.h</key>
 		<dict>
 			<key>hash2</key>
@@ -38,14 +61,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0BlYODixXml8eqv/Fen4aWgcgcpV91GPCNSQB17GrdQ=
+			HhzqMSS4/rOaYRhvPPa/ZITaPJfLBWgFdPzCDAhx/38=
 			</data>
 		</dict>
 		<key>Headers/AppticsCrashKit.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lpBuGAxHtsceCMralRoiz0Adkg6Ikf9HEq1xJlPCTJU=
+			pDenRKH0EFT/F0QFGi7fovHXb3d5wggSXrn+f/pUSLI=
+			</data>
+		</dict>
+		<key>Headers/AppticsMXCrashKit.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			VlGtIyxkc1EmZF57xqlHEDQZatU8Z7viZFPlBt7ZA48=
+			</data>
+		</dict>
+		<key>Headers/KMPCrash.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			p7K6WKZq5RWHmzD66EBh2mSuCthDhTWOVVB8zIOlfqs=
+			</data>
+		</dict>
+		<key>Modules/module.modulemap</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			mdyHVdryuayi51RTu3ZwhKNJ53GlaKSdyPnAWP28caA=
 			</data>
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>

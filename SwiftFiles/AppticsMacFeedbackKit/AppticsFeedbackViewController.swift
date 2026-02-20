@@ -40,7 +40,7 @@ class AppticsFeedbackViewController: NSViewController,NSTextViewDelegate, NSTabl
     var sendbuttontag:Int = 0
     var attachLog:Bool = true
     var attachDiagnoInfo:Bool = true
-    @IBOutlet weak var messageIconButton:RoundedButton!
+    @IBOutlet weak var messageIconButton:NSButton!
     var imageArray:NSArray?
     var nsImages = [NSImage]()
     @IBOutlet weak var systemLogsBttn:NSButton!
@@ -74,7 +74,7 @@ class AppticsFeedbackViewController: NSViewController,NSTextViewDelegate, NSTabl
         anonymMailID.addItem(withTitle: FeedbackKitMacOS.getLocalizableString(forKey: "zanalytics.feedback.label.title.anonymous")!)
         FeedBackType.addItem(withTitle: FeedbackKitMacOS.getLocalizableString(forKey: "zanalytics.feedback.navbar.title.feedback")!)
         FeedBackType.addItem(withTitle: FeedbackKitMacOS.getLocalizableString(forKey: "zanalytics.feedback.navbar.title.reportbug")!)
-        setPlaceholderString(String:             FeedbackKitMacOS.getLocalizableString(forKey: "zanalytics.feedback.textview.placeholder")!)
+        setPlaceholderString(String:FeedbackKitMacOS.getLocalizableString(forKey: "zanalytics.feedback.textview.placeholder")!)
         feedbackType = "Feed"
         supportType = FeedbackKitMacOS.listener().emailAddress
         logsButtonhide(systembttnHide: false, diagnsoticBttnHide: false)
@@ -93,8 +93,53 @@ class AppticsFeedbackViewController: NSViewController,NSTextViewDelegate, NSTabl
         
         systemlogsCheckmarkBttn.state = .on
         diagnosticInfoCheckMarkBttn.state = .on
-        messageIconButton.cornerRadius = 10.0
+//        messageIconButton.cornerRadius = 10.0
+        
+  
+#if SWIFT_PACKAGE
+        
+        
+        // Use the bundle of the class itself
+        let frameworkBundle = Bundle(for: CollectionCell.self)
+        let nib = NSNib(nibNamed: "CollectionCell", bundle: macbundles)
+
+        collectionView.register(nib, forItemWithIdentifier: NSUserInterfaceItemIdentifier("CollectionCell"))
+        
+        
+        
+#else
+//        let identifier = NSUserInterfaceItemIdentifier("CollectionCell")
+//
+//        let nib = NSNib(
+//            nibNamed: "CollectionCell",
+//            bundle: Bundle.module
+//        )
+//
+//        collectionView.register(
+//            nib,
+//            forItemWithIdentifier: identifier
+//        )
+//        
+        
+        let frameworkBundle = Bundle(for: Attachment.self)
+        let podBundle = Bundle(url: Bundle(for: Attachment.self).url(forResource: "APFeedbackSwift", withExtension: "bundle") ?? Bundle(for: Attachment.self).bundleURL) ?? Bundle(for: Attachment.self)
+
+        let nib = NSNib(nibNamed: "CollectionCell", bundle: podBundle)
+        collectionView.register(nib, forItemWithIdentifier: NSUserInterfaceItemIdentifier("CollectionCell"))
+        
+        
+        
+        
+        
+#endif
+
+        
+       
+        
+       
         CollectionViewBoxHeightConstant.constant = 0
+        
+        
         if let scrollView = collectionView.enclosingScrollView {
             scrollView.verticalScrollElasticity = .none
             scrollView.horizontalScrollElasticity = .none
@@ -136,13 +181,11 @@ class AppticsFeedbackViewController: NSViewController,NSTextViewDelegate, NSTabl
     @available(macOS 10.14, *)
     func checkTheme() {
         if view.effectiveAppearance.bestMatch(from: [.darkAqua, .aqua]) == .darkAqua {
-            print("Theme changed: Dark Mode")
             self.mainbox_View.backgroundColor =  NSColor.init(red: 31/250, green: 31/250, blue: 30/250, alpha: 1.0)
             self.subbox_View.backgroundColor = NSColor.init(red: 31/250, green: 31/250, blue: 30/250, alpha: 1.0)
             messageIconButton.backgroundColor =  NSColor.white
 
         } else {
-            print("Theme changed: Light Mode")
             self.mainbox_View.backgroundColor = NSColor.init(red: 231/250, green: 231/250, blue: 230/250, alpha: 1.0)
             
             self.subbox_View.backgroundColor = NSColor.init(red: 231/250, green: 231/250, blue: 230/250, alpha: 1.0)
@@ -249,14 +292,13 @@ class AppticsFeedbackViewController: NSViewController,NSTextViewDelegate, NSTabl
     
     //MARK: check feedback type
     @IBAction func FeedbackTypeAction(_ sender: NSPopUpButton) {
-        print("FeedBackType PopUp:", FeedBackType.titleOfSelectedItem ?? "")
         feedbackType = FeedBackType.titleOfSelectedItem ?? ""
 
         if FeedBackType.titleOfSelectedItem  == "Report bug"{
             setPlaceholderString(String: FeedbackKitMacOS.getLocalizableString(forKey: "zanalytics.bug.textview.placeholder")!)
         }
         else{
-            setPlaceholderString(String:             FeedbackKitMacOS.getLocalizableString(forKey: "zanalytics.feedback.textview.placeholder")!)
+            setPlaceholderString(String:FeedbackKitMacOS.getLocalizableString(forKey: "zanalytics.feedback.textview.placeholder")!)
         }
         
         
@@ -267,7 +309,6 @@ class AppticsFeedbackViewController: NSViewController,NSTextViewDelegate, NSTabl
     //MARK: check mail address or anonymous
     
     @IBAction func mailIDSelectAction(_ sender: NSPopUpButton) {
-        print("Mail id action:",anonymMailID.titleOfSelectedItem ?? "")
         supportType = anonymMailID.titleOfSelectedItem ?? ""
         if anonymMailID.titleOfSelectedItem == FeedbackKitMacOS.getLocalizableString(forKey: "zanalytics.feedback.label.title.anonymous")!{
             ShowAlertMessage(message: FeedbackKitMacOS.getLocalizableString(forKey: "zanalytics.bug.alert.anonymalert")!, messageTitle: FeedbackKitMacOS.getLocalizableString(forKey: "zanalytics.feedback.label.title.anonymous")!)
@@ -428,7 +469,6 @@ class AppticsFeedbackViewController: NSViewController,NSTextViewDelegate, NSTabl
     
 //MARK: open system logs directory
     @IBAction func openSystemLogs(_ sender:NSButton){
-        print("logs dir ---> ",APLog.getInstance().logsDirectory)
         openFirstFile(in: APLog.getInstance().logsDirectory)
     }
     
@@ -494,8 +534,6 @@ class AppticsFeedbackViewController: NSViewController,NSTextViewDelegate, NSTabl
         let workspace = NSWorkspace.shared
         if FileManager.default.fileExists(atPath: path) {
             workspace.openFile(path)
-        } else {
-            print("File not found at path: \(path)")
         }
         
     }
@@ -538,16 +576,6 @@ class AppticsFeedbackViewController: NSViewController,NSTextViewDelegate, NSTabl
             feedback_Types = .feedbackOnly
         }
 
-        print("nsImages",nsImages.count)
-        print("nsImages",nsImages)
-        print("send clicked",self.customtextView.string)
-        print("feedbackType",feedbackType)
-        print("supportType",supportType)
-        print("attachemnts",attachments.count)
-        print("feedback macos diagnostic info",FeedbackKitMacOS.listener().diagnoInfo)
-        print("feedback macos diagnostic info",FeedbackKitMacOS.listener().feedbackDiagosticInfo.jsonify())
-       
-        
         if self.customtextView.string == ""{
             customtextView.shake()
             self.closeLoader()
@@ -621,32 +649,37 @@ extension AppticsFeedbackViewController: NSCollectionViewDataSource, NSCollectio
 
     }
     
-    @available(macOS 10.11, *)
     func collectionView(_ collectionView: NSCollectionView, itemForRepresentedObjectAt indexPath: IndexPath) -> NSCollectionViewItem {
         let item = collectionView.makeItem(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: "CollectionCell"), for: indexPath)
         
-        let attachment = attachments[indexPath.item]
-
-        guard let collectionViewItem = item as? CollectionCell else { return item }
-        
-        if let imagepath = attachment.imageIcon {
-            print(imagepath)
-            if let imagelocation = imagepath.replacingOccurrences(of: "file://", with: "").removingPercentEncoding{
-                collectionViewItem.deleteBttn?.tag = indexPath.item
-                collectionViewItem.attachmentImage.wantsLayer = true
-                collectionViewItem.attachmentImage.layer?.backgroundColor = NSColor.white.cgColor
-                collectionViewItem.attachmentImage.layer?.cornerRadius = 10.0
-                let image = NSImage(byReferencingFile: imagelocation)
-                collectionViewItem.attachmentImage?.image = image
-                
-                collectionViewItem.deleteBttn?.action = #selector(AppticsFeedbackViewController.checkBoxAction)
-                
-            }
+        guard let collectionViewItem = item as? CollectionCell else {
+            return item
         }
+        
+        let attachment = attachments[indexPath.item]
+        
+        if let imagepath = attachment.imageIcon,
+           let imagelocation = imagepath.replacingOccurrences(of: "file://", with: "").removingPercentEncoding {
+            
+            // Setup visual layers
+            collectionViewItem.attachmentImage.wantsLayer = true
+            collectionViewItem.attachmentImage.layer?.backgroundColor = NSColor.white.cgColor
+            collectionViewItem.attachmentImage.layer?.cornerRadius = 10.0
+            
+            // Load the image
+            let image = NSImage(byReferencingFile: imagelocation)
+            collectionViewItem.attachmentImage?.image = image
+            
+            // Setup Button
+            collectionViewItem.deleteBttn?.tag = indexPath.item
+            collectionViewItem.deleteBttn?.target = self // Ensure target is set
+            collectionViewItem.deleteBttn?.action = #selector(AppticsFeedbackViewController.checkBoxAction)
+        }
+        
         collectionViewItem.view.wantsLayer = true
         collectionViewItem.view.layer?.backgroundColor = NSColor.clear.cgColor
         
-        return item
+        return collectionViewItem
     }
 
     
@@ -655,7 +688,6 @@ extension AppticsFeedbackViewController: NSCollectionViewDataSource, NSCollectio
         
         for indexPath in indexPaths {
             let item = indexPath.item
-            print("Selected row at: \(item)")
             if let filePath = attachments[item].imageIcon{
                 if let imagelocation = filePath.replacingOccurrences(of: "file://", with: "").removingPercentEncoding{
                     openFile(atPath: imagelocation)

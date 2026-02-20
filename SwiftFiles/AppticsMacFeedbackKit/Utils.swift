@@ -7,7 +7,6 @@
 
 import Foundation
 import Cocoa
-import Apptics
 
 @objcMembers
 public class AppticsFeedback_Swift {
@@ -19,7 +18,7 @@ public class AppticsFeedback_Swift {
     public func showFeedback() {
         let nibName = "AppticsFeedbackViewController"
         if let mainViewController = NSApplication.shared.mainWindow?.contentViewController {
-            let myViewController = AppticsFeedbackViewController(nibName: nibName, bundle: bundles)
+            let myViewController = AppticsFeedbackViewController(nibName: nibName, bundle: macbundles)
             mainViewController.presentAsModalWindow(myViewController)
         }
         
@@ -63,28 +62,29 @@ class Attachment {
 
 
 
+//@objc(RoundedButton)
+//public final class RoundedButton: NSButton {
+//
+//    @IBInspectable public var cornerRadius: CGFloat = 10.0
+//
+//    public override func awakeFromNib() {
+//        super.awakeFromNib()
+//        wantsLayer = true
+//        layer?.cornerRadius = cornerRadius
+//        layer?.masksToBounds = true
+//        layer?.borderColor = NSColor.white.cgColor
+//        layer?.borderWidth = 3.0
+//    }
+//}
 
-class RoundedButton: NSButton {
 
-    var cornerRadius: CGFloat = 10.0
-
-    override func draw(_ dirtyRect: NSRect) {
-        super.draw(dirtyRect)
-        // Set the corner radius
-        self.wantsLayer = true
-        self.layer?.cornerRadius = cornerRadius
-        self.layer?.masksToBounds = true
-        self.layer?.borderColor = NSColor.white.cgColor
-        self.layer?.borderWidth = 3.0
-    }
-}
 
 
 
 #if SWIFT_PACKAGE
-public let bundles = Bundle.module
+public let macbundles = Bundle.module
 #else
-public let bundles = Bundle(for: Attachment.self)
+public let macbundles = Bundle(for: Attachment.self)
 #endif
 
 //Shake text view for empty string

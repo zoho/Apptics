@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="24128" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="22505" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="24128"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="22505"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -26,7 +26,7 @@
                 <outlet property="headertwo" destination="dNH-Wm-5xp" id="f2K-fp-Odh"/>
                 <outlet property="logsBoxView" destination="yfw-pR-pAZ" id="bW7-z5-zNO"/>
                 <outlet property="mainbox_View" destination="XeQ-sl-9G9" id="xCQ-ZA-GiC"/>
-                <outlet property="messageIconButton" destination="Y53-IS-ATs" id="giR-22-ZT1"/>
+                <outlet property="messageIconButton" destination="Y53-IS-ATs" id="sz1-fh-SpO"/>
                 <outlet property="sendButton" destination="fMO-55-ZQ1" id="e2T-Hl-coT"/>
                 <outlet property="subbox_View" destination="vM0-sc-Xt0" id="fk7-4p-35j"/>
                 <outlet property="systemLogsBttn" destination="A6Q-eo-Nqf" id="Xvd-9d-LVt"/>
@@ -48,7 +48,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="546" height="700"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="sEd-Gr-3Dc">
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="sEd-Gr-3Dc">
                                 <rect key="frame" x="88" y="660" width="450" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="l0F-iH-RYq"/>
@@ -59,7 +59,7 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dNH-Wm-5xp">
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dNH-Wm-5xp">
                                 <rect key="frame" x="88" y="617" width="450" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="CmB-Uu-WDG"/>
@@ -72,7 +72,7 @@ attachments for our reference.</string>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="z3I-K9-MP0">
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="z3I-K9-MP0">
                                 <rect key="frame" x="36" y="576" width="44" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="QAq-eM-i7I"/>
@@ -84,7 +84,7 @@ attachments for our reference.</string>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="K0d-rm-7Vd">
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="K0d-rm-7Vd">
                                 <rect key="frame" x="34" y="531" width="49" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="45" id="NPr-Sl-fJF"/>
@@ -97,7 +97,7 @@ attachments for our reference.</string>
                                 </textFieldCell>
                             </textField>
                             <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Csk-Zs-Ykr">
-                                <rect key="frame" x="89" y="527" width="120" height="35"/>
+                                <rect key="frame" x="86" y="523" width="127" height="40"/>
                                 <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" autoenablesItems="NO" altersStateOfSelectedItem="NO" id="gM2-3u-pIq">
                                     <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="cellTitle"/>
@@ -112,7 +112,7 @@ attachments for our reference.</string>
                                 </connections>
                             </popUpButton>
                             <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3kv-Yx-33T">
-                                <rect key="frame" x="89" y="572" width="250" height="35"/>
+                                <rect key="frame" x="86" y="568" width="257" height="40"/>
                                 <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" preferredEdge="maxY" autoenablesItems="NO" altersStateOfSelectedItem="NO" id="vbn-4k-YJ2">
                                     <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="cellTitle"/>
@@ -151,12 +151,12 @@ attachments for our reference.</string>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="bnf-6e-v4D">
-                                    <rect key="frame" x="385" y="0.0" width="17" height="130"/>
+                                    <rect key="frame" x="386" y="0.0" width="16" height="130"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Db3-Hu-pO2">
-                                <rect key="frame" x="90" y="352" width="134" height="25"/>
+                                <rect key="frame" x="83" y="345" width="130" height="37"/>
                                 <buttonCell key="cell" type="push" title=" Attachments" bezelStyle="rounded" image="AttachementFeed" imagePosition="left" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="NSc-H3-qc5">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="cellTitle"/>
@@ -211,11 +211,11 @@ attachments for our reference.</string>
                                             <rect key="frame" x="46" y="4" width="410" height="121"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <view key="contentView" id="CwQ-yx-of6">
-                                                <rect key="frame" x="0.0" y="0.0" width="410" height="121"/>
+                                                <rect key="frame" x="4" y="5" width="402" height="113"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
-                                                    <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PQJ-aC-xHN">
-                                                        <rect key="frame" x="7" y="99" width="200" height="15"/>
+                                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PQJ-aC-xHN">
+                                                        <rect key="frame" x="7" y="91" width="200" height="15"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                         <textFieldCell key="cell" controlSize="small" lineBreakMode="clipping" title="Include System logs" id="4NS-09-FqQ">
                                                             <font key="font" metaFont="cellTitle"/>
@@ -224,7 +224,7 @@ attachments for our reference.</string>
                                                         </textFieldCell>
                                                     </textField>
                                                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A6Q-eo-Nqf">
-                                                        <rect key="frame" x="10" y="80" width="132" height="20"/>
+                                                        <rect key="frame" x="10" y="72" width="132" height="20"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                         <buttonCell key="cell" type="bevel" title="System logs.txt" bezelStyle="rounded" alignment="left" controlSize="small" imageScaling="proportionallyDown" inset="2" id="dyX-2S-cdg">
                                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -234,8 +234,8 @@ attachments for our reference.</string>
                                                             <action selector="openSystemLogs:" target="-2" id="3Bx-7Y-rcq"/>
                                                         </connections>
                                                     </button>
-                                                    <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rUb-6D-Wp0">
-                                                        <rect key="frame" x="9" y="37" width="200" height="15"/>
+                                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rUb-6D-Wp0">
+                                                        <rect key="frame" x="9" y="29" width="200" height="15"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                         <textFieldCell key="cell" controlSize="small" lineBreakMode="clipping" title="Include Diagnostic info" id="JLO-m4-hmC">
                                                             <font key="font" metaFont="cellTitle"/>
@@ -244,11 +244,11 @@ attachments for our reference.</string>
                                                         </textFieldCell>
                                                     </textField>
                                                     <box verticalHuggingPriority="750" fixedFrame="YES" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="ejV-LA-mgq">
-                                                        <rect key="frame" x="10" y="60" width="410" height="5"/>
+                                                        <rect key="frame" x="10" y="52" width="410" height="5"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     </box>
                                                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0ax-rW-7zs">
-                                                        <rect key="frame" x="10" y="18" width="151" height="20"/>
+                                                        <rect key="frame" x="10" y="10" width="151" height="20"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                         <buttonCell key="cell" type="bevel" title="Diagnsotic info.txt" bezelStyle="rounded" alignment="left" controlSize="small" imageScaling="proportionallyDown" inset="2" id="nmc-Od-Wap">
                                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -259,7 +259,7 @@ attachments for our reference.</string>
                                                         </connections>
                                                     </button>
                                                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FO8-en-xYH">
-                                                        <rect key="frame" x="371" y="81" width="25" height="25"/>
+                                                        <rect key="frame" x="371" y="73" width="25" height="25"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                         <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="info.circle" catalog="system" imagePosition="overlaps" inset="2" id="PCx-iC-fm7">
                                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -270,7 +270,7 @@ attachments for our reference.</string>
                                                         </connections>
                                                     </button>
                                                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N5r-am-fNA">
-                                                        <rect key="frame" x="371" y="21" width="25" height="25"/>
+                                                        <rect key="frame" x="371" y="13" width="25" height="25"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                         <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="info.circle" catalog="system" imagePosition="overlaps" inset="2" id="SKf-kg-zGA">
                                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -355,17 +355,22 @@ Gw
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Y53-IS-ATs" customClass="RoundedButton" customModule="AppticsFeedback" customModuleProvider="target">
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Y53-IS-ATs">
                                 <rect key="frame" x="38" y="639" width="40" height="42"/>
                                 <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="iBi-ug-9fT">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
-                                    <imageReference key="image" image="Messagefeed" symbolScale="large"/>
+                                    <imageReference key="image" image="messageIcon" symbolScale="large"/>
                                 </buttonCell>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Jvt-s5-H8B"/>
                                     <constraint firstAttribute="width" constant="40" id="pqC-oJ-cJp"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                         </subviews>
                         <constraints>
@@ -422,7 +427,7 @@ Gw
     </objects>
     <resources>
         <image name="AttachementFeed" width="32" height="32"/>
-        <image name="Messagefeed" width="32" height="32"/>
         <image name="info.circle" catalog="system" width="15" height="15"/>
+        <image name="messageIcon" width="32" height="32"/>
     </resources>
 </document>
