@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
-spec.name             = "AppticsFeedbackKit"
+spec.name             = "AppticsFeedbackKitmacOSSwift"
 spec.version          = "3.3.12003"
-spec.summary          = "Apptics FeedbackKit for iOS"
+spec.summary          = "AppticsFeedbackKitmacOSSwift"
 spec.license          = { :type => "Proprietary", :text => <<-LICENSE
 Copyright (c) 2025 Zoho Corporation Private Limited
 Zoho grants you a limited, revocable, non-exclusive, non-sublicensable license to copy, install and use the Zoho Apptics SDK solely in connection with your use of Zoho Apptics.
@@ -21,27 +21,29 @@ Apptics is a library that enables your app to send in-app usage reports and data
   DESC
   
 spec.homepage         = "https://github.com/zoho/Apptics"
-spec.author           = { "Saravanan Selvam" => "ssaravanan@zohocorp.com", "Prakash Redrouthu" => "prakash.redrouthu@zohocorp.com" }
-#spec.source = { :http => "https://github.com/zoho/Apptics/releases/download/#{spec.version}/AppticsFeedbackKit.zip" }
-spec.source       = { :git => 'https://github.com/zoho/Apptics.git', :commit => '3016434c0135f134bce49c1ca83d358684c10a50'}#, :tag => '#{spec.version}' }
-
-spec.ios.deployment_target = '9.1'
+spec.author = { 'Apptics' => 'apptics-support@zohocorp.com' }
+spec.source = { :http => "https://github.com/zoho/Apptics/releases/download/#{spec.version}/AppticsSwiftFiles.zip" }
+# spec.source = { :git => "https://github.com/zoho/Apptics.git", :tag=>"#{spec.version}"}
+spec.swift_version = '5.0'
 spec.osx.deployment_target = '10.13'
 
-spec.default_subspecs = 'FeedbackKit'
+spec.default_subspecs = 'AppticsFeedbackKitmacOS'
 
 spec.requires_arc = true
 
-spec.subspec 'FeedbackKit' do |fk|
-fk.platform     = :ios, '9.1'
-fk.vendored_frameworks = 'AppticsFeedbackKit.xcframework'
-fk.ios.dependency 'AppticsAnalytics/Apptics', "#{spec.version}"
-end
+spec.subspec 'AppticsFeedbackKitmacOS' do |cp|
+      cp.source_files        = 'SwiftFiles/AppticsMacFeedbackKit/**/*.swift'
+      cp.dependency 'AppticsFeedbackKit/FeedbackKit-macOS', "#{spec.version}"
+      cp.platform     = :osx, 10.13
+      cp.resource_bundles = {
+        'APFeedbackSwift' => [
+          'SwiftFiles/AppticsMacFeedbackKit/**/*.ttf',
+          'SwiftFiles/AppticsMacFeedbackKit/**/*.xib',
+          'SwiftFiles/AppticsMacFeedbackKit/**/*.xcprivacy',
+          'SwiftFiles/AppticsMacFeedbackKit/**/*.png'
+        ]
+      }
 
-spec.subspec 'FeedbackKit-macOS' do |fk|
-fk.platform = :osx, '10.13'
-fk.vendored_frameworks = 'AppticsFeedbackKit.xcframework'
-fk.osx.dependency 'AppticsAnalytics/Apptics', "#{spec.version}"
-end
+  end
 
 end
