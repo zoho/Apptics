@@ -6,6 +6,7 @@ mkdir -p AppticsCrossPromotion/3.3.12003/
 mkdir -p AppticsExtension/3.3.12003/
 mkdir -p AppticsFeedbackKit/3.3.12003/
 mkdir -p AppticsFeedbackKitSwift/3.3.12003/
+mkdir -p AppticsFeedbackKitmacOSSwift/3.3.12003/
 mkdir -p AppticsInAppUpdate/3.3.12003/
 mkdir -p AppticsRateUs/3.3.12003/
 mkdir -p AppticsRemoteConfig/3.3.12003/
@@ -22,6 +23,7 @@ cp AppticsCrossPromotion.podspec AppticsCrossPromotion/3.3.12003/
 cp AppticsExtension.podspec AppticsExtension/3.3.12003/
 cp AppticsFeedbackKit.podspec AppticsFeedbackKit/3.3.12003/
 cp AppticsFeedbackKitSwift.podspec AppticsFeedbackKitSwift/3.3.12003/
+cp AppticsFeedbackKitmacOSSwift.podspec AppticsFeedbackKitSwift/3.3.12003/
 cp AppticsInAppUpdate.podspec AppticsInAppUpdate/3.3.12003/
 cp AppticsRateUs.podspec AppticsRateUs/3.3.12003/
 cp AppticsRemoteConfig.podspec AppticsRemoteConfig/3.3.12003/
