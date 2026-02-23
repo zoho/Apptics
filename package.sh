@@ -23,7 +23,7 @@ cp AppticsCrossPromotion.podspec AppticsCrossPromotion/3.3.12003/
 cp AppticsExtension.podspec AppticsExtension/3.3.12003/
 cp AppticsFeedbackKit.podspec AppticsFeedbackKit/3.3.12003/
 cp AppticsFeedbackKitSwift.podspec AppticsFeedbackKitSwift/3.3.12003/
-cp AppticsFeedbackKitmacOSSwift.podspec AppticsFeedbackKitSwift/3.3.12003/
+cp AppticsFeedbackKitmacOSSwift.podspec AppticsFeedbackKitmacOSSwift/3.3.12003/
 cp AppticsInAppUpdate.podspec AppticsInAppUpdate/3.3.12003/
 cp AppticsRateUs.podspec AppticsRateUs/3.3.12003/
 cp AppticsRemoteConfig.podspec AppticsRemoteConfig/3.3.12003/
