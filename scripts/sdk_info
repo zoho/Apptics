@@ -1,4 +1,3 @@
-#!/bin/bash
 #app version : 3.3.12
 EVENTS_TRACKING_ID=175
 API_TRACKING_ID=175

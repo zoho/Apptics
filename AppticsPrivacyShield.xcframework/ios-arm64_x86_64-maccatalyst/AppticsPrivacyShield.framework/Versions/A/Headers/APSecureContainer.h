@@ -10,11 +10,16 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface APSecureContainer : UIView
+@protocol APProtectableSecureView <NSObject>
+@end
+
+@interface APSecureContainer : UIView <APProtectableSecureView>
 
 @property (nonatomic, strong) UITextField *textField;
 @property (nonatomic, strong) UIView *bodyView;
 @property (nonatomic, assign) BOOL preventScreenCapture;
+
++ (BOOL)isSecureContainerAvailable;
 
 @end
 

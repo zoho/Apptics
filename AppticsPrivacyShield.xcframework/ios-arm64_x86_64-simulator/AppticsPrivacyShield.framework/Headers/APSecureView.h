@@ -7,11 +7,11 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import <AppticsPrivacyShield/AppticsPrivacyShield.h>
+#import <AppticsPrivacyShield/APSecureContainer.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface APSecureView : UIView
+@interface APSecureView : UIView <APProtectableSecureView>
 
 @property (nonatomic, strong) UIView *contentView;
 @property (nonatomic, assign) BOOL preventScreenCapture;
@@ -23,6 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface APSafeContainer : NSObject
 
++ (BOOL)isSecureContainerAvailable;
 - (UIView * _Nullable)findHiddenContainerInView:(UIView *)view;
 
 @end

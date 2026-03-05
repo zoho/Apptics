@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface APSecureTextView : UIView
+@interface APSecureTextView : UIView <APProtectableSecureView>
 
 @property (nonatomic, strong) UITextView *textView;
 @property (nonatomic, strong) APSecureContainer *secureContainer;

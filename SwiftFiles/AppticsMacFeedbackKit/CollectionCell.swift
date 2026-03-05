@@ -7,20 +7,21 @@
 
 import Cocoa
 
+@objc(CollectionCell)
 class CollectionCell: NSCollectionViewItem {
-    
-    
+
+
     @IBOutlet public weak var attachmentImage: NSImageView!
-       
+
     @IBOutlet public weak var deleteBttn: NSButton!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.translatesAutoresizingMaskIntoConstraints = false
 
     }
-    
 
-   
-    
+
+
+
 }

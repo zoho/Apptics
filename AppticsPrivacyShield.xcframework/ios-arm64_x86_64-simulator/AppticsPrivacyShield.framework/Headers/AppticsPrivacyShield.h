@@ -25,6 +25,12 @@ FOUNDATION_EXPORT const unsigned char AppticsPrivacyShieldVersionString[];
 #import <Foundation/Foundation.h>
 #import <LocalAuthentication/LocalAuthentication.h>
 
+typedef NS_ENUM(NSInteger, APPrivacyShieldPermissionState) {
+    APPrivacyShieldPermissionStateUnknown = 0,
+    APPrivacyShieldPermissionStateGranted,
+    APPrivacyShieldPermissionStateDenied
+};
+
 /**
  *  Use this class to integrate Apptics Privacy Shield with your app.
 
@@ -35,6 +41,9 @@ FOUNDATION_EXPORT const unsigned char AppticsPrivacyShieldVersionString[];
 @property (nonatomic, assign) BOOL isAlertActive;
 
 @property (nonatomic, assign) BOOL isWindowShieldEnabled;
+@property (nonatomic, assign) BOOL isSecureRenderingAvailable;
+@property (nonatomic, assign) BOOL strictModeEnabled;
+@property (nonatomic, assign) APPrivacyShieldPermissionState permissionState;
 
 + (instancetype)listener;
 
@@ -60,5 +69,15 @@ FOUNDATION_EXPORT const unsigned char AppticsPrivacyShieldVersionString[];
  @param status boolean
  */
 + (void) enablePrivacyShield:(bool) status;
+
+/**
+ Returns the authentication state for temporary shield disablement.
+ */
++ (APPrivacyShieldPermissionState)permissionState;
+
+/**
+ Shared decision point used by all secure wrappers to choose rendering mode.
+ */
++ (BOOL)shouldPreventScreenCapture;
 
 @end

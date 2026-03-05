@@ -262,6 +262,9 @@ typedef void (^internbgConsoleLogsRequestSuccessBlock)(void);
 
 - (NSString *) getCurrentUserId;
 
+-(void) syncUpdatesFromServer;
+
+
 - (APPrivacyStatus) getPrivacyStatus;
     
 - (void) showPrivacyConsent : (id _Nullable) viewController;

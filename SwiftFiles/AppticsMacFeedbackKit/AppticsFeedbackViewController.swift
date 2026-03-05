@@ -119,7 +119,9 @@ class AppticsFeedbackViewController: NSViewController,NSTextViewDelegate, NSTabl
 //            nib,
 //            forItemWithIdentifier: identifier
 //        )
-//        
+//
+        
+        
         
         let frameworkBundle = Bundle(for: Attachment.self)
         let podBundle = Bundle(url: Bundle(for: Attachment.self).url(forResource: "APFeedbackSwift", withExtension: "bundle") ?? Bundle(for: Attachment.self).bundleURL) ?? Bundle(for: Attachment.self)

@@ -80,12 +80,35 @@ class Attachment {
 
 
 
-
+// *************************** Pods  Publish Setup  ****************
 #if SWIFT_PACKAGE
 public let macbundles = Bundle.module
 #else
-public let macbundles = Bundle(for: Attachment.self)
+public let macbundles: Bundle = {
+    // Get the framework bundle first
+    let frameworkBundle = Bundle(for: Attachment.self)
+    
+    guard let bundleURL = frameworkBundle.url(forResource: "APFeedbackSwift", withExtension: "bundle"),
+          let resourceBundle = Bundle(url: bundleURL) else {
+        print("APFeedbackSwift.bundle not found inside the framework......")
+        return frameworkBundle
+    }
+    
+    return resourceBundle
+}()
 #endif
+
+
+
+//// *************************** native project Setup ******************************************
+//#if SWIFT_PACKAGE
+//public let macbundles = Bundle.module
+//#else
+//public let macbundles = Bundle(for: Attachment.self)
+//#endif
+
+
+
 
 //Shake text view for empty string
 extension NSTextView {

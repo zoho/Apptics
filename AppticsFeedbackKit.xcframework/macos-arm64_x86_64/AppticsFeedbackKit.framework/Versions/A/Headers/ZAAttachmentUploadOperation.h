@@ -16,6 +16,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property(retain, nullable) NSString *logFilePath;
 
+@property(assign) NSUInteger currentIndex;
+@property(assign) NSUInteger totalCount;
+
 
 - (id)initWithFeedbackId:(NSString*)feedbackId withAttachmentId : (NSString*) attachmentId userID : (NSString*) userId anonID : (NSString*) anonid;
 

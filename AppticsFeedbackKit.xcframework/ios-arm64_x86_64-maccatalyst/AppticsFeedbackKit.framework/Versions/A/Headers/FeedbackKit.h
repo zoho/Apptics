@@ -325,6 +325,15 @@ extern NSString *bImageUploadSuccessNotification;
 extern NSString *bLogUploadSuccessNotification;
 
 /**
+ *  All images upload success notification
+ *  Posted after every queued attachment image has been uploaded successfully.
+ *  The notification object is an NSDictionary with keys:
+ *    @"feedbackId"  – NSString  – the feedback this batch belongs to
+ *    @"totalCount"  – NSNumber  – total number of images that were uploaded
+ */
+extern NSString *bAllImagesUploadSuccessNotification;
+
+/**
  *  Image upload failure notification
  */
 extern NSString *bImageUploadFailureNotification;

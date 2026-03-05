@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface APSecureLabel : UIView
+@interface APSecureLabel : UIView <APProtectableSecureView>
 
 @property (nonatomic, strong) UILabel *label;
 @property (nonatomic, strong) APSecureContainer *secureContainer;

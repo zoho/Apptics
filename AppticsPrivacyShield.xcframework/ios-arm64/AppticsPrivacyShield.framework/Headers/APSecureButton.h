@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface APSecureButton : UIView
+@interface APSecureButton : UIView <APProtectableSecureView>
 
 @property (nonatomic, strong) UIButton *button;
 @property (nonatomic, strong) APSecureContainer *secureContainer;
