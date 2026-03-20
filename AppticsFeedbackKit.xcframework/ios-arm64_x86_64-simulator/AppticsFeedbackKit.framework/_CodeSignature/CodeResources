@@ -42,7 +42,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		xQgSdSekwkgQFExV/PYdXl47oAA=
+		5ML9BdSxyEqhjQB4/3RdERxW/bw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>ZBugSquashResources.bundle/BSDiagnosticInfoViewController.nib</key>
 		<data>
-		LazR+OvVrmENMthf5eFzuMBEelw=
+		IHHC8KI94un6I+qq2iBl4IdXqrY=
 		</data>
 		<key>ZBugSquashResources.bundle/Base.lproj/NewBugViewController.strings</key>
 		<dict>
@@ -80,7 +80,7 @@
 		</dict>
 		<key>ZBugSquashResources.bundle/FeedbackDataTableViewCell.nib</key>
 		<data>
-		8pXiDOe0jIRhgKaoE4mAq7mFfKo=
+		uo9TkQTaO1Fa8xfOZ3jd4agQfcg=
 		</data>
 		<key>ZBugSquashResources.bundle/FeedbackKit.storyboardc/FeedbackDataController.nib</key>
 		<data>
@@ -92,19 +92,19 @@
 		</data>
 		<key>ZBugSquashResources.bundle/FeedbackKit.storyboardc/njx-Nt-Bnw-view-g8R-bb-haf.nib</key>
 		<data>
-		7QIOxSGQud7kK1eHtYTePqNWBZQ=
+		/cpAnwrro3r4L8MxQ0rM7DjaohM=
 		</data>
 		<key>ZBugSquashResources.bundle/Info.plist</key>
 		<data>
-		UDwAkjPZKBU52fbcXsim6zrEd9Y=
+		1vt+1PS86XjiV9POxTnoH7F+vmo=
 		</data>
 		<key>ZBugSquashResources.bundle/NewBugViewController.nib/objects-14.0+.nib</key>
 		<data>
-		wjtJIVT+gQbKm1xRZm1pss6wUhE=
+		4U+tvkroUCwtmOET8zzK9YocN8k=
 		</data>
 		<key>ZBugSquashResources.bundle/NewBugViewController.nib/runtime.nib</key>
 		<data>
-		uqptD9L43SlSbkUbRFc6OIjI4xo=
+		N/tWVeLgKJNr1orJpXqx9mMmSIw=
 		</data>
 		<key>ZBugSquashResources.bundle/Screenshot-app.ttf</key>
 		<data>
@@ -120,11 +120,11 @@
 		</data>
 		<key>ZBugSquashResources.bundle/ZADiagnosticInfoCell.nib</key>
 		<data>
-		k6nGKwt1on/Lg9w8HxDFvKOY46Q=
+		OWlvNOtj7/jbCa+wXYVTMV4V07E=
 		</data>
 		<key>ZBugSquashResources.bundle/ZADiagnosticInfoViewController.nib</key>
 		<data>
-		+T3PzacH1WWDyBO83l77dx45wZM=
+		CewugPcieOIqQKGzP8kU6wUaQuA=
 		</data>
 		<key>ZBugSquashResources.bundle/ZAImageEditorCell.nib/objects-12.3+.nib</key>
 		<data>
@@ -136,11 +136,11 @@
 		</data>
 		<key>ZBugSquashResources.bundle/ZAImageListViewCell.nib</key>
 		<data>
-		ChjAvS9l07Dd7THgsHXgwP3O9fs=
+		/asqVnlfE8JF7FRoz9Rev1DK35A=
 		</data>
 		<key>ZBugSquashResources.bundle/ZAImagePicker.nib</key>
 		<data>
-		RosJ6Xmb1qHCMnrmTspZZi3N5Ic=
+		WxfU6FEf3R/QlPkRXXgc3YCZq44=
 		</data>
 		<key>ZBugSquashResources.bundle/ZAImagePickerCell.nib/objects-12.3+.nib</key>
 		<data>
@@ -152,35 +152,31 @@
 		</data>
 		<key>ZBugSquashResources.bundle/ZAIncludeLogConsent.nib</key>
 		<data>
-		UR7i9urkBuOJO92U/Df0lQqp1Hg=
+		zZE/xXhILUhNPEe+3/17HMlmUPw=
 		</data>
 		<key>ZBugSquashResources.bundle/ZASectionHeaderView.nib</key>
 		<data>
-		Ec9jSRq+JrWbY4L+8wVVKyzhOnk=
+		yCYPkCcAySGxxG8Lt4PyucDZoZs=
 		</data>
 		<key>ZBugSquashResources.bundle/ZASystemLogListViewController.nib</key>
 		<data>
-		D0nPurQBPWjCbLb3arb9ZSFAsRg=
+		YWkNPZk1RYT7eIoZOkBKJOtDkqg=
 		</data>
 		<key>ZBugSquashResources.bundle/ZASystemLogsViewController.nib</key>
 		<data>
-		ybDYmySKJ62XraY2X4egToFXeRw=
+		/oKlujY13Klnkk70Q5S0nFmD4t0=
 		</data>
 		<key>ZBugSquashResources.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		ceR63Bo1FDsWCax0mrP49HQF6uk=
+		R+GfYQ/eNRd2OK/u7smQ1tUsoyw=
 		</data>
 		<key>ZBugSquashResources.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
 		OnX22wWFKRSOFN1+obRynMCeyXM=
 		</data>
-		<key>ZBugSquashResources.bundle/_CodeSignature/CodeRequirements-1</key>
-		<data>
-		WVLJXVXHW4o7yQuu2GDkFpPvBZo=
-		</data>
 		<key>ZBugSquashResources.bundle/_CodeSignature/CodeResources</key>
 		<data>
-		5fudHK86dzs7+cVX301KSEPRLVY=
+		iddw+wOFCdiyR+NLMe26rby304U=
 		</data>
 		<key>ZBugSquashResources.bundle/_CodeSignature/CodeSignature</key>
 		<data>
@@ -1343,7 +1339,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1szbLM8flEx2fKnElH7l9hmId+CpGlkAcQLBtsyAdiM=
+			gstwruAsVk4OPlrXtgpTlSpHmMofG5XPbvqEjWY3eT8=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/Base.lproj/NewBugViewController.strings</key>
@@ -1368,7 +1364,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zoPYqbhUQsZyw1RIKm+Rwku9Z95A1jC3bEws86xlkeI=
+			L/ybBWRp1kFI6WajexH4HONIHm7frkpqA3k/Aao1hkw=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/FeedbackKit.storyboardc/FeedbackDataController.nib</key>
@@ -1389,28 +1385,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JvpDkpV1xm+5c856PLqItgLpdZAEwt+udPlkoJJZipM=
+			K0xuWu4Uo0Y7LKX0Bh9JY85Zh4O3IyFEYaQCYOJV/OM=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HI8FH7ZhG0wt2t7sjoW98RL/Cgxnb9MPfKa1SdkBDyk=
+			Hgaxjmq/LJnDbseJFMsIZBFBE13SvA0V7EJuHH0gRFE=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/NewBugViewController.nib/objects-14.0+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aqt7BndUsGU3lRA0CsgvjheKB+3BuwGW04Q7pc8rwQY=
+			c92sEXqyqZZop0wqtRWDH4ozR3vAGA90Jkoue/w9S/E=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/NewBugViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fVaKf7TSM3q/5bnb+sbjBNpPPpzRmqmqwZIvh0+unS0=
+			qgepVOanykmuJIVjBJ87wcViqOKY/ROIA37khlCfRbY=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/Screenshot-app.ttf</key>
@@ -1438,14 +1434,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kx8OCRkl/t9IM7BKzM73aC1lrJwtU6Z9rXg2JT9kLUM=
+			+I/jTCwcyOgIikoTn1SoV0xDY7TBHcV3Ah0qI3PHEoA=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/ZADiagnosticInfoViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Leals4/aVc3quNZsLq3nBjOI0Y+DmkZLII6xaXrTGsQ=
+			1ATNuo7NnZBGVlq6Pn/P+r+s50fMgl6bz5HEzADRTAw=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/ZAImageEditorCell.nib/objects-12.3+.nib</key>
@@ -1466,14 +1462,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kSVtVrMmyOfGYUjfyMQo4X4/xHSxBMbXZbW4YlnLMvw=
+			l1jpVCWq6aKqd8brX7qKczXAdvZO2idcXK5FXXTNA7s=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/ZAImagePicker.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QS22RzWB6APZUuWwj69lY8yFVunzwsVqHI9hFielg4Y=
+			DsaV/lWl5W5bFa90XNioCsr9WuipCfwuTLiEUzJALcU=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/ZAImagePickerCell.nib/objects-12.3+.nib</key>
@@ -1494,35 +1490,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HbRDmErmP4M+2HKD1ClZHw93nxKDL4lyjDXfIVgrsyo=
+			lM0H1sPiuh4smP/WWTUVSAejCNM+zTyB+1TfurRDRtk=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/ZASectionHeaderView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HNjeuI6y6LmiqpDH5CdV9KgqOWfw7n+GMpFN3JyLQC8=
+			r4CP2wovjSk5z3bk9jATy14qeGpS8elvC+6PBHLyShE=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/ZASystemLogListViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lDTiT577s0yJWNjwY8tZi5t6BYKQKWyE+nYyggCbzeY=
+			0QszA7wYJaLA8EoCLV/hpDxBjfJCPSrAR9+nNnS3tSg=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/ZASystemLogsViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			f+dCYkvCadFMAm5qKmNRww5sx+MfnSKLguJSIm8KGn4=
+			aDw0MkVJevXInzd4nQ9bM76vSvOCeI0U9RJyGsj7GBs=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/_CodeSignature/CodeDirectory</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			E4DIVw8ehifoJjVQrCvz+E/a55kDXDIj6qiIQJDI3m0=
+			IBzeh7EIn9LlapeTa4GdLWmlnX+I1qcKIyYqVJ5eKgc=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/_CodeSignature/CodeRequirements</key>
@@ -1532,18 +1528,11 @@
 			mHkgkE6rZQ51eIwFSqCwUk5qgL/HGqMt+NI3phdD+YY=
 			</data>
 		</dict>
-		<key>ZBugSquashResources.bundle/_CodeSignature/CodeRequirements-1</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			eIrHdCNBE4EYamWPY1dRCfLOcFDD369bSDvHiqZKclM=
-			</data>
-		</dict>
 		<key>ZBugSquashResources.bundle/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Z7SEvYBvsDn2ssKT7AB5ZMcqS/9BES7fdqthNNiWK1E=
+			wTrnDdfuVQ0qjHaYSLcchRB6u16c7bVjlizTrKGADjo=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/_CodeSignature/CodeSignature</key>

@@ -251,10 +251,6 @@
 	<dict>
 		<key>GDPR.ttf</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			cRPwKAkwRRupgvo0w4eyCgt85y8=
-			</data>
 			<key>hash2</key>
 			<data>
 			3CTksYX+qFfdPAHVGhxzu67TnMIlfJ1MXGIof+nC2hA=
@@ -262,10 +258,6 @@
 		</dict>
 		<key>ar.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			5BXJsoUJzYVhPSZE5lISfMM2RAI=
-			</data>
 			<key>hash2</key>
 			<data>
 			23PwRjnioFu2P1vNyDAljxqRwJxgFj/SS5hSIpdIJIc=
@@ -275,10 +267,6 @@
 		</dict>
 		<key>bg.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			k+JSVp2bA8E/Hfny/ABGUj5qEtU=
-			</data>
 			<key>hash2</key>
 			<data>
 			oeuD+4OCm7AJYbnd3lJIgskE/0VcKpSB6InZhHFMBDs=
@@ -288,10 +276,6 @@
 		</dict>
 		<key>cs.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			7BpusTXGBnCOuxGlOpK/6PPjyBc=
-			</data>
 			<key>hash2</key>
 			<data>
 			AhLFfjYqbEyMl05p8XwPDcrF1yimsTsd1YRuxaflWpg=
@@ -301,10 +285,6 @@
 		</dict>
 		<key>da.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Kcal2UCXE3F56tT4QPJLtlCC4bg=
-			</data>
 			<key>hash2</key>
 			<data>
 			kiRAIoAn8fKw22qG9lQR88Xj88XM6BfMS9S4ddcrkUk=
@@ -314,10 +294,6 @@
 		</dict>
 		<key>de.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			OlwdpeUps91wFkM/drCpjluNNKA=
-			</data>
 			<key>hash2</key>
 			<data>
 			SawgD50MPwLUCgxXDC148w6XNg/lMQrTh3//sFTSymM=
@@ -327,10 +303,6 @@
 		</dict>
 		<key>en.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			M3AsWDOfC2g9R1Q/U0CtuaHndAc=
-			</data>
 			<key>hash2</key>
 			<data>
 			YBkGch7hk1sBpOqt2T8NDhkCrF3jNFOwm1riOad5Txo=
@@ -340,10 +312,6 @@
 		</dict>
 		<key>es-MX.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			QPPkjhiFwQ1TehtT5Jbh5F9f2SI=
-			</data>
 			<key>hash2</key>
 			<data>
 			ccDy8SWzUTqZqhBF2ghuX4CGRnq14oj4ukuyK/EnRto=
@@ -353,10 +321,6 @@
 		</dict>
 		<key>es.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			hJuDrFCZIDqPHsQjtYB1e+mZWa8=
-			</data>
 			<key>hash2</key>
 			<data>
 			EOe8dYuNxerfR9JAHaO7ELrqMjNkhVd7Hz6p+RomaIo=
@@ -366,10 +330,6 @@
 		</dict>
 		<key>fr-CA.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			oeiWrYFn7GrFO2+yCqnKPAeLLLY=
-			</data>
 			<key>hash2</key>
 			<data>
 			grUhWES6BpB4SbujS8MKf4Rrbo7KbIGKc2/G2qmpHj8=
@@ -379,10 +339,6 @@
 		</dict>
 		<key>fr.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			sA9M31dKmVenK1B0BMunoljk8Nk=
-			</data>
 			<key>hash2</key>
 			<data>
 			TsqXhUzi/4+WraSFSWCgjXA/NP6ztBi0rMU0Ck1KzdM=
@@ -392,10 +348,6 @@
 		</dict>
 		<key>he.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			0G85gVdKGcpFARc3xQSiM1VLkNE=
-			</data>
 			<key>hash2</key>
 			<data>
 			gZa0JwnQFzXpgFj476pKDh3L2UwmLMqJEruukQJyPsY=
@@ -405,10 +357,6 @@
 		</dict>
 		<key>hr.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			1UuIEybXEYfeH9TaGQ34IS/9mXs=
-			</data>
 			<key>hash2</key>
 			<data>
 			C5Q85uYWQkqw2Mx5E5dD/aMGiI7Mu3fawat6AmPvlaw=
@@ -418,10 +366,6 @@
 		</dict>
 		<key>id.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			QXNh0HHn0ZLpuc2ZwS74a9TJaWs=
-			</data>
 			<key>hash2</key>
 			<data>
 			rd2TnOKoTfHy4pWwi3pEpElWyzEO4LZqmRYm7MCigxY=
@@ -431,10 +375,6 @@
 		</dict>
 		<key>it.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			JnSKYPi1IxGpC40ORAcMVqAmvdQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			PAhcZMLCZP71zSEbdibhG6rh/aRxugScqs6Ytogidw4=
@@ -444,10 +384,6 @@
 		</dict>
 		<key>ja.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			GVwkAh3iYPU/R0xPL4setsXolFM=
-			</data>
 			<key>hash2</key>
 			<data>
 			iM6uO59Xb3h2IFaxlbcyorXFr0DNdKeuL1ijtNnh/8g=
@@ -457,10 +393,6 @@
 		</dict>
 		<key>ko.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			1Qw8yTthSEuAB72VB2+tBLOcnq0=
-			</data>
 			<key>hash2</key>
 			<data>
 			JN6YTKXR9QlH0P6KVNVIddm39wJ+gQGuEtZH4RUWKcQ=
@@ -470,10 +402,6 @@
 		</dict>
 		<key>nl.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			yqdpwi/DA3IerNKxapqoqZ6HExs=
-			</data>
 			<key>hash2</key>
 			<data>
 			3Kg0DZt30sMFLjbrFAZLhXqDUeM2azArzyyOgG3gh7A=
@@ -483,10 +411,6 @@
 		</dict>
 		<key>pl.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			5wBKgAGJ5QJbW6ePiq332ZHyQvQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			ugdvPnZ5NpDXdNp6FUl+MfLZxb2xxLfE4ii8w11WVOE=
@@ -496,10 +420,6 @@
 		</dict>
 		<key>pt-BR.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			qUSei1TP5ThGaBZT3T0fwMRRnXs=
-			</data>
 			<key>hash2</key>
 			<data>
 			qWNCdKqG6SPqPbb0ApfQ8Zgj04QOKFS06Ix2ZmvoFqQ=
@@ -509,10 +429,6 @@
 		</dict>
 		<key>pt.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			s6xj8SEFeIb6YO+0Yh7WFPMMzJg=
-			</data>
 			<key>hash2</key>
 			<data>
 			hGRAFOYf5m6O8wLCM6dp3F07KJxcHSi5OcubjeH1dXE=
@@ -522,10 +438,6 @@
 		</dict>
 		<key>ru.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			hhfQRQP9cWrjFylZAiwjIUZ8Ues=
-			</data>
 			<key>hash2</key>
 			<data>
 			GvglHnKQTGaykAtegh6jMISwftRY9OhFSg+ZzLCXaNk=
@@ -535,10 +447,6 @@
 		</dict>
 		<key>sdkProp_info.plist</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			IfFZA9/xdAxOBeLZDG4GI439994=
-			</data>
 			<key>hash2</key>
 			<data>
 			a74Ah1PabsWQ+TcOplGfuCLX1BLDq6shiAX09L/BbLA=
@@ -546,10 +454,6 @@
 		</dict>
 		<key>sv.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			tGq+OKSiFZJyOvbcVcPtp0J1Fso=
-			</data>
 			<key>hash2</key>
 			<data>
 			7OK2QpVN6XMfJQCUMMlA5CeB24rbIOfLkvm49I0SjgU=
@@ -559,10 +463,6 @@
 		</dict>
 		<key>tr.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			mOeFtvWM0r+LTpsRLW9CuPPNA2s=
-			</data>
 			<key>hash2</key>
 			<data>
 			Ic0ewnqNfPlva8g1o6+Codt9k5Cz668AkThmPwf66Xo=
@@ -572,10 +472,6 @@
 		</dict>
 		<key>vi.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			+JowHivFt66XtivqV/gyt3cNUqM=
-			</data>
 			<key>hash2</key>
 			<data>
 			wDXK/LOm6uRneaUZV0YrsDMYCdg7HPTXy3o/71aDFOM=
@@ -585,10 +481,6 @@
 		</dict>
 		<key>zh-Hans.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			kwdIs+Ghwbe35dbqQJCtQvnaVh0=
-			</data>
 			<key>hash2</key>
 			<data>
 			ir2537fWXBsZkqukZDcn2mHMFmTeGEZx0+ZLPcleYic=
@@ -598,10 +490,6 @@
 		</dict>
 		<key>zh-Hant.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			RqxarrQs0lKY48jemf62RGZiRxo=
-			</data>
 			<key>hash2</key>
 			<data>
 			IhwFb8whvhGcuIgaLjeNeRoC4xpA/WB0b/UHSJxw1HY=

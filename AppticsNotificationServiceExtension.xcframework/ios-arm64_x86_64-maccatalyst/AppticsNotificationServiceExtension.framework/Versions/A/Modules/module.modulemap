@@ -1,6 +1,0 @@
-framework module AppticsNotificationServiceExtension {
-  umbrella header "AppticsNotificationServiceExtension.h"
-  export *
-
-  module * { export * }
-}

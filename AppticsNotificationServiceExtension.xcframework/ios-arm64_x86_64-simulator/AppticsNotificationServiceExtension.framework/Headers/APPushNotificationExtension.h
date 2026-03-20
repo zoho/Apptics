@@ -25,11 +25,14 @@ static NSString *const kImagePathPrefix = @"image/";
 static NSString *const kPayloadPndetails = @"pndetails";
 static NSString *const kPayloadTitle = @"title";
 static NSString *const kPayloadMessage = @"body";
+static NSString *const kPayloadHTMLMessage = @"htmlSupportedMessage";
 static NSString *const kPayloadSound = @"sound";
 static NSString *const kPayloadBadge = @"badge";
 static NSString *const kPayloadAppticsPnID = @"appticsPnID";
 static NSString *const kAPTAppticsBadgeCount = @"appticsBadgeCount";
 static NSString *const kPayloadAppticsAdditional = @"additional";
+static NSString *const kPayloadCarousel = @"carousel";
+static NSString *const kPayloadCarouselImages = @"imgs";
 
 @interface APPushNotificationExtension : NSObject
 

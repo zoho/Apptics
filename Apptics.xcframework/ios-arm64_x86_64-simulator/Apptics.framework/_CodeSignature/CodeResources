@@ -6,7 +6,7 @@
 	<dict>
 		<key>AppticsResources.bundle/APReviewViewController.nib</key>
 		<data>
-		ybDYmySKJ62XraY2X4egToFXeRw=
+		/oKlujY13Klnkk70Q5S0nFmD4t0=
 		</data>
 		<key>AppticsResources.bundle/Base.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
@@ -23,11 +23,11 @@
 		</data>
 		<key>AppticsResources.bundle/Info.plist</key>
 		<data>
-		nPt5rv5Ee3Dp4YY7P2CfSYgC9aI=
+		P4YhdfL4L2kybV9orSDGPR5GNpk=
 		</data>
 		<key>AppticsResources.bundle/ZAAppUpdateAlert.nib</key>
 		<data>
-		VKy5AiUMPOEeLvFn4wFbeIZkYbA=
+		DMK9uzF6VqcZrw/Zk8unTf0+7Rw=
 		</data>
 		<key>AppticsResources.bundle/ZACustomAlertController.nib</key>
 		<data>
@@ -35,15 +35,15 @@
 		</data>
 		<key>AppticsResources.bundle/ZAPIIMTableViewCell.nib</key>
 		<data>
-		jn+i7Y3gYR2c7OmZPqtcIzKFjNU=
+		nKhMtwrYY+6wn/RcBljbUAT6iK0=
 		</data>
 		<key>AppticsResources.bundle/ZAStoryboard.storyboardc/8oG-LS-Vhe-view-2Jk-9I-SIC.nib/objects-11.0+.nib</key>
 		<data>
-		6Z1iAxm52NaY38zVpQ3uHtG24VQ=
+		rM0gzqrJNKByUpF4HmGJuZo9OMY=
 		</data>
 		<key>AppticsResources.bundle/ZAStoryboard.storyboardc/8oG-LS-Vhe-view-2Jk-9I-SIC.nib/runtime.nib</key>
 		<data>
-		DOBv8RpJM6gn/i5zog1JtELy+tw=
+		MKtbkRM8+1jUOCRFX41xcWOApJI=
 		</data>
 		<key>AppticsResources.bundle/ZAStoryboard.storyboardc/Info.plist</key>
 		<data>
@@ -59,7 +59,7 @@
 		</data>
 		<key>AppticsResources.bundle/ZAUserConsentAlert.nib</key>
 		<data>
-		Sc86AazmUPxHQ4PPWFtZZV1X1U0=
+		qBIjBkl83mT6BP0t903Wg66kKC0=
 		</data>
 		<key>AppticsResources.bundle/ZAUserConsentAlertV2.nib</key>
 		<data>
@@ -67,19 +67,15 @@
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		mTbuhIxuAolwN5zY+8dcT9KtTuk=
+		tweIZPCwqUPJPSmK7S6w/Jlp0yg=
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
 		OnX22wWFKRSOFN1+obRynMCeyXM=
 		</data>
-		<key>AppticsResources.bundle/_CodeSignature/CodeRequirements-1</key>
-		<data>
-		c9yHReQVXVYpkcDdTtm94o1nLXI=
-		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeResources</key>
 		<data>
-		WwfDAL9MR69hEOUr47JY+zkCoE4=
+		Iq0Fc+Xi6ub1ODXriKt64zZekjo=
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeSignature</key>
 		<data>
@@ -884,7 +880,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		11xHBLVvy2YxmsVFMISeFyiLxsY=
+		SJenQb/w4dEQZLJS4j4mAYyiH4Y=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -901,7 +897,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			f+dCYkvCadFMAm5qKmNRww5sx+MfnSKLguJSIm8KGn4=
+			aDw0MkVJevXInzd4nQ9bM76vSvOCeI0U9RJyGsj7GBs=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/Base.lproj/ZAnalyticsLocalizable.strings</key>
@@ -924,14 +920,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			erRQrhvzOXiYiv5QioiOwx5VEieI8Qv/1wFET90J8uc=
+			niTH6dnv+oLxssjE+qqZmKl+gTLVsoTqrfA5wcqA2hk=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/ZAAppUpdateAlert.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ugWj+DAHgQrryGyvjatcphGH0JTeEXLzJ0GWtuQ/sVU=
+			IqYvTliF0iXBMXxfU724Yi5AqiTEUXFtJUnq9g7wP2Q=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/ZACustomAlertController.nib</key>
@@ -945,21 +941,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gK/bYdcYXldYSxK4RW6DTxL8FZrs/t7eyN0v0JVghek=
+			sRDP1syF9xFJX0r+DBz+Gk5Yxwi0Tehh0vGIpe1jOLE=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/ZAStoryboard.storyboardc/8oG-LS-Vhe-view-2Jk-9I-SIC.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tiSs1Hc7MXHMo0DwE3UW8W2IlT6KCO8o/rFzjr96yVo=
+			p3fqFK2QQPGUCqI1wvtXBTEClaYE+a17FyN+c1VWadc=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/ZAStoryboard.storyboardc/8oG-LS-Vhe-view-2Jk-9I-SIC.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iy5Yu1iSg3dKlPgE3tw3B/SPmpOsaDtJvvV45BQPcD4=
+			MB8LDw57xJSIodpcm/PRwx4/gLAyc23paXmUWig0RWI=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/ZAStoryboard.storyboardc/Info.plist</key>
@@ -987,7 +983,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rGg1+BhvZNNWGQmX0qlWUnDmC0xlTdSY8IBgSMJyWTw=
+			4ObcRuPvseHoBPDdUCkT/SLytElHXcMQoJTJ28C3mb0=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/ZAUserConsentAlertV2.nib</key>
@@ -1001,7 +997,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lkpeyk0H+U6hxHMAj6UygVDvolHpKp0gfGBKxmBr32M=
+			9u7GxEj0Vm6hFyZhO2f87cvOe5rQDK7h+SgdoHosG5Y=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/_CodeSignature/CodeRequirements</key>
@@ -1011,18 +1007,11 @@
 			mHkgkE6rZQ51eIwFSqCwUk5qgL/HGqMt+NI3phdD+YY=
 			</data>
 		</dict>
-		<key>AppticsResources.bundle/_CodeSignature/CodeRequirements-1</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			pUcS57DvcQmRgz3u/PWm/OM4Mup9brAB4791RJEqHm4=
-			</data>
-		</dict>
 		<key>AppticsResources.bundle/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			05oI6p3cYSiwlhRrX3K7VP1452KaaPLarpN73gjGgjk=
+			0KVhD6ZMMfymcx8IDrX5fHjdn+q5/i7dsJWdCnC0Tc0=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/_CodeSignature/CodeSignature</key>
