@@ -19,4 +19,5 @@ FOUNDATION_EXPORT const unsigned char AppticsMessagingVersionString[];
 #import <AppticsMessaging/APAppDelegateSwizzler.h>
 #import <AppticsMessaging/APMessaging.h>
 #import <AppticsMessaging/APTokenManager.h>
+#import <AppticsMessaging/APNotificationHandler.h>
 //#import <AppticsMessaging/APPushNotificationExtension.h>
