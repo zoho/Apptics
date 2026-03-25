@@ -23,7 +23,7 @@
 		</data>
 		<key>AppticsResources.bundle/Info.plist</key>
 		<data>
-		P4YhdfL4L2kybV9orSDGPR5GNpk=
+		JvUTGYs9p0dgiK9JDPZ9OfzxWLk=
 		</data>
 		<key>AppticsResources.bundle/ZAAppUpdateAlert.nib</key>
 		<data>
@@ -67,7 +67,7 @@
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		tweIZPCwqUPJPSmK7S6w/Jlp0yg=
+		x1n9dXB8HJ78gLtrhrZ74lD6HJM=
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -75,7 +75,7 @@
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeResources</key>
 		<data>
-		Iq0Fc+Xi6ub1ODXriKt64zZekjo=
+		oFFKewaoP5DsHwU0+vADkgf2rP4=
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeSignature</key>
 		<data>
@@ -512,7 +512,7 @@
 		</dict>
 		<key>AppticsResources.bundle/sdkProp_info.plist</key>
 		<data>
-		IfFZA9/xdAxOBeLZDG4GI439994=
+		hxcOe9rGssOdcbY3l0pSNrj0afQ=
 		</data>
 		<key>AppticsResources.bundle/sl.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
@@ -880,7 +880,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		SJenQb/w4dEQZLJS4j4mAYyiH4Y=
+		tpIrvifJ/QO1RdoTcY1Y0zo4tFk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -920,7 +920,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			niTH6dnv+oLxssjE+qqZmKl+gTLVsoTqrfA5wcqA2hk=
+			5cmjVuvO8mAVzephQ8qWACKmDr3fyL7UJcceNlKAoDA=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/ZAAppUpdateAlert.nib</key>
@@ -997,7 +997,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9u7GxEj0Vm6hFyZhO2f87cvOe5rQDK7h+SgdoHosG5Y=
+			gwB1aPzSmzN1W8suxcY4bBJJ0zUZM49gyMKWVSDFIcQ=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/_CodeSignature/CodeRequirements</key>
@@ -1011,7 +1011,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0KVhD6ZMMfymcx8IDrX5fHjdn+q5/i7dsJWdCnC0Tc0=
+			N+Zm6d8oN9StMUc33ZS/mzBpOHjo0udIfLI1mj723K8=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/_CodeSignature/CodeSignature</key>
@@ -1472,7 +1472,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			a74Ah1PabsWQ+TcOplGfuCLX1BLDq6shiAX09L/BbLA=
+			o4z/XVgbxTdg2bbgQ/2RYaby8vyxdzKQDNKMFkzQyTg=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/sl.lproj/ZAnalyticsLocalizable.strings</key>

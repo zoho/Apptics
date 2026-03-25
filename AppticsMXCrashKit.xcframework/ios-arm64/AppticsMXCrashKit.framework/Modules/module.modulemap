@@ -1,6 +1,0 @@
-framework module AppticsMXCrashKit {
-  umbrella header "AppticsMXCrashKit.h"
-  export *
-
-  module * { export * }
-}

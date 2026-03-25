@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/APAPIManager.h</key>
 		<data>
-		nKEJ3pUM+25e6bgLhpIO/0Firzs=
+		K63JrU5L/8lAlaMCjf5Tjo+X34A=
 		</data>
 		<key>Headers/AppticsApiTracker.h</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		9z0w7TS7rhWZgIAlZyvgrN+4kJg=
+		I3d+oDKRjDrhVQZTY8k0zUNLY5Y=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Version.release.xcconfig</key>
 		<data>
-		v2UPiJ6rNeqR/n0bLFgt3i2wqRQ=
+		l0KU7mbY2Aw5dPmbZp2MtWCsL00=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -35,7 +35,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			P2cqVwDquhhTScZlYaiSEFtcwhvKVWIAWTQPvAtAolI=
+			fjApFD4krbTP/ZmkHarWPtc2A56x8bx0lofZj23Rfsg=
 			</data>
 		</dict>
 		<key>Headers/AppticsApiTracker.h</key>
@@ -63,7 +63,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			C+cMCC2q7YRnjtIchPQGkaPigKz8s+8Wo88ckcO9o1s=
+			gKqib8w9cBDN9k5fLDukQ9bdqQt6cxMaRfU09OXY5Aw=
 			</data>
 		</dict>
 	</dict>
