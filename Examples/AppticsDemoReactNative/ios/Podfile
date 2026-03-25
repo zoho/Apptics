@@ -1,0 +1,132 @@
+# Resolve react_native_pods.rb with node to allow for hoisting
+require Pod::Executable.execute_command('node', ['-p',
+  'require.resolve(
+    "react-native/scripts/react_native_pods.rb",
+    {paths: [process.argv[1]]},
+  )', __dir__]).strip
+
+platform :ios, min_ios_version_supported
+prepare_react_native_project!
+
+linkage = ENV['USE_FRAMEWORKS']
+if linkage != nil
+  Pod::UI.puts "Configuring Pod with #{linkage}ally linked Frameworks".green
+  use_frameworks! :linkage => linkage.to_sym
+end
+
+target 'AppticsDemoReactNative' do
+  config = use_native_modules!
+
+  # Required: Apptics-SDK does not define modules, so modular headers must be
+  # enabled for it to be importable from Swift when built as a static library.
+  pod 'Apptics-SDK', :modular_headers => true
+
+  use_react_native!(
+    :path => config[:reactNativePath],
+    # An absolute path to your application root.
+    :app_path => "#{Pod::Config.instance.installation_root}/.."
+  )
+
+  post_install do |installer|
+    react_native_post_install(
+      installer,
+      config[:reactNativePath],
+      :mac_catalyst_enabled => false,
+      # :ccache_enabled => true
+    )
+
+    # ---------------------------------------------------------------------------
+    # Automatically embed Apptics notification xcframeworks into their extension
+    # targets with "Embed & Sign" — exactly what must be done manually in Xcode's
+    # Frameworks and Libraries panel after every pod install.
+    #
+    # Without this, dyld cannot find the framework at runtime because app
+    # extensions run in a separate process and need the xcframework embedded
+    # inside their own .appex bundle.
+    # ---------------------------------------------------------------------------
+    user_project = installer.aggregate_targets
+      .map(&:user_project)
+      .compact
+      .uniq
+      .first
+
+    if user_project
+      pods_root = installer.sandbox.root.to_s
+
+      # Map: Xcode target name => xcframework bundle name
+      embed_targets = {
+        'NotificationServiceExtension' => 'AppticsNotificationServiceExtension',
+        'NotificationContentExtension' => 'AppticsNotificationContentExtension',
+      }
+
+      embed_targets.each do |target_name, framework_name|
+        ext_target = user_project.targets.find { |t| t.name == target_name }
+        next unless ext_target
+
+        # Locate the xcframework CocoaPods downloaded into the Pods directory
+        xcfw_candidates = Dir.glob("#{pods_root}/**/#{framework_name}.xcframework")
+        next if xcfw_candidates.empty?
+        xcfw_abs_path = xcfw_candidates.first
+
+        # Reuse an existing Frameworks group or create one
+        fw_group = user_project.groups.find { |g| g.display_name == 'Frameworks' } ||
+                   user_project.main_group.new_group('Frameworks')
+
+        # Reuse an existing file reference or create a new one
+        ref = fw_group.files.find { |f|
+          f.path.to_s.end_with?("#{framework_name}.xcframework")
+        }
+        unless ref
+          ref = fw_group.new_file(xcfw_abs_path)
+          ref.last_known_file_type = 'wrapper.xcframework'
+        end
+
+        # ── Link Binary With Libraries ────────────────────────────────────────
+        link_phase = ext_target.frameworks_build_phase
+        already_linked = link_phase.files.any? { |f|
+          f.file_ref&.path.to_s.include?(framework_name)
+        }
+        link_phase.add_file_reference(ref) unless already_linked
+
+        # ── Embed Frameworks (Embed & Sign) ───────────────────────────────────
+        embed_phase = ext_target.build_phases.find { |p|
+          p.is_a?(Xcodeproj::Project::Object::PBXCopyFilesBuildPhase) &&
+          p.name == 'Embed Frameworks'
+        }
+        unless embed_phase
+          embed_phase = ext_target.new_copy_files_build_phase('Embed Frameworks')
+          embed_phase.symbol_dst_subfolder_spec = :frameworks
+        end
+
+        already_embedded = embed_phase.files.any? { |f|
+          f.file_ref&.path.to_s.include?(framework_name)
+        }
+        unless already_embedded
+          build_file = embed_phase.add_file_reference(ref)
+          # CodeSignOnCopy + RemoveHeadersOnCopy = "Embed & Sign" in Xcode UI
+          build_file.settings = { 'ATTRIBUTES' => ['CodeSignOnCopy', 'RemoveHeadersOnCopy'] }
+        end
+      end
+
+      user_project.save
+      Pod::UI.puts "✅ Apptics notification xcframeworks embedded & signed in extension targets."
+    end
+  end
+
+  # Apptics pre-build script for dSYM upload and app registration
+  script_phase :name => 'Apptics pre build',
+    :script => 'sh "./Pods/Apptics-SDK/scripts/run" --upload-symbols-for-configurations="Release, Appstore"',
+    :execution_position => :before_compile
+end
+
+target 'NotificationServiceExtension' do
+#  use_frameworks!
+  pod 'AppticsNotificationServiceExtension', '3.3.12'
+  # Pods for testing
+end
+
+target 'NotificationContentExtension' do
+#  use_frameworks!
+  pod 'AppticsNotificationContentExtension', '3.3.12'
+  # Pods for testing
+end
