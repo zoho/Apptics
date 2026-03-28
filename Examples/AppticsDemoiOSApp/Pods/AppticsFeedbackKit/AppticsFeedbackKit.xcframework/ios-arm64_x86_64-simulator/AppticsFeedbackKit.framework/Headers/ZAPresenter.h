@@ -7,9 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#if !TARGET_OS_OSX
+
 #import <UIKit/UIKit.h>
+#endif
+
 #import <Apptics/ZAEnums.h>
 NS_ASSUME_NONNULL_BEGIN
+#if !TARGET_OS_OSX
+
 @interface ZAPresenter : NSObject
 
 
@@ -20,7 +26,9 @@ NS_ASSUME_NONNULL_BEGIN
 - (void) showViewController:(UIViewController*) viewController;
 
 - (void) dismissWindow;
-
-
 @end
+#endif
+
 NS_ASSUME_NONNULL_END
+
+

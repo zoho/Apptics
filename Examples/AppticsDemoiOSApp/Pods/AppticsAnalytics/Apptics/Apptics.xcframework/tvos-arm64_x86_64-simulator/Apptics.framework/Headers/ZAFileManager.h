@@ -44,6 +44,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSString *) dirPathForEngagements;
 + (NSString *) dirPathForNonFatals;
 + (NSString *) dirPathForConsoleLogs;
++(NSString *)rootDir;
 
 + (void) archiveFeedback: (NSDictionary*) feedbackInfo;
 + (id) unarchiveFeedback : (NSString*) feedbackId;
@@ -77,13 +78,13 @@ NS_ASSUME_NONNULL_BEGIN
 + (void) archiveConsoleLogs:(id)queue sessionId : (NSNumber*) sessionId mamId:(NSString * _Nullable)mam anonId : (NSString*) anonid;
 + (void) rotateConsoleLogsData;
     
-+(NSMutableArray* _Nullable)   getListOfHistoricEngagementDataToPurge;
-+(NSMutableArray* _Nullable) getListOfHistoricEngagementDataToBeSynced;
-+(NSMutableArray* _Nullable) getListOfHistoricEngagementData;
+//+(NSMutableArray* _Nullable) getListOfHistoricEngagementDataToPurge;
+//+(NSMutableArray* _Nullable) getListOfHistoricEngagementDataToBeSynced;
+//+(NSMutableArray* _Nullable) getListOfHistoricEngagementData;
 
-+(NSMutableArray* _Nullable) getListOfNonFatalsDataToPurge;
-+(NSMutableArray* _Nullable) getListOfNonFatalsDataToBeSynced;
-+(NSMutableArray* _Nullable) getListOfNonFatalsData;
+//+(NSMutableArray* _Nullable) getListOfNonFatalsDataToPurge;
+//+(NSMutableArray* _Nullable) getListOfNonFatalsDataToBeSynced;
+//+(NSMutableArray* _Nullable) getListOfNonFatalsData;
 
 +(NSMutableArray* _Nullable) getListOfConsoleLogsDataToPurge;
 +(NSMutableArray* _Nullable) getListOfConsoleLogsDataToBeSynced;

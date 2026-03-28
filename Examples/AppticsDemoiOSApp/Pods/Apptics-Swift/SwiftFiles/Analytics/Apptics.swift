@@ -6,7 +6,9 @@
 //
 
 import Foundation
+import SwiftUI
 import Apptics
+import AppticsScreenTracker
 
 extension APLog {
   
@@ -48,3 +50,31 @@ public func APLogError(_ message: @autoclosure () -> String, file: StaticString 
   APLog.getInstance().zlsExtension(String(describing: file), lineNumber: Int32(line), functionName: String(describing: function), symbol: "🔴", type: "error", format: message())
 }
 
+
+#if TARGET_OS_IOS
+@available(iOS 13.0, macOS 10.15, tvOS 13.0, visionOS 1.0, watchOS 6.0,*)
+struct ScreenTrackingModifier: ViewModifier {
+    let screenName: String
+
+    func body(content: Content) -> some View {
+        content
+            .onAppear {
+                // Track screen view when the view appears
+                APScreentracker.trackViewEnter(screenName)
+                
+            }
+            .onDisappear {
+                // Track screen disappearance if needed
+                APScreentracker.trackViewExit(screenName)
+                print("\(screenName) disappeared")
+            }
+    }
+}
+
+@available(iOS 13.0, macOS 10.15, tvOS 13.0, visionOS 1.0, watchOS 6.0,*)
+extension View {
+    public func trackScreen(_ screenName: String) -> some View {
+        self.modifier(ScreenTrackingModifier(screenName: screenName))
+    }
+}
+#endif

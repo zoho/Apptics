@@ -19,8 +19,7 @@ public class ScreenShotView: UIView,UICollectionViewDelegate,UICollectionViewDat
     @IBOutlet weak var cardView:CardViews!
     var floatingscrollController: FloatScreenshotEditor?
     @IBOutlet weak var clobttnTopConst:NSLayoutConstraint!
-    @IBOutlet weak var doneBttnTopConst:NSLayoutConstraint!
-    let DEVICE_SIZE = UIApplication.shared.keyWindow?.rootViewController?.view.convert(UIScreen.main.bounds, from: nil).size
+    @IBOutlet weak var doneBttnTopConst:NSLayoutConstraint!    
     @IBOutlet weak var noDataBttn:UIButton!
     var fileArray = [URL]()
     var filesCount = 0
@@ -31,6 +30,7 @@ public class ScreenShotView: UIView,UICollectionViewDelegate,UICollectionViewDat
     let spacing = (1 / 8) * UIScreen.main.bounds.width
     let cellspacing = (1 / 16) * UIScreen.main.bounds.width
     let cellheight =  UIScreen.main.bounds.width * 1.40
+    private var isDeletingItem = false
 
     
     override init(frame: CGRect) {
@@ -55,6 +55,7 @@ public class ScreenShotView: UIView,UICollectionViewDelegate,UICollectionViewDat
         else{
             appFontsize = 40.0
         }
+        cardView.layer.borderColor = UIColor.clear.cgColor
         collectionViewSetup()
         getallImages()
         fileindexpath = [0,0]
@@ -64,10 +65,20 @@ public class ScreenShotView: UIView,UICollectionViewDelegate,UICollectionViewDat
         NotificationCenter.default.addObserver(self, selector: #selector(self.screenshotsLoad), name:Notification.Name(notificationScreenreloadKey) , object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(self.imageReloadreportBug), name:Notification.Name(notificationImageReloadfromReportBug) , object: nil)
         self.pageNumberLabel.text = "\(1)/\(self.fileArray.count)"
-        if DEVICE_SIZE!.height < 670{
-            clobttnTopConst.constant = 20
-            doneBttnTopConst.constant = 20
+        
+        if let windowScene = UIApplication.shared.connectedScenes
+            .first(where: { $0.activationState == .foregroundActive }) as? UIWindowScene,
+           let window = windowScene.windows.first(where: { $0.isKeyWindow }),
+           let rootView = window.rootViewController?.view {
+           let deviceSize = rootView.convert(UIScreen.main.bounds, from: nil).size
+            print("Device size: \(deviceSize)")
+            if deviceSize.height < 670{
+                clobttnTopConst.constant = 20
+                doneBttnTopConst.constant = 20
+            }
         }
+        
+        
                 
     }
     
@@ -110,20 +121,20 @@ public class ScreenShotView: UIView,UICollectionViewDelegate,UICollectionViewDat
             self.setHideandShowBttns(status: true)
             cell.transform = cell.transform.scaledBy(x:1.15, y: 1.15)
             UIView.animate(withDuration: 0.20) {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.010) {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.010) { 
                     UIView.animate(withDuration: 0.8, delay: 0.0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0, options: [.curveEaseInOut],animations: {
                             cell.transform = .identity
                         }, completion: { success in
                         })
                     }
             }
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
-                self.setHideandShowBttns(status: false)
-                self.deleteBttn.layer.add(FadeInAdnimation(), forKey: "fadeIn")
-                self.pageView.layer.add(FadeInAdnimation(), forKey: "fadeIn")
-                self.pageNumberLabel.layer.add(FadeInAdnimation(), forKey: "fadeIn")
-                self.doneBttn.layer.add(FadeInAdnimation(), forKey: "fadeIn")
-                self.hideBttn.layer.add(FadeInAdnimation(), forKey: "fadeIn")
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {  [weak self] in
+                self?.setHideandShowBttns(status: false)
+                self?.deleteBttn.layer.add(FadeInAdnimation(), forKey: "fadeIn")
+                self?.pageView.layer.add(FadeInAdnimation(), forKey: "fadeIn")
+                self?.pageNumberLabel.layer.add(FadeInAdnimation(), forKey: "fadeIn")
+                self?.doneBttn.layer.add(FadeInAdnimation(), forKey: "fadeIn")
+                self?.hideBttn.layer.add(FadeInAdnimation(), forKey: "fadeIn")
             }
         }
     }
@@ -170,50 +181,100 @@ public class ScreenShotView: UIView,UICollectionViewDelegate,UICollectionViewDat
         
     }
     
+    
+   
+    
+    
+    
 //MARK: Delete Button action
     @objc func deletebuttonClicked(_ sender: UIButton) {
-        if fileArray.isEmpty == false{
+            // Prevent rapid repeated taps
+            guard !isDeletingItem else { return }
+            isDeletingItem = true
+            deleteBttn.isEnabled = false
+
+            guard !fileArray.isEmpty else {
+                finishDeleteCleanupIfNeeded()
+                return
+            }
+
             let visibleRect = CGRect(origin: screenshotCollectionView.contentOffset, size: screenshotCollectionView.bounds.size)
             let visiblePoint = CGPoint(x: visibleRect.midX, y: visibleRect.midY)
-            let visibleIndexPath = screenshotCollectionView.indexPathForItem(at: visiblePoint)
-            let filename = fileArray[visibleIndexPath!.row]
-            fileArray.remove(at: visibleIndexPath!.row)
+
+            guard let visibleIndexPath = screenshotCollectionView.indexPathForItem(at: visiblePoint) else {
+                finishDeleteCleanupIfNeeded()
+                return
+            }
+
+            guard visibleIndexPath.row >= 0 && visibleIndexPath.row < fileArray.count else {
+                finishDeleteCleanupIfNeeded()
+                return
+            }
+
+            let fileURL = fileArray[visibleIndexPath.row]
+
+            let cell = screenshotCollectionView.cellForItem(at: visibleIndexPath)
+
+            fileArray.remove(at: visibleIndexPath.row)
             pageView.numberOfPages = fileArray.count
-            if filesIndexvalue == 1{
-                pageView.currentPage = 0
+            let newPageIndex: Int
+            if filesIndexvalue == 1 {
+                newPageIndex = 0
+            } else {
+                newPageIndex = max(0, visibleIndexPath.row - 1)
             }
-            else{
-                pageView.currentPage = visibleIndexPath!.row - 1
+            pageView.currentPage = newPageIndex
+
+            DispatchQueue.global(qos: .utility).async {
+                do { try FileManager.default.removeItem(atPath: fileURL.path) }
+                catch {
+                }
             }
-            do{
-                try FileManager.default.removeItem(atPath: filename.path)
+            if let cell = cell {
+                let animation = CAKeyframeAnimation(keyPath: "transform.scale")
+                animation.values = [0.80, 0.40, 0.15]
+                animation.duration = 0.45
+                animation.repeatCount = 0
+                cell.layer.add(animation, forKey: "shrinkDelete")
             }
-            catch{}
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
-                let indexPath = IndexPath(item: visibleIndexPath!.row, section: 0)
-                guard let cell = self.screenshotCollectionView.cellForItem(at: indexPath) else {
+
+            // Safely update UI on main thread using performBatchUpdates to keep collection view / data source consistent
+            DispatchQueue.main.async { [weak self] in
+                guard let self = self else { return }
+                let indexPathToDelete = IndexPath(item: visibleIndexPath.row, section: 0)
+
+                if self.fileArray.isEmpty {
+                    // perform a full reload or delete the item and show empty state
+                    self.screenshotCollectionView.performBatchUpdates({
+                        self.screenshotCollectionView.deleteItems(at: [indexPathToDelete])
+                    }, completion: { _ in
+                        self.noDataBttn.isHidden = false
+                        self.pageNumberLabel.text = ""
+                        self.deleteBttn.isHidden = true
+                        self.finishDeleteCleanupIfNeeded()
+                    })
                     return
                 }
-                let animation = CAKeyframeAnimation(keyPath: "transform.scale")
-                animation.values = [0.80,0.40,0.15]
-                animation.duration = 0.5
-                animation.repeatCount = 0
-                cell.layer.add(animation, forKey: nil)
-                UIView.animate(withDuration: 0.6, delay: 0.0, usingSpringWithDamping: 1.0, initialSpringVelocity: 1.0, options: [.curveEaseOut,.curveEaseInOut], animations: {
-                    self.screenshotCollectionView.deleteItems(at: [indexPath])
-                }, completion: { success in
+
+                self.screenshotCollectionView.performBatchUpdates({
+                    self.screenshotCollectionView.deleteItems(at: [indexPathToDelete])
+                }, completion: { _ in
+                    self.pageView.currentPage = newPageIndex
+                    self.pageNumberLabel.text = "\(newPageIndex + 1)/\(self.fileArray.count)"
+                    self.deleteBttn.isHidden = self.fileArray.isEmpty
+                    self.noDataBttn.isHidden = !self.fileArray.isEmpty
+                    self.finishDeleteCleanupIfNeeded()
                 })
             }
-            
-            pageView.currentPage = filesIndexvalue
-            self.pageNumberLabel.text = "\(filesIndexvalue + 1)/\(self.fileArray.count)"
         }
-        if fileArray.count == 0{
-            noDataBttn.isHidden = false
-            self.pageNumberLabel.text = ""
-            self.deleteBttn.isHidden = true
+
+        private func finishDeleteCleanupIfNeeded() {
+            DispatchQueue.main.async { [weak self] in
+                guard let self = self else { return }
+                self.isDeletingItem = false
+                self.deleteBttn.isEnabled = true
+            }
         }
-    }
     
     //MARK: get visibile index
     func getpageIndex() ->CGPoint {

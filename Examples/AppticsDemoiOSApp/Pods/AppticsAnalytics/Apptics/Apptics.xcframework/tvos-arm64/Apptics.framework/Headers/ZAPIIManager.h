@@ -48,6 +48,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic,strong) NSMutableDictionary *_Nullable mamInfo;//Encrypted email id (Mail id)
 
+@property (nonatomic,strong) NSMutableDictionary *_Nullable mamProps;//Encrypted email id (Mail id)
+
 @property (nonatomic,strong) NSMutableDictionary *_Nullable userids;//users associated with this device
 
 @property (nonatomic,strong) NSMutableDictionary *_Nullable groupids;//user groups associated with the respective users
@@ -66,7 +68,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) NSMutableArray *regSuccessblocks;
 
+@property (nonatomic, strong) NSMutableArray *regAppVersionSuccessblocks;
+
+
 @property BOOL regDeviceInprogress;
+
+@property BOOL regAppVersionInProgress;
+
 
 @property BOOL shouldSendPersonalizedData;
 
@@ -87,10 +95,13 @@ NS_ASSUME_NONNULL_BEGIN
 - (void) saveData;
 
 - (void) removeAllUsers;
+-(void) removeOnlyUsers;
 
 - (void) updateShouldCollectDataForCurrentUser;
 
-- (void) setCurrentUser:(NSString * _Nullable)email groupId:(NSString * _Nullable)groupID;
+- (void) setUser:(NSDictionary *) userInfo;
+
+- (void) setCurrentUser:(NSString * _Nullable)email groupId:(NSString * _Nullable)groupID userProperities : (NSDictionary * _Nullable) userProps;
 
 - (void) newRegisterDevice:(void (^_Nullable)(NSString* deviceId))success;
 
@@ -134,6 +145,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (BOOL) errortracking;
 
+- (BOOL) customergrouptracking;
+
+- (BOOL) quartzenabled;
+
+
 - (BOOL) isUserLoggedIn;
 
 - (BOOL) isAnonymousUser;
@@ -167,6 +183,8 @@ NS_ASSUME_NONNULL_BEGIN
 -(void) registerIfCurrentUserIsNotRegisteredWithDeviceId : (NSString*) deviceId;
 
 -(void) migrateUserPreferenceToDevice;
+
+
 
 @end
 

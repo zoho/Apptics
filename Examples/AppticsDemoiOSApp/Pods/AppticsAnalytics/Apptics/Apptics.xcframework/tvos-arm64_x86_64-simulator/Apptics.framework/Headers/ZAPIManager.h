@@ -14,6 +14,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) NSMutableArray *regUserSuccessblocks;
 @property BOOL regUserInprogress;
+@property BOOL regappAddVersionInprogress;
+@property BOOL newregisterDeviceInprogress;
+
+@property (nonatomic, strong) NSMutableArray *app_AddVersionSuccessblocks;
+@property (nonatomic,strong) NSMutableArray *newregisterDeviceSuccessblocks;
 
 +(ZAPIManager*)sharedManager;
 
@@ -28,13 +33,23 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void) newRegisterDeviceSuccess : (NSString* _Nullable) deviceid completion:(void (^)(NSDictionary  * _Nullable deviceInfo))success;
 
+
+- (void)addAppVersionWithSuccess:(void (^)(NSDictionary *responseObject))success
+                              failure:(void (^)(NSError *error))failure;
+
+
+
+
+
+
+
 - (void) anonymousRegisterDeviceSuccess : (NSString* _Nullable) anonid completion:(void (^)(NSDictionary  * _Nullable deviceInfo))success;
 
 - (void) updateTrackingStatus;
     
-- (void) registerUserWithDeviceId : (NSString*) deviceId andOrgID : (NSString* _Nullable) groupID success:(void (^)(NSDictionary * _Nullable deviceInfo))success;
+- (void) registerUserWithDeviceId : (NSString*) deviceId andOrgID : (NSString* _Nullable) groupID userProps : (NSDictionary*) userprops success:(void (^)(NSDictionary * _Nullable deviceInfo))success;
 
-- (void) newRegisterUserWithOrgID : (NSString* _Nullable) groupID success: (void (^)(NSDictionary * _Nullable deviceInfo))success;
+- (void) newRegisterUserWithOrgID : (NSString* _Nullable) groupID userProps : (NSDictionary*) userprops success: (void (^)(NSDictionary * _Nullable deviceInfo))success;
 
 - (void) unregisterUserWithZauid : (NSString* ) zauid userID : (NSString* _Nullable) userID groupID : (NSString* _Nullable) groupID success:(void (^ _Nullable)(bool result))success;
 
@@ -49,6 +64,9 @@ NS_ASSUME_NONNULL_BEGIN
 - (void) getPromotionalAppsList: (void (^)(id info))success;
 
 - (void) promoAppSelectedCallback : (NSString *) crossPromoId;
+
+
+
 
 @end
 NS_ASSUME_NONNULL_END

@@ -14,26 +14,17 @@
 		</dict>
 		<dict>
 			<key>FooterText</key>
-			<string>MIT License
-Copyright (c) 2020 Zoho Corporation
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE
+			<string>Copyright (c) 2025 Zoho Corporation Private Limited
+Zoho grants you a limited, revocable, non-exclusive, non-sublicensable license to copy, install and use the Zoho Apptics SDK solely in connection with your use of Zoho Apptics.
+You will not:
+(i) copy, modify, adapt, translate or otherwise create derivative works of the SDK;
+(ii) reverse engineer, decompile, disassemble or otherwise attempt to discover the source code of the SDK;
+(iii) rent, sell, assign or otherwise transfer rights in the SDK;
+(iv) remove any proprietory notices or licenses from the SDK; or
+(v) use, post, publish, transmit or introduce any device, software or routine that interferes or attempts to interfere with the operations SDK.
 </string>
 			<key>License</key>
-			<string>MIT</string>
+			<string>Proprietary</string>
 			<key>Title</key>
 			<string>Apptics-SDK</string>
 			<key>Type</key>
@@ -41,26 +32,17 @@ SOFTWARE
 		</dict>
 		<dict>
 			<key>FooterText</key>
-			<string>MIT License
-Copyright (c) 2018 Zoho Corporation Pvt. Ltd
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE
+			<string>Copyright (c) 2025 Zoho Corporation Private Limited
+Zoho grants you a limited, revocable, non-exclusive, non-sublicensable license to copy, install and use the Zoho Apptics SDK solely in connection with your use of Zoho Apptics.
+You will not:
+(i) copy, modify, adapt, translate or otherwise create derivative works of the SDK;
+(ii) reverse engineer, decompile, disassemble or otherwise attempt to discover the source code of the SDK;
+(iii) rent, sell, assign or otherwise transfer rights in the SDK;
+(iv) remove any proprietory notices or licenses from the SDK; or
+(v) use, post, publish, transmit or introduce any device, software or routine that interferes or attempts to interfere with the operations SDK.
 </string>
 			<key>License</key>
-			<string>MIT</string>
+			<string>Proprietary</string>
 			<key>Title</key>
 			<string>Apptics-Swift</string>
 			<key>Type</key>
@@ -68,26 +50,17 @@ SOFTWARE
 		</dict>
 		<dict>
 			<key>FooterText</key>
-			<string>MIT License
-Copyright (c) 2020 Zoho Corporation
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE
+			<string>Copyright (c) 2025 Zoho Corporation Private Limited
+Zoho grants you a limited, revocable, non-exclusive, non-sublicensable license to copy, install and use the Zoho Apptics SDK solely in connection with your use of Zoho Apptics.
+You will not:
+(i) copy, modify, adapt, translate or otherwise create derivative works of the SDK;
+(ii) reverse engineer, decompile, disassemble or otherwise attempt to discover the source code of the SDK;
+(iii) rent, sell, assign or otherwise transfer rights in the SDK;
+(iv) remove any proprietory notices or licenses from the SDK; or
+(v) use, post, publish, transmit or introduce any device, software or routine that interferes or attempts to interfere with the operations SDK.
 </string>
 			<key>License</key>
-			<string>MIT</string>
+			<string>Proprietary</string>
 			<key>Title</key>
 			<string>AppticsAnalytics</string>
 			<key>Type</key>
@@ -95,26 +68,17 @@ SOFTWARE
 		</dict>
 		<dict>
 			<key>FooterText</key>
-			<string>MIT License
-Copyright (c) 2020 Zoho Corporation
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE
+			<string>Copyright (c) 2025 Zoho Corporation Private Limited
+Zoho grants you a limited, revocable, non-exclusive, non-sublicensable license to copy, install and use the Zoho Apptics SDK solely in connection with your use of Zoho Apptics.
+You will not:
+(i) copy, modify, adapt, translate or otherwise create derivative works of the SDK;
+(ii) reverse engineer, decompile, disassemble or otherwise attempt to discover the source code of the SDK;
+(iii) rent, sell, assign or otherwise transfer rights in the SDK;
+(iv) remove any proprietory notices or licenses from the SDK; or
+(v) use, post, publish, transmit or introduce any device, software or routine that interferes or attempts to interfere with the operations SDK.
 </string>
 			<key>License</key>
-			<string>MIT</string>
+			<string>Proprietary</string>
 			<key>Title</key>
 			<string>AppticsApiTracker</string>
 			<key>Type</key>
@@ -122,26 +86,17 @@ SOFTWARE
 		</dict>
 		<dict>
 			<key>FooterText</key>
-			<string>MIT License
-Copyright (c) 2020 Zoho Corporation
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE
+			<string>Copyright (c) 2025 Zoho Corporation Private Limited
+Zoho grants you a limited, revocable, non-exclusive, non-sublicensable license to copy, install and use the Zoho Apptics SDK solely in connection with your use of Zoho Apptics.
+You will not:
+(i) copy, modify, adapt, translate or otherwise create derivative works of the SDK;
+(ii) reverse engineer, decompile, disassemble or otherwise attempt to discover the source code of the SDK;
+(iii) rent, sell, assign or otherwise transfer rights in the SDK;
+(iv) remove any proprietory notices or licenses from the SDK; or
+(v) use, post, publish, transmit or introduce any device, software or routine that interferes or attempts to interfere with the operations SDK.
 </string>
 			<key>License</key>
-			<string>MIT</string>
+			<string>Proprietary</string>
 			<key>Title</key>
 			<string>AppticsCrossPromotion</string>
 			<key>Type</key>
@@ -149,26 +104,17 @@ SOFTWARE
 		</dict>
 		<dict>
 			<key>FooterText</key>
-			<string>MIT License
-Copyright (c) 2020 Zoho Corporation
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE
+			<string>Copyright (c) 2025 Zoho Corporation Private Limited
+Zoho grants you a limited, revocable, non-exclusive, non-sublicensable license to copy, install and use the Zoho Apptics SDK solely in connection with your use of Zoho Apptics.
+You will not:
+(i) copy, modify, adapt, translate or otherwise create derivative works of the SDK;
+(ii) reverse engineer, decompile, disassemble or otherwise attempt to discover the source code of the SDK;
+(iii) rent, sell, assign or otherwise transfer rights in the SDK;
+(iv) remove any proprietory notices or licenses from the SDK; or
+(v) use, post, publish, transmit or introduce any device, software or routine that interferes or attempts to interfere with the operations SDK.
 </string>
 			<key>License</key>
-			<string>MIT</string>
+			<string>Proprietary</string>
 			<key>Title</key>
 			<string>AppticsFeedbackKit</string>
 			<key>Type</key>
@@ -176,26 +122,17 @@ SOFTWARE
 		</dict>
 		<dict>
 			<key>FooterText</key>
-			<string>MIT License
-Copyright (c) 2020 Zoho Corporation
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE
+			<string>Copyright (c) 2025 Zoho Corporation Private Limited
+Zoho grants you a limited, revocable, non-exclusive, non-sublicensable license to copy, install and use the Zoho Apptics SDK solely in connection with your use of Zoho Apptics.
+You will not:
+(i) copy, modify, adapt, translate or otherwise create derivative works of the SDK;
+(ii) reverse engineer, decompile, disassemble or otherwise attempt to discover the source code of the SDK;
+(iii) rent, sell, assign or otherwise transfer rights in the SDK;
+(iv) remove any proprietory notices or licenses from the SDK; or
+(v) use, post, publish, transmit or introduce any device, software or routine that interferes or attempts to interfere with the operations SDK.
 </string>
 			<key>License</key>
-			<string>MIT</string>
+			<string>Proprietary</string>
 			<key>Title</key>
 			<string>AppticsFeedbackKitSwift</string>
 			<key>Type</key>
@@ -203,26 +140,17 @@ SOFTWARE
 		</dict>
 		<dict>
 			<key>FooterText</key>
-			<string>MIT License
-Copyright (c) 2020 Zoho Corporation
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE
+			<string>Copyright (c) 2025 Zoho Corporation Private Limited
+Zoho grants you a limited, revocable, non-exclusive, non-sublicensable license to copy, install and use the Zoho Apptics SDK solely in connection with your use of Zoho Apptics.
+You will not:
+(i) copy, modify, adapt, translate or otherwise create derivative works of the SDK;
+(ii) reverse engineer, decompile, disassemble or otherwise attempt to discover the source code of the SDK;
+(iii) rent, sell, assign or otherwise transfer rights in the SDK;
+(iv) remove any proprietory notices or licenses from the SDK; or
+(v) use, post, publish, transmit or introduce any device, software or routine that interferes or attempts to interfere with the operations SDK.
 </string>
 			<key>License</key>
-			<string>MIT</string>
+			<string>Proprietary</string>
 			<key>Title</key>
 			<string>AppticsInAppUpdate</string>
 			<key>Type</key>
@@ -230,26 +158,35 @@ SOFTWARE
 		</dict>
 		<dict>
 			<key>FooterText</key>
-			<string>MIT License
-Copyright (c) 2020 Zoho Corporation
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE
+			<string>Copyright (c) 2025 Zoho Corporation Private Limited
+Zoho grants you a limited, revocable, non-exclusive, non-sublicensable license to copy, install and use the Zoho Apptics SDK solely in connection with your use of Zoho Apptics.
+You will not:
+(i) copy, modify, adapt, translate or otherwise create derivative works of the SDK;
+(ii) reverse engineer, decompile, disassemble or otherwise attempt to discover the source code of the SDK;
+(iii) rent, sell, assign or otherwise transfer rights in the SDK;
+(iv) remove any proprietory notices or licenses from the SDK; or
+(v) use, post, publish, transmit or introduce any device, software or routine that interferes or attempts to interfere with the operations SDK.
 </string>
 			<key>License</key>
-			<string>MIT</string>
+			<string>Proprietary</string>
+			<key>Title</key>
+			<string>AppticsPrivacyShield</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>Copyright (c) 2025 Zoho Corporation Private Limited
+Zoho grants you a limited, revocable, non-exclusive, non-sublicensable license to copy, install and use the Zoho Apptics SDK solely in connection with your use of Zoho Apptics.
+You will not:
+(i) copy, modify, adapt, translate or otherwise create derivative works of the SDK;
+(ii) reverse engineer, decompile, disassemble or otherwise attempt to discover the source code of the SDK;
+(iii) rent, sell, assign or otherwise transfer rights in the SDK;
+(iv) remove any proprietory notices or licenses from the SDK; or
+(v) use, post, publish, transmit or introduce any device, software or routine that interferes or attempts to interfere with the operations SDK.
+</string>
+			<key>License</key>
+			<string>Proprietary</string>
 			<key>Title</key>
 			<string>AppticsRateUs</string>
 			<key>Type</key>
@@ -257,26 +194,17 @@ SOFTWARE
 		</dict>
 		<dict>
 			<key>FooterText</key>
-			<string>MIT License
-Copyright (c) 2020 Zoho Corporation
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE
+			<string>Copyright (c) 2025 Zoho Corporation Private Limited
+Zoho grants you a limited, revocable, non-exclusive, non-sublicensable license to copy, install and use the Zoho Apptics SDK solely in connection with your use of Zoho Apptics.
+You will not:
+(i) copy, modify, adapt, translate or otherwise create derivative works of the SDK;
+(ii) reverse engineer, decompile, disassemble or otherwise attempt to discover the source code of the SDK;
+(iii) rent, sell, assign or otherwise transfer rights in the SDK;
+(iv) remove any proprietory notices or licenses from the SDK; or
+(v) use, post, publish, transmit or introduce any device, software or routine that interferes or attempts to interfere with the operations SDK.
 </string>
 			<key>License</key>
-			<string>MIT</string>
+			<string>Proprietary</string>
 			<key>Title</key>
 			<string>AppticsRemoteConfig</string>
 			<key>Type</key>

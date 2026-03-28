@@ -13,6 +13,13 @@ NS_ASSUME_NONNULL_BEGIN
 +(void) trackViewEnter:(NSString*) screenName;
 +(void) trackViewExit:(NSString*) screenName;
 
++(NSNumber *)trackViewEnterWithScreenName:(NSString *)screenName;
+
++(void)trackViewExitWithTimestamp:(NSNumber *)timestamp;
+
+
 @end
 
 NS_ASSUME_NONNULL_END
+
+

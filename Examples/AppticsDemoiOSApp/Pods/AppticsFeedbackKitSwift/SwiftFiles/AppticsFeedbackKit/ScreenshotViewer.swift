@@ -116,9 +116,27 @@ public class FloatScrollview:UIViewController{
     func setTitleTextAttributesInButtons(textAttributes:NSDictionary){
         ScreenshotsView.hideBttn.setAttributedText(attributes: textAttributes as! [NSAttributedString.Key : Any])
         ScreenshotsView.doneBttn.setAttributedText(attributes: textAttributes as! [NSAttributedString.Key : Any])
-        ScreenshotsView.deleteBttn.setAttributedText(attributes: textAttributes as! [NSAttributedString.Key : Any])
         ScreenshotsView.noDataBttn.setAttributedText(attributes: textAttributes as! [NSAttributedString.Key : Any])
+        ScreenshotsView.deleteBttn.setTitle(FontIconText.deleteIcon, for: .normal)
+        let attributes = textAttributes as? [NSAttributedString.Key: Any]
+        if let attributess = attributes,
+           let textColor = attributess[.foregroundColor] as? UIColor {
+            ScreenshotsView.deleteBttn.setTitleColor(textColor, for: .normal)
+
+        } else {
+            ScreenshotsView.deleteBttn.setTitleColor(UIColor.systemBlue, for: .normal)
+        }
+        
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
 //MARK: strings for localization
     func setLocalizableString(){
         ScreenshotsView.doneBttn.setTitle(FeedbackKit.getLocalizableString(forKey: "zanalytics.feedback.navbar.title.compose"), for: .normal)
@@ -170,18 +188,24 @@ public class FloatScrollview:UIViewController{
 //MARK: Compose Button Click Action
     @objc func donebuttonClicked() {
         FeedbackKit.listener().arrayOfimages.removeAllObjects()
-        for imgpath in ScreenshotsView.fileArray{
-            let image = UIImage(contentsOfFile: imgpath.path) //get image from path
-            arrayofGalleryImages.add(image!)
+        arrayofGalleryImages.removeAllObjects()
+        for imgpath in ScreenshotsView.fileArray {
+            if let image = UIImage(contentsOfFile: imgpath.path) {
+                arrayofGalleryImages.add(image)
+            }
         }
+//        guard arrayofGalleryImages.count > 0 else {
+//            print("⚠️ No images found. Feedback UI not shown.")
+//            return
+//        }
         FeedbackKit.listener().arrayOfimages = arrayofGalleryImages
         FeedbackKit.listener().feedback_KitType = "ZAScreenShot"
         FeedbackKit.listener().feedback_KitScreenCancel = "ZAScreenShotTriggered"
         DispatchQueue.main.async {
-//            FeedbackKit.setMessageBody("")
             FeedbackKit.showFeedback()
         }
     }
+
 //MARK: Hide Button Click Action
     @objc func cancellbuttonClicked() {
         UIView.animate(withDuration: 0.3, delay: 0.0, usingSpringWithDamping: 1.0, initialSpringVelocity: 1.0, options: [.curveEaseInOut],animations: {

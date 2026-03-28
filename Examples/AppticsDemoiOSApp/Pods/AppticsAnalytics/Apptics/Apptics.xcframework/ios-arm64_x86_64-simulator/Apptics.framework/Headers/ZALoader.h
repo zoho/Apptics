@@ -16,11 +16,13 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) CALayer *tintLayer;
 
 @property (nonatomic, strong) UIActivityIndicatorView *indicator;
+@property (nonatomic, strong) UILabel *progressLabel;
 
 - (void)renderLayerWithView:(UIView*)superview;
 
 -(void)displayLoadingView;
 -(void)hideLoadingView;
+-(void)updateProgressText:(nullable NSString *)text;
 + (ZALoader*) sharedInstance;
 
 @end

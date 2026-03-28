@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/APScreentracker.h</key>
 		<data>
-		HvvkdR7Hz6GwO16RRZT2U7RjGSw=
+		RujZbct1zqSKw4pIFwlzf7zqrDY=
 		</data>
 		<key>Headers/AppticsScreenTracker.h</key>
 		<data>
@@ -18,15 +18,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		izAIKjaKSBcB5P/LM/GGZqlGKK4=
+		7pXN4z0ijbA0bswDyqt9aWNzr5E=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		h+1bvHg1Sb+f2+FfHIaDiicy26c=
+		/5uUrWbNvbfMq+xhuNUFeObOqp8=
 		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
-		6ZEHH/M3TH/BVbFgsoBAJnPGMcs=
+		cl5C9XI0dGK5oiqjbyJFIC3sCV4=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -35,11 +35,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HvvkdR7Hz6GwO16RRZT2U7RjGSw=
+			RujZbct1zqSKw4pIFwlzf7zqrDY=
 			</data>
 			<key>hash2</key>
 			<data>
-			8LMXsgynZwlNpXjW3A413xMPXo78aZLaddtx0l9z/SY=
+			Wcyyt6O42RucT5vZarWlnAXg0hwmeM3e8PiSRdOag68=
 			</data>
 		</dict>
 		<key>Headers/AppticsScreenTracker.h</key>
@@ -68,22 +68,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			h+1bvHg1Sb+f2+FfHIaDiicy26c=
+			/5uUrWbNvbfMq+xhuNUFeObOqp8=
 			</data>
 			<key>hash2</key>
 			<data>
-			fJry7tcuSwrVNg8mrucvatyhWLFJNfiYlFRbQiw/xzc=
+			fYkbvsWyKDhXUFkRRVXwVuOHAQsSJSRoSgHDM2Fg4Hs=
 			</data>
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6ZEHH/M3TH/BVbFgsoBAJnPGMcs=
+			cl5C9XI0dGK5oiqjbyJFIC3sCV4=
 			</data>
 			<key>hash2</key>
 			<data>
-			+G48963faLi39i0jVmq3BY8y/g0Xtvg+t0Jpe029MBM=
+			7Abj29BKhiz8bFZbe/Iw3CNg7SORJLWdcXrFRbYKRZw=
 			</data>
 		</dict>
 	</dict>

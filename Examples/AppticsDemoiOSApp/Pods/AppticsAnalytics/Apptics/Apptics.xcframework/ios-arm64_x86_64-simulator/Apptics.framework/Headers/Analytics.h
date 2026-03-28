@@ -10,6 +10,7 @@
 #import <Apptics/APLog.h>
 #import <Apptics/ZAEnums.h>
 #import <Apptics/APEventsEnum.h>
+#import <Apptics/APUser.h>
 
 #if !TARGET_OS_OSX
 #import <UIKit/UIKit.h>
@@ -50,7 +51,9 @@ NS_ASSUME_NONNULL_BEGIN
  *  Time to push all collected data to the servers
  */
 @property (nonatomic) NSInteger flushInterval;
-@property (nonatomic, retain) APTimerManager *timerManager;
+@property (nonatomic, retain) APTimerManager *manageFlushInterval;
+@property (nonatomic, retain) APTimerManager *manageMaxSessionTimeout;
+@property (nonatomic, strong) NSNumber *lastActivityTime;
 
 @property long zuid;//Zoho User Id
 @property (strong,nonatomic) NSString *apiToken;
@@ -59,10 +62,16 @@ NS_ASSUME_NONNULL_BEGIN
 @property BOOL enableAutomaticScreenTracking;
 @property BOOL enableAutomaticCrashTracking;
 
+@property (nonatomic, assign) BOOL isaddVersionInitialized;
+
+
 //@property BOOL enableAutoCheckForAppUpdate;
 @property (nonatomic, strong) dispatch_block_t scheduledBlock;
 
 @property BOOL enableAnonymousTracking;
+
+@property BOOL resetOnDCSwitch;
+
 
 @property (nonatomic) APAnonymousType anonymousType;
 
@@ -79,6 +88,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property BOOL enableBackgroundTask;
 
 @property BOOL isApplicationInBg;
+
+@property (nonatomic) BOOL isInitialized;
+
 @property (nonatomic,strong) NSString *consentWindowStatus;//from which window it came
 
 @property UserConsentPresentCompletionBlock _Nullable userConsentPresentCompletionBlock;
@@ -95,6 +107,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 #if !TARGET_OS_OSX && !TARGET_OS_WATCH
 @property (nonatomic) UIBackgroundTaskIdentifier backgroundUpdateTask;
+@property (nonatomic) bool isBackgroundTaskScheduled;
 #endif
 
 typedef void (^bgEngagementRequestSuccessBlock)(void);
@@ -218,6 +231,8 @@ typedef void (^internbgConsoleLogsRequestSuccessBlock)(void);
 
 - (void) setCrashCustomProperty:(NSDictionary* _Nonnull) object;
 
+- (void) setUser:(APUser* _Nullable)user;
+
 - (void) setCurrentUser:(NSString* _Nullable)userID groupId : (NSString*_Nullable)groupid;
 
 - (void) setUserAgent:(NSString*_Nullable) agent;
@@ -246,6 +261,9 @@ typedef void (^internbgConsoleLogsRequestSuccessBlock)(void);
 - (NSString *_Nonnull) getMamForRequest;
 
 - (NSString *) getCurrentUserId;
+
+-(void) syncUpdatesFromServer;
+
 
 - (APPrivacyStatus) getPrivacyStatus;
     
@@ -304,11 +322,13 @@ typedef void (^internbgConsoleLogsRequestSuccessBlock)(void);
 
 - (void) applicationDidFinishLaunching : (NSNotification*) notice;
 
-- (void) applicationDidEnterBackground:(NSNotification*) notification;
+- (void) applicationWillResignActive:(NSNotification*) notification;
 
-- (void) applicationWillEnterForeground:(NSNotification*) notification;
+- (void) applicationWillTerminate:(NSNotification*) notification;
 
-- (void) applicationWillResignActive : (NSNotification*) notice;
+//- (void) applicationWillResignActive : (NSNotification*) notice;
+
+//- (void) applicationWillEnterForeground : (NSNotification*) notice;
 
 - (void) applicationDidBecomeActive : (NSNotification*) notice;
 
@@ -319,6 +339,10 @@ typedef void (^internbgConsoleLogsRequestSuccessBlock)(void);
 - (void) sceneWillEnterForeground:(NSNotification *)notice;
 
 - (void) sceneDidEnterBackground:(NSNotification *)notice;
+
+- (void) workspaceWillSleep:(NSNotification *)notice;
+
+- (void) workspaceDidWake:(NSNotification *)notice;
 
 - (void) willRegisterDeviceWithDeviceId:(NSNotification*) notification;
 - (void) willSendTheFeedbackToTheServer:(NSNotification*) notification;
@@ -349,6 +373,7 @@ typedef void (^internbgConsoleLogsRequestSuccessBlock)(void);
 
 -(BOOL) isMacCatalystOrDesignedForiPad;
 -(void) saveDataAndSendToTheServer;
+- (void)receiveKMMcrashAndSave:(NSException *)crashReport;
 
 @end
 
@@ -357,9 +382,11 @@ typedef void (^internbgConsoleLogsRequestSuccessBlock)(void);
 @property (nonatomic, strong) dispatch_queue_t _Nullable timerQueue;
 @property (nonatomic, strong) dispatch_source_t _Nullable timer;
 @property (nonatomic, assign) BOOL shouldExecuteBlock;
+@property (nonatomic, copy) NSString *name;
 
-- (void)startTimerWithInterval:(NSTimeInterval)interval;
+- (void)startTimerWithInterval:(NSTimeInterval)interval executeBlock:(dispatch_block_t)completionHandler;
 - (void)stopTimer;
+
 
 @end
 

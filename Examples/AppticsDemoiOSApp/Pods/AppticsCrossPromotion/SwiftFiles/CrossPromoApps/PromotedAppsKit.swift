@@ -81,11 +81,18 @@ import Apptics
     }
     
     func getcurrentBundle() -> Bundle {
+        var bundleName = "Apptics_SwiftResources"
+#if SWIFT_PACKAGE
+        let bundle = Bundle.module
+        bundleName = "Apptics_AppticsCrossPromotion"
         
-        let bundle = Bundle(for: type(of: self))
-        if let url = bundle.url(forResource: "Apptics_SwiftResources", withExtension: "bundle") {
-        if let bundl = Bundle.init(url: url) {
-        return bundl
+#else
+        let bundle = Bundle(for: GradientBttn.self)
+        
+#endif
+        if let url = bundle.url(forResource: bundleName, withExtension: "bundle") {
+            if let bundl = Bundle.init(url: url) {
+                return bundl
             }
         }
         return bundle
@@ -142,4 +149,24 @@ extension PromotedAppsKit{
         let vc = crossPromotionKit.getPromotionalAppsViewController(sectionHeader1: sectionHeader1, sectionHeader2: sectionHeader2)
         return vc
     }
+}
+
+
+@objcMembers
+public class GradientBttn: UIButton {
+    
+    public override func layoutSubviews() {
+        super.layoutSubviews()
+        gradientLayer.frame = bounds
+    }
+    private lazy var gradientLayer: CAGradientLayer = {
+        let gL = CAGradientLayer()
+        gL.frame = self.bounds
+        gL.colors = [UIColor(red: 204/255, green: 204/255, blue: 204/255, alpha: 1.0).cgColor, UIColor(red: 204/255, green: 204/255, blue: 204/255, alpha: 1.0).cgColor]
+        gL.startPoint = CGPoint(x: 0, y: 0.5)
+        gL.endPoint = CGPoint(x: 1.50, y: 0.5)
+        gL.cornerRadius = 3
+        layer.insertSublayer(gL, at: 0)
+        return gL
+    }()
 }

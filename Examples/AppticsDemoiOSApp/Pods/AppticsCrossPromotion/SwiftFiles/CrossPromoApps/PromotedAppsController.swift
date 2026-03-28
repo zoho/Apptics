@@ -97,13 +97,12 @@ struct promotedDatasource {
         defaultTheme = APThemeSwiftManager.sharedTheme
         crossPromoTheme = APThemeSwiftManager.crosspromotheme
         
-        let bundler = self.getcurrentBundle()
+        let resourceBundle = self.getcurrentBundle()
+        tblView.register(UINib(nibName: "promotedAppViewCell", bundle: resourceBundle), forCellReuseIdentifier: "zapromotedcell")
         
-        
-        tblView.register(UINib(nibName: "promotedAppViewCell", bundle: bundler), forCellReuseIdentifier: "zapromotedcell")
-        lblViewAllApps.text = NSLocalizedString("zanalytics.crosspromotion.viewallapps", tableName: "CrossPromo", bundle: self.getcurrentBundle(), value: "", comment: "View all apps")
+        lblViewAllApps.text = NSLocalizedString("zanalytics.crosspromotion.viewallapps", tableName: "CrossPromo", bundle: resourceBundle, value: "", comment: "View all apps")
         lblerrorMessage.isHidden = false
-        lblerrorMessage.text = NSLocalizedString("zanalytics.crosspromotion.noappstodisplay", tableName: "CrossPromo", bundle: self.getcurrentBundle(), value: "", comment: "No Apps to display")// NSLocalizedString("zanalytics.crosspromotion.noappstodisplay", comment:"No Apps to display")
+        lblerrorMessage.text = NSLocalizedString("zanalytics.crosspromotion.noappstodisplay", tableName: "CrossPromo", bundle: resourceBundle, value: "", comment: "No Apps to display")// NSLocalizedString("zanalytics.crosspromotion.noappstodisplay", comment:"No Apps to display")
         lblAllAppsIcon.text = "\u{e916}"
         lblAllAppsIcon.font = UIFont(name: "Apptics-CP", size: 32)
         lblRightArrow.text = "\u{e915}"
@@ -579,13 +578,8 @@ struct promotedDatasource {
         
         func getcurrentBundle() -> Bundle {
             
-            let bundle = Bundle(for: type(of: self))
-            if let url = bundle.url(forResource: "Apptics_SwiftResources", withExtension: "bundle") {
-                if let bundl = Bundle.init(url: url) {
-                    return bundl
-                }
-            }
-            return bundle
+            return PromotedAppsKit().getcurrentBundle()
+
         }
         
     }

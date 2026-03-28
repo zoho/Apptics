@@ -20,13 +20,10 @@ variant_for_slice()
   "AppticsRemoteConfig.xcframework/ios-arm64")
     echo ""
     ;;
-  "AppticsRemoteConfig.xcframework/ios-arm64_x86_64-maccatalyst")
-    echo "maccatalyst"
-    ;;
   "AppticsRemoteConfig.xcframework/ios-arm64_x86_64-simulator")
     echo "simulator"
     ;;
-  "AppticsRemoteConfig.xcframework/macos-arm64_x86_64")
+  "AppticsRemoteConfig.xcframework/macos-arm64")
     echo ""
     ;;
   "AppticsRemoteConfig.xcframework/tvos-arm64")
@@ -38,7 +35,7 @@ variant_for_slice()
   "AppticsRemoteConfig.xcframework/watchos-arm64_arm64_32_armv7k")
     echo ""
     ;;
-  "AppticsRemoteConfig.xcframework/watchos-arm64_i386_x86_64-simulator")
+  "AppticsRemoteConfig.xcframework/watchos-arm64_x86_64-simulator")
     echo "simulator"
     ;;
   esac
@@ -50,14 +47,11 @@ archs_for_slice()
   "AppticsRemoteConfig.xcframework/ios-arm64")
     echo "arm64"
     ;;
-  "AppticsRemoteConfig.xcframework/ios-arm64_x86_64-maccatalyst")
-    echo "arm64 x86_64"
-    ;;
   "AppticsRemoteConfig.xcframework/ios-arm64_x86_64-simulator")
     echo "arm64 x86_64"
     ;;
-  "AppticsRemoteConfig.xcframework/macos-arm64_x86_64")
-    echo "arm64 x86_64"
+  "AppticsRemoteConfig.xcframework/macos-arm64")
+    echo "arm64"
     ;;
   "AppticsRemoteConfig.xcframework/tvos-arm64")
     echo "arm64"
@@ -68,8 +62,8 @@ archs_for_slice()
   "AppticsRemoteConfig.xcframework/watchos-arm64_arm64_32_armv7k")
     echo "arm64 arm64_32 armv7k"
     ;;
-  "AppticsRemoteConfig.xcframework/watchos-arm64_i386_x86_64-simulator")
-    echo "arm64 i386 x86_64"
+  "AppticsRemoteConfig.xcframework/watchos-arm64_x86_64-simulator")
+    echo "arm64 x86_64"
     ;;
   esac
 }
@@ -153,5 +147,5 @@ install_xcframework() {
   echo "Copied $source to $destination"
 }
 
-install_xcframework "${PODS_ROOT}/AppticsRemoteConfig/AppticsRemoteConfig.xcframework" "AppticsRemoteConfig/RemoteConfig" "framework" "ios-arm64" "ios-arm64_x86_64-maccatalyst" "ios-arm64_x86_64-simulator"
+install_xcframework "${PODS_ROOT}/AppticsRemoteConfig/AppticsRemoteConfig.xcframework" "AppticsRemoteConfig/RemoteConfig" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
 

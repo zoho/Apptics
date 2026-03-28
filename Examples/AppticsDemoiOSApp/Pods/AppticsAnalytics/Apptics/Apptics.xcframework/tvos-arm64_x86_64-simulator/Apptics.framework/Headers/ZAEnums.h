@@ -205,6 +205,14 @@ typedef NS_ENUM(NSUInteger, ZAUpdateAction)
   ZAUpdateActionIgnore
 };
 
+typedef NS_ENUM(NSUInteger, AppticsInAppUpdateStats)
+{
+    AppticsInAppUpdateStatsImpression = 1,
+    AppticsInAppUpdateStatsDownload,
+    AppticsInAppUpdateStatsLater,
+    AppticsInAppUpdateStatsIgnore
+};
+
 typedef NS_ENUM(NSUInteger, ZUButtonType)
 {
   ZUButtonTypeDownload = 1,   // Download now

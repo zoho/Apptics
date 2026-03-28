@@ -1,184 +1,231 @@
-////
-////  SecureViewController.swift
-////  AppticsDemo
-////
-////  Created by Saravanan S on 21/08/23.
-////
-//
-//import Foundation
-//import UIKit
-//import AppticsPrivacyProtector
-//
-//class SecureElementsController: UIViewController {
-//    
-//    @objc var ap_screen_name: String = "Secure container screen"
-//    
-//    let sImageView = APSecureImageView()
-//    let rImageView = UIImageView()
-//    
-//    let sSecureLabel = APSecureLabel()
-//    let rSecureLabel = UILabel()
-//    
-//    let sSecureButton = APSecureButton()
-//    let rSecureButton = UIButton()
-//    
-//    let sSecureTextView = APSecureTextView()
-//    let rSecureTextView = UITextView()
-//    
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//        
-//        self.view.addSubview(sImageView)
-//        self.view.addSubview(rImageView)
-//        
-//        self.view.addSubview(sSecureLabel)
-//        self.view.addSubview(rSecureLabel)
-//        
-//        self.view.addSubview(sSecureButton)
-//        self.view.addSubview(rSecureButton)
-//        
-//        self.view.addSubview(sSecureTextView)
-//        self.view.addSubview(rSecureTextView)
-//                
-//        self.view.backgroundColor=(UIScreen.main.traitCollection.userInterfaceStyle == .dark) ? .black : .white
-//        
-//        sImageView.image = UIImage(systemName: "eye.slash.circle")!
-//        sImageView.contentMode = .scaleAspectFit
-//        
-//        rImageView.image = UIImage(systemName: "eye.square")
-//        rImageView.contentMode = .scaleAspectFit
-//        
-//        sSecureLabel.text = "Private Information"
-//        let customLabel = sSecureLabel.label
-//        customLabel.textColor = .white
-//        customLabel.backgroundColor = UIColor(red: 0.0, green: 0.5, blue: 0.5, alpha: 1.0)
-//        customLabel.font = UIFont.boldSystemFont(ofSize: 16)
-//        customLabel.textAlignment = .center
-//        customLabel.layer.cornerRadius = 10
-//        customLabel.layer.masksToBounds = true
-//        customLabel.layer.shadowColor = UIColor.black.cgColor
-//        customLabel.layer.shadowOffset = CGSize(width: 0, height: 2)
-//        customLabel.layer.shadowRadius = 5
-//        customLabel.layer.shadowOpacity = 0.3
-//                
-//        rSecureLabel.text = "Non-sensitive label"
-//        rSecureLabel.textColor = .white
-//        rSecureLabel.backgroundColor = UIColor(red: 0.0, green: 0.5, blue: 0.5, alpha: 1.0)
-//        rSecureLabel.font = UIFont.boldSystemFont(ofSize: 16)
-//        rSecureLabel.textAlignment = .center
-//        rSecureLabel.layer.cornerRadius = 10
-//        rSecureLabel.layer.masksToBounds = true
-//        rSecureLabel.layer.shadowColor = UIColor.black.cgColor
-//        rSecureLabel.layer.shadowOffset = CGSize(width: 0, height: 2)
-//        rSecureLabel.layer.shadowRadius = 5
-//        rSecureLabel.layer.shadowOpacity = 0.3
-//        
-//        sSecureButton.button.setTitle("Secure Button", for: .normal)
-//        sSecureButton.button.setTitleColor(.white, for: .normal)
-//        sSecureButton.button.backgroundColor = .systemBlue
-//        sSecureButton.button.layer.cornerRadius = 10
-//        sSecureButton.button.layer.shadowColor = UIColor.black.cgColor
-//        sSecureButton.button.layer.shadowOffset = CGSize(width: 0, height: 2)
-//        sSecureButton.button.layer.shadowRadius = 5
-//        sSecureButton.button.layer.shadowOpacity = 0.3
-//        sSecureButton.button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
-//        sSecureButton.button.addTarget(self, action: #selector(sSecureButtonAction), for: .touchUpInside)
-//        
-//        rSecureButton.setTitle("Normal Button", for: .normal)
-//        rSecureButton.setTitleColor(.white, for: .normal)
-//        rSecureButton.backgroundColor = .systemBlue
-//        rSecureButton.layer.cornerRadius = 10
-//        rSecureButton.layer.shadowColor = UIColor.black.cgColor
-//        rSecureButton.layer.shadowOffset = CGSize(width: 0, height: 2)
-//        rSecureButton.layer.shadowRadius = 5
-//        rSecureButton.layer.shadowOpacity = 0.3
-//        rSecureButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
-//        rSecureButton.addTarget(self, action: #selector(sSecureButtonAction), for: .touchUpInside)
-//                
-//        sSecureTextView.text = "Confidential Information"
-//        let customTextView = sSecureTextView.textView
-//        customTextView.textColor = UIColor(red: 33/255, green: 33/255, blue: 33/255, alpha: 1.0)
-//        customTextView.backgroundColor = UIColor(red: 135/255, green: 206/255, blue: 235/255, alpha: 1.0)
-//        customTextView.font = UIFont.systemFont(ofSize: 18)
-//        customTextView.isEditable = true
-//        customTextView.layer.cornerRadius = 10
-//        customTextView.layer.shadowColor = UIColor.black.cgColor
-//        customTextView.layer.shadowOffset = CGSize(width: 0, height: 2)
-//        customTextView.layer.shadowRadius = 5
-//        customTextView.layer.shadowOpacity = 0.3
-//        
-//        rSecureTextView.text = "Non-sensitive Data"
-//        rSecureTextView.textColor = UIColor(red: 33/255, green: 33/255, blue: 33/255, alpha: 1.0)
-//        rSecureTextView.backgroundColor = UIColor(red: 135/255, green: 206/255, blue: 235/255, alpha: 1.0)
-//        rSecureTextView.font = UIFont.systemFont(ofSize: 18)
-//        rSecureTextView.isEditable = true
-//        rSecureTextView.layer.cornerRadius = 10
-//        rSecureTextView.layer.shadowColor = UIColor.black.cgColor
-//        rSecureTextView.layer.shadowOffset = CGSize(width: 0, height: 2)
-//        rSecureTextView.layer.shadowRadius = 5
-//        rSecureTextView.layer.shadowOpacity = 0.3
-//        
-//        let spacing: CGFloat = 70 // Adjust the spacing between elements as needed
-//
-//        // Constraints for sImageView
-//        sImageView.translatesAutoresizingMaskIntoConstraints = false
-//        sImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: -60).isActive = true
-//        sImageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: spacing).isActive = true
-//        sImageView.widthAnchor.constraint(equalToConstant: 100).isActive = true
-//        sImageView.heightAnchor.constraint(equalToConstant: 100).isActive = true
-//                
-//        // Constraints for rImageView
-//        rImageView.translatesAutoresizingMaskIntoConstraints = false
-//        rImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 60).isActive = true
-//        rImageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: spacing).isActive = true
-//        rImageView.widthAnchor.constraint(equalToConstant: 100).isActive = true
-//        rImageView.heightAnchor.constraint(equalToConstant: 100).isActive = true
-//         
-//        // Constraints for sSecureLabel
-//        sSecureLabel.translatesAutoresizingMaskIntoConstraints = false
-//        sSecureLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: -90).isActive = true
-//        sSecureLabel.topAnchor.constraint(equalTo: sImageView.bottomAnchor, constant: spacing).isActive = true
-//        sSecureLabel.widthAnchor.constraint(equalToConstant: 170).isActive = true
-//        sSecureLabel.heightAnchor.constraint(equalToConstant: 40).isActive = true
-//
-//        // Constraints for rSecureLabel
-//        rSecureLabel.translatesAutoresizingMaskIntoConstraints = false
-//        rSecureLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 90).isActive = true
-//        rSecureLabel.topAnchor.constraint(equalTo: rImageView.bottomAnchor, constant: spacing).isActive = true
-//        rSecureLabel.widthAnchor.constraint(equalToConstant: 170).isActive = true
-//        rSecureLabel.heightAnchor.constraint(equalToConstant: 40).isActive = true
-//
-//        // Constraints for sSecureButton
-//        sSecureButton.translatesAutoresizingMaskIntoConstraints = false
-//        sSecureButton.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: -80).isActive = true
-//        sSecureButton.topAnchor.constraint(equalTo: sSecureLabel.bottomAnchor, constant: spacing).isActive = true
-//        sSecureButton.widthAnchor.constraint(equalToConstant: 150).isActive = true
-//        sSecureButton.heightAnchor.constraint(equalToConstant: 40).isActive = true
-//
-//        // Constraints for rSecureButton
-//        rSecureButton.translatesAutoresizingMaskIntoConstraints = false
-//        rSecureButton.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 80).isActive = true
-//        rSecureButton.topAnchor.constraint(equalTo: rSecureLabel.bottomAnchor, constant: spacing).isActive = true
-//        rSecureButton.widthAnchor.constraint(equalToConstant: 150).isActive = true
-//        rSecureButton.heightAnchor.constraint(equalToConstant: 40).isActive = true
-//
-//        // Constraints for sSecureTextView
-//        sSecureTextView.translatesAutoresizingMaskIntoConstraints = false
-//        sSecureTextView.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: -80).isActive = true
-//        sSecureTextView.topAnchor.constraint(equalTo: sSecureButton.bottomAnchor, constant: spacing).isActive = true
-//        sSecureTextView.widthAnchor.constraint(equalToConstant: 150).isActive = true
-//        sSecureTextView.heightAnchor.constraint(equalToConstant: 100).isActive = true
-//
-//        // Constraints for rSecureTextView
-//        rSecureTextView.translatesAutoresizingMaskIntoConstraints = false
-//        rSecureTextView.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 80).isActive = true
-//        rSecureTextView.topAnchor.constraint(equalTo: rSecureButton.bottomAnchor, constant: spacing).isActive = true
-//        rSecureTextView.widthAnchor.constraint(equalToConstant: 150).isActive = true
-//        rSecureTextView.heightAnchor.constraint(equalToConstant: 100).isActive = true
-//
-//    }
-//    
-//    @objc func sSecureButtonAction(){
-//        print("Button tapped")
-//    }
-//}
+
+import Foundation
+import UIKit
+import AppticsPrivacyShield
+
+class SecureElementsController: UIViewController {
+    @objc var ap_screen_name: String = "Secure container screen"
+
+    // Secure elements (hidden during recording/screenshot)
+    let sImageView    = APSecureImageView()
+    let sSecureLabel  = APSecureLabel()
+    let sSecureButton = APSecureButton()
+    let sSecureTextView = APSecureTextView()
+
+    // Regular elements (always visible)
+    let rImageView    = UIImageView()
+    let rSecureLabel  = UILabel()
+    let rSecureButton = UIButton(type: .system)
+    let rSecureTextView = UITextView()
+
+    private let console = ConsoleView()
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        title = "Secure UI Elements"
+        view.backgroundColor = DSColor.background
+        setupUI()
+    }
+
+    // MARK: - UI
+
+    private func setupUI() {
+        let scroll = UIScrollView()
+        scroll.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(scroll)
+        NSLayoutConstraint.activate([
+            scroll.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            scroll.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            scroll.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            scroll.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+        ])
+
+        let root = vStack(spacing: 14)
+        root.translatesAutoresizingMaskIntoConstraints = false
+        scroll.addSubview(root)
+        NSLayoutConstraint.activate([
+            root.topAnchor.constraint(equalTo: scroll.topAnchor, constant: 20),
+            root.leadingAnchor.constraint(equalTo: scroll.leadingAnchor, constant: 16),
+            root.trailingAnchor.constraint(equalTo: scroll.trailingAnchor, constant: -16),
+            root.bottomAnchor.constraint(equalTo: scroll.bottomAnchor, constant: -24),
+            root.widthAnchor.constraint(equalTo: scroll.widthAnchor, constant: -32),
+        ])
+
+        root.addArrangedSubview(infoBanner(
+            "APSecure* elements are hidden during screen recording and screenshots. Regular elements remain visible.",
+            tint: DSColor.teal
+        ))
+
+        // Column header
+        root.addArrangedSubview(columnHeader())
+
+        // Element rows
+        configureImageViews()
+        root.addArrangedSubview(comparisonCard(
+            title: "Image View",
+            secureView: sImageView,
+            regularView: rImageView,
+            height: 80
+        ))
+
+        configureLabels()
+        root.addArrangedSubview(comparisonCard(
+            title: "Label",
+            secureView: sSecureLabel,
+            regularView: rSecureLabel,
+            height: 44
+        ))
+
+        configureButtons()
+        root.addArrangedSubview(comparisonCard(
+            title: "Button",
+            secureView: sSecureButton,
+            regularView: rSecureButton,
+            height: 48
+        ))
+
+        configureTextViews()
+        root.addArrangedSubview(comparisonCard(
+            title: "Text View",
+            secureView: sSecureTextView,
+            regularView: rSecureTextView,
+            height: 80
+        ))
+
+        // Console
+        console.translatesAutoresizingMaskIntoConstraints = false
+        console.heightAnchor.constraint(equalToConstant: 160).isActive = true
+        root.addArrangedSubview(console)
+    }
+
+    private func columnHeader() -> UIView {
+        let typeL = UILabel()
+        typeL.text = ""
+
+        let secureL = UILabel()
+        secureL.text = "SECURE"
+        secureL.font = .systemFont(ofSize: 11, weight: .bold)
+        secureL.textColor = DSColor.teal
+        secureL.textAlignment = .center
+
+        let regularL = UILabel()
+        regularL.text = "REGULAR"
+        regularL.font = .systemFont(ofSize: 11, weight: .bold)
+        regularL.textColor = UIColor(white: 0.55, alpha: 1)
+        regularL.textAlignment = .center
+
+        let row = UIStackView(arrangedSubviews: [typeL, secureL, regularL])
+        row.axis = .horizontal
+        row.distribution = .fillEqually
+        row.layoutMargins = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
+        row.isLayoutMarginsRelativeArrangement = true
+        return row
+    }
+
+    private func comparisonCard(title: String, secureView: UIView, regularView: UIView, height: CGFloat) -> UIView {
+        let container = UIView()
+        container.backgroundColor = DSColor.card
+        container.layer.cornerRadius = 14
+        container.layer.shadowColor = UIColor.black.cgColor
+        container.layer.shadowOpacity = 0.06
+        container.layer.shadowOffset = CGSize(width: 0, height: 2)
+        container.layer.shadowRadius = 6
+
+        let titleL = UILabel()
+        titleL.text = title
+        titleL.font = .systemFont(ofSize: 13, weight: .semibold)
+        titleL.textColor = UIColor(white: 0.4, alpha: 1)
+
+        secureView.heightAnchor.constraint(equalToConstant: height).isActive = true
+        regularView.heightAnchor.constraint(equalToConstant: height).isActive = true
+
+        let cols = UIStackView(arrangedSubviews: [secureView, regularView])
+        cols.axis = .horizontal
+        cols.distribution = .fillEqually
+        cols.spacing = 12
+        cols.alignment = .center
+
+        let inner = vStack(spacing: 10)
+        inner.addArrangedSubview(titleL)
+        inner.addArrangedSubview(cols)
+        inner.translatesAutoresizingMaskIntoConstraints = false
+        container.addSubview(inner)
+        NSLayoutConstraint.activate([
+            inner.topAnchor.constraint(equalTo: container.topAnchor, constant: 14),
+            inner.leadingAnchor.constraint(equalTo: container.leadingAnchor, constant: 16),
+            inner.trailingAnchor.constraint(equalTo: container.trailingAnchor, constant: -16),
+            inner.bottomAnchor.constraint(equalTo: container.bottomAnchor, constant: -14),
+        ])
+        return container
+    }
+
+    // MARK: - Configure elements
+
+    private func configureImageViews() {
+        sImageView.image = UIImage(systemName: "eye.slash.circle.fill")
+        sImageView.tintColor = DSColor.teal
+        sImageView.contentMode = .scaleAspectFit
+
+        rImageView.image = UIImage(systemName: "eye.circle.fill")
+        rImageView.tintColor = UIColor(white: 0.65, alpha: 1)
+        rImageView.contentMode = .scaleAspectFit
+    }
+
+    private func configureLabels() {
+        let inner = sSecureLabel.label
+        inner.text = "Secured Label"
+        inner.textColor = .white
+        inner.backgroundColor = DSColor.teal
+        inner.font = .systemFont(ofSize: 14, weight: .semibold)
+        inner.textAlignment = .center
+        inner.layer.cornerRadius = 8
+        inner.layer.masksToBounds = true
+
+        rSecureLabel.text = "Regular Label"
+        rSecureLabel.textColor = UIColor(white: 0.3, alpha: 1)
+        rSecureLabel.backgroundColor = UIColor(white: 0.93, alpha: 1)
+        rSecureLabel.font = .systemFont(ofSize: 14)
+        rSecureLabel.textAlignment = .center
+        rSecureLabel.layer.cornerRadius = 8
+        rSecureLabel.layer.masksToBounds = true
+    }
+
+    private func configureButtons() {
+        sSecureButton.button.setTitle("Secure Button", for: .normal)
+        sSecureButton.button.setTitleColor(.white, for: .normal)
+        sSecureButton.button.backgroundColor = DSColor.teal
+        sSecureButton.button.layer.cornerRadius = 10
+        sSecureButton.button.titleLabel?.font = .systemFont(ofSize: 14, weight: .semibold)
+        sSecureButton.button.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
+
+        rSecureButton.setTitle("Normal Button", for: .normal)
+        rSecureButton.setTitleColor(.white, for: .normal)
+        rSecureButton.backgroundColor = UIColor(white: 0.65, alpha: 1)
+        rSecureButton.layer.cornerRadius = 10
+        rSecureButton.titleLabel?.font = .systemFont(ofSize: 14, weight: .semibold)
+        rSecureButton.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
+    }
+
+    private func configureTextViews() {
+        let inner = sSecureTextView.textView
+        inner.text = "Confidential\nInformation"
+        inner.textColor = UIColor(white: 0.15, alpha: 1)
+        inner.backgroundColor = DSColor.teal.withAlphaComponent(0.12)
+        inner.font = .systemFont(ofSize: 13)
+        inner.isEditable = false
+        inner.layer.cornerRadius = 8
+        inner.isScrollEnabled = false
+
+        rSecureTextView.text = "Non-sensitive\nData"
+        rSecureTextView.textColor = UIColor(white: 0.3, alpha: 1)
+        rSecureTextView.backgroundColor = UIColor(white: 0.93, alpha: 1)
+        rSecureTextView.font = .systemFont(ofSize: 13)
+        rSecureTextView.isEditable = false
+        rSecureTextView.layer.cornerRadius = 8
+        rSecureTextView.isScrollEnabled = false
+    }
+
+    @objc private func buttonTapped() {
+        console.log("Button tapped", level: .info)
+    }
+}

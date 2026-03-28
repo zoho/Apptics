@@ -25,26 +25,36 @@
 #import <Apptics/ZAScreenObject.h>
 
 NS_ASSUME_NONNULL_BEGIN
+@class APTimerManager;
 
 #define maxDataRetentionTime ((24 * 60 * 60 * 1000) * 7)
 
 @interface ZAGlobalQueue : NSObject
 
-@property (strong,nonatomic) NSMutableArray *screensQueue, *sessionsQueue, *eventsQueue, *nonfatalQueue, *apisQueue, *remoteconfigQueue, *rateusQueue, *appupdatePopupQueue, *appupdateDetailQueue, *crosspromoQueue, *consoleLogsQueue;
+//@property (strong,nonatomic) NSMutableArray *screensQueue, *sessionsQueue, *eventsQueue, *nonfatalQueue, *apisQueue, *remoteconfigQueue, *rateusQueue, *appupdatePopupQueue, *appupdateDetailQueue, *crosspromoQueue, *consoleLogsQueue;
+@property (strong,nonatomic) NSMutableArray *eventsQueue;
 
 @property (nonatomic) long long dataSize;
 @property (nonatomic) long long nonfatalDataSize;
 @property (nonatomic) long long logsDataSize;
 @property (strong,nonatomic) ZASession *currentSession;
 
-@property (strong,nonatomic) ZAScreenObject *currentScreen;
+@property (strong,nonatomic) ZAScreenObject * _Nullable currentScreen;
 
-@property (strong,nonatomic) ZAAppupdatePopupInfo * _Nullable currentAppupdatePopup;
+//@property (strong,nonatomic) ZAAppupdatePopupInfo * _Nullable currentAppupdatePopup;
 
 @property (nonatomic, strong) NSOperationQueue *operationQueue;
 @property (nonatomic, strong) NSOperationQueue *bgOperationQueue;
 
-@property (strong,nonatomic) NSNumber *prevFlushTime;
+@property (strong,nonatomic) NSNumber *prevENGFlushTime;
+@property (strong,nonatomic) NSNumber *prevNFFlushTime;
+@property (strong,nonatomic) NSNumber *prevRLFlushTime;
+//Debug API variable
+@property (weak,nonatomic) NSString * argumentDebug;
+@property (nonatomic, strong) APTimerManager * timerManager;
+//ScreenTracking Timestamp
+@property (nonatomic, strong) NSMutableDictionary<NSNumber*, NSString*> *screenTimestamps;
+
 
 typedef void (^bgEngagementRequestSuccessBlock)(void);
 typedef void (^bgNonFatalRequestSuccessBlock)(void);
@@ -53,6 +63,13 @@ typedef void (^bgConsoleLogsRequestSuccessBlock)(void);
 + (ZAGlobalQueue*) sharedQueue;
 + (NSNumber*) sessionStartTime;
 + (NSString*) currentScreenName;
+
+- (void)setTimestamp:(NSNumber *)timestamp forScreenName:(NSString *)screenName;
+- (nullable NSString *)screenNameForTimestamp:(NSNumber *)timestamp;
+- (void)removeScreenNameForTimestamp:(NSNumber *)timestamp;
+
+
+
 
 - (void) addToNonfatalQueue:(id)errorObject;
 - (void) addToQueue:(ZAObject*)object;
@@ -74,6 +91,10 @@ typedef void (^bgConsoleLogsRequestSuccessBlock)(void);
 - (void) flushHistoricConsoleLogsDataToServer;
 - (void) flushConsoleLogsToServerisBG : (BOOL) isBg completionBlock:(bgConsoleLogsRequestSuccessBlock)success;
 
+- (void) sendEngagementDataFromQueueWithSuccess:(bgEngagementRequestSuccessBlock)success;
+- (void) sendNonFatalDataFromQueueCompletionBlock:(bgNonFatalRequestSuccessBlock)success;
+- (void) sendConsoleLogDataFromQueueCompletionBlock:(bgConsoleLogsRequestSuccessBlock)success;
+
 - (void) dispatchOnNetworkQueue:(void (^)(void))dispatchBlock;
 
 - (void) trackViewEnter:(NSString*) screenName;
@@ -81,8 +102,9 @@ typedef void (^bgConsoleLogsRequestSuccessBlock)(void);
 - (void) startWithTime:(NSNumber*) startTime;
 - (void) endWithTime:(NSNumber*)endTime;
 - (void) saveData;
-- (void) saveSessionData:(NSNumber*) sessionId;
-- (void) saveNonFatalData:(NSNumber*) sessionId;
+- (void) saveDataFromTempQueue;
+- (void) saveSessionData:(ZASession*) session completionHandler:(void (^)(bool status))completionBlock;
+- (void) saveNonFatalData:(ZASession*) session completionHandler:(void (^)(bool status))completionBlock;
 //- (void) saveBgSessionData:(NSNumber*) sessionId;
 @end
 

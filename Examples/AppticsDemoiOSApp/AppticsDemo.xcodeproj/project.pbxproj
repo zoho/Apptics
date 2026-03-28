@@ -45,6 +45,11 @@
 		A27C287E27997F3200EA16CF /* APIListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27C287B27997F3200EA16CF /* APIListViewController.swift */; };
 		A27C287F27997F3200EA16CF /* APIListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27C287C27997F3200EA16CF /* APIListCell.swift */; };
 		A27C288027997F3200EA16CF /* APITableList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27C287D27997F3200EA16CF /* APITableList.swift */; };
+		BB1000000000000000000003 /* ScreenTrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1000000000000000000002 /* ScreenTrackingViewController.swift */; };
+		BB2000000000000000000003 /* RemoteConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2000000000000000000002 /* RemoteConfigViewController.swift */; };
+		BB3000000000000000000003 /* RemoteLoggerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3000000000000000000002 /* RemoteLoggerViewController.swift */; };
+		BB4000000000000000000003 /* PrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4000000000000000000002 /* PrivacyViewController.swift */; };
+		BB5000000000000000000003 /* UpdatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5000000000000000000002 /* UpdatesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,6 +143,11 @@
 		B2418F666817F8BA779AF47B /* Pods-AppticsDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppticsDemoTests.release.xcconfig"; path = "Target Support Files/Pods-AppticsDemoTests/Pods-AppticsDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		B49E7709BC77CCA661B545EF /* Pods-AppticsDemo-AppticsDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppticsDemo-AppticsDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-AppticsDemo-AppticsDemoUITests/Pods-AppticsDemo-AppticsDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BAF8238F3541D1ADBB4E2D6D /* Pods-AppticsDemo-AppticsDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppticsDemo-AppticsDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-AppticsDemo-AppticsDemoUITests/Pods-AppticsDemo-AppticsDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BB1000000000000000000002 /* ScreenTrackingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenTrackingViewController.swift; sourceTree = "<group>"; };
+		BB2000000000000000000002 /* RemoteConfigViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteConfigViewController.swift; sourceTree = "<group>"; };
+		BB3000000000000000000002 /* RemoteLoggerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteLoggerViewController.swift; sourceTree = "<group>"; };
+		BB4000000000000000000002 /* PrivacyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivacyViewController.swift; sourceTree = "<group>"; };
+		BB5000000000000000000002 /* UpdatesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdatesViewController.swift; sourceTree = "<group>"; };
 		C8332DAAC3DB1EEF73050C12 /* Pods-AppticsDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppticsDemo.release.xcconfig"; path = "Target Support Files/Pods-AppticsDemo/Pods-AppticsDemo.release.xcconfig"; sourceTree = "<group>"; };
 		E1A9E98003A020B05DF16126 /* Pods-AppticsDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppticsDemo.debug.xcconfig"; path = "Target Support Files/Pods-AppticsDemo/Pods-AppticsDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		E1EE7AB79C1B5ECBE5AEC31A /* Pods-AppticsDemo.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppticsDemo.appstore.xcconfig"; path = "Target Support Files/Pods-AppticsDemo/Pods-AppticsDemo.appstore.xcconfig"; sourceTree = "<group>"; };
@@ -232,6 +242,11 @@
 			children = (
 				A23C4DCC275DD56F0020D210 /* AppticsDemo.entitlements */,
 				A27C287A27997EFE00EA16CF /* APITracking */,
+				BB1000000000000000000001 /* Screens */,
+				BB2000000000000000000001 /* RemoteConfig */,
+				BB3000000000000000000001 /* RemoteLogger */,
+				BB4000000000000000000001 /* Privacy */,
+				BB5000000000000000000001 /* Updates */,
 				A27C2876279978FD00EA16CF /* ThemeManager */,
 				A27C286B2799718200EA16CF /* NonFatals */,
 				A27C28602799501000EA16CF /* Crashes */,
@@ -332,6 +347,46 @@
 				A27C287D27997F3200EA16CF /* APITableList.swift */,
 			);
 			path = APITracking;
+			sourceTree = "<group>";
+		};
+		BB1000000000000000000001 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				BB1000000000000000000002 /* ScreenTrackingViewController.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		BB2000000000000000000001 /* RemoteConfig */ = {
+			isa = PBXGroup;
+			children = (
+				BB2000000000000000000002 /* RemoteConfigViewController.swift */,
+			);
+			path = RemoteConfig;
+			sourceTree = "<group>";
+		};
+		BB3000000000000000000001 /* RemoteLogger */ = {
+			isa = PBXGroup;
+			children = (
+				BB3000000000000000000002 /* RemoteLoggerViewController.swift */,
+			);
+			path = RemoteLogger;
+			sourceTree = "<group>";
+		};
+		BB4000000000000000000001 /* Privacy */ = {
+			isa = PBXGroup;
+			children = (
+				BB4000000000000000000002 /* PrivacyViewController.swift */,
+			);
+			path = Privacy;
+			sourceTree = "<group>";
+		};
+		BB5000000000000000000001 /* Updates */ = {
+			isa = PBXGroup;
+			children = (
+				BB5000000000000000000002 /* UpdatesViewController.swift */,
+			);
+			path = Updates;
 			sourceTree = "<group>";
 		};
 		D87370360099F87C13241871 /* Frameworks */ = {
@@ -548,9 +603,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-AppticsDemo-AppticsDemoUITests/Pods-AppticsDemo-AppticsDemoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-AppticsDemo-AppticsDemoUITests/Pods-AppticsDemo-AppticsDemoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -581,13 +640,17 @@
 		};
 		AD543CBC413CF46198156118 /* [CP-User] Apptics pre build */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			files = (
 			);
+			inputPaths = (
+			);
 			name = "[CP-User] Apptics pre build";
+			outputPaths = (
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "sh \"./Pods/Apptics-SDK/scripts/run\" --upload-symbols-for-configurations=\"Release, AppStore\"";
+			shellScript = "sh \"./Pods/Apptics-SDK/scripts/run\" --upload-symbols-for-configurations=\"Release, AppStore\"\n";
 		};
 		FD9292B29BE823FD78957D79 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -597,9 +660,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-AppticsDemo/Pods-AppticsDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-AppticsDemo/Pods-AppticsDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -639,6 +706,11 @@
 				A27C2874279971A500EA16CF /* NonFatalMaster.m in Sources */,
 				A27C285F27993C0700EA16CF /* EventsTableList.swift in Sources */,
 				A27C287E27997F3200EA16CF /* APIListViewController.swift in Sources */,
+				BB1000000000000000000003 /* ScreenTrackingViewController.swift in Sources */,
+				BB2000000000000000000003 /* RemoteConfigViewController.swift in Sources */,
+				BB3000000000000000000003 /* RemoteLoggerViewController.swift in Sources */,
+				BB4000000000000000000003 /* PrivacyViewController.swift in Sources */,
+				BB5000000000000000000003 /* UpdatesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -828,10 +900,12 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = AppticsDemo/AppticsDemo.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1.1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = G8T3WV9A3U;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 7VPXG96P25;
 				ENABLE_HARDENED_RUNTIME = YES;
 				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				EXCLUDED_ARCHS = "";
@@ -846,8 +920,10 @@
 				);
 				MARKETING_VERSION = 1.1;
 				OTHER_CODE_SIGN_FLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.apptics.demo.ios;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jambav.appticsapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Apptics Dev";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "AppticsDemo/AppticsDemo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -867,9 +943,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = AppticsDemo/AppticsDemo.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1.1;
-				DEVELOPMENT_TEAM = G8T3WV9A3U;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 7VPXG96P25;
 				ENABLE_HARDENED_RUNTIME = YES;
 				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				EXCLUDED_ARCHS = "";
@@ -884,8 +962,10 @@
 				);
 				MARKETING_VERSION = 1.1;
 				OTHER_CODE_SIGN_FLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.apptics.demo.ios;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jambav.appticsapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Apptics Dev";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "AppticsDemo/AppticsDemo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
@@ -1052,10 +1132,12 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = AppticsDemo/AppticsDemo.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1.1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = G8T3WV9A3U;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 7VPXG96P25;
 				ENABLE_HARDENED_RUNTIME = YES;
 				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				EXCLUDED_ARCHS = "";
@@ -1070,8 +1152,10 @@
 				);
 				MARKETING_VERSION = 1.1;
 				OTHER_CODE_SIGN_FLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.apptics.demo.ios;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jambav.appticsapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Apptics Dev";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "AppticsDemo/AppticsDemo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";

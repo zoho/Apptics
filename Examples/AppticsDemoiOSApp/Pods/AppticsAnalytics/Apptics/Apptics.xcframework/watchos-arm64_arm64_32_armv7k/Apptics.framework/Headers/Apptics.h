@@ -40,6 +40,7 @@
 #import <Apptics/APRateusObject.h>
 
 #import <Apptics/APRemoteConfigObject.h>
+#import <Apptics/APUser.h>
 
 #if TARGET_OS_OSX
 #import <Apptics/ZAnalyticsNSApplication.h>
@@ -164,7 +165,7 @@ Enable or disable automatic session tracking using this method. This feature is 
  @param status  BOOL
  */
 
-+ (void) setEnableBackgroundTask:(BOOL) status API_AVAILABLE(ios(13.0), tvos(13.0)) API_UNAVAILABLE(macos, watchos);
++ (void) setEnableBackgroundTask:(BOOL) status API_AVAILABLE(ios(13.0), tvos(13.0), watchos(3.0)) API_UNAVAILABLE(macos);
 
 
 /**
@@ -179,6 +180,9 @@ Enable or disable automatic session tracking using this method. This feature is 
  */
 
 + (void) setCompleteOff:(BOOL) status;
+
+
+
    
 #pragma mark - Device consent
 
@@ -293,6 +297,21 @@ void AP_TrackException(const char *file, int lineNumber, const char *functionNam
 + (void) trackLogOut:(NSString* _Nullable)userID groupId : (NSString*_Nullable)groupID NS_EXTENSION_UNAVAILABLE("don't use this method in your extensions");
 
 /**
+ * @brief Processes an APUser object for analytics or further operations.
+ *
+ * This method accepts an APUser instance and performs initial validation
+ * before proceeding with further tracking or processing. It is typically used
+ * to handle user identification or behavior tracking within the SDK or app logic.
+ *
+ * @param user The APUser object containing user ID, group, status, and properties.
+ *
+ * @discussion Ensure that the APUser object is properly initialized before passing.
+ * Invalid or nil objects will be ignored with a logged message.
+ */
+
++ (void) setUser:(APUser * _Nullable)user NS_EXTENSION_UNAVAILABLE("don't use this method in your extensions");
+
+/**
  Specify a user identifier which will be used to identify the user in the future. We recommend you use a unique userID.
  
  - Warning:
@@ -363,6 +382,9 @@ void AP_TrackException(const char *file, int lineNumber, const char *functionNam
  
  @param status boolean
  */
+
+
+
 
 + (void) setTrackingStatus : (BOOL) status;
 
@@ -562,6 +584,10 @@ After initializing Apptics, call this method to enable auto check for updates.
  Returns the reachability status of a the network connection.
  */
 +(BOOL)isReachable;
+
++ (BOOL) customerGroupTrackingStatus;
+
+
 
 @end
 NS_ASSUME_NONNULL_END

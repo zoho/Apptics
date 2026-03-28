@@ -145,6 +145,9 @@ yarn.lock
 package-lock.json
 Podfile.lock
 
+## Claude files 
+.claude
+
 ## Apptics config files (contain app credentials — never commit)
 apptics-config.plist
 apptics-config.json

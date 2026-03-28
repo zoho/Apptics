@@ -30,6 +30,7 @@ typedef enum : NSInteger {
 @optional
 -(UIColor *_Nullable)tintColor;
 -(UIColor *_Nullable)barTintColor;
+
 -(UINavigationBarAppearance *)standardAppearance API_AVAILABLE(ios(13.0), tvos(13.0));
 //-(UINavigationBarAppearance *)scrollEdgeAppearance API_AVAILABLE(ios(13.0), tvos(13.0));
 -(BOOL) translucent;
@@ -62,12 +63,12 @@ typedef enum : NSInteger {
 -(UIFont *_Nullable)footerTextFont;
 #if !TARGET_OS_WATCH
 -(UIButton *_Nullable)backButton;
+- (void)za_traitCollectionDidChange:(UITraitCollection *)previousTraitCollection;
 #endif
 -(CGFloat) lineSpacing;
 -(CGFloat) cellVerticalPadding;
 -(CGSize) preferredContentSize;
 
-- (void)za_traitCollectionDidChange:(UITraitCollection *)previousTraitCollection;
 #endif
 -(NSString *_Nullable)fontName;
 
@@ -76,6 +77,11 @@ typedef enum : NSInteger {
 @protocol APFeedbackTheme <APTheme>
 #if !TARGET_OS_OSX && !TARGET_OS_WATCH
 @optional
+
+-(UIColor *_Nullable)recordingprimaryColorLight;
+-(UIColor *_Nullable)recordingprimaryColorLightStartLabelcolor;
+-(UIColor *_Nullable)recordingprimaryColorDark;
+-(UIColor *_Nullable)recordingprimaryColorDarkStartLabelcolor;
 
 -(UIColor *_Nullable)viewBGColor;
 -(UIColor *_Nullable)contentBGColor;
@@ -95,6 +101,7 @@ typedef enum : NSInteger {
 -(UIColor *_Nullable)accessorySubHeaderTextColor;
 
 -(UIColor *_Nullable)collectionViewCellBorderColor;
+
 
 -(UIColor *_Nullable)separatorColor;
 
@@ -157,7 +164,7 @@ typedef enum : NSInteger {
 @end
 
 @protocol APCustomAlertTheme <NSObject>
-#if !TARGET_OS_OSX
+#if !TARGET_OS_OSX && !TARGET_OS_WATCH
 @optional
 -(UIColor *_Nullable)viewBGColor;
 -(UIColor *_Nullable)primaryColor;

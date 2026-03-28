@@ -20,11 +20,11 @@ variant_for_slice()
   "AppticsFeedbackKit.xcframework/ios-arm64")
     echo ""
     ;;
-  "AppticsFeedbackKit.xcframework/ios-arm64_x86_64-maccatalyst")
-    echo "maccatalyst"
-    ;;
   "AppticsFeedbackKit.xcframework/ios-arm64_x86_64-simulator")
     echo "simulator"
+    ;;
+  "AppticsFeedbackKit.xcframework/macos-arm64")
+    echo ""
     ;;
   esac
 }
@@ -35,11 +35,11 @@ archs_for_slice()
   "AppticsFeedbackKit.xcframework/ios-arm64")
     echo "arm64"
     ;;
-  "AppticsFeedbackKit.xcframework/ios-arm64_x86_64-maccatalyst")
-    echo "arm64 x86_64"
-    ;;
   "AppticsFeedbackKit.xcframework/ios-arm64_x86_64-simulator")
     echo "arm64 x86_64"
+    ;;
+  "AppticsFeedbackKit.xcframework/macos-arm64")
+    echo "arm64"
     ;;
   esac
 }
@@ -123,5 +123,5 @@ install_xcframework() {
   echo "Copied $source to $destination"
 }
 
-install_xcframework "${PODS_ROOT}/AppticsFeedbackKit/AppticsFeedbackKit.xcframework" "AppticsFeedbackKit/FeedbackKit" "framework" "ios-arm64" "ios-arm64_x86_64-maccatalyst" "ios-arm64_x86_64-simulator"
+install_xcframework "${PODS_ROOT}/AppticsFeedbackKit/AppticsFeedbackKit.xcframework" "AppticsFeedbackKit/FeedbackKit" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
 

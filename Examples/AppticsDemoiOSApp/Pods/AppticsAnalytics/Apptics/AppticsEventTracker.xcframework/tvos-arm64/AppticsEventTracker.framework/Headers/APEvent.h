@@ -170,7 +170,7 @@ extern NSString *const AP_GROUP_USER_LIFE_CYCLE;
  *  @param eventName Name of the event
  */
 
-+ (void) startTimedEvent:(nonnull NSString*)eventName;
++ (void) startTimedEvent:(nonnull NSString*)eventName __deprecated_msg("use startTimedEventWithEventName method instead.");
 
 /**
  *  Starts a timed event with an Event name and a group name. Use groupnames to group events.
@@ -179,7 +179,7 @@ extern NSString *const AP_GROUP_USER_LIFE_CYCLE;
  *  @param group Name of the group for the given event
  */
 
-+ (void) startTimedEvent:(nonnull NSString*)eventName group:(nonnull NSString*)group;
++ (void) startTimedEvent:(nonnull NSString*)eventName group:(nonnull NSString*)group __deprecated_msg("use startTimedEventWithEventName method instead.");
 
 
 /**
@@ -191,7 +191,7 @@ extern NSString *const AP_GROUP_USER_LIFE_CYCLE;
  *  @param properties Key-Value pair NSDictionary for tracking custom properties for the given event.Remember, the properties should be NSJSONSerializable, so use only data types that conforms the standard JSON protocol, like NSStrings, Integer, long etc
  */
 
-+ (void) startTimedEvent:(nonnull NSString*)eventName group:(nonnull NSString*)group andProperties:(_Nullable id)properties;
++ (void) startTimedEvent:(nonnull NSString*)eventName group:(nonnull NSString*)group andProperties:(_Nullable id)properties __deprecated_msg("use startTimedEventWithEventName method instead.");
 
 /**
  *  Ends the Timed event. Make sure you give the same name of the event.
@@ -202,7 +202,7 @@ extern NSString *const AP_GROUP_USER_LIFE_CYCLE;
  *  @param eventName Name of the Timed Event.
  */
 
-+ (void) endTimedEvent:(NSString *_Nonnull)eventName;
++ (void) endTimedEvent:(NSString *_Nonnull)eventName __deprecated_msg("use endTimedEventWithEventName method instead.");
 
 /**
  *  Ends the Timed event. Make sure you give the same event and group name.
@@ -214,7 +214,26 @@ extern NSString *const AP_GROUP_USER_LIFE_CYCLE;
  *  @param group Name of the Group
  */
 
-+ (void) endTimedEvent:(NSString *_Nonnull)eventName withGroup:(NSString*_Nonnull)group;
++ (void) endTimedEvent:(NSString *_Nonnull)eventName withGroup:(NSString*_Nonnull)group __deprecated_msg("use endTimedEventWithEventName method instead.");
+
+
+
+
+
+//MARK: New timed events start & end method
+
++(NSNumber *) startTimedEventWithEventName:(nonnull NSString*)eventName group:(nonnull NSString*)group andProperties:(id _Nullable) properties;
+
+
+
++ (void) endTimedEventWithEventName:(nonnull NSString*)eventName group:(nonnull NSString*)group andstartTime:(NSNumber*) startTime;
+
+
+
+
+
+
+
 
 + (void) addExtensionEventWithName:(NSString* _Nonnull)_eventName
                             group:(NSString* _Nonnull)_group
@@ -259,6 +278,7 @@ extern NSString *const AP_GROUP_USER_LIFE_CYCLE;
  *  @param eventName Name of the event
  */
 
+- (void) checkPropsAndsendTimedEventWithEvent:(nonnull NSString*)eventName group:(nonnull NSString*)group startTime:(NSNumber*)starttime andProperties:(id _Nullable) properties;
 
 - (void) startTimedEvent:(NSString*_Nonnull)eventName;
 

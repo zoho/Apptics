@@ -107,20 +107,57 @@ enum TargetDevice {
 
 //MARK: load font from bundle
 
+//public func loadFontForCPResourceBundle() {
+//    
+//    guard let url = bundles1.url(forResource: appticsFontName, withExtension: "ttf") else {
+//        return
+//    }
+//    guard let fontDataProvider = CGDataProvider(url: url as CFURL) else {
+//        return
+//    }
+//    guard let font = CGFont(fontDataProvider) else {
+//        return
+//    }
+//    var error: Unmanaged<CFError>?
+//    if !CTFontManagerRegisterGraphicsFont(font, &error) {
+//        print(error!.takeUnretainedValue())
+//    }
+//}
+
 public func loadFontForCPResourceBundle() {
-    
-    guard let url = bundles.url(forResource: appticsFontName, withExtension: "ttf") else {
+    struct Static {
+        static var didLoadFont: Bool = false
+    }
+    guard !Static.didLoadFont else { return }
+    Static.didLoadFont = true
+    guard let url = bundles.url(forResource: appticsFontName, withExtension: "ttf"),
+          let fontDataProvider = CGDataProvider(url: url as CFURL),
+          
+          let font = CGFont(fontDataProvider) else {
         return
     }
-    guard let fontDataProvider = CGDataProvider(url: url as CFURL) else {
-        return
-    }
-    guard let font = CGFont(fontDataProvider) else {
-        return
-    }
+     
     var error: Unmanaged<CFError>?
-    if !CTFontManagerRegisterGraphicsFont(font, &error) {
-        print(error!.takeUnretainedValue())
+       if !CTFontManagerRegisterGraphicsFont(font, &error) {
+           if let cfError = error?.takeUnretainedValue() {
+               let nsError = cfError as Error
+               print("❌ Font registration failed: \(nsError.localizedDescription)")
+           } else {
+               print("❌ Font registration failed: Unknown error")
+           }
+       } else {
+           let postScriptName = font.postScriptName as String? ?? "unknown"
+           print("✅ Font '\(postScriptName)' loaded successfully.")
+       }
+}
+
+public func printAllLoadedFonts() {
+    for family in UIFont.familyNames.sorted() {
+        print("Family: \(family)")
+        let fontNames = UIFont.fontNames(forFamilyName: family).sorted()
+        for name in fontNames {
+            print("  Font: \(name)")
+        }
     }
 }
 
@@ -153,10 +190,19 @@ public struct FontIconText {
 }
 
 
+//#if SWIFT_PACKAGE
+//public let bundles = Bundle.module
+//#else
+//public let bundles = Bundle(for: GradientButton.self)
+//#endif
+
+
 #if SWIFT_PACKAGE
 public let bundles = Bundle.module
 #else
-public let bundles = Bundle(for: GradientButton.self)
+public let bundles1 = Bundle(for: GradientButton.self)
+public let bundles = Bundle(url: Bundle(for: GradientButton.self).url(forResource: "APFeedbackSwift", withExtension: "bundle") ?? Bundle(for: GradientButton.self).bundleURL) ?? Bundle(for: GradientButton.self)
+
 #endif
 
 
@@ -352,82 +398,11 @@ public extension UIButton {
 }
 
 
-enum TrailingContent {
-    case readmore
-    case readless
-
-    var text: String {
-        switch self {
-        case .readmore: return " ...More"
-        case .readless: return "  Less"
-        }
-    }
-}
-
-extension UILabel {
-
-    private var minimumLines: Int { return 4 }
-    private var highlightedColor: UIColor { return .blue }
-
-    private var attributes: [NSAttributedString.Key: Any] {
-        return [.font: self.font ?? .systemFont(ofSize: 16)]
-    }
-    
-    public func requiredHeight(for text: String) -> CGFloat {
-        let label = UILabel(frame: CGRect(x: 0, y: 0, width: frame.width, height: CGFloat.greatestFiniteMagnitude))
-        label.numberOfLines = minimumLines
-        label.lineBreakMode = NSLineBreakMode.byTruncatingTail
-        label.font = font
-        label.text = text
-        label.sizeToFit()
-        return label.frame.height
-      }
-
-    func highlight(_ text: String, color: UIColor) {
-        guard let labelText = self.text else { return }
-        let range = (labelText as NSString).range(of: text)
-
-        let mutableAttributedString = NSMutableAttributedString.init(string: labelText)
-        mutableAttributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: color, range: range)
-        self.attributedText = mutableAttributedString
-    }
-
-    func appendReadmore(after text: String, trailingContent: TrailingContent,highledcolor:UIColor) {
-        self.numberOfLines = minimumLines
-        let fourLineText = "\n\n\n"
-        let fourlineHeight = requiredHeight(for: fourLineText)
-        let sentenceText = NSString(string: text)
-        let sentenceRange = NSRange(location: 0, length: sentenceText.length)
-        var truncatedSentence: NSString = sentenceText
-        var endIndex: Int = sentenceRange.upperBound
-        let size: CGSize = CGSize(width: self.bounds.width, height: CGFloat.greatestFiniteMagnitude)
-        while truncatedSentence.boundingRect(with: size, options: .usesLineFragmentOrigin, attributes: attributes, context: nil).size.height >= fourlineHeight {
-            if endIndex == 0 {
-                break
-            }
-            endIndex -= 1
-
-            truncatedSentence = NSString(string: sentenceText.substring(with: NSRange(location: 0, length: endIndex)))
-            truncatedSentence = (String(truncatedSentence) + trailingContent.text) as NSString
-
-        }
-        self.text = truncatedSentence as String
-        self.highlight(trailingContent.text, color: highledcolor)
-    }
-
-    func appendReadLess(after text: String, trailingContent: TrailingContent,highledcolor:UIColor) {
-        self.numberOfLines = 0
-        self.text = text + trailingContent.text
-        self.highlight(trailingContent.text, color: highledcolor)
-    }
-
-}
 
 extension UITextView {
     func leftSpace() {
         self.textContainerInset = UIEdgeInsets(top: 10, left: 7, bottom: 4, right: 55)
     }
-    
 }
 
 
@@ -440,7 +415,24 @@ extension UITextView {
 
 
 
-
+func setFontForButtonedit(
+    button: UIButton,
+    fontName: String,
+    title: String,
+    size: CGFloat
+) {
+    if button.buttonType != .custom {
+        button.setTitle(nil, for: .normal)
+    }
+    guard let font = UIFont(name: fontName, size: size) else {
+        return
+    }
+    button.setImage(nil, for: .normal)
+    button.setTitle(title, for: .normal)
+    button.titleLabel?.font = font
+    button.titleLabel?.textAlignment = .center
+    button.titleLabel?.lineBreakMode = .byClipping
+}
 
 
 

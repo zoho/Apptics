@@ -17,7 +17,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) BOOL operationinProgress;
 @property (nonatomic, strong) NSMutableArray *successblocks;
 @property (nonatomic, strong) NSMutableArray *failureblocks;
-typedef void (^requestSuccessBlock)(NSString *token);
+@property int retryCount;
+@property bool shouldMigrate;
+
+typedef void (^requestSuccessBlock)( NSString * _Nullable token);
 typedef void (^requestFailureBlock)(NSError *error);
 
 typedef void (^ apiRequestSuccessBlock)(NSURLResponse *response, id responseObject);
@@ -28,7 +31,7 @@ typedef void (^ apiRequestFailureBlock)(NSURLResponse *response, NSError *error)
 + (APAAAUtil* _Nonnull) sharedManagerForAnonymousUser;
 + (APAAAUtil* _Nonnull) sharedManagerForUser;
 
-- (void) getTokenWithSuccess:(requestSuccessBlock)success andFailure:(requestFailureBlock)failure;
+- (void) getTokenWithSuccess:(requestSuccessBlock)success;// andFailure:(requestFailureBlock)failure;
 - (void) setHeaderFields:(NSMutableURLRequest*) request migrateDevice : (bool) migrate;
 - (void) removeRefreshToken;
 - (void) removeTokenTime;

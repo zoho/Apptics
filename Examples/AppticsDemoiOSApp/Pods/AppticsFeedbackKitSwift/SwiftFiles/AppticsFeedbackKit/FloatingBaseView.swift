@@ -106,10 +106,37 @@ import AppticsFeedbackKit
         floatview.cancelBttn.setAttributedText(attributes: textAttributes as! [NSAttributedString.Key : Any])
         floatview.snapBttn.setAttributedText(attributes: textAttributes as! [NSAttributedString.Key : Any])
         floatview.screenshotBttn.setAttributedText(attributes: textAttributes as! [NSAttributedString.Key : Any])
-        floatview.cancelImage.setAttributedText(attributes: textAttributes as! [NSAttributedString.Key : Any])
-        floatview.snapImage.setAttributedText(attributes: textAttributes as! [NSAttributedString.Key : Any])
-        floatview.screenshotsImage.setAttributedText(attributes: textAttributes as! [NSAttributedString.Key : Any])
+        let attributes = textAttributes as? [NSAttributedString.Key: Any]
+        if let attributess = attributes,
+           let textColor = attributess[.foregroundColor] as? UIColor {
+            setcolorforbttnIcons(colors: textColor)
+
+        } else {
+            setcolorforbttnIcons(colors: .systemBlue)
+        }
+        setFontforbttnIcons()
+
     }
+
+    
+    func setFontforbttnIcons(){
+        floatview.cancelImage.setTitle(FontIconText.cancelIcon, for: .normal)
+        floatview.snapImage.setTitle(FontIconText.snapIcon, for: .normal)
+        floatview.screenshotsImage.setTitle(FontIconText.screenshotsIcon, for: .normal)
+    }
+    func setcolorforbttnIcons(colors:UIColor){
+        floatview.cancelImage.setTitleColor(colors, for: .normal)
+        floatview.snapImage.setTitleColor(colors, for: .normal)
+        floatview.screenshotsImage.setTitleColor(colors, for: .normal)
+    }
+    
+    
+    
+    
+    
+    
+    
+    
     
     //MARK: change theme accouding to traits
     
@@ -157,7 +184,7 @@ import AppticsFeedbackKit
     public override func viewDidLoad() {
         super.viewDidLoad()
         FeedbackKit.stopMonitoring()
-        loadFontForCPResourceBundle()
+//        loadFontForCPResourceBundle()
         addFloatingView()
     }
   
@@ -312,8 +339,8 @@ import AppticsFeedbackKit
         alertController.addAction(UIAlertAction(title: FeedbackKit.getLocalizableString(forKey: "zanalytics.bug.alert.detectscreen.yes"), style: UIAlertAction.Style.cancel, handler: { _ in
             
             self.floatviewHide()
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                self.window.isHidden = true
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { [weak self] in
+                self?.window.isHidden = true
             }
         }))
         alertController.addAction(UIAlertAction(title: FeedbackKit.getLocalizableString(forKey: "zanalytics.feedback.privacy.consent.cancel")!, style: UIAlertAction.Style.default, handler: { _ in
@@ -341,6 +368,7 @@ import AppticsFeedbackKit
                         self.window.removeFromSuperview()
                         self.sceneAlertWindow.isHidden = true
                         self.sceneAlertWindow.removeFromSuperview()
+                        self.sceneAlertWindow = nil
                     }
                 }))
                 alertController.addAction(UIAlertAction(title: FeedbackKit.getLocalizableString(forKey: "zanalytics.feedback.privacy.consent.cancel")!, style: UIAlertAction.Style.default, handler: { _ in
@@ -413,44 +441,32 @@ import AppticsFeedbackKit
     }
     
 //MARK: Take Screenshot Method
-    func screenshot() -> UIImage {
-        let imageSize = UIScreen.main.bounds.size as CGSize
-        UIGraphicsBeginImageContextWithOptions(imageSize, false, 0.0)
-        let context = UIGraphicsGetCurrentContext()
-        for obj : AnyObject in UIApplication.shared.windows {
-            if let window = obj as? UIWindow {
-                if window.responds(to: #selector(getter: UIWindow.screen)) || window.screen == UIScreen.main {
-                    context!.saveGState();
-                    context!.translateBy(x: window.center.x, y: window.center
-                        .y);
-                    context!.concatenate(window.transform);
-                    context!.translateBy(x: -window.bounds.size.width * window.layer.anchorPoint.x,
-                                         y: -window.bounds.size.height * window.layer.anchorPoint.y);
-                    window.layer.render(in: context!)
-                    context!.restoreGState();
-                }
-            }
-        }
-        ScreenshotFlashEffect(duration: 0.4)
-        let image = UIGraphicsGetImageFromCurrentImageContext()
-        return image!
-    }
-    
-    //MARK: save image to cache folder
-    public func saveImage(image:UIImage) -> URL? {
-        let  image = UIApplication.shared.takeScreenshot()
-        let resizedpic = image!.resize(targetSize: CGSize(width: view.frame.size.width  , height: view.frame.size.height))
-        guard let imageData = resizedpic.jpegData(compressionQuality: 0.25) else {
-            return nil
-        }
-        do {
-            let imageURL = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first!.appendingPathComponent("Appticssdk\(setDate()).png")
-            try imageData.write(to: imageURL)
-            return imageURL
-        } catch {
-            return nil
-        }
-    }
+
+         func screenshot() -> UIImage {
+             let renderer = UIGraphicsImageRenderer(size: UIScreen.main.bounds.size)
+             let image = renderer.image { context in
+                 for window in UIApplication.shared.windows {
+                     window.drawHierarchy(in: window.bounds, afterScreenUpdates: true)
+                 }
+             }
+             ScreenshotFlashEffect(duration: 0.4)
+             return image
+         }
+         
+         //MARK: save image to cache folder
+         public func saveImage(image:UIImage) -> URL? {
+             let resizedpic = image.resize(targetSize: CGSize(width: view.frame.size.width  , height: view.frame.size.height))
+             guard let imageData = resizedpic.jpegData(compressionQuality: 0.25) else {
+                 return nil
+             }
+             do {
+                 let imageURL = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first!.appendingPathComponent("Appticssdk\(setDate()).png")
+                 try imageData.write(to: imageURL)
+                 return imageURL
+             } catch {
+                 return nil
+             }
+         }
     
     //MARK: get current date
     func setDate() -> String{
@@ -488,58 +504,9 @@ import AppticsFeedbackKit
         NotificationCenter.default.removeObserver(self, name: Notification.Name(notificationbadgereloadKey), object: nil)
         NotificationCenter.default.removeObserver(self, name: Notification.Name("com.appticssdkWindowClose"), object: nil)
         NotificationCenter.default.removeObserver(self, name: Notification.Name(notificationviewHideandDismiss), object: nil)
-
-    }
-}
+        NotificationCenter.default.removeObserver(self)
 
 
-//MARK: Screenshot Extension Methods
-
-extension UIApplication {
-    func getKeyWindow() -> UIWindow? {
-        if #available(iOS 13, *) {
-            return UIApplication.shared.connectedScenes
-                .filter { $0.activationState == .foregroundActive }
-                .first(where: { $0 is UIWindowScene })
-                .flatMap({ $0 as? UIWindowScene })?.windows
-                .first(where: \.isKeyWindow)
-        } else {
-            return keyWindow
-        }
-    }
-    
-    public  func takeScreenshot() -> UIImage? { return getKeyWindow()?.layer.takeScreenshot() }
-}
-
-
-extension CALayer {
-    public func takeScreenshot() -> UIImage? {
-        let scale = UIScreen.main.scale
-        UIGraphicsBeginImageContextWithOptions(self.bounds.size, false, scale)
-        defer { UIGraphicsEndImageContext() }
-        guard let context = UIGraphicsGetCurrentContext() else { return nil }
-        render(in: context)
-        let screenshot = UIGraphicsGetImageFromCurrentImageContext()
-        return screenshot
-    }
-    
-}
-
-extension UIView {
-    func takeScreenshot() -> UIImage? {
-        if #available(iOS 10.0, *) {
-            let renderer = UIGraphicsImageRenderer(size: frame.size)
-            return renderer.image { _ in drawHierarchy(in: bounds, afterScreenUpdates: true) }
-        } else {
-            return layer.takeScreenshot()
-        }
-    }
-}
-
-extension UIImage {
-    convenience init?(snapshotOf view: UIView) {
-        guard let image = view.takeScreenshot(), let cgImage = image.cgImage else { return nil }
-        self.init(cgImage: cgImage, scale: image.scale, orientation: image.imageOrientation)
     }
 }
 

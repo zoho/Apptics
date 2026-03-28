@@ -64,6 +64,7 @@ static NSString * kJA_MamDc = @"kJA_MamDc";
 static NSString * kJA_Mam = @"kJA_Mam";
 static NSString * kJA_OrgID = @"kJA_OrgID";
 static NSString * kJA_MamKey = @"kJA_MamKey";
+static NSString * kJA_MamProps = @"kJA_MamProps";
 static NSString * kJA_MamInfo = @"kJA_MamInfo";
 static NSString * kJA_UserIds = @"kJA_UserIds";
 static NSString * kJA_UserGroupIds = @"kJA_UserGroupIds";
@@ -177,6 +178,15 @@ static NSString * kJA_autoReviewImpressionLimit = @"kJA_autoReviewImpressionLimi
 static NSString * kJA_autoPromptedDate = @"kJA_autoPromptedDate";
 static NSString * kJA_promoted_apps = @"promotedApps";
 
+static NSString * AP_permanentPermissionToScreenshot = @"AP_ScreenShieldUserChoice";
+static NSString * AP_isTemporaryPermissionGrantedKey = @"AP_ScreenShieldTemporaryPermissionGranted";
+static NSString * AP_ScreenShieldDisablePermissionGrantedNotification = @"ScreenShieldDisablePermissionGrantedNotification";
+
+static NSString * AP_SecureViewAddedToWindow = @"AP_SecureViewAddedToWindow";
+static NSString * AP_SecureViewRemovedFromWindow = @"AP_SecureViewRemovedFromWindow";
+static NSString * AP_RevertToDefaultScreenShieldNotification = @"AP_RevertToDefaultScreenShieldNotification";
+
+
 extern unsigned long long const APLogMaxFileSize;
 extern NSUInteger         const APLogMaxNumLogFiles;
 
@@ -190,4 +200,3 @@ typedef struct ZACrashCallback {
 static ZACrashCallback zaCrashCallback = {.context = NULL, .handleSignal = NULL};
 
 #endif /* ZAConstants_h */
-
