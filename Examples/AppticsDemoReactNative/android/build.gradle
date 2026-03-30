@@ -16,7 +16,16 @@ buildscript {
         classpath("com.android.tools.build:gradle")
         classpath("com.facebook.react:react-native-gradle-plugin")
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin")
-        classpath "com.zoho.apptics:apptics-plugin:0.2.4"
+        classpath "com.zoho.apptics:apptics-plugin:0.2.5"
+        classpath "com.google.gms:google-services:4.4.4"
+    }
+}
+
+allprojects {
+    repositories {
+        maven {
+            url "https://maven.zohodl.com/"
+        }
     }
 }
 

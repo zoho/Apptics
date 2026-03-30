@@ -116,7 +116,8 @@ export default function PushNotificationsScreen() {
       <ScrollView contentContainerStyle={styles.container}>
 
         {/* Registration */}
-        <View style={styles.card}>
+        {Platform.OS === 'ios' && (
+          <View style={styles.card}>
           <View style={styles.cardHeader}>
             <Text style={styles.sectionTitle}>Push Registration</Text>
             {registered && (
@@ -138,6 +139,8 @@ export default function PushNotificationsScreen() {
             </Text>
           </TouchableOpacity>
         </View>
+        )}
+        
 
         {/* Foreground options — iOS only */}
         {Platform.OS === 'ios' && (
@@ -233,7 +236,7 @@ export default function PushNotificationsScreen() {
             },
             {
               call: 'AppticsPushMessages.registerPushNotification()',
-              note: 'Triggers OS permission + token registration',
+              note: 'iOS only - Triggers OS permission + token registration',
             },
             {
               call: 'AppticsPushMessages.setForegroundNotificationOptions()',
