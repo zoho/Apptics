@@ -23,7 +23,7 @@ variant_for_slice()
   "AppticsRemoteConfig.xcframework/ios-arm64_x86_64-simulator")
     echo "simulator"
     ;;
-  "AppticsRemoteConfig.xcframework/macos-arm64")
+  "AppticsRemoteConfig.xcframework/macos-arm64_x86_64")
     echo ""
     ;;
   "AppticsRemoteConfig.xcframework/tvos-arm64")
@@ -50,8 +50,8 @@ archs_for_slice()
   "AppticsRemoteConfig.xcframework/ios-arm64_x86_64-simulator")
     echo "arm64 x86_64"
     ;;
-  "AppticsRemoteConfig.xcframework/macos-arm64")
-    echo "arm64"
+  "AppticsRemoteConfig.xcframework/macos-arm64_x86_64")
+    echo "arm64 x86_64"
     ;;
   "AppticsRemoteConfig.xcframework/tvos-arm64")
     echo "arm64"

@@ -23,7 +23,7 @@ variant_for_slice()
   "Apptics.xcframework/ios-arm64_x86_64-simulator")
     echo "simulator"
     ;;
-  "Apptics.xcframework/macos-arm64")
+  "Apptics.xcframework/macos-arm64_x86_64")
     echo ""
     ;;
   "Apptics.xcframework/tvos-arm64")
@@ -44,7 +44,7 @@ variant_for_slice()
   "AppticsEventTracker.xcframework/ios-arm64_x86_64-simulator")
     echo "simulator"
     ;;
-  "AppticsEventTracker.xcframework/macos-arm64")
+  "AppticsEventTracker.xcframework/macos-arm64_x86_64")
     echo ""
     ;;
   "AppticsEventTracker.xcframework/tvos-arm64")
@@ -65,7 +65,7 @@ variant_for_slice()
   "JWT.xcframework/ios-arm64_x86_64-simulator")
     echo "simulator"
     ;;
-  "JWT.xcframework/macos-arm64")
+  "JWT.xcframework/macos-arm64_x86_64")
     echo ""
     ;;
   "JWT.xcframework/tvos-arm64")
@@ -92,7 +92,7 @@ variant_for_slice()
   "AppticsScreenTracker.xcframework/ios-arm64_x86_64-simulator")
     echo "simulator"
     ;;
-  "AppticsScreenTracker.xcframework/macos-arm64")
+  "AppticsScreenTracker.xcframework/macos-arm64_x86_64")
     echo ""
     ;;
   "AppticsScreenTracker.xcframework/tvos-arm64")
@@ -119,8 +119,8 @@ archs_for_slice()
   "Apptics.xcframework/ios-arm64_x86_64-simulator")
     echo "arm64 x86_64"
     ;;
-  "Apptics.xcframework/macos-arm64")
-    echo "arm64"
+  "Apptics.xcframework/macos-arm64_x86_64")
+    echo "arm64 x86_64"
     ;;
   "Apptics.xcframework/tvos-arm64")
     echo "arm64"
@@ -140,8 +140,8 @@ archs_for_slice()
   "AppticsEventTracker.xcframework/ios-arm64_x86_64-simulator")
     echo "arm64 x86_64"
     ;;
-  "AppticsEventTracker.xcframework/macos-arm64")
-    echo "arm64"
+  "AppticsEventTracker.xcframework/macos-arm64_x86_64")
+    echo "arm64 x86_64"
     ;;
   "AppticsEventTracker.xcframework/tvos-arm64")
     echo "arm64"
@@ -161,8 +161,8 @@ archs_for_slice()
   "JWT.xcframework/ios-arm64_x86_64-simulator")
     echo "arm64 x86_64"
     ;;
-  "JWT.xcframework/macos-arm64")
-    echo "arm64"
+  "JWT.xcframework/macos-arm64_x86_64")
+    echo "arm64 x86_64"
     ;;
   "JWT.xcframework/tvos-arm64")
     echo "arm64"
@@ -188,8 +188,8 @@ archs_for_slice()
   "AppticsScreenTracker.xcframework/ios-arm64_x86_64-simulator")
     echo "arm64 x86_64"
     ;;
-  "AppticsScreenTracker.xcframework/macos-arm64")
-    echo "arm64"
+  "AppticsScreenTracker.xcframework/macos-arm64_x86_64")
+    echo "arm64 x86_64"
     ;;
   "AppticsScreenTracker.xcframework/tvos-arm64")
     echo "arm64"

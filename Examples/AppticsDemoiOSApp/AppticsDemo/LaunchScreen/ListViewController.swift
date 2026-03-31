@@ -212,8 +212,10 @@ class ListViewController: UIViewController {
         case .Privacy:
             navigationController?.pushViewController(PrivacyViewController(), animated: true)
         case .Login:
+            Apptics.trackLog(in:"user@example.com")
             break
         case .Logout:
+            Apptics.trackLogOut("user@example.com")
             break
         case .Opensettings:
             Apptics.openAnalyticSettingsController()

@@ -11,6 +11,7 @@ ${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsAnalytics/ScreenTracker/AppticsScreenTrack
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsApiTracker/ApiTracker/AppticsApiTracker.framework/AppticsApiTracker
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsFeedbackKit/FeedbackKit/AppticsFeedbackKit.framework/AppticsFeedbackKit
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsInAppUpdate/AppUpdate/AppticsInAppUpdate.framework/AppticsInAppUpdate
+${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsMessaging/AppticsMessaging/AppticsMessaging.framework/AppticsMessaging
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsPrivacyShield/AppticsPrivacyKit/AppticsPrivacyShield.framework/AppticsPrivacyShield
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsRateUs/RateUs/AppticsRateUs.framework/AppticsRateUs
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/AppticsRemoteConfig/RemoteConfig/AppticsRemoteConfig.framework/AppticsRemoteConfig

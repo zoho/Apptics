@@ -23,7 +23,7 @@ variant_for_slice()
   "AppticsApiTracker.xcframework/ios-arm64_x86_64-simulator")
     echo "simulator"
     ;;
-  "AppticsApiTracker.xcframework/macos-arm64")
+  "AppticsApiTracker.xcframework/macos-arm64_x86_64")
     echo ""
     ;;
   "AppticsApiTracker.xcframework/tvos-arm64")
@@ -44,8 +44,8 @@ archs_for_slice()
   "AppticsApiTracker.xcframework/ios-arm64_x86_64-simulator")
     echo "arm64 x86_64"
     ;;
-  "AppticsApiTracker.xcframework/macos-arm64")
-    echo "arm64"
+  "AppticsApiTracker.xcframework/macos-arm64_x86_64")
+    echo "arm64 x86_64"
     ;;
   "AppticsApiTracker.xcframework/tvos-arm64")
     echo "arm64"

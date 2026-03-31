@@ -11,11 +11,12 @@ import Apptics
 import MetricKit
 import AppticsFeedbackKit
 import Apptics_Swift
+import AppticsMessaging
 
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
+    
+    let notificationHandler = APNotificationHandler()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -38,7 +39,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         AppticsConfig.default.enableCrossPromotionAppsList = true // To enable Cross Promotion
         AppticsConfig.default.enableRateUs = true // To enable Rate us
         AppticsConfig.default.enableRemoteConfig = true // To enable Remote Config
-
+            
+        APMessaging.startService()
         Apptics.initialize(withVerbose: false) // 🤖​ To initialise Apptics framework with or without verbose.
 //        Apptics.setCompleteOff(false)
         Apptics.enableReviewAndSendCrashReport(true) // 🤖​ To show review prompt before sending the crash report.
@@ -59,7 +61,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Test().log()
         
 //        APLogVerbose("Verbose \(("someones@email.com" as NSString).ap_privacy(.sensitiveMask))")
-//        
+//
+        let center = UNUserNotificationCenter.current()
+        center.delegate = self
+        center.requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
+            
+            if let error = error {
+                // Handle the error here.
+            }
+            
+            // Enable or disable features based on the authorization.
+        }
+        
+        application.registerForRemoteNotifications()
+        
         return true
     }
 
@@ -120,6 +135,37 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
             }
         }
+    }
+
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        let tokenString = deviceToken.map { String(format: "%02x", $0) }.joined()
+            print("Device Token: \(tokenString)")
+    }
+    // Implement this to display notification when app is in foreground.
+    func userNotificationCenter(_ center: UNUserNotificationCenter,
+                                willPresent notification: UNNotification,
+                                withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions)
+                                  -> Void) {
+        print("Notification body: \(notification.request.content.body)")
+      completionHandler([.alert, .sound])
+    }
+
+    func userNotificationCenter(_ center: UNUserNotificationCenter,
+                                didReceive response: UNNotificationResponse,
+                                withCompletionHandler completionHandler: @escaping () -> Void) {
+    print("didReceive:\n")
+        notificationHandler.handle(response, completionHandler:completionHandler)
+      completionHandler()
+    }
+
+    func application(_ application: UIApplication,
+                     didReceiveRemoteNotification userInfo: [AnyHashable: Any],
+                     fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult)
+                       -> Void) {
+      print("Hidden message arrived:\n" + userInfo.debugDescription)
+      // Log delivery signal for data/hidden/background messages
+//      Messaging.serviceExtension().exportDeliveryMetricsToBigQuery(withMessageInfo: userInfo)
+      completionHandler(.newData)
     }
 
 }

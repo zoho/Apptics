@@ -1,72 +1,85 @@
 PODS:
-  - Apptics-SDK (3.3.13001):
-    - Apptics-SDK/AnalyticsWithMXCrash (= 3.3.13001)
-  - Apptics-SDK/AnalyticsWithMXCrash (3.3.13001):
+  - Apptics-SDK (3.3.12):
+    - Apptics-SDK/AnalyticsWithMXCrash (= 3.3.12)
+  - Apptics-SDK/AnalyticsWithMXCrash (3.3.12):
     - Apptics-SDK/Scripts
-    - AppticsAnalytics/CoreWithMXCrash (= 3.3.13001)
-  - Apptics-SDK/Scripts (3.3.13001)
-  - Apptics-Swift (3.3.13001):
-    - Apptics-Swift/AnalyticsWithMXCrash (= 3.3.13001)
-  - Apptics-Swift/AnalyticsWithMXCrash (3.3.13001):
-    - Apptics-SDK/AnalyticsWithMXCrash (= 3.3.13001)
-  - AppticsAnalytics/Apptics (3.3.13001):
+    - AppticsAnalytics/CoreWithMXCrash (= 3.3.12)
+  - Apptics-SDK/Scripts (3.3.12)
+  - Apptics-Swift (3.3.12):
+    - Apptics-Swift/AnalyticsWithMXCrash (= 3.3.12)
+  - Apptics-Swift/AnalyticsWithMXCrash (3.3.12):
+    - Apptics-SDK/AnalyticsWithMXCrash (= 3.3.12)
+  - AppticsAnalytics/Apptics (3.3.12):
     - AppticsAnalytics/JWT
-  - AppticsAnalytics/CoreWithMXCrash (3.3.13001):
+  - AppticsAnalytics/CoreWithMXCrash (3.3.12):
     - AppticsAnalytics/Apptics
     - AppticsAnalytics/CrashKit
     - AppticsAnalytics/EventTracker
     - AppticsAnalytics/MXCrashKit
     - AppticsAnalytics/ScreenTracker
-  - AppticsAnalytics/EventTracker (3.3.13001)
-  - AppticsAnalytics/JWT (3.3.13001)
-  - AppticsAnalytics/MXCrashKit (3.3.13001)
-  - AppticsAnalytics/ScreenTracker (3.3.13001)
-  - AppticsApiTracker (3.3.13001):
-    - AppticsApiTracker/ApiTracker (= 3.3.13001)
-  - AppticsApiTracker/ApiTracker (3.3.13001):
-    - AppticsAnalytics/Apptics (= 3.3.13001)
-  - AppticsCrossPromotion (3.3.13001):
-    - AppticsCrossPromotion/CrossPromotion (= 3.3.13001)
-  - AppticsCrossPromotion/CrossPromotion (3.3.13001):
-    - AppticsAnalytics/Apptics (= 3.3.13001)
-  - AppticsFeedbackKit (3.3.13001):
-    - AppticsFeedbackKit/FeedbackKit (= 3.3.13001)
-  - AppticsFeedbackKit/FeedbackKit (3.3.13001):
-    - AppticsAnalytics/Apptics (= 3.3.13001)
-  - AppticsFeedbackKitSwift (3.3.13001):
-    - AppticsFeedbackKitSwift/AppticsFeedbackKitSwift (= 3.3.13001)
-  - AppticsFeedbackKitSwift/AppticsFeedbackKitSwift (3.3.13001):
-    - AppticsFeedbackKit (= 3.3.13001)
-  - AppticsInAppUpdate (3.3.13001):
-    - AppticsInAppUpdate/AppUpdate (= 3.3.13001)
-  - AppticsInAppUpdate/AppUpdate (3.3.13001):
-    - AppticsAnalytics/Apptics (= 3.3.13001)
-  - AppticsPrivacyShield (3.3.13001):
-    - AppticsPrivacyShield/AppticsPrivacyKit (= 3.3.13001)
-  - AppticsPrivacyShield/AppticsPrivacyKit (3.3.13001):
-    - AppticsAnalytics/Apptics (= 3.3.13001)
-  - AppticsRateUs (3.3.13001):
-    - AppticsRateUs/RateUs (= 3.3.13001)
-  - AppticsRateUs/RateUs (3.3.13001):
-    - AppticsAnalytics/Apptics (= 3.3.13001)
-  - AppticsRemoteConfig (3.3.13001):
-    - AppticsRemoteConfig/RemoteConfig (= 3.3.13001)
-  - AppticsRemoteConfig/RemoteConfig (3.3.13001):
-    - AppticsAnalytics/Apptics (= 3.3.13001)
+  - AppticsAnalytics/EventTracker (3.3.12)
+  - AppticsAnalytics/JWT (3.3.12)
+  - AppticsAnalytics/MXCrashKit (3.3.12)
+  - AppticsAnalytics/ScreenTracker (3.3.12)
+  - AppticsApiTracker (3.3.12):
+    - AppticsApiTracker/ApiTracker (= 3.3.12)
+  - AppticsApiTracker/ApiTracker (3.3.12):
+    - AppticsAnalytics/Apptics (= 3.3.12)
+  - AppticsCrossPromotion (3.3.12):
+    - AppticsCrossPromotion/CrossPromotion (= 3.3.12)
+  - AppticsCrossPromotion/CrossPromotion (3.3.12):
+    - AppticsAnalytics/Apptics (= 3.3.12)
+  - AppticsFeedbackKit (3.3.12):
+    - AppticsFeedbackKit/FeedbackKit (= 3.3.12)
+  - AppticsFeedbackKit/FeedbackKit (3.3.12):
+    - AppticsAnalytics/Apptics (= 3.3.12)
+  - AppticsFeedbackKitSwift (3.3.12):
+    - AppticsFeedbackKitSwift/AppticsFeedbackKitSwift (= 3.3.12)
+  - AppticsFeedbackKitSwift/AppticsFeedbackKitSwift (3.3.12):
+    - AppticsFeedbackKit (= 3.3.12)
+  - AppticsInAppUpdate (3.3.12):
+    - AppticsInAppUpdate/AppUpdate (= 3.3.12)
+  - AppticsInAppUpdate/AppUpdate (3.3.12):
+    - AppticsAnalytics/Apptics (= 3.3.12)
+  - AppticsMessaging (3.3.12):
+    - AppticsMessaging/AppticsMessaging (= 3.3.12)
+  - AppticsMessaging/AppticsMessaging (3.3.12):
+    - AppticsAnalytics/Apptics (= 3.3.12)
+  - AppticsNotificationContentExtension (3.3.12):
+    - AppticsNotificationContentExtension/AppticsNotificationContentExtension (= 3.3.12)
+  - AppticsNotificationContentExtension/AppticsNotificationContentExtension (3.3.12)
+  - AppticsNotificationServiceExtension (3.3.12):
+    - AppticsNotificationServiceExtension/AppticsNotificationServiceExtension (= 3.3.12)
+  - AppticsNotificationServiceExtension/AppticsNotificationServiceExtension (3.3.12)
+  - AppticsPrivacyShield (3.3.12):
+    - AppticsPrivacyShield/AppticsPrivacyKit (= 3.3.12)
+  - AppticsPrivacyShield/AppticsPrivacyKit (3.3.12):
+    - AppticsAnalytics/Apptics (= 3.3.12)
+  - AppticsRateUs (3.3.12):
+    - AppticsRateUs/RateUs (= 3.3.12)
+  - AppticsRateUs/RateUs (3.3.12):
+    - AppticsAnalytics/Apptics (= 3.3.12)
+  - AppticsRemoteConfig (3.3.12):
+    - AppticsRemoteConfig/RemoteConfig (= 3.3.12)
+  - AppticsRemoteConfig/RemoteConfig (3.3.12):
+    - AppticsAnalytics/Apptics (= 3.3.12)
 
 DEPENDENCIES:
-  - Apptics-SDK (= 3.3.13001)
-  - Apptics-Swift (= 3.3.13001)
-  - AppticsApiTracker (= 3.3.13001)
-  - AppticsCrossPromotion (= 3.3.13001)
-  - AppticsFeedbackKitSwift (= 3.3.13001)
-  - AppticsInAppUpdate (= 3.3.13001)
-  - AppticsPrivacyShield (= 3.3.13001)
-  - AppticsRateUs (= 3.3.13001)
-  - AppticsRemoteConfig (= 3.3.13001)
+  - Apptics-SDK (= 3.3.12)
+  - Apptics-Swift (= 3.3.12)
+  - AppticsApiTracker (= 3.3.12)
+  - AppticsCrossPromotion (= 3.3.12)
+  - AppticsFeedbackKitSwift (= 3.3.12)
+  - AppticsInAppUpdate (= 3.3.12)
+  - AppticsMessaging (= 3.3.12)
+  - AppticsNotificationContentExtension (= 3.3.12)
+  - AppticsNotificationServiceExtension (= 3.3.12)
+  - AppticsPrivacyShield (= 3.3.12)
+  - AppticsRateUs (= 3.3.12)
+  - AppticsRemoteConfig (= 3.3.12)
 
 SPEC REPOS:
-  https://github.com/zoho/Apptics.git:
+  https://github.com/CocoaPods/Specs.git:
     - Apptics-SDK
     - Apptics-Swift
     - AppticsAnalytics
@@ -75,23 +88,29 @@ SPEC REPOS:
     - AppticsFeedbackKit
     - AppticsFeedbackKitSwift
     - AppticsInAppUpdate
+    - AppticsMessaging
+    - AppticsNotificationContentExtension
+    - AppticsNotificationServiceExtension
     - AppticsPrivacyShield
     - AppticsRateUs
     - AppticsRemoteConfig
 
 SPEC CHECKSUMS:
-  Apptics-SDK: 30f704f2d52393660f193fb0f61ca41927389cf4
-  Apptics-Swift: 00e683c4bc5acc43f26a6b4ee7d338dc43f95efd
-  AppticsAnalytics: a18501dc94672766b03e46d97e7629078183282a
-  AppticsApiTracker: caf6a412001746c0a3765ee4dc152b8bb66a5cff
-  AppticsCrossPromotion: a7987cf0d0fc531aca5313e9a42f8abedd6237f3
-  AppticsFeedbackKit: 7b980c45af09007350918cbeb14450c15df9976a
-  AppticsFeedbackKitSwift: 533e7a2ee0024555f9ef44803ab8fe86c43ce666
-  AppticsInAppUpdate: 206678b494b041ca8d06d2125559638029a68467
-  AppticsPrivacyShield: 74f4c61b430fe65af4e58e3b58f643c060587935
-  AppticsRateUs: 338c8b6c0911756e45edc476ccea2affcbd1b8a9
-  AppticsRemoteConfig: c6ae5c0a0516c5851a131aa56f174b707a3d51e8
+  Apptics-SDK: 93df13982a7d79328060f4d00f883e653c43ce8b
+  Apptics-Swift: 1ae516908c31ebb1a53e5be4582eb7749eab1dc1
+  AppticsAnalytics: 73e93b1c63fd41330dde7cda3552e9fa07d70f28
+  AppticsApiTracker: debfd0671db9a76ee5a30ef33a3c95d4e78b6d28
+  AppticsCrossPromotion: acc1dae427b66f5e2ffe7af30d7ea0d90bca676c
+  AppticsFeedbackKit: 280dc005e2702166e601f01fa07ed0bca83debdf
+  AppticsFeedbackKitSwift: bff3beb0f5f0d07ec81d33a90388aa3841d00f56
+  AppticsInAppUpdate: 5fa391052016c06b87a583b36b8f52ada6e293dc
+  AppticsMessaging: 3d0ea4eb08e9114ee8818a054c77a372145c2e4b
+  AppticsNotificationContentExtension: cad373ddee8171ea14cbbb22c9250d8c21ecf474
+  AppticsNotificationServiceExtension: b397ee73b36f2f2e4cdb78490a1facc588f95a44
+  AppticsPrivacyShield: 52b439d487afbc74e9647fdd17f622d63fd3d3d6
+  AppticsRateUs: 8aa76ce0a71f3a29cc9ddc4220a35ca66c4d80d6
+  AppticsRemoteConfig: c4fc3f55251c07a18a551e53ac13afc4b8df21cc
 
-PODFILE CHECKSUM: 16000ff1b45bb9fc343521277f93cae1b5e21e28
+PODFILE CHECKSUM: ffd27e753858b870628314c6b944d7571062a408
 
 COCOAPODS: 1.16.2

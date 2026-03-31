@@ -1,11 +1,11 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
-apptics_version = '3.3.13001' #debug version
-source_url = 'https://github.com/zoho/Apptics.git' #build source url.
+#apptics_version = '3.3.12' #debug version
+#source_url = 'https://github.com/zoho/Apptics.git' #build source url.
 
-#apptics_version = '1.0.7' #use non debug version for your Release build.
-#source_url = 'https://github.com/CocoaPods/Specs.git' #build source url.
+apptics_version = '3.3.12' #use non debug version for your Release build.
+source_url = 'https://github.com/CocoaPods/Specs.git' #build source url.
 
 source 'https://github.com/CocoaPods/Specs.git'
 
@@ -40,6 +40,8 @@ pod 'AppticsCrossPromotion', apptics_version , :source => source_url
 #
 pod 'AppticsPrivacyShield', apptics_version , :source => source_url
 
+pod 'AppticsMessaging', apptics_version , :source => source_url
+
   script_phase :name => 'Apptics pre build', :script => 'sh "./Pods/Apptics-SDK/scripts/run" --upload-symbols-for-configurations="Release, AppStore"', :execution_position => :before_compile
 #script_phase :name => 'Apptics pre build', :script => 'sh "${BUILD_DIR%Build/*}SourcePackages/checkouts/Apptics-SP/scripts/run" --upload-symbols-for-configurations="Release, Appstore" "', :execution_position => :before_compile
   
@@ -52,4 +54,16 @@ pod 'AppticsPrivacyShield', apptics_version , :source => source_url
     # Pods for testing
   end
   
+end
+
+target 'AppticsDemoNotificationServiceExtension' do
+  use_frameworks!
+  pod 'AppticsNotificationServiceExtension', '3.3.12'
+  # Pods for testing
+end
+
+target 'AppticsDemoNotificationContentExtension' do
+  use_frameworks!
+  pod 'AppticsNotificationContentExtension', '3.3.12'
+  # Pods for testing
 end
