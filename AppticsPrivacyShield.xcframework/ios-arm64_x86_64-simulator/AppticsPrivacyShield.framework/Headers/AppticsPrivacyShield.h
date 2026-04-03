@@ -80,4 +80,15 @@ typedef NS_ENUM(NSInteger, APPrivacyShieldPermissionState) {
  */
 + (BOOL)shouldPreventScreenCapture;
 
+/**
+ Controls whether the screen capture consent popup is allowed to appear.
+ Default is TRUE.
+ */
++ (void)setScreenCaptureConsentEnabled:(BOOL)enabled;
+
+/**
+ Returns whether screen capture consent popup is allowed to appear.
+ */
++ (BOOL)screenCaptureConsentEnabled;
+
 @end
