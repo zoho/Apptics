@@ -14,7 +14,7 @@
 		</data>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		9OYbNN3HQ6jX2iCVbFCTHT7skq4=
+		vTBDEPPWjKn4KagePe6pFom5G4Y=
 		</data>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeResources</key>
 		<data>
-		fCfup7nX4FsFx5jmGORrNQcub8E=
+		N0Wxzc9Bbnn9/PMg7rxPAFCXeVY=
 		</data>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeSignature</key>
 		<data>
@@ -219,7 +219,7 @@
 		</dict>
 		<key>AppticsResources_tvOS.bundle/sdkProp_info.plist</key>
 		<data>
-		nH6IrUyZxz6yzNjGPwUv+dGJrvU=
+		hxcOe9rGssOdcbY3l0pSNrj0afQ=
 		</data>
 		<key>AppticsResources_tvOS.bundle/sv.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
@@ -444,7 +444,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		IQyZPsluvNYnAyUDoq42R6N85yk=
+		hkWtQsCt3zBr377z7XGPww/YqNI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -483,11 +483,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9OYbNN3HQ6jX2iCVbFCTHT7skq4=
+			vTBDEPPWjKn4KagePe6pFom5G4Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			MjTp51DrUj+AYNVS/gihXsfX1lq6Fd6iYoL0km9RHj4=
+			UnxzpX71npqlP4dOj+Xbr7ctyGaxVgHkDN8ulwp+9C0=
 			</data>
 		</dict>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeRequirements</key>
@@ -505,11 +505,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fCfup7nX4FsFx5jmGORrNQcub8E=
+			N0Wxzc9Bbnn9/PMg7rxPAFCXeVY=
 			</data>
 			<key>hash2</key>
 			<data>
-			maJcq7vAIgGx3QB+YxmIotF+2w2UDrzfhWiR63DTV3M=
+			ModGkem5f+qxU9SDadAvf1I4x+amrxM/G+2brwPQaJU=
 			</data>
 		</dict>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeSignature</key>
@@ -800,11 +800,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nH6IrUyZxz6yzNjGPwUv+dGJrvU=
+			hxcOe9rGssOdcbY3l0pSNrj0afQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			PFwbmjaO2nIQHV/1Ty9J6zT4EifroZEmVKULBxUZwoA=
+			o4z/XVgbxTdg2bbgQ/2RYaby8vyxdzKQDNKMFkzQyTg=
 			</data>
 		</dict>
 		<key>AppticsResources_tvOS.bundle/sv.lproj/ZAnalyticsLocalizable.strings</key>

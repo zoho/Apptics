@@ -9,7 +9,7 @@
 	<key>CFBundleExecutable</key>
 	<string>Apptics</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.zoho.Apptics</string>
+	<string>com.zoho.Apptics-sdk</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>

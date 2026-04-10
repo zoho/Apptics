@@ -9,8 +9,8 @@
 	<key>MACOS_SDK_ID</key>
 	<string>5918</string>
 	<key>TVOS_SDK_ID</key>
-	<string>5819</string>
+	<string>5919</string>
 	<key>WATCHOS_SDK_ID</key>
-	<string>5820</string>
+	<string>5920</string>
 </dict>
 </plist>

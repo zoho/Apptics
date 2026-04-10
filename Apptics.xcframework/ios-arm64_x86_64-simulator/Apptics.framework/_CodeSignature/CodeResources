@@ -67,7 +67,7 @@
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		3XTDArn0Jd7hRm/Jly7RLjqEg+Q=
+		tbIYfdNrG3pUtLZxlbIP6ybvWzA=
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -75,7 +75,7 @@
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeResources</key>
 		<data>
-		d5yogCC3gsV9MEmNbI6d9msBFAQ=
+		oFFKewaoP5DsHwU0+vADkgf2rP4=
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeSignature</key>
 		<data>
@@ -512,7 +512,7 @@
 		</dict>
 		<key>AppticsResources.bundle/sdkProp_info.plist</key>
 		<data>
-		H6CWXl/YkQ8B6v7ZF3S+zGzeSh4=
+		hxcOe9rGssOdcbY3l0pSNrj0afQ=
 		</data>
 		<key>AppticsResources.bundle/sl.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
@@ -880,7 +880,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		q5URAXZRtITr6/8csHRDbhVJtKg=
+		0hN6FK9c77Pc/FP0PgFTogEdH4U=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -997,7 +997,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wrOOdiMrUgWlypS4YG2Oh7Eu2NqTMcq6JT23A+4RAX8=
+			bIY/63CeenFy7P3Wg+xg4ODmBALIpnyjbBBUpL4st8Y=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/_CodeSignature/CodeRequirements</key>
@@ -1011,7 +1011,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7fN65FcUtZ7kSC+7WVb30y+Bd0Olj252hKqi5/bf4Hc=
+			N+Zm6d8oN9StMUc33ZS/mzBpOHjo0udIfLI1mj723K8=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/_CodeSignature/CodeSignature</key>
@@ -1472,7 +1472,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			57SOX0r9KRIIVCcYyGq/9JfZVP3p0LWphFEeXllASOo=
+			o4z/XVgbxTdg2bbgQ/2RYaby8vyxdzKQDNKMFkzQyTg=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/sl.lproj/ZAnalyticsLocalizable.strings</key>
