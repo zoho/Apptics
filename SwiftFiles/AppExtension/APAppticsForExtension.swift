@@ -5,7 +5,6 @@
 //  Created by jai-13322 on 04/07/22.
 //
 
-#if os(iOS)
 
 import Foundation
 
@@ -13,6 +12,7 @@ import WatchConnectivity
 
 class WatchWCSessionManager: NSObject, WCSessionDelegate {
   
+#if os(iOS)
    func sessionDidBecomeInactive(_ session: WCSession) {
        print("sessionDidBecomeInactive")
    }
@@ -20,7 +20,8 @@ class WatchWCSessionManager: NSObject, WCSessionDelegate {
    func sessionDidDeactivate(_ session: WCSession) {
        print("sessionDidDeactivate")
    }
-
+#endif
+    
 
     static let shared = WatchWCSessionManager()
 
@@ -355,4 +356,3 @@ class APExtensionTimedEventList: NSObject, NSCoding {
 }
 
 
-#endif

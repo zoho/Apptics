@@ -111,22 +111,22 @@ NS_ASSUME_NONNULL_BEGIN
 #endif
 
 typedef void (^bgEngagementRequestSuccessBlock)(void);
-@property (nonatomic) bgEngagementRequestSuccessBlock _Nullable bgEngagementRequestSuccessBlock;
+@property (nonatomic, copy, nullable) bgEngagementRequestSuccessBlock bgEngagementRequestSuccessBlock;
 
 typedef void (^internbgEngagementRequestSuccessBlock)(void);
-@property (nonatomic) internbgEngagementRequestSuccessBlock _Nullable internbgEngagementRequestSuccessBlock;
+@property (nonatomic, copy, nullable) internbgEngagementRequestSuccessBlock internbgEngagementRequestSuccessBlock;
 
 typedef void (^bgNonFatalRequestSuccessBlock)(void);
-@property (nonatomic) bgNonFatalRequestSuccessBlock _Nullable bgNonFatalRequestSuccessBlock;
+@property (nonatomic, copy, nullable) bgNonFatalRequestSuccessBlock bgNonFatalRequestSuccessBlock;
 
 typedef void (^internbgNonFatalRequestSuccessBlock)(void);
-@property (nonatomic) internbgNonFatalRequestSuccessBlock _Nullable internbgNonFatalRequestSuccessBlock;
+@property (nonatomic, copy, nullable) internbgNonFatalRequestSuccessBlock internbgNonFatalRequestSuccessBlock;
 
 typedef void (^bgConsoleLogsRequestSuccessBlock)(void);
-@property (nonatomic) bgConsoleLogsRequestSuccessBlock _Nullable bgConsoleLogsRequestSuccessBlock;
+@property (nonatomic, copy, nullable) bgConsoleLogsRequestSuccessBlock bgConsoleLogsRequestSuccessBlock;
 
 typedef void (^internbgConsoleLogsRequestSuccessBlock)(void);
-@property (nonatomic) internbgConsoleLogsRequestSuccessBlock _Nullable internbgConsoleLogsRequestSuccessBlock;
+@property (nonatomic, copy, nullable) internbgConsoleLogsRequestSuccessBlock internbgConsoleLogsRequestSuccessBlock;
 
 /**
  *  Singleton instance
