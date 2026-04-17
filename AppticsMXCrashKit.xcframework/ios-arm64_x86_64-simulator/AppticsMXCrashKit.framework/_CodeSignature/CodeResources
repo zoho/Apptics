@@ -22,11 +22,11 @@
 		</data>
 		<key>Headers/AppticsMXCrashKit.h</key>
 		<data>
-		mfbAxKRCP4b8TrC4XJwZjJBbJfY=
+		J84g6wXGx7Odxe9O5BtyXbC/6+g=
 		</data>
-		<key>Headers/KMPCrash.h</key>
+		<key>Headers/KMPCrashReporter.h</key>
 		<data>
-		MXJmfZu7pLU/BnRHdgnjcevX/Rw=
+		2xqtVAHtbJXMrBPedrIZiUX60u4=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -75,14 +75,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VlGtIyxkc1EmZF57xqlHEDQZatU8Z7viZFPlBt7ZA48=
+			eCARiWgVNiiCnwZ3YTFR+Xx+9+rmgnOtAKSkJ2IdFgs=
 			</data>
 		</dict>
-		<key>Headers/KMPCrash.h</key>
+		<key>Headers/KMPCrashReporter.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			p7K6WKZq5RWHmzD66EBh2mSuCthDhTWOVVB8zIOlfqs=
+			w4CX7UTuoeR3ruCI7j3Upr/gkTd058OxECkfuE4O9uc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

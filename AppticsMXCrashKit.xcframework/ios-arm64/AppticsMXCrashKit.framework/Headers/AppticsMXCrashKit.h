@@ -19,6 +19,7 @@ FOUNDATION_EXPORT const unsigned char AppticsCrashKitVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <AppticsCrashKit/PublicHeader.h>
 
 #import "AppticsMXCrashKit/APCrashReporter.h"
+#import "AppticsMXCrashKit/KMPCrashReporter.h"
 
 #endif /* AppticsMXCrashKit_h */
 

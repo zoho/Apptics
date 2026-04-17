@@ -8,9 +8,9 @@
 		<data>
 		lvJcscPwNKVBiKtKk/BYj+XA0S8=
 		</data>
-		<key>Headers/KMPCrash.h</key>
+		<key>Headers/KMPCrashReporter.h</key>
 		<data>
-		MXJmfZu7pLU/BnRHdgnjcevX/Rw=
+		2xqtVAHtbJXMrBPedrIZiUX60u4=
 		</data>
 		<key>Headers/ZACrash.h</key>
 		<data>
@@ -42,11 +42,11 @@
 			jsBGAXx4tZbuibDAXOLQ/A0gU4NgUn1kvSUgoaBhGDM=
 			</data>
 		</dict>
-		<key>Headers/KMPCrash.h</key>
+		<key>Headers/KMPCrashReporter.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			p7K6WKZq5RWHmzD66EBh2mSuCthDhTWOVVB8zIOlfqs=
+			w4CX7UTuoeR3ruCI7j3Upr/gkTd058OxECkfuE4O9uc=
 			</data>
 		</dict>
 		<key>Headers/ZACrash.h</key>

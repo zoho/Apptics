@@ -185,6 +185,8 @@ static NSString * AP_ScreenShieldDisablePermissionGrantedNotification = @"Screen
 static NSString * AP_SecureViewAddedToWindow = @"AP_SecureViewAddedToWindow";
 static NSString * AP_SecureViewRemovedFromWindow = @"AP_SecureViewRemovedFromWindow";
 static NSString * AP_RevertToDefaultScreenShieldNotification = @"AP_RevertToDefaultScreenShieldNotification";
+static NSString * AP_ScreenshotAuditNotification = @"AP_ScreenshotAuditNotification";
+
 
 
 extern unsigned long long const APLogMaxFileSize;

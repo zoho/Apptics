@@ -1,5 +1,5 @@
 //
-//  APPrivacyGuard.h
+//  APSecureView.h
 //  AppticsPrivacyShield
 //
 //  Created by Saravanan S on 10/06/24.
@@ -11,45 +11,28 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/// A convenience wrapper that places an arbitrary `contentView` inside an
+/// `APSecureContainer`.  Use this to protect individual views without
+/// adopting a per-type subclass (APSecureLabel, APSecureButton, etc.).
+///
+/// ```objc
+/// APSecureView *guard = [[APSecureView alloc] initWithContentView:myMapView];
+/// [self.view addSubview:guard];
+/// ```
 @interface APSecureView : UIView <APProtectableSecureView>
 
-@property (nonatomic, strong) UIView *contentView;
+/// The user-supplied view that lives inside the secure container.
+@property (nonatomic, strong, nullable) UIView *contentView;
+
+/// Toggle capture-protection on or off.  Default is YES.
 @property (nonatomic, assign) BOOL preventScreenCapture;
 
+/// Designated convenience initializer — wraps `contentView` immediately.
 - (instancetype)initWithContentView:(UIView *)contentView;
+
+/// Add or replace the wrapped content view after initialization.
 - (void)addContentView:(UIView *)contentView;
 
 @end
 
-@interface APSafeContainer : NSObject
-
-+ (BOOL)isSecureContainerAvailable;
-- (UIView * _Nullable)findHiddenContainerInView:(UIView *)view;
-
-@end
-
-@interface APWindowShield : NSObject
-
-@property (nonatomic, strong) UIVisualEffectView *blurView;
-@property (nonatomic, strong) UIView *contentView;
-@property (nonatomic, assign) BOOL viewActive;
-
-@property (nonatomic, strong) UILabel *label;
-@property (nonatomic, strong) UIImageView *imageView;
-
-
-+ (instancetype)shared;
-
-/**
- Call this method to start monitoring for Screen recording.
- */
-- (void) enableScreenRecordingMonitoring;
-
-/**
- Call this method to stop monitoring for Screen recording.
- */
-- (void) disableScreenRecordingMonitoring;
-
-
-@end
 NS_ASSUME_NONNULL_END
