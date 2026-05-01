@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/APSecureContainer.h</key>
 		<data>
-		yHptd7Q1DNAr+P3xehNpbKjxfbo=
+		4v0zesaJI7+2SwaEms9SHRvvb0w=
 		</data>
 		<key>Headers/APSecureImageView.h</key>
 		<data>
@@ -26,15 +26,11 @@
 		</data>
 		<key>Headers/APSecureView.h</key>
 		<data>
-		Y+vKpc5ZOs5nDvMqSJ5rU2J1JHk=
-		</data>
-		<key>Headers/APWindowShield.h</key>
-		<data>
-		bhHnUaDGlORi3jc7dHjq0REupPI=
+		+oggK+8xTyMYKuZTIlZzp6FycY8=
 		</data>
 		<key>Headers/AppticsPrivacyShield.h</key>
 		<data>
-		3rpTtqw66I37ycpbyB/y/53/ljg=
+		X98LeOHkeM06UUkmFsjfJdzeFBw=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -58,7 +54,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GPZGztDsB6yHA/9gufZ5PdpJsR0QDrVHoEnVCNYQUxE=
+			xF9mFyHArZI3LRK0LUZP6DsDPWTWSvp88Vkkg41LPrY=
 			</data>
 		</dict>
 		<key>Headers/APSecureImageView.h</key>
@@ -86,21 +82,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EotyN4JEpe39YAUUB0s/bHGQoawc5QWxnaeCrN2lZlw=
-			</data>
-		</dict>
-		<key>Headers/APWindowShield.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			zxEKp2Hr4nV8N9Q9P+hgSm4LP/TLByn2W/BSQKVAeJo=
+			62EXttLT+FHLvuBdSB9Lu74OrwmQy2z3wgXzw9k8A2g=
 			</data>
 		</dict>
 		<key>Headers/AppticsPrivacyShield.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/v6b1e0DsClKTcPqRlUMeYQj6j71I6MK/ZTqSkDYsiE=
+			nrn3oZ6TOb+FB8ofaXRe+Z93V2kpRV7E5mrE0AONF00=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
