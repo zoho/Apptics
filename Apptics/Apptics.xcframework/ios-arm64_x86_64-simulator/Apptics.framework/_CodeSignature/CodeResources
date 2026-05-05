@@ -23,7 +23,7 @@
 		</data>
 		<key>AppticsResources.bundle/Info.plist</key>
 		<data>
-		pb5gE+X1gyRUPtM0509oFpI6BX4=
+		Os5RXS1L7gRlToUamlg8g35X+pM=
 		</data>
 		<key>AppticsResources.bundle/ZAAppUpdateAlert.nib</key>
 		<data>
@@ -67,7 +67,7 @@
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		ELXOXI3b4+Coajao+duQfBJtZMw=
+		VkIDLP4IT7FaH4lfSGPO7afyGXE=
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -75,7 +75,7 @@
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeResources</key>
 		<data>
-		oFFKewaoP5DsHwU0+vADkgf2rP4=
+		Qt4v/rPw/rytj7foF02nbeECcLw=
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeSignature</key>
 		<data>
@@ -512,7 +512,7 @@
 		</dict>
 		<key>AppticsResources.bundle/sdkProp_info.plist</key>
 		<data>
-		hxcOe9rGssOdcbY3l0pSNrj0afQ=
+		0SIfbShArCjFyIWxxHZe7/2HJpU=
 		</data>
 		<key>AppticsResources.bundle/sl.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
@@ -880,7 +880,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		1ZsYjHVbRC8vexo2huHpO5w6Suw=
+		ZQlf9ppbxC0BJcmVbAEBcpFmAtg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -920,7 +920,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			F59/68zqN1N23WIZSSBIcMt3p6QSKIB//VHSOXb0nBE=
+			Dr8HWZveeudLvuJ/7prXqN+6Ub1JWlhaLQntJgZueTQ=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/ZAAppUpdateAlert.nib</key>
@@ -997,7 +997,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZBh8oLUeb1CVND+Mm6C5PvxCNasq89+FeX4iYvFQ5xg=
+			Acpg4GvGOqUs0ZVeNp2P07aiLLRhmsU9oGRHfXYVLVw=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/_CodeSignature/CodeRequirements</key>
@@ -1011,7 +1011,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			N+Zm6d8oN9StMUc33ZS/mzBpOHjo0udIfLI1mj723K8=
+			kDHyIvvOHiFY+MUJFdkkbSqZ/zoPkOMA+b7sZh41PUE=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/_CodeSignature/CodeSignature</key>
@@ -1472,7 +1472,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			o4z/XVgbxTdg2bbgQ/2RYaby8vyxdzKQDNKMFkzQyTg=
+			wmrxYSYyyH7K1rO0VDIrcgOf4wmQ8MJZC4PPum36yQA=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/sl.lproj/ZAnalyticsLocalizable.strings</key>
