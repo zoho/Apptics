@@ -22,19 +22,15 @@
  *  @return prints on the console.
  */
 
-#define APLogVerbose(args...) ZLogExtension(__FILE__,__LINE__,__func__,"{V}","verbose",args);
-
-#define APLogDebug(args...) ZLogExtension(__FILE__,__LINE__,__func__,"{D}","debug",args);
-
-#define APLogInfo(args...) ZLogExtension(__FILE__,__LINE__,__func__,"{I}","info",args);
-
-#define APLogWarn(args...) ZLogExtension(__FILE__,__LINE__,__func__,"{W}","warning",args);
-
-#define APLogError(args...) ZLogExtension(__FILE__,__LINE__,__func__,"{E}","error",args);
+#define APLogVerbose(args...) ZLogExtension(__FILE__,__LINE__,__func__,"(V)","verbose",args);
+#define APLogDebug(args...) ZLogExtension(__FILE__,__LINE__,__func__,"(D)","debug",args);
+#define APLogInfo(args...) ZLogExtension(__FILE__,__LINE__,__func__,"(I)","info",args);
+#define APLogWarn(args...) ZLogExtension(__FILE__,__LINE__,__func__,"(W)","warning",args);
+#define APLogError(args...) ZLogExtension(__FILE__,__LINE__,__func__,"(E)","error",args);
 
 //For Framework use only
-#define IVLog(args...) ZLogExtensionInternal(__FILE__,__LINE__,__func__,"​​​{-SDK}","apptics-log",args);
-#define IVLogWarn(args...) ZLogExtensionInternal(__FILE__,__LINE__,__func__,"​​​{SDK-W}","apptics-warning",args);
+#define IVLog(args...) ZLogExtensionInternal(__FILE__,__LINE__,__func__,"(-SDK)","apptics-log",args);
+#define IVLogWarn(args...) ZLogExtensionInternal(__FILE__,__LINE__,__func__,"(SDK-W)","apptics-warning",args);
 NS_ASSUME_NONNULL_BEGIN
 /**
  *  A Custome Logger for logging both Apptics data and your own app data.
