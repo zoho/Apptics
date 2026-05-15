@@ -50,7 +50,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (strong,nonatomic) NSNumber *prevNFFlushTime;
 @property (strong,nonatomic) NSNumber *prevRLFlushTime;
 //Debug API variable
-@property (weak,nonatomic) NSString * argumentDebug;
+@property (nonatomic, strong) NSString * argumentDebug;
 @property (nonatomic, strong) APTimerManager * timerManager;
 //ScreenTracking Timestamp
 @property (nonatomic, strong) NSMutableDictionary<NSNumber*, NSString*> *screenTimestamps;

@@ -6,9 +6,9 @@
 	<array>
 		<dict>
 			<key>BinaryPath</key>
-			<string>AppticsApiTracker.framework/Versions/A/AppticsApiTracker</string>
+			<string>AppticsApiTracker.framework/AppticsApiTracker</string>
 			<key>LibraryIdentifier</key>
-			<string>ios-arm64_x86_64-maccatalyst</string>
+			<string>tvos-arm64_x86_64-simulator</string>
 			<key>LibraryPath</key>
 			<string>AppticsApiTracker.framework</string>
 			<key>SupportedArchitectures</key>
@@ -17,9 +17,9 @@
 				<string>x86_64</string>
 			</array>
 			<key>SupportedPlatform</key>
-			<string>ios</string>
+			<string>tvos</string>
 			<key>SupportedPlatformVariant</key>
-			<string>maccatalyst</string>
+			<string>simulator</string>
 		</dict>
 		<dict>
 			<key>BinaryPath</key>
@@ -40,6 +40,20 @@
 		</dict>
 		<dict>
 			<key>BinaryPath</key>
+			<string>AppticsApiTracker.framework/AppticsApiTracker</string>
+			<key>LibraryIdentifier</key>
+			<string>ios-arm64</string>
+			<key>LibraryPath</key>
+			<string>AppticsApiTracker.framework</string>
+			<key>SupportedArchitectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>SupportedPlatform</key>
+			<string>ios</string>
+		</dict>
+		<dict>
+			<key>BinaryPath</key>
 			<string>AppticsApiTracker.framework/Versions/A/AppticsApiTracker</string>
 			<key>LibraryIdentifier</key>
 			<string>macos-arm64_x86_64</string>
@@ -55,23 +69,9 @@
 		</dict>
 		<dict>
 			<key>BinaryPath</key>
-			<string>AppticsApiTracker.framework/AppticsApiTracker</string>
+			<string>AppticsApiTracker.framework/Versions/A/AppticsApiTracker</string>
 			<key>LibraryIdentifier</key>
-			<string>ios-arm64</string>
-			<key>LibraryPath</key>
-			<string>AppticsApiTracker.framework</string>
-			<key>SupportedArchitectures</key>
-			<array>
-				<string>arm64</string>
-			</array>
-			<key>SupportedPlatform</key>
-			<string>ios</string>
-		</dict>
-		<dict>
-			<key>BinaryPath</key>
-			<string>AppticsApiTracker.framework/AppticsApiTracker</string>
-			<key>LibraryIdentifier</key>
-			<string>tvos-arm64_x86_64-simulator</string>
+			<string>ios-arm64_x86_64-maccatalyst</string>
 			<key>LibraryPath</key>
 			<string>AppticsApiTracker.framework</string>
 			<key>SupportedArchitectures</key>
@@ -80,9 +80,9 @@
 				<string>x86_64</string>
 			</array>
 			<key>SupportedPlatform</key>
-			<string>tvos</string>
+			<string>ios</string>
 			<key>SupportedPlatformVariant</key>
-			<string>simulator</string>
+			<string>maccatalyst</string>
 		</dict>
 		<dict>
 			<key>BinaryPath</key>
