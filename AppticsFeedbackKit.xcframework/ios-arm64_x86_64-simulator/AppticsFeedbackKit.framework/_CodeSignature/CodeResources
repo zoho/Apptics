@@ -42,7 +42,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		KJHP78cBZlgzPCKzaja28jqqnEQ=
+		VqzAHJnMSMVO1YNoI+nrNJrF4sc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -96,7 +96,7 @@
 		</data>
 		<key>ZBugSquashResources.bundle/Info.plist</key>
 		<data>
-		vrPJKZb68CKRiSswI60eWsa4XlE=
+		DrdIKz/7Pw62XEnX2jw2kdHBkWI=
 		</data>
 		<key>ZBugSquashResources.bundle/NewBugViewController.nib/objects-14.0+.nib</key>
 		<data>
@@ -168,7 +168,7 @@
 		</data>
 		<key>ZBugSquashResources.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		ic7ZvPqKa95TTnJVFTyOOXou/Wg=
+		opKkY82mGcd+QlrsarIZ69VqQrc=
 		</data>
 		<key>ZBugSquashResources.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -176,7 +176,7 @@
 		</data>
 		<key>ZBugSquashResources.bundle/_CodeSignature/CodeResources</key>
 		<data>
-		iddw+wOFCdiyR+NLMe26rby304U=
+		Byx3LtsFUu+wWzpDJfNwJOHWM18=
 		</data>
 		<key>ZBugSquashResources.bundle/_CodeSignature/CodeSignature</key>
 		<data>
@@ -415,7 +415,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VkS2KBLk5p1jWkQUUv4DMi3SzU4=
+			bIarGHAycdNhyxr1J5h3aNhbxfc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1392,7 +1392,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qdCwOB1PWz0ahRQ7qFdgQUl24hEhb2iiyhNTHlqGz4A=
+			6u4Ijc0bYkt1dKc5KkFUwU2B2y0fz2l3L679SPgtBq4=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/NewBugViewController.nib/objects-14.0+.nib</key>
@@ -1518,7 +1518,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rzxmkfYBGKKbkVAMHvtUQhg82awu46lLL2Wu36/Ky/s=
+			LU6e2FFMlGO7+oMnjXRpxCoohIOyQRBTe18TgkgCNMY=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/_CodeSignature/CodeRequirements</key>
@@ -1532,7 +1532,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wTrnDdfuVQ0qjHaYSLcchRB6u16c7bVjlizTrKGADjo=
+			YN25LIlB2DaxD5deH54wKIK8Qho7xYvqeMcYTwh0eTo=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/_CodeSignature/CodeSignature</key>
@@ -1805,7 +1805,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			r5SjDwTy4h+hWCASoSVOJ2VjZeWCjj9PrnM8bMYOwZI=
+			tkOgp25oT0fPaRvjquWml6TtnQwJdoa3T2wtLTmmbLA=
 			</data>
 			<key>optional</key>
 			<true/>
