@@ -11,7 +11,6 @@
 #import <Apptics/ZAEnums.h>
 #import <Apptics/APEventsEnum.h>
 #import <Apptics/APUser.h>
-#import <Apptics/MultipleDC.h>
 
 #if !TARGET_OS_OSX
 #import <UIKit/UIKit.h>
@@ -64,8 +63,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property BOOL enableAutomaticCrashTracking;
 
 @property (nonatomic, assign) BOOL isaddVersionInitialized;
-@property (nonatomic, assign) BOOL hasLoggedConnected;
-@property (nonatomic, assign) BOOL hasLoggedConnecting;
 
 
 //@property BOOL enableAutoCheckForAppUpdate;
@@ -236,10 +233,6 @@ typedef void (^internbgConsoleLogsRequestSuccessBlock)(void);
 
 - (void) setUser:(APUser* _Nullable)user;
 
-- (void) setUser:(APUser * _Nullable)user dc:(AppticsDC _Nullable)dc;
-
-- (void) setCurrentUser:(NSString* _Nullable)userID groupId : (NSString*_Nullable)groupid dc:(AppticsDC _Nullable)dc;
-
 - (void) setCurrentUser:(NSString* _Nullable)userID groupId : (NSString*_Nullable)groupid;
 
 - (void) setUserAgent:(NSString*_Nullable) agent;
@@ -256,6 +249,7 @@ typedef void (^internbgConsoleLogsRequestSuccessBlock)(void);
  *  When you call this method while your app is still in development mode, a rating/review request view is always displayed so that you can test the user interface and experience. However, this method has no effect when you call it in an app that you distribute using TestFlight.
  *
  */
+
 - (void) personalInfoTrackingStatus : (BOOL) status;
 
 - (void) setTrackingStatus : (BOOL) status;
@@ -380,7 +374,6 @@ typedef void (^internbgConsoleLogsRequestSuccessBlock)(void);
 -(BOOL) isMacCatalystOrDesignedForiPad;
 -(void) saveDataAndSendToTheServer;
 - (void)receiveKMMcrashAndSave:(NSException *)crashReport;
-- (void) resetAppticsDatabaseFile;
 
 @end
 

@@ -42,7 +42,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		VqzAHJnMSMVO1YNoI+nrNJrF4sc=
+		jNn1P+7YrpWQhEgta9Su927CdwA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -96,7 +96,7 @@
 		</data>
 		<key>ZBugSquashResources.bundle/Info.plist</key>
 		<data>
-		DrdIKz/7Pw62XEnX2jw2kdHBkWI=
+		ng3LOeKyUinIZc0qI5C/oTt4irk=
 		</data>
 		<key>ZBugSquashResources.bundle/NewBugViewController.nib/objects-14.0+.nib</key>
 		<data>
@@ -168,7 +168,7 @@
 		</data>
 		<key>ZBugSquashResources.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		opKkY82mGcd+QlrsarIZ69VqQrc=
+		bfnG6fH3EhlBVgLVV4UEVhbtAjs=
 		</data>
 		<key>ZBugSquashResources.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -176,7 +176,7 @@
 		</data>
 		<key>ZBugSquashResources.bundle/_CodeSignature/CodeResources</key>
 		<data>
-		Byx3LtsFUu+wWzpDJfNwJOHWM18=
+		iddw+wOFCdiyR+NLMe26rby304U=
 		</data>
 		<key>ZBugSquashResources.bundle/_CodeSignature/CodeSignature</key>
 		<data>
@@ -415,7 +415,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bIarGHAycdNhyxr1J5h3aNhbxfc=
+			VkS2KBLk5p1jWkQUUv4DMi3SzU4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1392,7 +1392,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6u4Ijc0bYkt1dKc5KkFUwU2B2y0fz2l3L679SPgtBq4=
+			u0+Dg6709wEDDlqxnXPDmH43AZhw1TVQ2eEeWr4C45U=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/NewBugViewController.nib/objects-14.0+.nib</key>
@@ -1518,7 +1518,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LU6e2FFMlGO7+oMnjXRpxCoohIOyQRBTe18TgkgCNMY=
+			1ZA3AXN7m7bBdFox9t3kLbEN569SZ4nqfBGHSLIXw58=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/_CodeSignature/CodeRequirements</key>
@@ -1532,7 +1532,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			YN25LIlB2DaxD5deH54wKIK8Qho7xYvqeMcYTwh0eTo=
+			wTrnDdfuVQ0qjHaYSLcchRB6u16c7bVjlizTrKGADjo=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/_CodeSignature/CodeSignature</key>
@@ -1805,7 +1805,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tkOgp25oT0fPaRvjquWml6TtnQwJdoa3T2wtLTmmbLA=
+			r5SjDwTy4h+hWCASoSVOJ2VjZeWCjj9PrnM8bMYOwZI=
 			</data>
 			<key>optional</key>
 			<true/>
