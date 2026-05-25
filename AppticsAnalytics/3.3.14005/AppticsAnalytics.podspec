@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
 spec.name             = "AppticsAnalytics"
-spec.version          = "3.3.14005"
+spec.version          = "4.0.0003"
 spec.summary          = "Apptics iOS SDK"
 spec.license          = { :type => "Proprietary", :text => <<-LICENSE
 Copyright (c) 2025 Zoho Corporation Private Limited

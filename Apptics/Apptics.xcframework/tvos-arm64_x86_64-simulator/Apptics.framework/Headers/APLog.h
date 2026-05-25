@@ -28,6 +28,11 @@
 #define APLogWarn(args...) ZLogExtension(__FILE__,__LINE__,__func__,"(W)","warning",args);
 #define APLogError(args...) ZLogExtension(__FILE__,__LINE__,__func__,"(E)","error",args);
 
+// Key logs are concise runtime status logs shown even when verbose is disabled (ASCII bracket tags only).
+#define APLogKey(args...) ZLogKeyExtension(__FILE__,__LINE__,__func__,"-","key",args);
+
+
+
 //For Framework use only
 #define IVLog(args...) ZLogExtensionInternal(__FILE__,__LINE__,__func__,"(-SDK)","apptics-log",args);
 #define IVLogWarn(args...) ZLogExtensionInternal(__FILE__,__LINE__,__func__,"(SDK-W)","apptics-warning",args);
@@ -44,6 +49,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) BOOL shouldLog;
 
 @property BOOL shouldPrint;
+
+@property (nonatomic) BOOL shouldKeyLog;
 
 //@property (nonatomic, retain) NSDateFormatter *dateFormatter;
 
@@ -73,6 +80,8 @@ void ZLogExtension(const char *file, int lineNumber, const char *functionName, c
 
 void ZLogExtensionInternal(const char *file, int lineNumber, const char *functionName, const char *symbol, const char *type, NSString *format, ...);
 
+void ZLogKeyExtension(const char *file, int lineNumber, const char *functionName, const char *symbol, const char *type, NSString *format, ...);
+
 #pragma mark — Logger apis
 
 /**
@@ -80,6 +89,8 @@ void ZLogExtensionInternal(const char *file, int lineNumber, const char *functio
  */
 
 + (void) setShouldLog:(BOOL) status;
+
++ (void) setShouldKeyLog:(BOOL) status;
 
 /**
  Sets the directory path of your custom logs.
@@ -141,6 +152,11 @@ void ZLogExtensionInternal(const char *file, int lineNumber, const char *functio
 +(BOOL) logStatus;
 
 +(void) setLogStatus:(BOOL) status;
+
++(BOOL) keyLogStatus;
+
+// Returns only key-log lines captured in the current app session.
++(NSString *)currentSessionKeyLogs;
 
 @end
 
