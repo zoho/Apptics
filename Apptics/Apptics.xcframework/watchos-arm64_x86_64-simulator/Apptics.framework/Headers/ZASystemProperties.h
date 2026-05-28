@@ -22,14 +22,19 @@ NS_ASSUME_NONNULL_BEGIN
 @property (strong,nonatomic) NSString *osVersion;
 @property (strong,nonatomic) NSString *deviceType;
 @property (strong,nonatomic) NSString *model;
-@property (strong,nonatomic) NSString *currentRadioAccess;
-@property (strong,nonatomic) NSString *mobileServiceProvider;
+// atomic: written from async system callbacks (CoreTelephony radio/carrier change)
+// while read concurrently from other queues (e.g. newDeviceInfo on the remote-config
+// queue). nonatomic getters don't retain, so a concurrent setter releasing the old
+// value leaves the reader with a dangling pointer -> EXC_BAD_ACCESS. atomic getters
+// retain+autorelease (objc_getProperty), making concurrent read/write safe.
+@property (strong,atomic) NSString *currentRadioAccess;
+@property (strong,atomic) NSString *mobileServiceProvider;
 //@property (strong,nonatomic) NSString *batteryLevelAndState;
-@property (strong,nonatomic) NSNumber *batterylevel;
+@property (strong,atomic) NSNumber *batterylevel;
 @property (strong,nonatomic) NSString *timeZone;
 @property (strong,nonatomic) NSNumber *networkReachableStatus;
 @property (strong,nonatomic) NSString *udid;
-@property (strong,nonatomic) NSNumber *phoneOrientation;
+@property (strong,atomic) NSNumber *phoneOrientation;
 @property (strong,nonatomic) NSString *ram;
 @property (strong,nonatomic) NSString *rom;
 @property (strong,nonatomic) NSString *totalram;
@@ -79,11 +84,6 @@ NS_ASSUME_NONNULL_BEGIN
 //-(void) executeRequestSuccessCallbacksWithResponseForAppVersion:(NSDictionary*) userInfo;
 - (void)executeRequestSuccessCallbacksWithResponseForAppVersion:(NSString *)appVersionId;
 @property (nonatomic, strong) NSMutableArray *regUserSuccessblocks;
-
-
-+ (void)makeAddAppVersionCallWithSuccess:(void (^)(NSString *appVersionID))success
-                                 failure:(void (^)(NSError *error))failure;
-
 
 @end
 NS_ASSUME_NONNULL_END
