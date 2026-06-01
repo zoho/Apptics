@@ -1,6 +1,6 @@
 // swift-tools-version:5.6
  import PackageDescription
- let version = "3.3.14006"
+ let version = "4.0.0004"
  let package = Package(
      name: "Apptics",
      defaultLocalization: "en",
@@ -48,8 +48,8 @@
              targets: ["AppticsFeedbackKitSwift"]
          ),
          .library(
-             name: "AppticsFeedbackKitSwiftMacOS",
-             targets: ["AppticsFeedbackKitSwiftMacOS"]
+             name: "AppticsFeedbackKitmacOSSwift",
+             targets: ["AppticsFeedbackKitmacOSSwift"]
          ),
          .library(
              name: "AppticsPrivacyShield",
@@ -180,7 +180,7 @@
              ]
          ),
          .target(
-                     name: "AppticsFeedbackKitSwiftMacOS",
+                     name: "AppticsFeedbackKitmacOSSwift",
                      dependencies: ["AppticsFeedbackKit"],
                      path: "SwiftFiles/AppticsMacFeedbackKit",
                      resources: [

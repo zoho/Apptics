@@ -31,6 +31,8 @@
 // Key logs are concise runtime status logs shown even when verbose is disabled (ASCII bracket tags only).
 #define APLogKey(args...) ZLogKeyExtension(__FILE__,__LINE__,__func__,"-","key",args);
 
+
+
 //For Framework use only
 #define IVLog(args...) ZLogExtensionInternal(__FILE__,__LINE__,__func__,"(-SDK)","apptics-log",args);
 #define IVLogWarn(args...) ZLogExtensionInternal(__FILE__,__LINE__,__func__,"(SDK-W)","apptics-warning",args);
