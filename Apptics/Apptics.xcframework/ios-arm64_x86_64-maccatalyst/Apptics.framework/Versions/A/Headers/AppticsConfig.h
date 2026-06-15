@@ -8,9 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <Apptics/ZAEnums.h>
-#import <Apptics/MultipleDC.h>
 //#import <UIKit/UIKit.h>
-@class APMultipleDCConfig;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -82,7 +80,6 @@ typedef NS_ENUM(NSInteger, APFlushInterval) {
 @property (nonatomic) bool resetOnDCSwitch;
 @property (nonatomic) bool turnOnDebugView;
 @property (nonatomic) bool enableKeyLogs;
-@property (nonatomic, strong) MultipleDC *multipleDC;
 
 
 @property (nonatomic) APAnonymousType anonymousType;

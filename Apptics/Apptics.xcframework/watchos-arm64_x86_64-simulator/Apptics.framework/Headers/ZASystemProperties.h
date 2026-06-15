@@ -85,10 +85,5 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)executeRequestSuccessCallbacksWithResponseForAppVersion:(NSString *)appVersionId;
 @property (nonatomic, strong) NSMutableArray *regUserSuccessblocks;
 
-
-+ (void)makeAddAppVersionCallWithSuccess:(void (^)(NSString *appVersionID))success
-                                 failure:(void (^)(NSError *error))failure;
-
-
 @end
 NS_ASSUME_NONNULL_END
