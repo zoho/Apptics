@@ -32,9 +32,9 @@ spec.default_subspecs = 'AppticsFeedbackKitmacOS'
 spec.requires_arc = true
 
 spec.subspec 'AppticsFeedbackKitmacOS' do |cp|
+      cp.osx.deployment_target = '10.13'
       cp.source_files        = 'SwiftFiles/AppticsMacFeedbackKit/**/*.swift'
       cp.dependency 'AppticsFeedbackKit/FeedbackKit-macOS', "#{spec.version}"
-      cp.platform     = :osx, 10.13
       cp.resource_bundles = {
         'APFeedbackSwift' => [
           'SwiftFiles/AppticsMacFeedbackKit/**/*.ttf',
