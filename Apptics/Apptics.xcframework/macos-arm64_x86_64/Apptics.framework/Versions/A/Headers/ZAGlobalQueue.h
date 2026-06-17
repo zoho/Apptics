@@ -37,9 +37,19 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) long long dataSize;
 @property (nonatomic) long long nonfatalDataSize;
 @property (nonatomic) long long logsDataSize;
-@property (strong,nonatomic) ZASession *currentSession;
+// `atomic` is required: -startWithTime: / -endWithTime: write to this
+// property from zaSerialQueue while +sessionStartTime reads from any
+// thread (APApiObject URLSession callbacks, ZABugNetworkManager feedback
+// upload, APRateusObject notification handlers, ZANetworking request
+// logging). Same race pattern that previously crashed currentScreen.
+@property (strong,atomic) ZASession *currentSession;
 
-@property (strong,nonatomic) ZAScreenObject * _Nullable currentScreen;
+// `atomic` here is intentional and required: trackViewEnter/Exit run on
+// zaSerialQueue while +currentScreenName reads from any thread (e.g.
+// APRateusObject.m:22 called from notification handlers). Without atomic
+// access, fast back-to-back screen tracks can crash readers with
+// EXC_BAD_ACCESS at a dangling ZAScreenObject* pointer.
+@property (strong,atomic) ZAScreenObject * _Nullable currentScreen;
 
 //@property (strong,nonatomic) ZAAppupdatePopupInfo * _Nullable currentAppupdatePopup;
 

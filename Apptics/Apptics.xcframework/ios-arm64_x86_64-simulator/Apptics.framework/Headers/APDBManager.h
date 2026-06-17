@@ -34,7 +34,57 @@ NS_ASSUME_NONNULL_BEGIN
     dispatch_source_t deleteTimer;
 }
 
+// Coordinator / DC routing API.
+// `shared` returns the instance for the currently active DC (resolved via
+// AppticsConfig.defaultConfig.multipleDC.activeDC ?: defaultDC).
+// All existing callers keep working unchanged — their reads/writes are
+// routed to whichever DC is active at call time.
 + (instancetype)shared;
++ (instancetype)activeInstance;
++ (instancetype)instanceForDC:(NSString *)dc;
+// Returns the DC string that [APDBManager shared] would resolve to right now:
+// activeDC → defaultDC → @"". Used to capture DC identity before
+// async work so stale responses can be detected and discarded.
++ (NSString *)resolveActiveDC;
+// DCs for which `apptics-<DC>.sqlite` exists on disk, plus the active DC.
+// Used by the flush pipelines to iterate every DC that might have pending
+// rows.
++ (NSArray<NSString *> *)allKnownDCs;
++ (void)closeAllConnections;
+// Synchronous barrier on a specific DC's serial queue. Used before flipping
+// activeDC on logout / setCurrentUserWithDC so every pending write lands on
+// disk before the switch.
++ (void)drainWritesForDC:(NSString *)dc;
+
+// Moves user-collected rows (engagement / non-fatal / console-log / crashes /
+// session-info / API-tracking / temp queues / feedback) from the default-DC
+// SQLite slot (apptics.sqlite) into the target DC's slot (apptics-<DC>.sqlite).
+// Intended for the FIRST setCurrentUserWithDC call on a fresh install where
+// preferUserDCForEngagements is YES and the user's chosen DC differs from
+// defaultDC — without this, the pre-login data stays orphaned in the
+// default slot and never reaches any server.
+//
+// Server-pushed config tables (APPUPDATE, RATEUS, REMOTECONFIG, CRITERIAS,
+// PARAMETERCONDITIONS, ALLPARAMETER, ALLCONDITION, APPREGVERSIONDETAILS,
+// VERSION, DEVICEDETAILS) and per-DC user identity (USERINFO, USERREGCACHE)
+// are deliberately NOT migrated — they belong to the source DC's server.
+//
+// No-ops (returns success=YES) when:
+//   - targetDC is empty
+//   - defaultDC is unset
+//   - targetDC == defaultDC (data already in the correct slot)
+//
+// completion fires on the main queue once all table copies have been
+// attempted. success=YES means the whole migration committed; NO means the
+// migration was aborted before any row was deleted from the source (so no
+// data loss even on failure).
++ (void)migrateUserDataTablesFromDefaultDCTo:(NSString *)targetDC
+                                  completion:(void (^ _Nullable)(BOOL success))completion;
+
+// The DC this instance owns. nil for legacy callers that still reach the
+// class before any DC is resolved.
+@property (nonatomic, copy, readonly, nullable) NSString *dc;
+
 - (void)setDBDirectory:(NSString*) aDirectory;
 - (void)closeDBConnection;
 
@@ -107,6 +157,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)saveUserInfo : (NSDictionary*) userInfo;
 - (void)getUserJSONByUser:(NSString *)user withGroup:(NSString * _Nullable)group status : (Boolean) status completionHandler:(void (^)(NSDictionary * userInfo))completion;
+
+- (void)saveUserRegCache:(NSDictionary *)cacheData;
+- (void)fetchUserRegCacheForUser:(NSString *)user group:(NSString * _Nullable)group completionHandler:(void (^)(NSDictionary * _Nullable cacheData))completion;
 
 - (void)insertTempEngagementWithSessionID:(NSNumber *)sessionID
                                   data:(NSData *)data

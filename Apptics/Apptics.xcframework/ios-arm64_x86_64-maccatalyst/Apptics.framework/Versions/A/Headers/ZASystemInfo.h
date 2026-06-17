@@ -75,6 +75,7 @@ NS_ASSUME_NONNULL_BEGIN
 +(NSString*) getDeviceType;
 +(NSString*) getRam;
 +(NSString*) getTotalRam;
++ (NSString *)getZaInfoFilePath;
 @end
 
 @interface APDeviceInfo : NSObject
