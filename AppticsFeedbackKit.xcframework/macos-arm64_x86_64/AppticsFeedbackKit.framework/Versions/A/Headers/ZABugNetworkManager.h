@@ -35,6 +35,7 @@ NS_ASSUME_NONNULL_BEGIN
            actionType:(ZBActionType) actionType
          feedbackType:(ZBFeedbackType) feedbackType
                   tag: (NSString*) tag
+              subject:(NSString* _Nullable) subject
             onSuccess:(void (^)(BOOL status)) success
             onFailure:(void (^)(BOOL status)) failure;
 

@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/FeedbackKit.h</key>
 		<data>
-		/9+n7ooylT3sc3tupu7S2UUWP+0=
+		4lCrg6o4+HpywcPCHxntVrwA1+I=
 		</data>
 		<key>Headers/ZAArrowCanvasView.h</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		LcVQJElDd4gXRLOVs3jpD7SPRzM=
+		ndeMRQZ1xj7Pb/xGyRKZr0iqADo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -96,7 +96,7 @@
 		</data>
 		<key>ZBugSquashResources.bundle/Info.plist</key>
 		<data>
-		2QkGe4aPOEM6LFOQXnSL8F9u6F0=
+		RYYRGbKh7t+DSIXeMOkDYKAQxx0=
 		</data>
 		<key>ZBugSquashResources.bundle/NewBugViewController.nib/objects-14.0+.nib</key>
 		<data>
@@ -168,7 +168,7 @@
 		</data>
 		<key>ZBugSquashResources.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		OL4YLRjiA0hup7XqdT2WWESqshg=
+		EpY8u1LCcx7SGcaoe3eoPCw+quM=
 		</data>
 		<key>ZBugSquashResources.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -1276,7 +1276,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jIRa4VllB12yN9Xi9UFZqri7GAGCO8jl47MRKyUUeYk=
+			lKvnm4lnsNk/p8SngLVhK2l5E3sTtDIXJMW8/fTz+NE=
 			</data>
 		</dict>
 		<key>Headers/ZAArrowCanvasView.h</key>
@@ -1392,7 +1392,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wd68F2fRZu5QUKmhaK/S6BYTBMEuhIzaNr1stZ77LA4=
+			CPpa4+my+/K/GjV8L0i/iPo8mBuEOrczlk1Pc80xRPE=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/NewBugViewController.nib/objects-14.0+.nib</key>
@@ -1518,7 +1518,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			knuH/zIxjLKWh0FrdiBrL3+2o6eHeKj5K8wLHyq+kew=
+			yIh6lq7lE5lbSIR/XhhguWdr3VjnVn0LVtOhMP6J7R8=
 			</data>
 		</dict>
 		<key>ZBugSquashResources.bundle/_CodeSignature/CodeRequirements</key>

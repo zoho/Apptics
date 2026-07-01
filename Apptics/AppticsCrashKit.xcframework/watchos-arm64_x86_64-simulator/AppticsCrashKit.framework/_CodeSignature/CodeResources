@@ -8,9 +8,13 @@
 		<data>
 		9LklFUOHDrgVpWvEjZO8SNcoIVg=
 		</data>
+		<key>Headers/KMPCrashReporter.h</key>
+		<data>
+		2xqtVAHtbJXMrBPedrIZiUX60u4=
+		</data>
 		<key>Info.plist</key>
 		<data>
-		zSP9vt8atK0Lh/nNDG5LOFgZM0A=
+		8RQSO89KrhZPDszup3QZhKgki+A=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -32,6 +36,17 @@
 			<key>hash2</key>
 			<data>
 			ZV8Gyx9zkSzC50SS8mciodXGjE1MxTM7KdJBlYPE3ps=
+			</data>
+		</dict>
+		<key>Headers/KMPCrashReporter.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2xqtVAHtbJXMrBPedrIZiUX60u4=
+			</data>
+			<key>hash2</key>
+			<data>
+			w4CX7UTuoeR3ruCI7j3Upr/gkTd058OxECkfuE4O9uc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

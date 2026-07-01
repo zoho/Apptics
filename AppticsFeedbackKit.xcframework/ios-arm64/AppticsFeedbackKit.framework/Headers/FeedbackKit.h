@@ -161,13 +161,13 @@ NS_ASSUME_NONNULL_BEGIN
  Send silent report with trace.
  */
 
-+ (void) sendReportWithTrace:(NSString*_Nonnull) trace includeScreenName : (BOOL) includeScreenName includeLog : (BOOL) includeLog includeDignoInfo : (BOOL) includeDignoInfo tag : (NSString*_Nullable) tag;
++ (void) sendReportWithTrace:(NSString*_Nonnull) trace includeScreenName : (BOOL) includeScreenName includeLog : (BOOL) includeLog includeDignoInfo : (BOOL) includeDignoInfo tag : (NSString*_Nullable) tag subject : (NSString*_Nullable) subject feedbackType : (ZBFeedbackType) feedbackType;
 
 /**
  Send silent report with trace and images.
  */
 
-+ (void) sendReportWithTrace:(NSString*_Nonnull) trace andImages : (NSArray*_Nullable) images includeScreenName : (BOOL) includeScreenName includeLog : (BOOL) includeLog includeDignoInfo : (BOOL) includeDignoInfo tag : (NSString*_Nullable) tag;
++ (void) sendReportWithTrace:(NSString*_Nonnull) trace andImages : (NSArray*_Nullable) images includeScreenName : (BOOL) includeScreenName includeLog : (BOOL) includeLog includeDignoInfo : (BOOL) includeDignoInfo tag : (NSString*_Nullable) tag subject : (NSString*_Nullable) subject feedbackType : (ZBFeedbackType) feedbackType;
 
 /**
 Set support email address to which the support emails will be sent from native email client.

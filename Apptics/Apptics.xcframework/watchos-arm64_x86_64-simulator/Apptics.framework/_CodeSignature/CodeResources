@@ -23,7 +23,7 @@
 		</data>
 		<key>AppticsResources_watchOS.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		y6nTWsFIdZyBPk59lEfGRCFEt7k=
+		+0qjNiNt1sFD7OY1K3FC3WeaGTQ=
 		</data>
 		<key>AppticsResources_watchOS.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -31,7 +31,7 @@
 		</data>
 		<key>AppticsResources_watchOS.bundle/_CodeSignature/CodeResources</key>
 		<data>
-		p9I1zabF1unPaQPWoX9a+QSYAuo=
+		6cBTgNzHASuyGC4MjDPIcwZVGhE=
 		</data>
 		<key>AppticsResources_watchOS.bundle/_CodeSignature/CodeSignature</key>
 		<data>
@@ -228,7 +228,7 @@
 		</dict>
 		<key>AppticsResources_watchOS.bundle/sdkProp_info.plist</key>
 		<data>
-		qVm6y7jCLAo+30GYBAn6ZMtnQ1k=
+		3AEk6J14vABcq2xnm2NAgqxv8VM=
 		</data>
 		<key>AppticsResources_watchOS.bundle/sv.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
@@ -449,7 +449,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		mY0FDK4elo7ykeBX8wL8xbvtyYQ=
+		QTw2TzkUxgMPxskTMcCHsFlJEm8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -501,11 +501,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			y6nTWsFIdZyBPk59lEfGRCFEt7k=
+			+0qjNiNt1sFD7OY1K3FC3WeaGTQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			frijmiuGzV9GQoFGetC3l+8OKUsIttVFqFJYm8FA3g0=
+			gRxXW2YIrt2fuasg/Cyy9ZquYKKwpDoUyYAlACK0SUc=
 			</data>
 		</dict>
 		<key>AppticsResources_watchOS.bundle/_CodeSignature/CodeRequirements</key>
@@ -523,11 +523,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			p9I1zabF1unPaQPWoX9a+QSYAuo=
+			6cBTgNzHASuyGC4MjDPIcwZVGhE=
 			</data>
 			<key>hash2</key>
 			<data>
-			Ts7A4tzWaJxTTk/hQxa1GcqzA6Xa5dIn07688CroxMw=
+			LePHbo4cnrKinmdlEcCyojAcyTdBkTs428k3LnUgVz0=
 			</data>
 		</dict>
 		<key>AppticsResources_watchOS.bundle/_CodeSignature/CodeSignature</key>
@@ -818,11 +818,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qVm6y7jCLAo+30GYBAn6ZMtnQ1k=
+			3AEk6J14vABcq2xnm2NAgqxv8VM=
 			</data>
 			<key>hash2</key>
 			<data>
-			4efD0gL6l7a84hJoBoWypqkVQtlh5/SqADonORtgVA4=
+			ulj76cqQoeZNwNZYE0fPLip7d5QjBpV6A8XjMU4M9cQ=
 			</data>
 		</dict>
 		<key>AppticsResources_watchOS.bundle/sv.lproj/ZAnalyticsLocalizable.strings</key>
