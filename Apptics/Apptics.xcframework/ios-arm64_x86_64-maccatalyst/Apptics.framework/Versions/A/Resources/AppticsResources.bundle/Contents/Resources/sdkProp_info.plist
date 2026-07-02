@@ -7,10 +7,10 @@
 	<key>IOS_SDK_ID</key>
 	<string>5959</string>
 	<key>MACOS_SDK_ID</key>
-	<string>5918</string>
+	<string>5960</string>
 	<key>TVOS_SDK_ID</key>
-	<string>5919</string>
+	<string>5961</string>
 	<key>WATCHOS_SDK_ID</key>
-	<string>5920</string>
+	<string>5962</string>
 </dict>
 </plist>

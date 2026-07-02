@@ -14,7 +14,7 @@
 		</data>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		4z98UxS40XIsTGtNgdBm8TzvAgk=
+		+McOHzm1V3Hkg/XHep/y0JffmAw=
 		</data>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeResources</key>
 		<data>
-		smx80Lbok/D0t4iitx+arhyhbjQ=
+		B8tbcDaxrtMniBFK4UkXnWWN4i4=
 		</data>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeSignature</key>
 		<data>
@@ -219,7 +219,7 @@
 		</dict>
 		<key>AppticsResources_tvOS.bundle/sdkProp_info.plist</key>
 		<data>
-		ydL0Th5+VyQQWlklyGsoWpndeQw=
+		3AEk6J14vABcq2xnm2NAgqxv8VM=
 		</data>
 		<key>AppticsResources_tvOS.bundle/sv.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
@@ -296,7 +296,7 @@
 		</data>
 		<key>Headers/APLog.h</key>
 		<data>
-		jaScZXc7L6gRLFThG4+sb+3rS9E=
+		j9Ttkkl9/dlGh/JuUgEtaBoUslU=
 		</data>
 		<key>Headers/APRateusObject.h</key>
 		<data>
@@ -483,11 +483,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4z98UxS40XIsTGtNgdBm8TzvAgk=
+			+McOHzm1V3Hkg/XHep/y0JffmAw=
 			</data>
 			<key>hash2</key>
 			<data>
-			+nr3Ruy4UFqcf1HCNOIDFhlFxd0kAWLPVqwd8JQZjfQ=
+			w+nYHrECAWpDrZ3IZ1ICjZS3MKa6LAmHNl3yuT4MfMA=
 			</data>
 		</dict>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeRequirements</key>
@@ -505,11 +505,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			smx80Lbok/D0t4iitx+arhyhbjQ=
+			B8tbcDaxrtMniBFK4UkXnWWN4i4=
 			</data>
 			<key>hash2</key>
 			<data>
-			hCOWgu7Cn8TgoTNtQ7r/7e6N/MyshqPtkixKtAa8j0I=
+			iav+tqpxgYX1X+i9xV5N/R/REsgudaXC4a46rD4sFPU=
 			</data>
 		</dict>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeSignature</key>
@@ -800,11 +800,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ydL0Th5+VyQQWlklyGsoWpndeQw=
+			3AEk6J14vABcq2xnm2NAgqxv8VM=
 			</data>
 			<key>hash2</key>
 			<data>
-			bPSls6MVj4+3CheHxsEksnZLN3LwhTVZ57cwLZsVWBM=
+			ulj76cqQoeZNwNZYE0fPLip7d5QjBpV6A8XjMU4M9cQ=
 			</data>
 		</dict>
 		<key>AppticsResources_tvOS.bundle/sv.lproj/ZAnalyticsLocalizable.strings</key>
@@ -953,11 +953,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jaScZXc7L6gRLFThG4+sb+3rS9E=
+			j9Ttkkl9/dlGh/JuUgEtaBoUslU=
 			</data>
 			<key>hash2</key>
 			<data>
-			6GraBoN5qDYiK4xAkg2gCGa5rnjkN1yZwPihHy+EDxE=
+			5faJ+yNeg2PNW7rkkfJAfSpiCXUmj3tC0Jp8Xh3uzWA=
 			</data>
 		</dict>
 		<key>Headers/APRateusObject.h</key>

@@ -12,6 +12,7 @@
 
 
 #import <Foundation/Foundation.h>
+#import <Apptics/ZAEnums.h>
 #if !TARGET_OS_OSX
 #import <UIKit/UIKit.h>
 #import <AppticsFeedbackKit/ZAPresenter.h>

@@ -74,9 +74,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void) ZLSExtension : (NSString*) file lineNumber : (int) linenumber functionName : (NSString*) functionname symbol : (NSString*) symbol type : (NSString*) type format : (NSString*) format;
 
-void ZLogExtension(const char *file, int lineNumber, const char *functionName, const char *symbol, const char *type, NSString *format, ...);
+FOUNDATION_EXTERN void ZLogExtension(const char *file, int lineNumber, const char *functionName, const char *symbol, const char *type, NSString *format, ...);
 
-void ZLogExtensionInternal(const char *file, int lineNumber, const char *functionName, const char *symbol, const char *type, NSString *format, ...);
+FOUNDATION_EXTERN void ZLogExtensionInternal(const char *file, int lineNumber, const char *functionName, const char *symbol, const char *type, NSString *format, ...);
 
 void ZLogKeyExtension(const char *file, int lineNumber, const char *functionName, const char *symbol, const char *type, NSString *format, ...);
 

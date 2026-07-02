@@ -594,7 +594,7 @@ class AppticsFeedbackViewController: NSViewController,NSTextViewDelegate, NSTabl
                                                   attachDignoInfo: attachDiagnoInfo,
                                                   actionType: .settings,
                                                   feedbackType: feedback_Types!,
-                                                  tag: _tag as String) { status in
+                                                  tag: _tag as String, subject: "") { status in
             
             self.closeLoader()
             FKCustomHandlerManager.sendFeedbackEndWithSuccess()

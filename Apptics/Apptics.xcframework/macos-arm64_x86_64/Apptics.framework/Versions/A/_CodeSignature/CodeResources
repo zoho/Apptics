@@ -212,7 +212,7 @@
 		</dict>
 		<key>Resources/AppticsResources_macOS.bundle/Contents/Resources/sdkProp_info.plist</key>
 		<data>
-		CC7UrLd3zdN85lLgdfJGxjDUI9A=
+		tfixLiMLhOnv4KLjwZ3OHzfg6vQ=
 		</data>
 		<key>Resources/AppticsResources_macOS.bundle/Contents/Resources/sv.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
@@ -323,7 +323,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6GraBoN5qDYiK4xAkg2gCGa5rnjkN1yZwPihHy+EDxE=
+			5faJ+yNeg2PNW7rkkfJAfSpiCXUmj3tC0Jp8Xh3uzWA=
 			</data>
 		</dict>
 		<key>Headers/APRateusObject.h</key>
@@ -794,7 +794,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			YIX25DSz4V5z0T/hjz9Ya9U0FmTkgCXbzAjKZedabKk=
+			aU0cC9Oj5X6o4x1Xkw0A03wrjiY4oIb3UOgykeqt9sg=
 			</data>
 		</dict>
 		<key>Resources/AppticsResources_macOS.bundle/Contents/Resources/sv.lproj/ZAnalyticsLocalizable.strings</key>
