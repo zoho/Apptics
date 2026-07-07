@@ -1,0 +1,24 @@
+/* 
+  Localizable.strings
+  Pods
+
+  Created by Raghavendra Panth R on 23/05/19.
+  
+*/
+
+
+"app.haslocked" = "%@ van zárva";
+"app.authenticate.authenticate" = "Érintse meg a bármely ahol hitelesíteni";
+"app.authenticate.setup" = "Létrehozott %@ ID iPhone Beállítások használata ";
+"app.settings" = "Beállítások";
+
+
+"controller.lockAfter" = "Elhagyása után az alkalmazás, mennyi ideig, amíg a %@/ Passscode szükséges újbóli megnyitása?";
+
+"controller.immedietly" = "Azonnal";
+"controller.after" = "Után";
+"controller.minute" = "perc";
+"controller.minutes" = "perc";
+"controller.hour" = "óra";
+
+

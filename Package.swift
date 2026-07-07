@@ -1,6 +1,6 @@
 // swift-tools-version:5.6
  import PackageDescription
- let version = "3.3.16"
+ let version = "3.3.17001"
  let package = Package(
      name: "Apptics",
      defaultLocalization: "en",
@@ -50,6 +50,10 @@
          .library(
              name: "AppticsFeedbackKitmacOSSwift",
              targets: ["AppticsFeedbackKitmacOSSwift"]
+         ),
+         .library(
+             name: "AppticsAppLock",
+             targets: ["AppticsAppLock"]
          ),
          .library(
              name: "AppticsPrivacyShield",
@@ -192,6 +196,16 @@
                          .copy("CollectionCell.xib"),
                          .copy("PrivacyInfo.xcprivacy")
                      ]
-                 )
+                 ),
+         .target(
+             name: "AppticsAppLock",
+             path: "SwiftFiles/AppticsAppLock",
+             resources: [
+                 .process("AppLockSources/Resources/locker.png")
+             ],
+             swiftSettings: [
+                 .define("USING_SPM")
+             ]
+         )
      ]
 )

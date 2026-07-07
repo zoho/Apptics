@@ -40,6 +40,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (NSString *) dirPathForAnalytics;
 + (NSString *) dirPathForCrash;
++ (NSString *) filePathForKMMCrashedThread;
++ (NSString *) legacyFilePathForKMMCrashedThread;
 + (NSString *) dirPathForFeedback;
 + (NSString *) dirPathForEngagements;
 + (NSString *) dirPathForNonFatals;

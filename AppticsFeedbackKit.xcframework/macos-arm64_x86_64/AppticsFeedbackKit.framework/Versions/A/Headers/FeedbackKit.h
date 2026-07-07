@@ -162,10 +162,22 @@ NS_ASSUME_NONNULL_BEGIN
  Send silent report with trace.
  */
 
-+ (void) sendReportWithTrace:(NSString*_Nonnull) trace includeScreenName : (BOOL) includeScreenName includeLog : (BOOL) includeLog includeDignoInfo : (BOOL) includeDignoInfo tag : (NSString*_Nullable) tag subject : (NSString*_Nullable) subject feedbackType : (ZBFeedbackType) feedbackType;
++ (void) sendReportWithTrace:(NSString*_Nonnull) trace includeScreenName : (BOOL) includeScreenName includeLog : (BOOL) includeLog includeDignoInfo : (BOOL) includeDignoInfo tag : (NSString*_Nullable) tag;
 
 /**
  Send silent report with trace and images.
+ */
+
++ (void) sendReportWithTrace:(NSString*_Nonnull) trace andImages : (NSArray*_Nullable) images includeScreenName : (BOOL) includeScreenName includeLog : (BOOL) includeLog includeDignoInfo : (BOOL) includeDignoInfo tag : (NSString*_Nullable) tag;
+
+/**
+ Send silent report with trace, subject and feedback type.
+ */
+
++ (void) sendReportWithTrace:(NSString*_Nonnull) trace includeScreenName : (BOOL) includeScreenName includeLog : (BOOL) includeLog includeDignoInfo : (BOOL) includeDignoInfo tag : (NSString*_Nullable) tag subject : (NSString*_Nullable) subject feedbackType : (ZBFeedbackType) feedbackType;
+
+/**
+ Send silent report with trace, images, subject and feedback type.
  */
 
 + (void) sendReportWithTrace:(NSString*_Nonnull) trace andImages : (NSArray*_Nullable) images includeScreenName : (BOOL) includeScreenName includeLog : (BOOL) includeLog includeDignoInfo : (BOOL) includeDignoInfo tag : (NSString*_Nullable) tag subject : (NSString*_Nullable) subject feedbackType : (ZBFeedbackType) feedbackType;

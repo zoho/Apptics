@@ -1,0 +1,22 @@
+/* 
+  Localizable.strings
+  Pods
+
+  Created by Raghavendra Panth R on 23/05/19.
+  
+*/
+
+
+"app.haslocked" = "%@ is vergrendeld";
+"app.authenticate.authenticate" = "Tik op waar te verifiëren";
+"app.authenticate.setup" = "Instellen van % @ - ID in de Instellingen van je iPhone te gebruiken ";
+"app.settings" = "Instellingen";
+
+
+"controller.lockAfter" = "Na het verlaten van de app, hoe lang duurt het voordat %@/ Passscode is vereist voor het opnieuw openen?";
+
+"controller.immedietly" = "Onmiddellijk";
+"controller.after" = "Na";
+"controller.minute" = "minuut";
+"controller.minutes" = "minuten";
+"controller.hour" = "uur";
