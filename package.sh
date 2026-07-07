@@ -14,6 +14,8 @@ mkdir -p AppticsPrivacyShield/3.3.17001/
 mkdir -p AppticsMessaging/3.3.17001/
 mkdir -p AppticsNotificationServiceExtension/3.3.17001/
 mkdir -p AppticsNotificationContentExtension/3.3.17001/
+mkdir -p AppticsAppLock/3.3.17001/
+
 
 cp Apptics-SDK.podspec Apptics-SDK/3.3.17001/
 cp Apptics-Swift.podspec Apptics-Swift/3.3.17001/
@@ -31,3 +33,4 @@ cp AppticsPrivacyShield.podspec AppticsPrivacyShield/3.3.17001/
 cp AppticsMessaging.podspec AppticsMessaging/3.3.17001/
 cp AppticsNotificationServiceExtension.podspec AppticsNotificationServiceExtension/3.3.17001/
 cp AppticsNotificationContentExtension.podspec AppticsNotificationContentExtension/3.3.17001/
+cp AppticsAppLock.podspec AppticsAppLock/3.3.17001/
