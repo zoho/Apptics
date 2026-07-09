@@ -19,6 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (NSString*) getTimeZoneAbbrivation;
 + (NSString*) getUUID;
++(NSString *)getDeviceModel;
 + (NSString*) getServiceProvider;
 + (NSString*) getEdgeType;
 + (NSString*) getCurrentRadio;

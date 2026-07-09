@@ -67,7 +67,7 @@
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		J7q+SZL8BNNF6B7zm3fcak4PAYg=
+		XTSH0KZWTd+ZVw7SEn1HPduTen0=
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -75,7 +75,7 @@
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeResources</key>
 		<data>
-		GkDEbNtJKBBgBXaEiEJ/HE0rJ40=
+		SQZfUnlxKc7fHIa8ek6MqAf0JRo=
 		</data>
 		<key>AppticsResources.bundle/_CodeSignature/CodeSignature</key>
 		<data>
@@ -512,7 +512,7 @@
 		</dict>
 		<key>AppticsResources.bundle/sdkProp_info.plist</key>
 		<data>
-		HgEo8HkDIh9ybNEcaN+8AK21J04=
+		D8NVxmpb2247nbXHXHxNbErSz3c=
 		</data>
 		<key>AppticsResources.bundle/sl.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
@@ -728,7 +728,7 @@
 		</data>
 		<key>Headers/Analytics.h</key>
 		<data>
-		ZaEZvzK4P5WnWYNj/qNvzuMP6Sg=
+		a1N9Y1gZvYj83FvwNuUQk747RIY=
 		</data>
 		<key>Headers/Apptics.h</key>
 		<data>
@@ -860,7 +860,7 @@
 		</data>
 		<key>Headers/ZASystemInfo.h</key>
 		<data>
-		WPtl3ElDNw35nO+cU0enLjv5yXc=
+		xpd5aHgv4FAu1TDZsO5ikaxIMJY=
 		</data>
 		<key>Headers/ZASystemProperties.h</key>
 		<data>
@@ -997,7 +997,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KasaQ0wGTB8oEDCKxgRO4RxdHAjgGUT4d8PN6E3vR2o=
+			XuPy+3sJjCc6ytykzpEAEOYDP8wVB4ffRxVwTCHrK7E=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/_CodeSignature/CodeRequirements</key>
@@ -1011,7 +1011,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			a5wvEFSkHCVZMI8IMhCggOojaJOuTxlANUur9oau5yM=
+			XGjpNsjxF16sWHFXRM2iruLN9ddMrVOPrLholuHSuqU=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/_CodeSignature/CodeSignature</key>
@@ -1472,7 +1472,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vMAZt5I/axuCUO2bejFLNwHD+xXpj3xGaa/Ft0GgAGA=
+			JUHGpqTKo4etCojyDtR2ISs0moXTNIVGyvO51srZ7iI=
 			</data>
 		</dict>
 		<key>AppticsResources.bundle/sl.lproj/ZAnalyticsLocalizable.strings</key>
@@ -1769,7 +1769,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IpXSjYSqVpFLqGrs5/FRA1qpwS14P7vwnfqFZN1c3Js=
+			rc+3G4aYzPY+XhZBmBxA76I6aFKlpzf9jXXHk6jy0lg=
 			</data>
 		</dict>
 		<key>Headers/Apptics.h</key>
@@ -2000,7 +2000,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			l5GnDD7dGypbj14O+lv8Ep7+G3w1ckXQSZAvLbaY50U=
+			Wa0pgcfL9GuCB691TnqvibWv9aJLIxNEdEZxZDKxebQ=
 			</data>
 		</dict>
 		<key>Headers/ZASystemProperties.h</key>
