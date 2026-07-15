@@ -1,0 +1,22 @@
+/* 
+  Localizable.strings
+  Pods
+
+  Created by Raghavendra Panth R on 23/05/19.
+  
+*/
+
+
+"app.haslocked" = "%@ био блокиран";
+"app.authenticate.authenticate" = "Додирните било где за проверу аутентичности";
+"app.authenticate.setup" = "Подешавање %@ ИД у подешавањима ипхоне да користите ";
+"app.settings" = "Опције";
+
+
+"controller.lockAfter" = "Након изласка из апликације, колико дуго док тоуцх ИД/ Passscode захтева за отварање?";
+
+"controller.immedietly" = "Одмах";
+"controller.after" = "након";
+"controller.minute" = "минут";
+"controller.minutes" = "минута";
+"controller.hour" = "сат";

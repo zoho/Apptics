@@ -186,7 +186,7 @@ typedef void (^internbgConsoleLogsRequestSuccessBlock)(void);
 
 - (void) trackError:(NSError*_Nonnull) error withKey : (NSString*) key;
 
-- (void) trackNonNativeException:(NSString *_Nonnull) name message :(NSString *_Nonnull) message stackTrace : (NSString* _Nonnull) stackTrace type : (NSString* _Nonnull) type withKey : (NSString*) key source: (NSString * _Nonnull) source;
+- (void) trackNonNativeException:(NSString *_Nonnull) name message :(NSString *_Nonnull) message stackTrace : (NSArray* _Nonnull) stackTrace type : (NSString* _Nonnull) type withKey : (NSString*) key source: (NSString * _Nonnull) source;
 
 - (void) recordNonFatal:(NSException *)exception;
 

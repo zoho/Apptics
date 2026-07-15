@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  Pods
+
+  Created by Raghavendra Panth R on 23/05/19.
+  
+*/
+
+
+"app.haslocked" = "%@ ha sido bloqueado";
+"app.authenticate.authenticate" = "Toque en cualquier lugar para autenticar";
+"app.authenticate.setup" = "Establecer %@ ID en el iPhone la Configuración para utilizar ";
+"app.settings" = "Configuración";
+
+
+"controller.lockAfter" = "Después de salir de la app, ¿cuánto tiempo hasta que %@/ Passscode es necesaria para la re-apertura?";
+
+"controller.immedietly" = "Inmediatamente";
+"controller.after" = "Después de";
+"controller.minute" = "minutos";
+"controller.minutes" = "minutos";
+"controller.hour" = "hora";
+

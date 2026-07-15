@@ -1,0 +1,22 @@
+/* 
+  Localizable.strings
+  Pods
+
+  Created by Raghavendra Panth R on 23/05/19.
+  
+*/
+
+
+"app.haslocked" = "%@가 잠겼습니다";
+"app.authenticate.authenticate" = "어떤 곳을 누릅 인증";
+"app.authenticate.setup" = "설정%@ID 에서 아이폰을 사용하려면 설정 ";
+
+"app.settings" = "설정";
+
+"controller.lockAfter" = "후에 응용 프로그램을 떠나,얼마 전까지 터치 ID/Passscode 에 필요한 다시 열?";
+
+"controller.immedietly" = "즉시";
+"controller.after" = "후에";
+"controller.minute" = "분";
+"controller.minutes" = "분";
+"controller.hour" = "시간";

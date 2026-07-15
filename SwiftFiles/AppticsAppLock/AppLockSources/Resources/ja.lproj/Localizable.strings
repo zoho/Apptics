@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  Pods
+
+  Created by Raghavendra Panth R on 23/05/19.
+  
+*/
+
+
+"app.haslocked" = "%@かれてい";
+"app.authenticate.authenticate" = "タップする任意の場所を認証";
+"app.authenticate.setup" = "セ%@ID iPhoneで使用する設定 ";
+"app.settings" = "設定";
+
+
+"controller.lockAfter" = "退職後もアプリは、どのくらいの時間まで%@/Passscodeに必要なオープン?";
+
+"controller.immedietly" = "すぐ";
+"controller.after" = "後";
+"controller.minute" = "分";
+"controller.minutes" = "分";
+"controller.hour" = "時間";
+

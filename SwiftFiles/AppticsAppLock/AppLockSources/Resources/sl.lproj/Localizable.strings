@@ -1,0 +1,22 @@
+/* 
+  Localizable.strings
+  Pods
+
+  Created by Raghavendra Panth R on 23/05/19.
+  
+*/
+
+
+"app.haslocked" = "%@ zaklenjena";
+"app.authenticate.authenticate" = "Tapnite kjer koli, da preverjanje pristnosti";
+"app.authenticate.setup" = "Nastavite %@ ID v iPhone Nastavitve za uporabo ";
+"app.settings" = "Nastavitve";
+
+
+"controller.lockAfter" = "Po odhodu app, kako dolgo, dokler se Dotaknite ID/ Passscode je potrebna za ponovno odpiranje?";
+
+"controller.immedietly" = "Takoj";
+"controller.after" = "Po";
+"controller.minute" = "minuto";
+"controller.minutes" = "minut";
+"controller.hour" = "uro";
