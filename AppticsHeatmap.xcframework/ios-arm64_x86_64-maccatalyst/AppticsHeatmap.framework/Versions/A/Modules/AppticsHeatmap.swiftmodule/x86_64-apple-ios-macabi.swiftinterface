@@ -1,0 +1,27 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
+// swift-module-flags: -target x86_64-apple-ios13.1-macabi -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name AppticsHeatmap
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
+@_exported import AppticsHeatmap
+import Foundation
+import Swift
+import SwiftUI
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@available(iOS 15.0, *)
+extension SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public func appticsHeatmapScreen(_ screenName: Swift.String) -> some SwiftUICore.View
+  
+}
+@available(iOS 15.0, *)
+extension SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public func appticsHeatmapScroll() -> some SwiftUICore.View
+  
+}
+@available(iOS 15.0, *)
+extension SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public func appticsHeatmapInteraction(label: Swift.String, isClickable: Swift.Bool = true) -> some SwiftUICore.View
+  
+}

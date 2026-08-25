@@ -1,0 +1,274 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "AppticsHeatmap",
+    "printedName": "AppticsHeatmap",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "AppticsHeatmap",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "AppticsHeatmap",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AppticsHeatmap"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "AppticsHeatmap",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AppticsHeatmap"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AppticsHeatmap",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AppticsHeatmap"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "View",
+        "printedName": "View",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "appticsHeatmapScreen",
+            "printedName": "appticsHeatmapScreen(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7SwiftUI4ViewP14AppticsHeatmapE07appticsE6ScreenyQrSSF",
+            "mangledName": "$s7SwiftUI4ViewP14AppticsHeatmapE07appticsE6ScreenyQrSSF",
+            "moduleName": "AppticsHeatmap",
+            "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
+            "sugared_genericSig": "<Self where Self : SwiftUI.View>",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "appticsHeatmapScroll",
+            "printedName": "appticsHeatmapScroll()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7SwiftUI4ViewP14AppticsHeatmapE07appticsE6ScrollQryF",
+            "mangledName": "$s7SwiftUI4ViewP14AppticsHeatmapE07appticsE6ScrollQryF",
+            "moduleName": "AppticsHeatmap",
+            "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
+            "sugared_genericSig": "<Self where Self : SwiftUI.View>",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "appticsHeatmapInteraction",
+            "printedName": "appticsHeatmapInteraction(label:isClickable:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7SwiftUI4ViewP14AppticsHeatmapE07appticsE11Interaction5label11isClickableQrSS_SbtF",
+            "mangledName": "$s7SwiftUI4ViewP14AppticsHeatmapE07appticsE11Interaction5label11isClickableQrSS_SbtF",
+            "moduleName": "AppticsHeatmap",
+            "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
+            "sugared_genericSig": "<Self where Self : SwiftUI.View>",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:7SwiftUI4ViewP",
+        "mangledName": "$s7SwiftUI4ViewP",
+        "moduleName": "SwiftUICore",
+        "genericSig": "<τ_0_0.Body : SwiftUI.View>",
+        "sugared_genericSig": "<Self.Body : SwiftUI.View>",
+        "intro_Macosx": "10.15",
+        "intro_iOS": "13.0",
+        "intro_tvOS": "13.0",
+        "intro_watchOS": "6.0",
+        "declAttributes": [
+          "Preconcurrency",
+          "TypeEraser",
+          "TypeEraser",
+          "OriginallyDefinedIn",
+          "OriginallyDefinedIn",
+          "OriginallyDefinedIn",
+          "OriginallyDefinedIn",
+          "Available",
+          "Available",
+          "Available",
+          "Available",
+          "Custom"
+        ],
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/test\/Workspace\/apptics_apple_sdk\/native\/source\/AppticsHeatmap\/SwiftUI\/AppticsHeatmapScrollModifier.swift",
+      "kind": "BooleanLiteral",
+      "offset": 323,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/test\/Workspace\/apptics_apple_sdk\/native\/source\/AppticsHeatmap\/SwiftUI\/AppticsHeatmapScrollModifier.swift",
+      "kind": "FloatLiteral",
+      "offset": 378,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/test\/Workspace\/apptics_apple_sdk\/native\/source\/AppticsHeatmap\/SwiftUI\/AppticsHeatmapInteractionModifier.swift",
+      "kind": "StringLiteral",
+      "offset": 232,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/test\/Workspace\/apptics_apple_sdk\/native\/source\/AppticsHeatmap\/SwiftUI\/AppticsHeatmapInteractionModifier.swift",
+      "kind": "BooleanLiteral",
+      "offset": 263,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/test\/Workspace\/apptics_apple_sdk\/native\/source\/AppticsHeatmap\/SwiftUI\/AppticsHeatmapInteractionModifier.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3331,
+      "length": 4,
+      "value": "true"
+    }
+  ]
+}

@@ -64,6 +64,10 @@
              targets: ["AppticsMessaging"]
          ),
          .library(
+             name: "AppticsHeatmap",
+             targets: ["AppticsHeatmapWrapper"]
+         ),
+         .library(
              name: "AppticsNotificationServiceExtension",
              targets: ["AppticsNotificationServiceExtension"]
          ),
@@ -128,6 +132,17 @@
          .binaryTarget(
              name: "AppticsMessaging",
              path: "AppticsMessaging.xcframework"
+         ),
+         .binaryTarget(
+             name: "AppticsHeatmapBinary",
+             path: "AppticsHeatmap.xcframework"
+         ),
+         .target(
+             name: "AppticsHeatmapWrapper",
+             dependencies: [
+                 .target(name: "AppticsHeatmapBinary", condition: .when(platforms: [.iOS]))
+             ],
+             path: "SwiftFiles/AppticsHeatmapWrapper"
          ),
          .binaryTarget(
              name: "AppticsNotificationServiceExtension",

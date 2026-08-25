@@ -1032,38 +1032,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
           },
           {
             "kind": "Conformance",
@@ -1074,10 +1046,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           },
           {
             "kind": "Conformance",
@@ -1088,10 +1074,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           }
         ]
       },
@@ -1732,38 +1732,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
           },
           {
             "kind": "Conformance",
@@ -1774,10 +1746,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           },
           {
             "kind": "Conformance",
@@ -1788,10 +1774,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           },
           {
             "kind": "Conformance",
@@ -2990,17 +2990,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -3263,17 +3263,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -3456,38 +3456,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
           },
           {
             "kind": "Conformance",
@@ -3498,10 +3470,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           },
           {
             "kind": "Conformance",
@@ -3512,10 +3498,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           }
         ]
       },
@@ -3664,38 +3664,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
           },
           {
             "kind": "Conformance",
@@ -3706,10 +3678,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           },
           {
             "kind": "Conformance",
@@ -3720,10 +3706,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           }
         ]
       },
@@ -4056,17 +4056,17 @@
                   },
                   {
                     "kind": "Conformance",
-                    "name": "Escapable",
-                    "printedName": "Escapable",
-                    "usr": "s:s9EscapableP",
-                    "mangledName": "$ss9EscapableP"
-                  },
-                  {
-                    "kind": "Conformance",
                     "name": "Equatable",
                     "printedName": "Equatable",
                     "usr": "s:SQ",
                     "mangledName": "$sSQ"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
                   },
                   {
                     "kind": "Conformance",
@@ -4382,17 +4382,17 @@
                   },
                   {
                     "kind": "Conformance",
-                    "name": "Escapable",
-                    "printedName": "Escapable",
-                    "usr": "s:s9EscapableP",
-                    "mangledName": "$ss9EscapableP"
-                  },
-                  {
-                    "kind": "Conformance",
                     "name": "Equatable",
                     "printedName": "Equatable",
                     "usr": "s:SQ",
                     "mangledName": "$sSQ"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
                   },
                   {
                     "kind": "Conformance",
@@ -5069,38 +5069,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
           },
           {
             "kind": "Conformance",
@@ -5111,17 +5083,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
           },
           {
             "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
           },
           {
             "kind": "Conformance",
@@ -5132,10 +5104,31 @@
           },
           {
             "kind": "Conformance",
-            "name": "UITraitChangeObservable",
-            "printedName": "UITraitChangeObservable",
-            "usr": "s:5UIKit23UITraitChangeObservableP",
-            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           },
           {
             "kind": "Conformance",
@@ -5143,6 +5136,13 @@
             "printedName": "__DefaultCustomPlaygroundQuickLookable",
             "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
             "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           }
         ]
       },
@@ -5231,45 +5231,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
           },
           {
             "kind": "Conformance",
@@ -5280,17 +5245,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
           },
           {
             "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
           },
           {
             "kind": "Conformance",
@@ -5301,10 +5266,45 @@
           },
           {
             "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
             "name": "SendableMetatype",
             "printedName": "SendableMetatype",
             "usr": "s:s16SendableMetatypeP",
             "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       }
@@ -5313,385 +5313,385 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/jai-13322\/Documents\/GitLabMasterMergeFixes\/opensource\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AuthenticatorKeychain.swift",
+      "filePath": "\/Users\/test\/Workspace\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AuthenticatorKeychain.swift",
       "kind": "StringLiteral",
       "offset": 172,
       "length": 22,
       "value": "\"AuthenticatorService\""
     },
     {
-      "filePath": "\/Users\/jai-13322\/Documents\/GitLabMasterMergeFixes\/opensource\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AuthenticatorKeychain.swift",
+      "filePath": "\/Users\/test\/Workspace\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AuthenticatorKeychain.swift",
       "kind": "StringLiteral",
       "offset": 221,
       "length": 28,
       "value": "\"Authenticator.authenticate\""
     },
     {
-      "filePath": "\/Users\/jai-13322\/Documents\/GitLabMasterMergeFixes\/opensource\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShield.swift",
+      "filePath": "\/Users\/test\/Workspace\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShield.swift",
       "kind": "BooleanLiteral",
       "offset": 114,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/jai-13322\/Documents\/GitLabMasterMergeFixes\/opensource\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShield.swift",
+      "filePath": "\/Users\/test\/Workspace\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShield.swift",
       "kind": "BooleanLiteral",
       "offset": 165,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/jai-13322\/Documents\/GitLabMasterMergeFixes\/opensource\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShield.swift",
+      "filePath": "\/Users\/test\/Workspace\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShield.swift",
       "kind": "BooleanLiteral",
       "offset": 327,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jai-13322\/Documents\/GitLabMasterMergeFixes\/opensource\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShield.swift",
+      "filePath": "\/Users\/test\/Workspace\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShield.swift",
       "kind": "IntegerLiteral",
       "offset": 540,
       "length": 4,
       "value": "1789"
     },
     {
-      "filePath": "\/Users\/jai-13322\/Documents\/GitLabMasterMergeFixes\/opensource\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShield.swift",
+      "filePath": "\/Users\/test\/Workspace\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShield.swift",
       "kind": "BooleanLiteral",
       "offset": 896,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jai-13322\/Documents\/GitLabMasterMergeFixes\/opensource\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShield.swift",
+      "filePath": "\/Users\/test\/Workspace\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShield.swift",
       "kind": "StringLiteral",
       "offset": 1380,
       "length": 11,
       "value": "\"delayTime\""
     },
     {
-      "filePath": "\/Users\/jai-13322\/Documents\/GitLabMasterMergeFixes\/opensource\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShield.swift",
+      "filePath": "\/Users\/test\/Workspace\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShield.swift",
       "kind": "IntegerLiteral",
       "offset": 1396,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/jai-13322\/Documents\/GitLabMasterMergeFixes\/opensource\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShield.swift",
+      "filePath": "\/Users\/test\/Workspace\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShield.swift",
       "kind": "BooleanLiteral",
       "offset": 1534,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jai-13322\/Documents\/GitLabMasterMergeFixes\/opensource\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShield.swift",
+      "filePath": "\/Users\/test\/Workspace\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShield.swift",
       "kind": "BooleanLiteral",
       "offset": 1579,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jai-13322\/Documents\/GitLabMasterMergeFixes\/opensource\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShield.swift",
+      "filePath": "\/Users\/test\/Workspace\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShield.swift",
       "kind": "Array",
       "offset": 1643,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/jai-13322\/Documents\/GitLabMasterMergeFixes\/opensource\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShield.swift",
+      "filePath": "\/Users\/test\/Workspace\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShield.swift",
       "kind": "Array",
       "offset": 1685,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/jai-13322\/Documents\/GitLabMasterMergeFixes\/opensource\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShield.swift",
+      "filePath": "\/Users\/test\/Workspace\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShield.swift",
       "kind": "BooleanLiteral",
       "offset": 1834,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jai-13322\/Documents\/GitLabMasterMergeFixes\/opensource\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShield.swift",
+      "filePath": "\/Users\/test\/Workspace\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShield.swift",
       "kind": "BooleanLiteral",
       "offset": 5470,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jai-13322\/Documents\/GitLabMasterMergeFixes\/opensource\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShield.swift",
+      "filePath": "\/Users\/test\/Workspace\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShield.swift",
       "kind": "StringLiteral",
       "offset": 6853,
       "length": 6,
       "value": "\"true\""
     },
     {
-      "filePath": "\/Users\/jai-13322\/Documents\/GitLabMasterMergeFixes\/opensource\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShield.swift",
+      "filePath": "\/Users\/test\/Workspace\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShield.swift",
       "kind": "StringLiteral",
       "offset": 18740,
       "length": 3,
       "value": "\".\""
     },
     {
-      "filePath": "\/Users\/jai-13322\/Documents\/GitLabMasterMergeFixes\/opensource\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShield.swift",
+      "filePath": "\/Users\/test\/Workspace\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShield.swift",
       "kind": "StringLiteral",
       "offset": 18746,
       "length": 15,
       "value": "\"isFirstLaunch\""
     },
     {
-      "filePath": "\/Users\/jai-13322\/Documents\/GitLabMasterMergeFixes\/opensource\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShield.swift",
+      "filePath": "\/Users\/test\/Workspace\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShield.swift",
       "kind": "StringLiteral",
       "offset": 18827,
       "length": 7,
       "value": "\"false\""
     },
     {
-      "filePath": "\/Users\/jai-13322\/Documents\/GitLabMasterMergeFixes\/opensource\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShield.swift",
+      "filePath": "\/Users\/test\/Workspace\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShield.swift",
       "kind": "BooleanLiteral",
       "offset": 18876,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/jai-13322\/Documents\/GitLabMasterMergeFixes\/opensource\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShield.swift",
+      "filePath": "\/Users\/test\/Workspace\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShield.swift",
       "kind": "StringLiteral",
       "offset": 18972,
       "length": 15,
       "value": "\"isFirstLaunch\""
     },
     {
-      "filePath": "\/Users\/jai-13322\/Documents\/GitLabMasterMergeFixes\/opensource\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShield.swift",
+      "filePath": "\/Users\/test\/Workspace\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShield.swift",
       "kind": "StringLiteral",
       "offset": 19053,
       "length": 7,
       "value": "\"false\""
     },
     {
-      "filePath": "\/Users\/jai-13322\/Documents\/GitLabMasterMergeFixes\/opensource\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShield.swift",
+      "filePath": "\/Users\/test\/Workspace\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShield.swift",
       "kind": "BooleanLiteral",
       "offset": 19085,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/jai-13322\/Documents\/GitLabMasterMergeFixes\/opensource\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShield.swift",
+      "filePath": "\/Users\/test\/Workspace\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShield.swift",
       "kind": "BooleanLiteral",
       "offset": 19138,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jai-13322\/Documents\/GitLabMasterMergeFixes\/opensource\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShield.swift",
+      "filePath": "\/Users\/test\/Workspace\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShield.swift",
       "kind": "StringLiteral",
       "offset": 20576,
       "length": 14,
       "value": "\"appDidUnlock\""
     },
     {
-      "filePath": "\/Users\/jai-13322\/Documents\/GitLabMasterMergeFixes\/opensource\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShieldViewController.swift",
+      "filePath": "\/Users\/test\/Workspace\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShieldViewController.swift",
       "kind": "StringLiteral",
       "offset": 390,
       "length": 23,
       "value": "\"controller.immedietly\""
     },
     {
-      "filePath": "\/Users\/jai-13322\/Documents\/GitLabMasterMergeFixes\/opensource\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShieldViewController.swift",
+      "filePath": "\/Users\/test\/Workspace\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShieldViewController.swift",
       "kind": "StringLiteral",
       "offset": 435,
       "length": 18,
       "value": "\"controller.after\""
     },
     {
-      "filePath": "\/Users\/jai-13322\/Documents\/GitLabMasterMergeFixes\/opensource\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShieldViewController.swift",
+      "filePath": "\/Users\/test\/Workspace\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShieldViewController.swift",
       "kind": "StringLiteral",
       "offset": 477,
       "length": 5,
       "value": "\" 1 \""
     },
     {
-      "filePath": "\/Users\/jai-13322\/Documents\/GitLabMasterMergeFixes\/opensource\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShieldViewController.swift",
+      "filePath": "\/Users\/test\/Workspace\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShieldViewController.swift",
       "kind": "StringLiteral",
       "offset": 485,
       "length": 19,
       "value": "\"controller.minute\""
     },
     {
-      "filePath": "\/Users\/jai-13322\/Documents\/GitLabMasterMergeFixes\/opensource\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShieldViewController.swift",
+      "filePath": "\/Users\/test\/Workspace\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShieldViewController.swift",
       "kind": "StringLiteral",
       "offset": 526,
       "length": 4,
       "value": "\"15\""
     },
     {
-      "filePath": "\/Users\/jai-13322\/Documents\/GitLabMasterMergeFixes\/opensource\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShieldViewController.swift",
+      "filePath": "\/Users\/test\/Workspace\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShieldViewController.swift",
       "kind": "StringLiteral",
       "offset": 554,
       "length": 4,
       "value": "\"30\""
     },
     {
-      "filePath": "\/Users\/jai-13322\/Documents\/GitLabMasterMergeFixes\/opensource\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShieldViewController.swift",
+      "filePath": "\/Users\/test\/Workspace\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShieldViewController.swift",
       "kind": "StringLiteral",
       "offset": 582,
       "length": 18,
       "value": "\"controller.after\""
     },
     {
-      "filePath": "\/Users\/jai-13322\/Documents\/GitLabMasterMergeFixes\/opensource\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShieldViewController.swift",
+      "filePath": "\/Users\/test\/Workspace\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShieldViewController.swift",
       "kind": "StringLiteral",
       "offset": 624,
       "length": 5,
       "value": "\" 1 \""
     },
     {
-      "filePath": "\/Users\/jai-13322\/Documents\/GitLabMasterMergeFixes\/opensource\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShieldViewController.swift",
+      "filePath": "\/Users\/test\/Workspace\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShieldViewController.swift",
       "kind": "StringLiteral",
       "offset": 632,
       "length": 17,
       "value": "\"controller.hour\""
     },
     {
-      "filePath": "\/Users\/jai-13322\/Documents\/GitLabMasterMergeFixes\/opensource\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShieldViewController.swift",
+      "filePath": "\/Users\/test\/Workspace\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShieldViewController.swift",
       "kind": "Array",
       "offset": 690,
       "length": 4,
       "value": "[\"\"]"
     },
     {
-      "filePath": "\/Users\/jai-13322\/Documents\/GitLabMasterMergeFixes\/opensource\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/KeyChainAuthentication.swift",
+      "filePath": "\/Users\/test\/Workspace\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/KeyChainAuthentication.swift",
       "kind": "IntegerLiteral",
       "offset": 546,
       "length": 9,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/jai-13322\/Documents\/GitLabMasterMergeFixes\/opensource\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/KeyChainAuthentication.swift",
+      "filePath": "\/Users\/test\/Workspace\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/KeyChainAuthentication.swift",
       "kind": "IntegerLiteral",
       "offset": 565,
       "length": 8,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/jai-13322\/Documents\/GitLabMasterMergeFixes\/opensource\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/KeyChainAuthentication.swift",
+      "filePath": "\/Users\/test\/Workspace\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/KeyChainAuthentication.swift",
       "kind": "StringLiteral",
       "offset": 2058,
       "length": 19,
-      "value": "\"com.AppShield.app\""
+      "value": "\"com.appshield.app\""
     },
     {
-      "filePath": "\/Users\/jai-13322\/Documents\/GitLabMasterMergeFixes\/opensource\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/KeyChainAuthentication.swift",
+      "filePath": "\/Users\/test\/Workspace\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/KeyChainAuthentication.swift",
       "kind": "StringLiteral",
       "offset": 2113,
       "length": 17,
       "value": "\"biometricAccess\""
     },
     {
-      "filePath": "\/Users\/jai-13322\/Documents\/GitLabMasterMergeFixes\/opensource\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/KeyChainAuthentication.swift",
+      "filePath": "\/Users\/test\/Workspace\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/KeyChainAuthentication.swift",
       "kind": "StringLiteral",
       "offset": 2165,
       "length": 16,
       "value": "\"passcodeAccess\""
     },
     {
-      "filePath": "\/Users\/jai-13322\/Documents\/GitLabMasterMergeFixes\/opensource\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AuthenticatorViewController.swift",
+      "filePath": "\/Users\/test\/Workspace\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AuthenticatorViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 282,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/jai-13322\/Documents\/GitLabMasterMergeFixes\/opensource\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AuthenticatorViewController.swift",
+      "filePath": "\/Users\/test\/Workspace\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AuthenticatorViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 319,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jai-13322\/Documents\/GitLabMasterMergeFixes\/opensource\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AuthenticatorViewController.swift",
+      "filePath": "\/Users\/test\/Workspace\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AuthenticatorViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 546,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jai-13322\/Documents\/GitLabMasterMergeFixes\/opensource\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AuthenticatorViewController.swift",
+      "filePath": "\/Users\/test\/Workspace\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AuthenticatorViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 798,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jai-13322\/Documents\/GitLabMasterMergeFixes\/opensource\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AuthenticatorViewController.swift",
+      "filePath": "\/Users\/test\/Workspace\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AuthenticatorViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 953,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jai-13322\/Documents\/GitLabMasterMergeFixes\/opensource\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AuthenticatorViewController.swift",
+      "filePath": "\/Users\/test\/Workspace\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AuthenticatorViewController.swift",
       "kind": "StringLiteral",
       "offset": 1084,
       "length": 21,
       "value": "\"CFBundleDisplayName\""
     },
     {
-      "filePath": "\/Users\/jai-13322\/Documents\/GitLabMasterMergeFixes\/opensource\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AuthenticatorViewController.swift",
+      "filePath": "\/Users\/test\/Workspace\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AuthenticatorViewController.swift",
       "kind": "StringLiteral",
       "offset": 1171,
       "length": 14,
       "value": "\"CFBundleName\""
     },
     {
-      "filePath": "\/Users\/jai-13322\/Documents\/GitLabMasterMergeFixes\/opensource\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/Authenticator.swift",
+      "filePath": "\/Users\/test\/Workspace\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/Authenticator.swift",
       "kind": "IntegerLiteral",
       "offset": 6026,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/jai-13322\/Documents\/GitLabMasterMergeFixes\/opensource\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShieldExtensions.swift",
+      "filePath": "\/Users\/test\/Workspace\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShieldExtensions.swift",
       "kind": "FloatLiteral",
       "offset": 3137,
       "length": 3,
       "value": "0.3"
     },
     {
-      "filePath": "\/Users\/jai-13322\/Documents\/GitLabMasterMergeFixes\/opensource\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShieldExtensions.swift",
+      "filePath": "\/Users\/test\/Workspace\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShieldExtensions.swift",
       "kind": "StringLiteral",
       "offset": 9218,
       "length": 41,
       "value": "\"AssociatedKeys.DescriptiveName.blurView\""
     },
     {
-      "filePath": "\/Users\/jai-13322\/Documents\/GitLabMasterMergeFixes\/opensource\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShieldExtensions.swift",
+      "filePath": "\/Users\/test\/Workspace\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShieldExtensions.swift",
       "kind": "BooleanLiteral",
       "offset": 10018,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jai-13322\/Documents\/GitLabMasterMergeFixes\/opensource\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShieldExtensions.swift",
+      "filePath": "\/Users\/test\/Workspace\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShieldExtensions.swift",
       "kind": "FloatLiteral",
       "offset": 10185,
       "length": 3,
       "value": "0.1"
     },
     {
-      "filePath": "\/Users\/jai-13322\/Documents\/GitLabMasterMergeFixes\/opensource\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShieldExtensions.swift",
+      "filePath": "\/Users\/test\/Workspace\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShieldExtensions.swift",
       "kind": "IntegerLiteral",
       "offset": 10676,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/jai-13322\/Documents\/GitLabMasterMergeFixes\/opensource\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShieldExtensions.swift",
+      "filePath": "\/Users\/test\/Workspace\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AppShieldExtensions.swift",
       "kind": "BooleanLiteral",
       "offset": 11441,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jai-13322\/Documents\/GitLabMasterMergeFixes\/opensource\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AuthenticatorBlurViewController.swift",
+      "filePath": "\/Users\/test\/Workspace\/apptics_apple_sdk\/native\/source\/SwiftFiles\/AppticsAppLock\/AppLockSources\/AuthenticatorBlurViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 2693,
       "length": 4,

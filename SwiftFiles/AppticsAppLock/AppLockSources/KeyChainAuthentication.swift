@@ -69,7 +69,7 @@ extension UIViewController {
 
 class AppLockManager {
     static let shared = AppLockManager()
-    private let serviceIdentifier = "com.AppShield.app"
+    private let serviceIdentifier = "com.appshield.app"
     private let accountBiometric = "biometricAccess"
     private let accountPasscode = "passcodeAccess"
     
@@ -114,36 +114,15 @@ class AppLockManager {
             kSecUseOperationPrompt as String: "Authenticate to access your secure data"
         ]
         
-        // SecItemCopyMatching on a biometric-protected item presents the Face ID / passcode
-        // sheet and blocks the calling thread until the user responds. Run it off the main
-        // thread so the UI/CFRunLoop isn't stalled, then deliver results on main.
-        DispatchQueue.global(qos: .userInitiated).async {
-            var result: AnyObject?
-            var status = SecItemCopyMatching(query as CFDictionary, &result)
-
-            // Post-restore self-heal. The sentinels are stored
-            // kSecAttrAccessibleWhenUnlockedThisDeviceOnly, so an iPhone restore
-            // wipes them and this lookup returns errSecItemNotFound (-25300)
-            // WITHOUT presenting any prompt. These items carry no secret — they
-            // exist only to force the Face ID / passcode sheet — so "missing"
-            // means "not provisioned on this device", not "auth failed".
-            // Re-provision both sentinels (adding a protected item needs no auth)
-            // and retry the lookup once so the OS prompt appears on this same
-            // attempt instead of the screen staying silently locked.
-            if status == errSecItemNotFound {
-                self.enableAppLock()
-                status = SecItemCopyMatching(query as CFDictionary, &result)
-            }
-
-            DispatchQueue.main.async {
-                completion(status == errSecSuccess)
-                // The not-found case is already handled by the re-provision +
-                // retry above; only surface handleError for other statuses.
-                if status != errSecItemNotFound {
-                    self.handleError(status)
-                }
-            }
+        var result: AnyObject?
+        let status = SecItemCopyMatching(query as CFDictionary, &result)
+        
+        DispatchQueue.main.async {
+            completion(status == errSecSuccess)
         }
+        handleError(status)
+        
+        
     }
     
     func handleError(_ status:OSStatus){
@@ -168,12 +147,35 @@ class AppLockManager {
                 
             })
         case -25300 :
-            AppLockManager.shared.enableAppLock()
+            repairCorruptedKeychainIfNeeded()
         default:
             break
         }
         
     }
+    
+    private func repairCorruptedKeychainIfNeeded() {
+                guard AppticsLock.shared.isAuthenticatorEnabled else { return }
+                
+                let query: [String: Any] = [
+                    kSecClass as String: kSecClassGenericPassword,
+                    kSecAttrService as String: "com.appshield.app",
+                    kSecAttrAccount as String: "passcodeAccess",
+                    kSecMatchLimit as String: kSecMatchLimitOne,
+                    kSecReturnAttributes as String: kCFBooleanTrue!,
+                    kSecUseAuthenticationUI as String: kSecUseAuthenticationUIFail
+                ]
+                
+                var result: AnyObject?
+                let status = SecItemCopyMatching(query as CFDictionary, &result)
+                
+                if status == errSecItemNotFound {//if error is -253000, we called AppShield.shared.toggleAuthenticator to fix the issue.
+                    AppticsLock.shared.toggleAuthenticator(true, forceToggle: true) { result in
+                        // add log later
+                        print("[AppticsLock-log] App lock re-authenticated")
+                    }
+                }
+            }
     
     // Enable Biometric and Passcode Lock
     func enableAppLock() {
@@ -235,3 +237,4 @@ class AppLockManager {
         return SecItemDelete(query as CFDictionary)
     }
 }
+

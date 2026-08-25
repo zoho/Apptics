@@ -8,9 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <Apptics/ZAEnums.h>
-#import <Apptics/MultipleDC.h>
 //#import <UIKit/UIKit.h>
-@class APMultipleDCConfig;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -73,6 +71,10 @@ typedef NS_ENUM(NSInteger, APFlushInterval) {
 @property (nonatomic) bool enableRateUs API_UNAVAILABLE(macos, watchos);
 @property (nonatomic) bool sendDataOnMobileNetworkByDefault;
 
+/// When YES, AppticsHeatmap captures / stores screen snapshots for heatmaps.
+/// Default NO (V1 ships gesture telemetry only). Set YES to re-enable screenshots.
+@property (nonatomic) bool enableHeatmapScreenshotCapture API_UNAVAILABLE(macos, tvos, watchos);
+
 //@property (nonatomic) bool completeOffByDefault;
 @property (nonatomic) bool trackOnByDefault;
 @property (nonatomic) bool enableAutomaticSessionTracking;
@@ -82,7 +84,6 @@ typedef NS_ENUM(NSInteger, APFlushInterval) {
 @property (nonatomic) bool resetOnDCSwitch;
 @property (nonatomic) bool turnOnDebugView;
 @property (nonatomic) bool enableKeyLogs;
-@property (nonatomic, strong) MultipleDC *multipleDC;
 
 
 @property (nonatomic) APAnonymousType anonymousType;

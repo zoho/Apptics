@@ -1,0 +1,10 @@
+framework module AppticsHeatmap {
+  umbrella header "AppticsHeatmap.h"
+  export *
+
+  module * { export * }
+}
+
+module AppticsHeatmap.Swift {
+  header "AppticsHeatmap-Swift.h"
+}

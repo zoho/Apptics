@@ -311,13 +311,6 @@ void AP_TrackException(const char *file, int lineNumber, const char *functionNam
 
 + (void) setUser:(APUser * _Nullable)user NS_EXTENSION_UNAVAILABLE("don't use this method in your extensions");
 
-
-
-+ (void) setUser:(APUser * _Nullable)user dc:(AppticsDC _Nullable)dc NS_EXTENSION_UNAVAILABLE("don't use this method in your extensions");
-
-
-
-
 /**
  Specify a user identifier which will be used to identify the user in the future. We recommend you use a unique userID.
  
@@ -338,9 +331,6 @@ void AP_TrackException(const char *file, int lineNumber, const char *functionNam
  */
 
 + (void) setCurrentUser:(NSString * _Nullable)userID groupId : (NSString*_Nullable)groupID NS_EXTENSION_UNAVAILABLE("don't use this method in your extensions");
-
-
-+ (void) setCurrentUser:(NSString * _Nullable)userID groupId : (NSString*_Nullable)groupID dc:(AppticsDC _Nullable)dc NS_EXTENSION_UNAVAILABLE("don't use this method in your extensions");
 
 
 #pragma mark — Settings apis
