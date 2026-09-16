@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		XIr44CIXKZEmDrdzPxR/S2ZwyUs=
+		t52ZhGomMkW6OKWCfancFuHtKYg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -30,21 +30,17 @@
 		</data>
 		<key>Version.debug.xcconfig</key>
 		<data>
-		+5kDvPn5c/UCt6U83txdmqzNTKs=
+		Y8TA8Vamgu0Znml+UCYMO/RXPy8=
 		</data>
 		<key>Version.release.xcconfig</key>
 		<data>
-		+5kDvPn5c/UCt6U83txdmqzNTKs=
+		Y8TA8Vamgu0Znml+UCYMO/RXPy8=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
 		<key>Headers/APRateUs.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			I8Inl3JvGILHdB9b4GMbCpmGQSk=
-			</data>
 			<key>hash2</key>
 			<data>
 			012aA765XZGueOb0gP5OJjjUE3VYVxxuleAtMwvnF/0=
@@ -52,10 +48,6 @@
 		</dict>
 		<key>Headers/ARCustomHandler.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			okQNktkslmM0URwFcR1TjPCig/0=
-			</data>
 			<key>hash2</key>
 			<data>
 			ny9UjIK3wXb1r2CSMDMQj13dmBs+fTqZ8MrEZtcmnK4=
@@ -63,10 +55,6 @@
 		</dict>
 		<key>Headers/AppticsRateUs.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			bY/ytDjJkc+bVXxyFChSoHPHN2M=
-			</data>
 			<key>hash2</key>
 			<data>
 			IkbRnUXWB/zF4EIynXDynq/6uLghPlQxxKoOmRbnPoY=
@@ -74,10 +62,6 @@
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			MrUMLjm+SoAuBsdzG5eiK/DVQHs=
-			</data>
 			<key>hash2</key>
 			<data>
 			pmOPmkcG5VuWsFESfX4wntjw4Ey50u4oD9kEq5sHGDA=
@@ -85,10 +69,6 @@
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			cl5C9XI0dGK5oiqjbyJFIC3sCV4=
-			</data>
 			<key>hash2</key>
 			<data>
 			7Abj29BKhiz8bFZbe/Iw3CNg7SORJLWdcXrFRbYKRZw=
@@ -96,24 +76,16 @@
 		</dict>
 		<key>Version.debug.xcconfig</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			+5kDvPn5c/UCt6U83txdmqzNTKs=
-			</data>
 			<key>hash2</key>
 			<data>
-			z9C+MmA4/fyS48yu2Cq1bkPNlK9v9qmEjLT1KDBdA04=
+			o59vA/B5LJa9qZBGfHjKcqFfXQhdkUC2TG5Fu3gozrI=
 			</data>
 		</dict>
 		<key>Version.release.xcconfig</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			+5kDvPn5c/UCt6U83txdmqzNTKs=
-			</data>
 			<key>hash2</key>
 			<data>
-			z9C+MmA4/fyS48yu2Cq1bkPNlK9v9qmEjLT1KDBdA04=
+			o59vA/B5LJa9qZBGfHjKcqFfXQhdkUC2TG5Fu3gozrI=
 			</data>
 		</dict>
 	</dict>

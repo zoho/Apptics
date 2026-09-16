@@ -19,6 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (NSString*) getTimeZoneAbbrivation;
 + (NSString*) getUUID;
++ (void) resetUUID;
 +(NSString *)getDeviceModel;
 + (NSString*) getServiceProvider;
 + (NSString*) getEdgeType;
@@ -76,6 +77,7 @@ NS_ASSUME_NONNULL_BEGIN
 +(NSString*) getDeviceType;
 +(NSString*) getRam;
 +(NSString*) getTotalRam;
++ (NSString *)getZaInfoFilePath;
 @end
 
 @interface APDeviceInfo : NSObject

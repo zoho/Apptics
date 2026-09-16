@@ -6,11 +6,11 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		rUdONgTKYpZIckbuxonAOzgMIM8=
+		OUWcI5T/17BYE8gXIW7f33lH0lo=
 		</data>
 		<key>Modules/AppticsAppLock.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		sL1Q0MtpnLkwDlQqBQZp+D3YHQI=
+		JfVSyKjOVYMcIUwR5vWODnAvgiM=
 		</data>
 		<key>Modules/AppticsAppLock.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>Modules/AppticsAppLock.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		EyEG9B1ksc4aWTyarWuWr1Kx7K4=
+		7BJ9th1B/gdoTxj2P+r3rnsT0I8=
 		</data>
 		<key>Modules/AppticsAppLock.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		sL1Q0MtpnLkwDlQqBQZp+D3YHQI=
+		JfVSyKjOVYMcIUwR5vWODnAvgiM=
 		</data>
 		<key>Modules/AppticsAppLock.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/AppticsAppLock.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		6KeKahyNeheoqY1IcDNwIS5r/dM=
+		CG/d6VVZdeheGAbw07HWHoRg1yM=
 		</data>
 		<key>ar.lproj/Localizable.strings</key>
 		<dict>
@@ -284,7 +284,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FzZ3k+ISawg892G4dyv2flCQkoh48usBAiKeOjsOXL4=
+			leXYkaRncO9lLzVwvcuurTzvTlRcEvCw5GtoChH7yJ4=
 			</data>
 		</dict>
 		<key>Modules/AppticsAppLock.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -312,14 +312,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pti6Nh552kvIpFotOjDgZoedKOQExyXdfmhw9+iY3kg=
+			LEAWo8VH9kZy3wTLEqftmzFYryu/S5W4gYh0DUagAOw=
 			</data>
 		</dict>
 		<key>Modules/AppticsAppLock.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FzZ3k+ISawg892G4dyv2flCQkoh48usBAiKeOjsOXL4=
+			leXYkaRncO9lLzVwvcuurTzvTlRcEvCw5GtoChH7yJ4=
 			</data>
 		</dict>
 		<key>Modules/AppticsAppLock.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -347,7 +347,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Clnp2FEc50KN5s7CsNW4OS9Rc2y5BW+8J5N2MwgcMaU=
+			AjESC9FL8gPFBTl5G3O7uDFB68jLXXOPYILCbry+pe0=
 			</data>
 		</dict>
 		<key>ar.lproj/Localizable.strings</key>

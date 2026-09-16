@@ -1,0 +1,84 @@
+{
+  "generated_at_utc": "2026-09-09T11:48:42Z",
+  "marketing_version": null,
+  "build_version": null,
+  "configuration": "Release",
+  "artifact_count": 15,
+  "artifacts": [
+    {
+      "name": "Apptics.zip",
+      "size_bytes": 92422231,
+      "sha256": "2213e4f379d86ea8ac66cd5a9a98fc6807989beb0e66a1175f13f673717f51c1"
+    },
+    {
+      "name": "AppticsApiTracker.zip",
+      "size_bytes": 12935755,
+      "sha256": "c84639eebe65b29c793c8cc24ef0f72e147dbcddd1510c34db189df21e4e7481"
+    },
+    {
+      "name": "AppticsAppLock.zip",
+      "size_bytes": 2909912,
+      "sha256": "a2b3c3c081e4b332fa368fbb3ae171a440e4093d0e156c7d0966f044958526d0"
+    },
+    {
+      "name": "AppticsFeedbackKit.zip",
+      "size_bytes": 6434535,
+      "sha256": "b085c5d4c14c598d50d36cdfca4300acd5292eb175550f9e4ad099d2222b90cb"
+    },
+    {
+      "name": "AppticsHeatmap.zip",
+      "size_bytes": 3088741,
+      "sha256": "5797f9049c69b6508e9375586040f385a5a8a32bf8c4c94fe5b9fa298ce944ad"
+    },
+    {
+      "name": "AppticsInAppUpdate.zip",
+      "size_bytes": 6440339,
+      "sha256": "e0b941c8936c41d3bbc8ae2aeb4c40ca4a4bfa4128fc5da94d5cde77a605c16c"
+    },
+    {
+      "name": "AppticsMessaging.zip",
+      "size_bytes": 6609376,
+      "sha256": "74fd256629c868ed2e2cd65b56a463377878e8503c5ed6c6348797202c6f376a"
+    },
+    {
+      "name": "AppticsNotificationContentExtension.zip",
+      "size_bytes": 6499898,
+      "sha256": "6ba0abe0e7bc76a9b7ffe926a34164ba6256a45ab34d520e389253a64f84950d"
+    },
+    {
+      "name": "AppticsNotificationServiceExtension.zip",
+      "size_bytes": 1532155,
+      "sha256": "a4dbb66af3991718f785a3cef5763c12f60a202c61d4ca366763e2e2b58f3b1e"
+    },
+    {
+      "name": "AppticsPrivacyShield.zip",
+      "size_bytes": 1616941,
+      "sha256": "98d5377fcdf5da0dce002dfc858eb8e2f31c892d0bbc67bc8aad356eafdf33d5"
+    },
+    {
+      "name": "AppticsRateUs.zip",
+      "size_bytes": 5040943,
+      "sha256": "22fa08e05a0f3e038f2792d560a906e697554f852fb3dec94cdbfa0754c59a6f"
+    },
+    {
+      "name": "AppticsRemoteConfig.zip",
+      "size_bytes": 3978609,
+      "sha256": "ca7d5bbcd439ae14e22b55725e2eed8b4b19159a06e4d53efb3d8739ef846694"
+    },
+    {
+      "name": "AppticsSwiftFiles.zip",
+      "size_bytes": 743234,
+      "sha256": "a43519ed96615a97b94752442505a90384347456fe6a4e4d862899e4e6151d81"
+    },
+    {
+      "name": "DebugSymbols.zip",
+      "size_bytes": 131306597,
+      "sha256": "fab95791e7c7e90d07fccc9fc405f2eab81cda4e82e315ff055aa6b3bba366c2"
+    },
+    {
+      "name": "HelperScripts.zip",
+      "size_bytes": 15979,
+      "sha256": "f8e2ac4ee6557f7b787c8c3ec2fc006a26f79a56d525849aeca8d0977f1e4521"
+    }
+  ]
+}

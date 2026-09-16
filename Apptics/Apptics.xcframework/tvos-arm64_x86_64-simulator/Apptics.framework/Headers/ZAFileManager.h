@@ -60,7 +60,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (void) archiveCrashReport:(NSDictionary*)crashReport withFileName : fileName;
 + (id) unarchiveCrashReportForFileName : fileName;
 
--(NSString*) getZaInfoFilePath;
+//-(NSString*) getZaInfoFilePath;
 + (void) archiveData:(NSArray*)queue fileName : (NSString*) filename;
 + (id) unarchieveDataWithFileName : (NSString*) filename;
 

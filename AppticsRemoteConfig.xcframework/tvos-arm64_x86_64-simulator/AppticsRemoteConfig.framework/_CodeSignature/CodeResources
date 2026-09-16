@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		kHe01VR9ygfDbovxJNyfdMeXV9E=
+		f0O0wN2mZSEkNLv62X1/8ZgEv/o=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -33,10 +33,6 @@
 	<dict>
 		<key>Headers/APRemoteConfig.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			pZ6/fEqC53izn3rvXkx2TdlEb/E=
-			</data>
 			<key>hash2</key>
 			<data>
 			S/EOy0o790a5B3Opf72543MFld3vOIk6HW28VGkjExc=
@@ -44,10 +40,6 @@
 		</dict>
 		<key>Headers/APRemoteConfigValue.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			MYBeKK+X2rN/cOjjR1VAZwTh8JA=
-			</data>
 			<key>hash2</key>
 			<data>
 			nGeNjFXHrLTHH6Ag0fwAGyuXxPFd6zcuvjxO6hmlqVE=
@@ -55,10 +47,6 @@
 		</dict>
 		<key>Headers/AppticsRemoteConfig.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			eyz7Jen5hzJ51eawjR2LEt2POxo=
-			</data>
 			<key>hash2</key>
 			<data>
 			D6IZn7Hjt9sIk8eTFU4WV+PDeHWA0WK4HX6WOi11gG8=
@@ -66,10 +54,6 @@
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			R81sBE0Hut8xlAEZuVf1iJlCuaY=
-			</data>
 			<key>hash2</key>
 			<data>
 			04ZFZhCyJPdFrL3jp1AVTSTzZGXDx9SMrGJU7SLTQlc=
@@ -77,10 +61,6 @@
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			cl5C9XI0dGK5oiqjbyJFIC3sCV4=
-			</data>
 			<key>hash2</key>
 			<data>
 			7Abj29BKhiz8bFZbe/Iw3CNg7SORJLWdcXrFRbYKRZw=

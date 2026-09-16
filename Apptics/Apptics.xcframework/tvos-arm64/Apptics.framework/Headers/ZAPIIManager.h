@@ -10,6 +10,7 @@
 #import <Apptics/ZAConstants.h>
 #import <Apptics/ZAEnums.h>
 #import <Apptics/ZAMacros.h>
+#import <Apptics/MultipleDC.h>
 
 typedef NS_ENUM(NSInteger, CARType) // Crash Authorization Result Type
 {
@@ -97,13 +98,27 @@ NS_ASSUME_NONNULL_BEGIN
 - (void) removeAllUsers;
 -(void) removeOnlyUsers;
 
+/// Resets all in-memory properties of ZAPIIManager to their default values.
+/// Call this after clearing keychain/storage to ensure stale ivar state is also wiped.
+- (void) clearData;
+
 - (void) updateShouldCollectDataForCurrentUser;
 
 - (void) setUser:(NSDictionary *) userInfo;
 
+- (void)setUser:(NSDictionary *)userInfo dc:(AppticsDC _Nullable)dc;
+
+
 - (void) setCurrentUser:(NSString * _Nullable)email groupId:(NSString * _Nullable)groupID userProperities : (NSDictionary * _Nullable) userProps;
 
 - (void) newRegisterDevice:(void (^_Nullable)(NSString* deviceId))success;
+
+// Force-resets `regDeviceInprogress` and drains stale `regSuccessblocks` inside
+// the same za_stateWrite: lock used by newRegisterDevice:. Required by APAAAUtil's
+// retry-exhaustion recovery so the next [registerDevice:] call doesn't short-
+// circuit at the early-return guard. Direct property assignment from outside
+// the lock is not visible to subsequent locked reads.
+- (void) forceResetRegDeviceInprogressForRecovery;
 
 - (void) setTrackingStatus:(APTrackingStatus)status;
 
@@ -184,7 +199,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 -(void) migrateUserPreferenceToDevice;
 
-
+- (void)setCurrentUser:(NSString * _Nullable)email
+               groupId:(NSString * _Nullable)groupID
+       userProperities:(NSDictionary * _Nullable)userProps
+                    DC:(NSString * _Nullable)dc;
 
 @end
 

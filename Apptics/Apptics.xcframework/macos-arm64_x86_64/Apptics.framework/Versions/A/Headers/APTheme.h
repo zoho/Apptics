@@ -48,10 +48,11 @@ typedef enum : NSInteger {
 #if !TARGET_OS_WATCH
 -(UITableViewStyle)tableViewStyle;
 #endif
--(UIColor *_Nullable)viewBGColor;
--(UIColor *_Nullable)cellBGColor;
+-(UIColor *_Nullable)contentBGColor;
+-(UIColor *_Nullable)viewBGColor API_UNAVAILABLE(tvos, watchos);
+-(UIColor *_Nullable)cellBGColor API_UNAVAILABLE(tvos, watchos);
 -(UIColor *_Nullable)cellTextColor;
--(UIColor *_Nullable)footerTextColor;
+-(UIColor *_Nullable)footerTextColor API_UNAVAILABLE(tvos, watchos);
 -(UIColor *_Nullable)switchOnTintColor;
 -(UIColor *_Nullable)switchOffTintColor;
 -(UIColor *_Nullable)switchThumbTintColor;

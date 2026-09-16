@@ -86,6 +86,8 @@ extension FeedbackKit{
             FeedbackTheme.sharedInstance.setTransparencySettingsEnabled = FeedbackKit.listener().setTransparencyStatus
             FeedbackTheme.sharedInstance.setMaskTextDefault = FeedbackKit.listener().maskText
             FeedbackTheme.sharedInstance.isfromClass = "FloatScreenshotEditor"
+            // Ensure a previous hidden/torn-down session cannot block a new floating bar.
+            FeedbackOverlayCoordinator.shared.tearDownAllOverlays(restoreHost: false)
             _ = FloatingBottomView()
         }
     }
@@ -105,6 +107,18 @@ extension FeedbackKit{
         if #available(iOS 11.0, *) {
             _ = FloatScreenshotEditor()
         } 
+    }
+
+    /// Re-open the screenshot carousel after the user taps the attachment clip on Report Bug.
+    @objc public func openScreenshotGalleryForReview() {
+        if #available(iOS 11.0, *) {
+            loadFontForCPResourceBundle()
+            refreshTheme()
+            FeedbackKit.listener().feedback_KitType = "ZAScreenShot"
+            FeedbackKit.listener().feedback_KitScreenCancel = "ZAScreenShotTriggered"
+            FeedbackOverlayCoordinator.shared.prepareForCarousel()
+            _ = FloatScrollview()
+        }
     }
         
     

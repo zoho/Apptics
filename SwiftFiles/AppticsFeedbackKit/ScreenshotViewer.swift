@@ -42,11 +42,12 @@ public class FloatScrollview:UIViewController{
 
     public init() {
         super.init(nibName: nil, bundle: nil)
+        FeedbackOverlayCoordinator.shared.prepareForCarousel()
         if #available(iOS 13.0, *) {
             if window.windowScene != nil{
                 setRootViewController()
             }else{
-                if let currentWindowScene = UIApplication.shared.connectedScenes.first as?  UIWindowScene {
+                if let currentWindowScene = FeedbackOverlayCoordinator.shared.foregroundWindowScene() {
                     window.windowScene = currentWindowScene
                     window.windowLevel = UIWindow.Level.alert
                     window.rootViewController = self
@@ -59,7 +60,8 @@ public class FloatScrollview:UIViewController{
         } else {
             setRootViewController()
         }
-
+        FeedbackOverlayCoordinator.shared.registerCarousel(window)
+        FeedbackOverlayCoordinator.shared.setFloatingBarHidden(true)
     }
 
 //MARK: Make window a root viewController
@@ -184,6 +186,13 @@ public class FloatScrollview:UIViewController{
         ScreenshotsView.pageView.currentPageIndicatorTintColor = FeedbackTheme.sharedInstance.maskColor
         ScreenshotsView.pageNumberLabel.textColor = FeedbackTheme.sharedInstance.textColor.withAlphaComponent(0.6)
     }
+
+    /// Fully remove the screenshot overlay window before presenting Report Bug on the host app.
+    private func tearDownOverlayBeforeCompose() {
+        NotificationCenter.default.removeObserver(self)
+        ScreenshotsView.isHidden = true
+        FeedbackOverlayCoordinator.shared.prepareForCompose()
+    }
     
 //MARK: Compose Button Click Action
     @objc func donebuttonClicked() {
@@ -194,14 +203,14 @@ public class FloatScrollview:UIViewController{
                 arrayofGalleryImages.add(image)
             }
         }
-//        guard arrayofGalleryImages.count > 0 else {
-//            print("⚠️ No images found. Feedback UI not shown.")
-//            return
-//        }
         FeedbackKit.listener().arrayOfimages = arrayofGalleryImages
         FeedbackKit.listener().feedback_KitType = "ZAScreenShot"
         FeedbackKit.listener().feedback_KitScreenCancel = "ZAScreenShotTriggered"
-        DispatchQueue.main.async {
+
+        tearDownOverlayBeforeCompose()
+
+        // Present on the host app window after the overlay is gone.
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) {
             FeedbackKit.showFeedback()
         }
     }
@@ -218,37 +227,24 @@ public class FloatScrollview:UIViewController{
     }
     func backAction(){
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
-            if #available(iOS 13.0, *) {                
-                if let _ = self.view.window?.windowScene?.delegate{
-                    let keyedWindow = UIApplication.shared.currentUIWindow()
-                    keyedWindow?.dismissWindow()
-                }
-                else{
-                    self.window.isHidden = true
-                }
-            } else {
-                self.window.isHidden = true
-            }
+            NotificationCenter.default.removeObserver(self)
+            FeedbackOverlayCoordinator.shared.dismissOverlayWindow(self.window)
         }
     }
     
 //MARK: Notification for close reportBug screens 2action
     func windowCloseReportBug(){
-        self.window.isHidden = true
-        self.window.removeFromSuperview()
+        FeedbackOverlayCoordinator.shared.tearDownCarousel(restoreHost: false)
         FeedbackKit.listener().feedback_KitScreenCancel = "ZAScreenCancel"
         FeedbackKit.listener().feedback_KitType = "ZAScreenShotCancel"
+        FeedbackKit.listener().arrayOfimages.removeAllObjects()
     }
     
 //MARK: hide view for next dismiss 1action
     @objc func viewHideandDismiss(){
         DispatchQueue.main.async {
             self.ScreenshotsView.isHidden = true
+            FeedbackOverlayCoordinator.shared.setCarouselHidden(true)
         }
     }
 }
-
-
-
-
-

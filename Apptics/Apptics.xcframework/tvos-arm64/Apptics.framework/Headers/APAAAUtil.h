@@ -37,6 +37,12 @@ typedef void (^ apiRequestFailureBlock)(NSURLResponse *response, NSError *error)
 - (void) removeTokenTime;
 - (void) updateToken : (NSString*_Nullable) refresh_token;
 - (void) updateToken : (NSString*_Nullable) refresh_token time : (NSNumber* _Nullable) token_time;
+- (void) fetchRefreshTokenFromServerWithSuccess :(requestSuccessBlock)success;
+
+/// Resets internal state (retryCount, operationInProgress, successblocks)
+/// for a clean start during DC switch. Call on all 3 singletons before
+/// starting the registerDevice flow on the new DC.
+- (void) resetStateForDCSwitch;
 
 @end
 

@@ -38,6 +38,17 @@ import AppticsFeedbackKit
 
 @available(iOS 11.0, *)
 @objc public class FloatingBottomView:UIViewController,UIGestureRecognizerDelegate{
+    private static weak var activeInstance: FloatingBottomView?
+
+    /// Hide or show the Cancel/Snap/Screenshots bar while screenshot overlays are on screen.
+    @objc public static func ap_setFloatingBarHidden(_ hidden: Bool) {
+        DispatchQueue.main.async {
+            guard let instance = activeInstance else { return }
+            instance.window.isHidden = hidden
+            instance.floatview.isHidden = hidden
+        }
+    }
+
     public lazy var window = FloatingBottomWindow()
     var floatingscrollController: FloatScrollview?
     var height: CGFloat = 110
@@ -52,11 +63,12 @@ import AppticsFeedbackKit
     }
     public init() {
         super.init(nibName: nil, bundle: nil)
+        FloatingBottomView.activeInstance = self
         if #available(iOS 13.0, *) {
             if window.windowScene != nil{
                 setRootViewController()
             }else{
-                if let currentWindowScene = UIApplication.shared.connectedScenes.first as?  UIWindowScene {
+                if let currentWindowScene = FeedbackOverlayCoordinator.shared.foregroundWindowScene() {
                     window.windowScene = currentWindowScene
                     window.windowLevel = UIWindow.Level.alert
                     window.rootViewController = self
@@ -69,8 +81,10 @@ import AppticsFeedbackKit
         } else {
             setRootViewController()
         }
+        FeedbackOverlayCoordinator.shared.registerFloatingBar(window)
         NotificationCenter.default.addObserver(self, selector: #selector(self.bttnCheckBadgeCount), name:Notification.Name(notificationbadgereloadKey) , object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(self.imagecloseFromreportBug), name:Notification.Name("com.appticssdkWindowClose") , object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.imagecloseFromreportBug), name:Notification.Name(notificationReportBugClose) , object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(self.viewHideandDismiss), name:Notification.Name(notificationviewHideandDismiss) , object: nil)
     }
 //MARK: theme check in trait
@@ -149,17 +163,13 @@ import AppticsFeedbackKit
     
 //MARK: hide view for next dismiss 1action
     @objc func viewHideandDismiss(){
-        DispatchQueue.main.async {
-            self.floatview.isHidden = true
-        }
-        
+        FeedbackOverlayCoordinator.shared.setFloatingBarHidden(true)
     }
     
 //MARK: Notification for close reportBug screens 2action
     @objc func imagecloseFromreportBug() {
         DispatchQueue.main.async {
-            self.window.isHidden = true
-            self.window.removeFromSuperview()
+            FeedbackOverlayCoordinator.shared.tearDownAllOverlays(restoreHost: true)
             FeedbackKit.listener().feedback_KitScreenCancel = "ZAScreenCancel"
             FeedbackKit.listener().feedback_KitType = "ZAScreenShotCancel"
             clearAllImages()
@@ -340,11 +350,16 @@ import AppticsFeedbackKit
             
             self.floatviewHide()
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { [weak self] in
-                self?.window.isHidden = true
+                FeedbackOverlayCoordinator.shared.tearDownFloatingBar(restoreHost: true)
+                alertWindow.isHidden = true
+                alertWindow.rootViewController = nil
+                _ = self
             }
         }))
         alertController.addAction(UIAlertAction(title: FeedbackKit.getLocalizableString(forKey: "zanalytics.feedback.privacy.consent.cancel")!, style: UIAlertAction.Style.default, handler: { _ in
             alertWindow.isHidden = true
+            alertWindow.rootViewController = nil
+            FeedbackOverlayCoordinator.shared.setFloatingBarHidden(false)
         }))
         alertWindow.windowLevel = UIWindow.Level.alert + 1
         alertWindow.makeKeyAndVisible()
@@ -355,7 +370,7 @@ import AppticsFeedbackKit
     //MARK: Alert for scene window present
     func checkAlertForScene(title:String,message:String){
         if #available(iOS 13.0, *) {
-            if let currentWindowScene = UIApplication.shared.connectedScenes.first as?  UIWindowScene {
+            if let currentWindowScene = FeedbackOverlayCoordinator.shared.foregroundWindowScene() {
                 sceneAlertWindow = UIWindow(windowScene: currentWindowScene)
                 sceneAlertWindow?.windowLevel = UIWindow.Level.alert + 1
                 sceneAlertWindow?.rootViewController = UIViewController()
@@ -364,15 +379,19 @@ import AppticsFeedbackKit
                 alertController.addAction(UIAlertAction(title: FeedbackKit.getLocalizableString(forKey: "zanalytics.bug.alert.detectscreen.yes"), style: UIAlertAction.Style.cancel, handler: { _ in
                     self.floatviewHide()
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                        self.window.isHidden = true
-                        self.window.removeFromSuperview()
-                        self.sceneAlertWindow.isHidden = true
-                        self.sceneAlertWindow.removeFromSuperview()
+                        FeedbackOverlayCoordinator.shared.tearDownFloatingBar(restoreHost: true)
+                        self.sceneAlertWindow?.isHidden = true
+                        self.sceneAlertWindow?.rootViewController = nil
+                        if #available(iOS 13.0, *) {
+                            self.sceneAlertWindow?.windowScene = nil
+                        }
                         self.sceneAlertWindow = nil
                     }
                 }))
                 alertController.addAction(UIAlertAction(title: FeedbackKit.getLocalizableString(forKey: "zanalytics.feedback.privacy.consent.cancel")!, style: UIAlertAction.Style.default, handler: { _ in
-                    self.sceneAlertWindow.isHidden = true
+                    self.sceneAlertWindow?.isHidden = true
+                    self.sceneAlertWindow?.rootViewController = nil
+                    FeedbackOverlayCoordinator.shared.setFloatingBarHidden(false)
                 }))
                 sceneAlertWindow.rootViewController?.present(alertController, animated: true, completion: nil)
                 
@@ -416,6 +435,7 @@ import AppticsFeedbackKit
     //MARK: open screenshots page
     @objc func viewScreenshotbuttonClicked() {
         if count > 0{
+            FeedbackOverlayCoordinator.shared.prepareForCarousel()
             floatingscrollController = FloatScrollview()
         }
     }
@@ -445,8 +465,12 @@ import AppticsFeedbackKit
          func screenshot() -> UIImage {
              let renderer = UIGraphicsImageRenderer(size: UIScreen.main.bounds.size)
              let image = renderer.image { context in
-                 for window in UIApplication.shared.windows {
-                     window.drawHierarchy(in: window.bounds, afterScreenUpdates: true)
+                 if let hostWindow = FeedbackOverlayCoordinator.shared.applicationHostWindow() {
+                     hostWindow.drawHierarchy(in: hostWindow.bounds, afterScreenUpdates: true)
+                 } else {
+                     for window in UIApplication.shared.windows where !(window is FloatingBottomWindow) {
+                         window.drawHierarchy(in: window.bounds, afterScreenUpdates: true)
+                     }
                  }
              }
              ScreenshotFlashEffect(duration: 0.4)
@@ -501,8 +525,12 @@ import AppticsFeedbackKit
     }
     
     deinit {
+        if FloatingBottomView.activeInstance === self {
+            FloatingBottomView.activeInstance = nil
+        }
         NotificationCenter.default.removeObserver(self, name: Notification.Name(notificationbadgereloadKey), object: nil)
         NotificationCenter.default.removeObserver(self, name: Notification.Name("com.appticssdkWindowClose"), object: nil)
+        NotificationCenter.default.removeObserver(self, name: Notification.Name(notificationReportBugClose), object: nil)
         NotificationCenter.default.removeObserver(self, name: Notification.Name(notificationviewHideandDismiss), object: nil)
         NotificationCenter.default.removeObserver(self)
 

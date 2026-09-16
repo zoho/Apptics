@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		wNohtjcV6oi9UkLRsgSEK49vmKg=
+		DTwMAHteHaS6V6rusySHlsJh0As=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -33,10 +33,6 @@
 	<dict>
 		<key>Headers/APScreentracker.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			RujZbct1zqSKw4pIFwlzf7zqrDY=
-			</data>
 			<key>hash2</key>
 			<data>
 			Wcyyt6O42RucT5vZarWlnAXg0hwmeM3e8PiSRdOag68=
@@ -44,10 +40,6 @@
 		</dict>
 		<key>Headers/AppticsScreenTracker.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ev8E3Wcjx/xMY5+86WlK+xLPD8c=
-			</data>
 			<key>hash2</key>
 			<data>
 			2nAjVWEtL5gvA4JMdXhbQV4CaV2e1UAcE4RIjQ4G8VM=
@@ -55,10 +47,6 @@
 		</dict>
 		<key>Headers/UIViewController+Trackable.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			nSDJUI/jF1rmlueuCDoJxq9M+/0=
-			</data>
 			<key>hash2</key>
 			<data>
 			Im4/GLHXko+/ze94E6UDlN1VWwDVcqnbl3nIZ4Bmd3Q=
@@ -66,10 +54,6 @@
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			/5uUrWbNvbfMq+xhuNUFeObOqp8=
-			</data>
 			<key>hash2</key>
 			<data>
 			fYkbvsWyKDhXUFkRRVXwVuOHAQsSJSRoSgHDM2Fg4Hs=
@@ -77,10 +61,6 @@
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			cl5C9XI0dGK5oiqjbyJFIC3sCV4=
-			</data>
 			<key>hash2</key>
 			<data>
 			7Abj29BKhiz8bFZbe/Iw3CNg7SORJLWdcXrFRbYKRZw=

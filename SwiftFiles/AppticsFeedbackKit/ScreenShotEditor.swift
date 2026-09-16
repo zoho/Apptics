@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 import Vision
 import AppticsFeedbackKit
-
+import Apptics
 
 
 //MARK: Window setup
@@ -84,14 +84,8 @@ public class FloatScreenshotEditor:UIViewController,UIGestureRecognizerDelegate{
     var spacingforColorPalette:CGFloat = 10
     var fontSizeForIcon:CGFloat = 30
     var colorCount = 0
-    lazy var textDetectionRequest: VNDetectTextRectanglesRequest = {
-        let textDetectRequest = VNDetectTextRectanglesRequest(completionHandler: self.handleDetectedText)
-        textDetectRequest.reportCharacterBoxes = false
-        return textDetectRequest
-    }()
-    
     lazy var faceDetectionRequest = VNDetectFaceRectanglesRequest(completionHandler: self.handleDetectedFaces)
-    lazy var observationResults = [VNTextObservation]()
+    lazy var observationResults = [VNDetectedObjectObservation]()
     
     
     required init?(coder aDecoder: NSCoder) {
@@ -100,31 +94,39 @@ public class FloatScreenshotEditor:UIViewController,UIGestureRecognizerDelegate{
     
     public init() {
         super.init(nibName: nil, bundle: nil)
+        FeedbackOverlayCoordinator.shared.prepareForEditor()
+        // Always present on a single typed overlay window — never create a second scene UIWindow.
+        window.windowLevel = UIWindow.Level.alert + 1
         if #available(iOS 13.0, *) {
-            if window.windowScene != nil{
-                setRootViewController()
-            }else{
-                if let currentWindowScene = UIApplication.shared.connectedScenes.first as?  UIWindowScene {
-                    editorSceneOverlayWindow = UIWindow(windowScene: currentWindowScene)
-                    editorSceneOverlayWindow.windowLevel = UIWindow.Level.alert
-                    editorSceneOverlayWindow.rootViewController = self
-                    editorSceneOverlayWindow.makeKeyAndVisible()
-                }
-                else{
-                    setRootViewController()
-                }
-                
-            }
-        } else {
-            setRootViewController()
+            window.windowScene = FeedbackOverlayCoordinator.shared.foregroundWindowScene()
         }
-        
+        window.rootViewController = self
+        window.isHidden = false
+        window.makeKeyAndVisible()
+        FeedbackOverlayCoordinator.shared.registerEditor(window)
+        FeedbackOverlayCoordinator.shared.setFloatingBarHidden(true)
+    }
+
+    /// Remove every editor overlay window so touches return to Report Bug / carousel.
+    private func ap_teardownEditorOverlayWindows() {
+        FeedbackOverlayCoordinator.shared.tearDownEditor(restoreHost: true)
+    }
+
+    private func ap_dismissReportBugAttachmentEditor() {
+        UIView.animate(withDuration: 0.3, animations: {
+            self.floatview.center.y += self.floatview.frame.height + self.floatview.frame.height / 1.80
+        }, completion: { _ in
+            self.floatview.alpha = 0
+            // Always return key window to the host (Report Bug), never to a leftover carousel.
+            FeedbackOverlayCoordinator.shared.tearDownEditor(restoreHost: false)
+            FeedbackOverlayCoordinator.shared.restoreHostKeyWindow()
+        })
     }
     
     //MARK: Make window a root viewController
     
     func setRootViewController(){
-        window.windowLevel = UIWindow.Level(rawValue: CGFloat.infinity)
+        window.windowLevel = UIWindow.Level.alert + 1
         window.isHidden = false
         window.rootViewController = self
         window.makeKeyAndVisible()
@@ -157,6 +159,13 @@ public class FloatScreenshotEditor:UIViewController,UIGestureRecognizerDelegate{
             }
         }
         checkTheme()
+    }
+
+    public override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        if floatview.superview === view, floatview.frame.size != view.bounds.size {
+            floatview.frame = view.bounds
+        }
     }
     
     //MARK: Get image from obj c feedback kit image picker controller
@@ -242,25 +251,7 @@ public class FloatScreenshotEditor:UIViewController,UIGestureRecognizerDelegate{
             }
             NotificationCenter.default.post(name: Notification.Name("notificationReloadTbVw"), object: self)
             if FeedbackTheme.sharedInstance.isfromClass == "apptics_ScreenshotImageEditorView"{
-                UIView.animate(withDuration: 0.3) {
-                    self.floatview.center.y += self.floatview.frame.height + self.floatview.frame.height/1.80
-                }
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                    self.floatview.alpha = 0.1
-                }
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.95) {
-                    if #available(iOS 13.0, *) {
-                        if let _ = self.view.window?.windowScene?.delegate{
-                            let keyedWindow = UIApplication.shared.currentUIWindow()
-                            keyedWindow?.dismissWindow()
-                        }
-                        else{
-                            self.window.isHidden = true
-                        }
-                    } else {
-                        self.window.isHidden = true
-                    }
-                }
+                ap_dismissReportBugAttachmentEditor()
             }
             
         }
@@ -270,25 +261,7 @@ public class FloatScreenshotEditor:UIViewController,UIGestureRecognizerDelegate{
     //MARK: Hide Button Click Action
     @objc func cancellbuttonClicked() {
         if FeedbackTheme.sharedInstance.isfromClass == "apptics_ScreenshotImageEditorView"{
-            UIView.animate(withDuration: 0.3) {
-                self.floatview.center.y += self.floatview.frame.height + self.floatview.frame.height/1.80
-            }
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                self.floatview.alpha = 0.1
-            }
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.95) {
-                if #available(iOS 13.0, *) {
-                    if let _ = self.view.window?.windowScene?.delegate{
-                        let keyedWindow = UIApplication.shared.currentUIWindow()
-                        keyedWindow?.dismissWindow()
-                    }
-                    else{
-                        self.window.isHidden = true
-                    }
-                } else {
-                    self.window.isHidden = true
-                }
-            }
+            ap_dismissReportBugAttachmentEditor()
         }
         else{
             backButtonaction()
@@ -307,17 +280,7 @@ public class FloatScreenshotEditor:UIViewController,UIGestureRecognizerDelegate{
                 self.floatview.closeBttn.transform = self.floatview.closeBttn.transform.translatedBy(x: 0, y: -200)
             }, completion: nil)
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-                if #available(iOS 13.0, *) {
-                    if let _ = self.view.window?.windowScene?.delegate{
-                        let keyedWindow = UIApplication.shared.currentUIWindow()
-                        keyedWindow?.dismissWindow()
-                    }
-                    else{
-                        self.window.isHidden = true
-                    }
-                } else {
-                    self.window.isHidden = true
-                }
+                self.ap_teardownEditorOverlayWindows()
             }
         }
         else {
@@ -329,17 +292,7 @@ public class FloatScreenshotEditor:UIViewController,UIGestureRecognizerDelegate{
             }
             
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.95) {
-                if #available(iOS 13.0, *) {
-                    if let _ = self.view.window?.windowScene?.delegate{
-                        let keyedWindow = UIApplication.shared.currentUIWindow()
-                        keyedWindow?.dismissWindow()
-                    }
-                    else{
-                        self.window.isHidden = true
-                    }
-                } else {
-                    self.window.isHidden = true
-                }
+                self.ap_teardownEditorOverlayWindows()
             }
         }
         
@@ -355,24 +308,8 @@ public class FloatScreenshotEditor:UIViewController,UIGestureRecognizerDelegate{
     //MARK: floating view setup
     
     public func addFloatingView() {
-        
-        if UIDevice.current.userInterfaceIdiom == .phone{
-            floatview = ScreenShotEditorView(frame: CGRect(x: 0, y: 0, width:view.frame.size.width, height: view.frame.size.height ))
-            
-        }
-        else{
-            
-            if FeedbackTheme.sharedInstance.isfromClass == "apptics_ScreenshotImageEditorView"{
-                floatview = ScreenShotEditorView(frame: CGRect(x: 0, y:0, width:view.frame.size.width/1.2, height:view.frame.size.height/1.5))
-                
-                floatview.center = CGPoint(x: view.frame.size.width  / 2,
-                                           y: view.frame.size.height / 2)
-            }
-            else{
-                floatview = ScreenShotEditorView(frame: CGRect(x: 0, y: 0, width:view.frame.size.width, height: view.frame.size.height ))
-            }
-            
-        }
+        let editorBounds = view.bounds.size == .zero ? UIScreen.main.bounds.size : view.bounds.size
+        floatview = ScreenShotEditorView(frame: CGRect(origin: .zero, size: editorBounds))
         view.addSubview(floatview)
         changeScreenshotViewColor(color: FeedbackTheme.sharedInstance.ViewColor)
         floatview.closeBttn.addTarget(self, action:#selector(self.cancellbuttonClicked), for: .touchUpInside)
@@ -380,67 +317,53 @@ public class FloatScreenshotEditor:UIViewController,UIGestureRecognizerDelegate{
         setLocalizableString()
         drawOptionsView.isHidden = true
         window.views = floatview
-        if FeedbackTheme.sharedInstance.isfromClass == "apptics_ScreenshotImageEditorView"{
+        if TargetDevice.currentDevice == .iPhone {
+            self.drawOptionsView.transform = self.drawOptionsView.transform.translatedBy(x: 0, y: 100)
+            self.floatview.doneBttn.transform = self.floatview.doneBttn.transform.translatedBy(x: 0, y: -100)
+            self.floatview.closeBttn.transform = self.floatview.closeBttn.transform.translatedBy(x: 0, y: -100)
+        } else {
             self.floatview.center.y += self.floatview.frame.height
-            UIView.animate(withDuration: 0.3) {
+        }
+        changeAlpha(closebttn: floatview.closeBttn, donebttn: floatview.doneBttn, blurbttn: bttnBlur, bttnArrow: btnArrow, bttnClear: btnClear, bttncolorPen: btncolorpen, bttnFullBlur: btnfullBlur, bttnColrPalette: btnColorPalette, alpha: 0)
+        if TargetDevice.currentDevice == .iPhone {
+            self.imagevw.transform = self.imagevw.transform.scaledBy(x: 0.80, y: 0.80)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                UIView.animate(withDuration: 0.7, delay: 0.0, usingSpringWithDamping: 0.9, initialSpringVelocity: 1.0, options: [.curveEaseInOut],animations: {
+                    self.imagevw.transform = .identity
+                    self.drawOptionsView.isHidden = false
+                }, completion: { success in
+                })
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.025) {
+                UIView.animate(withDuration: 0.8, delay: 0, usingSpringWithDamping: 1.0, initialSpringVelocity: 1.0, options: .curveEaseInOut, animations: {
+                    self.floatview.doneBttn.transform = .identity
+                    self.floatview.closeBttn.transform = .identity
+                    self.drawOptionsView.transform = .identity
+
+                }, completion: nil)
+                self.floatview.doneBttn.layer.add(FadeInAdnimation(), forKey: "fadeIn")
+                self.floatview.closeBttn.layer.add(FadeInAdnimation(), forKey: "fadeIn")
+                self.bttnBlur.layer.add(FadeInAdnimation(), forKey: "fadeIn")
+                self.btnArrow.layer.add(FadeInAdnimation(), forKey: "fadeIn")
+                self.btnClear.layer.add(FadeInAdnimation(), forKey: "fadeIn")
+                self.btncolorpen.layer.add(FadeInAdnimation(), forKey: "fadeIn")
+                self.btnfullBlur.layer.add(FadeInAdnimation(), forKey: "fadeIn")
+                self.btnColorPalette.layer.add(FadeInAdnimation(), forKey: "fadeIn")
+            }
+        } else {
+            UIView.animate(withDuration: 1.0) {
                 self.floatview.center.y -= self.floatview.frame.height
                 self.drawOptionsView.isHidden = false
             }
         }
-        else{
-            if TargetDevice.currentDevice == .iPhone {
-                self.drawOptionsView.transform = self.drawOptionsView.transform.translatedBy(x: 0, y: 100)
-                self.floatview.doneBttn.transform = self.floatview.doneBttn.transform.translatedBy(x: 0, y: -100)
-                self.floatview.closeBttn.transform = self.floatview.closeBttn.transform.translatedBy(x: 0, y: -100)
-            }
-            else{
-                self.floatview.center.y += self.floatview.frame.height
-            }
-            changeAlpha(closebttn: floatview.closeBttn, donebttn: floatview.doneBttn, blurbttn: bttnBlur, bttnArrow: btnArrow, bttnClear: btnClear, bttncolorPen: btncolorpen, bttnFullBlur: btnfullBlur, bttnColrPalette: btnColorPalette, alpha: 0)
-            if TargetDevice.currentDevice == .iPhone {
-                self.imagevw.transform = self.imagevw.transform.scaledBy(x: 0.80, y: 0.80)
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-                    UIView.animate(withDuration: 0.7, delay: 0.0, usingSpringWithDamping: 0.9, initialSpringVelocity: 1.0, options: [.curveEaseInOut],animations: {
-                        self.imagevw.transform = .identity
-                        self.drawOptionsView.isHidden = false
-                    }, completion: { success in
-                    })
-                }
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.025) {
-                    UIView.animate(withDuration: 0.8, delay: 0, usingSpringWithDamping: 1.0, initialSpringVelocity: 1.0, options: .curveEaseInOut, animations: {
-                        self.floatview.doneBttn.transform = .identity
-                        self.floatview.closeBttn.transform = .identity
-                        self.drawOptionsView.transform = .identity
-                        
-                    }, completion: nil)
-                    self.floatview.doneBttn.layer.add(FadeInAdnimation(), forKey: "fadeIn")
-                    self.floatview.closeBttn.layer.add(FadeInAdnimation(), forKey: "fadeIn")
-                    self.bttnBlur.layer.add(FadeInAdnimation(), forKey: "fadeIn")
-                    self.btnArrow.layer.add(FadeInAdnimation(), forKey: "fadeIn")
-                    self.btnClear.layer.add(FadeInAdnimation(), forKey: "fadeIn")
-                    self.btncolorpen.layer.add(FadeInAdnimation(), forKey: "fadeIn")
-                    self.btnfullBlur.layer.add(FadeInAdnimation(), forKey: "fadeIn")
-                    self.btnColorPalette.layer.add(FadeInAdnimation(), forKey: "fadeIn")
-                }
-            }
-            else{
-                
-                UIView.animate(withDuration: 1.0) {
-                    self.floatview.center.y -= self.floatview.frame.height
-                    self.drawOptionsView.isHidden = false
-                    
-                }
-                
-            }
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                self.changeAlpha(closebttn: self.floatview.closeBttn, donebttn: self.floatview.doneBttn, blurbttn: self.bttnBlur, bttnArrow: self.btnArrow, bttnClear: self.btnClear, bttncolorPen: self.btncolorpen, bttnFullBlur: self.btnfullBlur, bttnColrPalette: self.btnColorPalette, alpha: 1.0)
-            }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            self.changeAlpha(closebttn: self.floatview.closeBttn, donebttn: self.floatview.doneBttn, blurbttn: self.bttnBlur, bttnArrow: self.btnArrow, bttnClear: self.btnClear, bttncolorPen: self.btncolorpen, bttnFullBlur: self.btnfullBlur, bttnColrPalette: self.btnColorPalette, alpha: 1.0)
         }
-        
+
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.7) {
             self.loadColorPalette()
         }
-        
+
     }
     
     //MARK: change alpha for views
@@ -537,16 +460,20 @@ public class FloatScreenshotEditor:UIViewController,UIGestureRecognizerDelegate{
     
     func checkAlertForScene(title:String,message:String){
         if #available(iOS 13.0, *) {
-            if let currentWindowScene = UIApplication.shared.connectedScenes.first as?  UIWindowScene {
+            if let currentWindowScene = FeedbackOverlayCoordinator.shared.foregroundWindowScene() {
                 sceneAlertWindow = UIWindow(windowScene: currentWindowScene)
-                sceneAlertWindow?.windowLevel = UIWindow.Level.alert + 1
+                sceneAlertWindow?.windowLevel = UIWindow.Level.alert + 2
                 sceneAlertWindow?.rootViewController = UIViewController()
                 sceneAlertWindow?.makeKeyAndVisible()
                 let alertController = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
                 alertController.addAction(UIAlertAction(title: "Okay", style: UIAlertAction.Style.cancel, handler: { _ in
-                    self.sceneAlertWindow.isHidden = true
-                    self.sceneAlertWindow.removeFromSuperview()
+                    self.sceneAlertWindow?.isHidden = true
+                    self.sceneAlertWindow?.rootViewController = nil
+                    if #available(iOS 13.0, *) {
+                        self.sceneAlertWindow?.windowScene = nil
+                    }
                     self.sceneAlertWindow = nil
+                    self.window.makeKeyAndVisible()
                 }))
                 sceneAlertWindow.rootViewController?.present(alertController, animated: true, completion: nil)
                 
@@ -662,29 +589,15 @@ public class FloatScreenshotEditor:UIViewController,UIGestureRecognizerDelegate{
             drawOptionsView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-20-[arrow(\(bttnHeight))]-12-[blur(\(bttnHeight))]-12-[red(\(bttnHeight))]-12-[clear(\(bttnHeight))]-12-[fullBlur(\(bttnHeight))]-12-[colorpalette(\(bttnHeight))]-20-|", options: [], metrics: nil, views: ["red":btncolorpen, "blur": bttnBlur, "clear":btnClear,"fullBlur":btnfullBlur,"arrow":btnArrow,"colorpalette":btnColorPalette]))
         }
         else{
-            if FeedbackTheme.sharedInstance.isfromClass == "apptics_ScreenshotImageEditorView"{
-                imagevw.contentMode = .scaleAspectFit
-            }
-            else
-            {
-                imagevw.contentMode = .scaleToFill
-            }
+            imagevw.contentMode = .scaleToFill
             bttnHeight = bttnHeight - 10
             sizeforview = 80
             sizeforColorPalette = 50.0
             spacingforColorPalette = 40.0
             self.floatview.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-103-[imgv]-20-[options(\(sizeforview))]-40-|", options: [], metrics: nil, views: ["imgv":imagevw, "options":drawOptionsView]))
             self.floatview.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-75-[imgv]-75-|", options: [], metrics: nil, views: ["imgv":imagevw]))
-            if FeedbackTheme.sharedInstance.isfromClass == "apptics_ScreenshotImageEditorView"{
-                self.floatview.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-5-[options]-5-|", options: [], metrics: nil, views: ["options":drawOptionsView]))
-                drawOptionsView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-10-[arrow(\(bttnHeight))]-5-[blur(\(bttnHeight))]-5-[red(\(bttnHeight))]-5-[clear(\(bttnHeight))]-5-[fullBlur(\(bttnHeight))]-5-[colorpalette(\(bttnHeight))]-5-|", options: [], metrics: nil, views: ["red":btncolorpen, "blur": bttnBlur, "clear":btnClear,"fullBlur":btnfullBlur,"arrow":btnArrow,"colorpalette":btnColorPalette]))
-            }
-            else{
-                self.floatview.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-40-[options]-40-|", options: [], metrics: nil, views: ["options":drawOptionsView]))
-                
-                drawOptionsView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-20-[arrow(\(bttnHeight))]-12-[blur(\(bttnHeight))]-12-[red(\(bttnHeight))]-12-[clear(\(bttnHeight))]-12-[fullBlur(\(bttnHeight))]-12-[colorpalette(\(bttnHeight))]-20-|", options: [], metrics: nil, views: ["red":btncolorpen, "blur": bttnBlur, "clear":btnClear,"fullBlur":btnfullBlur,"arrow":btnArrow,"colorpalette":btnColorPalette]))
-                
-            }
+            self.floatview.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-40-[options]-40-|", options: [], metrics: nil, views: ["options":drawOptionsView]))
+            drawOptionsView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-20-[arrow(\(bttnHeight))]-12-[blur(\(bttnHeight))]-12-[red(\(bttnHeight))]-12-[clear(\(bttnHeight))]-12-[fullBlur(\(bttnHeight))]-12-[colorpalette(\(bttnHeight))]-20-|", options: [], metrics: nil, views: ["red":btncolorpen, "blur": bttnBlur, "clear":btnClear,"fullBlur":btnfullBlur,"arrow":btnArrow,"colorpalette":btnColorPalette]))
         }
         
         if FeedbackTheme.sharedInstance.setMaskTextDefault == true{
@@ -874,6 +787,7 @@ public class FloatScreenshotEditor:UIViewController,UIGestureRecognizerDelegate{
     
     //MARK: method to create text mask in an image
     func openImageRequest(){
+        print("[FaceDetect] openImageRequest called")
         if FeedbackTheme.sharedInstance.isfromClass == "apptics_ScreenshotImageEditorView"{
             let image1 =  GetImageFromgallery()
             let heightInPoints = image1.size.height
@@ -895,18 +809,25 @@ public class FloatScreenshotEditor:UIViewController,UIGestureRecognizerDelegate{
         imagevw.isUserInteractionEnabled = true
     }
     
-    //MARK: completion handler for text request
-    @available(iOS 11.0, *)
+    //MARK: completion handler for text request — filters to PII-only observations
+    @available(iOS 13.0, *)
     func handleDetectedText(request: VNRequest?, error: Error?) {
         if let nsError = error as NSError? {
             print(nsError)
             return
         }
+        guard let results = request?.results as? [VNRecognizedTextObservation] else { return }
+
+        // Keep only observations whose recognised text contains PII.
+        let piiObservations = results.filter { obs in
+            guard let text = obs.topCandidates(1).first?.string else { return false }
+            return APLogSanitizer.findSensitiveMatches(text).count > 0
+        }
+
         DispatchQueue.main.async {
-            guard let drawLayer = self.imageviewpathLayer,
-                  let results = request?.results as? [VNTextObservation] else{return}
-            self.observationResults = results
-            self.textMaskdraw(text: results, onImageWithBounds: drawLayer.bounds)
+            guard let drawLayer = self.imageviewpathLayer else { return }
+            self.observationResults = piiObservations
+            self.textMaskdraw(text: piiObservations, onImageWithBounds: drawLayer.bounds)
             drawLayer.setNeedsDisplay()
         }
     }
@@ -915,14 +836,21 @@ public class FloatScreenshotEditor:UIViewController,UIGestureRecognizerDelegate{
     @available(iOS 11.0, *)
     func handleDetectedFaces(request: VNRequest?, error: Error?) {
         if let nsError = error as NSError? {
-            print(nsError)
+            print("[FaceDetect] error: \(nsError)")
             return
         }
+        let faceCount = request?.results?.count ?? 0
+        print("[FaceDetect] observations received: \(faceCount)")
         DispatchQueue.main.async {
-            guard let drawLayer = self.imageviewpathLayer,
-                  let results = request?.results as? [VNFaceObservation] else {
+            guard let drawLayer = self.imageviewpathLayer else {
+                print("[FaceDetect] imageviewpathLayer is nil — skipping draw")
                 return
             }
+            guard let results = request?.results as? [VNFaceObservation] else {
+                print("[FaceDetect] no VNFaceObservation results")
+                return
+            }
+            print("[FaceDetect] drawing \(results.count) face rects, bounds=\(drawLayer.bounds)")
             self.drawFaceBlur(faces: results, onImageWithBounds: drawLayer.bounds)
             drawLayer.setNeedsDisplay()
         }
@@ -956,29 +884,35 @@ public class FloatScreenshotEditor:UIViewController,UIGestureRecognizerDelegate{
         self.view.layer.addSublayer(imageviewpathLayer!)
     }
     
-    // MARK: - Vision request for Text
+    // MARK: - Vision requests
+    // Text and face detection run in separate perform() calls on the same handler
+    // so that a failure in one (e.g. no Neural Engine in simulator) does not
+    // cancel the other.
     @available(iOS 11.0, *)
     func performVisionRequest(image: CGImage, orientation: CGImagePropertyOrientation) {
-        let requests = createVisionRequests()
-        let imageRequestHandler = VNImageRequestHandler(cgImage: image,
-                                                        orientation: orientation,
-                                                        options: [:])
+        let handler = VNImageRequestHandler(cgImage: image,
+                                            orientation: orientation,
+                                            options: [:])
         DispatchQueue.global(qos: .userInitiated).async {
+            // Pass 1: PII text recognition (iOS 13+, requires Neural Engine).
+            if #available(iOS 13.0, *) {
+                let textRequest = VNRecognizeTextRequest(completionHandler: self.handleDetectedText)
+                textRequest.recognitionLevel = .accurate
+                textRequest.usesLanguageCorrection = true
+                do {
+                    try handler.perform([textRequest])
+                } catch {
+                    print("[TextDetect] failed: \(error)")
+                }
+            }
+
+            // Pass 2: Face detection — separate perform so text failure never cancels it.
             do {
-                try imageRequestHandler.perform(requests)
-            } catch let error as NSError {
-                print("Failed to perform image request: \(error)")
-                return
+                try handler.perform([self.faceDetectionRequest])
+            } catch {
+                print("[FaceDetect] handler error: \(error)")
             }
         }
-    }
-    //MARK: vision request you can add multiple request
-    @available(iOS 11.0, *)
-    func createVisionRequests() -> [VNRequest] {
-        var requests: [VNRequest] = []
-        requests.append(self.textDetectionRequest)
-        requests.append(self.faceDetectionRequest)
-        return requests
     }
     
     //MARK: calculate rect using bounding box
@@ -994,74 +928,101 @@ public class FloatScreenshotEditor:UIViewController,UIGestureRecognizerDelegate{
         return rect
     }
     
+    // Returns true if a PII mask (GradientButton) already covers the given rect.
+    private func piiMaskExists(for rect: CGRect) -> Bool {
+        return imagevw.subviews.contains { view in
+            guard view is GradientButton else { return false }
+            return view.frame.intersects(rect)
+        }
+    }
+
+    // Expands a rect by 20% (10% outward on each side).
+    private func inflated(_ rect: CGRect, by fraction: CGFloat = 0.20) -> CGRect {
+        let dx = rect.width * fraction / 2
+        let dy = rect.height * fraction / 2
+        return CGRect(x: rect.minX - dx, y: rect.minY - dy,
+                      width: rect.width + dx * 2, height: rect.height + dy * 2)
+    }
+
+    // Crops the image to viewRect (imagevw point coords) and applies CIPixellate.
+    private func pixelatedCrop(of image: UIImage, forViewRect viewRect: CGRect, intensity: Float) -> UIImage? {
+        guard let cgImage = image.cgImage else { return nil }
+        let scaleX = CGFloat(cgImage.width) / imagevw.frame.width
+        let scaleY = CGFloat(cgImage.height) / imagevw.frame.height
+        let cropRect = CGRect(
+            x: viewRect.minX * scaleX,
+            y: viewRect.minY * scaleY,
+            width: viewRect.width * scaleX,
+            height: viewRect.height * scaleY
+        ).intersection(CGRect(x: 0, y: 0, width: cgImage.width, height: cgImage.height))
+        guard !cropRect.isEmpty, let cropped = cgImage.cropping(to: cropRect) else { return nil }
+        let ciImage = CIImage(cgImage: cropped)
+        guard let filter = CIFilter(name: "CIPixellate") else { return nil }
+        filter.setDefaults()
+        filter.setValue(NSNumber(value: intensity), forKey: "inputScale")
+        filter.setValue(ciImage, forKey: "inputImage")
+        guard let output = filter.outputImage else { return nil }
+        let context = CIContext(options: nil)
+        guard let outCG = context.createCGImage(output, from: output.extent) else { return nil }
+        return UIImage(cgImage: outCG, scale: image.scale, orientation: image.imageOrientation)
+    }
+
+    // Adds a GradientButton with a pixelated crop of the image, falling back to solid grey.
+    private func addPIIMask(frame: CGRect, cornerRadius: CGFloat, sourceImage: UIImage) {
+        let maskView = GradientButton()
+        maskView.frame = frame
+        maskView.layer.cornerRadius = cornerRadius
+        maskView.layer.masksToBounds = true
+        if let pixelated = pixelatedCrop(of: sourceImage, forViewRect: frame, intensity: 50) {
+            maskView.setBackgroundImage(pixelated, for: .normal)
+        } else {
+            maskView.backgroundColor = UIColor(red: 152/255, green: 152/255, blue: 152/255, alpha: 0.98)
+        }
+        maskView.addTarget(self, action: #selector(self.buttonClicked), for: .touchDown)
+        self.imagevw.addSubview(maskView)
+    }
+
     //MARK: draw a masking layer above the text
     @available(iOS 11.0, *)
-    func textMaskdraw(text: [VNTextObservation], onImageWithBounds bounds: CGRect) {
-        CATransaction.begin()
+    func textMaskdraw(text: [VNDetectedObjectObservation], onImageWithBounds bounds: CGRect) {
+        guard let bgImage = imagevw.image else { return }
+        let xOffset = (imagevw.frame.width - bounds.width) / 2
+        let yOffset = (imagevw.frame.height - bounds.height) / 2
         for wordObservation in text {
-            let wordBox = boundingBox(forRegionOfInterest: wordObservation.boundingBox, withinImageBounds: bounds)
-            let view = GradientButton()
-            view.frame = wordBox
-            view.layer.anchorPoint = .zero
-            view.layer.cornerRadius = 2.0
-            let width = wordBox.width + 6
-            let heigt = wordBox.height + 6
-            var xval = wordBox.origin.x
-            let yval = wordBox.origin.y
-            if FeedbackTheme.sharedInstance.isfromClass == "apptics_ScreenshotImageEditorView"{
-                if TargetDevice.currentDevice == .iPhone{}
-                else{
-                    xval = xval + 70
-                }
-            }
-            view.layer.frame = CGRect(x: xval, y: yval, width: width  , height: heigt)
-            view.addTarget(self, action:#selector(self.buttonClicked), for: .touchDown)
-            view.layer.masksToBounds = true
-            if TargetDevice.currentDevice == .iPhone {
-                view.layer.transform = CATransform3DMakeScale(1.2, -1, 1)
-            }
-            else if TargetDevice.currentDevice == .iPad{
-                view.layer.transform = CATransform3DMakeScale(2.5, -1.5, 1.4)
-            }
-            else{
-                view.layer.transform = CATransform3DMakeScale(3.1, -1.5, 1.8)
-            }
-            self.imagevw.addSubview(view)
+            let vb = wordObservation.boundingBox
+            let baseRect = CGRect(
+                x: vb.minX * bounds.width + xOffset,
+                y: (1 - vb.maxY) * bounds.height + yOffset,
+                width: vb.width * bounds.width,
+                height: vb.height * bounds.height
+            )
+            let wordRect = inflated(baseRect)
+            guard !piiMaskExists(for: wordRect) else { continue }
+            addPIIMask(frame: wordRect, cornerRadius: 2, sourceImage: bgImage)
         }
-        CATransaction.commit()
     }
-    
+
     //MARK: draw a masking layer above the Face
-    
+
     @available(iOS 11.0, *)
     func drawFaceBlur(faces: [VNFaceObservation], onImageWithBounds bounds: CGRect) {
-        CATransaction.begin()
+        print("[FaceDetect] drawFaceBlur count=\(faces.count) bounds=\(bounds)")
+        guard let bgImage = imagevw.image else { return }
+        let xOffset = (imagevw.frame.width - bounds.width) / 2
+        let yOffset = (imagevw.frame.height - bounds.height) / 2
         for observation in faces {
-            let faceblurBox = boundingBox(forRegionOfInterest: observation.boundingBox, withinImageBounds: bounds)
-            let buttonMask = GradientButton()
-            buttonMask.frame = faceblurBox
-            buttonMask.backgroundColor =  UIColor(red: 152.0/255.0, green: 152.0/255.0, blue: 152.0/255.0, alpha: 0.98)
-            buttonMask.layer.anchorPoint = .zero
-            let width = faceblurBox.width
-            let heigt = faceblurBox.height
-            let xval = faceblurBox.origin.x
-            let yval = faceblurBox.origin.y
-            buttonMask.layer.cornerRadius = 0.5 * buttonMask.bounds.size.width
-            buttonMask.layer.frame = CGRect(x: xval, y: yval, width: width, height: heigt)
-            buttonMask.addTarget(self, action:#selector(self.buttonClicked), for: .touchDown)
-            buttonMask.layer.masksToBounds = true
-            if TargetDevice.currentDevice == .iPhone {
-                buttonMask.layer.transform = CATransform3DMakeScale(1.2, -1, 1)
-            }
-            else if TargetDevice.currentDevice == .iPad{
-                buttonMask.layer.transform = CATransform3DMakeScale(2.1, -1.5, 1.4)
-            }
-            else{
-                buttonMask.layer.transform = CATransform3DMakeScale(2.5, -1.5, 1.8)
-            }
-            self.imagevw.addSubview(buttonMask)
+            print("[FaceDetect] face boundingBox=\(observation.boundingBox)")
+            let vb = observation.boundingBox
+            let baseRect = CGRect(
+                x: vb.minX * bounds.width + xOffset,
+                y: (1 - vb.maxY) * bounds.height + yOffset,
+                width: vb.width * bounds.width,
+                height: vb.height * bounds.height
+            )
+            let faceRect = inflated(baseRect)
+            guard !piiMaskExists(for: faceRect) else { continue }
+            addPIIMask(frame: faceRect, cornerRadius: faceRect.width / 2, sourceImage: bgImage)
         }
-        CATransaction.commit()
     }
     
     

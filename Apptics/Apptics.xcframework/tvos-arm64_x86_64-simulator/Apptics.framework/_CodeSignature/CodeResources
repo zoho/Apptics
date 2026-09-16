@@ -10,11 +10,11 @@
 		</data>
 		<key>AppticsResources_tvOS.bundle/Info.plist</key>
 		<data>
-		5WSu4kIq07SdzxrKkqduqE1zGeM=
+		TzdvpKn4vySXg2I34g5PrnIxhqI=
 		</data>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		NnLt0hE2g/zITnCOe1Wkh2WqGUo=
+		d1mlokoanjL4m5TiGzxD4VJgE/s=
 		</data>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeResources</key>
 		<data>
-		dg0fxVzkEY+qG7UhP/ZMPqEfzGo=
+		2ICyGV6W2yEc+uFTUQ4oGsZrQEA=
 		</data>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeSignature</key>
 		<data>
@@ -219,7 +219,7 @@
 		</dict>
 		<key>AppticsResources_tvOS.bundle/sdkProp_info.plist</key>
 		<data>
-		AfV+oThtgbqdUkjMmdeKL5NCxOE=
+		BQzWOqatOoaN34/DE/MYVvho4mA=
 		</data>
 		<key>AppticsResources_tvOS.bundle/sv.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
@@ -268,7 +268,7 @@
 		</dict>
 		<key>Headers/APAAAUtil.h</key>
 		<data>
-		0jE86bDOckzlZY17xyg4m28eyE0=
+		YppLOLMvCoNt3TzMhvIlQ94QEDI=
 		</data>
 		<key>Headers/APArchiverUtil.h</key>
 		<data>
@@ -284,7 +284,7 @@
 		</data>
 		<key>Headers/APDBManager.h</key>
 		<data>
-		tvdy+FNnnhwacyDDr/cFeh3DhGg=
+		GR51zd3OSBNxkgMrPoPOx3A5heQ=
 		</data>
 		<key>Headers/APEventsEnum.h</key>
 		<data>
@@ -296,7 +296,7 @@
 		</data>
 		<key>Headers/APLog.h</key>
 		<data>
-		j9Ttkkl9/dlGh/JuUgEtaBoUslU=
+		LQSpcON/5buD3D3whzmxqsxG8ZY=
 		</data>
 		<key>Headers/APRateusObject.h</key>
 		<data>
@@ -308,7 +308,7 @@
 		</data>
 		<key>Headers/APTheme.h</key>
 		<data>
-		cW4rXxxOl8WssnyuOns3sg3/DGQ=
+		YqnDKXYyEV0WSHOqN9IaqImJej0=
 		</data>
 		<key>Headers/APUser.h</key>
 		<data>
@@ -316,15 +316,19 @@
 		</data>
 		<key>Headers/Analytics.h</key>
 		<data>
-		WA0NVau1NyUs6caipoHlF1Dtuy4=
+		7JAESv9jR2ZdmxdUEB2zLZaw2Ms=
 		</data>
 		<key>Headers/Apptics.h</key>
 		<data>
-		Xad4FVC00XFzKgQW3Oc6pnDWqHc=
+		9zxp5Q5xp6B1vqHUgUb3Y/q4wL4=
 		</data>
 		<key>Headers/AppticsConfig.h</key>
 		<data>
-		Ft531+PH+1KOgdWk7AfzoR8IvEI=
+		iwqNfbFoZjtsbmvCTxOA8gOBHGE=
+		</data>
+		<key>Headers/MultipleDC.h</key>
+		<data>
+		0sSfBNLUC4ibuFJyuQTSAoYYMFY=
 		</data>
 		<key>Headers/NSData+APGunZip.h</key>
 		<data>
@@ -372,7 +376,7 @@
 		</data>
 		<key>Headers/ZAFileManager.h</key>
 		<data>
-		5fVygO3if8FuC4pjuiQUPBawJno=
+		TRBocc0tLN5wObW9B+3A6dxWr24=
 		</data>
 		<key>Headers/ZAFilters.h</key>
 		<data>
@@ -412,7 +416,7 @@
 		</data>
 		<key>Headers/ZAPIIManager.h</key>
 		<data>
-		utCIPYsbK9IG0ns4kBnnIX0KBYM=
+		dlDNFBal5XVAOG73CSbV1wyloi4=
 		</data>
 		<key>Headers/ZAPIManager.h</key>
 		<data>
@@ -432,11 +436,11 @@
 		</data>
 		<key>Headers/ZASystemInfo.h</key>
 		<data>
-		xpd5aHgv4FAu1TDZsO5ikaxIMJY=
+		cQV6pVm2RSF0gGBRGGZHJrTIy6w=
 		</data>
 		<key>Headers/ZASystemProperties.h</key>
 		<data>
-		PbaBx5ecqRrG9zhCepjyWSLZ3Uo=
+		tm8EJyWVreqtG4hkWgH+wRsOkMA=
 		</data>
 		<key>Headers/ZAnalyticsUIApplication.h</key>
 		<data>
@@ -444,7 +448,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		D3E5wTRYFP7fyw0JhzsCESIk2tU=
+		5rE3QJpRkT3DfocDzNMWShM3RMo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -459,10 +463,6 @@
 	<dict>
 		<key>AppticsResources_tvOS.bundle/GDPR.ttf</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			cRPwKAkwRRupgvo0w4eyCgt85y8=
-			</data>
 			<key>hash2</key>
 			<data>
 			3CTksYX+qFfdPAHVGhxzu67TnMIlfJ1MXGIof+nC2hA=
@@ -470,32 +470,20 @@
 		</dict>
 		<key>AppticsResources_tvOS.bundle/Info.plist</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			5WSu4kIq07SdzxrKkqduqE1zGeM=
-			</data>
 			<key>hash2</key>
 			<data>
-			IpSJq/z6GfL7IUq8/ruVQnEvrcMdtRF7TOjBINzV/9E=
+			w5Oxkwb2c/AkqbDTVT1c+49ro6zsCzeQfQjEAp3xelI=
 			</data>
 		</dict>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeDirectory</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			NnLt0hE2g/zITnCOe1Wkh2WqGUo=
-			</data>
 			<key>hash2</key>
 			<data>
-			pqAWlDZZvNWKH8Nj4+ZCl3pJHOgJipv8lZgpoSntmBg=
+			pxWCHTHQchyL40FUJFhttoogz2NzLvcCqL1xIXGTnmE=
 			</data>
 		</dict>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeRequirements</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			OnX22wWFKRSOFN1+obRynMCeyXM=
-			</data>
 			<key>hash2</key>
 			<data>
 			mHkgkE6rZQ51eIwFSqCwUk5qgL/HGqMt+NI3phdD+YY=
@@ -503,21 +491,13 @@
 		</dict>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeResources</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			dg0fxVzkEY+qG7UhP/ZMPqEfzGo=
-			</data>
 			<key>hash2</key>
 			<data>
-			fVOv7Ho4LRPhTtAfo5PZM2UKDpD5Lej4IDwUKiQaCbA=
+			U06ygmGJltI19uqK3SIr8B185jRdqq4GtM7zqL9tX7Q=
 			</data>
 		</dict>
 		<key>AppticsResources_tvOS.bundle/_CodeSignature/CodeSignature</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			2jmj7l5rSw0yVb/vlWAYkK/YBwk=
-			</data>
 			<key>hash2</key>
 			<data>
 			47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
@@ -525,10 +505,6 @@
 		</dict>
 		<key>AppticsResources_tvOS.bundle/ar.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			5BXJsoUJzYVhPSZE5lISfMM2RAI=
-			</data>
 			<key>hash2</key>
 			<data>
 			23PwRjnioFu2P1vNyDAljxqRwJxgFj/SS5hSIpdIJIc=
@@ -538,10 +514,6 @@
 		</dict>
 		<key>AppticsResources_tvOS.bundle/bg.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			k+JSVp2bA8E/Hfny/ABGUj5qEtU=
-			</data>
 			<key>hash2</key>
 			<data>
 			oeuD+4OCm7AJYbnd3lJIgskE/0VcKpSB6InZhHFMBDs=
@@ -551,10 +523,6 @@
 		</dict>
 		<key>AppticsResources_tvOS.bundle/cs.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			7BpusTXGBnCOuxGlOpK/6PPjyBc=
-			</data>
 			<key>hash2</key>
 			<data>
 			AhLFfjYqbEyMl05p8XwPDcrF1yimsTsd1YRuxaflWpg=
@@ -564,10 +532,6 @@
 		</dict>
 		<key>AppticsResources_tvOS.bundle/da.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Kcal2UCXE3F56tT4QPJLtlCC4bg=
-			</data>
 			<key>hash2</key>
 			<data>
 			kiRAIoAn8fKw22qG9lQR88Xj88XM6BfMS9S4ddcrkUk=
@@ -577,10 +541,6 @@
 		</dict>
 		<key>AppticsResources_tvOS.bundle/de.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			OlwdpeUps91wFkM/drCpjluNNKA=
-			</data>
 			<key>hash2</key>
 			<data>
 			SawgD50MPwLUCgxXDC148w6XNg/lMQrTh3//sFTSymM=
@@ -590,10 +550,6 @@
 		</dict>
 		<key>AppticsResources_tvOS.bundle/en.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			M3AsWDOfC2g9R1Q/U0CtuaHndAc=
-			</data>
 			<key>hash2</key>
 			<data>
 			YBkGch7hk1sBpOqt2T8NDhkCrF3jNFOwm1riOad5Txo=
@@ -603,10 +559,6 @@
 		</dict>
 		<key>AppticsResources_tvOS.bundle/es-MX.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			QPPkjhiFwQ1TehtT5Jbh5F9f2SI=
-			</data>
 			<key>hash2</key>
 			<data>
 			ccDy8SWzUTqZqhBF2ghuX4CGRnq14oj4ukuyK/EnRto=
@@ -616,10 +568,6 @@
 		</dict>
 		<key>AppticsResources_tvOS.bundle/es.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			hJuDrFCZIDqPHsQjtYB1e+mZWa8=
-			</data>
 			<key>hash2</key>
 			<data>
 			EOe8dYuNxerfR9JAHaO7ELrqMjNkhVd7Hz6p+RomaIo=
@@ -629,10 +577,6 @@
 		</dict>
 		<key>AppticsResources_tvOS.bundle/fr-CA.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			oeiWrYFn7GrFO2+yCqnKPAeLLLY=
-			</data>
 			<key>hash2</key>
 			<data>
 			grUhWES6BpB4SbujS8MKf4Rrbo7KbIGKc2/G2qmpHj8=
@@ -642,10 +586,6 @@
 		</dict>
 		<key>AppticsResources_tvOS.bundle/fr.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			sA9M31dKmVenK1B0BMunoljk8Nk=
-			</data>
 			<key>hash2</key>
 			<data>
 			TsqXhUzi/4+WraSFSWCgjXA/NP6ztBi0rMU0Ck1KzdM=
@@ -655,10 +595,6 @@
 		</dict>
 		<key>AppticsResources_tvOS.bundle/he.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			0G85gVdKGcpFARc3xQSiM1VLkNE=
-			</data>
 			<key>hash2</key>
 			<data>
 			gZa0JwnQFzXpgFj476pKDh3L2UwmLMqJEruukQJyPsY=
@@ -668,10 +604,6 @@
 		</dict>
 		<key>AppticsResources_tvOS.bundle/hr.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			1UuIEybXEYfeH9TaGQ34IS/9mXs=
-			</data>
 			<key>hash2</key>
 			<data>
 			C5Q85uYWQkqw2Mx5E5dD/aMGiI7Mu3fawat6AmPvlaw=
@@ -681,10 +613,6 @@
 		</dict>
 		<key>AppticsResources_tvOS.bundle/id.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			QXNh0HHn0ZLpuc2ZwS74a9TJaWs=
-			</data>
 			<key>hash2</key>
 			<data>
 			rd2TnOKoTfHy4pWwi3pEpElWyzEO4LZqmRYm7MCigxY=
@@ -694,10 +622,6 @@
 		</dict>
 		<key>AppticsResources_tvOS.bundle/it.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			JnSKYPi1IxGpC40ORAcMVqAmvdQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			PAhcZMLCZP71zSEbdibhG6rh/aRxugScqs6Ytogidw4=
@@ -707,10 +631,6 @@
 		</dict>
 		<key>AppticsResources_tvOS.bundle/ja.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			GVwkAh3iYPU/R0xPL4setsXolFM=
-			</data>
 			<key>hash2</key>
 			<data>
 			iM6uO59Xb3h2IFaxlbcyorXFr0DNdKeuL1ijtNnh/8g=
@@ -720,10 +640,6 @@
 		</dict>
 		<key>AppticsResources_tvOS.bundle/ko.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			1Qw8yTthSEuAB72VB2+tBLOcnq0=
-			</data>
 			<key>hash2</key>
 			<data>
 			JN6YTKXR9QlH0P6KVNVIddm39wJ+gQGuEtZH4RUWKcQ=
@@ -733,10 +649,6 @@
 		</dict>
 		<key>AppticsResources_tvOS.bundle/nl.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			yqdpwi/DA3IerNKxapqoqZ6HExs=
-			</data>
 			<key>hash2</key>
 			<data>
 			3Kg0DZt30sMFLjbrFAZLhXqDUeM2azArzyyOgG3gh7A=
@@ -746,10 +658,6 @@
 		</dict>
 		<key>AppticsResources_tvOS.bundle/pl.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			5wBKgAGJ5QJbW6ePiq332ZHyQvQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			ugdvPnZ5NpDXdNp6FUl+MfLZxb2xxLfE4ii8w11WVOE=
@@ -759,10 +667,6 @@
 		</dict>
 		<key>AppticsResources_tvOS.bundle/pt-BR.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			qUSei1TP5ThGaBZT3T0fwMRRnXs=
-			</data>
 			<key>hash2</key>
 			<data>
 			qWNCdKqG6SPqPbb0ApfQ8Zgj04QOKFS06Ix2ZmvoFqQ=
@@ -772,10 +676,6 @@
 		</dict>
 		<key>AppticsResources_tvOS.bundle/pt.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			s6xj8SEFeIb6YO+0Yh7WFPMMzJg=
-			</data>
 			<key>hash2</key>
 			<data>
 			hGRAFOYf5m6O8wLCM6dp3F07KJxcHSi5OcubjeH1dXE=
@@ -785,10 +685,6 @@
 		</dict>
 		<key>AppticsResources_tvOS.bundle/ru.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			hhfQRQP9cWrjFylZAiwjIUZ8Ues=
-			</data>
 			<key>hash2</key>
 			<data>
 			GvglHnKQTGaykAtegh6jMISwftRY9OhFSg+ZzLCXaNk=
@@ -798,21 +694,13 @@
 		</dict>
 		<key>AppticsResources_tvOS.bundle/sdkProp_info.plist</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			AfV+oThtgbqdUkjMmdeKL5NCxOE=
-			</data>
 			<key>hash2</key>
 			<data>
-			WqXpkqE1TILui1/o+oSPVBsllxaSVxBF3UVk7bgE9+0=
+			hfIjhtygPTazh/vIwJFLEkJeancWg9UfuwVO6rTAy/A=
 			</data>
 		</dict>
 		<key>AppticsResources_tvOS.bundle/sv.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			tGq+OKSiFZJyOvbcVcPtp0J1Fso=
-			</data>
 			<key>hash2</key>
 			<data>
 			7OK2QpVN6XMfJQCUMMlA5CeB24rbIOfLkvm49I0SjgU=
@@ -822,10 +710,6 @@
 		</dict>
 		<key>AppticsResources_tvOS.bundle/tr.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			mOeFtvWM0r+LTpsRLW9CuPPNA2s=
-			</data>
 			<key>hash2</key>
 			<data>
 			Ic0ewnqNfPlva8g1o6+Codt9k5Cz668AkThmPwf66Xo=
@@ -835,10 +719,6 @@
 		</dict>
 		<key>AppticsResources_tvOS.bundle/vi.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			+JowHivFt66XtivqV/gyt3cNUqM=
-			</data>
 			<key>hash2</key>
 			<data>
 			wDXK/LOm6uRneaUZV0YrsDMYCdg7HPTXy3o/71aDFOM=
@@ -848,10 +728,6 @@
 		</dict>
 		<key>AppticsResources_tvOS.bundle/zh-Hans.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			kwdIs+Ghwbe35dbqQJCtQvnaVh0=
-			</data>
 			<key>hash2</key>
 			<data>
 			ir2537fWXBsZkqukZDcn2mHMFmTeGEZx0+ZLPcleYic=
@@ -861,10 +737,6 @@
 		</dict>
 		<key>AppticsResources_tvOS.bundle/zh-Hant.lproj/ZAnalyticsLocalizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			RqxarrQs0lKY48jemf62RGZiRxo=
-			</data>
 			<key>hash2</key>
 			<data>
 			IhwFb8whvhGcuIgaLjeNeRoC4xpA/WB0b/UHSJxw1HY=
@@ -874,21 +746,13 @@
 		</dict>
 		<key>Headers/APAAAUtil.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			0jE86bDOckzlZY17xyg4m28eyE0=
-			</data>
 			<key>hash2</key>
 			<data>
-			1HtiZObUVMRyIHEQAUKncyVbTyY4xVunfM8Snlys+bU=
+			+aU89oofks1slzuOMVZZXEfAFp3BXF02YvWRzAiYS2Q=
 			</data>
 		</dict>
 		<key>Headers/APArchiverUtil.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			JUkYR6kkMlyrmybWDwLP0KH8be0=
-			</data>
 			<key>hash2</key>
 			<data>
 			Q+IeisHnh4snSSS+DyIS7BftMfrDnLD3YowpeLt3A/U=
@@ -896,10 +760,6 @@
 		</dict>
 		<key>Headers/APBundle.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			YIBugnREVkmXnb+C9xWhQEIWRZM=
-			</data>
 			<key>hash2</key>
 			<data>
 			9NcKWrnzvCS8TN1yFGLr5MD2KsS2yQNk6cocAsrtPBI=
@@ -907,10 +767,6 @@
 		</dict>
 		<key>Headers/APCustomHandler.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			JQ9xRzqOdRlZVesHYxOqs21IKGg=
-			</data>
 			<key>hash2</key>
 			<data>
 			h2OnQAcvect2jwxSfPZu8ywkOesQPggv//F68WEoafY=
@@ -918,21 +774,13 @@
 		</dict>
 		<key>Headers/APDBManager.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			tvdy+FNnnhwacyDDr/cFeh3DhGg=
-			</data>
 			<key>hash2</key>
 			<data>
-			3PLRX4qd6FpQdql6ONSAiGNNQ8yEwv3SP9w6LXiJO9k=
+			4tzXDJGHFPvVGgrD1rtOdv7VTltiqovMUc+iXNIOyQ4=
 			</data>
 		</dict>
 		<key>Headers/APEventsEnum.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			8vWu/Vmb/R2Cf+SMeRJ61UzYJWY=
-			</data>
 			<key>hash2</key>
 			<data>
 			KVxFuZMsIGfuwu2TJmdwRjJR5T00Y/DHQK3zcueJg78=
@@ -940,10 +788,6 @@
 		</dict>
 		<key>Headers/APJWTWrapper.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			A20j+AL+EJck5fGYDTLhN8k82fY=
-			</data>
 			<key>hash2</key>
 			<data>
 			XS3yc0dO0JCXcfbYJHdVUVejLJAXR8NKulYU70+WowI=
@@ -951,21 +795,13 @@
 		</dict>
 		<key>Headers/APLog.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			j9Ttkkl9/dlGh/JuUgEtaBoUslU=
-			</data>
 			<key>hash2</key>
 			<data>
-			5faJ+yNeg2PNW7rkkfJAfSpiCXUmj3tC0Jp8Xh3uzWA=
+			SHMgKATivWGaY+MAR410/qCxxxWc3nVVYSyXNAutHso=
 			</data>
 		</dict>
 		<key>Headers/APRateusObject.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			k6lciIKzwc3v8v5DPVguCVh1LWs=
-			</data>
 			<key>hash2</key>
 			<data>
 			+Q17+mYF/TdMwuSeR0UhRaTcUA/Ytn+PewHu7S3EipA=
@@ -973,10 +809,6 @@
 		</dict>
 		<key>Headers/APRemoteConfigObject.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			LWnA4613e6iHRSo5G2rDcMoL1Po=
-			</data>
 			<key>hash2</key>
 			<data>
 			08Nhs/laedY3E5BkDPKKmgGfKmUHzW3O3itEEuLW6os=
@@ -984,21 +816,13 @@
 		</dict>
 		<key>Headers/APTheme.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			cW4rXxxOl8WssnyuOns3sg3/DGQ=
-			</data>
 			<key>hash2</key>
 			<data>
-			rTJhU21ZCVfUa+JDAD09M8BrkBWbnq/3ZITAz8d9CRw=
+			78sPQwRH6dDH1N6U2G+mwDbZR189VAACyv132A3CqEY=
 			</data>
 		</dict>
 		<key>Headers/APUser.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			OhyNqBejusaTS35l6pLI4MgoPw4=
-			</data>
 			<key>hash2</key>
 			<data>
 			M+xwWLBWeHVZy7+uRGUS8DzZIMEGnukURJ3UZT4iWhQ=
@@ -1006,43 +830,34 @@
 		</dict>
 		<key>Headers/Analytics.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			WA0NVau1NyUs6caipoHlF1Dtuy4=
-			</data>
 			<key>hash2</key>
 			<data>
-			nss7PM/Qhy2kpxvMMo2QVcFJZqG5Nb4Vj7uEUnn204w=
+			uOw+p11PmPCKIn4IfncNGdxhFtpl1n7w7G80syaaIg4=
 			</data>
 		</dict>
 		<key>Headers/Apptics.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Xad4FVC00XFzKgQW3Oc6pnDWqHc=
-			</data>
 			<key>hash2</key>
 			<data>
-			55RLLruJr1MQu6wjr5CTxvOH1LQNThywNUo4SewJ3Eg=
+			PyPESMrVQH8vLdzIgS0KZ/7cxM+9WUMQq41R2upprBo=
 			</data>
 		</dict>
 		<key>Headers/AppticsConfig.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Ft531+PH+1KOgdWk7AfzoR8IvEI=
-			</data>
 			<key>hash2</key>
 			<data>
-			Z1moCTSSCrtrcDgE87jEGfFWJZA69v0lYab7i3s/VcQ=
+			JawdcdQlpJMyxw5QaZXEkhywbsD6UO+AckmdNf2rTsA=
+			</data>
+		</dict>
+		<key>Headers/MultipleDC.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			6BZTKUVhM+35dAEYWL05h6CCXqr8vA0rl4VMlpGR+3U=
 			</data>
 		</dict>
 		<key>Headers/NSData+APGunZip.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			3k0mfNyEvBevCm4c6sVQ5h7AsrM=
-			</data>
 			<key>hash2</key>
 			<data>
 			p6YBxM1tfKgSni2ZbmrJXwtw9id5uAqPsvoWbwzRWbg=
@@ -1050,10 +865,6 @@
 		</dict>
 		<key>Headers/NSUserDefaults+SaveCustomObject.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			VgVCSrbZ10nb+aFgihstcmf7u0E=
-			</data>
 			<key>hash2</key>
 			<data>
 			JTNcyQklCFZ3zyf4TM3emvWM78CHjcAK66UjzhGR2Vk=
@@ -1061,10 +872,6 @@
 		</dict>
 		<key>Headers/ZAAESCrypto.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			HI4kVXQUoQbpUPkUk1tZECl1Uuc=
-			</data>
 			<key>hash2</key>
 			<data>
 			NLRhhDipKDR97aRixBlY3LU6i4P9XXwrRkXUIxDGSiQ=
@@ -1072,10 +879,6 @@
 		</dict>
 		<key>Headers/ZAAlertStyle.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			HFRAl5WhR+s9M/QVEjrX99YjsyU=
-			</data>
 			<key>hash2</key>
 			<data>
 			DLlMn2xyHQHr4Rm3rdCR5WkljgZpvXKQSfVjtkJlrvw=
@@ -1083,10 +886,6 @@
 		</dict>
 		<key>Headers/ZAAppupdatePopupInfo.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			054HJzQZ8UGfFR5jyRrKVK2BzNM=
-			</data>
 			<key>hash2</key>
 			<data>
 			nje8Ccf+UAAIkHMV+r+k267JKfWUKaYMysdgy6mS8T0=
@@ -1094,10 +893,6 @@
 		</dict>
 		<key>Headers/ZAConsoleLogsUploadOperation.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			z/f13gFaEedh6G9KxiJzuaPbdgo=
-			</data>
 			<key>hash2</key>
 			<data>
 			jpdwJfzrlBwT/0L2OylV65YHhEkgPKxXK/CRD132TjU=
@@ -1105,10 +900,6 @@
 		</dict>
 		<key>Headers/ZAConstants.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			a/5jBVPudTDuwwK7P/oH7e4ELUA=
-			</data>
 			<key>hash2</key>
 			<data>
 			AgQE9mcnfibIDsZkP5Z8jeFvbl74OlgPqfJ9zxrbzf8=
@@ -1116,10 +907,6 @@
 		</dict>
 		<key>Headers/ZACustomNavigationController.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			OJQFwF6Aue9gmxHdwfUm+P8124s=
-			</data>
 			<key>hash2</key>
 			<data>
 			rJjEAwajW8bdEQtnpSp3RuonRlAv7PK8xj7HWYZfJGM=
@@ -1127,10 +914,6 @@
 		</dict>
 		<key>Headers/ZAEngagementsUploadOperation.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			pgUUt9jtbG5IvC38snzNfkyMqnw=
-			</data>
 			<key>hash2</key>
 			<data>
 			w9l6IkNUDi7zuQJfDpltbISuAn/ZS9YurXu+h+QOn/w=
@@ -1138,10 +921,6 @@
 		</dict>
 		<key>Headers/ZAEnums.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			H9Yg2fp1CJcL+YYqpVkqDoiN+Eg=
-			</data>
 			<key>hash2</key>
 			<data>
 			l5WA3P7c+iK+BatE7YnIbJAFBMQalAQUt+0qnTGm9tw=
@@ -1149,10 +928,6 @@
 		</dict>
 		<key>Headers/ZAEvent.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Q4kwHevP/MWs0aqh3grK1set+0Q=
-			</data>
 			<key>hash2</key>
 			<data>
 			EBtyUSGqut+ZQVNEHSDJzk1neQRcK7nFRorRPN0A6j0=
@@ -1160,21 +935,13 @@
 		</dict>
 		<key>Headers/ZAFileManager.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			5fVygO3if8FuC4pjuiQUPBawJno=
-			</data>
 			<key>hash2</key>
 			<data>
-			cGYuJ3HZ2kd7I4TfFXK+n3fSZTV8bYbjek8F2+EB4ng=
+			p7vQZf0URAEZQwmD8nRzdO5NfmGLBjl+Os2ohdiZqGI=
 			</data>
 		</dict>
 		<key>Headers/ZAFilters.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Vz2UlH7EXLPQ60tdhLcRZRKqLko=
-			</data>
 			<key>hash2</key>
 			<data>
 			Mtsd6wt604AXKPXIM3sg8wiNOeX9S+4LqVxFy/PgylU=
@@ -1182,10 +949,6 @@
 		</dict>
 		<key>Headers/ZAGlobalQueue.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Tp+P49l79BqMOhu6DnsWaZDq0Zg=
-			</data>
 			<key>hash2</key>
 			<data>
 			Eq5Ec5RQyrx7LTnSYwNhCEpiNrgXzUb4PnxMqwr67ho=
@@ -1193,10 +956,6 @@
 		</dict>
 		<key>Headers/ZAJSONString.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			W9dMFcPLXLGSW8M74hShW6Wucf4=
-			</data>
 			<key>hash2</key>
 			<data>
 			CjHOw8bmTrMk/t8NYVXhmHN7OcRlfrZsy0c/WAKTe1A=
@@ -1204,10 +963,6 @@
 		</dict>
 		<key>Headers/ZAKeyChainWrapper.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Oq1ufRznLnh7Tlys/Iw1ZnRW7Qg=
-			</data>
 			<key>hash2</key>
 			<data>
 			PaB57+tr5Df0dgMDjCQwcAuH5/iEczyCl0+Q3K+RHJA=
@@ -1215,10 +970,6 @@
 		</dict>
 		<key>Headers/ZAMacros.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			GfbytS4/xxoRsiwTmCKOmKEFXqs=
-			</data>
 			<key>hash2</key>
 			<data>
 			m7aABOZAGX2MKHfKQPB4w4tilonUymPm7KbHAgj2WDM=
@@ -1226,10 +977,6 @@
 		</dict>
 		<key>Headers/ZANetworkUtils.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			AnW9C7DoArZp4hgi0Yn6S291kow=
-			</data>
 			<key>hash2</key>
 			<data>
 			TzAZx1C7qXi6VmhZ1s+PmQhUxEZpHnsTyxSFu84pF8A=
@@ -1237,10 +984,6 @@
 		</dict>
 		<key>Headers/ZANetworking.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			1/f3+K9gybxGOe0jPIxgum03Dpo=
-			</data>
 			<key>hash2</key>
 			<data>
 			y+DxyhA4Tr/nhTW7wmooPrMtsXwNHeF+/bbmX9XSafc=
@@ -1248,10 +991,6 @@
 		</dict>
 		<key>Headers/ZANonFatalsUploadOperation.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			bJkX+XBK50diFRir5cjM2saX7RI=
-			</data>
 			<key>hash2</key>
 			<data>
 			tCl5ADt1FMIo1o9qJtj5NrY5RYZvGFWt102Sb4tyM7c=
@@ -1259,10 +998,6 @@
 		</dict>
 		<key>Headers/ZAObject.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			aujootbdJTFfVyFdOJVAk0EmeGc=
-			</data>
 			<key>hash2</key>
 			<data>
 			8YXXJckKI01L1X2o+xHzIza+lL5un5pL3AVvib89JVs=
@@ -1270,21 +1005,13 @@
 		</dict>
 		<key>Headers/ZAPIIManager.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			utCIPYsbK9IG0ns4kBnnIX0KBYM=
-			</data>
 			<key>hash2</key>
 			<data>
-			gPDyjo6PJI3LGEqUruofq4fKPuObwdj2WR6+9axhMi8=
+			ZR8alS7iqsqGiLoIN4wtMhZStKIEzcRgpARZhfDzcZc=
 			</data>
 		</dict>
 		<key>Headers/ZAPIManager.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			56e+20wwCY0dmAHBdWmA9UE2NiE=
-			</data>
 			<key>hash2</key>
 			<data>
 			7FYfOkswNblk3sPWmxtC4x1hV+a8kAz4YOVK0kPZN3k=
@@ -1292,10 +1019,6 @@
 		</dict>
 		<key>Headers/ZAPrivate.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			XQx7E17zcZc8djzYehJdThi3cHs=
-			</data>
 			<key>hash2</key>
 			<data>
 			duhml7BNZl6XfB95g95wrLfJi3MG0QZWafiwPXp8Ewo=
@@ -1303,10 +1026,6 @@
 		</dict>
 		<key>Headers/ZAScreenObject.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			FfJ6b9zD79oURh8ZTsXqMMpcwL4=
-			</data>
 			<key>hash2</key>
 			<data>
 			4ffiIvlAxK2dIOAinH40eKZ7u8E1Rp13kszi71IFdAY=
@@ -1314,10 +1033,6 @@
 		</dict>
 		<key>Headers/ZASession.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			LNsXATdzBSHZD7m+Ka4Xh+E84Po=
-			</data>
 			<key>hash2</key>
 			<data>
 			KIOwd+oozrljwbBzuR+M3yye3Z+tFkbAfok3rVpRuNs=
@@ -1325,32 +1040,20 @@
 		</dict>
 		<key>Headers/ZASystemInfo.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			xpd5aHgv4FAu1TDZsO5ikaxIMJY=
-			</data>
 			<key>hash2</key>
 			<data>
-			Wa0pgcfL9GuCB691TnqvibWv9aJLIxNEdEZxZDKxebQ=
+			MsiKyPjoebtNNBps8rlls48XSpWaEgwaoXbaxcRQAIg=
 			</data>
 		</dict>
 		<key>Headers/ZASystemProperties.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			PbaBx5ecqRrG9zhCepjyWSLZ3Uo=
-			</data>
 			<key>hash2</key>
 			<data>
-			pni4qFbybDIuQShQCvx/4vsIdJEPxReHup6gR6k3d+g=
+			PCht/qmNUU9PhZg4zxVCrHJsHAf+7dKFJmZ9Bu6FBG0=
 			</data>
 		</dict>
 		<key>Headers/ZAnalyticsUIApplication.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			9d/uDKT5ANGtHMAS7THnPACny98=
-			</data>
 			<key>hash2</key>
 			<data>
 			UN3siXvMJpJN/xYniFzfliIpE9idXKPN3bj1I71qGCE=
@@ -1358,10 +1061,6 @@
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			da29uuOSZmULm+PrJ2HbSN3PsTY=
-			</data>
 			<key>hash2</key>
 			<data>
 			kamQl75vu/2TVYZvrmLu2qjZDUkzRpgeh7xx6gwyPCM=
@@ -1369,10 +1068,6 @@
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			cl5C9XI0dGK5oiqjbyJFIC3sCV4=
-			</data>
 			<key>hash2</key>
 			<data>
 			7Abj29BKhiz8bFZbe/Iw3CNg7SORJLWdcXrFRbYKRZw=
