@@ -39,7 +39,6 @@ hm.ios.dependency 'AppticsAnalytics/Apptics', "#{spec.version}"
 hm.frameworks = 'UIKit'
 hm.weak_frameworks = 'SwiftUI'
 hm.pod_target_xcconfig = { 'SUPPORTS_MACCATALYST' => 'YES' }
-hm.source_files        = 'SwiftFiles/AppticsHeatmapWrapper/**/*.swift'
 end
 
 end
