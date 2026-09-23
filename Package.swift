@@ -1,6 +1,6 @@
 // swift-tools-version:5.6
  import PackageDescription
- let version = "4.0"
+ let version = "4.0.0007"
  let package = Package(
      name: "Apptics",
      defaultLocalization: "en",
@@ -156,7 +156,7 @@
              name: "AppticsExtension",
              path: "SwiftFiles/AppExtension",
              resources: [
-                 .copy("PrivacyInfo.xcprivacy")]
+                 .process("PrivacyInfo.xcprivacy")]
          ),
          .target(
              
@@ -179,10 +179,10 @@
              dependencies: ["AppticsAnalytics"],
              path: "SwiftFiles/CrossPromoApps",
              resources: [
-                 .copy("PrivacyInfo.xcprivacy"),
+                 .process("PrivacyInfo.xcprivacy"),
                  .process("PromotedAppsController.xib"),
                  .process("PromotedAppViewCell.xib"),
-                 .copy("Fonts/Apptics-CP.ttf")
+                 .process("Fonts/Apptics-CP.ttf")
              ]
          ),
          .target(
@@ -190,12 +190,12 @@
              dependencies: ["AppticsFeedbackKit"],
              path: "SwiftFiles/AppticsFeedbackKit",
              resources: [
-                 .copy("PrivacyInfo.xcprivacy"),
-                 .copy("AppticsSdkIcons.ttf"),
-                 .copy("FloatingView.xib"),
-                 .copy("ScreenShotEditorView.xib"),
-                 .copy("ScreenShotView.xib"),
-                 .copy("QuartzResources.bundle")
+                 .process("PrivacyInfo.xcprivacy"),
+                 .process("AppticsSdkIcons.ttf"),
+                 .process("FloatingView.xib"),
+                 .process("ScreenShotEditorView.xib"),
+                 .process("ScreenShotView.xib"),
+                 .process("QuartzResources.bundle")
              ]
          ),
          .target(
@@ -203,13 +203,13 @@
                      dependencies: ["AppticsFeedbackKit"],
                      path: "SwiftFiles/AppticsMacFeedbackKit",
                      resources: [
-                         .copy("AttachementFeed.png"),
-                         .copy("messageIcon.png"),
-                         .copy("Close.png"),
-                         .copy("Info.png"),
-                         .copy("AppticsFeedbackViewController.xib"),
-                         .copy("CollectionCell.xib"),
-                         .copy("PrivacyInfo.xcprivacy")
+                         .process("AttachementFeed.png"),
+                         .process("messageIcon.png"),
+                         .process("Close.png"),
+                         .process("Info.png"),
+                         .process("AppticsFeedbackViewController.xib"),
+                         .process("CollectionCell.xib"),
+                         .process("PrivacyInfo.xcprivacy")
                      ]
                  ),
          .target(
