@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
 spec.name             = "AppticsRateUs"
-spec.version          = "4.0"
+spec.version          = "4.0.10001"
 spec.summary          = "Apptics RateUs module for iOS"
 spec.license          = { :type => "Proprietary", :text => <<-LICENSE
 Copyright (c) 2025 Zoho Corporation Private Limited
@@ -25,15 +25,15 @@ spec.author = { 'Apptics' => 'apptics-support@zohocorp.com' }
 spec.source = { :http => "https://github.com/zoho/Apptics/releases/download/#{spec.version}/AppticsRateUs.zip" }
 # spec.source = { :git => "https://github.com/zoho/Apptics.git", :tag=>"#{spec.version}"}
 
-spec.ios.deployment_target = '13.0'
-spec.tvos.deployment_target = '9.0'
+spec.ios.deployment_target = '15.0'
+spec.tvos.deployment_target = '15.0'
 
 spec.default_subspecs = 'RateUs'
 
 spec.requires_arc = true
 
 spec.subspec 'RateUs' do |ru|
-ru.platforms = {:ios => '13.0', :tvos => '9.0'}
+ru.platforms = {:ios => '15.0', :tvos => '15.0'}
 ru.vendored_frameworks = 'AppticsRateUs.xcframework'
 
 ru.ios.dependency 'AppticsAnalytics/Apptics', "#{spec.version}"

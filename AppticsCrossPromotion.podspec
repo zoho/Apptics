@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
 spec.name             = "AppticsCrossPromotion"
-spec.version          = "4.0"
+spec.version          = "4.0.10001"
 spec.summary          = "Apptics Remote Config for iOS"
 spec.license          = { :type => "Proprietary", :text => <<-LICENSE
 Copyright (c) 2025 Zoho Corporation Private Limited
@@ -25,7 +25,7 @@ spec.author = { 'Apptics' => 'apptics-support@zohocorp.com' }
 spec.source = { :http => "https://github.com/zoho/Apptics/releases/download/#{spec.version}/AppticsSwiftFiles.zip" }
 # spec.source = { :git => "https://github.com/zoho/Apptics.git", :tag=>"#{spec.version}"}
 spec.swift_version = '5.0'
-spec.ios.deployment_target = '13.0'
+spec.ios.deployment_target = '15.0'
 
 spec.default_subspecs = 'CrossPromotion'
 
@@ -35,7 +35,7 @@ spec.subspec 'CrossPromotion' do |cp|
       cp.source_files        = 'SwiftFiles/CrossPromoApps/*.swift'
     cp.dependency 'AppticsAnalytics/Apptics', "#{spec.version}"
     cp.resource_bundles = {'Apptics_SwiftResources' => ["SwiftFiles/CrossPromoApps/Fonts/*.{ttf}", "SwiftFiles/CrossPromoApps/ios-xibs/*.{xib}", "SwiftFiles/CrossPromoApps/StringFiles/*.{lproj}","SwiftFiles/CrossPromoApps/*.{xcprivacy}"]}
-    cp.platform     = :ios, 13.0
+    cp.platform     = :ios, 15.0
 
   end
 

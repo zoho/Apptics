@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
 spec.name             = "AppticsAppLock"
-spec.version          = "4.0"
+spec.version          = "4.0.10001"
 spec.summary          = "Apptics App Lock for iOS"
 spec.license          = { :type => "Proprietary", :text => <<-LICENSE
 Copyright (c) 2025 Zoho Corporation Private Limited
@@ -25,7 +25,7 @@ spec.author = { 'Apptics' => 'apptics-support@zohocorp.com' }
 spec.source = { :http => "https://github.com/zoho/Apptics/releases/download/#{spec.version}/AppticsSwiftFiles.zip" }
 # spec.source = { :git => "https://github.com/zoho/Apptics.git", :tag=>"#{spec.version}"}
 spec.swift_version = '5.0'
-spec.ios.deployment_target = '13.0'
+spec.ios.deployment_target = '15.0'
 
 spec.default_subspecs = 'AppticsAppLock'
 
@@ -33,7 +33,7 @@ spec.requires_arc = true
 
 spec.subspec 'AppticsAppLock' do |cp|
       cp.source_files        = 'SwiftFiles/AppticsAppLock/**/*.swift'
-      cp.platform     = :ios, 13.0
+      cp.platform     = :ios, 15.0
       cp.resource_bundles = {
         'APAppLock' => [
           'SwiftFiles/AppticsAppLock/**/*.png',

@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
 spec.name             = "AppticsHeatmap"
-spec.version          = "4.0"
+spec.version          = "4.0.10001"
 spec.summary          = "Apptics heatmap interaction capture module for iOS"
 spec.license          = { :type => "Proprietary", :text => <<-LICENSE
 Copyright (c) 2025 Zoho Corporation Private Limited
@@ -24,7 +24,7 @@ spec.homepage         = "https://github.com/zoho/Apptics"
 spec.author = { 'Apptics' => 'apptics-support@zohocorp.com' }
 spec.source = { :http => "https://github.com/zoho/Apptics/releases/download/#{spec.version}/AppticsHeatmap.zip" }
 
-spec.ios.deployment_target = '13.0'
+spec.ios.deployment_target = '15.0'
 spec.swift_version = '5.0'
 
 spec.default_subspecs = 'AppticsHeatmap'
@@ -32,7 +32,7 @@ spec.default_subspecs = 'AppticsHeatmap'
 spec.requires_arc = true
 
 spec.subspec 'AppticsHeatmap' do |hm|
-hm.platform     = :ios, '13.0'
+hm.platform     = :ios, '15.0'
 hm.vendored_frameworks = 'AppticsHeatmap.xcframework'
 hm.ios.dependency 'AppticsAnalytics/Apptics', "#{spec.version}"
 

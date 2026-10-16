@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
 spec.name             = "AppticsFeedbackKitmacOSSwift"
-spec.version          = "4.0"
+spec.version          = "4.0.10001"
 spec.summary          = "AppticsFeedbackKitmacOSSwift"
 spec.license          = { :type => "Proprietary", :text => <<-LICENSE
 Copyright (c) 2025 Zoho Corporation Private Limited
@@ -25,14 +25,14 @@ spec.author = { 'Apptics' => 'apptics-support@zohocorp.com' }
 spec.source = { :http => "https://github.com/zoho/Apptics/releases/download/#{spec.version}/AppticsSwiftFiles.zip" }
 # spec.source = { :git => "https://github.com/zoho/Apptics.git", :tag=>"#{spec.version}"}
 spec.swift_version = '5.0'
-spec.osx.deployment_target = '10.13'
+spec.osx.deployment_target = '12.0'
 
 spec.default_subspecs = 'AppticsFeedbackKitmacOS'
 
 spec.requires_arc = true
 
 spec.subspec 'AppticsFeedbackKitmacOS' do |cp|
-      cp.osx.deployment_target = '10.13'
+      cp.osx.deployment_target = '12.0'
       cp.source_files        = 'SwiftFiles/AppticsMacFeedbackKit/**/*.swift'
       cp.dependency 'AppticsFeedbackKit/FeedbackKit-macOS', "#{spec.version}"
       cp.resource_bundles = {

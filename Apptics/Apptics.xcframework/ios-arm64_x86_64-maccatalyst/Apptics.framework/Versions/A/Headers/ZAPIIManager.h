@@ -164,6 +164,21 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (BOOL) quartzenabled;
 
+// Per-module tracking gates driven by the getsdkconfig / getupdates v2 tracking_status map.
+- (BOOL) trackingEnabled; // global getsdkconfig "tracking_enabled" switch (default YES)
+- (BOOL) isModuleEnabled:(NSInteger)moduleId;
+- (BOOL) mergeTrackingStatus:(NSDictionary * _Nullable)trackingStatus;
+- (BOOL) eventTrackingEnabled;
+- (BOOL) apiTrackingEnabled;
+- (BOOL) screenTrackingEnabled;
+- (BOOL) sessionTrackingEnabled;
+- (BOOL) feedbackEnabled;
+- (BOOL) crashTrackingEnabled;
+- (BOOL) nonFatalTrackingEnabled;
+- (BOOL) jsErrorTrackingEnabled;
+- (BOOL) remoteLoggerEnabled;
+- (BOOL) heatmapEnabled;
+
 
 - (BOOL) isUserLoggedIn;
 

@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		gZCdIOQvT913H7M9LI+QxqrsfPc=
+		74lLNgD6W0XwAsSjQlw8bpuzjXM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -29,10 +29,6 @@
 	<dict>
 		<key>Headers/AppticsCrashKit.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			9LklFUOHDrgVpWvEjZO8SNcoIVg=
-			</data>
 			<key>hash2</key>
 			<data>
 			ZV8Gyx9zkSzC50SS8mciodXGjE1MxTM7KdJBlYPE3ps=
@@ -40,10 +36,6 @@
 		</dict>
 		<key>Headers/KMPCrashReporter.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			2xqtVAHtbJXMrBPedrIZiUX60u4=
-			</data>
 			<key>hash2</key>
 			<data>
 			w4CX7UTuoeR3ruCI7j3Upr/gkTd058OxECkfuE4O9uc=
@@ -51,10 +43,6 @@
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			++tEbCJAre2MZWBzT/9xjofbz7g=
-			</data>
 			<key>hash2</key>
 			<data>
 			4lCJ1p5CjlIqfuOmT7GslsmBCqbR5LLupw8LOXyxVzM=
@@ -62,10 +50,6 @@
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			1R5LnEW0h/jPaAmuKwprVoB596c=
-			</data>
 			<key>hash2</key>
 			<data>
 			dq3PUt5GzwqtXQXcnJYilQgoQf8riwADC47BkAO28+8=

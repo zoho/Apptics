@@ -11,7 +11,7 @@ Pod::Spec.new do |spec|
 
   spec.name             = "AppticsExtension"
   spec.module_name      = "AppticsExtension"
-  spec.version          = "4.0"
+  spec.version          = "4.0.10001"
   spec.summary          = "An in-app usage tracking and analytics library for iOS app extensions"
   spec.license          = { :type => "Proprietary", :text => <<-LICENSE
 Copyright (c) 2025 Zoho Corporation Private Limited
@@ -36,20 +36,19 @@ DESC
   spec.source = { :http => "https://github.com/zoho/Apptics/releases/download/#{spec.version}/AppticsSwiftFiles.zip" }
   # spec.source = { :git => "https://github.com/zoho/Apptics.git", :tag=>"#{spec.version}"}
     spec.requires_arc = true
-  spec.swift_version = '5.0'
-  
-
-    spec.ios.deployment_target = '13.0'
-    spec.tvos.deployment_target = '9.0'
-    spec.osx.deployment_target =  '10.13'
-    spec.watchos.deployment_target = '4.0'
+    spec.swift_version = '5.0'
+    
+    spec.ios.deployment_target = '15.0'
+    spec.tvos.deployment_target = '15.0'
+    spec.osx.deployment_target = '12.0'
+    spec.watchos.deployment_target = '9.0'
 
     spec.default_subspecs = 'Extension'
 
   spec.subspec 'Extension' do |ex|
       ex.source_files        = 'SwiftFiles/AppExtension/*.swift'
-      ex.ios.deployment_target = '9.1'
-      ex.watchos.deployment_target = '4.0'
+      ex.ios.deployment_target = '12.0'
+      ex.watchos.deployment_target = '9.0'
       #ex.resources  = 'SwiftFiles/AppExtension/*.{xcprivacy}'
       ex.resource_bundles = {'AppExtension' => ['SwiftFiles/AppExtension/*.{xcprivacy}'] }
 

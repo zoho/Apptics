@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
 spec.name             = "AppticsFeedbackKit"
-spec.version          = "4.0"
+spec.version          = "4.0.10001"
 spec.summary          = "Apptics FeedbackKit for iOS"
 spec.license          = { :type => "Proprietary", :text => <<-LICENSE
 Copyright (c) 2025 Zoho Corporation Private Limited
@@ -25,21 +25,21 @@ spec.author = { 'Apptics' => 'apptics-support@zohocorp.com' }
 spec.source = { :http => "https://github.com/zoho/Apptics/releases/download/#{spec.version}/AppticsFeedbackKit.zip" }
 # spec.source = { :git => "https://github.com/zoho/Apptics.git", :tag=>"#{spec.version}"}
 
-spec.ios.deployment_target = '13.0'
-spec.osx.deployment_target = '10.13'
+spec.ios.deployment_target = '15.0'
+spec.osx.deployment_target = '12.0'
 
 spec.default_subspecs = 'FeedbackKit'
 
 spec.requires_arc = true
 
 spec.subspec 'FeedbackKit' do |fk|
-fk.platform     = :ios, '13.0'
+fk.platform     = :ios, '15.0'
 fk.vendored_frameworks = 'AppticsFeedbackKit.xcframework'
 fk.ios.dependency 'AppticsAnalytics/Apptics', "#{spec.version}"
 end
 
 spec.subspec 'FeedbackKit-macOS' do |fk|
-fk.platform = :osx, '10.13'
+fk.platform = :osx, '12.0'
 fk.vendored_frameworks = 'AppticsFeedbackKit.xcframework'
 fk.osx.dependency 'AppticsAnalytics/Apptics', "#{spec.version}"
 end

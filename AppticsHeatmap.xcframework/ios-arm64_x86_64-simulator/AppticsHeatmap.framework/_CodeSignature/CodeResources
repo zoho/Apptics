@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/AppticsHeatmap-Swift.h</key>
 		<data>
-		g4F911whcQwEwv+Y3nNkk4Xa33M=
+		U1+rHqR/rK/g0gJog14uUhsbJS4=
 		</data>
 		<key>Headers/AppticsHeatmap.h</key>
 		<data>
@@ -22,47 +22,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		YlB+msWceEw0vg+Xi8TokiP5iYc=
+		J1sbH0I1gWpD0un8IIZYmHC0YdE=
 		</data>
 		<key>Modules/AppticsHeatmap.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		v+nE9yzzGXLV5+w/uPwXy4iDAjc=
+		Qe/zXRUjBStONPCATH0Ncduo0kI=
 		</data>
 		<key>Modules/AppticsHeatmap.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		+RByqCQVTniTRiaVmtl4idLC+tI=
+		EO/7aPRkgSAssdsj1YXmIJbISPw=
 		</data>
 		<key>Modules/AppticsHeatmap.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		2VVI9ziMsbUI31OmxzuxawOZaeY=
+		94lidvqpi3au3MiE/sPDgsAJnH8=
 		</data>
 		<key>Modules/AppticsHeatmap.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		+RByqCQVTniTRiaVmtl4idLC+tI=
+		EO/7aPRkgSAssdsj1YXmIJbISPw=
 		</data>
 		<key>Modules/AppticsHeatmap.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		NJWMZ5AP5EHoTHQ6srCYCsEKEuw=
+		6AiFdsmlHpFcWE7IbuRmTSHg5l0=
 		</data>
 		<key>Modules/AppticsHeatmap.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		v+nE9yzzGXLV5+w/uPwXy4iDAjc=
+		Qe/zXRUjBStONPCATH0Ncduo0kI=
 		</data>
 		<key>Modules/AppticsHeatmap.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		hHFcqsSpuhX7BaFmMtdQpRBwhmI=
+		XK+kghNwhXzwDpMHjKy+JprKn+c=
 		</data>
 		<key>Modules/AppticsHeatmap.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		U4cTV//krCe9Jn6ErFNGkb51gg4=
+		NtS7z+N98t9E35yA3RDdLXzRYSs=
 		</data>
 		<key>Modules/AppticsHeatmap.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		hHFcqsSpuhX7BaFmMtdQpRBwhmI=
+		XK+kghNwhXzwDpMHjKy+JprKn+c=
 		</data>
 		<key>Modules/AppticsHeatmap.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		4diM3hGzkb9kA97rqJjuiWPlqkE=
+		dw+HkpaiRlNARcovlOLwCwDhLHw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -93,7 +93,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VxyePqlB+njrs9nltn4oai+YDlkUoCHP8xdPqkJJyK8=
+			O+iJBrjnCT1RxNx3eprGt25ycgXm4w4zUI/F9cZWCIE=
 			</data>
 		</dict>
 		<key>Headers/AppticsHeatmap.h</key>
@@ -107,70 +107,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6LtEx/AF6QWfstkeWoOWeHTBBREbOC8mL/lsZ15GrGA=
+			2w/PamjaFQuH0zLsZ32EU074UFsmeaz4NCYZ9dEa1Hw=
 			</data>
 		</dict>
 		<key>Modules/AppticsHeatmap.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			suSZcgi6pPf7vR4zLuIUM+5PDNImCnokQIzHq85X7P8=
+			/Ghe1/FBF9FIkrDfUEgNzH77hcrLqr4pfl2I0SOQCRA=
 			</data>
 		</dict>
 		<key>Modules/AppticsHeatmap.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0egr3F5De/7ivquOIJCDAxNr9jilKuWuvesiWgk+LgY=
+			el/qK+cFEn7BvFbRzfjYDiAcOJFW+Xrj7377/d7XtAc=
 			</data>
 		</dict>
 		<key>Modules/AppticsHeatmap.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			suSZcgi6pPf7vR4zLuIUM+5PDNImCnokQIzHq85X7P8=
+			/Ghe1/FBF9FIkrDfUEgNzH77hcrLqr4pfl2I0SOQCRA=
 			</data>
 		</dict>
 		<key>Modules/AppticsHeatmap.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uAxKoVqCqsP23mND9QSvjIzF7mgi18RsIasSafPvfO0=
+			uzNMt45mLvEVo+46+tZj91HnQlQMuPpfHYKSKRuGhSo=
 			</data>
 		</dict>
 		<key>Modules/AppticsHeatmap.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6LtEx/AF6QWfstkeWoOWeHTBBREbOC8mL/lsZ15GrGA=
+			2w/PamjaFQuH0zLsZ32EU074UFsmeaz4NCYZ9dEa1Hw=
 			</data>
 		</dict>
 		<key>Modules/AppticsHeatmap.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dNQI+kdiB4O+z+5u9FwGSNUY4EL866F/JFZCkIACG3E=
+			/7p1OWVa0j2+ytyE4eMumq/nFgtylRTDs9A67XzqHOk=
 			</data>
 		</dict>
 		<key>Modules/AppticsHeatmap.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CM4rwSkgNsxOBW32LLIeeTaHewShVsJ0rNtN4utLOGo=
+			v5NJLu8XPOBJWTLX0Pck/a8VhKzJS3Toig2vSHlY9k8=
 			</data>
 		</dict>
 		<key>Modules/AppticsHeatmap.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dNQI+kdiB4O+z+5u9FwGSNUY4EL866F/JFZCkIACG3E=
+			/7p1OWVa0j2+ytyE4eMumq/nFgtylRTDs9A67XzqHOk=
 			</data>
 		</dict>
 		<key>Modules/AppticsHeatmap.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Pp2MZ0XKw03Ej0HPDh3ZS+3LqXxgASJDcVgBniWzIMo=
+			2rJVT8unmurw2GZfpAsq4Z+6+EJWzm6MuRFAa18x6O8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

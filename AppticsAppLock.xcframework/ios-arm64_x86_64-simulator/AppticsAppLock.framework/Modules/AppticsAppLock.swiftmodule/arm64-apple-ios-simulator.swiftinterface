@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
-// swift-module-flags: -target arm64-apple-ios13-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name AppticsAppLock
-// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
+// swift-compiler-version: Apple Swift version 6.4 effective-5.10 (swiftlang-6.4.0.34.1 clang-2100.3.34.1)
+// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -language-mode 5 -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name AppticsAppLock
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.4
 import Foundation
 import LocalAuthentication
 import Security
@@ -10,110 +10,110 @@ import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@objc @_inheritsConvenienceInitializers @objcMembers public class AppticsLock : ObjectiveC.NSObject {
-  @objc public var customAppIcon: UIKit.UIImage?
-  @objc public static let shared: AppticsAppLock.AppticsLock
-  @objc public var window: UIKit.UIWindow
-  @objc public var isUnlocked: Swift.Bool
-  @objc public var config: AppticsAppLock.AuthenticationConfiguration
-  public func initialize(mainWindow: UIKit.UIWindow, configuration: AppticsAppLock.AuthenticationConfiguration? = nil, with theme: (any AppticsAppLock.AppShieldTheme)? = nil, customizeLocalization: (any AppticsAppLock.Localized)? = nil)
-  @objc public func setReasonStringToAccess(_ reason: Swift.String)
-  @objc public func authenticate(then: ((_ success: Swift.Bool, _ errorString: Swift.String?) -> ())?)
-  @objc public func updateDelayTime(_ time: Swift.Double)
-  @objc public func register(window: UIKit.UIWindow)
-  public func validateAuthentication(then: @escaping (Swift.Result<Any, any Swift.Error>) -> Swift.Void)
+@objc @_inheritsConvenienceInitializers @objcMembers public class AppticsLock : ObjectiveC::NSObject {
+  @objc public var customAppIcon: UIKit::UIImage?
+  @objc public static let shared: AppticsAppLock::AppticsLock
+  @objc public var window: UIKit::UIWindow
+  @objc public var isUnlocked: Swift::Bool
+  @objc public var config: AppticsAppLock::AuthenticationConfiguration
+  public func initialize(mainWindow: UIKit::UIWindow, configuration: AppticsAppLock::AuthenticationConfiguration? = nil, with theme: (any AppticsAppLock::AppShieldTheme)? = nil, customizeLocalization: (any AppticsAppLock::Localized)? = nil)
+  @objc public func setReasonStringToAccess(_ reason: Swift::String)
+  @objc public func authenticate(then: ((_ success: Swift::Bool, _ errorString: Swift::String?) -> ())?)
+  @objc public func updateDelayTime(_ time: Swift::Double)
+  @objc public func register(window: UIKit::UIWindow)
+  public func validateAuthentication(then: @escaping (Swift::Result<Any, any Swift::Error>) -> Swift::Void)
   @discardableResult
-  public func toggleAuthenticator(_ on: Swift.Bool, forceToggle: Swift.Bool? = false, completionBlock: @escaping (Swift.Bool) -> ()) -> Swift.Bool
-  @objc public var isAuthenticatorEnabled: Swift.Bool {
+  public func toggleAuthenticator(_ on: Swift::Bool, forceToggle: Swift::Bool? = false, completionBlock: @escaping (Swift::Bool) -> ()) -> Swift::Bool
+  @objc public var isAuthenticatorEnabled: Swift::Bool {
     @objc get
   }
-  @objc public func updateConfig(_ config: AppticsAppLock.AuthenticationConfiguration)
+  @objc public func updateConfig(_ config: AppticsAppLock::AuthenticationConfiguration)
   @objc override dynamic public init()
   @objc deinit
 }
-extension AppticsAppLock.AppticsLock {
+extension AppticsAppLock::AppticsLock {
   @objc dynamic public func storeKeyIndefaults()
   @objc dynamic public func removePassCode()
-  @objc dynamic public var isFirstLaunch: Swift.Bool {
+  @objc dynamic public var isFirstLaunch: Swift::Bool {
     @objc get
   }
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class AppShieldViewController : UIKit.UIViewController {
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLoad()
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func traitCollectionDidChange(_ previousTraitCollection: UIKit.UITraitCollection?)
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
-  @_Concurrency.MainActor @preconcurrency public func updateTheme()
-  @_Concurrency.MainActor @preconcurrency public func setTheme(_ userTheme: any AppticsAppLock.AppShieldTheme)
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+@objc @_inheritsConvenienceInitializers @_Concurrency::MainActor @preconcurrency public class AppShieldViewController : UIKit::UIViewController {
+  @_Concurrency::MainActor @preconcurrency @objc override dynamic public func viewDidLoad()
+  @_Concurrency::MainActor @preconcurrency @objc override dynamic public func viewDidAppear(_ animated: Swift::Bool)
+  @_Concurrency::MainActor @preconcurrency @objc override dynamic public func traitCollectionDidChange(_ previousTraitCollection: UIKit::UITraitCollection?)
+  @_Concurrency::MainActor @preconcurrency @objc override dynamic public func viewWillAppear(_ animated: Swift::Bool)
+  @_Concurrency::MainActor @preconcurrency public func updateTheme()
+  @_Concurrency::MainActor @preconcurrency public func setTheme(_ userTheme: any AppticsAppLock::AppShieldTheme)
+  @_Concurrency::MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift::String?, bundle nibBundleOrNil: Foundation::Bundle?)
+  @_Concurrency::MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation::NSCoder)
   @objc deinit
 }
-extension AppticsAppLock.AppShieldViewController : UIKit.UITableViewDelegate, UIKit.UITableViewDataSource {
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func numberOfSections(in tableView: UIKit.UITableView) -> Swift.Int
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, heightForRowAt indexPath: Foundation.IndexPath) -> CoreFoundation.CGFloat
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, didDeselectRowAt indexPath: Foundation.IndexPath)
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, heightForHeaderInSection section: Swift.Int) -> CoreFoundation.CGFloat
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, viewForHeaderInSection section: Swift.Int) -> UIKit.UIView?
+extension AppticsAppLock::AppShieldViewController : UIKit::UITableViewDelegate, UIKit::UITableViewDataSource {
+  @_Concurrency::MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit::UITableView, numberOfRowsInSection section: Swift::Int) -> Swift::Int
+  @_Concurrency::MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit::UITableView, cellForRowAt indexPath: Foundation::IndexPath) -> UIKit::UITableViewCell
+  @_Concurrency::MainActor @preconcurrency @objc dynamic public func numberOfSections(in tableView: UIKit::UITableView) -> Swift::Int
+  @_Concurrency::MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit::UITableView, heightForRowAt indexPath: Foundation::IndexPath) -> CoreFoundation::CGFloat
+  @_Concurrency::MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit::UITableView, didSelectRowAt indexPath: Foundation::IndexPath)
+  @_Concurrency::MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit::UITableView, didDeselectRowAt indexPath: Foundation::IndexPath)
+  @_Concurrency::MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit::UITableView, heightForHeaderInSection section: Swift::Int) -> CoreFoundation::CGFloat
+  @_Concurrency::MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit::UITableView, viewForHeaderInSection section: Swift::Int) -> UIKit::UIView?
 }
 public protocol AppShieldTheme {
-  func viewBgColor() -> UIKit.UIColor
-  func lockSwitchTint() -> UIKit.UIColor
-  func lockSwitchThumbTint() -> UIKit.UIColor
-  func lockSwitchOnTint() -> UIKit.UIColor
-  func elementFont() -> UIKit.UIFont
-  func textColor() -> UIKit.UIColor
-  func tickMarkColor() -> UIKit.UIColor
-  func sectionHeaderColor() -> UIKit.UIColor
-  func titleFont() -> UIKit.UIFont
-  func initialTitleFont() -> UIKit.UIFont
-  func initialDetailFont() -> UIKit.UIFont
-  func authenticationScreenColor() -> UIKit.UIColor?
-  func authenticationScreenTextColor() -> UIKit.UIColor?
+  func viewBgColor() -> UIKit::UIColor
+  func lockSwitchTint() -> UIKit::UIColor
+  func lockSwitchThumbTint() -> UIKit::UIColor
+  func lockSwitchOnTint() -> UIKit::UIColor
+  func elementFont() -> UIKit::UIFont
+  func textColor() -> UIKit::UIColor
+  func tickMarkColor() -> UIKit::UIColor
+  func sectionHeaderColor() -> UIKit::UIColor
+  func titleFont() -> UIKit::UIFont
+  func initialTitleFont() -> UIKit::UIFont
+  func initialDetailFont() -> UIKit::UIFont
+  func authenticationScreenColor() -> UIKit::UIColor?
+  func authenticationScreenTextColor() -> UIKit::UIColor?
 }
 public protocol Localized {
-  func yourAppHasLocked() -> Swift.String
-  func appShieldNeedsAuthentication() -> Swift.String
-  func appShieldSetup() -> Swift.String
-  func appShielSetting() -> Swift.String
+  func yourAppHasLocked() -> Swift::String
+  func appShieldNeedsAuthentication() -> Swift::String
+  func appShieldSetup() -> Swift::String
+  func appShielSetting() -> Swift::String
 }
-extension AppticsAppLock.Localized {
-  public func yourAppHasLocked() -> Swift.String
-  public func AppShieldNeedsAuthentication() -> Swift.String
-  public func AppShieldSetup() -> Swift.String
-  public func appShielSetting() -> Swift.String
+extension AppticsAppLock::Localized {
+  public func yourAppHasLocked() -> Swift::String
+  public func AppShieldNeedsAuthentication() -> Swift::String
+  public func AppShieldSetup() -> Swift::String
+  public func appShielSetting() -> Swift::String
 }
-extension AppticsAppLock.AppShieldTheme {
-  public func viewBgColor() -> UIKit.UIColor
-  public func lockSwitchTint() -> UIKit.UIColor
-  public func lockSwitchThumbTint() -> UIKit.UIColor
-  public func lockSwitchOnTint() -> UIKit.UIColor
-  public func elementFont() -> UIKit.UIFont
-  public func textColor() -> UIKit.UIColor
-  public func titleFont() -> UIKit.UIFont
-  public func tickMarkColor() -> UIKit.UIColor
-  public func sectionHeaderColor() -> UIKit.UIColor
-  public func initialTitleFont() -> UIKit.UIFont
-  public func initialDetailFont() -> UIKit.UIFont
-  public func authenticationScreenColor() -> UIKit.UIColor?
-  public func authenticationScreenTextColor() -> UIKit.UIColor?
+extension AppticsAppLock::AppShieldTheme {
+  public func viewBgColor() -> UIKit::UIColor
+  public func lockSwitchTint() -> UIKit::UIColor
+  public func lockSwitchThumbTint() -> UIKit::UIColor
+  public func lockSwitchOnTint() -> UIKit::UIColor
+  public func elementFont() -> UIKit::UIFont
+  public func textColor() -> UIKit::UIColor
+  public func titleFont() -> UIKit::UIFont
+  public func tickMarkColor() -> UIKit::UIColor
+  public func sectionHeaderColor() -> UIKit::UIColor
+  public func initialTitleFont() -> UIKit::UIFont
+  public func initialDetailFont() -> UIKit::UIFont
+  public func authenticationScreenColor() -> UIKit::UIColor?
+  public func authenticationScreenTextColor() -> UIKit::UIColor?
 }
 public protocol AppShieldStrings {
-  func reasonString() -> Swift.String
+  func reasonString() -> Swift::String
 }
-extension AppticsAppLock.AppShieldStrings {
-  public func reasonString() -> Swift.String
+extension AppticsAppLock::AppShieldStrings {
+  public func reasonString() -> Swift::String
 }
-@objc public enum AuthenticationStatus : Swift.Int {
+@objc public enum AuthenticationStatus : Swift::Int {
   case allow
   case cancelled
   case fallback
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
+  public init?(rawValue: Swift::Int)
+  public typealias RawValue = Swift::Int
+  public var rawValue: Swift::Int {
     get
   }
 }
@@ -121,35 +121,35 @@ public enum OABiometricEnabledStatus {
   case enabled
   case passcodeNotSet
   case failed
-  public static func == (a: AppticsAppLock.OABiometricEnabledStatus, b: AppticsAppLock.OABiometricEnabledStatus) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
+  public static func == (a: AppticsAppLock::OABiometricEnabledStatus, b: AppticsAppLock::OABiometricEnabledStatus) -> Swift::Bool
+  public func hash(into hasher: inout Swift::Hasher)
+  public var hashValue: Swift::Int {
     get
   }
 }
-@objc @_inheritsConvenienceInitializers @objcMembers public class Authenticator : ObjectiveC.NSObject {
-  public func authenticateWithPasscode(then: @escaping (Swift.Result<Any, any Swift.Error>) -> Swift.Void)
+@objc @_inheritsConvenienceInitializers @objcMembers public class Authenticator : ObjectiveC::NSObject {
+  public func authenticateWithPasscode(then: @escaping (Swift::Result<Any, any Swift::Error>) -> Swift::Void)
   @objc override dynamic public init()
   @objc deinit
 }
-extension AppticsAppLock.Authenticator {
-  @objc dynamic public class func parseError(_ error: any Swift.Error) -> Swift.String
+extension AppticsAppLock::Authenticator {
+  @objc dynamic public class func parseError(_ error: any Swift::Error) -> Swift::String
 }
-@objc @_inheritsConvenienceInitializers @objcMembers open class AuthenticationConfiguration : ObjectiveC.NSObject {
-  convenience public init(blurBackgroundColor: UIKit.UIColor?, delayTime: Swift.Double? = 0, shouldAllowIfPasscodeTurnedoff: Swift.Bool?, lockTint: UIKit.UIColor? = nil, userDefaultPrefix: Swift.String? = nil)
+@objc @_inheritsConvenienceInitializers @objcMembers open class AuthenticationConfiguration : ObjectiveC::NSObject {
+  convenience public init(blurBackgroundColor: UIKit::UIColor?, delayTime: Swift::Double? = 0, shouldAllowIfPasscodeTurnedoff: Swift::Bool?, lockTint: UIKit::UIColor? = nil, userDefaultPrefix: Swift::String? = nil)
   @objc override dynamic public init()
   @objc deinit
 }
-extension UIKit.UIWindow {
+extension UIKit::UIWindow {
   public struct TransitionOptions {
     public enum Curve {
       case linear
       case easeIn
       case easeOut
       case easeInOut
-      public static func == (a: UIKit.UIWindow.TransitionOptions.Curve, b: UIKit.UIWindow.TransitionOptions.Curve) -> Swift.Bool
-      public func hash(into hasher: inout Swift.Hasher)
-      public var hashValue: Swift.Int {
+      public static func == (a: UIKit::UIWindow.AppticsAppLock::TransitionOptions.AppticsAppLock::Curve, b: UIKit::UIWindow.AppticsAppLock::TransitionOptions.AppticsAppLock::Curve) -> Swift::Bool
+      public func hash(into hasher: inout Swift::Hasher)
+      public var hashValue: Swift::Int {
         get
       }
     }
@@ -159,36 +159,36 @@ extension UIKit.UIWindow {
       case toBottom
       case toLeft
       case toRight
-      public static func == (a: UIKit.UIWindow.TransitionOptions.Direction, b: UIKit.UIWindow.TransitionOptions.Direction) -> Swift.Bool
-      public func hash(into hasher: inout Swift.Hasher)
-      public var hashValue: Swift.Int {
+      public static func == (a: UIKit::UIWindow.AppticsAppLock::TransitionOptions.AppticsAppLock::Direction, b: UIKit::UIWindow.AppticsAppLock::TransitionOptions.AppticsAppLock::Direction) -> Swift::Bool
+      public func hash(into hasher: inout Swift::Hasher)
+      public var hashValue: Swift::Int {
         get
       }
     }
     public enum Background {
-      case solidColor(UIKit.UIColor)
-      case customView(UIKit.UIView)
+      case solidColor(UIKit::UIColor)
+      case customView(UIKit::UIView)
     }
-    public var duration: Swift.Double
-    public var direction: UIKit.UIWindow.TransitionOptions.Direction
-    public var style: UIKit.UIWindow.TransitionOptions.Curve
-    public var background: UIKit.UIWindow.TransitionOptions.Background?
-    public init(direction: UIKit.UIWindow.TransitionOptions.Direction = .toRight, style: UIKit.UIWindow.TransitionOptions.Curve = .linear)
+    public var duration: Swift::Double
+    public var direction: UIKit::UIWindow.AppticsAppLock::TransitionOptions.AppticsAppLock::Direction
+    public var style: UIKit::UIWindow.AppticsAppLock::TransitionOptions.AppticsAppLock::Curve
+    public var background: UIKit::UIWindow.AppticsAppLock::TransitionOptions.AppticsAppLock::Background?
+    public init(direction: UIKit::UIWindow.AppticsAppLock::TransitionOptions.AppticsAppLock::Direction = .toRight, style: UIKit::UIWindow.AppticsAppLock::TransitionOptions.AppticsAppLock::Curve = .linear)
     public init()
   }
-  @_Concurrency.MainActor @preconcurrency public func setRootViewController(_ controller: UIKit.UIViewController, options: UIKit.UIWindow.TransitionOptions = TransitionOptions())
+  @_Concurrency::MainActor @preconcurrency public func setRootViewController(_ controller: UIKit::UIViewController, options: UIKit::UIWindow.AppticsAppLock::TransitionOptions = TransitionOptions())
 }
-extension Foundation.Bundle {
-  public var icon: UIKit.UIImage? {
+extension Foundation::Bundle {
+  public var icon: UIKit::UIImage? {
     get
   }
 }
-extension AppticsAppLock.AuthenticationStatus : Swift.Equatable {}
-extension AppticsAppLock.AuthenticationStatus : Swift.Hashable {}
-extension AppticsAppLock.AuthenticationStatus : Swift.RawRepresentable {}
-extension AppticsAppLock.OABiometricEnabledStatus : Swift.Equatable {}
-extension AppticsAppLock.OABiometricEnabledStatus : Swift.Hashable {}
-extension UIKit.UIWindow.TransitionOptions.Curve : Swift.Equatable {}
-extension UIKit.UIWindow.TransitionOptions.Curve : Swift.Hashable {}
-extension UIKit.UIWindow.TransitionOptions.Direction : Swift.Equatable {}
-extension UIKit.UIWindow.TransitionOptions.Direction : Swift.Hashable {}
+extension AppticsAppLock::AuthenticationStatus : Swift::Equatable {}
+extension AppticsAppLock::AuthenticationStatus : Swift::Hashable {}
+extension AppticsAppLock::AuthenticationStatus : Swift::RawRepresentable {}
+extension AppticsAppLock::OABiometricEnabledStatus : Swift::Equatable {}
+extension AppticsAppLock::OABiometricEnabledStatus : Swift::Hashable {}
+extension UIKit::UIWindow.AppticsAppLock::TransitionOptions.AppticsAppLock::Curve : Swift::Equatable {}
+extension UIKit::UIWindow.AppticsAppLock::TransitionOptions.AppticsAppLock::Curve : Swift::Hashable {}
+extension UIKit::UIWindow.AppticsAppLock::TransitionOptions.AppticsAppLock::Direction : Swift::Equatable {}
+extension UIKit::UIWindow.AppticsAppLock::TransitionOptions.AppticsAppLock::Direction : Swift::Hashable {}

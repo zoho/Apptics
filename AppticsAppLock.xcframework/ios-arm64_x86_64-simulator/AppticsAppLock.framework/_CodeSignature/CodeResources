@@ -6,47 +6,47 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		OUWcI5T/17BYE8gXIW7f33lH0lo=
+		ncMsOkKJ2CuQeOyPmPo2tBQB+mw=
 		</data>
 		<key>Modules/AppticsAppLock.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		JfVSyKjOVYMcIUwR5vWODnAvgiM=
+		M5TF+Nb8KW9Hl1SyLD0Un8crd08=
 		</data>
 		<key>Modules/AppticsAppLock.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		FvUGqQvPf7x7kciCS4elKP5fBhE=
+		ZDu0TK2GqjkdWOhkuchU3eKY4lM=
 		</data>
 		<key>Modules/AppticsAppLock.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		+JTt46Lhp7nzXPeDSzHI6e9altY=
+		9ZZHagXdyVY5OszfEHTHxDT+hlc=
 		</data>
 		<key>Modules/AppticsAppLock.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		FvUGqQvPf7x7kciCS4elKP5fBhE=
+		ZDu0TK2GqjkdWOhkuchU3eKY4lM=
 		</data>
 		<key>Modules/AppticsAppLock.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		7BJ9th1B/gdoTxj2P+r3rnsT0I8=
+		O6nJZS+FzBMUQ6bf/7xJefpqu2o=
 		</data>
 		<key>Modules/AppticsAppLock.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		JfVSyKjOVYMcIUwR5vWODnAvgiM=
+		M5TF+Nb8KW9Hl1SyLD0Un8crd08=
 		</data>
 		<key>Modules/AppticsAppLock.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		KVT3ovuXtCMtFd8N0KKNbBNpDC0=
+		hIg+xj4rZObo52Q7esmGHpiBo8U=
 		</data>
 		<key>Modules/AppticsAppLock.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		KZvB//FdPI0iSsIm42wu8mzg0HU=
+		lS/EPI/aIFnCL20Fd/Vscdga/74=
 		</data>
 		<key>Modules/AppticsAppLock.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		KVT3ovuXtCMtFd8N0KKNbBNpDC0=
+		hIg+xj4rZObo52Q7esmGHpiBo8U=
 		</data>
 		<key>Modules/AppticsAppLock.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		CG/d6VVZdeheGAbw07HWHoRg1yM=
+		CvFHIsez5QwaZGnegCgxaNZ4Yvk=
 		</data>
 		<key>ar.lproj/Localizable.strings</key>
 		<dict>
@@ -284,70 +284,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			leXYkaRncO9lLzVwvcuurTzvTlRcEvCw5GtoChH7yJ4=
+			3R3n9V/Gy0uaMtwj5XAHCZZvGJ7nBSIFjMYDkE+b4Xo=
 			</data>
 		</dict>
 		<key>Modules/AppticsAppLock.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GkkLTZeNs6kk+fzuH0QSG+C7OwRY776I1awEh8RSeO4=
+			cFAagBh5vVs5FFmG8CGY4F1iaSjLxFU8XCrk23osnZI=
 			</data>
 		</dict>
 		<key>Modules/AppticsAppLock.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LJQL8LWtquCj4gxFP++ETHePqeW8xAPzOEFL757jTlM=
+			6MPpiQnigyRSs6hU8x6oU04IeNTgXeJ40cGqXaFDitI=
 			</data>
 		</dict>
 		<key>Modules/AppticsAppLock.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GkkLTZeNs6kk+fzuH0QSG+C7OwRY776I1awEh8RSeO4=
+			cFAagBh5vVs5FFmG8CGY4F1iaSjLxFU8XCrk23osnZI=
 			</data>
 		</dict>
 		<key>Modules/AppticsAppLock.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LEAWo8VH9kZy3wTLEqftmzFYryu/S5W4gYh0DUagAOw=
+			hvKJiDFf4iqE8FqgSbd0o2J/WCrRynb3/97TZ8L6uz0=
 			</data>
 		</dict>
 		<key>Modules/AppticsAppLock.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			leXYkaRncO9lLzVwvcuurTzvTlRcEvCw5GtoChH7yJ4=
+			3R3n9V/Gy0uaMtwj5XAHCZZvGJ7nBSIFjMYDkE+b4Xo=
 			</data>
 		</dict>
 		<key>Modules/AppticsAppLock.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qTkmm53bE5F7aEqVqBEIIRdUCRSvv/0I2wg68U9r62I=
+			FWYHsPXZpOYBaWS0GcjpIrksFiZEU8l3XWKNGs2oI9U=
 			</data>
 		</dict>
 		<key>Modules/AppticsAppLock.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			je5/3Xe5nE2oOhLMyHAFMPCwQUwpPndy6vp+0IfX9Yk=
+			fzLk6VyQ3gPi89E0ue1WFUc+uPr3fdd2rjx+ncvTtPc=
 			</data>
 		</dict>
 		<key>Modules/AppticsAppLock.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qTkmm53bE5F7aEqVqBEIIRdUCRSvv/0I2wg68U9r62I=
+			FWYHsPXZpOYBaWS0GcjpIrksFiZEU8l3XWKNGs2oI9U=
 			</data>
 		</dict>
 		<key>Modules/AppticsAppLock.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AjESC9FL8gPFBTl5G3O7uDFB68jLXXOPYILCbry+pe0=
+			aa0MLlSy3RU6BzhuXmDLBjV7W4g6AJGERXqd1BeWiBI=
 			</data>
 		</dict>
 		<key>ar.lproj/Localizable.strings</key>

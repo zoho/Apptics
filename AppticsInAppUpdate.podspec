@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
 spec.name             = "AppticsInAppUpdate"
-spec.version          = "4.0"
+spec.version          = "4.0.10001"
 spec.summary          = "Apptics In App Update for iOS"
 spec.license          = { :type => "Proprietary", :text => <<-LICENSE
 Copyright (c) 2025 Zoho Corporation Private Limited
@@ -25,14 +25,14 @@ spec.author = { 'Apptics' => 'apptics-support@zohocorp.com' }
 spec.source = { :http => "https://github.com/zoho/Apptics/releases/download/#{spec.version}/AppticsInAppUpdate.zip" }
 # spec.source = { :git => "https://github.com/zoho/Apptics.git", :tag=>"#{spec.version}"}
 
-spec.ios.deployment_target = '13.0'
+spec.ios.deployment_target = '15.0'
 
 spec.default_subspecs = 'AppUpdate'
 
 spec.requires_arc = true
 
 spec.subspec 'AppUpdate' do |au|
-au.platform     = :ios, '13.0'
+au.platform     = :ios, '15.0'
 au.vendored_frameworks = 'AppticsInAppUpdate.xcframework'
 au.ios.dependency 'AppticsAnalytics/Apptics', "#{spec.version}"
 end

@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
 spec.name             = "AppticsMessaging"
-spec.version          = "4.0"
+spec.version          = "4.0.10001"
 spec.summary          = "Apptics messaging dependency for Apptics Push notification service"
 spec.license          = { :type => "Proprietary", :text => <<-LICENSE
 Copyright (c) 2025 Zoho Corporation Private Limited
@@ -25,14 +25,14 @@ spec.author = { 'Apptics' => 'apptics-support@zohocorp.com' }
 spec.source = { :http => "https://github.com/zoho/Apptics/releases/download/#{spec.version}/AppticsMessaging.zip" }
 # spec.source = { :git => "https://github.com/zoho/Apptics.git", :tag=>"#{spec.version}"}
 
-spec.ios.deployment_target = '13.0'
+spec.ios.deployment_target = '15.0'
 
 spec.default_subspecs = 'AppticsMessaging'
 
 spec.requires_arc = true
 
 spec.subspec 'AppticsMessaging' do |aps|
-aps.platform     = :ios, '13.0'
+aps.platform     = :ios, '15.0'
 aps.vendored_frameworks = 'AppticsMessaging.xcframework'
 aps.ios.dependency 'AppticsAnalytics/Apptics', "#{spec.version}"
 end

@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
 spec.name             = "AppticsNotificationContentExtension"
-spec.version          = "4.0"
+spec.version          = "4.0.10001"
 spec.summary          = "Apptics Push notification content extension for iOS"
 spec.license          = { :type => "Proprietary", :text => <<-LICENSE
 Copyright (c) 2025 Zoho Corporation Private Limited
@@ -25,14 +25,14 @@ spec.author = { 'Apptics' => 'apptics-support@zohocorp.com' }
 spec.source = { :http => "https://github.com/zoho/Apptics/releases/download/#{spec.version}/AppticsNotificationContentExtension.zip" }
 # spec.source = { :git => "https://github.com/zoho/Apptics.git", :tag=>"#{spec.version}"}
 
-spec.ios.deployment_target = '14.5'
+spec.ios.deployment_target = '15.0'
 
 spec.default_subspecs = 'AppticsNotificationContentExtension'
 
 spec.requires_arc = true
 
 spec.subspec 'AppticsNotificationContentExtension' do |aps|
-aps.platform     = :ios, '14.5'
+aps.platform     = :ios, '15.0'
 aps.vendored_frameworks = 'AppticsNotificationContentExtension.xcframework'
 end
 

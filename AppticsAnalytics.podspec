@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
 spec.name             = "AppticsAnalytics"
-spec.version          = "4.0"
+spec.version          = "4.0.10001"
 spec.summary          = "Apptics iOS SDK"
 spec.license          = { :type => "Proprietary", :text => <<-LICENSE
 Copyright (c) 2025 Zoho Corporation Private Limited
@@ -28,10 +28,11 @@ spec.source = { :http => "https://github.com/zoho/Apptics/releases/download/#{sp
 spec.social_media_url = "http://zoho.com"
 spec.documentation_url = "https://prezoho.zohocorp.com/apptics/resources/SDK/iOS/integration.html"
 
-spec.ios.deployment_target = '13.0'
-spec.tvos.deployment_target = '9.0'
-spec.osx.deployment_target =  '10.13'
-spec.watchos.deployment_target = '2.0'
+
+spec.ios.deployment_target = '15.0'
+spec.tvos.deployment_target = '15.0'
+spec.osx.deployment_target = '12.0'
+spec.watchos.deployment_target = '9.0'
 
 spec.default_subspecs = 'CoreWithMXCrash'
 

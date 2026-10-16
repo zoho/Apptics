@@ -62,6 +62,8 @@ typedef void (^bgConsoleLogsRequestSuccessBlock)(void);
 
 + (ZAGlobalQueue*) sharedQueue;
 + (NSNumber*) sessionStartTime;
++ (NSNumber*) sessionStatus;
+- (void) refreshCrashSessionStatus;
 + (NSString*) currentScreenName;
 
 - (void)setTimestamp:(NSNumber *)timestamp forScreenName:(NSString *)screenName;

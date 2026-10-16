@@ -256,6 +256,8 @@ ZA_BUNDLE_SHORT_VERSION=$(/usr/libexec/PlistBuddy -c 'Print APP_VERSION_META:BUN
 
 ZA_APPTICS_SDK_ID=$(/usr/libexec/PlistBuddy -c 'Print APP_VERSION_META:APPTICS_SDK_ID' "${ZA_INFOPLIST_FILE}" 2>/dev/null || printf "")
 
+UPLOAD_DOMAIN=$(/usr/libexec/PlistBuddy -c 'Print APP_VERSION_META:UPLOAD_DOMAIN' "${ZA_INFOPLIST_FILE}" 2>/dev/null || printf "")
+
 SERVER_URL=$(/usr/libexec/PlistBuddy -c 'Print SERVER_URL' "${ZA_INFOPLIST_FILE}")
   
 EVENTS_INFO=$(/usr/libexec/PlistBuddy -c 'Print EVENTS_INFO' "${ZA_INFOPLIST_FILE}" 2>/dev/null || printf "")
@@ -283,7 +285,7 @@ check_and_update(){
 key=$1
 value=$2
 
-echo "$key : $value"
+if [ "$key" == "RSAKEY" ]; then echo "$key : ****"; else echo "$key : $value"; fi
 
 ID=$(/usr/libexec/PlistBuddy -c "Print APP_VERSION_META:$key" "${ZA_INFOPLIST_FILE}" 2>/dev/null || printf "null")
 echo "check and update : ${key}, ${ID}"
@@ -306,7 +308,7 @@ if [ "${PRODUCT_BUNDLE_IDENTIFIER}" != "${AP_BUNDLE_ID}" ]; then
     echo "warning: Product bundle identifier '${PRODUCT_BUNDLE_IDENTIFIER}' doesn't match with the bundle identifier in '${ZA_INFO_FILE_NAME}' '${AP_BUNDLE_ID}'"
 fi
 
-if [ "${APPTICS_SDK_ID}" != "${ZA_APPTICS_SDK_ID}" ] || [ "${BUNDLE_VERSION}" != "${ZA_BUNDLE_VERSION}" ] || [ "${BUNDLE_SHORT_VERSION}" != "${ZA_BUNDLE_SHORT_VERSION}" ] || [ "${APP_VERSION_ID}" == "" ] || [ "${AAID}" == "" ] || [ "${APID}" == "" ] || [ "${PLATFORM_ID}" == "" ] || [ "${APPTICS_SDK_ID}" == "" ] || [ "${RSAKEY}" == "" ]; then
+if [ "${APPTICS_SDK_ID}" != "${ZA_APPTICS_SDK_ID}" ] || [ "${BUNDLE_VERSION}" != "${ZA_BUNDLE_VERSION}" ] || [ "${BUNDLE_SHORT_VERSION}" != "${ZA_BUNDLE_SHORT_VERSION}" ] || [ "${APP_VERSION_ID}" == "" ] || [ "${AAID}" == "" ] || [ "${APID}" == "" ] || [ "${PLATFORM_ID}" == "" ] || [ "${APPTICS_SDK_ID}" == "" ] || [ "${RSAKEY}" == "" ] || [ "${UPLOAD_DOMAIN}" == "" ]; then
   
   reg_app_out_file="/tmp/${AP_BUNDLE_ID}/${ZA_VERSION_META_FILE_NAME}"
   REG_APP_VERSION_PARAMS="platform=${OS}&identifier=${AP_BUNDLE_ID}&version=${BUNDLE_SHORT_VERSION}&appreleaseversion=${BUNDLE_VERSION}&frameworkid=${APPTICS_SDK_ID}&minosversion=${ZA_DEPLOYMENT_TARGET}"
@@ -319,7 +321,7 @@ if [ "${APPTICS_SDK_ID}" != "${ZA_APPTICS_SDK_ID}" ] || [ "${BUNDLE_VERSION}" !=
     echo "info: Data downloaded"
 
     echo "================ RAW API RESPONSE ================"
-    cat "${reg_app_out_file}"
+    sed -E 's/("rsakey" *: *")[^"]*"/\1****"/' "${reg_app_out_file}"
     echo "=================================================="
 
     value=$($RUBY_CMD -r "$(command dirname -- "${0}")/apptics_utils.rb" -e "AppticsBot.main '${reg_app_out_file}'")
@@ -349,6 +351,7 @@ mapid=$($RUBY_CMD -rjson -e 'j=JSON.parse(File.read("'${reg_app_out_file}'")); p
 rsakey=$($RUBY_CMD -rjson -e 'j=JSON.parse(File.read("'${reg_app_out_file}'")); puts j["data"]["rsakey"]')
 platformid=$($RUBY_CMD -rjson -e 'j=JSON.parse(File.read("'${reg_app_out_file}'")); puts j["data"]["platformid"]')
 portalId=$($RUBY_CMD -rjson -e 'j=JSON.parse(File.read("'${reg_app_out_file}'")); puts j["data"]["portalid"]')
+uploadDomain=$($RUBY_CMD -rjson -e 'j=JSON.parse(File.read("'${reg_app_out_file}'")); puts((j["data"]||{})["upload_domain"] || j["upload_domain"])')
 projectId=$($RUBY_CMD -rjson -e 'j=JSON.parse(File.read("'${reg_app_out_file}'")); puts j["data"]["projectid"]')
 
 echo "================ EXTRACTED VALUES ================"
@@ -357,10 +360,11 @@ echo "APP_RELEASE_VERSION_ID $appreleaseversionid"
 echo "AAID $aaid"
 echo "APID $apid"
 echo "MAPID $mapid"
-echo "RSAKEY $rsakey"
+echo "RSAKEY ****"
 echo "PLATFORM_ID $platformid"
 echo "PORTAL_ID $portalId"
 echo "PROJECT_ID $projectId"
+echo "UPLOAD_DOMAIN $uploadDomain"
 echo "BUNDLE_VERSION $BUNDLE_VERSION"
 echo "BUNDLE_SHORT_VERSION $BUNDLE_SHORT_VERSION"
 echo "APPTICS_SDK_ID ${APPTICS_SDK_ID}"
@@ -377,7 +381,8 @@ echo "=================================================="
        [ "$platformid" == "" ] || \
        [ "$portalId" == "" ] || \
        [ "$projectId" == "" ] || \
-       [ "$APPTICS_SDK_ID" == "" ] \
+       [ "$APPTICS_SDK_ID" == "" ] || \
+       [ "$uploadDomain" == "" ] || \
        [ "$portalId" == "" ] || \
         [ "$projectId" == "" ]; then
         echo "error: Required values missing"
@@ -391,6 +396,7 @@ echo "=================================================="
     check_and_update "APID" "$apid"
     check_and_update "MAPID" "$mapid"
     check_and_update "RSAKEY" "$rsakey"
+    check_and_update "UPLOAD_DOMAIN" "$uploadDomain"
     check_and_update "PLATFORM_ID" "$platformid"
     check_and_update "PORTAL_ID" "$portalId"
     check_and_update "PROJECT_ID" "$projectId"
@@ -414,7 +420,8 @@ else
   value_for_key "AAID"
   value_for_key "APID"
   value_for_key "MAPID"
-  value_for_key "RSAKEY"
+  echo "RSAKEY : ****"
+  value_for_key "UPLOAD_DOMAIN"
   value_for_key "PLATFORM_ID"
   value_for_key "PORTAL_ID"
   value_for_key "PROJECT_ID"
