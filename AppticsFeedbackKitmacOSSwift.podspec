@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
 spec.name             = "AppticsFeedbackKitmacOSSwift"
-spec.version          = "4.0.10001"
+spec.version          = "4.0.10002"
 spec.summary          = "AppticsFeedbackKitmacOSSwift"
 spec.license          = { :type => "Proprietary", :text => <<-LICENSE
 Copyright (c) 2025 Zoho Corporation Private Limited

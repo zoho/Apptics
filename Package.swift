@@ -1,10 +1,10 @@
 // swift-tools-version:5.6
  import PackageDescription
- let version = "4.0.10001"
+ let version = "4.0.10002"
  let package = Package(
      name: "Apptics",
      defaultLocalization: "en",
-     platforms: [.macOS(.v10_10), .iOS(.v13), .tvOS(.v9), .watchOS(.v2)],
+     platforms: [.macOS(.v12), .iOS(.v15), .tvOS(.v15), .watchOS(.v8)],
      products: [
          .library(
              name: "AppticsFeedbackKit",

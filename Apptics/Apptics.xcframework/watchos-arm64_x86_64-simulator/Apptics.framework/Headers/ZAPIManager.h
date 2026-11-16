@@ -61,8 +61,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void) fetchUpdatesForModules:(NSArray*) modules flagTime: (NSNumber*) flagtime WithSuccess:(void (^)(NSURLResponse *response, id responeObject))success failure:(void (^)(NSURLResponse *reponse, NSError *error))failure;
 
-- (void) fetchSDKConfigWithSuccess:(void (^)(NSURLResponse *response, id responeObject))success failure:(void (^)(NSURLResponse *reponse, NSError *error))failure;
-
 - (void) getPromotionalAppsList: (void (^)(id info))success;
 
 - (void) promoAppSelectedCallback : (NSString *) crossPromoId;

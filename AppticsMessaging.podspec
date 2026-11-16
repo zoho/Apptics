@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
 spec.name             = "AppticsMessaging"
-spec.version          = "4.0.10001"
+spec.version          = "4.0.10002"
 spec.summary          = "Apptics messaging dependency for Apptics Push notification service"
 spec.license          = { :type => "Proprietary", :text => <<-LICENSE
 Copyright (c) 2025 Zoho Corporation Private Limited

@@ -11,7 +11,7 @@ Pod::Spec.new do |spec|
 
   spec.name             = "AppticsExtension"
   spec.module_name      = "AppticsExtension"
-  spec.version          = "4.0.10001"
+  spec.version          = "4.0.10002"
   spec.summary          = "An in-app usage tracking and analytics library for iOS app extensions"
   spec.license          = { :type => "Proprietary", :text => <<-LICENSE
 Copyright (c) 2025 Zoho Corporation Private Limited

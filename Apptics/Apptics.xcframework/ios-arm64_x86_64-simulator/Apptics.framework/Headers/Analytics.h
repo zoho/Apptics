@@ -92,14 +92,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property BOOL isApplicationInBg;
 
-// Timestamp (ms) when the app last entered the background; nil while foreground. Used to decide when
-// the background grace window has elapsed so post-grace engagements are marked sessionstatus = 2.
-@property (nonatomic, strong) NSNumber * _Nullable backgroundEnteredTime;
-
-// YES only when the app is in the background AND the background grace window (18s) has elapsed.
-// This is the sole condition for sessionstatus = 2. Works on iOS/macOS/tvOS/watchOS.
-- (BOOL)isBackgroundGraceOver;
-
 @property (nonatomic) BOOL isInitialized;
 
 @property (nonatomic,strong) NSString *consentWindowStatus;//from which window it came
@@ -279,8 +271,6 @@ typedef void (^internbgConsoleLogsRequestSuccessBlock)(void);
 - (NSString *) getCurrentUserId;
 
 -(void) syncUpdatesFromServer;
-
--(void) syncSDKConfigFromServer;
 
 
 - (APPrivacyStatus) getPrivacyStatus;

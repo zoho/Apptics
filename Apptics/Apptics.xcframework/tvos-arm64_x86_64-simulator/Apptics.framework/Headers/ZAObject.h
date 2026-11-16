@@ -23,10 +23,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property BOOL isSyncing;
 @property NSNumber *starttime, *endtime, *networkstatus, *networkbandwidth, *orientation, *batteryin;
 @property NSString *serviceprovider, *edgetype;
-// Record-time visibility marker: 1 foreground, 2 background (incl. grace), 0 headless. Set alongside
-// sessionstarttime when the object is created; used only to partition uploads by status (it is written
-// to the temp table's STATUS column, never to the object's wire JSON).
-@property NSNumber *sessionstatus;
 
 -(void) encodeWithCoder:(NSCoder *)aCoder;
 

@@ -64,7 +64,6 @@ typedef NS_ENUM(NSInteger, JURLPath)
   JURLPathRegisterUserWithOrg,
   JURLPathUnRegisterUserWithOrg,
   JURLPathUpdateDevicePreference,
-  JURLPathGetSDKConfig,
   JURLPathDefault
 };
 
