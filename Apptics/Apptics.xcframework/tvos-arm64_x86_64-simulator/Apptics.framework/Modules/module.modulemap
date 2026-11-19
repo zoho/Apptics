@@ -4,3 +4,7 @@ framework module Apptics {
 
   module * { export * }
 }
+
+module Apptics.Swift {
+  header "Apptics-Swift.h"
+}

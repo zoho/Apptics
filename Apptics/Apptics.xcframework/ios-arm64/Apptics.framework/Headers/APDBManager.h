@@ -57,7 +57,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)drainWritesForDC:(NSString *)dc;
 
 // Moves user-collected rows (engagement / non-fatal / console-log / crashes /
-// session-info / API-tracking / temp queues / feedback) from the default-DC
+// session-info / API-tracking / temp queues (including TEMPHEATMAP) / feedback) from the default-DC
 // SQLite slot (apptics.sqlite) into the target DC's slot (apptics-<DC>.sqlite).
 // Intended for the FIRST setCurrentUserWithDC call on a fresh install where
 // preferUserDCForEngagements is YES and the user's chosen DC differs from
@@ -93,25 +93,39 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSMutableSet*)getAllExpectedTables;
 - (void)clearTables : (NSArray*) tableList;
     
-- (void)archiveEngagements:(id)queue sessionId : (NSNumber*) sessionId mamId:(NSString * _Nullable)mam anonId : (NSString*) anonid;
+- (void)archiveEngagements:(id)queue sessionId : (NSNumber*) sessionId mamId:(NSString * _Nullable)mam anonId : (NSString*) anonid status:(NSNumber *)status;
 - (void)getAllHistoricEngagementDataToBeSyncedWithCompletion:(void (^)(NSMutableArray *results))completion;
 - (void)getListOfHistoricEngagementDataToBeSyncedWithCompletion:(void (^)(NSMutableArray *results, NSDictionary* meta))completion;
 - (void)deleteRowFromEngagementInfoTableWithSessionIDs:(NSArray<NSNumber *> *)sessionIDs;
 - (void)updateIssyncingStatus: (bool) status forSessionIDs:(NSArray<NSNumber *> *)sessionIDs;
 - (void)getEngagementDataForSessionID:(NSNumber*) sessionId completionHandler:(void (^)(NSDictionary * engagementdata))completion;
 
-- (void)archiveNonfatal:(id)queue sessionId : (NSNumber*) sessionId mamId:(NSString * _Nullable)mam anonId : (NSString*) anonid;
+- (void)archiveNonfatal:(id)queue sessionId : (NSNumber*) sessionId mamId:(NSString * _Nullable)mam anonId : (NSString*) anonid status:(NSNumber *)status;
 - (void)getAllHistoricNonfatalDataToBeSyncedWithCompletion:(void (^)(NSMutableArray *results))completion;
 - (void)getListOfHistoricNonfatalDataToBeSyncedWithCompletion:(void (^)(NSMutableArray *results, NSDictionary* meta))completion;
 - (void)deleteRowFromNonfatalInfoTableWithSessionIDs:(NSArray<NSNumber *> *)sessionIDs;
 - (void)updateNonfatalIssyncingStatus: (bool) status forSessionIDs:(NSArray<NSNumber *> *)sessionIDs;
 - (void)getNonfatalDataForSessionID:(NSNumber*) sessionId completionHandler:(void (^)(NSDictionary * nonfataldata))completion;
 
-- (void)archiveConsoleLog:(id)queue sessionId : (NSNumber*) sessionId mamId:(NSString * _Nullable)mam anonId : (NSString*) anonid;
+- (void)archiveConsoleLog:(id)queue sessionId : (NSNumber*) sessionId mamId:(NSString * _Nullable)mam anonId : (NSString*) anonid status:(NSNumber *)status;
 - (void)getAllHistoricConsoleLogDataToBeSyncedWithCompletion:(void (^)(NSMutableArray *results))completion;
 - (void)getListOfHistoricConsoleLogDataToBeSyncedWithCompletion:(void (^)(NSMutableArray *results, NSDictionary* meta))completion;
 - (void)deleteRowFromConsoleLogInfoTableWithSessionIDs:(NSArray<NSNumber *> *)sessionIDs;
 - (void)updateConsoleLogIssyncingStatus: (bool) status forSessionIDs:(NSArray<NSNumber *> *)sessionIDs;
+
+/// The server answered these rows' upload with an error: count it and back them off (they're kept; only the 7-day
+/// purge removes rows that never get through). Rows that are backing off are not selected for upload.
+- (void)recordFailedEngagementUploadForSessionIDs:(NSArray<NSNumber *> *)sessionIDs;
+- (void)recordFailedNonfatalUploadForSessionIDs:(NSArray<NSNumber *> *)sessionIDs;
+- (void)recordFailedConsoleLogUploadForSessionIDs:(NSArray<NSNumber *> *)sessionIDs;
+- (void)recordFailedHeatmapUploadForSessionID:(NSNumber *)sessionID;
+/// Clears "upload in flight" marks left by an app that was killed mid-upload. Called when the instance is created.
+- (void)resetStaleSyncingFlags;
+/// The current session's temp rows were marked as sent when read for a live upload that then failed: unmark them
+/// so the next live upload, or the session archive, includes them again.
+- (void)resetTempEngagementSyncingForSessionID:(NSNumber * _Nullable)sessionID;
+- (void)resetTempNonFatalSyncingForSessionID:(NSNumber * _Nullable)sessionID;
+- (void)resetTempConsoleLogSyncingForSessionID:(NSNumber * _Nullable)sessionID;
 - (void)getConsoleLogDataForSessionID:(NSNumber*) sessionId completionHandler:(void (^)(NSDictionary * consoledata))completion;
 
 - (void)saveAPIInfoToDatabase:(NSDictionary*)APIs;
@@ -163,22 +177,26 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)insertTempEngagementWithSessionID:(NSNumber *)sessionID
                                   data:(NSData *)data
-                                  type:(NSString *)type;
--(void) getTempEngagementDataToBeSavedForSessionID : (NSNumber*) sessionID shouldDiscard : (bool) shouldDiscard completionHandler:(void (^)(NSMutableDictionary * sessionData))completion;
+                                  type:(NSString *)type
+                                status:(NSNumber *)status;
+-(void) getTempEngagementDataToBeSavedForSessionID : (NSNumber*) sessionID shouldDiscard : (bool) shouldDiscard completionHandler:(void (^)(NSMutableDictionary * sessionData, NSNumber * batchStatus))completion;
 - (void)getAllSessionStartTimesFromTempEngagements:(void (^)(NSMutableArray<NSNumber *> * sessions))completion;
 
 - (void)insertTempNonFatalDataWithSessionID:(NSNumber *)sessionID
-                                       data:(NSData *)data;
--(void) getTempNonFatalDataToBeSavedForSessionID : (NSNumber*) sessionID shouldDiscard : (bool) shouldDiscard completionHandler:(void (^)(NSMutableArray * nonfatals))completion;
+                                       data:(NSData *)data
+                                     status:(NSNumber *)status;
+-(void) getTempNonFatalDataToBeSavedForSessionID : (NSNumber*) sessionID shouldDiscard : (bool) shouldDiscard completionHandler:(void (^)(NSMutableArray * nonfatals, NSNumber * batchStatus))completion;
 - (void)getAllSessionStartTimesFromTempNonfatals:(void (^)(NSMutableArray<NSNumber *> * sessions))completion;
 
 - (void)insertTempConsoleLogDataWithSessionID:(NSNumber *)sessionID
-                                       data:(NSData *)data;
--(void) getTempConsoleLogDataToBeSavedForSessionID : (NSNumber*) sessionID shouldDiscard : (bool) shouldDiscard completionHandler:(void (^)(NSMutableArray * consoleLogs))completion;
+                                       data:(NSData *)data
+                                     status:(NSNumber *)status;
+-(void) getTempConsoleLogDataToBeSavedForSessionID : (NSNumber*) sessionID shouldDiscard : (bool) shouldDiscard completionHandler:(void (^)(NSMutableArray * consoleLogs, NSNumber * batchStatus))completion;
 - (void)getAllSessionStartTimesFromTempConsoleLogs:(void (^)(NSMutableArray<NSNumber *> * sessions))completion;
 
 - (void)insertTempHeatmapDataWithSessionID:(NSNumber *)sessionID
-                                      data:(NSData *)data;
+                                      data:(NSData *)data
+                                    status:(NSNumber *)status;
 - (void)getTempHeatmapDataForSessionID:(NSNumber *)sessionID
                          markAsSyncing:(BOOL)markAsSyncing
                      completionHandler:(void (^)(NSMutableArray *heatmaps))completion;

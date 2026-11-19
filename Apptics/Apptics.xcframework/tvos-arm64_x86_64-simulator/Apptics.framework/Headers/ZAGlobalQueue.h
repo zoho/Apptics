@@ -62,6 +62,8 @@ typedef void (^bgConsoleLogsRequestSuccessBlock)(void);
 
 + (ZAGlobalQueue*) sharedQueue;
 + (NSNumber*) sessionStartTime;
++ (NSNumber*) sessionStatus;
+- (void) refreshCrashSessionStatus;
 + (NSString*) currentScreenName;
 
 - (void)setTimestamp:(NSNumber *)timestamp forScreenName:(NSString *)screenName;
@@ -83,6 +85,10 @@ typedef void (^bgConsoleLogsRequestSuccessBlock)(void);
 - (void) purgeHistoricConsoleLogsData;
 
 - (void) flushHistoricEngagementsDataToServer;
+/// Queue a flush when the request queue can take it (foreground, queue enabled). NO means the caller sends directly.
+- (BOOL) enqueueEngagementFlushIfPossible;
+- (BOOL) enqueueNonFatalFlushIfPossible;
+- (BOOL) enqueueConsoleLogFlushIfPossible;
 - (void) flushHistoricDataToServerisBG : (BOOL) isBg completionBlock:(bgEngagementRequestSuccessBlock)success;
 
 - (void) flushHistoricNonFatalsDataToServer;

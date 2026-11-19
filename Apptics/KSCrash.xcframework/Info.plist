@@ -8,23 +8,6 @@
 			<key>BinaryPath</key>
 			<string>KSCrash.framework/KSCrash</string>
 			<key>LibraryIdentifier</key>
-			<string>watchos-arm64_x86_64-simulator</string>
-			<key>LibraryPath</key>
-			<string>KSCrash.framework</string>
-			<key>SupportedArchitectures</key>
-			<array>
-				<string>arm64</string>
-				<string>x86_64</string>
-			</array>
-			<key>SupportedPlatform</key>
-			<string>watchos</string>
-			<key>SupportedPlatformVariant</key>
-			<string>simulator</string>
-		</dict>
-		<dict>
-			<key>BinaryPath</key>
-			<string>KSCrash.framework/KSCrash</string>
-			<key>LibraryIdentifier</key>
 			<string>ios-arm64_x86_64-simulator</string>
 			<key>LibraryPath</key>
 			<string>KSCrash.framework</string>
@@ -40,18 +23,31 @@
 		</dict>
 		<dict>
 			<key>BinaryPath</key>
-			<string>KSCrash.framework/Versions/A/KSCrash</string>
+			<string>KSCrash.framework/KSCrash</string>
 			<key>LibraryIdentifier</key>
-			<string>macos-arm64_x86_64</string>
+			<string>tvos-arm64</string>
 			<key>LibraryPath</key>
 			<string>KSCrash.framework</string>
 			<key>SupportedArchitectures</key>
 			<array>
 				<string>arm64</string>
-				<string>x86_64</string>
 			</array>
 			<key>SupportedPlatform</key>
-			<string>macos</string>
+			<string>tvos</string>
+		</dict>
+		<dict>
+			<key>BinaryPath</key>
+			<string>KSCrash.framework/KSCrash</string>
+			<key>LibraryIdentifier</key>
+			<string>ios-arm64</string>
+			<key>LibraryPath</key>
+			<string>KSCrash.framework</string>
+			<key>SupportedArchitectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>SupportedPlatform</key>
+			<string>ios</string>
 		</dict>
 		<dict>
 			<key>BinaryPath</key>
@@ -91,15 +87,18 @@
 			<key>BinaryPath</key>
 			<string>KSCrash.framework/KSCrash</string>
 			<key>LibraryIdentifier</key>
-			<string>tvos-arm64</string>
+			<string>watchos-arm64_x86_64-simulator</string>
 			<key>LibraryPath</key>
 			<string>KSCrash.framework</string>
 			<key>SupportedArchitectures</key>
 			<array>
 				<string>arm64</string>
+				<string>x86_64</string>
 			</array>
 			<key>SupportedPlatform</key>
-			<string>tvos</string>
+			<string>watchos</string>
+			<key>SupportedPlatformVariant</key>
+			<string>simulator</string>
 		</dict>
 		<dict>
 			<key>BinaryPath</key>
@@ -118,17 +117,18 @@
 		</dict>
 		<dict>
 			<key>BinaryPath</key>
-			<string>KSCrash.framework/KSCrash</string>
+			<string>KSCrash.framework/Versions/A/KSCrash</string>
 			<key>LibraryIdentifier</key>
-			<string>ios-arm64</string>
+			<string>macos-arm64_x86_64</string>
 			<key>LibraryPath</key>
 			<string>KSCrash.framework</string>
 			<key>SupportedArchitectures</key>
 			<array>
 				<string>arm64</string>
+				<string>x86_64</string>
 			</array>
 			<key>SupportedPlatform</key>
-			<string>ios</string>
+			<string>macos</string>
 		</dict>
 	</array>
 	<key>CFBundlePackageType</key>

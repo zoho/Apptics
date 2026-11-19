@@ -11,7 +11,7 @@ Pod::Spec.new do |spec|
 
   spec.name             = "Apptics-Swift"
   spec.module_name      = "Apptics_Swift"
-  spec.version          = "4.0.10002"
+  spec.version          = "4.0.10003"
   spec.summary          = "An in-app usage tracking and analytics library for iOS"
   spec.license          = { :type => "Proprietary", :text => <<-LICENSE
 Copyright (c) 2025 Zoho Corporation Private Limited

@@ -35,6 +35,10 @@ extern NSString *kZAEngagementDataUploadFailureNotificationBg;
 @property (nonatomic, strong) NSString *apiToken;
 @property (nonatomic, strong) NSString *sessionToken;
 @property (nonatomic, weak) APAAAUtil *aaaUtil;
+/// Called once per foreground upload attempt with what came back.
+@property (nonatomic, copy, nullable) void (^resultHandler)(NSURLResponse * _Nullable response, NSDictionary * _Nullable json, NSError * _Nullable error);
+/// Called when the rows are kept for another attempt (for the current session: give its temp rows back).
+@property (nonatomic, copy, nullable) void (^retryHandler)(void);
 @property (nonatomic, strong) NSURLSession *session;
 
 #if !TARGET_OS_OSX && !TARGET_OS_WATCH

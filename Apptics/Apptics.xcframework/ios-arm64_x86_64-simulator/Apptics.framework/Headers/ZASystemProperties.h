@@ -54,6 +54,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (strong,nonatomic) NSString *frameworkid;
 @property (strong,nonatomic)NSString *portalid;
 @property (strong,nonatomic)NSString *projectid;
+/// From addversion, sent only for zohocorp apps (for example "ae"); nil otherwise.
+@property (strong,nonatomic, nullable) NSString *skipTrackingDC;
 
 
 
@@ -86,6 +88,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSMutableArray *regUserSuccessblocks;
 
 
+/// Logs the connection state and calls every block waiting for the app version id ("" when addversion failed).
++ (void)finishAddAppVersionCallWithAppVersionID:(NSString * _Nullable)appVersionId error:(NSError * _Nullable)error;
 + (void)makeAddAppVersionCallWithSuccess:(void (^)(NSString *appVersionID))success
                                  failure:(void (^)(NSError *error))failure;
 

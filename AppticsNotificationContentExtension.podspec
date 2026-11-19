@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
 spec.name             = "AppticsNotificationContentExtension"
-spec.version          = "4.0.10002"
+spec.version          = "4.0.10003"
 spec.summary          = "Apptics Push notification content extension for iOS"
 spec.license          = { :type => "Proprietary", :text => <<-LICENSE
 Copyright (c) 2025 Zoho Corporation Private Limited

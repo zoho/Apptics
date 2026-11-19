@@ -32,4 +32,8 @@
 - (id)initWithCrashReport:(NSDictionary *)crashReport;
 - (id)initWithFileName:(NSString*)fileName;
 
+/// Uploads `report` once. On success the APCrashUploadSuccessNotification is posted (deleting the rows) as before.
+/// The completion always runs, with the server's JSON when one came back.
+- (void)sendReports:(NSDictionary *)report completion:(void (^)(NSURLResponse *response, NSDictionary *json, NSError *error))completion;
+
 @end

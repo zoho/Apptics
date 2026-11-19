@@ -25,5 +25,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (void) setSyncStatusForArray:(NSArray*)array withStatus:(BOOL)isSynced;
 
+/// YES when the request is one of the SDK's own calls: a /sdk/ or /hsdk/ path on the Apptics server (`serverHost`, the
+/// host addversion saved), any host containing "apptics", or an upload host. `host` is expected in lowercase.
++ (BOOL) isAppticsSDKRequestForHost:(NSString*)host path:(NSString*)path serverHost:(NSString* _Nullable)serverHost;
+
 @end
 NS_ASSUME_NONNULL_END

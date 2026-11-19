@@ -120,6 +120,14 @@ NS_ASSUME_NONNULL_BEGIN
 // the lock is not visible to subsequent locked reads.
 - (void) forceResetRegDeviceInprogressForRecovery;
 
+/// YES when device/add has to be sent: no device id yet, the device info changed, or an anonymous id is missing.
+- (BOOL) isRegisterDeviceCallNeeded;
+/// Sends device/add (and anondevice/update) if needed and saves the result. `sent` is NO when no call was needed.
+/// The completion runs on the main queue.
+- (void) sendRegisterDeviceRequestWithCompletion:(void (^_Nonnull)(BOOL sent, NSDictionary * _Nullable deviceInfo, NSError * _Nullable error))completion;
+/// Calls and clears the callbacks waiting for device registration.
+- (void) executeRequestSuccessCallbacksWithResponse:(NSString* _Nullable) deviceId;
+
 - (void) setTrackingStatus:(APTrackingStatus)status;
 
 - (void) setCrashStatus:(APCrashStatus)status;
@@ -163,6 +171,21 @@ NS_ASSUME_NONNULL_BEGIN
 - (BOOL) customergrouptracking;
 
 - (BOOL) quartzenabled;
+
+// Per-module tracking gates driven by the getsdkconfig / getupdates v2 tracking_status map.
+- (BOOL) trackingEnabled; // global getsdkconfig "tracking_enabled" switch (default YES)
+- (BOOL) isModuleEnabled:(NSInteger)moduleId;
+- (BOOL) mergeTrackingStatus:(NSDictionary * _Nullable)trackingStatus;
+- (BOOL) eventTrackingEnabled;
+- (BOOL) apiTrackingEnabled;
+- (BOOL) screenTrackingEnabled;
+- (BOOL) sessionTrackingEnabled;
+- (BOOL) feedbackEnabled;
+- (BOOL) crashTrackingEnabled;
+- (BOOL) nonFatalTrackingEnabled;
+- (BOOL) jsErrorTrackingEnabled;
+- (BOOL) remoteLoggerEnabled;
+- (BOOL) heatmapEnabled;
 
 
 - (BOOL) isUserLoggedIn;

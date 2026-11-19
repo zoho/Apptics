@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
 spec.name             = "AppticsAppLock"
-spec.version          = "4.0.10002"
+spec.version          = "4.0.10003"
 spec.summary          = "Apptics App Lock for iOS"
 spec.license          = { :type => "Proprietary", :text => <<-LICENSE
 Copyright (c) 2025 Zoho Corporation Private Limited

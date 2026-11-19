@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>AppVersion</key>
-	<string>4.0.1002</string>
+	<string>4.0.10003</string>
 	<key>IOS_SDK_ID</key>
-	<string>6007</string>
+	<string>6013</string>
 	<key>MACOS_SDK_ID</key>
 	<string>5951</string>
 	<key>TVOS_SDK_ID</key>

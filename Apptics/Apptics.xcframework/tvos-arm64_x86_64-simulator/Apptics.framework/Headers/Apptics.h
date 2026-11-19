@@ -40,6 +40,7 @@
 #import <Apptics/APRateusObject.h>
 
 #import <Apptics/APRemoteConfigObject.h>
+#import <Apptics/APQueueSupport.h>
 #import <Apptics/APUser.h>
 
 #if TARGET_OS_OSX
