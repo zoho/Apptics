@@ -24,9 +24,5 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (id)initWithFeedbackId:(NSString*)feedbackId withLogFilePath : (NSString*)logFilePath userID : (NSString*) userId anonID : (NSString*) anonid;
 
-/// Uploads once without the operation queue. The success notifications are posted as before; the completion always
-/// runs once, with the server's JSON when one came back (nil response, JSON and error: nothing left to upload).
-- (void)uploadWithCompletion:(void (^)(NSURLResponse * _Nullable response, NSDictionary * _Nullable json, NSError * _Nullable error))completion;
-
 @end
 NS_ASSUME_NONNULL_END

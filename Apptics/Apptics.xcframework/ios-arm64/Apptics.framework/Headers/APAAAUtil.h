@@ -19,8 +19,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSMutableArray *failureblocks;
 @property int retryCount;
 @property bool shouldMigrate;
-/// Set when the server said SESSION_TOKEN_EXPIRED although the local expiry has not passed yet.
-@property (atomic) BOOL forceRefresh;
 
 typedef void (^requestSuccessBlock)( NSString * _Nullable token);
 typedef void (^requestFailureBlock)(NSError *error);
@@ -40,10 +38,6 @@ typedef void (^ apiRequestFailureBlock)(NSURLResponse *response, NSError *error)
 - (void) updateToken : (NSString*_Nullable) refresh_token;
 - (void) updateToken : (NSString*_Nullable) refresh_token time : (NSNumber* _Nullable) token_time;
 - (void) fetchRefreshTokenFromServerWithSuccess :(requestSuccessBlock)success;
-
-/// The server rejected the token as expired (SESSION_TOKEN_EXPIRED). Keeps the session token so the next
-/// getTokenWithSuccess: refreshes with it, as the spec asks, instead of resetting with the UUID.
-- (void) markTokenExpired;
 
 /// Resets internal state (retryCount, operationInProgress, successblocks)
 /// for a clean start during DC switch. Call on all 3 singletons before

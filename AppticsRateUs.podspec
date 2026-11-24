@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
 spec.name             = "AppticsRateUs"
-spec.version          = "4.0.10003"
+spec.version          = "4.0.10004"
 spec.summary          = "Apptics RateUs module for iOS"
 spec.license          = { :type => "Proprietary", :text => <<-LICENSE
 Copyright (c) 2025 Zoho Corporation Private Limited

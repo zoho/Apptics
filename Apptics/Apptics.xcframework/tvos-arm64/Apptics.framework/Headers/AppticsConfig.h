@@ -73,6 +73,10 @@ typedef NS_ENUM(NSInteger, APFlushInterval) {
 @property (nonatomic) bool enableRateUs API_UNAVAILABLE(macos, watchos);
 @property (nonatomic) bool sendDataOnMobileNetworkByDefault;
 
+/// When YES, AppticsHeatmap captures / stores screen snapshots for heatmaps.
+/// Default NO (V1 ships gesture telemetry only). Set YES to re-enable screenshots.
+@property (nonatomic) bool enableHeatmapScreenshotCapture API_UNAVAILABLE(macos, tvos, watchos);
+
 //@property (nonatomic) bool completeOffByDefault;
 @property (nonatomic) bool trackOnByDefault;
 @property (nonatomic) bool enableAutomaticSessionTracking;

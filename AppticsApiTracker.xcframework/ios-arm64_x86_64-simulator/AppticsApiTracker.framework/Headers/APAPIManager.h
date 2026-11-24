@@ -76,10 +76,6 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (NSDictionary* _Nullable) trackingMetadataForRequest : (NSURLRequest*) request;
 
-// Masked/grouped scheme, hostname, path, port and method for a request, always (no ignore-rule, no
-// api_id). Used to guarantee no raw/unmasked URL component is ever emitted, on every tracking entry point.
-+ (NSDictionary* _Nullable) maskedURLComponentsForRequest : (NSURLRequest*) request;
-
 @end
 
 @interface APAPITrackingConfiguration : NSObject <NSCopying>
